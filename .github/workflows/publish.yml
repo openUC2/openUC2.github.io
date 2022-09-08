@@ -36,3 +36,5 @@ jobs:
           BRANCH: gh-pages
           FOLDER: site/dist
           CLEAN: true
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3

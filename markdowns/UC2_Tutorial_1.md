@@ -15,7 +15,7 @@ Feedback Link: https://youseetoo.org
 <span style="color:#023773"> __TOO\.__ </span>
 
 <p align="left">
-<img src="./ASSETS/UC2_LOGO.png" width="100">
+<img src="./assets/UC2_LOGO.png" width="100">
 </p>
 
 
@@ -42,7 +42,7 @@ Duration: 1
 **Mikroskopobjektiv:** ein spezielles Linsensystem, welches ein Objekt vergrößert
 
 <p align="center">
-<img src="./ASSETS/1.png" width="500">
+<img src="./assets/1.png" width="500">
 </p>
 
 <!-- ------------------------ -->
@@ -58,7 +58,7 @@ Der Einsatz kann verschiedene optische Komponenten (z.B. Linsen, Spiegel) halten
 **Grundplatte**
 
 <p align="center">
-<img src="./ASSETS/2.png" width="300">
+<img src="./assets/2.png" width="300">
 </p>
 
 **Grundplatte**
@@ -66,7 +66,7 @@ Der Einsatz kann verschiedene optische Komponenten (z.B. Linsen, Spiegel) halten
 Der Würfel lässt sich auf eine Grundplatte montieren. Die Grundplattenmodule lassen sich wie Puzzle zusammenstecken.
 
 <p align="center">
-<img src="./ASSETS/3.png" width="300">
+<img src="./assets/3.png" width="300">
 </p>
 
 
@@ -81,7 +81,7 @@ Der UC2-Würfel lässt sich auch 3D-drucken. Er sieht genauso aus wie das Spritz
 **Würfel**
 
 <p align="center">
-<img src="./ASSETS/4.png" width="300">
+<img src="./assets/4.png" width="300">
 </p>
 
 **Grundplatte mit Magneten**
@@ -89,7 +89,7 @@ Der UC2-Würfel lässt sich auch 3D-drucken. Er sieht genauso aus wie das Spritz
 In der 3D gedruckten Grundplatte sind kleine Kugelmagnete auf die die Würfel gesteckt werden.
 
 <p align="center">
-<img src="./ASSETS/5.png" width="300">
+<img src="./assets/5.png" width="300">
 </p>
 
 Willst du mehr Würfel haben? Dann kannst du sie selbst bauen. Du findest alles [hier](github.com/openUC2/UC2-GIT)
@@ -102,13 +102,13 @@ Duration: 1
 Achte darauf, dass die Würfel richtig auf der Platte stecken und nicht verkippt sind. Am Ende ist es wichtig, dass die Einsätze an der richtigen Stelle sitzen.
 
 <p align="center">
-<img src="./ASSETS/6.png" width="300">
+<img src="./assets/6.png" width="300">
 </p>
 
 Wenn du kein scharfes Bild siehst, verschiebe die Einsätze (z.B. Linse) so lange, bis du es klar siehst. Der grüne Pfeil im Bild zeigt dir, wie das geht.
 
 <p align="center">
-<img src="./ASSETS/7.png" width="300">
+<img src="./assets/7.png" width="300">
 </p>
 
 <!-- ------------------------ -->
@@ -117,14 +117,14 @@ Duration: 2
 
 |||
 |----|-----|
-|<img src="./ASSETS/I1.png" width="200">|Experiment Wenn du diesen Block siehst, gibt es etwas zu experimentieren! Auf diesen Block kannst du einen UC2 Würfel legen. |
-|<img src="./ASSETS/I2.png" width="100">|**Erklärungen**: Wenn du dieses Symbol siehst, gibt es etwas zu lernen! |
-|<img src="./ASSETS/I3.png" width="100">|**Rechnungen:** Hier gibt es was zu Rechnen. Nimm einen Stift und ein Papier und knobel los. |
-|<img src="./ASSETS/I4.png" width="100">|**Vorsicht:** Berühre die Glasoberflächen nicht mit den Fingern! |
-|<img src="./ASSETS/I5.png" width="100">|**Reinigung der Linsen:** Wenn du die Linse berit berührt hat, kannst du sie mit einem Brillentuch reinigen. |
+|<img src="./assets/I1.png" width="200">|Experiment Wenn du diesen Block siehst, gibt es etwas zu experimentieren! Auf diesen Block kannst du einen UC2 Würfel legen. |
+|<img src="./assets/I2.png" width="100">|**Erklärungen**: Wenn du dieses Symbol siehst, gibt es etwas zu lernen! |
+|<img src="./assets/I3.png" width="100">|**Rechnungen:** Hier gibt es was zu Rechnen. Nimm einen Stift und ein Papier und knobel los. |
+|<img src="./assets/I4.png" width="100">|**Vorsicht:** Berühre die Glasoberflächen nicht mit den Fingern! |
+|<img src="./assets/I5.png" width="100">|**Reinigung der Linsen:** Wenn du die Linse berit berührt hat, kannst du sie mit einem Brillentuch reinigen. |
 
 <p align="center">
-<img src="./ASSETS/I6.png" width="700">
+<img src="./assets/I6.png" width="700">
 </p>
 
 <!-- ------------------------ -->
@@ -135,7 +135,7 @@ Nimm einen oder mehrere der Würfel in denen eine Linse steckt und schaue dir da
 
 
 <p align="center">
-<img src="./ASSETS/8.png" width="300">
+<img src="./assets/8.png" width="300">
 </p>
 
 <!-- ------------------------ -->
@@ -149,11 +149,11 @@ Die **Brennweite** einer Linse entspricht hier der Distanz von der Linse zur Bre
 ### Sammellinsen
 
 <p align="center">
-<img src="./ASSETS/9.png" width="400">
+<img src="./assets/9.png" width="400">
 </p>
 
 <p align="center">
-<img src="./ASSETS/11.png" width="400">
+<img src="./assets/11.png" width="400">
 </p>
 
 Sammellinsen brechen die Lichtstrahlen, die parallel zur optische Achse laufen, in einem Punkt, der Brennpunkt gennant wird.
@@ -162,11 +162,11 @@ Sammellinsen brechen die Lichtstrahlen, die parallel zur optische Achse laufen, 
 ### Zerstreuungslinsen
 
 <p align="center">
-<img src="./ASSETS/10.png" width="400">
+<img src="./assets/10.png" width="400">
 </p>
 
 <p align="center">
-<img src="./ASSETS/12.png" width="400">
+<img src="./assets/12.png" width="400">
 </p>
 
 Die Zerstreuungslinsen brechen die Lichtstrahlen, die parallel zur optische Achse laufen, als würden einem Punkt entspringen, der „virtuellen“ Brennpunkt gennant wird.
@@ -209,7 +209,7 @@ Duration: 2
 Nimm jetzt die Linsen-Würfel zur Hand. Versuche, mit der passenden Linse die jeweilige Angabe über Brennweite in den abgebildeten Würfeln zu entziffern. Bewege die Linse über der Schrift bis sie die gleiche Größe hat wie der Text "UC2".
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_0.png" width="800">
+<img src="./assets/UC2_minibox_0.png" width="800">
 </p>
 
 <div class="alert-info">
@@ -234,7 +234,7 @@ Duration: 2
 
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_2.png" width="800">
+<img src="./assets/UC2_minibox_2.png" width="800">
 </p>
 
 
@@ -256,7 +256,7 @@ Duration: 2
 Im Fall der Zerstreuungslinse benutzen wir die gleiche Methode, um den Strahlengang abzubilden. Anders als im Fall der Sammellinse ist das Bild immer verkleinert und virtuell. Die Vergrößerung ist von der Position des Gegenstands vor der Linse abhängig. Anders als bei der Sammellinse entsteht das Bild auf der Objektseite und heißt damit virtuelles Bild. Du kannst es direkt mit deinen Augen sehen aber nicht auf einen Bildschirm projizieren.
 
 <p align="center">  
-<img src="./ASSETS/UC2_minibox_3.png" width="800">
+<img src="./assets/UC2_minibox_3.png" width="800">
 </p>
 
 <div class="alert-success">
@@ -282,7 +282,7 @@ Duration: 2
 Nimm den UC2 Linsen-Würfel mit der Brennweite f = 40 mm und benutze ihn als eine Lupe.
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_4.png" width="400">
+<img src="./assets/UC2_minibox_4.png" width="400">
 </p>
 
 <div class="alert-info">
@@ -301,7 +301,7 @@ Mit die Sammellinsen hängt die Abbildung und die Vergrößerung von der Positio
 
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_5.png" width="800">
+<img src="./assets/UC2_minibox_5.png" width="800">
 </p>
 
 Wenn der Abstand zwischen Objekt und Linse mehr als dem doppelten der Brennweite der Linse entspricht, dann ist das Bild …
@@ -348,7 +348,7 @@ Wenn der Abstand zwischen Objekt und Linse weniger als der Brennweite der Linse 
 - Virtuell
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_6.png" width="800">
+<img src="./assets/UC2_minibox_6.png" width="800">
 </p>
 
 <div class="alert-success">
@@ -359,7 +359,7 @@ Berechne die Vergrößerung der Lupe mit der folgenden Formel:
 
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_7.png" width="200">
+<img src="./assets/UC2_minibox_7.png" width="200">
 </p>
 
 250 𝑚𝑚 ist die Entfernung der deutlichen Sehweite – also der Abstand zwischen Objekt und Auge bei dem die meisten Menschen gut lesen können. Mehr dazu später in der „Akkommodation“ des Auges.
@@ -376,7 +376,7 @@ Nimm dir den UC2-Linsenwürfel mit der Brennweite 𝑓=40𝑚𝑚 und platziere 
 
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_8.png" width="800">
+<img src="./assets/UC2_minibox_8.png" width="800">
 </p>
 
 <div class="alert-success">
@@ -397,23 +397,23 @@ Schiebe die Linse in dem Würfel hin und her und beobachte, wann das Bild scharf
 ## Wie funktioniert ein Kinoprojektor?
 Duration: 2
 <p align="center">
-<img src="./ASSETS/UC2_minibox_9.png" width="800">
+<img src="./assets/UC2_minibox_9.png" width="800">
 </p>
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_10.png" width="800">
+<img src="./assets/UC2_minibox_10.png" width="800">
 </p>
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_11.png" width="800">
+<img src="./assets/UC2_minibox_11.png" width="800">
 </p>
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_12.png" width="800">
+<img src="./assets/UC2_minibox_12.png" width="800">
 </p>
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_13.png" width="800">
+<img src="./assets/UC2_minibox_13.png" width="800">
 </p>
 
 
@@ -424,7 +424,7 @@ Duration: 10
 Nimm dir den UC2-Linsenwürfel mit der Brennweite 𝑓=40𝑚𝑚 und platziere ihn hinter den Probenhalterwürfel. Der Abstand zwischen dem Objekt und der Linse (also die Gegenstandsweite g) sollte ca. 50 mm entsprechen. Wenn du nun mit der Taschenlampe das Objekt beleuchtest, wirst du es in einem Abstand von ca. 200 mm auf der Wand scharf sehen. Ein Kinoprojektor hat statt des Objekts einen Filmstreifen und natürlich eine viel stärkere Lichtquelle.
 
 <p align="center">
-<img src="./ASSETS/13.png" width="400">
+<img src="./assets/13.png" width="400">
 </p>
 
 
@@ -433,19 +433,11 @@ Nimm dir den UC2-Linsenwürfel mit der Brennweite 𝑓=40𝑚𝑚 und platziere 
 Duration: 2
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_14.png" width="800">
+<img src="./assets/UC2_minibox_14.png" width="800">
 </p>
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_15.png" width="800">
-</p>
-
-<!-- ------------------------ -->
-## Was kann eine Linse?
-Duration: 2
-
-<p align="center">
-<img src="./ASSETS/UC2_minibox_16.png" width="800">
+<img src="./assets/UC2_minibox_15.png" width="800">
 </p>
 
 <!-- ------------------------ -->
@@ -453,7 +445,7 @@ Duration: 2
 Duration: 2
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_17.png" width="800">
+<img src="./assets/UC2_minibox_16.png" width="800">
 </p>
 
 <!-- ------------------------ -->
@@ -461,7 +453,7 @@ Duration: 2
 Duration: 2
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_18.png" width="800">
+<img src="./assets/UC2_minibox_17.png" width="800">
 </p>
 
 <!-- ------------------------ -->
@@ -469,11 +461,7 @@ Duration: 2
 Duration: 2
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_19.png" width="800">
-</p>
-
-<p align="center">
-<img src="./ASSETS/UC2_minibox_20.png" width="800">
+<img src="./assets/UC2_minibox_18.png" width="800">
 </p>
 
 <!-- ------------------------ -->
@@ -481,7 +469,11 @@ Duration: 2
 Duration: 2
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_21.png" width="800">
+<img src="./assets/UC2_minibox_19.png" width="800">
+</p>
+
+<p align="center">
+<img src="./assets/UC2_minibox_20.png" width="800">
 </p>
 
 <!-- ------------------------ -->
@@ -489,7 +481,7 @@ Duration: 2
 Duration: 2
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_22.png" width="800">
+<img src="./assets/UC2_minibox_21.png" width="800">
 </p>
 
 <!-- ------------------------ -->
@@ -497,11 +489,7 @@ Duration: 2
 Duration: 2
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_23.png" width="800">
-</p>
-
-<p align="center">
-<img src="./ASSETS/UC2_minibox_24.png" width="800">
+<img src="./assets/UC2_minibox_22.png" width="800">
 </p>
 
 <!-- ------------------------ -->
@@ -509,11 +497,23 @@ Duration: 2
 Duration: 2
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_25.png" width="800">
+<img src="./assets/UC2_minibox_23.png" width="800">
 </p>
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_26.png" width="800">
+<img src="./assets/UC2_minibox_24.png" width="800">
+</p>
+
+<!-- ------------------------ -->
+## Was kann eine Linse?
+Duration: 2
+
+<p align="center">
+<img src="./assets/UC2_minibox_25.png" width="800">
+</p>
+
+<p align="center">
+<img src="./assets/UC2_minibox_26.png" width="800">
 </p>
 
 <!-- ------------------------ -->
@@ -522,15 +522,15 @@ Duration: 2
 
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_27.png" width="800">
+<img src="./assets/UC2_minibox_27.png" width="800">
 </p>
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_28.png" width="800">
+<img src="./assets/UC2_minibox_28.png" width="800">
 </p>
 
 <p align="center">
-<img src="./ASSETS/UC2_minibox_29.png" width="800">
+<img src="./assets/UC2_minibox_29.png" width="800">
 </p>
 
 

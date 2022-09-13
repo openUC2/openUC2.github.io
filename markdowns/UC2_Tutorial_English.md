@@ -1,17 +1,17 @@
 
 
 
-summary: UC2 Anleitung für die miniBOX
-id: uc2-tutorial-minibox
-categories: miniBOX
-tags: minibox
-status: Published
+summary: UC2 instructions for the miniBOX
+id: uc2-tutorial-minibox-eng
+Categories: miniBOX
+tags: mini box
+Status: Published
 authors: Benedict
 Feedback Link: https://youseetoo.org
 
 
-<span style="color:#85B918"> __YOU\.__ </span>  <span style="color:#000000">  </span>
-<span style="color:#1F9C7C"> __SEE\.__ </span>  <span style="color:#000000">  </span>
+<span style="color:#85B918"> __YOU\.__ </span> <span style="color:#000000"> </span>
+<span style="color:#1F9C7C"> __SEE\.__ </span> <span style="color:#000000"> </span>
 <span style="color:#023773"> __TOO\.__ </span>
 
 <p align="left">
@@ -21,10 +21,10 @@ Feedback Link: https://youseetoo.org
 
 
 
-# UC2 Anleitung für die miniBOX
+# UC2 instructions for the miniBOX
 
-<!-- ------------------------ -->
-### Wa wirst du lernen?
+<!----------------------------------------->
+### What will you learn?
 - how to set the amount of time each slide will take to finish
 - how to include code snippets
 - how to hyperlink items
@@ -32,121 +32,121 @@ Feedback Link: https://youseetoo.org
 - other stuff
 
 
-<!-- ------------------------ -->
-## Was ist in der MiniBOX?
+<!----------------------------------------->
+## What's in the MiniBOX?
 Duration: 1
 
-**Probenhalter:** hält ein Objekt fest in einem Würfel\
-**Linse:** beeinflusst die Weise wie das Licht propagiert (ausgebreitet) wird\
-**Spiegel:** Reflektiert das Licht\
-**Mikroskopobjektiv:** ein spezielles Linsensystem, welches ein Objekt vergrößert
+**Sample holder:** holds an object in a cube\
+**Lens:** affects the way light is propagated (spread out)\
+**Mirror:** Reflects the light\
+**Microscope objective:** a special lens system that enlarges an object
 
 <p align="center">
 <img src="./assets/1.png" width="500">
 </p>
 
-<!-- ------------------------ -->
-## Was ist UC2?
+<!----------------------------------------->
+## What is UC2?
 Duration: 2
 
-Das Kernelement des UC2-Projekts ist ein einfacher Würfel.
-Der Würfel besteht aus zwei Hälften und beherbergt einen verschiebbaren Einsatz.
-Der Einsatz kann verschiedene optische Komponenten (z.B. Linsen, Spiegel) halten, womit sich mit jedem Würfel unterschiedliche Funktionen realisieren lassen.
+The core element of the UC2 project is a simple cube.
+The cube consists of two halves and houses a sliding insert.
+The insert can hold various optical components (e.g. lenses, mirrors), which means that different functions can be implemented with each cube.
 
-### Würfeltyp 1: Spritzguss mit Steckverbindung
+### Cube type 1: injection molded with plug connection
 
-**Grundplatte**
+**Baseplate**
 
 <p align="center">
 <img src="./assets/2.png" width="300">
 </p>
 
-**Grundplatte**
+**Baseplate**
 
-Der Würfel lässt sich auf eine Grundplatte montieren. Die Grundplattenmodule lassen sich wie Puzzle zusammenstecken.
+The cube can be mounted on a base plate. The base plate modules can be put together like a puzzle.
 
 <p align="center">
 <img src="./assets/3.png" width="300">
 </p>
 
 
-<!-- ------------------------ -->
-## UC2 zum Selberdrucken
+<!----------------------------------------->
+## UC2 for printing yourself
 Duration: 3
 
-Der UC2-Würfel lässt sich auch 3D-drucken. Er sieht genauso aus wie das Spritzgussmodell, besteht hier aber aus einem Würfel-Deckel und dem Würfel-Körper, die mit Schrauben zusammengehalten werden. Die Schrauben eignen sich super dafür, auf die magnetischen Platte gesteckt zu werden. Durch Kombination verschiedener Würfelmodule lassen sich ganz einfach verschiedene optische Aufbauten zusammenbauen. Mit jedem Würfel kann eine neue Funktion hinzugefügt werden. Deiner Kreativität sind keine Grenzen gesetzt.
+The UC2 cube can also be 3D printed. It looks the same as the injection molded model, but here it consists of a cube lid and the cube body, which are held together with screws. The screws are great for being put on the magnetic plate. By combining different cube modules, different optical structures can be easily assembled. A new function can be added with each dice. Your creativity knows no limits.
 
-### Würfeltyp 2: 3D gedruckt mit Magnetverbindung
+### Cube type 2: 3D printed with magnetic connection
 
-**Würfel**
+**Dice**
 
 <p align="center">
 <img src="./assets/4.png" width="300">
 </p>
 
-**Grundplatte mit Magneten**
+**Base plate with magnets**
 
-In der 3D gedruckten Grundplatte sind kleine Kugelmagnete auf die die Würfel gesteckt werden.
+In the 3D printed base plate there are small spherical magnets on which the cubes are placed.
 
 <p align="center">
 <img src="./assets/5.png" width="300">
 </p>
 
-Willst du mehr Würfel haben? Dann kannst du sie selbst bauen. Du findest alles [hier](github.com/openUC2/UC2-GIT)
+Want more dice? Then you can build them yourself. You can find everything [here](github.com/openUC2/UC2-GIT)
 
 
-<!-- ------------------------ -->
-## So passen die Würfel zusammen
+<!----------------------------------------->
+## This is how the dice fit together
 Duration: 1
 
-Achte darauf, dass die Würfel richtig auf der Platte stecken und nicht verkippt sind. Am Ende ist es wichtig, dass die Einsätze an der richtigen Stelle sitzen.
+Make sure that the cubes are placed correctly on the plate and are not tilted. In the end it is important that the inserts are in the right place.
 
 <p align="center">
 <img src="./assets/6.png" width="300">
 </p>
 
-Wenn du kein scharfes Bild siehst, verschiebe die Einsätze (z.B. Linse) so lange, bis du es klar siehst. Der grüne Pfeil im Bild zeigt dir, wie das geht.
+If you don't see a sharp image, move the inserts (e.g. lens) until you see it clearly. The green arrow in the picture shows you how to do this.
 
 <p align="center">
 <img src="./assets/7.png" width="300">
 </p>
 
-<!-- ------------------------ -->
-## Was bedeuten die Symbole?
+<!----------------------------------------->
+## What do the symbols mean?
 Duration: 2
 
 |||
 |----|-----|
-|<img src="./assets/I1.png" width="200">|Experiment Wenn du diesen Block siehst, gibt es etwas zu experimentieren! Auf diesen Block kannst du einen UC2 Würfel legen. |
-|<img src="./assets/I2.png" width="100">|**Erklärungen**: Wenn du dieses Symbol siehst, gibt es etwas zu lernen! |
-|<img src="./assets/I3.png" width="100">|**Rechnungen:** Hier gibt es was zu Rechnen. Nimm einen Stift und ein Papier und knobel los. |
-|<img src="./assets/I4.png" width="100">|**Vorsicht:** Berühre die Glasoberflächen nicht mit den Fingern! |
-|<img src="./assets/I5.png" width="100">|**Reinigung der Linsen:** Wenn du die Linse berit berührt hat, kannst du sie mit einem Brillentuch reinigen. |
+|<img src="./assets/I1.png" width="200">|Experiment If you see this block, there is something to experiment with! You can place a UC2 cube on this block. |
+|<img src="./assets/I2.png" width="100">|**Explanations**: If you see this icon, there's something to learn! |
+|<img src="./assets/I3.png" width="100">|**Invoices:** There is something to calculate here. Take a pen and paper and start puzzles. |
+|<img src="./assets/I4.png" width="100">|**Caution:** Do not touch the glass surfaces with your fingers! |
+|<img src="./assets/I5.png" width="100">|**Cleaning the lenses:** If you have already touched the lens, you can clean it with a glasses cloth. |
 
 <p align="center">
 <img src="./assets/I6.png" width="700">
 </p>
 
-<!-- ------------------------ -->
-## Was kann eine Linse?
+<!----------------------------------------->
+## What can a lens do?
 Duration: 2
 
-Nimm einen oder mehrere der Würfel in denen eine Linse steckt und schaue dir das hier abgebildet UC2 Symbol dadurch an. Halte den Würfel dabei in der Hand und verändere den Abstand zwischen der Linse und dem Bild.  
+Take one or more of the cubes that have a lens in them and look at the UC2 symbol shown here. Hold the cube in your hand and change the distance between the lens and the image.
 
 
 <p align="center">
 <img src="./assets/8.png" width="300">
 </p>
 
-<!-- ------------------------ -->
-## Linsen
+<!----------------------------------------->
+## Lenses
 Duration: 2
 
-In der Strahlenoptik wird das Licht als Strahlenbündel (Pfeile) dargestellt, was eine Vereinfachung der physikalischen Eigenschaften von Licht mit sich bringt.  Ein Strahl hat eine Richtung und wird daher mit einem Pfeil gezeichnet. Eine Linse „bricht“ denn Strahl und ändert so seine Richtung.
+In ray optics, light is represented as a bundle of rays (arrows), which simplifies the physical properties of light. A ray has a direction and is therefore drawn with an arrow. A lens "refracts" the beam, changing its direction.
 
-Die **Brennweite** einer Linse entspricht hier der Distanz von der Linse zur Brennebene, auf der der Brennpunkt liegt. Sie wird in Millimeter angegeben (f = mm).
+The **focal length** of a lens corresponds to the distance from the lens to the focal plane on which the focal point lies. It is given in millimeters (f = mm).
 
-### Sammellinsen
+### Converging lenses
 
 <p align="center">
 <img src="./assets/9.png" width="400">
@@ -156,10 +156,10 @@ Die **Brennweite** einer Linse entspricht hier der Distanz von der Linse zur Bre
 <img src="./assets/11.png" width="400">
 </p>
 
-Sammellinsen brechen die Lichtstrahlen, die parallel zur optische Achse laufen, in einem Punkt, der Brennpunkt gennant wird.
+Converging lenses refract the rays of light traveling parallel to the optical axis at a point called the focal point.
 
 
-### Zerstreuungslinsen
+### Diverging lenses
 
 <p align="center">
 <img src="./assets/10.png" width="400">
@@ -169,61 +169,61 @@ Sammellinsen brechen die Lichtstrahlen, die parallel zur optische Achse laufen, 
 <img src="./assets/12.png" width="400">
 </p>
 
-Die Zerstreuungslinsen brechen die Lichtstrahlen, die parallel zur optische Achse laufen, als würden einem Punkt entspringen, der „virtuellen“ Brennpunkt gennant wird.
+The diverging lenses refract the rays of light traveling parallel to the optical axis as if they originated from a point called the "virtual" focus.
 
 
-<!-- ------------------------ -->
-## Linsen „brechen“ die Lichtstrahlen
+<!----------------------------------------->
+## Lenses “refract” the rays of light
 
 Duration: 2
 
 [comment]: <> (Page 10)
 
-Die Brennweite der Linse findest du als eine gedruckte Nummer auf den Linsenhaltern. Bie MiniBOX erhält eine 100-mm-Sammellinse, zwei 40-mm-Sammellinse und eine -50-mm-Zersteruungslinse. Die Zahlen geben die Brennweite an.
+You can find the focal length of the lens as a printed number on the lens holder. The MiniBOX receives a 100mm converging lens, two 40mm converging lenses and a -50mm negative lens. The numbers indicate the focal length.
 
-Die Sammellinse heißt auch positive oder konvexe Linse. Der mittlere Teil der Linse ist immer dicker als der Rand.
-
-<div class="alert-success">
-Mit der Sammellinse wird das Bild vergrößert. Die Vergrößerung ist für die 40-mm-Linse und die 100-mm-Linse unterschiedlich.  Das Bild kann aufrecht oder umgekehrt sein.
-</div><br/>
-
-Die Zerstreuungslinse (Streulinse) heißt manchmal auch negative oder konkave Linse. Der mittlere Teil der Linse ist immer dünner als der Rand.
+The converging lens is also called a positive or convex lens. The middle part of the lens is always thicker than the edge.
 
 <div class="alert-success">
-Mit der Zerstreuungslinse (hier: -50-mm-Linse) ist das Bild immer verkleinert und immer aufrecht
+The converging lens enlarges the image. The magnification is different for the 40mm lens and the 100mm lens. The image can be upright or inverted.
 </div><br/>
 
-Wir gehen davon aus, dass unsere Linsen so genannte "dünne Linsen" sind. Das bedeutet, dass wir sie als eine Ebene betrachten können und uns nicht um ihre Dicke kümmern. Das macht Erklärungen und Berechnungen viel einfacher.
+The negative lens (spreading lens) is sometimes also called a negative or concave lens. The middle part of the lens is always thinner than the edge.
 
-<div class="alert-info">
-Haben die Antworten noch mehr Fragen aufgeworfen? Dann fahre, um herauszufinden, wie genau Linsen funktionieren…
+<div class="alert-success">
+With the negative lens (here: -50 mm lens) the image is always reduced and always upright
 </div><br/>
 
-<!-- ------------------------ -->
-## Linsen- Abbildung
+We assume that our lenses are so-called "thin lenses". This means we can consider them as one plane and not care about their thickness. This makes explanations and calculations much easier.
+
+<div class="alert info">
+Did the answers raise any more questions? Then drive to find out exactly how lenses work...
+</div><br/>
+
+<!----------------------------------------->
+## Lens image
 
 Duration: 2
 
 [comment]: <> (Page 11)
 
-Nimm jetzt die Linsen-Würfel zur Hand. Versuche, mit der passenden Linse die jeweilige Angabe über Brennweite in den abgebildeten Würfeln zu entziffern. Bewege die Linse über der Schrift bis sie die gleiche Größe hat wie der Text "UC2".
+Now take the lentil cubes. With the right lens, try to decipher the focal length information in the cubes shown. Move the lens over the writing until it is the same size as the "UC2" text.
 
 <p align="center">
 <img src="./assets/UC2_minibox_0.png" width="800">
 </p>
 
-<div class="alert-info">
-Kannst du den Text in der gleichen Größe und Ausrichtung wie das "UC2" sehen? Was passiert, wenn du den Abstand zwischen der Linse und dem Bild veränderst?
+<div class="alert info">
+Can you see the text the same size and orientation as the "UC2"? What happens when you change the distance between the lens and the image?
 </div><br/>
 
 <div class="alert-success">
-Was passiert, wenn du eine Linse mit der falschen Brennweite verwendest?
+What happens if you use a lens with the wrong focal length?
 </div><br/>
 
 
 
-<!-- ------------------------ -->
-## Abbildung eines Gegenstandes durch eine positive Linse
+<!----------------------------------------->
+## Image of an object through a positive lens
 
 Duration: 2
 
@@ -238,64 +238,64 @@ Duration: 2
 </p>
 
 
-Als Beispiel nehmen wir die Sammellinse. Wir starten mit einem Gegenstand (grüner Pfeil) und schauen, was mit den Strahlen passiert, die von der Spitze aus starten. Es gibt unendlich viele Strahlen in alle Richtung, für das Zeichnen der Abbildung reichen uns aber die drei folgenden Strahlen:
+Let's take the converging lens as an example. We start with an object (green arrow) and see what happens to the rays that start from the top. There are infinitely many rays in all directions, but for drawing the figure the following three rays will suffice:
 
-1. Der **Mittelpunktstrahl** (orange) geht ungestört durch das Zentrum der Linse.
-2. Der **Brennpunktstrahl** (gelb) startet auch von der Spitze des Pfeils, geht aber durch den objektseitigen Brennpunkt in der Brennweite f. Nach der Linse verläuft er auf gleicher Höhe weiter, aber nun parallel zur optischen Achse.
-3. Der **Parallelstrahl** (rot) läuft zunächst parallel zur optischen Achse, wird dann aber an der Linse so gebrochen, dass er durch den bildseitigen Brennpunkt in der Brennweite f verläuft.
+1. The **centre beam** (orange) passes undisturbed through the center of the lens.
+2. The **focus ray** (yellow) also starts from the tip of the arrow, but goes through the object-side focus at focal length f. After the lens, it continues at the same height, but now parallel to the optical axis.
+3. The **parallel beam** (red) initially runs parallel to the optical axis, but is then refracted at the lens in such a way that it passes through the focal point on the image side at focal length f.
 
-Das Bild entsteht dort, wo sich alle Strahlen schneiden. Das Prinzip macht man für alle Punkte bzw. die davon ausgehenden Strahlen eines Objekts. Je nach dem, welche Linse benutzt wird und je nach Position des Objekts verändern sich die Eigenschaften des Bildes, die Große, Orientierung und Position.
+The image is formed where all the rays intersect. The principle is used for all points or the rays of an object emanating from them. Depending on which lens is used and depending on the position of the object, the properties of the image change, such as size, orientation and position.
 
-<!-- ------------------------ -->
-## Abbildung eines Gegenstandes durch eine negative Linse
+<!----------------------------------------->
+## Image of an object through a negative lens
 
 Duration: 2
 
 [comment]: <> (Page 13)
 
-Im Fall der Zerstreuungslinse benutzen wir die gleiche Methode, um den Strahlengang abzubilden. Anders als im Fall der Sammellinse ist das Bild immer verkleinert und virtuell. Die Vergrößerung ist von der Position des Gegenstands vor der Linse abhängig. Anders als bei der Sammellinse entsteht das Bild auf der Objektseite und heißt damit virtuelles Bild. Du kannst es direkt mit deinen Augen sehen aber nicht auf einen Bildschirm projizieren.
+In the case of the negative lens, we use the same method to image the ray path. Unlike the case of the converging lens, the image is always reduced and virtual. Magnification depends on the position of the object in front of the lens. Unlike the converging lens, the image is created on the object side and is therefore called a virtual image. You can see it directly with your eyes but not project it onto a screen.
 
-<p align="center">  
+<p align="center">
 <img src="./assets/UC2_minibox_3.png" width="800">
 </p>
 
 <div class="alert-success">
-Die Art und Weise, wie eine Linse ein Bild erzeugt, ist vorhersehbar, wenn man die Brennweite dieser Linse kennt. Deshalb muss ein bestimter Abstand eingehalten werden, damit du die Schrift mit derangegebenen Linse auf dem vorhergehenden Blatt erkennst.
+The way a lens creates an image is predictable by knowing the focal length of that lens. Therefore, a certain distance must be maintained so that you can see the writing with the specified lens on the previous sheet.
 </div><br/>
 
 <div class="alert-success">
-Die Vergrößerung und der Ort, an dem das Bild entsteht, hängen von der Brennweite der Linse und vom Abstand zwischen Linse und Objekt ab.
+The magnification and the location where the image is formed depend on the focal length of the lens and the distance between the lens and the object.
 </div><br/>
 
 <div class="alert-success">
-Mit der Zerstreuungslinse (f = -50 mm) siehst du  immer ein verkleinertes virtuelles Bild. Ein virtuelles Bild kann nur mit dem Auge betrachtet werden. Bislang haben wir nur virtuelle
-Bilder gesehen.
+With the diverging lens (f = -50 mm) you always see a reduced virtual image. A virtual image can only be viewed with the eye. So far we only have virtual ones
+seen pictures.
 </div><br/>
 
-<!-- ------------------------ -->
-## Die Sammellinse als Lupe
+<!----------------------------------------->
+## The converging lens as a magnifying glass
 
 Duration: 2
 
 [comment]: <> (Page 14)
 
-Nimm den UC2 Linsen-Würfel mit der Brennweite f = 40 mm und benutze ihn als eine Lupe.
+Take the UC2 lens cube with focal length f=40mm and use it as a magnifying glass.
 
 <p align="center">
 <img src="./assets/UC2_minibox_4.png" width="400">
 </p>
 
-<div class="alert-info">
-Kannst du durch die Sammellinse die kleine Buchstaben lesen? Was steht dort geschrieben?  
+<div class="alert info">
+Can you read the small letters through the converging lens? What is written there?
 </div><br/>
 
 
-<!-- ------------------------ -->
-## Das machen Sammellinsen
+<!----------------------------------------->
+## That's what converging lenses do
 
 Duration: 2
 
-Mit die Sammellinsen hängt die Abbildung und die Vergrößerung von der Position des Gegenstands ab.
+With the converging lenses, the image and the magnification depend on the position of the object.
 
 [comment]: <> (Page 15)
 
@@ -304,75 +304,75 @@ Mit die Sammellinsen hängt die Abbildung und die Vergrößerung von der Positio
 <img src="./assets/UC2_minibox_5.png" width="800">
 </p>
 
-Wenn der Abstand zwischen Objekt und Linse mehr als dem doppelten der Brennweite der Linse entspricht, dann ist das Bild …
-- Umgekehrt
-- Seitenvertauscht
-- Verkleinert
-- Reell
+If the distance between the object and the lens is more than twice the focal length of the lens, then the image is...
+- Vice versa
+- Swapped sides
+- Reduced
+- Real
 
 
-Wenn der Abstand zwischen Objekt und Linse genau der doppelten der Brennweite der Linse entspricht, dann ist das Bild…
-- Umgekehrt
-- Seitenvertauscht
-- Gleich groß
-- Reell
+If the distance between the object and the lens is exactly twice the focal length of the lens, then the image is...
+- Vice versa
+- Swapped sides
+- Same size
+- Real
 
-Wenn der Abstand zwischen Objekt und Linse mehr als die Brennweite und weniger als dem doppelten der Brennweite der Linse entspricht, dann ist das Bild ist…
-- Umgekehrt
-- Seitenvertauscht
-- Vergrößert
-- Reell
+If the distance between the object and the lens is more than the focal length and less than twice the focal length of the lens, then the image is...
+- Vice versa
+- Swapped sides
+- Magnified
+- real
 
-### Gegenstandsweite (g)
-Der Abstand zwischen dem Objekt und der Linsenebene wird als g bezeichnet.
+### Object distance (g)
+The distance between the object and the lens plane is called g.
 
-### Bildweite (b)
-Der Abstand zwischen der Linsenebene und dem von der Linse erzeugten Bild wird als b bezeichnet.
+### Image width (b)
+The distance between the lens plane and the image formed by the lens is denoted as b.
 
-Die Sammellinse kann ein reelles Bild erzeugen. Das reelle Bild sieht man dann auf einem Bildschirm.
+The converging lens can produce a real image. The real image can then be seen on a screen.
 
 
-<!-- ------------------------ -->
-## Darum vergrößert die Lupe
+<!----------------------------------------->
+## That's why the magnifying glass enlarges
 
 Duration: 2
 
-### Lupeneffekt!
+### Magnifying glass effect!
 
 [comment]: <> (Page 16)
 
-Wenn der Abstand zwischen Objekt und Linse weniger als der Brennweite der Linse entspricht, dann ist das Bild ist…
-- Aufrecht
-- Seitenrichtig
-- Vergrößert
-- Virtuell
+If the distance between the object and the lens is less than the focal length of the lens, then the image is...
+- upright
+- right side up
+- Magnified
+- Virtual
 
 <p align="center">
 <img src="./assets/UC2_minibox_6.png" width="800">
 </p>
 
 <div class="alert-success">
-Die Lupe ist das einfachste aller optischen Geräte, denn es bloß aus einer einfachen Sammellinse mit passender Brennweite besteht. Warum vergrößert der Würfel mit der 50𝑚𝑚 den kleinen Text? Befindet sich das Objekt vor der Brennweite der Linse – also weniger als 50 𝑚𝑚 vor der Linse – erzeugt die Linse ein virtuelles Bild, welches hinter dem eigentlichen Objekt liegt. Das Auge nimmt es vergrößert wahr. Schau dir dazu das Diagramm oben an.
+The magnifying glass is the simplest of all optical devices, since it consists only of a simple converging lens with a suitable focal length. Why does the cube with the 50 𝑚𝑚 enlarge the small text? If the object is in front of the focal length of the lens - i.e. less than 50 𝑚𝑚 in front of the lens - the lens creates a virtual image which is behind the actual object. The eye perceives it enlarged. Check out the diagram above.
 </div><br/>
 
-Berechne die Vergrößerung der Lupe mit der folgenden Formel:
+Calculate the magnification of the magnifying glass using the following formula:
 
 
 <p align="center">
 <img src="./assets/UC2_minibox_7.png" width="200">
 </p>
 
-250 𝑚𝑚 ist die Entfernung der deutlichen Sehweite – also der Abstand zwischen Objekt und Auge bei dem die meisten Menschen gut lesen können. Mehr dazu später in der „Akkommodation“ des Auges.
+250 𝑚𝑚 is the distance of clear visual range - i.e. the distance between the object and the eye at which most people can read well. More on this later in the “accommodation” of the eye.
 
 
-<!-- ------------------------ -->
-## Wie funktioniert ein Kinoprojektor?
+<!----------------------------------------->
+## How does a cinema projector work?
 Duration: 2
 
 
 [comment]: <> (Page 17)
 
-Nimm dir den UC2-Linsenwürfel mit der Brennweite 𝑓=40𝑚𝑚 und platziere ihn hinter den Probenhalterwürfel. Der Abstand zwischen dem Objekt und der Linse (also die Gegenstandsweite g) sollte ca. 50 mm entsprechen. Wenn du nun mit der Taschenlampe das Objekt beleuchtest, wirst du es in einem Abstand von ca. 200 mm auf der Wand scharf sehen. Ein Kinoprojektor hat statt des Objekts einen Filmstreifen und natürlich eine viel stärkere Lichtquelle.
+Take the UC2 lens cube with focal length 𝑓 =40 𝑚𝑚 and place it behind the sample holder cube. The distance between the object and the lens (i.e. the object distance g) should be approx. 50 mm. If you now illuminate the object with the flashlight, you will see it sharply at a distance of approx. 200 mm on the wall. A cinema projector has a film strip instead of the object and of course a much stronger light source.
 
 
 <p align="center">
@@ -380,37 +380,37 @@ Nimm dir den UC2-Linsenwürfel mit der Brennweite 𝑓=40𝑚𝑚 und platziere 
 </p>
 
 <div class="alert-success">
-Benutz eine Taschenlampe (z.b. von deinem Handy) als Lichtquelle und halt es vor das Objekt
+Use a flashlight (e.g. from your cell phone) as a light source and hold it in front of the object
 </div><br/>
 
 <div class="alert-success">
-Benutz das Bild oder den Text an dem Mikroskop-Objektträger als das Objekt
+Use the image or text on the microscope slide as the object
 </div><br/>
 
-<div class="alert-info">
-Wie ist das Bild orientiert?
-Schiebe die Linse in dem Würfel hin und her und beobachte, wann das Bild scharf ist. Finde das Bild für g = 50 mm, 60 mm, 65 mm und messe den Abstand zwischen der Linse und dem Bild.  
+<div class="alert info">
+How is the image oriented?
+Slide the lens back and forth in the cube and see when the image is in focus. Find the image for g = 50mm, 60mm, 65mm and measure the distance between the lens and the image.
 </div><br/>
 
 
-<!-- ------------------------ -->
-## Wie funktioniert ein Kinoprojektor?
+<!----------------------------------------->
+## How does a cinema projector work?
 Duration: 2
 
 <p align="center">
 <img src="./assets/UC2_minibox_9.png" width="800">
 </p>
 
-### Wo ist das Bild?
-Bei der Abbildung eines Gegenstands durch eine Sammellinse hängen Lage und Größe des Bildes von der Entfernung (g) des Gegenstands zur Linse und von deren Brennweite (f) ab.
-Die Linsengleichung beschreibt den Zusammenhang zwischen der Bildweite (b) und Objektweite (g):
+### Where is the picture?
+When an object is imaged through a converging lens, the position and size of the image depend on the distance (g) of the object to the lens and its focal length (f).
+The lens equation describes the relationship between image distance (b) and object distance (g):
 
 <p align="center">
 <img src="./assets/UC2_minibox_10.png" width="150">
 </p>
 
-### Wie groß ist das Bild?
-Die Vergrößerung des Objekts auf dem Schirm lässt sich einfach mit der folgenden Formel ausrechnen:
+### How big is the picture?
+The magnification of the object on the screen can easily be calculated using the following formula:
 
 <p align="center">
 <img src="./assets/UC2_minibox_11.png" width="150">
@@ -418,8 +418,8 @@ Die Vergrößerung des Objekts auf dem Schirm lässt sich einfach mit der folgen
 
 
 
-<!-- ------------------------ -->
-## So funktioniert der Projektor
+<!----------------------------------------->
+## How the projector works
 Duration: 2
 
 <p align="center">
@@ -427,13 +427,13 @@ Duration: 2
 </p>
 
 
-Prüfe, ob deine Beobachtung mit der Berechnung übereinstimmt
+Check if your observation agrees with the calculation
 
 <p align="center">
 <img src="./assets/UC2_minibox_12.png" width="150">
 </p>
 
-Berechne die Vergrößerung des Projektors für die verschiedenen Werte von  g und b.
+Calculate the magnification of the projector for the different values of g and b.
 
 
 <p align="center">
@@ -442,31 +442,31 @@ Berechne die Vergrößerung des Projektors für die verschiedenen Werte von  g u
 
 <div class="alert-success">
 
-Unsere Linse hat eine Brennweite von f= 40 mm.
+Our lens has a focal length of f= 40 mm.
 
-Für g = 50 mm → b = 200 mm
+For g = 50mm → b = 200mm
 
-Für g = 60 mm → b = 120 mm\
+For g = 60 mm → b = 120 mm\
 
-Für g = 65 mm → b = 104 mm\
+For g = 65 mm → b = 104 mm\
 </div><br/>
 
 <div class="alert-success">
-Der Projektor erzeugt immer ein vergrößertes, invertiertes (umgekehrtes)  Bild.
-Die Position des Bildes und seine Vergrößerung hängen von der Position und der Größe des Objekts ab.
+The projector always produces an enlarged, inverted (reversed) image.
+The position of the image and its magnification depend on the position and size of the object.
 </div><br/>
 
 
 
-<!-- ------------------------ -->
-## Was ist ein Galilei-Fernrohr?
+<!----------------------------------------->
+## What is a Galileo telescope?
 Duration: 10
 
-Stell die Linsen-Würfel auf das Blatt, wie in dem Diagramm gezeigt und schaure dann durch das Fernrohr in die Ferne.
+Place the lens cubes on the sheet as shown in the diagram, then peer through the telescope into the distance.
 
-<div class="alert-info">
-Wie sieht das Bild aus?
-Wie ist das Bild orientiert?
+<div class="alert info">
+What does the picture look like?
+How is the image oriented?
 </div><br/>
 
 <p align="center">
@@ -475,44 +475,44 @@ Wie ist das Bild orientiert?
 
 
 <div class="alert-success">
-Während du durch das Fernrohr schauest, passe die Abstände zwischen den Komponenten an, um ein scharfes Bild zu sehen!
+As you look through the telescope, adjust the distances between the components to see a sharp image!
 </div><br/>
 
 
-<!-- ------------------------ -->
-## Das ist ein Galilei-Fernrohr
+<!----------------------------------------->
+## This is a Galileo telescope
 Duration: 2
 
-Ein Fernrohr ist ein optisches Instrument, das entfernte Objekte um ein Vielfaches näher oder größer erscheinen lässt.
+A telescope is an optical instrument that makes distant objects appear many times closer or larger.
 
 
-Die Linse auf der Objektseite nennt man Objektiv.
+The lens on the object side is called the lens.
 
 <p align="center">
 <img src="./assets/UC2_minibox_16.png" width="800">
 </p>
 
-Die Linse, die dem Auge zugewandt ist nennt man Okular.
+The lens facing the eye is called the eyepiece.
 
-Das Galilei-Fernrohr wird auch in Operngläsern verwendet.
+The Galileo telescope is also used in opera glasses.
 
 
 <p align="center">
 <img src="./assets/UC2_minibox_17.png" width="800">
 </p>
 
-<!-- ------------------------ -->
-## So funktioniert das Galilei-Fernrohr
+<!----------------------------------------->
+## This is how the Galileo telescope works
 
 Duration: 2
 
-Wie lautet die Vergrößerung dieses Galilei-Fernrohrs?
+What is the magnification of this Galileo telescope?
 
 <p align="center">
 <img src="./assets/UC2_minibox_18.png" width="800">
 </p>
 
-Formel zur Berechnung der Vergrößerung
+Formula for calculating magnification
 
 <p align="center">
 <img src="./assets/UC2_minibox_19.png" width="150">
@@ -520,45 +520,45 @@ Formel zur Berechnung der Vergrößerung
 
 
 
-Mit diesem Fernrohr kann man keine sehr hohe Vergrößerung erreiche. Dafür ist es sehr kompakt.
+It is not possible to achieve very high magnification with this telescope. But it is very compact.
 
 <div class="alert-success">
-Das Bild ist immer
+The picture is always
 
-* Vergrößert mit der Vergrößerung aus obiger Formel
-* Aufrecht
-* Seitenrichtig
+* Magnified with the magnification from the formula above
+* Upright
+* Right reading
 
-Das Sichtfeld ist klein.
+The field of view is small.
 </div><br/>
 
 
 
-<!-- ------------------------ -->
-## Was ist ein Kepler-Fernrohr?
+<!----------------------------------------->
+## What is a Kepler telescope?
 Duration: 2
 
-Stell die Linsen in die richtige Positionen, wie in dem Diagramm gezeigt. Dann schaue durch das Fernrohr in die Ferne.
+Set the lenses in the correct positions as shown in the diagram. Then look through the telescope into the distance.
 
 <p align="center">
 <img src="./assets/UC2_minibox_20.png" width="800">
 </p>
 
-<div class="alert-info">
-Wie sieht das Bild aus?
-Wie ist das Bild orientiert?
+<div class="alert info">
+What does the picture look like?
+How is the image oriented?
 </div><br/>
 
 <div class="alert-success">
-Während du durch das Fernrohr schauest, variiere die Abstände zwischen den Komponenten um so ein scharfes Bild zu sehen!
+As you look through the telescope, vary the distances between the components to see such a sharp image!
 </div><br/>
 
 <p align="center">
 <img src="./assets/UC2_minibox_21.png" width="800">
 </p>
 
-<!-- ------------------------ -->
-## Das ist ein Kepler-Fernrohr
+<!----------------------------------------->
+## This is a Kepler telescope
 
 Duration: 2
 
@@ -566,14 +566,14 @@ Duration: 2
 <img src="./assets/UC2_minibox_22.png" width="800">
 </p>
 
-Diese Art von Fernrohr wird häufig in der Astronomie benutzt.
+This type of telescope is often used in astronomy.
 
 
-<!-- ------------------------ -->
-## So funktioniert das Kepler-Fernrohr
+<!----------------------------------------->
+## This is how the Kepler telescope works
 Duration: 2
 
-Was ist die Vergrößerung dieses Kepler-Fernrohrs?
+What is the magnification of this Kepler telescope?
 
 
 
@@ -581,31 +581,31 @@ Was ist die Vergrößerung dieses Kepler-Fernrohrs?
 <img src="./assets/UC2_minibox_24.png" width="800">
 </p>
 
-Formel zur Berechnung der Vergrößerung
+Formula for calculating magnification
 
 <p align="center">
 <img src="./assets/UC2_minibox_23.png" width="150">
 </p>
 
-Dieses Teleskop kann eine höhere Vergrößerung als das Galilei-Fernrohr erreichen. Es erzeugt aber ein umgekehrtes Bild. Für die Beobachtung der Sterne ist das aber kein Problem.
+This telescope can achieve a higher magnification than the Galilean telescope. But it creates the opposite picture. However, this is not a problem for observing the stars.
 
 <div class="alert-success">
-Das Bild ist immer
+The picture is always
 
-* Vergrößert mit der Vergrößerung aus der obiger Formel
-* Umgekehrt
-* Seitenvertauschet
+* Magnified by the magnification from the formula above
+* Vice versa
+* Sides reversed
 
-Das Sichtfeld ist
-größer als beim Galilei-Fernrohr.
+The field of view is
+larger than with the Galileo telescope.
 </div><br/>
 
-<!-- ------------------------ -->
-## Was ist ein Beobachtungsfernrohr?
+<!----------------------------------------->
+## What is a spotting scope?
 Duration: 2
 
-Das Beobachtungsfernrohr ist lang, deshalb ist das Schema nicht gleichgroß.
-Stell die Linsen in die richtige Positionen wie im Diagramm dargestellt und schaue durch das Fernrohr in die Ferne.
+The spotting scope is long, so the scheme is not the same size.
+Set the lenses in the correct positions as shown in the diagram and look into the distance through the telescope.
 
 
 <p align="center">
@@ -616,152 +616,152 @@ Stell die Linsen in die richtige Positionen wie im Diagramm dargestellt und scha
 <img src="./assets/UC2_minibox_26.png" width="800">
 </p>
 
-<div class="alert-info">
-Wie sieht das Bild hier aus im Vergleich zum Kepler-Fernrohr?
+<div class="alert info">
+How does the image here compare to the Kepler telescope?
 </div><br/>
 
 <div class="alert-success">
-Während du durch das Fernrohr schauest, passe die Abstände zwischen den Komponenten an, um ein scharfes Bild zu sehen!
+As you look through the telescope, adjust the distances between the components to see a sharp image!
 </div><br/>
 
 
 
-<!-- ------------------------ -->
-## So funktioniert das Beobachtungsfernrohr
+<!----------------------------------------->
+## This is how the spotting scope works
 Duration: 2
 
-Die Vergrößerung ist wie die des Kepler-Fernrohrs. Die Umkehrlinse verändert nur die Orientierung (das Bild wird umgekehrt), nicht die Vergrößerung.
+The magnification is like that of the Kepler telescope. The erecting lens only changes the orientation (the image is reversed), not the magnification.
 
 <p align="center">
 <img src="./assets/UC2_minibox_27.png" width="150">
 </p>
 
-Für terrestrische Beobachtungen ist ein aufrechtes Bild notwendig. Echte terrestrische Teleskope verwenden Prismensysteme, um das Bild zu drehen und kompakt zu halten.
+An upright image is necessary for terrestrial observations. True terrestrial telescopes use prism systems to rotate the image and keep it compact.
 
 <div class="alert-success">
-Das Bild ist
+The picture is
 
-*Vergrößert mit der gleichen Vergrößerung wie mit dem Keppler Fernrohr
-*Aufrecht
-*Seitenrichtig
+*Magnified at the same magnification as the Keppler telescope
+*Upright
+*mirrored
 </div><br/>
 
 
 
-<!-- ------------------------ -->
-## Lichtmikroskop mit „Unendlich-Optik“
+<!----------------------------------------->
+## Light microscope with "infinity optics"
 Duration: 2
 
-<div class="alert-info">
-Was passiert wenn man das Kepler-Fernrohr umdreht?
+<div class="alert info">
+What happens when you turn the Kepler telescope upside down?
 </div><br/>
 
-Stell das Objekt ca. 40 mm vor das Objektiv und finde das Bild ca. 100 mm hinter der Tubuslinse (mit einem Papier oder der Wand als Bildschirm), wie im Diagramm gezeigt. Bewege die Linsen so, dass du ein scharfes Bild erhältst.
+Place the object about 40mm in front of the lens and find the image about 100mm behind the tube lens (using a paper or the wall as a screen) as shown in the diagram. Move the lenses to get a sharp image.
 
 <p align="center">
 <img src="./assets/UC2_minibox_28.png" width="800">
 </p>
 
-<div class="alert-info">
-Platziere das Objekt mit dem Objektiv zusammen als eine Einheit auf das Papier.  Stell die Tubuslinse in einem Abstand von 100 mm zu deinem Bildschirm (Papier, Wand). Ändere die Entfernung zwischen den Linsen – ändert sich das Bild?
+<div class="alert info">
+Place the object with the lens on the paper as one unit. Place the tube lens at a distance of 100mm from your screen (paper, wall). Change the distance between the lenses - does the image change?
 </div><br/>
 
 
-<!-- ------------------------ -->
-## Das bedeutet „Unendlich-Optik“
+<!----------------------------------------->
+## This means "infinity optics"
 Duration: 2
 
-Ein Mikroskop ist ein Gerät, das es erlaubt, Objekte stark vergrößert anzusehen oder bildlich darzustellen.
+A microscope is a device that allows objects to be viewed or imaged at high magnification.
 
-Das Bild wird **Zwischenbild** genannt, da es häufig noch mit einem Okular weiter vergrößert wird.
+The image is called an **intermediate image** because it is often further enlarged with an eyepiece.
 
 
 <p align="center">
 <img src="./assets/UC2_minibox_29.png" width="800">
 </p>
 
-Das Objekt steht ungefähr in der objektseitigen Brennebene des Objektivs. Somit werden alle einfallenden Strahlen in ein paralleles Strahlenbündel hinter dem Objektiv umgewandelt. Das Objektiv hat eine kurze Brennweite..
+The object is roughly in the object-side focal plane of the lens. Thus, all incident rays are converted into a parallel bundle of rays behind the lens. The lens has a short focal length.
 
-Die Tubuslinse erzeugt ein reelles Bild indem sie parallelen Strahlen, die auf die Tubuslinse treffen, in ihrer Brennebene gesammelt werden. Wenn wir sie hinter dem Objektiv platzieren, wird das Objekt aus der Brennebene des Objektivs abgebildet.  Die Tubuslinse hat eine längere Brennweite als das Objektiv.
+The tube lens creates a real image by collecting parallel rays that hit the tube lens in its focal plane. If we place them behind the lens, the object will be imaged from the focal plane of the lens. The tube lens has a longer focal length than the objective.
 
-Das Bild in der Ebene des Zwischenbildes ist umgekehrt, seitenvertauscht, vergrößert und reell. Das reelle Bild kann man auf einem Bildschirm sehen.
+The image in the plane of the intermediate image is reversed, flipped, enlarged and real. The real image can be seen on a screen.
 
 
-<div class="alert-info">
+<div class="alert info">
 </div><br/>
 
-<!-- ------------------------ -->
-## Das bedeutet „Unendlich-Optik“
+<!----------------------------------------->
+## This means "infinity optics"
 Duration: 2
 
-Was ist die Vergrößerung des Bildes?
+What is the magnification of the image?
 
 <p align="center">
 <img src="./assets/UC2_minibox_30.png" width="800">
 </p>
 
-Vergrößerung des Bildes
+Magnification of the image
 
 <p align="center">
 <img src="./assets/UC2_minibox_31.png" width="150">
 </p>
 
 <div class="alert-success">
-Die Linsen des Kepler-Fernrohrs können auch für ein Mikroskop verwendet werden, aber in einer anderen Reihenfolge.
-Solange das Objekt in der Brennebene des Objektivs und der Bildschirm in der Brennebene der Tubuslinse ist, ist die Entfernung zwischen Objektiv und Tubuslinse egal, weil die Lichtstrahlen parallel sind.
+The lenses of the Kepler telescope can also be used for a microscope, but in a different order.
+As long as the object is in the focal plane of the lens and the screen is in the focal plane of the tube lens, the distance between the lens and tube lens does not matter because the light rays are parallel.
 </div><br/>
 
-<!-- ------------------------ -->
-## „Unendlich-Optik“-Mikroskop mit Okular
+<!----------------------------------------->
+## "Infinity optics" microscope with eyepiece
 Duration: 2
 
 <p align="center">
 <img src="./assets/UC2_minibox_34.png" width="800">
 </p>
 
-<div class="alert-info">
-Kannst du das mikroskopische Bild durch die Okularlinse mit dem Auge sehen? Welche Wirkung hat der Spiegel? Baue das Mikroskop ohne den Spiegel auf. Vergewissere dich, dass du nach wie vor zwei Leerräumen zwischen der Tubuslinse und dem Okular hast. Was beobachtest du dann?
+<div class="alert info">
+Can you see the microscopic image through the eyepiece lens with your eyes? What effect does the mirror have? Set up the microscope without the mirror. Make sure you still have two empty spaces between the tube lens and the eyepiece. Then what are you observing?
 </div><br/>
 
-<!-- ------------------------ -->
-## Wozu ist das Okular gut?
+<!----------------------------------------->
+## What is the eyepiece good for?
 Duration: 2
 
-Neuere Mikroskope sind mit einer sogenannten „Unendlich-Optik“ ausgestattet. In diesem Fall erzeugt das Objektiv kein reelles Zwischenbild. Das Licht verlässt das Objektiv als unendliche parallele Strahlen. Am Ende von dem „unendlichen“ Tubus befindet sich eine Tubuslinse. Diese erzeugt ein Zwischenbild, das dann wieder durch das Okular vergrößert wird.
+Newer microscopes are equipped with so-called "infinity optics". In this case, the lens does not produce a real intermediate image. The light exits the lens as infinite parallel rays. At the end of the "infinite" tube is a tube lens. This creates an intermediate image, which is then enlarged again through the eyepiece.
 
 
 <p align="center">
 <img src="./assets/UC2_minibox_35.png" width="800">
 </p>
 
-Das Bild hinter dem Okular ist umgekehrt, seitenvertauschet, vergrößert und virtuell. Das virtuelle Bild kann man mit dem Auge sehen.
+The image behind the eyepiece is reversed, reversed, enlarged and virtual. The virtual image can be seen with the eye.
 
-Diese Konfiguration ist in modernen Mikroskopen sehr nützlich, da zusätzliche Komponenten wie Filter zwischen Objektiv und Tubuslinse platziert werden können, ohne den optischen Pfad zu beeinträchtigen.
+This configuration is very useful in modern microscopes as it allows additional components such as filters to be placed between the objective and tube lens without affecting the optical path.
 
-Ein Filter kann dazu verwendet werden, die Helligkeit und Farbe des Bildes zu verändern.
+A filter can be used to change the brightness and color of the image.
 
-<div class="alert-info">
+<div class="alert info">
 </div><br/>
 
-<!-- ------------------------ -->
-## Dazu ist das Okular gut
+<!----------------------------------------->
+## The eyepiece is good for that
 Duration: 2
 
-Was ist die Vergrößerung nach dem Okular?
+What is the magnification after the eyepiece?
 
 
 <p align="center">
 <img src="./assets/UC2_minibox_36.png" width="800">
 </p>
 
-Gesamtvergrößerung
+overall magnification
 
 <p align="center">
 <img src="./assets/UC2_minibox_37.png" width="150">
 </p>
 
 <div class="alert-success">
-Ein Okular ist eigentlich bloß eine Linse, die das Zwischenbild vergrößert. Es bildet das virtuelle Bild so ab, dass du es mit dem Auge betrachten kannst.
+An eyepiece is actually just a lens that enlarges the intermediate image. It maps the virtual image in such a way that you can see it with your eyes.
 </div><br/>
 
 <p align="center">
@@ -769,17 +769,17 @@ Ein Okular ist eigentlich bloß eine Linse, die das Zwischenbild vergrößert. E
 </p>
 
 <div class="alert-success">
-Mit dem Spiegel kannst du nicht nur dich selbst sehen, sondern auch das einfallende Licht in eine beliebige Richtung reflektieren. So kannst du den optischen Weg falten und die Arbeit damit angenehmer zu gestalten. Der Spiegel hat keinen Einfluss auf die Vergrößerung, aber er dreht das Bild in eine Richtung.
+With the mirror you can not only see yourself, but also reflect the incoming light in any direction. So you can fold the optical path and make it more comfortable to work with. The mirror doesn't affect the magnification, but it does rotate the image in one direction.
 </div><br/>
 
-<!-- ------------------------ -->
-## Lichtmikroskop mit „Endlich-Optik“
+<!----------------------------------------->
+## Light microscope with "finite optics"
 Duration: 2
 
-Stell die Würfel auf die Positionen, wie unten im Diagramm gezeigt und schaue durch das Okular.
+Place the dice in the positions shown in the diagram below and look through the eyepiece.
 
 <div class="alert-success">
-Bau das Mikroskop wie ein Sandwich indem du eine zweite Schicht mittels Grundplatte hinzufügt. Schau von oben durch das Okular.
+Build the microscope like a sandwich by adding a second layer using a base plate. Look through the eyepiece from above.
 </div><br/>
 
 
@@ -788,60 +788,60 @@ Bau das Mikroskop wie ein Sandwich indem du eine zweite Schicht mittels Grundpla
 <img src="./assets/UC2_minibox_39.png" width="800">
 </p>
 
-<div class="alert-info">
-Siehst du das Bild wie bisher durch das Okular? Kannst du das echte Zwischenbild auch mit einem Blatt Papier finden?
+<div class="alert info">
+Do you see the image through the eyepiece as before? Can you find the real intermediate image with a piece of paper?
 </div><br/>
 
 <div class="alert-success">
-Drehe das kleine Zahnrad des Objektivhalters. Damit bewegst bzw. fokussierst du das Objektiv. Wenn es nicht weiter geht, kannst du auch das Objektiv in dem Halter verschieben.
+Turn the small gear on the lens holder. This is how you move or focus the lens. If you can't go any further, you can also move the lens in the holder.
 </div><br/>
 
 
-<!-- ------------------------ -->
-## „Endlich-Optik“ versus „Unendlich-Optik“
+<!----------------------------------------->
+## "Finite optics" versus "Infinite optics"
 Duration: 2
 
 <p align="center">
 <img src="./assets/UC2_minibox_40.png" width="800">
 </p>
 
-Die Objektive von älteren oder kleineren Mikroskopen sind häufig so genannte Endlich-Objektive. Sie verhalten sich wie eine Linse mit äußerst kurzer Brennweite und erzeugen ein Zwischenbild hinter dem Objektiv mit einer Bildweite die sich durch die Tubuslänge definiert. Die Tubuslänge ist aufgedruckt und entspricht bei unserem Objektiv 160mm. Dort entsteht das reele Zwischenbild und wird durch die Okularoptik vergrößert.
+The lenses of older or smaller microscopes are often so-called finite lenses. They behave like a lens with an extremely short focal length and create an intermediate image behind the lens with an image distance that is defined by the tube length. The tube length is printed and corresponds to 160mm for our lens. The real intermediate image is created there and is enlarged by the eyepiece optics.
 
 
-Mikroskope haben die Möglichkeit, das Objekt entweder durch Bewegen des Objekts oder des Objektivs zu fokussieren bzw. scharfzustellen. Hier bewegen wir das Objektiv durch einen einfachen Mechanismus. Die Drehung des Zahnrads wird in eine Verschiebung der Objektivlinse umgesetzt. Für größere Bewegungen kannst du das Objektiv zusätzlich in der Schiene verschieben.
+Microscopes have the ability to focus or sharpen the object either by moving the object or the lens. Here we move the lens through a simple mechanism. The rotation of the gear is translated into a displacement of the objective lens. For larger movements, you can also move the lens in the rail.
 
 <p align="center">
 <img src="./assets/UC2_minibox_41.png" width="450">
 </p>
 
-<div class="alert-info">
+<div class="alert info">
 </div><br/>
 
 
-<!-- ------------------------ -->
-## „Endlich-Optik“ versus „Unendlich-Optik“
+<!----------------------------------------->
+## "Finite optics" versus "Infinite optics"
 Duration: 2
 
-Was ist die Vergrößerung des Zwischenbildes? Und was ist die Vergrößerung nach dem Okular?
+What is the magnification of the intermediate image? And what is the magnification after the eyepiece?
 
-Objektivvergrößerung
+lens magnification
 <p align="center">
 <img src="./assets/UC2_minibox_44.png" width="150">
 </p>
-wie geschrieben darauf
+as written on it
 
-Okularvergrößerung
+eyepiece magnification
 <p align="center">
 <img src="./assets/UC2_minibox_45.png" width="200">
 </p>
 
-Gesamtvergrößerung
+overall magnification
 <p align="center">
 <img src="./assets/UC2_minibox_46_1.png" width="200">
 </p>
 
 <div class="alert-success">
-Das Bild ist größer als mit dem Unendlich-Mikroskop. Die Vergrößerung des Objektivs beträgt hier 4×. Wenn du die Vergrößerung mit dem vorherigen Mikroskop berechnet hast, überrascht dich das sicherlich nicht.
+The image is larger than with the infinity microscope. The magnification of the lens here is 4×. If you calculated the magnification with the previous microscope, this certainly doesn't surprise you.
 </div><br/>
 
 <p align="center">
@@ -849,33 +849,33 @@ Das Bild ist größer als mit dem Unendlich-Mikroskop. Die Vergrößerung des Ob
 </p>
 
 <div class="alert-success">
-Das Zwischenbild wird jetzt nur noch durch das Objektiv gebildet und liegt 160 mm dahinter. Wir werden im nächsten Schritt herausfinden, warum.
+The intermediate image is now only formed by the lens and is 160 mm behind it. We'll find out why in the next step.
 </div><br/>
 
 
 
-<!-- ------------------------ -->
-## Objektiv und Okular
+<!----------------------------------------->
+## Objective and eyepiece
 Duration: 2
 
 <p align="center">
 <img src="./assets/UC2_minibox_48_1.png" width="800">
 </p>
 
-<div class="alert-info">
+<div class="alert info">
 </div><br/>
 
-<!-- ------------------------ -->
-## Das ist das Objektiv
+<!----------------------------------------->
+## This is the lens
 Duration: 2
 
-Ein Objektiv ist ein optisches System, das eine vergrößerte Abbildung eines Gegenstandes erzeugt. Die verschiedenen auf dem Objektiv abgedruckten Zahlen haben verschiedene Bedeutungen:
+A lens is an optical system that creates a magnified image of an object. The different numbers printed on the lens have different meanings:
 
 <p align="center">
 <img src="./assets/UC2_minibox_48.png" width="800">
 </p>
 
-Das 4× Objektiv hat nur eine Linse drin. Die Objektive mit stärkere Vergrößerung sind ganze Linsensystemen.
+The 4× lens has only one lens in it. The lenses with higher magnification are complete lens systems.
 
 <p align="center">
 <img src="./assets/UC2_minibox_49.png" width="800">
@@ -883,87 +883,87 @@ Das 4× Objektiv hat nur eine Linse drin. Die Objektive mit stärkere Vergröße
 
 
 <div class="alert-success">
-Das Objektiv ist auch eine Sammellinse mit kurzer Brennweite. Das 4x Objektiv hat eine Brennweite von f=32 mm. Wenn es als Lupe verwendet wird, hat es eine höhere Vergrößerung als die 40-mm-Linse. Das Sichtfeld ist scharf, aber klein.
+The lens is also a converging lens with a short focal length. The 4x lens has a focal length of f=32 mm. When used as a magnifying glass, it has a higher magnification than the 40mm lens. The field of view is sharp but small.
 </div><br/>
 
 
-<!-- ------------------------ -->
-## Das Okular
+<!----------------------------------------->
+## The eyepiece
 Duration: 2
 
-Ein Okular ist eigentlich eine Lupe, da es das Zwischenbild vergrößert. Das Okular, was wir hier verwenden, ist ein sogenanntes Ramsden-Okular.
-Eine einzelne Linse kann auch als Okular benutzt werden. Allerdings ist bei einem aus Linsensystem bestehendes Ramsden-Okular das Sichtfeld besser, weil es weniger Fehler am Rand des Sichtfelds erzeugt. Das Ramsden-Okular besteht aus zwei Linsen mit der gleichen Brennweite. Seine Brennweite beträgt  fRamsden-Okular = 3/4 fLinse
+An eyepiece is actually a magnifying glass because it enlarges the intermediate image. The eyepiece we use here is a so-called Ramsden eyepiece.
+A single lens can also be used as an eyepiece. However, with a Ramsden eyepiece consisting of a lens system, the field of view is better because it creates fewer errors at the edge of the field of view. The Ramsden eyepiece consists of two lenses with the same focal length. Its focal length is f Ramsden eyepiece = 3/4 f lens
 
-Was ist die Vegrößerung des Ramsden-Okulars?
+What is the magnification of the Ramsden eyepiece?
 
 <p align="center">
 <img src="./assets/UC2_minibox_50.png" width="800">
 </p>
 
 <div class="alert-success">
-Jedes Okular hat eine so genannte Ramsden-Scheibe, das ist der kleinste Durchmesser des Lichtstrahls, der aus dem Mikroskop durch das Okular austritt.
+Each eyepiece has a so-called Ramsden disk, which is the smallest diameter of the light beam that exits the microscope through the eyepiece.
 </div><br/>
 
 <div class="alert-success">
-Das Sichtfeld ist größer und das Bild sieht mit dem Ramsden-Okular klarer aus.
-Jedes Okular hat eine so genannte Ramsden-Scheibe, das ist der kleinste Durchmesser
+The field of view is larger and the image looks clearer with the Ramsden eyepiece.
+Each eyepiece has a so-called Ramsden disc, which is the smallest diameter
 </div><br/>
 
 <p align="center">
 <img src="./assets/UC2_minibox_51.png" width="150">
 </p>
-<!-- ------------------------ -->
+<!----------------------------------------->
 
-## Smartphone Mikroskop
+## Smartphone microscope
 Duration: 2
 
-Baue das Smartphone Mikroskop wie dargestellt. Nutze zwei beliebige Würfel hier um das Smartphone sicher zu platzieren.
+Build the smartphone microscope as shown. Use any two cubes here to safely place the smartphone.
 
 <p align="center">
 <img src="./assets/UC2_minibox_52.png" width="800">
 </p>
 
-<div class="alert-info">
+<div class="alert info">
 </div><br/>
 
 <div class="alert-success">
-Bau das Mikroskop wie ein Sandwich indem du eine zweite Schicht mittels Grundplatte hinzufügt. Schau von oben durch das Okular.
+Build the microscope like a sandwich by adding a second layer using a base plate. Look through the eyepiece from above.
 </div><br/>
 
-<div class="alert-info">
-Tausche das Ramsden-Okular mit der 40-mm-Linse aus. Was eignet sich besser für das Auge und was für das Smartphone?
+<div class="alert info">
+Replace the Ramsden eyepiece with the 40mm lens. What is better for the eye and what for the smartphone?
 </div><br/>
 
 
 
 
-<!-- ------------------------ -->
-## Besser mit Smartphone oder Auge?
+<!----------------------------------------->
+## Better with smartphone or eye?
 Duration: 2
 
-Die Smartphone Kamera hat eine Linse mit sehr kurzer Brennweite da diese in das dünne Smartphone passen muss. Die Linse erzeugt dann ein Bild auf dem Kamera-Sensor dessen Eingeschaften denem menschlischen Auge ähneln.
+The smartphone camera has a lens with a very short focal length because it has to fit into the thin smartphone. The lens then creates an image on the camera sensor whose properties are similar to those of the human eye.
 
-Das Auge kann Objekte aus sowohl Ferne als auch aus der Nähe abbilden. Diese Eigenschaft heißt Akkommodation.
+The eye can see objects from both a distance and near. This property is called accommodation.
 
 <p align="center">
 <img src="./assets/UC2_minibox_53.png" width="800">
 </p>
 
-Die Smartphone-Kamera kann das auch, es wird allerdings als Autofokus bezeichnet. Es beschreibt die Fähigkeit, Objekte in unterschiedlichen Entfernungen scharf auf dem Sensor abzubilden.
+The smartphone camera can also do this, but it is called autofocus. It describes the ability to sharply image objects at different distances on the sensor.
 
 <p align="center">
 <img src="./assets/UC2_minibox_54.png" width="500">
 </p>
 
-Das Bild aus dem Okular kommt in parallelen Strahlen, als käme es aus dem Unendlichen. Sie haben mit einem entspannten Auge (Blick in die Ferne) oder mit einer auf Unendlich fokussierten Kamera beobachtet.
+The image from the eyepiece comes in parallel rays, as if coming from infinity. You observed with a relaxed eye (looking into the distance) or with a camera focused at infinity.
 
 
-<div class="alert-info">
+<div class="alert info">
 </div><br/>
 
 
-<!-- ------------------------ -->
-## Berechnungsergebnisse
+<!----------------------------------------->
+## Calculation results
 Duration: 2
 
 <p align="center">
@@ -978,8 +978,8 @@ Duration: 2
 
 
 
-<!-- ------------------------ -->
-## Youtube Links
+<!----------------------------------------->
+##Youtube links
 Duration: 1
 
 <video id="Z_p9yYXZuCI"></video>

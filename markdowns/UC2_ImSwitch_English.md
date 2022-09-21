@@ -15,7 +15,7 @@ Feedback Link: https://youseetoo.org
 <span style="color:#023773"> __TOO\.__ </span>
 
 <p align="left">
-<img src="./assets/IMSWITCH/UC2_LOGO.png" width="100">
+<img src="./assets/UC2_LOGO.png" width="100">
 </p>
 
 
@@ -36,7 +36,7 @@ Please go to our ImSwitch Repository and download the latest Build-artefact:
 [GitHub Actions -> "bundle"](https://github.com/openUC2/ImSwitch/actions/runs/3093615193)
 
 <p align="center">
-<img src="./assets/IMSWITCH/Imswitch_1.PNG" width="700">
+<img src="./assets/IMSWITCH/ImSwitch_1.PNG" width="700">
 </p>
 
 
@@ -47,7 +47,7 @@ Duration: 2
 Right click on the downloaded ZIP folder and select "extract all". This may take a while.
 
 <p align="center">
-<img src="./assets/IMSWITCH/Imswitch_2.PNG" width="700">
+<img src="./assets/IMSWITCH/ImSwitch_2.PNG" width="700">
 </p>
 
 

@@ -15,7 +15,7 @@ Feedback Link: https://youseetoo.org
 <span style="color:#023773"> __TOO\.__ </span>
 
 <p align="left">
-<img src="./assets/UC2_LOGO.png" width="100">
+<img src="./assets/IMSWITCH/UC2_LOGO.png" width="100">
 </p>
 
 
@@ -36,7 +36,7 @@ Please go to our ImSwitch Repository and download the latest Build-artefact:
 [GitHub Actions -> "bundle"](https://github.com/openUC2/ImSwitch/actions/runs/3093615193)
 
 <p align="center">
-<img src="./assets/Imswitch_1.PNG" width="700">
+<img src="./assets/IMSWITCH/Imswitch_1.PNG" width="700">
 </p>
 
 
@@ -47,7 +47,7 @@ Duration: 2
 Right click on the downloaded ZIP folder and select "extract all". This may take a while.
 
 <p align="center">
-<img src="./assets/Imswitch_2.PNG" width="700">
+<img src="./assets/IMSWITCH/Imswitch_2.PNG" width="700">
 </p>
 
 
@@ -58,7 +58,7 @@ Right click on the downloaded ZIP folder and select "extract all". This may take
 
 For the CH340 driver, please follow [these instructions](https://sparks.gogo.co.nz/ch340.html)
 
-The driver is available [here](https://sparks.gogo.co.nz/assets/_site_/downloads/CH34x_Install_Windows_v3_4.zip)
+The driver is available [here](https://sparks.gogo.co.nz/assets/IMSWITCH/_site_/downloads/CH34x_Install_Windows_v3_4.zip)
 
 ```
 Download the Windows CH340 Driver
@@ -87,7 +87,7 @@ In the Device Manager when the CP210x is connected you will see a COM Port in th
 Download the *Windows SDK USB2+USB3+GigE (including Directshow + Python) Galaxy V1.18.2208.9301* for the Daheng USB3 Cameras from the [Get-Cameras Website](https://www.get-cameras.com/requestdownload)
 
 <p align="center">
-<img src="./assets/Imswitch_3.PNG" width="700">
+<img src="./assets/IMSWITCH/ImSwitch_3.PNG" width="700">
 </p>
 
 Install the packages on your computer.
@@ -102,7 +102,7 @@ Duration: 2
 3. Check if you can see the USB COM Port in your device manager:
 
 <p align="center">
-<img src="./assets/Imswitch_4.PNG" width="400">
+<img src="./assets/IMSWITCH/ImSwitch_4.PNG" width="400">
 </p>
 
 <!----------------------------------------->
@@ -116,7 +116,7 @@ Once it has been downloaded, unzip it to `C:\Users\YOURUSERNAME\Documents\ImSwit
 It should look like this:
 
 <p align="center">
-<img src="./assets/ImSwitch_8.PNG" width="400">
+<img src="./assets/IMSWITCH/ImSwitch_8.PNG" width="400">
 </p>
 
 
@@ -127,7 +127,7 @@ Duration: 2
 1. Open a Windows Terminal by typing `WIN+R`, then type `CMD` and hit enter.
 
 <p align="center">
-<img src="./assets/ImSwitch_5.PNG" width="400">
+<img src="./assets/IMSWITCH/ImSwitch_5.PNG" width="400">
 </p>
 
 
@@ -136,12 +136,12 @@ Duration: 2
 3. Type `ImSwitch.exe` and hit enter, the executable will open the ImSwitch GUI
 
 <p align="center">
-<img src="./assets/ImSwitch_6.PNG" width="400">
+<img src="./assets/IMSWITCH/ImSwitch_6.PNG" width="400">
 </p>
 
 If everything has been configured correctly, the GUI should open and look like this. Additional information on its functionality can be found in the Read-The-Docs:  https://imswitch.readthedocs.io/en/stable/
 <p align="center">
-<img src="./assets/ImSwitch_7.PNG" width="700">
+<img src="./assets/IMSWITCH/ImSwitch_7.PNG" width="700">
 </p>
 
 If you have any additional questions or issues, please post them in the [ISSUE section here](https://github.com/openUC2/ImSwitch/issues).

@@ -28,8 +28,46 @@ Feedback Link: https://youseetoo.org
 
 <!----------------------------------------->
 ## What's inside the box?
-Duration: 1
+Duration: 3
 
 
 ![https://www.youtube.com/watch?v=NZZ6n620eV0](https://www.youtube.com/watch?v=NZZ6n620eV0)
+
+
+<!----------------------------------------->
+## How do you assemble a cube?
+Duration: 3
+
+![https://www.youtube.com/watch?v=Yl0lgNJu_AQ](https://www.youtube.com/watch?v=Yl0lgNJu_AQ)
+
+
+<!----------------------------------------->
+## How do you assemble a cube?
+Duration: 3
+
+![https://www.youtube.com/watch?v=Yl0lgNJu_AQ](https://www.youtube.com/watch?v=Yl0lgNJu_AQ)
+
+
+<!----------------------------------------->
+## Getting started with Mirrors
+Duration: 3
+
+![https://www.youtube.com/watch?v=azxLqej7yqU](https://www.youtube.com/watch?v=azxLqej7yqU)
+
+
+
+<!----------------------------------------->
+## Getting started with Lenses
+Duration: 3
+
+![https://www.youtube.com/watch?v=U-rCtZjRKU8](https://www.youtube.com/watch?v=U-rCtZjRKU8)
+
+
+<!----------------------------------------->
+## Build your first Telescope 
+Duration: 3
+
+![https://www.youtube.com/watch?v=Jp3uU7wly64](https://www.youtube.com/watch?v=Jp3uU7wly64)
+
+
 

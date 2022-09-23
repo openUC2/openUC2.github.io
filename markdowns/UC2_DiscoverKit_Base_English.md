@@ -30,6 +30,6 @@ Feedback Link: https://youseetoo.org
 ## What's inside the box?
 Duration: 1
 
-<video id="NZZ6n620eV0"></video>
 
-![https://www.youtube.com/watch?v=VIDEO_ID](https://www.youtube.com/embed/NZZ6n620eV0)
+![https://www.youtube.com/watch?v=NZZ6n620eV0](https://www.youtube.com/watch?v=NZZ6n620eV0)
+

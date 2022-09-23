@@ -1,0 +1,35 @@
+
+
+
+summary: An introduction to work with the Discovery Kit Base 
+id: uc2-tutorial-discoverykit
+Categories: discovery kit
+tags: discovery kit, microscopy, optics
+Status: Published
+authors: Benedict
+Feedback Link: https://youseetoo.org
+
+
+<span style="color:#85B918"> __YOU\.__ </span> <span style="color:#000000"> </span>
+<span style="color:#1F9C7C"> __SEE\.__ </span> <span style="color:#000000"> </span>
+<span style="color:#023773"> __TOO\.__ </span>
+
+<p align="left">
+<img src="./assets/UC2_LOGO.png" width="100">
+</p>
+
+
+
+# An Introduction into the openUC2 Discovery Kit 
+<!----------------------------------------->
+### What will you learn?
+- What's inside the box?
+- How can we start different experiments?
+
+<!----------------------------------------->
+## What's inside the box?
+Duration: 1
+
+<video id="NZZ6n620eV0"></video>
+
+

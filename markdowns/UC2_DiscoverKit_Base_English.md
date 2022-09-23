@@ -34,12 +34,6 @@ Duration: 3
 ![https://www.youtube.com/watch?v=NZZ6n620eV0](https://www.youtube.com/watch?v=NZZ6n620eV0)
 
 
-<!----------------------------------------->
-## How do you assemble a cube?
-Duration: 3
-
-![https://www.youtube.com/watch?v=Yl0lgNJu_AQ](https://www.youtube.com/watch?v=Yl0lgNJu_AQ)
-
 
 <!----------------------------------------->
 ## How do you assemble a cube?
@@ -70,4 +64,38 @@ Duration: 3
 ![https://www.youtube.com/watch?v=Jp3uU7wly64](https://www.youtube.com/watch?v=Jp3uU7wly64)
 
 
+<!----------------------------------------->
+## Lasers and Beamexpanders
+Duration: 3
 
+![https://www.youtube.com/watch?v=6u1KIY4qbts](https://www.youtube.com/watch?v=6u1KIY4qbts)
+
+
+
+<!----------------------------------------->
+## Lasers and Interferometers
+Duration: 3
+
+![https://www.youtube.com/watch?v=A8drEwE0hzU](https://www.youtube.com/watch?v=A8drEwE0hzU)
+
+
+
+<!----------------------------------------->
+## Microscopes
+Duration: 3
+
+![https://www.youtube.com/watch?v=hcFopxEwQ_8](https://www.youtube.com/watch?v=hcFopxEwQ_8)
+
+
+<!----------------------------------------->
+## Polarization
+Duration: 3
+
+![https://www.youtube.com/watch?v=gYjpC8AQO30](https://www.youtube.com/watch?v=gYjpC8AQO30)
+
+
+<!----------------------------------------->
+## Microscope with Webcam
+Duration: 3
+
+![https://www.youtube.com/watch?v=c7u10bCSjaE](https://www.youtube.com/watch?v=c7u10bCSjaE)

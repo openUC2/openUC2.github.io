@@ -18,15 +18,16 @@ Feedback Link: https://youseetoo.org
 <img src="./assets/UC2_LOGO.png" width="100">
 </p>
 
-<!----------------------------------------->
 # UC2e - A guide to use the UC2 Electronics
 
+<!----------------------------------------->
+
+## Overview
 Duration:1
 
 <div class="alert-danger">
 <b>IMPORTANT</b> The system is under constant development and may be subjject to changes. If you find any bug or something feels unclear, you can help us improving the system! Feel lucky and file your issue today by opening one here: <a href="https://github.com/openUC2/UC2-REST/issues/new">GitHub: UC2-REST</a>
 </div>
-
 
 
 ### What will you learn?
@@ -35,8 +36,7 @@ Duration:1
 - How to get the playstation controller working?
 
 <!----------------------------------------->
-# Introduction into the UC2e Board ("Standalone")
-
+## Introduction into the UC2e Board ("Standalone")
 Duration: 5
 
 For a microscsope you have several I/Os that need to be controlled via Software. This majorly concerns:
@@ -66,7 +66,7 @@ A fully assembled board with 12V power, the UC2 LED matrix and the linear steppe
 
 <!----------------------------------------->
 ## 🔌 Board layout and schematics
-
+Duration:5
 The board comes with 4 motor controllers (e.g. A4988 Bipolar Stepper controler), the ESP32 Dev Kit, a bunch of pins for in/outgoing connections, 3 darlington transistors (BD809) and the power distribution. It is inspired by the CNC shield and can
 
 - run up to 4 steppers
@@ -87,7 +87,8 @@ We use the ESP32 in order to ensure connectivity via
 </p>
 
 <!----------------------------------------->
-### ⚡  Wiring
+## ⚡ Wiring
+Duration:5
 
 All connectors are coming with 2.54mm spaced male pins that can connect to JST connectors (e.g. Motors and LED Array). In case the casing is blocking it mechanically, you can remove the case. Make sure you do not
 
@@ -111,7 +112,7 @@ For those who are keen to understand the wiring, please click on the schematics 
 
 <!----------------------------------------->
 ## UC2 LED Ring
-
+Duration:2
 As for the illumination, you can use a large variation of different light sources to get your sample in the right light. But sometimes you want to have the abbility to change the contrast by illuminating from oblique, only in the center, using a darkfield ring or change degree of coherence. An off-the-shelf LED Matrix is very sufficient in most cases, but it lacks the rotational symmetry. For this we have the UC2 LED Ring Module that fits directly in the Cube, has concentric rings and still offers all the degrees of freedom the Adafruit Neopixel give you (e.g. RGB, white, patterns..).
 
 <p align="center">
@@ -127,22 +128,23 @@ The 3 wires that leave the satellite board deliver 5V, Data and GND and directly
 
 <!----------------------------------------->
 ## Connect devices
+Duration:5
 Here you learn how to connect the ESP32 to the Arduino IDE, connect external hardware components (e.g. LED matrix) and control the electronics using the USB-serial interface. This is an older version of the ESP32, but the mechanism stays the same 🙃
 
-![https://youtu.be/v8Xx2iVbDck](https://youtu.be/v8Xx2iVbDck)
+![https://www.youtube.com/watch?v=v8Xx2iVbDck](https://www.youtube.com/watch?v=v8Xx2iVbDck)
 
 <!----------------------------------------->
 ## ❌ Replacing parts
-
+Duration:1
 It can happen that either the ESP32 Dev Kit or one of the motor driver fails due to ESD. You can find alternatives here:
 
 - A4988 Stepper driver ([Amazon](https://www.amazon.de/AZDelivery-A4988-Schrittmotor-Treiber-Modul-Parent/dp/B07ZQHN62Q))
 - ESP32 Dev Kit ([Amazon](https://www.amazon.de/AZDelivery-Development-Compatible-Including-Successor/dp/B07Z83MF5W/ref=sr_1_2_sspa?crid=2VAY9L1U49HOM&keywords=ESP32+dev+kit&qid=1666383153&qu=eyJxc2MiOiI0LjAxIiwicXNhIjoiMy43NCIsInFzcCI6IjMuMzYifQ%3D%3D&s=industrial&sprefix=esp32+dev+kit%2Cindustrial%2C260&sr=1-2-spons&psc=1&smid=A1X7QLRQH87QA3))
 
 
-
-# Introduction into the ESP32 microcontroller Firmwarwe
-
+<!----------------------------------------->
+## Introduction into the ESP32 microcontroller firmware
+Duration:5
 The firmware that runs on the ESP32 is under constant development and subject to heavy changes! However, the core idea will remain the same and is inspired by the
  "REST-API", which deals with "endpoints" in the HTML world (e.g. "`/home`""). We implemented the follow functions:
  - `/*_act`-> this starts an action
@@ -163,15 +165,6 @@ In general, to interact with a device (e.g. stage), one has to send a JSON docum
 ```
 {"task": "/motor_act", "axis":1, "speed":1000, "position":1000, "isabsolute":1, "isblocking":1}
 ```
-<!----------------------------------------->
-#### Source-code, Compiling and Binaries
-
-
-The current version of the firmware can be found here: https://github.com/openUC2/UC2-REST/tree/master/ESP32
-
-Additional information on how to install and compile the board can be found in the [README](https://github.com/openUC2/UC2-REST/master/README.md)
-
-Precompiled binaries that can be installed through ImSwitch (more information coming soon) or the `esptool.py`can be found here https://github.com/openUC2/UC2-REST/tree/master/ESP32/build
 
 <!----------------------------------------->
 ## Controlling the ESP32
@@ -189,7 +182,7 @@ The unified "REST-API" (inspired, not following full protocol), enables you to c
 </div>
 
 <!----------------------------------------->
-### 🐍 Python Bindings
+## 🐍 Python Bindings
 
 In order to interact with the electronics, we implemented a Python library called `UC2-REST`, available [here](https://github.com/openUC2/UC2-REST/tree/master/uc2rest) that will help you to work with the device. The easiest way to install it would be:
 
@@ -208,18 +201,18 @@ In order to give you a deep dive in what's possible, we provide a Jupyter Notebo
 
 
 <!----------------------------------------->
-### 📲 Android APP
+## 📲 Android APP
 
 This is coming soon. You will be able to control the electronics using the Wifi connection of your Android phone.
 
 <!----------------------------------------->
-### 💻 Browser APP
+## 💻 Browser APP
 If the ESP32 is offereing an access point or is connected to your wifi router, you can access the webserver running on the ESP32 using a browser. It offers limited control over the Endpoints by filing post and get requests.
 
 More information are coning soon!
 
 <!----------------------------------------->
-### 🎮 Playstation 3 or Playstation 4 Controller
+## 🎮 Playstation 3 or Playstation 4 Controller
 With the open-source libraries PS3Controller and PS4Controller we are able to make use of the Bluetooth-able joysticks from your beloved game console.
 
 When a PS4 controller is 'paired' to a PS4 console, it just means that it has stored the console's Bluetooth MAC address, which is the only device the controller will connect to. Usually, this pairing happens when you connect the controller to the PS4 console using a USB cable, and press the PS button. This initiates writing the console's MAC address to the controller.
@@ -239,7 +232,7 @@ void setup()
 ```
 
 <!----------------------------------------->
-### Controlling using ImSwitch
+## Controlling using ImSwitch
 
 Please have a look [here](https://github.com/openUC2/ImSwitch) for more information about how to install ImSwitch and [here](https://github.com/beniroquai/ImSwitchConfig) for the UC2-related setup files including the UC2-REST serial interface.
 
@@ -250,8 +243,17 @@ Please have a look [here](https://github.com/openUC2/ImSwitch) for more informat
 
 
 
+<!----------------------------------------->
+## Source-code, Compiling and Binaries
+Duration:5
 
+The current version of the firmware can be found here: https://github.com/openUC2/UC2-REST/tree/master/ESP32
 
+Additional information on how to install and compile the board can be found in the [README](https://github.com/openUC2/UC2-REST/master/README.md)
+
+Precompiled binaries that can be installed through ImSwitch (more information coming soon) or the `esptool.py`can be found here https://github.com/openUC2/UC2-REST/tree/master/ESP32/build
+
+<!----------------------------------------->
 ## Install necessary software for UC2 rest (flash and interact)
 
 Here you learn how to install the necessary software (Arduino IDE, drivers, ESP-IDF, ARduino libraries) that are necessary for the system to be working. Everything is explained in the video below.
@@ -295,4 +297,4 @@ The system accepts different hardware configurations (pins, devices, etc.). All 
 ### VIDEO Tutorial: Steps to install the software
 
 
-![https://youtu.be/9doTdo5SW2E](https://youtu.be/9doTdo5SW2E)
+![https://www.youtube.com/watch?v=9doTdo5SW2E](https://www.youtube.com/watch?v=9doTdo5SW2E)

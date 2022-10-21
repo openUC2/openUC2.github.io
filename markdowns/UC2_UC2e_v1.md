@@ -7,7 +7,7 @@ Categories: UC2e
 tags: UC2e, electronics, controller
 Status: Published
 authors: Benedict
-Feedback Link: https://youseetoo.org
+Feedback Link: https://github.com/openUC2/UC2-REST/issues/new
 
 # UC2e - A guide to use the UC2 Electronics
 

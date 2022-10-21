@@ -9,6 +9,11 @@ Status: Published
 authors: Benedict
 Feedback Link: https://youseetoo.org
 
+# UC2e - A guide to use the UC2 Electronics
+
+<!----------------------------------------->
+## Overview
+Duration:1
 
 <span style="color:#85B918"> __YOU\.__ </span> <span style="color:#000000"> </span>
 <span style="color:#1F9C7C"> __SEE\.__ </span> <span style="color:#000000"> </span>
@@ -18,12 +23,6 @@ Feedback Link: https://youseetoo.org
 <img src="./assets/UC2_LOGO.png" width="100">
 </p>
 
-# UC2e - A guide to use the UC2 Electronics
-
-<!----------------------------------------->
-
-## Overview
-Duration:1
 
 <div class="alert-danger">
 <b>IMPORTANT</b> The system is under constant development and may be subjject to changes. If you find any bug or something feels unclear, you can help us improving the system! Feel lucky and file your issue today by opening one here: <a href="https://github.com/openUC2/UC2-REST/issues/new">GitHub: UC2-REST</a>
@@ -67,6 +66,7 @@ A fully assembled board with 12V power, the UC2 LED matrix and the linear steppe
 <!----------------------------------------->
 ## 🔌 Board layout and schematics
 Duration:5
+
 The board comes with 4 motor controllers (e.g. A4988 Bipolar Stepper controler), the ESP32 Dev Kit, a bunch of pins for in/outgoing connections, 3 darlington transistors (BD809) and the power distribution. It is inspired by the CNC shield and can
 
 - run up to 4 steppers
@@ -113,6 +113,7 @@ For those who are keen to understand the wiring, please click on the schematics 
 <!----------------------------------------->
 ## UC2 LED Ring
 Duration:2
+
 As for the illumination, you can use a large variation of different light sources to get your sample in the right light. But sometimes you want to have the abbility to change the contrast by illuminating from oblique, only in the center, using a darkfield ring or change degree of coherence. An off-the-shelf LED Matrix is very sufficient in most cases, but it lacks the rotational symmetry. For this we have the UC2 LED Ring Module that fits directly in the Cube, has concentric rings and still offers all the degrees of freedom the Adafruit Neopixel give you (e.g. RGB, white, patterns..).
 
 <p align="center">
@@ -129,6 +130,7 @@ The 3 wires that leave the satellite board deliver 5V, Data and GND and directly
 <!----------------------------------------->
 ## Connect devices
 Duration:5
+
 Here you learn how to connect the ESP32 to the Arduino IDE, connect external hardware components (e.g. LED matrix) and control the electronics using the USB-serial interface. This is an older version of the ESP32, but the mechanism stays the same 🙃
 
 ![https://www.youtube.com/watch?v=v8Xx2iVbDck](https://www.youtube.com/watch?v=v8Xx2iVbDck)
@@ -168,7 +170,6 @@ In general, to interact with a device (e.g. stage), one has to send a JSON docum
 
 <!----------------------------------------->
 ## Controlling the ESP32
-
 Duration: 5
 
 The unified "REST-API" (inspired, not following full protocol), enables you to control the functionalities from multiple different clients (e.g. Python, Webrowser, Android Phone). The Core idea is to file post/get requests (serial/wifi) that send/receive JSON files that do "something".
@@ -183,6 +184,7 @@ The unified "REST-API" (inspired, not following full protocol), enables you to c
 
 <!----------------------------------------->
 ## 🐍 Python Bindings
+Duration: 5
 
 In order to interact with the electronics, we implemented a Python library called `UC2-REST`, available [here](https://github.com/openUC2/UC2-REST/tree/master/uc2rest) that will help you to work with the device. The easiest way to install it would be:
 
@@ -202,17 +204,22 @@ In order to give you a deep dive in what's possible, we provide a Jupyter Notebo
 
 <!----------------------------------------->
 ## 📲 Android APP
+Duration: 5
 
 This is coming soon. You will be able to control the electronics using the Wifi connection of your Android phone.
 
 <!----------------------------------------->
 ## 💻 Browser APP
+Duration: 5
+
 If the ESP32 is offereing an access point or is connected to your wifi router, you can access the webserver running on the ESP32 using a browser. It offers limited control over the Endpoints by filing post and get requests.
 
 More information are coning soon!
 
 <!----------------------------------------->
 ## 🎮 Playstation 3 or Playstation 4 Controller
+Duration: 5
+
 With the open-source libraries PS3Controller and PS4Controller we are able to make use of the Bluetooth-able joysticks from your beloved game console.
 
 When a PS4 controller is 'paired' to a PS4 console, it just means that it has stored the console's Bluetooth MAC address, which is the only device the controller will connect to. Usually, this pairing happens when you connect the controller to the PS4 console using a USB cable, and press the PS button. This initiates writing the console's MAC address to the controller.
@@ -233,6 +240,7 @@ void setup()
 
 <!----------------------------------------->
 ## Controlling using ImSwitch
+Duration: 5
 
 Please have a look [here](https://github.com/openUC2/ImSwitch) for more information about how to install ImSwitch and [here](https://github.com/beniroquai/ImSwitchConfig) for the UC2-related setup files including the UC2-REST serial interface.
 
@@ -255,12 +263,14 @@ Precompiled binaries that can be installed through ImSwitch (more information co
 
 <!----------------------------------------->
 ## Install necessary software for UC2 rest (flash and interact)
+Duration: 5
 
 Here you learn how to install the necessary software (Arduino IDE, drivers, ESP-IDF, ARduino libraries) that are necessary for the system to be working. Everything is explained in the video below.
 
 Additional information about the UC2 electronics and UC2-REST are provided here: https://github.com/openUC2/UC2-REST
 
 ### Download and install the software:
+
 
 To simplify life, we host a [dropbox folder](https://www.dropbox.com/sh/pea63wifrq3edsl/AAChzXEGA55uUt2Kjxxfk_Dka?dl=0) containing all the necessary drivers and Software pieces for this workshop. It will run on a Windows 10 64 Bit system:
 
@@ -295,6 +305,5 @@ To simplify life, we host a [dropbox folder](https://www.dropbox.com/sh/pea63wif
 The system accepts different hardware configurations (pins, devices, etc.). All of this is defined in the `pindef_XXXX.h`. Please have a look in the UC2-REST repository for additional information: https://github.com/openUC2/UC2-REST
 
 ### VIDEO Tutorial: Steps to install the software
-
 
 ![https://www.youtube.com/watch?v=9doTdo5SW2E](https://www.youtube.com/watch?v=9doTdo5SW2E)

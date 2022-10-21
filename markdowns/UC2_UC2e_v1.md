@@ -61,7 +61,7 @@ It is based on common "GRBL" boards that drive 3D printers, CNC routers or alike
 A fully assembled board with 12V power, the UC2 LED matrix and the linear stepper motor can be found below:
 
 <p align="center">
-<img src="./assets/UC2_Electronics_board0.jpg" width="400">
+<img src="./assets/ELECTRONICS/UC2_Electronics_board0.jpg" width="400">
 </p>
 
 <!----------------------------------------->

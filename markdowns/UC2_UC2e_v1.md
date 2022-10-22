@@ -128,6 +128,109 @@ The 3 wires that leave the satellite board deliver 5V, Data and GND and directly
 
 
 <!----------------------------------------->
+## First Steps, Getting Started, Flashing - Simply Quick Start!
+Duration:2
+
+### Installing the driver
+
+**Prerequirements:** We make use of the Esspresif ESP32 MCU, which comes with the CH340 USB-UART interface. For this you need to install the appropriate driver.
+
+<div class="alert-success">
+<b>Installing the USB Serial Driver</b> Install the CH340 USB Serial driver is explained in more detail here: <a href="https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all">Sparkfun</a>
+</div>
+
+### Flashing latest version of the Firmware
+
+We have multiple ways to flash the firmware, which we will describe briefly:
+1. Use precompiled binaries and upload using the `esptool.py` ([Github](https://github.com/espressif/esptool))
+2. Use the Arduino IDE to compile and upload the software
+3. Use the Arduino IDE to upload the OTA example and upload the precompiled binary
+
+The current firmware can be found in the [UC2-REST](https://github.com/openUC2/UC2-REST/tree/master/ESP32) repository. A Github Action builds the binaries everytime a new release is getting published. The artifacts are also pushed to the [build folder](https://github.com/openUC2/UC2-REST/tree/master/ESP32/build). This way you don't need to hassle with the Arduino IDE in order to install all libraries and dependencies. With the binaries, there are two ways to flash them on a freshly bought ESP32:
+
+1. Using the `esptool.py` to upload it through USB
+2. Flash the Arduino-OTA example, browse to the Website and upload the `.bin` file
+
+#### Flashing the code with `esptool.py`
+
+The `UC2-REST` offers a firmware flasher to help you going through the steps:
+
+1. Download the latest firmware
+2. Start opening the Port
+3. Flash the Firmware
+
+For this we prepared a jupyter notebook that you can access and run [here](https://github.com/openUC2/UC2-REST/tree/master/DOCUMENTATION/DOC_Updater.ipynb)
+
+#### Flashing the code with OTA
+
+For this you can flash the example code `BasicOTA.ino` that comes in the Arduino IDE under `Examples => Arduino OTA`.
+
+Use the following code below (change SSID/Password to your Wifi that the computer uses), flash it and open the Browser to open the webpage. Upload the Binary and you'Re done!
+
+```cpp
+#include <WiFi.h>
+#include <ESPmDNS.h>
+#include <WiFiUdp.h>
+#include <ArduinoOTA.h>
+
+const char* ssid = "..........";
+const char* password = "..........";
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println("Booting");
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid, password);
+  while (WiFi.waitForConnectResult() != WL_CONNECTED) {
+    Serial.println("Connection Failed! Rebooting...");
+    delay(5000);
+    ESP.restart();
+  }
+
+  ArduinoOTA
+    .onStart([]() {
+      String type;
+      if (ArduinoOTA.getCommand() == U_FLASH)
+        type = "sketch";
+      else // U_SPIFFS
+        type = "filesystem";
+
+      // NOTE: if updating SPIFFS this would be the place to unmount SPIFFS using SPIFFS.end()
+      Serial.println("Start updating " + type);
+    })
+    .onEnd([]() {
+      Serial.println("\nEnd");
+    })
+    .onProgress([](unsigned int progress, unsigned int total) {
+      Serial.printf("Progress: %u%%\r", (progress / (total / 100)));
+    })
+    .onError([](ota_error_t error) {
+      Serial.printf("Error[%u]: ", error);
+      if (error == OTA_AUTH_ERROR) Serial.println("Auth Failed");
+      else if (error == OTA_BEGIN_ERROR) Serial.println("Begin Failed");
+      else if (error == OTA_CONNECT_ERROR) Serial.println("Connect Failed");
+      else if (error == OTA_RECEIVE_ERROR) Serial.println("Receive Failed");
+      else if (error == OTA_END_ERROR) Serial.println("End Failed");
+    });
+
+  ArduinoOTA.begin();
+
+  Serial.println("Ready");
+  Serial.print("IP address: ");
+  Serial.println(WiFi.localIP());
+}
+
+void loop() {
+  ArduinoOTA.handle();
+}
+```
+
+#### Compiling and flashing the code using the Arduino IDE
+
+You can download/clone the **UC2-REST** repository and open the file `main.ino`, copy the libraries in the library folder into the Arduino IDE library folder under `Documents/Arduino/libraries`, compile and upload it. More information comes in the very end of this tutorial
+
+
+<!----------------------------------------->
 ## Connect devices
 Duration:5
 
@@ -138,6 +241,7 @@ Here you learn how to connect the ESP32 to the Arduino IDE, connect external har
 <!----------------------------------------->
 ## ❌ Replacing parts
 Duration:1
+
 It can happen that either the ESP32 Dev Kit or one of the motor driver fails due to ESD. You can find alternatives here:
 
 - A4988 Stepper driver ([Amazon](https://www.amazon.de/AZDelivery-A4988-Schrittmotor-Treiber-Modul-Parent/dp/B07ZQHN62Q))
@@ -147,8 +251,9 @@ It can happen that either the ESP32 Dev Kit or one of the motor driver fails due
 <!----------------------------------------->
 ## Introduction into the ESP32 microcontroller firmware
 Duration:5
+
 The firmware that runs on the ESP32 is under constant development and subject to heavy changes! However, the core idea will remain the same and is inspired by the
- "REST-API", which deals with "endpoints" in the HTML world (e.g. "`/home`""). We implemented the follow functions:
+ "REST-API", which deals with "endpoints" in the HTML world (e.g. "`/home`"). We implemented the follow functions:
  - `/*_act`-> this starts an action
  - `/*_get`-> this will return parameters or states
  - `/*_set`-> this will set parameters or states
@@ -165,7 +270,14 @@ The API is callable through USB Serial and/or Wifi. The ESP32 can connect to a n
 In general, to interact with a device (e.g. stage), one has to send a JSON document, which is similar to the REST-API in the Internet world. A simple example to rotate a motor would be:
 
 ```
-{"task": "/motor_act", "axis":1, "speed":1000, "position":1000, "isabsolute":1, "isblocking":1}
+{
+  "task": "/motor_act",
+  "axis":1,
+  "speed":1000,
+  "position":1000,
+  "isabsolute":1,
+  "isblocking":1
+}
 ```
 
 <!----------------------------------------->
@@ -199,7 +311,10 @@ It will automatically detect your UC2e (if the driver is installed), connect and
 </p>
 
 
-In order to give you a deep dive in what's possible, we provide a Jupyter Notebook that guides you through all the functionalities. You can find it [here](https://github.com/openUC2/UC2-REST/blob/master/uc2rest/UC2_REST_Tutorial_v0.ipynb)
+In order to give you a deep dive in what's possible, we provide a Jupyter Notebook that guides you through all the functionalities. You can find it [here](https://github.com/openUC2/UC2-REST/tree/master/DOCUMENTATION/DOC_Updater.ipynb)
+Start Jupiter
+Tutorial
+
 
 
 <!----------------------------------------->

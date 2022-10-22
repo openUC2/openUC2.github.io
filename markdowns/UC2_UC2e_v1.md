@@ -311,7 +311,7 @@ It will automatically detect your UC2e (if the driver is installed), connect and
 </p>
 
 
-In order to give you a deep dive in what's possible, we provide a Jupyter Notebook that guides you through all the functionalities. You can find it [here](https://github.com/openUC2/UC2-REST/tree/master/DOCUMENTATION/DOC_Updater.ipynb)
+In order to give you a deep dive in what's possible, we provide a Jupyter Notebook that guides you through all the functionalities. You can find it [here](https://github.com/openUC2/UC2-REST/blob/master/DOCUMENTATION/DOC_UC2Client.ipynb)
 Start Jupiter
 Tutorial
 

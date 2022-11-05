@@ -1,6 +1,4 @@
 
-
-
 summary: A guide to get the UC2e electronics starting
 id: uc2-electronics_v1-eng
 Categories: UC2e
@@ -91,9 +89,9 @@ We use the ESP32 in order to ensure connectivity via
 ## ⚡ Wiring
 Duration:5
 
-All connectors are coming with 2.54mm spaced male pins that can connect to JST connectors (e.g. Motors and LED Array). In case the casing is blocking it mechanically, you can remove the case. Make sure you do not
+All connectors are coming with 2.54mm spaced male pins that can connect to JST connectors (e.g. Motors and LED Array). In case the casing is blocking it mechanically, you can remove the case. The WS2812B RGB Leds that are used for the LED Matrix should survive wrong polarity, but we recommend to not stress it. **WARNING:** It is also not recommended to drive the motor drivers without any motors attached. Make sure you have an electric load attached to the board when you power it up, otherwise the motor drivers may get damaged.
 
-<!--- COMMENT: The sentence is not finished??? --> 
+
 
 <div class="alert-danger">
 The polarity of the LED Array matters! The UC2 LED ring module comes with a JST connector where the 3 pins represent (5V, Data, GND) **RED** / Black / Black. Make sure the RED cable is connected to the 5V on the PCB.
@@ -132,7 +130,7 @@ The 3 wires that leave the satellite board deliver 5V, Data and GND and directly
 
 <!----------------------------------------->
 ## First Steps, Getting Started, Flashing - Simply Quick Start!
-Duration:2
+Duration:20
 
 ### Installing the driver
 
@@ -163,8 +161,7 @@ The `UC2-REST` offers a firmware flasher to help you going through the steps:
 3. Flash the Firmware
 
 For this we prepared a jupyter notebook that you can access and run [here](https://github.com/openUC2/UC2-REST/tree/master/DOCUMENTATION/DOC_Updater.ipynb)
-
-<!--- COMMENT: Mentioning how long roughly it will take -->
+The full process will take around 20 minutes. 
 
 #### Flashing the code with OTA
 
@@ -234,31 +231,9 @@ void loop() {
 
 You can download/clone the **UC2-REST** repository and open the file `main.ino`, copy the libraries in the library folder into the Arduino IDE library folder under `Documents/Arduino/libraries`, compile and upload it. More information comes in the very end of this tutorial
 
-
-<!----------------------------------------->
-## Connect devices
-Duration:5
-
-Here you learn how to connect the ESP32 to the Arduino IDE, connect external hardware components (e.g. LED matrix) and control the electronics using the USB-serial interface. This is an older version of the ESP32, but the mechanism stays the same 🙃
-
-![https://www.youtube.com/watch?v=v8Xx2iVbDck](https://www.youtube.com/watch?v=v8Xx2iVbDck)
-
-<!----------------------------------------->
-## ❌ Replacing parts
-Duration:1
-
-<!--- COMMENT: That can stay the the very behind as part of trouble shooting -->
-
-It can happen that either the ESP32 Dev Kit or one of the motor driver fails due to ESD. You can find alternatives here:
-
-- A4988 Stepper driver ([Amazon](https://www.amazon.de/AZDelivery-A4988-Schrittmotor-Treiber-Modul-Parent/dp/B07ZQHN62Q))
-- ESP32 Dev Kit ([Amazon](https://www.amazon.de/AZDelivery-Development-Compatible-Including-Successor/dp/B07Z83MF5W/ref=sr_1_2_sspa?crid=2VAY9L1U49HOM&keywords=ESP32+dev+kit&qid=1666383153&qu=eyJxc2MiOiI0LjAxIiwicXNhIjoiMy43NCIsInFzcCI6IjMuMzYifQ%3D%3D&s=industrial&sprefix=esp32+dev+kit%2Cindustrial%2C260&sr=1-2-spons&psc=1&smid=A1X7QLRQH87QA3))
-
 <!----------------------------------------->
 ## Introduction into the ESP32 microcontroller firmware
 Duration:5
-
-<!--- COMMENT: Direct after install the firmware -->
 
 The firmware that runs on the ESP32 is under constant development and subject to heavy changes! However, the core idea will remain the same and is inspired by the
  "REST-API", which deals with "endpoints" in the HTML world (e.g. "`/home`"). We implemented the follow functions:
@@ -287,6 +262,16 @@ In general, to interact with a device (e.g. stage), one has to send a JSON docum
   "isblocking":1
 }
 ```
+
+<!----------------------------------------->
+## Connect devices
+Duration:5
+
+Here you learn how to connect the ESP32 to the Arduino IDE, connect external hardware components (e.g. LED matrix) and control the electronics using the USB-serial interface. This is an older version of the ESP32, but the mechanism stays the same 🙃
+
+![https://www.youtube.com/watch?v=v8Xx2iVbDck](https://www.youtube.com/watch?v=v8Xx2iVbDck)
+
+
 
 <!----------------------------------------->
 ## Controlling the ESP32
@@ -340,10 +325,8 @@ If the ESP32 is offereing an access point or is connected to your wifi router, y
 More information are coming soon!
 
 <!----------------------------------------->
-## 🎮 Playstation 3 or Playstation 4 Controller
+## 🎮 Playstation 3 or Playstation 4 Controller (comming soon)
 Duration: 5
-
-<!--- COMMENT: Current working device going before coming soon -->
 
 With the open-source libraries PS3Controller and PS4Controller we are able to make use of the Bluetooth-able joysticks from your beloved game console.
 
@@ -432,3 +415,16 @@ The system accepts different hardware configurations (pins, devices, etc.). All 
 ### VIDEO Tutorial: Steps to install the software
 
 ![https://www.youtube.com/watch?v=9doTdo5SW2E](https://www.youtube.com/watch?v=9doTdo5SW2E)
+
+<!----------------------------------------->
+## Troubleshooting 
+
+
+### ❌ Replacing parts
+Duration:1
+
+
+It can happen that either the ESP32 Dev Kit or one of the motor driver fails due to ESD. You can find alternatives here:
+
+- A4988 Stepper driver ([Amazon](https://www.amazon.de/AZDelivery-A4988-Schrittmotor-Treiber-Modul-Parent/dp/B07ZQHN62Q))
+- ESP32 Dev Kit ([Amazon](https://www.amazon.de/AZDelivery-Development-Compatible-Including-Successor/dp/B07Z83MF5W/ref=sr_1_2_sspa?crid=2VAY9L1U49HOM&keywords=ESP32+dev+kit&qid=1666383153&qu=eyJxc2MiOiI0LjAxIiwicXNhIjoiMy43NCIsInFzcCI6IjMuMzYifQ%3D%3D&s=industrial&sprefix=esp32+dev+kit%2Cindustrial%2C260&sr=1-2-spons&psc=1&smid=A1X7QLRQH87QA3))

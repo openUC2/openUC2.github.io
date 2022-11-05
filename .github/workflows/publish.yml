@@ -21,7 +21,7 @@ jobs:
           chmod +x $(go env GOPATH)/bin/claat
           claat version
           mkdir codelabs
-          for f in `ls markdowns/*.md`; do claat export -o codelabs/ $f --prefix https://openuc2.github.io/elements ; done
+          for f in `ls markdowns/*.md`; do claat export -o codelabs/ $f; done
       - uses: actions/setup-node@v2
         with:
           node-version: '12'
@@ -29,6 +29,12 @@ jobs:
           cd site
           npm install
           npm run dist
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          find: "https://storage.googleapis.com/codelab-elements"
+          replace: "https://openuc2.github.io/elements/codelab-elements"
+          regex: false
       - name: Deploy to github pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:

@@ -21,7 +21,8 @@ jobs:
           chmod +x $(go env GOPATH)/bin/claat
           claat version
           mkdir codelabs
-          for f in `ls markdowns/*.md`; do claat export -o codelabs/ $f --prefix https://openuc2.github.io/elements ; done
+          for f in `ls markdowns/*.md`; do claat export -o codelabs/ $f ; done
+          for d in codelabs/*/ ; do (cd "$d" && claat update -prefix  "https://openuc2.github.io/elements"); done
       - uses: actions/setup-node@v2
         with:
           node-version: '12'

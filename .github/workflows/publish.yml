@@ -29,6 +29,12 @@ jobs:
           cd site
           npm install
           npm run dist
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          find: "https://storage.googleapis.com/codelab-elements"
+          replace: "https://openuc2.github.io/elements/codelab-elements"
+          regex: false
       - name: Deploy to github pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:

@@ -145,3 +145,11 @@ If everything has been configured correctly, the GUI should open and look like t
 </p>
 
 If you have any additional questions or issues, please post them in the [ISSUE section here](https://github.com/openUC2/ImSwitch/issues).
+
+
+
+<!----------------------------------------->
+## Explanatory Video on how to get started with ImSwitch
+Duration: 3
+
+![https://www.youtube.com/watch?v=Om6GWZZ_0So](https://www.youtube.com/watch?v=Om6GWZZ_0So)

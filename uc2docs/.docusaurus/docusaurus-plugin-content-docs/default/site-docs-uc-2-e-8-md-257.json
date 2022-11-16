@@ -1,0 +1,21 @@
+{
+  "unversionedId": "uc2e8",
+  "id": "uc2e8",
+  "isDocsHomePage": false,
+  "title": "Compiling from Scratch",
+  "description": "Source-code, Compiling and Binaries",
+  "source": "@site/docs/uc2e8.md",
+  "slug": "/uc2e8",
+  "permalink": "/docs/uc2e8",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/uc2e8.md",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Controlling the UC2e",
+    "permalink": "/docs/uc2e7"
+  },
+  "next": {
+    "title": "Replace Hardware",
+    "permalink": "/docs/uc2e9"
+  }
+}

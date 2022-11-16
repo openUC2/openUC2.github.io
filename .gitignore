@@ -1,2 +1,24 @@
 codelabs
 !codelabs/.gitkeep
+
+
+# Dependencies
+/uc2docs/node_modules
+
+# Production
+/uc2docs/build
+
+# Generated files
+/uc2docs.docusaurus
+/uc2docs.cache-loader
+
+# Misc
+.DS_Store
+/uc2docs/.env.local
+/uc2docs/.env.development.local
+/uc2docs/.env.test.local
+/uc2docs/.env.production.local
+
+/uc2docs/npm-debug.log*
+/uc2docs/yarn-debug.log*
+/uc2docs/yarn-error.log*

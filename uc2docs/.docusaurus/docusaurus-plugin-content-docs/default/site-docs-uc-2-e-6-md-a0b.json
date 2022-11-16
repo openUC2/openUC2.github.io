@@ -1,0 +1,21 @@
+{
+  "unversionedId": "uc2e6",
+  "id": "uc2e6",
+  "isDocsHomePage": false,
+  "title": "Connecting devices",
+  "description": "Connect devices",
+  "source": "@site/docs/uc2e6.md",
+  "slug": "/uc2e6",
+  "permalink": "/docs/uc2e6",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/uc2e6.md",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "REST principle",
+    "permalink": "/docs/uc2e5"
+  },
+  "next": {
+    "title": "Controlling the UC2e",
+    "permalink": "/docs/uc2e7"
+  }
+}

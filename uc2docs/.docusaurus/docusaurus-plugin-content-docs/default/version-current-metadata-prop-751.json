@@ -1,0 +1,118 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "isLast": true,
+  "docsSidebars": {
+    "someSidebar": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Electronics",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/docs/uc2e1"
+          },
+          {
+            "type": "link",
+            "label": "Hardware",
+            "href": "/docs/uc2e2"
+          },
+          {
+            "type": "link",
+            "label": "Getting Started",
+            "href": "/docs/uc2e3"
+          },
+          {
+            "type": "link",
+            "label": "Flashing the Firmware",
+            "href": "/docs/uc2e4"
+          },
+          {
+            "type": "link",
+            "label": "REST principle",
+            "href": "/docs/uc2e5"
+          },
+          {
+            "type": "link",
+            "label": "Connecting devices",
+            "href": "/docs/uc2e6"
+          },
+          {
+            "type": "link",
+            "label": "Controlling the UC2e",
+            "href": "/docs/uc2e7"
+          },
+          {
+            "type": "link",
+            "label": "Compiling from Scratch",
+            "href": "/docs/uc2e8"
+          },
+          {
+            "type": "link",
+            "label": "Replace Hardware",
+            "href": "/docs/uc2e9"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "miniBOX",
+        "items": [
+          {
+            "type": "link",
+            "label": "UC2 miniBOX (english)",
+            "href": "/docs/uc2miniboxEN"
+          },
+          {
+            "type": "link",
+            "label": "UC2 miniBOX (Deutsch)",
+            "href": "/docs/uc2miniboxDE"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Discovery",
+        "items": [
+          {
+            "type": "link",
+            "label": "Discovery Kit Base",
+            "href": "/docs/DiscKit1"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "ImSwitch",
+        "items": [
+          {
+            "type": "link",
+            "label": "Install ImSwitch",
+            "href": "/docs/ImSwitchInstall"
+          }
+        ]
+      }
+    ]
+  },
+  "permalinkToSidebar": {
+    "/docs/DiscKit1": "someSidebar",
+    "/docs/ImSwitchInstall": "someSidebar",
+    "/docs/uc2e1": "someSidebar",
+    "/docs/uc2e2": "someSidebar",
+    "/docs/uc2e3": "someSidebar",
+    "/docs/uc2e4": "someSidebar",
+    "/docs/uc2e5": "someSidebar",
+    "/docs/uc2e6": "someSidebar",
+    "/docs/uc2e7": "someSidebar",
+    "/docs/uc2e8": "someSidebar",
+    "/docs/uc2e9": "someSidebar",
+    "/docs/uc2miniboxDE": "someSidebar",
+    "/docs/uc2miniboxEN": "someSidebar"
+  }
+}

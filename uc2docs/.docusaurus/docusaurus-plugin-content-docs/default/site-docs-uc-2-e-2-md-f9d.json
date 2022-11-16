@@ -1,0 +1,21 @@
+{
+  "unversionedId": "uc2e2",
+  "id": "uc2e2",
+  "isDocsHomePage": false,
+  "title": "Hardware",
+  "description": "🔌 Board layout and schematics",
+  "source": "@site/docs/uc2e2.md",
+  "slug": "/uc2e2",
+  "permalink": "/docs/uc2e2",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/uc2e2.md",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/uc2e1"
+  },
+  "next": {
+    "title": "Getting Started",
+    "permalink": "/docs/uc2e3"
+  }
+}

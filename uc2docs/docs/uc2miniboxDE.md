@@ -71,7 +71,7 @@ In der 3D gedruckten Grundplatte sind kleine Kugelmagnete auf die die Würfel ge
 <img src="../static/MINIBOX/5.png" width="300"/>
 </p>
 
-Willst du mehr Würfel haben? Dann kannst du sie selbst bauen. Du findest alles [hier](github.com/openUC2/UC2-GIT)
+Willst du mehr Würfel haben? Dann kannst du sie selbst bauen. Du findest alles [hier](https://github.com/openUC2/UC2-GIT)
 
 
 

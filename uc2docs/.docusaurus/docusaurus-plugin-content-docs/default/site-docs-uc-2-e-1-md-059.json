@@ -1,0 +1,17 @@
+{
+  "unversionedId": "uc2e1",
+  "id": "uc2e1",
+  "isDocsHomePage": false,
+  "title": "Introduction",
+  "description": "UC2e - A guide to use the UC2 Electronics",
+  "source": "@site/docs/uc2e1.md",
+  "slug": "/uc2e1",
+  "permalink": "/docs/uc2e1",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/uc2e1.md",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "next": {
+    "title": "Hardware",
+    "permalink": "/docs/uc2e2"
+  }
+}

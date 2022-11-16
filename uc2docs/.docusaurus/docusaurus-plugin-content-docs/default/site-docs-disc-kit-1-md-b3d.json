@@ -1,0 +1,21 @@
+{
+  "unversionedId": "DiscKit1",
+  "id": "DiscKit1",
+  "isDocsHomePage": false,
+  "title": "Discovery Kit Base",
+  "description": "This is a a collection of different mini-tutorials to assemble the different optical systems using UC2. First, we will introduce the setup with a brief text. Afterwards, a little video will help you assembling the device. If you have any questions, please feel free to post a question in the Forum or in the Github Issue section.",
+  "source": "@site/docs/DiscKit1.md",
+  "slug": "/DiscKit1",
+  "permalink": "/docs/DiscKit1",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/DiscKit1.md",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "UC2 miniBOX (Deutsch)",
+    "permalink": "/docs/uc2miniboxDE"
+  },
+  "next": {
+    "title": "Install ImSwitch",
+    "permalink": "/docs/ImSwitchInstall"
+  }
+}

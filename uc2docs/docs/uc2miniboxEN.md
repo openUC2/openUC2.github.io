@@ -72,7 +72,7 @@ In the 3D printed base plate there are small spherical magnets on which the cube
 <img src="../static/MINIBOX/5.png" width="300"/>
 </p>
 
-Want more dice? Then you can build them yourself. You can find everything [here](github.com/openUC2/UC2-GIT)
+Want more dice? Then you can build them yourself. You can find everything [here](https://github.com/openUC2/UC2-GIT)
 
 
 

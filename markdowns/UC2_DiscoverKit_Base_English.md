@@ -1,7 +1,7 @@
 
 
 
-summary: An introduction to work with the Discovery Kit Base 
+summary: An introduction to work with the Discovery Kit Base
 id: uc2-tutorial-discoverykit
 Categories: discovery kit
 tags: discovery kit, microscopy, optics
@@ -20,8 +20,11 @@ Feedback Link: https://youseetoo.org
 
 
 
-# An Introduction into the openUC2 Discovery Kit 
+# An Introduction into the openUC2 Discovery Kit
 <!----------------------------------------->
+
+This is a a collection of different mini-tutorials to assemble the different optical systems using UC2. First, we will introduce the setup with a brief text. Afterwards, a little video will help you assembling the device. If you have any questions, please feel free to post a question in the Forum or in the [Github Issue section](https://github.com/openUC2/UC2-GIT/issues/new).
+
 ### What will you learn?
 - What's inside the box?
 - How can we start different experiments?
@@ -30,6 +33,13 @@ Feedback Link: https://youseetoo.org
 ## What's inside the box?
 Duration: 3
 
+Inside the box you will find a number of different cubes, all coming with different functionalities. Below you will find a list of all modules inside the discovery kit.
+
+<p align="center">
+<img src="./assets/DISCOVERY_BASE/01_DiscoveryKitBase.png" width="400">
+</p>
+
+# PLACEHOLDER CAMERA CATALOG
 
 ![https://www.youtube.com/watch?v=NZZ6n620eV0](https://www.youtube.com/watch?v=NZZ6n620eV0)
 
@@ -58,7 +68,7 @@ Duration: 3
 
 
 <!----------------------------------------->
-## Build your first Telescope 
+## Build your first Telescope
 Duration: 3
 
 ![https://www.youtube.com/watch?v=Jp3uU7wly64](https://www.youtube.com/watch?v=Jp3uU7wly64)

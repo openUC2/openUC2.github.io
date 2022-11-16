@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Seeing is believing. Better with the docs!',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'openuc2', 
@@ -17,12 +17,16 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/',
+          to: 'docs/uc2e1',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          to: 'blog', 
+          label: 'Blog', 
+          position: 'left'
+        },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -38,11 +42,11 @@ module.exports = {
           items: [
             {
               label: 'Style Guide',
-              to: 'docs/',
+              to: 'docs/uc2e1',
             },
             {
               label: 'Second Doc',
-              to: 'docs/doc2/',
+              to: 'docs/uc2e2',
             },
           ],
         },

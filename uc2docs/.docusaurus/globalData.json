@@ -8,24 +8,12 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "doc1",
+          "mainDocId": "uc2e1",
           "docs": [
             {
               "id": "DiscKit1",
               "path": "/docs/DiscKit1",
               "sidebar": "someSidebar"
-            },
-            {
-              "id": "doc1",
-              "path": "/docs/"
-            },
-            {
-              "id": "doc2",
-              "path": "/docs/doc2"
-            },
-            {
-              "id": "doc3",
-              "path": "/docs/doc3"
             },
             {
               "id": "ImSwitchInstall",

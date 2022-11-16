@@ -3,7 +3,7 @@ export default {
   "tagline": "Seeing is believing. Better with the docs!",
   "url": "https://your-docusaurus-test-site.com",
   "baseUrl": "/",
-  "onBrokenLinks": "throw",
+  "onBrokenLinks": "warn",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
   "organizationName": "openuc2",
@@ -17,7 +17,7 @@ export default {
       },
       "items": [
         {
-          "to": "docs/",
+          "to": "docs/uc2e1",
           "activeBasePath": "docs",
           "label": "Docs",
           "position": "left"
@@ -43,11 +43,11 @@ export default {
           "items": [
             {
               "label": "Style Guide",
-              "to": "docs/"
+              "to": "docs/uc2e1"
             },
             {
               "label": "Second Doc",
-              "to": "docs/doc2/"
+              "to": "docs/uc2e2"
             }
           ]
         },

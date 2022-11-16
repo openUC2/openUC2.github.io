@@ -12,7 +12,6 @@ export default {
   '3570154c': [() => import(/* webpackChunkName: '3570154c' */ "@site/blog/2019-05-29-hello-world.md?truncated=true"), "@site/blog/2019-05-29-hello-world.md?truncated=true", require.resolveWeak("@site/blog/2019-05-29-hello-world.md?truncated=true")],
   '43443c48': [() => import(/* webpackChunkName: '43443c48' */ "@site/docs/ImSwitchInstall.md"), "@site/docs/ImSwitchInstall.md", require.resolveWeak("@site/docs/ImSwitchInstall.md")],
   '5e9f5e1a': [() => import(/* webpackChunkName: '5e9f5e1a' */ "@generated/docusaurus.config"), "@generated/docusaurus.config", require.resolveWeak("@generated/docusaurus.config")],
-  '616665f6': [() => import(/* webpackChunkName: '616665f6' */ "@site/docs/doc3.md"), "@site/docs/doc3.md", require.resolveWeak("@site/docs/doc3.md")],
   '6875c492': [() => import(/* webpackChunkName: '6875c492' */ "@theme/BlogTagsPostsPage"), "@theme/BlogTagsPostsPage", require.resolveWeak("@theme/BlogTagsPostsPage")],
   '71e4967f': [() => import(/* webpackChunkName: '71e4967f' */ "@site/docs/uc2e9.md"), "@site/docs/uc2e9.md", require.resolveWeak("@site/docs/uc2e9.md")],
   '7a48dc5f': [() => import(/* webpackChunkName: '7a48dc5f' */ "@site/docs/uc2miniboxDE.md"), "@site/docs/uc2miniboxDE.md", require.resolveWeak("@site/docs/uc2miniboxDE.md")],
@@ -27,7 +26,6 @@ export default {
   'ab623275': [() => import(/* webpackChunkName: 'ab623275' */ "@site/docs/uc2e4.md"), "@site/docs/uc2e4.md", require.resolveWeak("@site/docs/uc2e4.md")],
   'af172acd': [() => import(/* webpackChunkName: 'af172acd' */ "@site/blog/2019-05-30-welcome.md?truncated=true"), "@site/blog/2019-05-30-welcome.md?truncated=true", require.resolveWeak("@site/blog/2019-05-30-welcome.md?truncated=true")],
   'b2b675dd': [() => import(/* webpackChunkName: 'b2b675dd' */ "~blog/default/blog-c06.json"), "~blog/default/blog-c06.json", require.resolveWeak("~blog/default/blog-c06.json")],
-  'b2f90839': [() => import(/* webpackChunkName: 'b2f90839' */ "@site/docs/doc1.md"), "@site/docs/doc1.md", require.resolveWeak("@site/docs/doc1.md")],
   'b3d7423d': [() => import(/* webpackChunkName: 'b3d7423d' */ "@site/docs/DiscKit1.md"), "@site/docs/DiscKit1.md", require.resolveWeak("@site/docs/DiscKit1.md")],
   'bdd709f1': [() => import(/* webpackChunkName: 'bdd709f1' */ "@site/blog/2019-05-28-hola.md"), "@site/blog/2019-05-28-hola.md", require.resolveWeak("@site/blog/2019-05-28-hola.md")],
   'c4f5d8e4': [() => import(/* webpackChunkName: 'c4f5d8e4' */ "@site/src/pages/index.js"), "@site/src/pages/index.js", require.resolveWeak("@site/src/pages/index.js")],
@@ -35,6 +33,5 @@ export default {
   'ce3e42ad': [() => import(/* webpackChunkName: 'ce3e42ad' */ "@site/docs/mdx.md"), "@site/docs/mdx.md", require.resolveWeak("@site/docs/mdx.md")],
   'd610846f': [() => import(/* webpackChunkName: 'd610846f' */ "@site/blog/2019-05-29-hello-world.md"), "@site/blog/2019-05-29-hello-world.md", require.resolveWeak("@site/blog/2019-05-29-hello-world.md")],
   'd73a9db2': [() => import(/* webpackChunkName: 'd73a9db2' */ "@site/docs/uc2e3.md"), "@site/docs/uc2e3.md", require.resolveWeak("@site/docs/uc2e3.md")],
-  'df361e2b': [() => import(/* webpackChunkName: 'df361e2b' */ "@site/docs/doc2.md"), "@site/docs/doc2.md", require.resolveWeak("@site/docs/doc2.md")],
   'e16015ca': [() => import(/* webpackChunkName: 'e16015ca' */ "~blog/default/blog-tags-hola-ea2.json"), "~blog/default/blog-tags-hola-ea2.json", require.resolveWeak("~blog/default/blog-tags-hola-ea2.json")],
   'f9d09985': [() => import(/* webpackChunkName: 'f9d09985' */ "@site/docs/uc2e2.md"), "@site/docs/uc2e2.md", require.resolveWeak("@site/docs/uc2e2.md")],};

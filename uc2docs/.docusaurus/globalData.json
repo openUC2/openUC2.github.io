@@ -8,80 +8,96 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "uc2e1",
+          "mainDocId": "intro",
           "docs": [
             {
-              "id": "DiscKit1",
-              "path": "/docs/DiscKit1",
-              "sidebar": "someSidebar"
+              "id": "DiscoveryKit/DiscKit1",
+              "path": "/docs/DiscoveryKit/DiscKit1",
+              "sidebar": "tutorialSidebar"
             },
             {
-              "id": "ImSwitchInstall",
-              "path": "/docs/ImSwitchInstall",
-              "sidebar": "someSidebar"
+              "id": "Electronics/uc2e1",
+              "path": "/docs/Electronics/uc2e1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Electronics/uc2e2",
+              "path": "/docs/Electronics/uc2e2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Electronics/uc2e3",
+              "path": "/docs/Electronics/uc2e3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Electronics/uc2e4",
+              "path": "/docs/Electronics/uc2e4",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Electronics/uc2e5",
+              "path": "/docs/Electronics/uc2e5",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Electronics/uc2e6",
+              "path": "/docs/Electronics/uc2e6",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Electronics/uc2e7",
+              "path": "/docs/Electronics/uc2e7",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Electronics/uc2e8",
+              "path": "/docs/Electronics/uc2e8",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Electronics/uc2e9",
+              "path": "/docs/Electronics/uc2e9",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ImSwitch/ImSwitchInstall",
+              "path": "/docs/ImSwitch/ImSwitchInstall",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
             },
             {
               "id": "mdx",
-              "path": "/docs/mdx"
+              "path": "/docs/mdx",
+              "sidebar": "tutorialSidebar"
             },
             {
-              "id": "uc2e1",
-              "path": "/docs/uc2e1",
-              "sidebar": "someSidebar"
+              "id": "MiniBox/uc2miniboxDE",
+              "path": "/docs/MiniBox/uc2miniboxDE",
+              "sidebar": "tutorialSidebar"
             },
             {
-              "id": "uc2e2",
-              "path": "/docs/uc2e2",
-              "sidebar": "someSidebar"
-            },
-            {
-              "id": "uc2e3",
-              "path": "/docs/uc2e3",
-              "sidebar": "someSidebar"
-            },
-            {
-              "id": "uc2e4",
-              "path": "/docs/uc2e4",
-              "sidebar": "someSidebar"
-            },
-            {
-              "id": "uc2e5",
-              "path": "/docs/uc2e5",
-              "sidebar": "someSidebar"
-            },
-            {
-              "id": "uc2e6",
-              "path": "/docs/uc2e6",
-              "sidebar": "someSidebar"
-            },
-            {
-              "id": "uc2e7",
-              "path": "/docs/uc2e7",
-              "sidebar": "someSidebar"
-            },
-            {
-              "id": "uc2e8",
-              "path": "/docs/uc2e8",
-              "sidebar": "someSidebar"
-            },
-            {
-              "id": "uc2e9",
-              "path": "/docs/uc2e9",
-              "sidebar": "someSidebar"
-            },
-            {
-              "id": "uc2miniboxDE",
-              "path": "/docs/uc2miniboxDE",
-              "sidebar": "someSidebar"
-            },
-            {
-              "id": "uc2miniboxEN",
-              "path": "/docs/uc2miniboxEN",
-              "sidebar": "someSidebar"
+              "id": "MiniBox/uc2miniboxEN",
+              "path": "/docs/MiniBox/uc2miniboxEN",
+              "sidebar": "tutorialSidebar"
             }
-          ]
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
         }
-      ]
+      ],
+      "breadcrumbs": true
     }
   }
 }

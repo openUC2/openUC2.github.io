@@ -1,7 +1,6 @@
 {
+  "label": "docusaurus",
+  "permalink": "/blog/tags/docusaurus",
   "allTagsPath": "/blog/tags",
-  "slug": "docusaurus",
-  "name": "docusaurus",
-  "count": 3,
-  "permalink": "/blog/tags/docusaurus"
+  "count": 4
 }

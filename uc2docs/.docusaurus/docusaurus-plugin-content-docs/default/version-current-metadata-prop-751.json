@@ -2,117 +2,227 @@
   "pluginId": "default",
   "version": "current",
   "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
   "isLast": true,
   "docsSidebars": {
-    "someSidebar": [
+    "tutorialSidebar": [
       {
-        "collapsed": true,
-        "type": "category",
-        "label": "Electronics",
-        "items": [
-          {
-            "type": "link",
-            "label": "Introduction",
-            "href": "/docs/uc2e1"
-          },
-          {
-            "type": "link",
-            "label": "Hardware",
-            "href": "/docs/uc2e2"
-          },
-          {
-            "type": "link",
-            "label": "Getting Started",
-            "href": "/docs/uc2e3"
-          },
-          {
-            "type": "link",
-            "label": "Flashing the Firmware",
-            "href": "/docs/uc2e4"
-          },
-          {
-            "type": "link",
-            "label": "REST principle",
-            "href": "/docs/uc2e5"
-          },
-          {
-            "type": "link",
-            "label": "Connecting devices",
-            "href": "/docs/uc2e6"
-          },
-          {
-            "type": "link",
-            "label": "Controlling the UC2e",
-            "href": "/docs/uc2e7"
-          },
-          {
-            "type": "link",
-            "label": "Compiling from Scratch",
-            "href": "/docs/uc2e8"
-          },
-          {
-            "type": "link",
-            "label": "Replace Hardware",
-            "href": "/docs/uc2e9"
-          }
-        ]
+        "type": "link",
+        "label": "Documentation Intro",
+        "href": "/docs/intro",
+        "docId": "intro"
       },
       {
-        "collapsed": true,
         "type": "category",
-        "label": "miniBOX",
-        "items": [
-          {
-            "type": "link",
-            "label": "UC2 miniBOX (english)",
-            "href": "/docs/uc2miniboxEN"
-          },
-          {
-            "type": "link",
-            "label": "UC2 miniBOX (Deutsch)",
-            "href": "/docs/uc2miniboxDE"
-          }
-        ]
-      },
-      {
+        "label": "DiscoveryKit",
+        "collapsible": true,
         "collapsed": true,
-        "type": "category",
-        "label": "Discovery",
         "items": [
           {
             "type": "link",
             "label": "Discovery Kit Base",
-            "href": "/docs/DiscKit1"
+            "href": "/docs/DiscoveryKit/DiscKit1",
+            "docId": "DiscoveryKit/DiscKit1"
           }
         ]
       },
       {
+        "type": "category",
+        "label": "Electronics",
+        "collapsible": true,
         "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/docs/Electronics/uc2e1",
+            "docId": "Electronics/uc2e1"
+          },
+          {
+            "type": "link",
+            "label": "Hardware",
+            "href": "/docs/Electronics/uc2e2",
+            "docId": "Electronics/uc2e2"
+          },
+          {
+            "type": "link",
+            "label": "Getting Started",
+            "href": "/docs/Electronics/uc2e3",
+            "docId": "Electronics/uc2e3"
+          },
+          {
+            "type": "link",
+            "label": "Flashing the Firmware",
+            "href": "/docs/Electronics/uc2e4",
+            "docId": "Electronics/uc2e4"
+          },
+          {
+            "type": "link",
+            "label": "REST principle",
+            "href": "/docs/Electronics/uc2e5",
+            "docId": "Electronics/uc2e5"
+          },
+          {
+            "type": "link",
+            "label": "Connecting devices",
+            "href": "/docs/Electronics/uc2e6",
+            "docId": "Electronics/uc2e6"
+          },
+          {
+            "type": "link",
+            "label": "Controlling the UC2e",
+            "href": "/docs/Electronics/uc2e7",
+            "docId": "Electronics/uc2e7"
+          },
+          {
+            "type": "link",
+            "label": "Compiling from Scratch",
+            "href": "/docs/Electronics/uc2e8",
+            "docId": "Electronics/uc2e8"
+          },
+          {
+            "type": "link",
+            "label": "Replace Hardware",
+            "href": "/docs/Electronics/uc2e9",
+            "docId": "Electronics/uc2e9"
+          }
+        ]
+      },
+      {
         "type": "category",
         "label": "ImSwitch",
+        "collapsible": true,
+        "collapsed": true,
         "items": [
           {
             "type": "link",
             "label": "Install ImSwitch",
-            "href": "/docs/ImSwitchInstall"
+            "href": "/docs/ImSwitch/ImSwitchInstall",
+            "docId": "ImSwitch/ImSwitchInstall"
           }
         ]
+      },
+      {
+        "type": "category",
+        "label": "MiniBox",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "UC2 miniBOX (Deutsch)",
+            "href": "/docs/MiniBox/uc2miniboxDE",
+            "docId": "MiniBox/uc2miniboxDE"
+          },
+          {
+            "type": "link",
+            "label": "UC2 miniBOX (english)",
+            "href": "/docs/MiniBox/uc2miniboxEN",
+            "docId": "MiniBox/uc2miniboxEN"
+          }
+        ]
+      },
+      {
+        "type": "link",
+        "label": "Contact us!",
+        "href": "/docs/mdx",
+        "docId": "mdx"
       }
     ]
   },
-  "permalinkToSidebar": {
-    "/docs/DiscKit1": "someSidebar",
-    "/docs/ImSwitchInstall": "someSidebar",
-    "/docs/uc2e1": "someSidebar",
-    "/docs/uc2e2": "someSidebar",
-    "/docs/uc2e3": "someSidebar",
-    "/docs/uc2e4": "someSidebar",
-    "/docs/uc2e5": "someSidebar",
-    "/docs/uc2e6": "someSidebar",
-    "/docs/uc2e7": "someSidebar",
-    "/docs/uc2e8": "someSidebar",
-    "/docs/uc2e9": "someSidebar",
-    "/docs/uc2miniboxDE": "someSidebar",
-    "/docs/uc2miniboxEN": "someSidebar"
+  "docs": {
+    "DiscoveryKit/DiscKit1": {
+      "id": "DiscoveryKit/DiscKit1",
+      "title": "Discovery Kit Base",
+      "description": "This is a a collection of different mini-tutorials to assemble the different optical systems using UC2. First, we will introduce the setup with a brief text. Afterwards, a little video will help you assembling the device. If you have any questions, please feel free to post a question in the Forum or in the Github Issue section.",
+      "sidebar": "tutorialSidebar"
+    },
+    "Electronics/uc2e1": {
+      "id": "Electronics/uc2e1",
+      "title": "Introduction",
+      "description": "Overview",
+      "sidebar": "tutorialSidebar"
+    },
+    "Electronics/uc2e2": {
+      "id": "Electronics/uc2e2",
+      "title": "Hardware",
+      "description": "🔌 Board layout and schematics",
+      "sidebar": "tutorialSidebar"
+    },
+    "Electronics/uc2e3": {
+      "id": "Electronics/uc2e3",
+      "title": "Getting Started",
+      "description": "First Steps, Getting Started, Flashing - Simply Quick Start!",
+      "sidebar": "tutorialSidebar"
+    },
+    "Electronics/uc2e4": {
+      "id": "Electronics/uc2e4",
+      "title": "Flashing the Firmware",
+      "description": "Flashing latest version of the Firmware",
+      "sidebar": "tutorialSidebar"
+    },
+    "Electronics/uc2e5": {
+      "id": "Electronics/uc2e5",
+      "title": "REST principle",
+      "description": "Introduction into the ESP32 microcontroller firmware",
+      "sidebar": "tutorialSidebar"
+    },
+    "Electronics/uc2e6": {
+      "id": "Electronics/uc2e6",
+      "title": "Connecting devices",
+      "description": "Connect devices",
+      "sidebar": "tutorialSidebar"
+    },
+    "Electronics/uc2e7": {
+      "id": "Electronics/uc2e7",
+      "title": "Controlling the UC2e",
+      "description": "Controlling the ESP32",
+      "sidebar": "tutorialSidebar"
+    },
+    "Electronics/uc2e8": {
+      "id": "Electronics/uc2e8",
+      "title": "Compiling from Scratch",
+      "description": "Source-code, Compiling and Binaries",
+      "sidebar": "tutorialSidebar"
+    },
+    "Electronics/uc2e9": {
+      "id": "Electronics/uc2e9",
+      "title": "Replace Hardware",
+      "description": "❌ Replacing parts",
+      "sidebar": "tutorialSidebar"
+    },
+    "ImSwitch/ImSwitchInstall": {
+      "id": "ImSwitch/ImSwitchInstall",
+      "title": "Install ImSwitch",
+      "description": "What will you learn?",
+      "sidebar": "tutorialSidebar"
+    },
+    "intro": {
+      "id": "intro",
+      "title": "Documentation Intro",
+      "description": "Feel free to browse through all the different count",
+      "sidebar": "tutorialSidebar"
+    },
+    "mdx": {
+      "id": "mdx",
+      "title": "Contact us!",
+      "description": "Contact us through mail.",
+      "sidebar": "tutorialSidebar"
+    },
+    "MiniBox/uc2miniboxDE": {
+      "id": "MiniBox/uc2miniboxDE",
+      "title": "UC2 miniBOX (Deutsch)",
+      "description": "Wa wirst du lernen?",
+      "sidebar": "tutorialSidebar"
+    },
+    "MiniBox/uc2miniboxEN": {
+      "id": "MiniBox/uc2miniboxEN",
+      "title": "UC2 miniBOX (english)",
+      "description": "What will you learn?",
+      "sidebar": "tutorialSidebar"
+    }
   }
 }

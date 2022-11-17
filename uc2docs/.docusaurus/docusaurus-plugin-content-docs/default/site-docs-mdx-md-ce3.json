@@ -1,12 +1,22 @@
 {
   "unversionedId": "mdx",
   "id": "mdx",
-  "isDocsHomePage": false,
-  "title": "Powered by MDX",
-  "description": "You can write JSX and use React components within your Markdown thanks to MDX.",
+  "title": "Contact us!",
+  "description": "Contact us through mail.",
   "source": "@site/docs/mdx.md",
+  "sourceDirName": ".",
   "slug": "/mdx",
   "permalink": "/docs/mdx",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/mdx.md",
-  "version": "current"
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "mdx",
+    "title": "Contact us!"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UC2 miniBOX (english)",
+    "permalink": "/docs/MiniBox/uc2miniboxEN"
+  }
 }

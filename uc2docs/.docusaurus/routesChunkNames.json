@@ -1,151 +1,263 @@
 {
-  "/-deb": {
-    "component": "c4f5d8e4",
-    "config": "5e9f5e1a"
+  "/__docusaurus/debug-d92": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-1-d-9-b12"
+    }
   },
-  "/blog-869": {
-    "component": "a6aa9e1f",
-    "sidebar": "a2983d87",
+  "/__docusaurus/debug/config-706": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-1-d-9-b12"
+    }
+  },
+  "/__docusaurus/debug/content-f96": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-1-d-9-b12"
+    },
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-409": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-1-d-9-b12"
+    }
+  },
+  "/__docusaurus/debug/metadata-41b": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-1-d-9-b12"
+    }
+  },
+  "/__docusaurus/debug/registry-72f": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-1-d-9-b12"
+    }
+  },
+  "/__docusaurus/debug/routes-299": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-1-d-9-b12"
+    }
+  },
+  "/blog-426": {
+    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__context": {
+      "plugin": "plugin---blog-2-c-0-998"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "af172acd"
+        "content": "content---blog-766-e3c"
       },
       {
-        "content": "3570154c"
+        "content": "content---blogf-4-f-cd7"
       },
       {
-        "content": "8e9f0a8a"
+        "content": "content---blog-871-381"
+      },
+      {
+        "content": "content---blog-925-e00"
       }
     ],
-    "metadata": "b2b675dd"
+    "metadata": "metadata---blogb-2-b-df1"
   },
-  "/blog/hello-world-8ed": {
-    "component": "ccc49370",
-    "sidebar": "a2983d87",
-    "content": "d610846f"
+  "/blog/archive-6bb": {
+    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+    "__context": {
+      "plugin": "plugin---blog-2-c-0-998"
+    },
+    "archive": "archive---blog-archiveb-2-f-393"
   },
-  "/blog/hola-1b8": {
-    "component": "ccc49370",
-    "sidebar": "a2983d87",
-    "content": "bdd709f1"
+  "/blog/first-blog-post-316": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-2-c-0-998"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-first-blog-poste-27-4a1"
   },
-  "/blog/tags-446": {
-    "component": "01a85c17",
-    "sidebar": "a2983d87",
-    "tags": "a7023ddc"
+  "/blog/long-blog-post-e2b": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-2-c-0-998"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-long-blog-post-736-bc7"
   },
-  "/blog/tags/docusaurus-8c6": {
-    "component": "6875c492",
-    "sidebar": "a2983d87",
+  "/blog/mdx-blog-post-f93": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-2-c-0-998"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-mdx-blog-post-593-37b"
+  },
+  "/blog/tags-cb6": {
+    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
+    "__context": {
+      "plugin": "plugin---blog-2-c-0-998"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "tags": "tags---blog-tagsa-70-da2"
+  },
+  "/blog/tags/docusaurus-5d2": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-2-c-0-998"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "af172acd"
+        "content": "content---blog-766-e3c"
       },
       {
-        "content": "3570154c"
+        "content": "content---blogf-4-f-cd7"
       },
       {
-        "content": "8e9f0a8a"
-      }
-    ],
-    "metadata": "a80da1cf"
-  },
-  "/blog/tags/facebook-4d6": {
-    "component": "6875c492",
-    "sidebar": "a2983d87",
-    "items": [
-      {
-        "content": "af172acd"
-      }
-    ],
-    "metadata": "031793e1"
-  },
-  "/blog/tags/hello-a35": {
-    "component": "6875c492",
-    "sidebar": "a2983d87",
-    "items": [
-      {
-        "content": "af172acd"
+        "content": "content---blog-871-381"
       },
       {
-        "content": "3570154c"
+        "content": "content---blog-925-e00"
       }
     ],
-    "metadata": "30a24c52"
+    "tag": "tag---blog-tags-docusaurusa-80-728",
+    "listMetadata": "listMetadata---blog-tags-docusaurus-608-c09"
   },
-  "/blog/tags/hola-a0b": {
-    "component": "6875c492",
-    "sidebar": "a2983d87",
+  "/blog/tags/facebook-fe9": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-2-c-0-998"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "8e9f0a8a"
+        "content": "content---blog-766-e3c"
       }
     ],
-    "metadata": "e16015ca"
+    "tag": "tag---blog-tags-facebook-031-c52",
+    "listMetadata": "listMetadata---blog-tags-facebook-096-d31"
   },
-  "/blog/welcome-d64": {
-    "component": "ccc49370",
-    "sidebar": "a2983d87",
-    "content": "2868cdab"
+  "/blog/tags/hello-e32": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-2-c-0-998"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blog-871-381"
+      }
+    ],
+    "tag": "tag---blog-tags-hello-30-a-bed",
+    "listMetadata": "listMetadata---blog-tags-hello-664-70a"
   },
-  "/docs-e4f": {
-    "component": "1be78505",
-    "versionMetadata": "935f2afb"
+  "/blog/tags/hola-fd7": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-2-c-0-998"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "tag": "tag---blog-tags-holae-16-18a",
+    "listMetadata": "listMetadata---blog-tags-hola-4-c-9-a24"
   },
-  "/docs/DiscKit1-bf4": {
-    "component": "17896441",
-    "content": "b3d7423d"
+  "/blog/welcome-957": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-2-c-0-998"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-welcomed-9-f-ffb"
   },
-  "/docs/ImSwitchInstall-37e": {
-    "component": "17896441",
-    "content": "43443c48"
+  "/markdown-page-497": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---markdown-pagecc-0-755"
+    },
+    "content": "content---markdown-page-393-028"
   },
-  "/docs/mdx-955": {
-    "component": "17896441",
-    "content": "ce3e42ad"
+  "/docs-484": {
+    "__comp": "__comp---theme-doc-page-1-be-9be",
+    "__context": {
+      "plugin": "plugin---docs-2-a-4-0c6"
+    },
+    "versionMetadata": "versionMetadata---docs-935-398"
   },
-  "/docs/uc2e1-052": {
-    "component": "17896441",
-    "content": "05994f66"
+  "/docs/DiscoveryKit/DiscKit1-75c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-discovery-kit-disc-kit-15-a-5-709"
   },
-  "/docs/uc2e2-fe9": {
-    "component": "17896441",
-    "content": "f9d09985"
+  "/docs/Electronics/uc2e1-91f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-electronics-uc-2-e-18-fc-225"
   },
-  "/docs/uc2e3-7f7": {
-    "component": "17896441",
-    "content": "d73a9db2"
+  "/docs/Electronics/uc2e2-67b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-electronics-uc-2-e-2-f-48-c64"
   },
-  "/docs/uc2e4-bed": {
-    "component": "17896441",
-    "content": "ab623275"
+  "/docs/Electronics/uc2e3-4c9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-electronics-uc-2-e-3-c-84-d94"
   },
-  "/docs/uc2e5-5b5": {
-    "component": "17896441",
-    "content": "010f8231"
+  "/docs/Electronics/uc2e4-74b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-electronics-uc-2-e-48-e-8-688"
   },
-  "/docs/uc2e6-7db": {
-    "component": "17896441",
-    "content": "a0b39f68"
+  "/docs/Electronics/uc2e5-ba6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-electronics-uc-2-e-5716-1cc"
   },
-  "/docs/uc2e7-d46": {
-    "component": "17896441",
-    "content": "8d7a4ca8"
+  "/docs/Electronics/uc2e6-bc6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-electronics-uc-2-e-6-a-91-a0b"
   },
-  "/docs/uc2e8-fe5": {
-    "component": "17896441",
-    "content": "257b957a"
+  "/docs/Electronics/uc2e7-07d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-electronics-uc-2-e-77-f-9-ce0"
   },
-  "/docs/uc2e9-013": {
-    "component": "17896441",
-    "content": "71e4967f"
+  "/docs/Electronics/uc2e8-60b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-electronics-uc-2-e-8017-41f"
   },
-  "/docs/uc2miniboxDE-f40": {
-    "component": "17896441",
-    "content": "7a48dc5f"
+  "/docs/Electronics/uc2e9-e67": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-electronics-uc-2-e-9-e-4-a-86e"
   },
-  "/docs/uc2miniboxEN-7a5": {
-    "component": "17896441",
-    "content": "2eef26bb"
+  "/docs/ImSwitch/ImSwitchInstall-178": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-im-switch-im-switch-install-11-e-de6"
+  },
+  "/docs/intro-aed": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-intro-0-e-3-be1"
+  },
+  "/docs/mdx-9de": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-mdxce-3-7d1"
+  },
+  "/docs/MiniBox/uc2miniboxDE-bbd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-mini-box-uc-2-minibox-de-8-b-3-e99"
+  },
+  "/docs/MiniBox/uc2miniboxEN-1f4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-mini-box-uc-2-minibox-en-63-c-e57"
+  },
+  "/-781": {
+    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
+    "__context": {
+      "plugin": "plugin---markdown-pagecc-0-755"
+    },
+    "config": "config---5-e-9-4f3"
   }
 }

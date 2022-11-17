@@ -4,106 +4,154 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', 'd92'),
+    component: ComponentCreator('/__docusaurus/debug', '9ed'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '706'),
+    component: ComponentCreator('/__docusaurus/debug/config', '98c'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'f96'),
+    component: ComponentCreator('/__docusaurus/debug/content', 'd53'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', '409'),
+    component: ComponentCreator('/__docusaurus/debug/globalData', '452'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '41b'),
+    component: ComponentCreator('/__docusaurus/debug/metadata', 'da0'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '72f'),
+    component: ComponentCreator('/__docusaurus/debug/registry', '347'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '299'),
+    component: ComponentCreator('/__docusaurus/debug/routes', 'f2a'),
     exact: true
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', '426'),
+    component: ComponentCreator('/blog', 'a87'),
     exact: true
   },
   {
     path: '/blog/archive',
-    component: ComponentCreator('/blog/archive', '6bb'),
+    component: ComponentCreator('/blog/archive', '19f'),
     exact: true
   },
   {
     path: '/blog/first-blog-post',
-    component: ComponentCreator('/blog/first-blog-post', '316'),
+    component: ComponentCreator('/blog/first-blog-post', 'd54'),
     exact: true
   },
   {
     path: '/blog/long-blog-post',
-    component: ComponentCreator('/blog/long-blog-post', 'e2b'),
+    component: ComponentCreator('/blog/long-blog-post', 'fa4'),
     exact: true
   },
   {
     path: '/blog/mdx-blog-post',
-    component: ComponentCreator('/blog/mdx-blog-post', 'f93'),
+    component: ComponentCreator('/blog/mdx-blog-post', 'df4'),
     exact: true
   },
   {
     path: '/blog/tags',
-    component: ComponentCreator('/blog/tags', 'cb6'),
+    component: ComponentCreator('/blog/tags', '744'),
     exact: true
   },
   {
     path: '/blog/tags/docusaurus',
-    component: ComponentCreator('/blog/tags/docusaurus', '5d2'),
+    component: ComponentCreator('/blog/tags/docusaurus', '12a'),
     exact: true
   },
   {
     path: '/blog/tags/facebook',
-    component: ComponentCreator('/blog/tags/facebook', 'fe9'),
+    component: ComponentCreator('/blog/tags/facebook', '9be'),
     exact: true
   },
   {
     path: '/blog/tags/hello',
-    component: ComponentCreator('/blog/tags/hello', 'e32'),
+    component: ComponentCreator('/blog/tags/hello', '5fe'),
     exact: true
   },
   {
     path: '/blog/tags/hola',
-    component: ComponentCreator('/blog/tags/hola', 'fd7'),
+    component: ComponentCreator('/blog/tags/hola', '318'),
     exact: true
   },
   {
     path: '/blog/welcome',
-    component: ComponentCreator('/blog/welcome', '957'),
+    component: ComponentCreator('/blog/welcome', 'afb'),
     exact: true
   },
   {
     path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', '497'),
+    component: ComponentCreator('/markdown-page', 'c84'),
     exact: true
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '484'),
+    component: ComponentCreator('/docs', 'f51'),
     routes: [
       {
         path: '/docs/DiscoveryKit/DiscKit1',
         component: ComponentCreator('/docs/DiscoveryKit/DiscKit1', '75c'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/DiscoveryKit/Polarisation/APP_POL_Brewster_Angle_Experiment/',
+        component: ComponentCreator('/docs/DiscoveryKit/Polarisation/APP_POL_Brewster_Angle_Experiment/', '682'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/DiscoveryKit/Polarisation/APP_POL_Circular_Polarizer/',
+        component: ComponentCreator('/docs/DiscoveryKit/Polarisation/APP_POL_Circular_Polarizer/', '98b'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/DiscoveryKit/Polarisation/APP_POL_Crossed_Polarizers/',
+        component: ComponentCreator('/docs/DiscoveryKit/Polarisation/APP_POL_Crossed_Polarizers/', '8ae'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/DiscoveryKit/Polarisation/APP_POL_Many_Microscope_Slides_Experiment/',
+        component: ComponentCreator('/docs/DiscoveryKit/Polarisation/APP_POL_Many_Microscope_Slides_Experiment/', '506'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/DiscoveryKit/Polarisation/APP_POL_Newtons_Rings_Experiment/',
+        component: ComponentCreator('/docs/DiscoveryKit/Polarisation/APP_POL_Newtons_Rings_Experiment/', 'b07'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/DiscoveryKit/Polarisation/APP_POL_Polarization_using_optically_active_solution/',
+        component: ComponentCreator('/docs/DiscoveryKit/Polarisation/APP_POL_Polarization_using_optically_active_solution/', 'bfe'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/DiscoveryKit/Polarisation/APP_POL_Stress_Birefringence/',
+        component: ComponentCreator('/docs/DiscoveryKit/Polarisation/APP_POL_Stress_Birefringence/', '6c3'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/DiscoveryKit/Polarisation/APP_POL_Three_Polarizers/',
+        component: ComponentCreator('/docs/DiscoveryKit/Polarisation/APP_POL_Three_Polarizers/', '731'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
@@ -195,7 +243,7 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '781'),
+    component: ComponentCreator('/', '0f7'),
     exact: true
   },
   {

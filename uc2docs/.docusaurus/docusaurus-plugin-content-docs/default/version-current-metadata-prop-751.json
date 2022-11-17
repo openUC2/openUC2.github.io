@@ -26,6 +26,62 @@
             "label": "Discovery Kit Base",
             "href": "/docs/DiscoveryKit/DiscKit1",
             "docId": "DiscoveryKit/DiscKit1"
+          },
+          {
+            "type": "category",
+            "label": "Polarisation",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "Brewster Angle Experiment",
+                "href": "/docs/DiscoveryKit/Polarisation/APP_POL_Brewster_Angle_Experiment/",
+                "docId": "DiscoveryKit/Polarisation/APP_POL_Brewster_Angle_Experiment/Readme"
+              },
+              {
+                "type": "link",
+                "label": "Circular Polarizer",
+                "href": "/docs/DiscoveryKit/Polarisation/APP_POL_Circular_Polarizer/",
+                "docId": "DiscoveryKit/Polarisation/APP_POL_Circular_Polarizer/Readme"
+              },
+              {
+                "type": "link",
+                "label": "Crossed Polarizers",
+                "href": "/docs/DiscoveryKit/Polarisation/APP_POL_Crossed_Polarizers/",
+                "docId": "DiscoveryKit/Polarisation/APP_POL_Crossed_Polarizers/Readme"
+              },
+              {
+                "type": "link",
+                "label": "Many Microscope Slides Experiment",
+                "href": "/docs/DiscoveryKit/Polarisation/APP_POL_Many_Microscope_Slides_Experiment/",
+                "docId": "DiscoveryKit/Polarisation/APP_POL_Many_Microscope_Slides_Experiment/Readme"
+              },
+              {
+                "type": "link",
+                "label": "Newton's Rings Experiment",
+                "href": "/docs/DiscoveryKit/Polarisation/APP_POL_Newtons_Rings_Experiment/",
+                "docId": "DiscoveryKit/Polarisation/APP_POL_Newtons_Rings_Experiment/Readme"
+              },
+              {
+                "type": "link",
+                "label": "Polarization Experiment using Optically Active Solution",
+                "href": "/docs/DiscoveryKit/Polarisation/APP_POL_Polarization_using_optically_active_solution/",
+                "docId": "DiscoveryKit/Polarisation/APP_POL_Polarization_using_optically_active_solution/Readme"
+              },
+              {
+                "type": "link",
+                "label": "Stress Birefringence Experiment",
+                "href": "/docs/DiscoveryKit/Polarisation/APP_POL_Stress_Birefringence/",
+                "docId": "DiscoveryKit/Polarisation/APP_POL_Stress_Birefringence/Readme"
+              },
+              {
+                "type": "link",
+                "label": "Three Polarizers (0, 45, 90 degrees)",
+                "href": "/docs/DiscoveryKit/Polarisation/APP_POL_Three_Polarizers/",
+                "docId": "DiscoveryKit/Polarisation/APP_POL_Three_Polarizers/Readme"
+              }
+            ]
           }
         ]
       },
@@ -138,6 +194,54 @@
       "id": "DiscoveryKit/DiscKit1",
       "title": "Discovery Kit Base",
       "description": "This is a a collection of different mini-tutorials to assemble the different optical systems using UC2. First, we will introduce the setup with a brief text. Afterwards, a little video will help you assembling the device. If you have any questions, please feel free to post a question in the Forum or in the Github Issue section.",
+      "sidebar": "tutorialSidebar"
+    },
+    "DiscoveryKit/Polarisation/APP_POL_Brewster_Angle_Experiment/Readme": {
+      "id": "DiscoveryKit/Polarisation/APP_POL_Brewster_Angle_Experiment/Readme",
+      "title": "Brewster Angle Experiment",
+      "description": "There are several ways to produce polarized light. Optical processes reflection or refraction can be easily used to achieve that.",
+      "sidebar": "tutorialSidebar"
+    },
+    "DiscoveryKit/Polarisation/APP_POL_Circular_Polarizer/Readme": {
+      "id": "DiscoveryKit/Polarisation/APP_POL_Circular_Polarizer/Readme",
+      "title": "Circular Polarizer",
+      "description": "In nature, a circular polarization state is uncommon but not impossible. Some organisms can produce circularly polarized light by reflection. Many beetles, shrimps, and other species reflect strongly circularly polarized light, while a few fireflies emit circularly polarized light. If we look at an ordinary day of a human being, we use circularly polarized light to have fun with 3D cinema goggles!",
+      "sidebar": "tutorialSidebar"
+    },
+    "DiscoveryKit/Polarisation/APP_POL_Crossed_Polarizers/Readme": {
+      "id": "DiscoveryKit/Polarisation/APP_POL_Crossed_Polarizers/Readme",
+      "title": "Crossed Polarizers",
+      "description": "<img src=\"./IMAGES/crossedpolarizersdiagram_2.png\"",
+      "sidebar": "tutorialSidebar"
+    },
+    "DiscoveryKit/Polarisation/APP_POL_Many_Microscope_Slides_Experiment/Readme": {
+      "id": "DiscoveryKit/Polarisation/APP_POL_Many_Microscope_Slides_Experiment/Readme",
+      "title": "Many Microscope Slides Experiment",
+      "description": "<img src=\"./IMAGES/ManyMicroscopeSlides_Experiment.png\"",
+      "sidebar": "tutorialSidebar"
+    },
+    "DiscoveryKit/Polarisation/APP_POL_Newtons_Rings_Experiment/Readme": {
+      "id": "DiscoveryKit/Polarisation/APP_POL_Newtons_Rings_Experiment/Readme",
+      "title": "Newton's Rings Experiment",
+      "description": "<img src=\"./IMAGES/newtonsringsdiagram.png\"",
+      "sidebar": "tutorialSidebar"
+    },
+    "DiscoveryKit/Polarisation/APP_POL_Polarization_using_optically_active_solution/Readme": {
+      "id": "DiscoveryKit/Polarisation/APP_POL_Polarization_using_optically_active_solution/Readme",
+      "title": "Polarization Experiment using Optically Active Solution",
+      "description": "<img src=\"./IMAGES/ActiveSolutionExperiment.png\"",
+      "sidebar": "tutorialSidebar"
+    },
+    "DiscoveryKit/Polarisation/APP_POL_Stress_Birefringence/Readme": {
+      "id": "DiscoveryKit/Polarisation/APP_POL_Stress_Birefringence/Readme",
+      "title": "Stress Birefringence Experiment",
+      "description": "<img src=\"./IMAGES/Stress_Birefringence.png\"",
+      "sidebar": "tutorialSidebar"
+    },
+    "DiscoveryKit/Polarisation/APP_POL_Three_Polarizers/Readme": {
+      "id": "DiscoveryKit/Polarisation/APP_POL_Three_Polarizers/Readme",
+      "title": "Three Polarizers (0, 45, 90 degrees)",
+      "description": "<img src=\"./IMAGES/threepolarizersdiagram.png\"",
       "sidebar": "tutorialSidebar"
     },
     "Electronics/uc2e1": {

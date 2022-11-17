@@ -16,6 +16,46 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "DiscoveryKit/Polarisation/APP_POL_Brewster_Angle_Experiment/Readme",
+              "path": "/docs/DiscoveryKit/Polarisation/APP_POL_Brewster_Angle_Experiment/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DiscoveryKit/Polarisation/APP_POL_Circular_Polarizer/Readme",
+              "path": "/docs/DiscoveryKit/Polarisation/APP_POL_Circular_Polarizer/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DiscoveryKit/Polarisation/APP_POL_Crossed_Polarizers/Readme",
+              "path": "/docs/DiscoveryKit/Polarisation/APP_POL_Crossed_Polarizers/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DiscoveryKit/Polarisation/APP_POL_Many_Microscope_Slides_Experiment/Readme",
+              "path": "/docs/DiscoveryKit/Polarisation/APP_POL_Many_Microscope_Slides_Experiment/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DiscoveryKit/Polarisation/APP_POL_Newtons_Rings_Experiment/Readme",
+              "path": "/docs/DiscoveryKit/Polarisation/APP_POL_Newtons_Rings_Experiment/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DiscoveryKit/Polarisation/APP_POL_Polarization_using_optically_active_solution/Readme",
+              "path": "/docs/DiscoveryKit/Polarisation/APP_POL_Polarization_using_optically_active_solution/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DiscoveryKit/Polarisation/APP_POL_Stress_Birefringence/Readme",
+              "path": "/docs/DiscoveryKit/Polarisation/APP_POL_Stress_Birefringence/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DiscoveryKit/Polarisation/APP_POL_Three_Polarizers/Readme",
+              "path": "/docs/DiscoveryKit/Polarisation/APP_POL_Three_Polarizers/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Electronics/uc2e1",
               "path": "/docs/Electronics/uc2e1",
               "sidebar": "tutorialSidebar"

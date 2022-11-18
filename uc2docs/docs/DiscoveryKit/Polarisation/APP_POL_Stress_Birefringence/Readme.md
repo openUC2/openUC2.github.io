@@ -1,7 +1,7 @@
 # Stress Birefringence Experiment
 
 <p align="center">
-<img src="./IMAGES/Stress_Birefringence.png"
+<img src="/POLARISATION/BIREFRINGENCE/Stress_Birefringence.png"
 width="650"/>
 </p>
 
@@ -29,13 +29,13 @@ Polarizers are frequently used to detect stress in plastics; birefringence. In t
 
 Image 1 :
 <p align="center">
-<img src="./IMAGES/plastic_cutlery.JPG"
+<img src="/POLARISATION/BIREFRINGENCE/plastic_cutlery.JPG"
 width="300"/>
 </p>
 
 Image 2:
 <p align="center">
-<img src="./IMAGES/sample_plastic_cup_1.png"
+<img src="/POLARISATION/BIREFRINGENCE/sample_plastic_cup_1.png"
 width="450"/>
 </p>
 
@@ -45,7 +45,7 @@ Stress birefringence results with stressed or deformation of isotropic materials
 
 How can stress be applied?  Externally or as another method can be used. A birefringent plastic object is manufactured using injection molding and is cooled.
 
-## <img src="./IMAGES/D.png" width="40"/>Parts
+## <img src="/POLARISATION/BIREFRINGENCE/D.png" width="40"/>Parts
 
 ### Modules for this setup
 
@@ -59,27 +59,27 @@ How can stress be applied?  Externally or as another method can be used. A biref
 
 
 
-### <img src="./IMAGES/P.png" width="40"/>Parts to print
+### <img src="/POLARISATION/BIREFRINGENCE/P.png" width="40"/>Parts to print
 
-* 1 × [Base-plate 4×1](./STL/Assembly_Cube_Baseplate_4x1_v2.stl)
-* 3 × [Cube base 1×1](./STL/10_Cube_1x1_v2.stl)
-* 3 x [Cube lid 1×1](./STL/10_Lid_1x1_v2.stl)
-* 2 × [Polarizer Guide](./STL/20_POL_Cube_Insert_Linear_Polarizer_Guide.stl)
-* 2 × [Polarizer Wheel](./STL/20_POL_Cube_Insert_Linear_Polarizer_Wheel.stl)
-* 2 × [Polarizer Lid](./STL/20_POL_Cube_Insert_Linear_Polarizer_Lid.stl)
-* 1 × [Sample Holder](./STL/20_Cube_insert_Sample_holder.stl)
-* 1 x [Sample Holder Clamp](./STL/20_Cube_Insert_Sample_clamp.stl)         
+* 1 × [Base-plate 4×1](/POLARISATION/BIREFRINGENCE/Assembly_Cube_Baseplate_4x1_v2.stl)
+* 3 × [Cube base 1×1](/POLARISATION/BIREFRINGENCE/10_Cube_1x1_v2.stl)
+* 3 x [Cube lid 1×1](/POLARISATION/BIREFRINGENCE/10_Lid_1x1_v2.stl)
+* 2 × [Polarizer Guide](/POLARISATION/BIREFRINGENCE/20_POL_Cube_Insert_Linear_Polarizer_Guide.stl)
+* 2 × [Polarizer Wheel](/POLARISATION/BIREFRINGENCE/20_POL_Cube_Insert_Linear_Polarizer_Wheel.stl)
+* 2 × [Polarizer Lid](/POLARISATION/BIREFRINGENCE/20_POL_Cube_Insert_Linear_Polarizer_Lid.stl)
+* 1 × [Sample Holder](/POLARISATION/BIREFRINGENCE/20_Cube_insert_Sample_holder.stl)
+* 1 x [Sample Holder Clamp](/POLARISATION/BIREFRINGENCE/20_Cube_Insert_Sample_clamp.stl)         
 __*Extra Holder Parts but NOT USED in our experiment:*__
-* 1 x [Sample Holder - comb for Screen](./STL/20_Cube_Sampleholder.stl)
-* 1 × [Flashlight Holder](./STL/20_Cube_Insert_Holder-okular+flashlight_v2.stl)
+* 1 x [Sample Holder - comb for Screen](/POLARISATION/BIREFRINGENCE/20_Cube_Sampleholder.stl)
+* 1 × [Flashlight Holder](/POLARISATION/BIREFRINGENCE/20_Cube_Insert_Holder-okular+flashlight_v2.stl)
 
 <p align="center">
-<img src="./IMAGES/Assembly_POL_Stress_Birefringence.png"
+<img src="/POLARISATION/BIREFRINGENCE/Assembly_POL_Stress_Birefringence.png"
 width="400"/>
 </p>  
 
 
-## <img src="./IMAGES/B.png" width="40"/> Additional components
+## <img src="/POLARISATION/BIREFRINGENCE/B.png" width="40"/> Additional components
 * Check out the [RESOURCES](../../TUTORIALS/RESOURCES) for more information!
 * 1 × Linear Polarizing Sheet [🢂](https://amazon.de/-/en/Polarizing-A4-Sheet-Polarizer-Educational-Polarized/dp/B06XWXRB75/ref=pd_sbs_421_3/262-2115536-7173904?_encoding=UTF8&pd_rd_i=B06XWXRB75&pd_rd_r=b88e7340-b061-4e0b-8daa-8ec533fd7c71&pd_rd_w=qlkAY&pd_rd_wg=At9EZ&pf_rd_p=a03ac387-6e4d-4f6b-96b6-1853da0bb37b&pf_rd_r=49HX2Z4Q5KRZSQ2FWRQR&psc=1&refRID=49HX2Z4Q5KRZSQ2FWRQR)
 * 16 × 5 mm Ball magnets [🢂](https://www.magnetmax.de/Neodym-Kugelmagnete/Magnetkugel-Kugelmagnet-O-5-0-mm-Neodym-vernickelt-N40-haelt-400-g::158.html)
@@ -89,7 +89,7 @@ width="400"/>
 * _NOT USED_ 1 × flashlight [🢂](https://www.pollin.de/p/led-taschenlampe-alu-5-w-cree-led-3xmicro-schwarz-b-ware-535448)
 
 
-## <img src="./IMAGES/A.png" width="40"/> Assembly
+## <img src="/POLARISATION/BIREFRINGENCE/A.png" width="40"/> Assembly
 
 * [Baseplate](../../CAD/ASSEMBLY_Baseplate)
 * [Linear Polarizer Cube](../../CAD/ASSEMBLY_POL_Linear_Polarizer)  
@@ -100,12 +100,12 @@ width="400"/>
 If all written modules are used in the experiment, the setup will look like:
 
 <p align="center">
-<img src="./IMAGES/Assembly_POL_Stress_Birefringence_with_Screen_Light_3.png"
+<img src="/POLARISATION/BIREFRINGENCE/Assembly_POL_Stress_Birefringence_with_Screen_Light_3.png"
 width="400"/>
 </p>
 
 
-## <img src="./IMAGES/E.png" width="40"/> Results
+## <img src="/POLARISATION/BIREFRINGENCE/E.png" width="40"/> Results
 
 You will find the basic version of the Stress Birefringence experiment without an extra light source and sample holder below.  
 A sample is placed into the Crossed Polarizers in the setup, and color patterns can be observed clearly. The polarization of a light ray is rotated after passing through a birefringent material and the amount of rotation is dependent on wavelength.
@@ -115,29 +115,29 @@ The printed cube parts were assembled and the result images of experiences were 
 *In the 1st Experiment,* we prepared our sample using a plastic punched pocket and randomly applied sticky tape on it.
 
 <p align="center">
-<img src="./IMAGES/sample_plastic_cup_2.png"
+<img src="/POLARISATION/BIREFRINGENCE/sample_plastic_cup_2.png"
 width="450"/>
 </p>
 
 <p align="center">
-<img src="./IMAGES/exp1.gif"
+<img src="/POLARISATION/BIREFRINGENCE/exp1.gif"
 width="300"/>
 </p>
 
 *In the 2nd Experiment,* we used a plastic piece as a sample for the setup.
 
 <p align="center">
-<img src="./IMAGES/sample_plastic_sheet_2.jpg"
+<img src="/POLARISATION/BIREFRINGENCE/sample_plastic_sheet_2.jpg"
 width="450"/>
 </p>
 
 <p align="center">
-<img src="./IMAGES/sample_plastic_sheet_1.png"
+<img src="/POLARISATION/BIREFRINGENCE/sample_plastic_sheet_1.png"
 width="450"/>
 </p>
 
 <p align="center">
-<img src="./IMAGES/exp2.gif"
+<img src="/POLARISATION/BIREFRINGENCE/exp2.gif"
 width="300"/>
 </p>
 
@@ -145,17 +145,17 @@ width="300"/>
 *In the 3rd Experiment,* plastic cutlery was used.
 
 <p align="center">
-<img src="./IMAGES/sample_Cutlery_1.png"
+<img src="/POLARISATION/BIREFRINGENCE/sample_Cutlery_1.png"
 width="450"/>
 </p>
 
 <p align="center">
-<img src="./IMAGES/sample_Cutlery_2.png"
+<img src="/POLARISATION/BIREFRINGENCE/sample_Cutlery_2.png"
 width="450"/>
 </p>
 
 <p align="center">
-<img src="./IMAGES/exp3.gif"
+<img src="/POLARISATION/BIREFRINGENCE/exp3.gif"
 width="300"/>
 </p>
 

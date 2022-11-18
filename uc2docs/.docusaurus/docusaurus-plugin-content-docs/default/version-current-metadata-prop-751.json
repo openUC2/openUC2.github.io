@@ -211,37 +211,37 @@
     "DiscoveryKit/Polarisation/APP_POL_Crossed_Polarizers/Readme": {
       "id": "DiscoveryKit/Polarisation/APP_POL_Crossed_Polarizers/Readme",
       "title": "Crossed Polarizers",
-      "description": "<img src=\"./IMAGES/crossedpolarizersdiagram_2.png\"",
+      "description": "<img src=\"/POLARISATION/CROSSED/crossedpolarizersdiagram_2.png\"",
       "sidebar": "tutorialSidebar"
     },
     "DiscoveryKit/Polarisation/APP_POL_Many_Microscope_Slides_Experiment/Readme": {
       "id": "DiscoveryKit/Polarisation/APP_POL_Many_Microscope_Slides_Experiment/Readme",
       "title": "Many Microscope Slides Experiment",
-      "description": "<img src=\"./IMAGES/ManyMicroscopeSlides_Experiment.png\"",
+      "description": "<img src=\"/POLARISATION/SLIDES/ManyMicroscopeSlides_Experiment.png\"",
       "sidebar": "tutorialSidebar"
     },
     "DiscoveryKit/Polarisation/APP_POL_Newtons_Rings_Experiment/Readme": {
       "id": "DiscoveryKit/Polarisation/APP_POL_Newtons_Rings_Experiment/Readme",
       "title": "Newton's Rings Experiment",
-      "description": "<img src=\"./IMAGES/newtonsringsdiagram.png\"",
+      "description": "<img src=\"/POLARISATION/NEWTON/newtonsringsdiagram.png\"",
       "sidebar": "tutorialSidebar"
     },
     "DiscoveryKit/Polarisation/APP_POL_Polarization_using_optically_active_solution/Readme": {
       "id": "DiscoveryKit/Polarisation/APP_POL_Polarization_using_optically_active_solution/Readme",
       "title": "Polarization Experiment using Optically Active Solution",
-      "description": "<img src=\"./IMAGES/ActiveSolutionExperiment.png\"",
+      "description": "<img src=\"/POLARISATION/ACTIVE/ActiveSolutionExperiment.png\"",
       "sidebar": "tutorialSidebar"
     },
     "DiscoveryKit/Polarisation/APP_POL_Stress_Birefringence/Readme": {
       "id": "DiscoveryKit/Polarisation/APP_POL_Stress_Birefringence/Readme",
       "title": "Stress Birefringence Experiment",
-      "description": "<img src=\"./IMAGES/Stress_Birefringence.png\"",
+      "description": "<img src=\"/POLARISATION/BIREFRINGENCE/Stress_Birefringence.png\"",
       "sidebar": "tutorialSidebar"
     },
     "DiscoveryKit/Polarisation/APP_POL_Three_Polarizers/Readme": {
       "id": "DiscoveryKit/Polarisation/APP_POL_Three_Polarizers/Readme",
       "title": "Three Polarizers (0, 45, 90 degrees)",
-      "description": "<img src=\"./IMAGES/threepolarizersdiagram.png\"",
+      "description": "<img src=\"/POLARISATION/THREE/threepolarizersdiagram.png\"",
       "sidebar": "tutorialSidebar"
     },
     "Electronics/uc2e1": {

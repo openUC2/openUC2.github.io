@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img src="./IMAGES/newtons_rings_diagram.png"
+<img src="/POLARISATION/NEWTON/newtons_rings_diagram.png"
 width="550"/>
 </p>
 
@@ -19,14 +19,14 @@ Linear Polarizer is used in this experiment to visualize the polarization change
 Additional module design was made for combining the microscope glass slide and plano-convex lens inside one cube insert. You can see rendered image of the Newton's Rings Lens-Slide Holder Module from Inventor.  
 
 <p align="center">
-<img src="./IMAGES/Assembly_cube_Lens+slide_holder_cube.png"
-width="450"/>
+<img src="/POLARISATION/NEWTON/Assembly_cube_Lens+slide_holder_cube.png"
+width="450"/>s
 </p>
 
 We used laser as a light souce in the setup. During the experiment, we extended beam size of the pen laser from 2 mm to 6 mm using a regular [Beam Expander Module](../../CAD/ASSEMBLY_CUBE_Beamexpander).
 
 
-## <img src="./IMAGES/D.png" width="40"/>Parts
+## <img src="/POLARISATION/NEWTON/D.png" width="40"/>Parts
 
 ### Modules for this setup
 
@@ -41,30 +41,30 @@ We used laser as a light souce in the setup. During the experiment, we extended 
 |  EXTRA MODULE: Screen Holder Cube | It holds the Display Screen (Not Used in Practice) | 1 €  | [Screen](../../CAD/ASSEMBLY_CUBE_Sample_Holder)  | 1 |
 
 
-### <img src="./IMAGES/P.png" width="40"/>Parts to print
+### <img src="/POLARISATION/NEWTON/P.png" width="40"/>Parts to print
 
-* 1 × [Base-plate 4×4](./STL/Assembly_Cube_Baseplate_4x4_v2.stl)
-* 5 × [Cube base 1×1](./STL/10_Cube_1x1_v2.stl)
-* 6 x [Cube lid 1×1](./STL/10_Lid_1x1_v2.stl)
-* 1 x [Beam Expander Holder](./STL/20_Cube_Insert_Beamexpander_astromedia_v3.stl)
-* 1 × [Beam Splitter Cube Holder](./STL/20_Cube_Insert_Beamsplitter.stl)
-* 1 × [Newton's Rings - Lens & Slide Holder](./STL/20_POL_Cube_Insert_Newtons_Rings_LensHolder.stl)
-* 1 × [Newton's Rings - Lens & Slide Holder Clamp](./STL/20_POL_Cube_Insert_Newtons_Rings_Lens_Clamp.stl)
-* 2 × [Laser Holder](./STL/20_Cube_Insert_Laser_Holder_v2.stl)
-* 1 x [Laser Clamp](./STL/00_Laser_Clamp_OnOffSwitch.stl)
-* 1 × [Polarizer Guide](./STL/20_POL_Cube_Insert_Linear_Polarizer_Guide.stl)
-* 1 × [Polarizer Wheel](./STL/20_POL_Cube_Insert_Linear_Polarizer_Wheel.stl)
-* 1 × [Polarizer Lid](./STL/20_POL_Cube_Insert_Linear_Polarizer_Lid.stl)        
+* 1 × [Base-plate 4×4](/POLARISATION/NEWTON/Assembly_Cube_Baseplate_4x4_v2.stl)
+* 5 × [Cube base 1×1](/POLARISATION/NEWTON/10_Cube_1x1_v2.stl)
+* 6 x [Cube lid 1×1](/POLARISATION/NEWTON/10_Lid_1x1_v2.stl)
+* 1 x [Beam Expander Holder](/POLARISATION/NEWTON/20_Cube_Insert_Beamexpander_astromedia_v3.stl)
+* 1 × [Beam Splitter Cube Holder](/POLARISATION/NEWTON/20_Cube_Insert_Beamsplitter.stl)
+* 1 × [Newton's Rings - Lens & Slide Holder](/POLARISATION/NEWTON/20_POL_Cube_Insert_Newtons_Rings_LensHolder.stl)
+* 1 × [Newton's Rings - Lens & Slide Holder Clamp](/POLARISATION/NEWTON/20_POL_Cube_Insert_Newtons_Rings_Lens_Clamp.stl)
+* 2 × [Laser Holder](/POLARISATION/NEWTON/20_Cube_Insert_Laser_Holder_v2.stl)
+* 1 x [Laser Clamp](/POLARISATION/NEWTON/00_Laser_Clamp_OnOffSwitch.stl)
+* 1 × [Polarizer Guide](/POLARISATION/NEWTON/20_POL_Cube_Insert_Linear_Polarizer_Guide.stl)
+* 1 × [Polarizer Wheel](/POLARISATION/NEWTON/20_POL_Cube_Insert_Linear_Polarizer_Wheel.stl)
+* 1 × [Polarizer Lid](/POLARISATION/NEWTON/20_POL_Cube_Insert_Linear_Polarizer_Lid.stl)        
 __*Extra Holder Parts but NOT USED in our experiment:*__
-* 1 x [Sample Holder - comb](./STL/20_Cube_Sampleholder.stl)
+* 1 x [Sample Holder - comb](/POLARISATION/NEWTON/20_Cube_Sampleholder.stl)
 
 <p align="center">
-<img src="./IMAGES/Assembly_POL_Newtons_Rings_Experiment.png"
+<img src="/POLARISATION/NEWTON/Assembly_POL_Newtons_Rings_Experiment.png"
 width="450"/>
 </p>  
 
 
-## <img src="./IMAGES/B.png" width="40"/> Additional components
+## <img src="/POLARISATION/NEWTON/B.png" width="40"/> Additional components
 * Check out the [RESOURCES](../../TUTORIALS/RESOURCES) for more information!
 * 1 × Linear Polarizing Sheet [🢂](https://amazon.de/-/en/Polarizing-A4-Sheet-Polarizer-Educational-Polarized/dp/B06XWXRB75/ref=pd_sbs_421_3/262-2115536-7173904?_encoding=UTF8&pd_rd_i=B06XWXRB75&pd_rd_r=b88e7340-b061-4e0b-8daa-8ec533fd7c71&pd_rd_w=qlkAY&pd_rd_wg=At9EZ&pf_rd_p=a03ac387-6e4d-4f6b-96b6-1853da0bb37b&pf_rd_r=49HX2Z4Q5KRZSQ2FWRQR&psc=1&refRID=49HX2Z4Q5KRZSQ2FWRQR)
 * 64 × 5 mm Ball magnets [🢂](https://www.magnetmax.de/Neodym-Kugelmagnete/Magnetkugel-Kugelmagnet-O-5-0-mm-Neodym-vernickelt-N40-haelt-400-g::158.html)
@@ -79,11 +79,11 @@ width="450"/>
 
 
 <p align="center">
-<img src="./IMAGES/Assembly_POL_Newtons_Rings_Experiment_3.png"
+<img src="/POLARISATION/NEWTON/Assembly_POL_Newtons_Rings_Experiment_3.png"
 width="450"/>
 </p>  
 
-## <img src="./IMAGES/A.png" width="40"/> Assembly
+## <img src="/POLARISATION/NEWTON/A.png" width="40"/> Assembly
 
 * [Baseplate](../../CAD/ASSEMBLY_Baseplate)
 * [Beam Expander Cube](../../CAD/ASSEMBLY_CUBE_Beamexpander)
@@ -95,26 +95,26 @@ __*EXTRA MODULES:*__
 * [Sample Holder for Screen](../../CAD/ASSEMBLY_CUBE_Sample_Holder)
 
 
-## <img src="./IMAGES/E.png" width="40"/> Results
+## <img src="/POLARISATION/NEWTON/E.png" width="40"/> Results
 
 We started with building of UC2 Modules: design, print, assemble and be ready for testing. You can see our Beam Expander Cube on the 4x1 Baseplate below.
 
 <p align="center">
-<img src="./IMAGES/Beam_Expander_Cube.JPG"
+<img src="/POLARISATION/NEWTON/Beam_Expander_Cube.JPG"
 width="450"/>
 </p>
 
 Lens - Slide Holder Module is the key element for the generation of Newton's Rings. Necessary Module parts are shown in the image below.
 
 <p align="center">
-<img src="./IMAGES/Slide_Lens_Holder-Cube_Parts.JPG"
+<img src="/POLARISATION/NEWTON/Slide_Lens_Holder-Cube_Parts.JPG"
 width="450"/>
 </p>
 
 Assembled and Ready-To-Use module should look like ...
 
 <p align="center">
-<img src="./IMAGES/Slide_Lens_Holder_Cube.JPG"
+<img src="/POLARISATION/NEWTON/Slide_Lens_Holder_Cube.JPG"
 width="450"/>
 </p>
 
@@ -123,26 +123,26 @@ width="450"/>
 * installation the Laser and Beam Expander Modules on the 4x4 Baseplate.
 
 <p align="center">
-<img src="./IMAGES/Newtons_Rings_Exp_1.JPG"
+<img src="/POLARISATION/NEWTON/Newtons_Rings_Exp_1.JPG"
 width="450"/>
 </p>
 
 * After checking the expansion of the laser beam width, Beam Splitter Cube is added to the setup.
 
 <p align="center">
-<img src="./IMAGES/Newtons_Rings_Exp_2.JPG"
+<img src="/POLARISATION/NEWTON/Newtons_Rings_Exp_2.JPG"
 width="450"/>
 </p>
 
 * One of the divided incoming beams is directed to the Newton's Rings Lens & Microscope Holder cube, and light reflects from the convex lens-plate glass combination through the beam splitter cube, then on observation screen.
 
 <p align="center">
-<img src="./IMAGES/Newtons_Rings_Exp.JPG"
+<img src="/POLARISATION/NEWTON/Newtons_Rings_Exp.JPG"
 width="450"/>
 </p>
 
 <p align="center">
-<img src="./IMAGES/Newtons_Rings_Exp_3.jpg"
+<img src="/POLARISATION/NEWTON/Newtons_Rings_Exp_3.jpg"
 width="350"/>
 </p>
 
@@ -151,14 +151,14 @@ Demonstrating the experiment is much easier with a laser light source and result
 Let's zoom in Newton's Fringes with more experiment images!
 
 <p align="center">
-<img src="./IMAGES/Newtons_Rings_Exp_4.jpg"
+<img src="/POLARISATION/NEWTON/Newtons_Rings_Exp_4.jpg"
 width="350"/>
 </p>
 
 The effect of the polarization angle change of the Linear Polarizer Filter can be seen in the video.
 
 <p align="center">
-<img src="./IMAGES/Newtons_Rings_Experiment_Polarizer.gif"
+<img src="/POLARISATION/NEWTON/Newtons_Rings_Experiment_Polarizer.gif"
 width="350"/>
 </p>
 

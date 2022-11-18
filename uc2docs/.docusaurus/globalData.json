@@ -16,6 +16,26 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "DiscoveryKit/MicroscopyCore/ALIGNMENT_FinOptics/Readme",
+              "path": "/docs/DiscoveryKit/MicroscopyCore/ALIGNMENT_FinOptics/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DiscoveryKit/MicroscopyCore/ALIGNMENT_InfOptics/Readme",
+              "path": "/docs/DiscoveryKit/MicroscopyCore/ALIGNMENT_InfOptics/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DiscoveryKit/MicroscopyCore/BUILD_ME/Readme",
+              "path": "/docs/DiscoveryKit/MicroscopyCore/BUILD_ME/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DiscoveryKit/MicroscopyCore/MicroscopyCore",
+              "path": "/docs/DiscoveryKit/MicroscopyCore/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "DiscoveryKit/Polarisation/APP_POL_Brewster_Angle_Experiment/Readme",
               "path": "/docs/DiscoveryKit/Polarisation/APP_POL_Brewster_Angle_Experiment/",
               "sidebar": "tutorialSidebar"

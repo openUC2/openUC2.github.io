@@ -186,7 +186,7 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-921": {
+  "/docs-5bf": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docsd-63-b9c"
@@ -196,6 +196,22 @@
   "/docs/DiscoveryKit/DiscKit1-75c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-discovery-kit-disc-kit-15-a-5-709"
+  },
+  "/docs/DiscoveryKit/MicroscopyCore/-3fd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-discovery-kit-microscopy-core-2-df-600"
+  },
+  "/docs/DiscoveryKit/MicroscopyCore/ALIGNMENT_FinOptics/-303": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-discovery-kit-microscopy-core-alignment-fin-optics-544-baa"
+  },
+  "/docs/DiscoveryKit/MicroscopyCore/ALIGNMENT_InfOptics/-524": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-discovery-kit-microscopy-core-alignment-inf-optics-ab-0-507"
+  },
+  "/docs/DiscoveryKit/MicroscopyCore/BUILD_ME/-99c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-discovery-kit-microscopy-core-build-me-43-f-816"
   },
   "/docs/DiscoveryKit/Polarisation/-531": {
     "__comp": "__comp---theme-doc-item-178-a40",

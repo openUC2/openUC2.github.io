@@ -29,6 +29,33 @@
           },
           {
             "type": "category",
+            "label": "MicroscopyCore",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "The Course BOX Alignment Procedure (Finite Optics)",
+                "href": "/docs/DiscoveryKit/MicroscopyCore/ALIGNMENT_FinOptics/",
+                "docId": "DiscoveryKit/MicroscopyCore/ALIGNMENT_FinOptics/Readme"
+              },
+              {
+                "type": "link",
+                "label": "CourseBOX: Light Microscopy and Optical Alignment (Infinity Optics)",
+                "href": "/docs/DiscoveryKit/MicroscopyCore/ALIGNMENT_InfOptics/",
+                "docId": "DiscoveryKit/MicroscopyCore/ALIGNMENT_InfOptics/Readme"
+              },
+              {
+                "type": "link",
+                "label": "Building The CourseBOX",
+                "href": "/docs/DiscoveryKit/MicroscopyCore/BUILD_ME/",
+                "docId": "DiscoveryKit/MicroscopyCore/BUILD_ME/Readme"
+              }
+            ],
+            "href": "/docs/DiscoveryKit/MicroscopyCore/"
+          },
+          {
+            "type": "category",
             "label": "Polarisation Experiments",
             "collapsible": true,
             "collapsed": true,
@@ -195,6 +222,30 @@
       "id": "DiscoveryKit/DiscKit1",
       "title": "Discovery Kit Base",
       "description": "This is a a collection of different mini-tutorials to assemble the different optical systems using UC2. First, we will introduce the setup with a brief text. Afterwards, a little video will help you assembling the device. If you have any questions, please feel free to post a question in the Forum or in the Github Issue section.",
+      "sidebar": "tutorialSidebar"
+    },
+    "DiscoveryKit/MicroscopyCore/ALIGNMENT_FinOptics/Readme": {
+      "id": "DiscoveryKit/MicroscopyCore/ALIGNMENT_FinOptics/Readme",
+      "title": "The Course BOX Alignment Procedure (Finite Optics)",
+      "description": "This is the alignment procedure of the experiments with finite-corrected optics. If you are looking for the infinity-corrected setups click here.",
+      "sidebar": "tutorialSidebar"
+    },
+    "DiscoveryKit/MicroscopyCore/ALIGNMENT_InfOptics/Readme": {
+      "id": "DiscoveryKit/MicroscopyCore/ALIGNMENT_InfOptics/Readme",
+      "title": "CourseBOX: Light Microscopy and Optical Alignment (Infinity Optics)",
+      "description": "This is the alignment procedure of the experiments with infinity-corrected optics. If you are looking for the finite-corrected setups click here, but this page is more complex and up-to-date.",
+      "sidebar": "tutorialSidebar"
+    },
+    "DiscoveryKit/MicroscopyCore/BUILD_ME/Readme": {
+      "id": "DiscoveryKit/MicroscopyCore/BUILD_ME/Readme",
+      "title": "Building The CourseBOX",
+      "description": "This is a guide for building the CourseBOX. If you were looking for another BOX version, click here.",
+      "sidebar": "tutorialSidebar"
+    },
+    "DiscoveryKit/MicroscopyCore/MicroscopyCore": {
+      "id": "DiscoveryKit/MicroscopyCore/MicroscopyCore",
+      "title": "MicroscopyCore",
+      "description": "<img src=\"/DISCOVERYBASE/CORE/CourseBOXlogo.png\"",
       "sidebar": "tutorialSidebar"
     },
     "DiscoveryKit/Polarisation/APP_POL_Brewster_Angle_Experiment/Readme": {

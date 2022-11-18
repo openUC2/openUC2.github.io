@@ -99,11 +99,35 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '921'),
+    component: ComponentCreator('/docs', '5bf'),
     routes: [
       {
         path: '/docs/DiscoveryKit/DiscKit1',
         component: ComponentCreator('/docs/DiscoveryKit/DiscKit1', '75c'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/DiscoveryKit/MicroscopyCore/',
+        component: ComponentCreator('/docs/DiscoveryKit/MicroscopyCore/', '3fd'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/DiscoveryKit/MicroscopyCore/ALIGNMENT_FinOptics/',
+        component: ComponentCreator('/docs/DiscoveryKit/MicroscopyCore/ALIGNMENT_FinOptics/', '303'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/DiscoveryKit/MicroscopyCore/ALIGNMENT_InfOptics/',
+        component: ComponentCreator('/docs/DiscoveryKit/MicroscopyCore/ALIGNMENT_InfOptics/', '524'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/DiscoveryKit/MicroscopyCore/BUILD_ME/',
+        component: ComponentCreator('/docs/DiscoveryKit/MicroscopyCore/BUILD_ME/', '99c'),
         exact: true,
         sidebar: "tutorialSidebar"
       },

@@ -99,11 +99,17 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'f51'),
+    component: ComponentCreator('/docs', '921'),
     routes: [
       {
         path: '/docs/DiscoveryKit/DiscKit1',
         component: ComponentCreator('/docs/DiscoveryKit/DiscKit1', '75c'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/DiscoveryKit/Polarisation/',
+        component: ComponentCreator('/docs/DiscoveryKit/Polarisation/', '531'),
         exact: true,
         sidebar: "tutorialSidebar"
       },

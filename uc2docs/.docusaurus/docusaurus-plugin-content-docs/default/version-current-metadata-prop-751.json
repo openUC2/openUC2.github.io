@@ -29,7 +29,7 @@
           },
           {
             "type": "category",
-            "label": "Polarisation",
+            "label": "Polarisation Experiments",
             "collapsible": true,
             "collapsed": true,
             "items": [
@@ -81,7 +81,8 @@
                 "href": "/docs/DiscoveryKit/Polarisation/APP_POL_Three_Polarizers/",
                 "docId": "DiscoveryKit/Polarisation/APP_POL_Three_Polarizers/Readme"
               }
-            ]
+            ],
+            "href": "/docs/DiscoveryKit/Polarisation/"
           }
         ]
       },
@@ -242,6 +243,12 @@
       "id": "DiscoveryKit/Polarisation/APP_POL_Three_Polarizers/Readme",
       "title": "Three Polarizers (0, 45, 90 degrees)",
       "description": "<img src=\"/POLARISATION/THREE/threepolarizersdiagram.png\"",
+      "sidebar": "tutorialSidebar"
+    },
+    "DiscoveryKit/Polarisation/Readme": {
+      "id": "DiscoveryKit/Polarisation/Readme",
+      "title": "Polarisation Experiments",
+      "description": "Light rotates - what?! Yes! Find it out by clicking through the different tutorial pages.",
       "sidebar": "tutorialSidebar"
     },
     "Electronics/uc2e1": {

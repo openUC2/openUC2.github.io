@@ -186,7 +186,7 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-f51": {
+  "/docs-921": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docsd-63-b9c"
@@ -196,6 +196,10 @@
   "/docs/DiscoveryKit/DiscKit1-75c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-discovery-kit-disc-kit-15-a-5-709"
+  },
+  "/docs/DiscoveryKit/Polarisation/-531": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-discovery-kit-polarisation-21-a-ebf"
   },
   "/docs/DiscoveryKit/Polarisation/APP_POL_Brewster_Angle_Experiment/-682": {
     "__comp": "__comp---theme-doc-item-178-a40",

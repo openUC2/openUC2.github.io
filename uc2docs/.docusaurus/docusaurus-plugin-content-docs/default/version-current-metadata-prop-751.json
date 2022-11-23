@@ -210,6 +210,98 @@
         ]
       },
       {
+        "type": "category",
+        "label": "PRODUCTION",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "USB Camera",
+            "href": "/docs/PRODUCTION/PG_01_Camera",
+            "docId": "PRODUCTION/PG_01_Camera"
+          },
+          {
+            "type": "link",
+            "label": "Eyepiece",
+            "href": "/docs/PRODUCTION/PG_02_Eyepiece",
+            "docId": "PRODUCTION/PG_02_Eyepiece"
+          },
+          {
+            "type": "link",
+            "label": "LENS",
+            "href": "/docs/PRODUCTION/PG_03_LENS",
+            "docId": "PRODUCTION/PG_03_LENS"
+          },
+          {
+            "type": "link",
+            "label": "KINEMATIC MIRROR (45°)",
+            "href": "/docs/PRODUCTION/PG_04_KIN_MIR_45",
+            "docId": "PRODUCTION/PG_04_KIN_MIR_45"
+          },
+          {
+            "type": "link",
+            "label": "KINEMATIC MIRROR (90°)",
+            "href": "/docs/PRODUCTION/PG_05_KIN_MIR_90",
+            "docId": "PRODUCTION/PG_05_KIN_MIR_90"
+          },
+          {
+            "type": "link",
+            "label": "KINEMATIC MIRROR (90°)",
+            "href": "/docs/PRODUCTION/PG_06_BEAMSPLITTER",
+            "docId": "PRODUCTION/PG_06_BEAMSPLITTER"
+          },
+          {
+            "type": "link",
+            "label": "Mirror (45°)",
+            "href": "/docs/PRODUCTION/PG_09_MIR_45",
+            "docId": "PRODUCTION/PG_09_MIR_45"
+          },
+          {
+            "type": "link",
+            "label": "Kinematic XY Mount",
+            "href": "/docs/PRODUCTION/PG_10_KIN_XY_LASER",
+            "docId": "PRODUCTION/PG_10_KIN_XY_LASER"
+          },
+          {
+            "type": "link",
+            "label": "Kinematic XY Mount / Laser",
+            "href": "/docs/PRODUCTION/PG_11_STAGE_Z_MANUAL",
+            "docId": "PRODUCTION/PG_11_STAGE_Z_MANUAL"
+          },
+          {
+            "type": "link",
+            "label": "Z-Stage Motorized NEMA12 25mm",
+            "href": "/docs/PRODUCTION/PG_12_STAGE_Z_NEMA",
+            "docId": "PRODUCTION/PG_12_STAGE_Z_NEMA"
+          },
+          {
+            "type": "link",
+            "label": "Torch",
+            "href": "/docs/PRODUCTION/PG_13_TORCH",
+            "docId": "PRODUCTION/PG_13_TORCH"
+          },
+          {
+            "type": "link",
+            "label": "Sample Holder",
+            "href": "/docs/PRODUCTION/PG_14_SAMPLE_HOLDEr",
+            "docId": "PRODUCTION/PG_14_SAMPLE_HOLDEr"
+          },
+          {
+            "type": "link",
+            "label": "Polarization Rotator",
+            "href": "/docs/PRODUCTION/PG_15_POLARIZER_ROTATING",
+            "docId": "PRODUCTION/PG_15_POLARIZER_ROTATING"
+          },
+          {
+            "type": "link",
+            "label": "Apertures",
+            "href": "/docs/PRODUCTION/PG_16_APERTURES",
+            "docId": "PRODUCTION/PG_16_APERTURES"
+          }
+        ]
+      },
+      {
         "type": "link",
         "label": "Contact us!",
         "href": "/docs/mdx",
@@ -384,6 +476,90 @@
       "id": "MiniBox/uc2miniboxEN",
       "title": "UC2 miniBOX (english)",
       "description": "What will you learn?",
+      "sidebar": "tutorialSidebar"
+    },
+    "PRODUCTION/PG_01_Camera": {
+      "id": "PRODUCTION/PG_01_Camera",
+      "title": "USB Camera",
+      "description": "Duration: 1",
+      "sidebar": "tutorialSidebar"
+    },
+    "PRODUCTION/PG_02_Eyepiece": {
+      "id": "PRODUCTION/PG_02_Eyepiece",
+      "title": "Eyepiece",
+      "description": "Duration: 1",
+      "sidebar": "tutorialSidebar"
+    },
+    "PRODUCTION/PG_03_LENS": {
+      "id": "PRODUCTION/PG_03_LENS",
+      "title": "LENS",
+      "description": "Duration: 1",
+      "sidebar": "tutorialSidebar"
+    },
+    "PRODUCTION/PG_04_KIN_MIR_45": {
+      "id": "PRODUCTION/PG_04_KIN_MIR_45",
+      "title": "KINEMATIC MIRROR (45°)",
+      "description": "This page describes how to assemble the kinematic mirror  (45°) module. It uses a Frontsurface mirror that can be tuned in 3 axis",
+      "sidebar": "tutorialSidebar"
+    },
+    "PRODUCTION/PG_05_KIN_MIR_90": {
+      "id": "PRODUCTION/PG_05_KIN_MIR_90",
+      "title": "KINEMATIC MIRROR (90°)",
+      "description": "This page describes how to assemble the kinematic mirror  (90) module. It uses a Frontsurface mirror that can be tuned in 3 axis",
+      "sidebar": "tutorialSidebar"
+    },
+    "PRODUCTION/PG_06_BEAMSPLITTER": {
+      "id": "PRODUCTION/PG_06_BEAMSPLITTER",
+      "title": "KINEMATIC MIRROR (90°)",
+      "description": "This page describes how to assemble the partially transparent mirror  (45°) module. It uses a Frontsurface 50% mirror that.",
+      "sidebar": "tutorialSidebar"
+    },
+    "PRODUCTION/PG_09_MIR_45": {
+      "id": "PRODUCTION/PG_09_MIR_45",
+      "title": "Mirror (45°)",
+      "description": "This page describes how to assemble the standard fold mirror (45°) module. It uses a Frontsurface mirror.",
+      "sidebar": "tutorialSidebar"
+    },
+    "PRODUCTION/PG_10_KIN_XY_LASER": {
+      "id": "PRODUCTION/PG_10_KIN_XY_LASER",
+      "title": "Kinematic XY Mount",
+      "description": "This page describes how to assemble the kinematic XY mount for moving a laser/ pinhole.",
+      "sidebar": "tutorialSidebar"
+    },
+    "PRODUCTION/PG_11_STAGE_Z_MANUAL": {
+      "id": "PRODUCTION/PG_11_STAGE_Z_MANUAL",
+      "title": "Kinematic XY Mount / Laser",
+      "description": "This page describes how to assemble the kinematic XY mount for moving a laser/ pinhole.",
+      "sidebar": "tutorialSidebar"
+    },
+    "PRODUCTION/PG_12_STAGE_Z_NEMA": {
+      "id": "PRODUCTION/PG_12_STAGE_Z_NEMA",
+      "title": "Z-Stage Motorized NEMA12 25mm",
+      "description": "This page describes how to assemble the kinematic XY mount for moving a laser/ pinhole.",
+      "sidebar": "tutorialSidebar"
+    },
+    "PRODUCTION/PG_13_TORCH": {
+      "id": "PRODUCTION/PG_13_TORCH",
+      "title": "Torch",
+      "description": "This page describes how to assemble the kinematic XY mount for moving a laser/ pinhole.",
+      "sidebar": "tutorialSidebar"
+    },
+    "PRODUCTION/PG_14_SAMPLE_HOLDEr": {
+      "id": "PRODUCTION/PG_14_SAMPLE_HOLDEr",
+      "title": "Sample Holder",
+      "description": "This page describes how to assemble the kinematic XY mount for moving a laser/ pinhole.",
+      "sidebar": "tutorialSidebar"
+    },
+    "PRODUCTION/PG_15_POLARIZER_ROTATING": {
+      "id": "PRODUCTION/PG_15_POLARIZER_ROTATING",
+      "title": "Polarization Rotator",
+      "description": "This page describes how to assemble the kinematic XY mount for moving a laser/ pinhole.",
+      "sidebar": "tutorialSidebar"
+    },
+    "PRODUCTION/PG_16_APERTURES": {
+      "id": "PRODUCTION/PG_16_APERTURES",
+      "title": "Apertures",
+      "description": "This page describes how to assemble the kinematic XY mount for moving a laser/ pinhole.",
       "sidebar": "tutorialSidebar"
     }
   }

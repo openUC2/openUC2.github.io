@@ -149,6 +149,76 @@
               "id": "MiniBox/uc2miniboxEN",
               "path": "/docs/MiniBox/uc2miniboxEN",
               "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "PRODUCTION/PG_01_Camera",
+              "path": "/docs/PRODUCTION/PG_01_Camera",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "PRODUCTION/PG_02_Eyepiece",
+              "path": "/docs/PRODUCTION/PG_02_Eyepiece",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "PRODUCTION/PG_03_LENS",
+              "path": "/docs/PRODUCTION/PG_03_LENS",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "PRODUCTION/PG_04_KIN_MIR_45",
+              "path": "/docs/PRODUCTION/PG_04_KIN_MIR_45",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "PRODUCTION/PG_05_KIN_MIR_90",
+              "path": "/docs/PRODUCTION/PG_05_KIN_MIR_90",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "PRODUCTION/PG_06_BEAMSPLITTER",
+              "path": "/docs/PRODUCTION/PG_06_BEAMSPLITTER",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "PRODUCTION/PG_09_MIR_45",
+              "path": "/docs/PRODUCTION/PG_09_MIR_45",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "PRODUCTION/PG_10_KIN_XY_LASER",
+              "path": "/docs/PRODUCTION/PG_10_KIN_XY_LASER",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "PRODUCTION/PG_11_STAGE_Z_MANUAL",
+              "path": "/docs/PRODUCTION/PG_11_STAGE_Z_MANUAL",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "PRODUCTION/PG_12_STAGE_Z_NEMA",
+              "path": "/docs/PRODUCTION/PG_12_STAGE_Z_NEMA",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "PRODUCTION/PG_13_TORCH",
+              "path": "/docs/PRODUCTION/PG_13_TORCH",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "PRODUCTION/PG_14_SAMPLE_HOLDEr",
+              "path": "/docs/PRODUCTION/PG_14_SAMPLE_HOLDEr",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "PRODUCTION/PG_15_POLARIZER_ROTATING",
+              "path": "/docs/PRODUCTION/PG_15_POLARIZER_ROTATING",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "PRODUCTION/PG_16_APERTURES",
+              "path": "/docs/PRODUCTION/PG_16_APERTURES",
+              "sidebar": "tutorialSidebar"
             }
           ],
           "draftIds": [],

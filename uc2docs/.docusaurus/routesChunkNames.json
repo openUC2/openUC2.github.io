@@ -1,51 +1,51 @@
 {
-  "/__docusaurus/debug-9ed": {
+  "/__docusaurus/debug-a78": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-6-e-9-29d"
+      "plugin": "plugin---docusaurus-debug-9-e-2-4b3"
     }
   },
-  "/__docusaurus/debug/config-98c": {
+  "/__docusaurus/debug/config-93d": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-6-e-9-29d"
+      "plugin": "plugin---docusaurus-debug-9-e-2-4b3"
     }
   },
-  "/__docusaurus/debug/content-d53": {
+  "/__docusaurus/debug/content-c53": {
     "__comp": "__comp---theme-debug-contentba-8-ce7",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-6-e-9-29d"
+      "plugin": "plugin---docusaurus-debug-9-e-2-4b3"
     },
     "allContent": "allContent---docusaurus-debug-content-246-9aa"
   },
-  "/__docusaurus/debug/globalData-452": {
+  "/__docusaurus/debug/globalData-e6d": {
     "__comp": "__comp---theme-debug-global-dataede-0fa",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-6-e-9-29d"
+      "plugin": "plugin---docusaurus-debug-9-e-2-4b3"
     }
   },
-  "/__docusaurus/debug/metadata-da0": {
+  "/__docusaurus/debug/metadata-83f": {
     "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-6-e-9-29d"
+      "plugin": "plugin---docusaurus-debug-9-e-2-4b3"
     }
   },
-  "/__docusaurus/debug/registry-347": {
+  "/__docusaurus/debug/registry-a30": {
     "__comp": "__comp---theme-debug-registry-679-501",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-6-e-9-29d"
+      "plugin": "plugin---docusaurus-debug-9-e-2-4b3"
     }
   },
-  "/__docusaurus/debug/routes-f2a": {
+  "/__docusaurus/debug/routes-30e": {
     "__comp": "__comp---theme-debug-routes-946-699",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-6-e-9-29d"
+      "plugin": "plugin---docusaurus-debug-9-e-2-4b3"
     }
   },
-  "/blog-a87": {
+  "/blog-0fb": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
-      "plugin": "plugin---blogdc-7-922"
+      "plugin": "plugin---blog-41-d-456"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
@@ -64,49 +64,49 @@
     ],
     "metadata": "metadata---blogb-2-b-df1"
   },
-  "/blog/archive-19f": {
+  "/blog/archive-8d0": {
     "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
     "__context": {
-      "plugin": "plugin---blogdc-7-922"
+      "plugin": "plugin---blog-41-d-456"
     },
     "archive": "archive---blog-archiveb-2-f-393"
   },
-  "/blog/first-blog-post-d54": {
+  "/blog/first-blog-post-c5a": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "plugin---blogdc-7-922"
+      "plugin": "plugin---blog-41-d-456"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-first-blog-poste-27-4a1"
   },
-  "/blog/long-blog-post-fa4": {
+  "/blog/long-blog-post-1eb": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "plugin---blogdc-7-922"
+      "plugin": "plugin---blog-41-d-456"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-long-blog-post-736-bc7"
   },
-  "/blog/mdx-blog-post-df4": {
+  "/blog/mdx-blog-post-65a": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "plugin---blogdc-7-922"
+      "plugin": "plugin---blog-41-d-456"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-mdx-blog-post-593-37b"
   },
-  "/blog/tags-744": {
+  "/blog/tags-3c7": {
     "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
     "__context": {
-      "plugin": "plugin---blogdc-7-922"
+      "plugin": "plugin---blog-41-d-456"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "tags": "tags---blog-tagsa-70-da2"
   },
-  "/blog/tags/docusaurus-12a": {
+  "/blog/tags/docusaurus-2c9": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---blogdc-7-922"
+      "plugin": "plugin---blog-41-d-456"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
@@ -126,10 +126,10 @@
     "tag": "tag---blog-tags-docusaurusa-80-728",
     "listMetadata": "listMetadata---blog-tags-docusaurus-608-c09"
   },
-  "/blog/tags/facebook-9be": {
+  "/blog/tags/facebook-da1": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---blogdc-7-922"
+      "plugin": "plugin---blog-41-d-456"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
@@ -140,10 +140,10 @@
     "tag": "tag---blog-tags-facebook-031-c52",
     "listMetadata": "listMetadata---blog-tags-facebook-096-d31"
   },
-  "/blog/tags/hello-5fe": {
+  "/blog/tags/hello-ec0": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---blogdc-7-922"
+      "plugin": "plugin---blog-41-d-456"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
@@ -157,10 +157,10 @@
     "tag": "tag---blog-tags-hello-30-a-bed",
     "listMetadata": "listMetadata---blog-tags-hello-664-70a"
   },
-  "/blog/tags/hola-318": {
+  "/blog/tags/hola-0a3": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---blogdc-7-922"
+      "plugin": "plugin---blog-41-d-456"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
@@ -171,25 +171,25 @@
     "tag": "tag---blog-tags-holae-16-18a",
     "listMetadata": "listMetadata---blog-tags-hola-4-c-9-a24"
   },
-  "/blog/welcome-afb": {
+  "/blog/welcome-661": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "plugin---blogdc-7-922"
+      "plugin": "plugin---blog-41-d-456"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-welcomed-9-f-ffb"
   },
-  "/markdown-page-c84": {
+  "/markdown-page-3e3": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---markdown-page-790-75d"
+      "plugin": "plugin---markdown-pagea-3-b-ff6"
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-5bf": {
+  "/docs-ab1": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
-      "plugin": "plugin---docsd-63-b9c"
+      "plugin": "plugin---docs-5-c-2-450"
     },
     "versionMetadata": "versionMetadata---docs-935-398"
   },
@@ -305,10 +305,66 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-mini-box-uc-2-minibox-en-63-c-e57"
   },
-  "/-0f7": {
+  "/docs/PRODUCTION/PG_01_Camera-eb1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-production-pg-01-camera-20-a-8b9"
+  },
+  "/docs/PRODUCTION/PG_02_Eyepiece-74f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-production-pg-02-eyepieceae-8-3ae"
+  },
+  "/docs/PRODUCTION/PG_03_LENS-f42": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-production-pg-03-lens-5-ca-e25"
+  },
+  "/docs/PRODUCTION/PG_04_KIN_MIR_45-c5a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-production-pg-04-kin-mir-45-b-84-baa"
+  },
+  "/docs/PRODUCTION/PG_05_KIN_MIR_90-86f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-production-pg-05-kin-mir-90552-62f"
+  },
+  "/docs/PRODUCTION/PG_06_BEAMSPLITTER-ad8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-production-pg-06-beamsplitter-88-e-848"
+  },
+  "/docs/PRODUCTION/PG_09_MIR_45-3cc": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-production-pg-09-mir-45-f-0-f-527"
+  },
+  "/docs/PRODUCTION/PG_10_KIN_XY_LASER-d8c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-production-pg-10-kin-xy-lase-ra-30-35d"
+  },
+  "/docs/PRODUCTION/PG_11_STAGE_Z_MANUAL-112": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-production-pg-11-stage-z-manual-80-c-f9e"
+  },
+  "/docs/PRODUCTION/PG_12_STAGE_Z_NEMA-923": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-production-pg-12-stage-z-nema-73-e-c27"
+  },
+  "/docs/PRODUCTION/PG_13_TORCH-4c5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-production-pg-13-torch-016-b1a"
+  },
+  "/docs/PRODUCTION/PG_14_SAMPLE_HOLDEr-1d8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-production-pg-14-sample-hold-er-7-a-2-a9d"
+  },
+  "/docs/PRODUCTION/PG_15_POLARIZER_ROTATING-a58": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-production-pg-15-polarizer-rotating-68-b-8b1"
+  },
+  "/docs/PRODUCTION/PG_16_APERTURES-416": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-production-pg-16-apertures-827-164"
+  },
+  "/-ee5": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
     "__context": {
-      "plugin": "plugin---markdown-page-790-75d"
+      "plugin": "plugin---markdown-pagea-3-b-ff6"
     },
     "config": "config---5-e-9-4f3"
   }

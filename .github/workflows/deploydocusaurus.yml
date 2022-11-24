@@ -27,11 +27,10 @@ jobs:
       # Install and build Docusaurus website
       - name: Build Docusaurus website
         run: |
-          cd uc2docs
-          npm install 
+          npm install
           npm run build
       - name: Release to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./uc2docs/build
+          publish_dir: ./build

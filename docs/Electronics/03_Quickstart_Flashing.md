@@ -16,6 +16,15 @@ Duration:20
 </div>
 
 
+### Flash the Firmware using the Web Tool
+
+Go to our ESP flashing tool website and do everything within the browser!!
+
+https://youseetoo.github.io/
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oF9CUrRcW30r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ### Flashing the Firmware using Pyhton
 
 For this we have prepared a quick video tutorial:

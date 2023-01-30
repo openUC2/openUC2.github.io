@@ -169,3 +169,12 @@ The motor (Nema12) with 200 steps/revolution runs with 16 microstepps and offers
 - `speed`: steps / minute (do not exceed 20000)
 - `isabs`: absolute or relative motion
 - `isaccel`: for now, use only non-accelerated motion!
+
+
+## Safety
+
+- in case of shattered glass, make sure you don't cut yourself
+- Make sure you don't hurt yourself
+- The moving parts can potentially hurt your finger
+- The electronics - if used in a wrong way - can harm you
+- edges may be sharp, make sure you don't cut yourself

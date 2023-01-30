@@ -4,10 +4,11 @@ title: Unpack the openUC2 Z-Microscope
 ---
 
 
-# Unpacking the microscope
+## Unpacking the microscope
 
 
 The hardcover plastic case contains all you need for the microscope:
+
  - USB micro cable
  - USB3 camera cable
  - 12V power-supply
@@ -15,7 +16,8 @@ The hardcover plastic case contains all you need for the microscope:
  - The actual microscope
  - The objective lens
 
- The actual Box looks like this:
+
+The actual Box looks like this:
 
 <p align="center">
 <img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_7.jpg" width="700"/>
@@ -47,7 +49,7 @@ Check if you find the content of the box:
 <img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_10.jpg" width="700"/>
 </p>
 
-# Getting started
+## Getting started
 
 First of all we need to wire up the microscope. For this we will start with the 12V power supply. Unfortunately the powersocket is inside the case, hence you have to first eat some candy in order to better find the spot ;-)
 
@@ -69,17 +71,13 @@ Once done, we continue with inserting the objective lens. Eventually the lens is
 <img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_13.jpg" width="700"/>
 </p>
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_8.jpg" width="700"/>
-</p>
-
 The microscope should look like this:
 
 <p align="center">
 <img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_14.jpg" width="700"/>
 </p>
 
-# Wire it up the microscope to your computer
+## Wire up the microscope to your computer
 
 In order to get the microscope working, we first need to install additional drivers. For the Daheng Camera, this would be:
 
@@ -91,18 +89,18 @@ For additional information and an in-depth explanation for the UC2e system, plea
 
 
 
-# Troubleshoot
+## Troubleshoot
 
 We learn from mistakes. So lets start learning. The system is fully open, meaning, you can adjust and change the vast majority of the parts on your own. The entire system consists of the openUC2 frame / skeleton and the 3D printed housing to shield it from dust and light. By removing all M3 cylindrical screws, you can detech the housing from the inner structure to eventually repair or alter the system.
 
 <p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_17.jpg" width="700"/>
+<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_18.jpg" width="700"/>
 </p>
 
 A 2.5m hex key will help you for finishing this job:
 
 <p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_18.jpg" width="700"/>
+<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_17.jpg" width="700"/>
 </p>
 
 Lift the lid and the microscpe will follow (make sure all cables are detached):
@@ -118,7 +116,7 @@ Now you can start working on the "inner bits":
 </p>
 
 
-# In Action
+## In Action
 
 Here you see the extended focussing of the objective lens:
 
@@ -126,7 +124,7 @@ Here you see the extended focussing of the objective lens:
 <img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_19.gif" width="700"/>
 </p>
 
-# Connecting the microscope to the browser and controll it
+## Connecting the microscope to the browser and controll it
 
 We encourage you to use the UC2ified ImSwitch software to control the microscope. You can find it in this repository: https://github.com/openUC2/ImSwitch/
 
@@ -136,7 +134,7 @@ Go to https://youseetoo.github.io/ and connect to your board (most right option 
 
 In general, you need to send `JSON` strings in order to control the system. The strings relevant for the Z-microscope are:
 
-## Home the Z-axis
+### Home the Z-axis
 
 It's important to always home the Motors in order to avoid them from getting stuck in an end position (**ATTENTION!**). The following string will move the motor until the endstop is hit. Afterwards it will release the switch:
 
@@ -151,7 +149,7 @@ Afterwards the internal position is set to 0. You can check that by entering:
 ```
 
 
-## Move the Z-axis:
+### Move the Z-axis:
 
 The motor (Nema12) with 200 steps/revolution runs with 16 microstepps and offers a leadscrew with 1mm/revolution. Hence, one step corresponds to `312.5nm`. Running the motor can be issued with the following command:
 

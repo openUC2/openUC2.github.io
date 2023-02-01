@@ -9,7 +9,6 @@ This is exported from Inventor
 
 
 
-
 ## Assembly Procedure
 
 
@@ -295,8 +294,9 @@ Mount stage on the other side as well:
 We also need to add the M5 long-rods (155mm). They have to fit through the holes of the uc2 mounting plate (see last step)
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/IMG_20230126_145721.jpg" width="500"/>
+<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_110.jpg" width="500"/>
 </p>
+
 
 
 The metal-parts are done
@@ -330,6 +330,10 @@ Add M3 screws to the plate from above such that you have open-ended threads lurk
 <img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_50.jpg" width="500"/>
 </p>
 
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_94.jpg" width="500"/>
+</p>
+
 Fixate the illumination arm holder with the metal stage using an M3 hole (eventually drill a hole 2.7mm)
 <p align="center">
 <img src="/INVESTIGATOR/XYZMicroscope/prepxystage/IMG_20230130_101828.jpg" width="500"/>
@@ -342,6 +346,180 @@ Screw the plate to the M3 screw holes on the xy stage (bottom part). The stage s
 <img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_51.jpg" width="500"/>
 </p>
 
+### Prepare the Z-stage
+
+The documentation for the motorized 25mm Z-stage can be found here:
+https://openuc2.github.io/docs/PRODUCTION/PG_12_STAGE_Z_NEMA
+
+Once done, lock the Stage with the Puzzle piece with M5x8 worm screws:
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/prepzstage/openUC2_XYZmicroscope_63.jpg" width="500"/>
+</p>
+
+
+### Prepare Electronics
+
+#### Bill of Material
+
+- UC2e v2 electronics
+- 3x A4988 Stepper driver
+- 12V power supply
+- USB micro cable
+- 3D printed case
+- 2x puzzle pieces
+- 8 M5x8 thread-only screws
+- 4x M3x8mm screws
+
+#### Assembly
+
+Attach the electronics board to the 3D printed assembly and tighten it with the M3 screws (cylindrical, Din906)
+Attach the puzzle pieces to the distal ends of the assembly and lock it with the M5 screws. For this the yet closed holes have to be opened by "drilling" it through.
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/electronics/openUC2_XYZmicroscope_62.jpg" width="500"/>
+</p>
+
+
+
+### Prepare Triangle Structure
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/triangle/openUC2_XYZmicroscope_77.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/triangle/openUC2_XYZmicroscope_78.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/triangle/openUC2_XYZmicroscope_79.jpg" width="500"/>
+</p>
+
+### Tubelens
+
+#### Bill of Material
+
+- Berrybase 100mm CCTV Lens
+- Daheng Vision IMX226 sensor
+- USB 3 Camera Cable
+- 2x Puzzlepieze
+- 8x M5x8 mm worm screw
+- 4x M3x18mm screw
+
+#### Assembly
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/tubelens/openUC2_XYZmicroscope_80.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/tubelens/openUC2_XYZmicroscope_81.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/tubelens/openUC2_XYZmicroscope_82.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/tubelens/openUC2_XYZmicroscope_83.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/tubelens/openUC2_XYZmicroscope_84.jpg" width="500"/>
+</p>
+
+### Adding the Baseplate
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/baseplate/openUC2_XYZmicroscope_67.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/baseplate/openUC2_XYZmicroscope_68.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/baseplate/openUC2_XYZmicroscope_69.jpg" width="500"/>
+</p>
+
+### Endstops and Illumination
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/endstopillu/openUC2_XYZmicroscope_64.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/endstopillu/openUC2_XYZmicroscope_75.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/endstopillu/openUC2_XYZmicroscope_76.jpg" width="500"/>
+</p>
+
+### Skeleton
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/skelet/openUC2_XYZmicroscope_69.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/skelet/openUC2_XYZmicroscope_71.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/skelet/openUC2_XYZmicroscope_72.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/skelet/openUC2_XYZmicroscope_73.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/skelet/openUC2_XYZmicroscope_74.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/skelet/openUC2_XYZmicroscope_87.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/skelet/openUC2_XYZmicroscope_95.jpg" width="500"/>
+</p>
+
+
+## Fully Assembled
+
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/fullyassembled/openUC2_XYZmicroscope_2.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/fullyassembled/openUC2_XYZmicroscope_1.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/fullyassembled/openUC2_XYZmicroscope_54.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/fullyassembled/openUC2_XYZmicroscope_88.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/fullyassembled/openUC2_XYZmicroscope_98.jpg" width="500"/>
+</p>
+
+## Fluo Extension
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/fluo/openUC2_XYZmicroscope_85.jpg" width="500"/>
+</p>
+
+<p align="center">
+<img src="/INVESTIGATOR/XYZMicroscope/fluo/openUC2_XYZmicroscope_86.jpg" width="500"/>
+</p>
 
 
 ## Improvements

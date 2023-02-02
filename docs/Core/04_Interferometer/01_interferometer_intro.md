@@ -1,6 +1,6 @@
 ---
-id: DiscKit1
-title: Discovery Kit Base 
+id: Interferometer_intro
+title: openUC2 Interferometer Introduction
 ---
 
 
@@ -19,37 +19,6 @@ Inside the box you will find a number of different cubes, all coming with differ
 <p align="center">
 <img src="/DISCOVERY_BASE/01_DiscoveryKitBase.png" width="400"/>
 </p>
-
-# PLACEHOLDER CAMERA CATALOG
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NZZ6n620eV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-## How do you assemble a cube?
-Duration: 3
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yl0lgNJu_AQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-## Getting started with Mirrors
-Duration: 3
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/azxLqej7yqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-## Getting started with Lenses
-Duration: 3
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rCtZjRKU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-## Build your first Telescope
-Duration: 3
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Jp3uU7wly64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 

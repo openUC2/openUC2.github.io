@@ -9,7 +9,7 @@ Please feel free to post a question in the Forum or in the [Github Issue section
 
 
 <p align="center">
-<img src="/Users/bene/Documents/UC2-DOCS/static/CORE/AUTOMATION/automation_content.png" width="400"/>
+<img src="/CORE/AUTOMATION/automation_content.png" width="400"/>
 </p>
 
 **In Cubes:**
@@ -39,7 +39,7 @@ In the following you will learn to build the finite-corrected microscope that he
 Once done, the microscope will look like this:
 
 <p align="center">
-<img src="/Users/bene/Documents/UC2-DOCS/static/CORE/AUTOMATION/incubatorrot1.gif" width="400"/>
+<img src="/CORE/AUTOMATION/incubatorrot1.gif" width="400"/>
 </p>
 
 Based on the following image, take the following cubes:
@@ -53,19 +53,19 @@ Based on the following image, take the following cubes:
 Start concatenating the puzzle pieces to form an L-shape and place the different cubes on top of it to end up with this assembly:
 
 <p align="center">
-<img src="/Users/bene/Documents/UC2-DOCS/static/CORE/AUTOMATION/Incubatormicroscpoe.png" width="400"/>
+<img src="/CORE/AUTOMATION/Incubatormicroscpoe.png" width="400"/>
 </p>
 
 Ensure that the LED array is either in the same cube as the sample or optionally add one more layer on top of the sample such that you end up with a 4-layer "tower". 
 
 <p align="center">
-<img src="/Users/bene/Documents/UC2-DOCS/static/CORE/AUTOMATION/Incubatormicroscpoe2.png" width="400"/>
+<img src="/CORE/AUTOMATION/Incubatormicroscpoe2.png" width="400"/>
 </p>
 
 Once done, the microscope features a folded beampath with a tubelength of ~100mm, which is less than the required 160mm following the RMS standard for finite-corrected objective lenses. This means, that the magnification will slightly less. However, this setup should give you and impression how you can build small microscopes that can be automated on the fly. 
 
 <p align="center">
-<img src="/Users/bene/Documents/UC2-DOCS/static/CORE/AUTOMATION/Incubatormicroscpoe3.png" width="400"/>
+<img src="/CORE/AUTOMATION/Incubatormicroscpoe3.png" width="400"/>
 </p>
 
 
@@ -85,7 +85,7 @@ A brief intro into how to build the microscope can be found in the following two
 The motor and the led array are connted to the UC2 electronics module. For additional information, please have a look [here](https://openuc2.github.io/docs/Electronics/uc2e2#-wiring)
 
 <p align="center">
-<img src="/Users/bene/Documents/UC2-DOCS/static/CORE/AUTOMATION/Electronics.png" width="400"/>
+<img src="/CORE/AUTOMATION/Electronics.png" width="400"/>
 </p>
 
 In order to control the hardware components, we make use of the newly implemented Web-Serial (Chrome only for now). Alternatively, you can checkout the Python interface. More information available [here](https://openuc2.github.io/docs/Electronics/uc2e7#-python-bindings)

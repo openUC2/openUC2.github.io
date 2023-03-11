@@ -23,7 +23,7 @@ Please feel free to post a question in the Forum or in the [Github Issue section
 
 **Not in Cubes:**
 
-- 1x Objective lens (10x, finite)
+- 1x Objective lens (10x, finite or 4x finite - can be any other lens with RMS thread)
 - 1x openUC2 Electronic (ESP32-based)
 - Box + Foam insert
 - Micro USB Cable 
@@ -91,4 +91,9 @@ The motor and the led array are connted to the UC2 electronics module. For addit
 In order to control the hardware components, we make use of the newly implemented Web-Serial (Chrome only for now). Alternatively, you can checkout the Python interface. More information available [here](https://openuc2.github.io/docs/Electronics/uc2e7#-python-bindings)
 
 The link to the installation-free Web-Serial interface (Experimental) is here: https://youseetoo.github.io/indexWebSerialTest.html
+
+
+### Getting a shar image
+
+It's advisable to test the microscope with an almost transparent sample and the LED illumination turned on so that one can see some contrast on the screen that is produced by the USB-camera. At one stage one can see a shar image of the sample that in the first place can be moved through the focus (~10-15mm from the last lens) by hand. Once this distance has been found, one can place the sample adapter (insert) in that position so that the sample mounts roughly in the focus. With the focus adjustment buttons, the focus can be enhanced. 
 

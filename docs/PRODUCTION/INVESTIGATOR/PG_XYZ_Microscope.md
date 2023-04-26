@@ -30,188 +30,150 @@ Find the necessary tools to get rid of the necessary parts of the stage:
 - Pliers "Kneifzange"
 
 
-
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_3.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_3.jpg)
 
 #### Steps
 
 Please collect all parts in the bag that comes with the XY stage.
+First step: Remove **ALL** the screws on the up-facing surce (mostly cross)
 
-Get rid of the sample clamps using the
+Get rid of the sample clamps using the **Philips 1** screwdriver (cross)
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_4.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_4.jpg)
 
 Remove the metal bars that frame the glass plate
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_5.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_5.jpg)
 
 Remove the glass plate - don't cut yourself!
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_6.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_6.jpg)
 
 Take the slotted screwdriver (small) and remove the cap of the knob (there is a hole, insert it and remove the plastic piece)
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_7.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_7.jpg)
 
 You end up with this result:
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_8.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_8.jpg)
 
-Take the same slotted screw driver and remove the sticks that indicate the ruler signs
+Take the same slotted screw driver and remove the stickers that indicate the ruler signs
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_9.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_8.jpg)
 
-The remaining residuals can be igonred
+The remaining residuals can be ignored.
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_10.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_10.jpg)
 
-Take the small Philips and remove all screws on the xy deck
+Take the small Philips (PH-1) and remove all screws on the xy deck
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_11.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_11.jpg)
 
 Remove the metal plate from the deck:
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_12.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_12.jpg)
 
-Take the pliers, hold the know with the other hand and unscrew the M3 nut:
+Take the 7mm nut and the ratchet to remove the M4 nut:
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_13.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_13.jpg)
 
-Remove the cap/knob:
+Remove the cap/knob by untwisting it counterclockwise:
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_15.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_15.jpg)
 
-Unscrew the small screws that hold the lower knob using the Philips
+Unscrew the small screws (3x) that hold the lower knob using the Philips (PH1)
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_16.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_16.jpg)
 
-Remove the lower hand knob
+Remove the lower hand knob:
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_17.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_17.jpg)
 
-Rotate the Stage
+Turn over the stage
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_18.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_18.jpg)
 
-Remove the cross-headed screws with the larger Philips (e.g. from the mounting ring):
+Remove the larger cross-headed screws with the larger Philips (PH2) from the mounting ring:
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_19.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_19.jpg)
 
 Remove the ring
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_20.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_20.jpg)
 
-Rotate the stage: Use the slotted screwdriver (small) to get rid of the screw in the lower knob
+Turn over the stage again: Use the slotted screwdriver (2mm) to get rid of the screws (2x) in the lower knob (setscrews)
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_21.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_21.jpg)
 
-Remove all screws of the linear gear
+Remove all screws of the linear rack (linear gear) using Philips (PH1)
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_22.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_22.jpg)
+
 
 Remove the  metal part:
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_23.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_23.jpg)
+
 
 Same with the gear on the lower end
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_36.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_24.jpg)
 
 Remove the part:
 
+![](IMAGES/openUC2_XYZmicroscope_38.jpg)
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_38.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_38.jpg" width="500"/>
 </p>
 
 
-Unscrew the special-shaped nut. **Attention:** this holds lubricon, make sure you cover your fingers
+Unscrew the special-shaped nut. **Attention:** this holds lubricon, make sure you cover your fingers. Use papertowels to cover the part / your fingers.
+
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_25.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_25.jpg" width="500"/>
 </p>
 
 Eventually take pliers to release the nut
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_26.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_26.jpg" width="500"/>
 </p>
 
-Remove the round metal plate
+Remove the round metal plate by pulling it up (use paper towels!!)
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_27.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_27.jpg" width="500"/>
 </p>
 
 Use the small Philips and remove the screws along the side and remove the metal part
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_28.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_28.jpg" width="500"/>
 </p>
 
-Remove the screws inside the assembly in order to enlarge the travel range
+Remove the screws inside the assembly in order to enlarge the travel range (PH1)
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_29.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_29.jpg" width="500"/>
 </p>
 
-Take the pliers and untighten the special-shaped screw assembly
+Take the wrench (12mm) and loosen the special-shaped screw assembly. Hold the lower nut and unscrew it counter-clockwise. Fully remove the screw using the papertowel by hand - all the way off.
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_30.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_30.jpg" width="500"/>
 </p>
 
 It's not 100% straight forward, but it'll work out:
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_31.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_31.jpg" width="500"/>
 </p>
 
 Tidy up the workplace:
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_32.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_32.jpg" width="500"/>
 </p>
 
 
@@ -238,7 +200,7 @@ For now we will add the parts manually as shown below:
 
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_33.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_33.jpg" width="500"/>
 </p>
 
 #### Steps
@@ -246,55 +208,55 @@ For now we will add the parts manually as shown below:
 Take the 150mm stage and hold it on the plate as shown in the photo. Mark the holes that will mount the stage on the xy plate_
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_34.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_34.jpg" width="500"/>
 </p>
 
 Same for the other (100mm) linear stage:
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_39.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_39.jpg" width="500"/>
 </p>
 
 Add markers for the positioning on the xy stage
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_40.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_40.jpg" width="500"/>
 </p>
 
 Quick check:
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_41.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_41.jpg" width="500"/>
 </p>
 
 Take the Ständerbohrmaschine and use a drill for the M3 Tap. Make through holes everywhere, where you marked the spots. Use safety goggles:
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_42.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_42.jpg" width="500"/>
 </p>
 
 Remove dust with a facuum cleaner
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_43.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_43.jpg" width="500"/>
 </p>
 
 Cut taps. Make sure holes are clearn and through! Mount the linear motorized stage on the xy stage with M3 cylindrical screws (DIN908, 8mm)
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_45.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_45.jpg" width="500"/>
 </p>
 
 Mount stage on the other side as well:
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_46.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_46.jpg" width="500"/>
 </p>
 
 We also need to add the M5 long-rods (155mm). They have to fit through the holes of the uc2 mounting plate (see last step)
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_110.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_110.jpg" width="500"/>
 </p>
 
 
@@ -302,7 +264,7 @@ We also need to add the M5 long-rods (155mm). They have to fit through the holes
 The metal-parts are done
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_47.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_47.jpg" width="500"/>
 </p>
 
 #### Adding the auxilary/3D-printed parts
@@ -312,14 +274,14 @@ The remaining parts will first connect the linear motors to the stage in order t
 Add the mounting arm on the upper part:
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_48.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_48.jpg" width="500"/>
 </p>
 
 
 Add the mounting arm on the lower part:
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_49.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_49.jpg" width="500"/>
 </p>
 
 Equip the Plate with the Illumination adapter (which side depends on the later assembly - if not fluorescence, it doesn't matter)
@@ -327,23 +289,23 @@ The M5 nuts are not necessary anymore. The remaining holes help you guiding the 
 Add M3 screws to the plate from above such that you have open-ended threads lurking from the other side (hardly visible **TODO:** add image!)
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_50.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_50.jpg" width="500"/>
 </p>
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_94.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_94.jpg" width="500"/>
 </p>
 
 Fixate the illumination arm holder with the metal stage using an M3 hole (eventually drill a hole 2.7mm)
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/IMG_20230130_101828.jpg" width="500"/>
+<img src="IMAGES/IMG_20230130_101828.jpg" width="500"/>
 </p>
 
 
 Screw the plate to the M3 screw holes on the xy stage (bottom part). The stage should look like this. Now, we can continue to the next step.
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_51.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_51.jpg" width="500"/>
 </p>
 
 ### Prepare the Z-stage
@@ -529,12 +491,45 @@ Attach the puzzle pieces to the distal ends of the assembly and lock it with the
 You can release the pressure on the linear bearings by loosening the screws carefully. Make sure you don't introduce unneccesary play. The stage works with two v-grooves and balls in between.
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_24.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_24.jpg" width="500"/>
 </p>
 
 
 <p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepxystage/openUC2_XYZmicroscope_37.jpg" width="500"/>
+<img src="IMAGES/openUC2_XYZmicroscope_37.jpg" width="500"/>
+</p>
+
+## Additional images (have to be sorted)
+
+<p align="center">
+<img src="IMAGES/openUC2_XYZmicroscope_111.jpg" width="500"/>
+</p>
+<p align="center">
+<img src="IMAGES/openUC2_XYZmicroscope_112.jpg" width="500"/>
+</p>
+<p align="center">
+<img src="IMAGES/openUC2_XYZmicroscope_113.jpg" width="500"/>
+</p>
+<p align="center">
+<img src="IMAGES/openUC2_XYZmicroscope_114.jpg" width="500"/>
+</p>
+<p align="center">
+<img src="IMAGES/openUC2_XYZmicroscope_115.jpg" width="500"/>
+</p>
+<p align="center">
+<img src="IMAGES/openUC2_XYZmicroscope_116.jpg" width="500"/>
+</p>
+<p align="center">
+<img src="IMAGES/openUC2_XYZmicroscope_117.jpg" width="500"/>
+</p>
+<p align="center">
+<img src="IMAGES/openUC2_XYZmicroscope_118.jpg" width="500"/>
+</p>
+<p align="center">
+<img src="IMAGES/openUC2_XYZmicroscope_119.jpg" width="500"/>
+</p>
+<p align="center">
+<img src="IMAGES/openUC2_XYZmicroscope_120.jpg" width="500"/>
 </p>
 
 

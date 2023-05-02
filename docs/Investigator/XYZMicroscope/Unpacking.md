@@ -167,7 +167,7 @@ In motion:
 
 
 ### Veritcal Operation
- 
+
 ![](IMAGES/unpack/xyz_2_23.jpg)
 
 
@@ -182,7 +182,7 @@ You can find a full description of how to dissassemble the microscope here: http
 
 We scanned arabidopsis in darkfield (LEDs >9 on):
 
-![](IMAGES/unpack/animation.jpg)
+![](IMAGES/unpack/animation.gif)
 
 
 ## Connecting the microscope to the browser and controll it

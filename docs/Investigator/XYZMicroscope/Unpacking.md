@@ -21,25 +21,18 @@ The hardcover plastic case contains all you need for the microscope:
 
 The actual Box looks like this:
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/unpack/IMG_20230131_123828.jpg" width="700"/>
-</p>
-
+![](IMAGES/unpack/xyz_5.jpg)
 
 **Optional** Please also find the treat and make sure you provide yourself with enough sugar throughout this unpacking routine :-)
 
 
 The foam holds the microscope in place (the actual colour may differ from what you may see):
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/unpack/xyz_7.jpg" width="700"/>
-</p>
+![](IMAGES/unpack/xyz_7.jpg)
 
 Remove the foam parts (please keep them for later reuse) to end up like this here:
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/unpack/xyz_5.jpg" width="700"/>
-</p>
+![](IMAGES/unpack/xyz_5.jpg)
 
 
 
@@ -49,49 +42,37 @@ Remove the foam parts (please keep them for later reuse) to end up like this her
 
 For this you need a 2.5mm Hex key and the M3 cylindrical screws. Mount the LED Arm like so:
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/unpack/xyz_1.jpg" width="700"/>
-</p>
+![](IMAGES/unpack/xyz_1.jpg)
 
 
 It should look like this:
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/unpack/xyz_2.jpg" width="700"/>
-</p>
+![](IMAGES/unpack/xyz_2.jpg)
+
 
 
 ### Wiring up the microscope
 
 First of all we need to wire up the microscope. For this we will start with the 12V power supply. Unfortunately the powersocket is inside the case, hence you have to first eat some candy in order to better find the spot ;-)
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/unpack/xyz_0.jpg" width="700"/>
-</p>
+![](IMAGES/unpack/xyz_0.jpg)
 
 
 The USB Cable is permanently mounted to the ESP32 UC2e unit:
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/unpack/xyz_3.jpg" width="700"/>
-</p>
+![](IMAGES/unpack/xyz_3.jpg)
 
 **Note**: Please make sure you have sufficient USB Power. In case the full LED array is turning on, it may happen that the ESP's voltage drops and the USB serial connection fails. A reconnect will help.
 
 
 The same holds true for the USB connection to the microcontroller board. You need to hook it up like that:
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/unpack/xyz_4.jpg" width="700"/>
-</p>
+![](IMAGES/unpack/xyz_4.jpg)
+
 
 Once done, we continue with inserting the objective lens. Eventually the lens is already inserted and you just need to check if the lens is centered correctly
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/unpack/xyz_6.jpg" width="700"/>
-</p>
-
-
+![](IMAGES/unpack/xyz_6.jpg)
 
 ## Wire up the microscope to your computer
 
@@ -102,6 +83,92 @@ In order to get the microscope working, we first need to install additional driv
 
 
 For additional information and an in-depth explanation for the UC2e system, please have a look [here](https://openuc2.github.io/docs/Electronics/uc2e1)
+
+
+## Version 2
+
+This is a slightly updated version of the XYZ microscope that also includes fluorescence imaging. The here presented documentation has an extra feature since it can be operated vertically to image plants growing upwards. Also we use an adapter to mount Ropods magnetically.
+
+### Assembly
+
+Open the Box:
+
+![](IMAGES/unpack/xyz_2_2.jpg)
+
+Find the microscope and the cables:
+![](IMAGES/unpack/xyz_2_3.jpg)
+
+The second layer has the controller and the microscope body:
+![](IMAGES/unpack/xyz_2_4.jpg)
+
+Carefully take out the microscope out of the box using *two* hands please:
+![](IMAGES/unpack/xyz_2_5.jpg)
+
+These parts should have arrived at your fingertips:
+![](IMAGES/unpack/xyz_2_6.jpg)
+
+The first part is to slide in the Illumination arm and mount it using a hex key:
+![](IMAGES/unpack/xyz_2_24.gif)
+
+Ensure the Light-source is centered w.r.t. the objective lens
+![](IMAGES/unpack/xyz_2_7.jpg)
+
+Mount the LED Matrix centric w.r.t. the objective lens by sliding it in
+![](IMAGES/unpack/xyz_2_8.jpg)
+
+Fix it in place using the hex key
+![](IMAGES/unpack/xyz_2_9.jpg)
+
+### Adding Cables
+
+Plug in the 12V Power plug in the round hole (a bit tricky)
+![](IMAGES/unpack/xyz_2_10.jpg)
+
+Connect the USB micro cable in the bespoke slot (also a bit improvised - sorry)
+![](IMAGES/unpack/xyz_2_11.jpg)
+
+Connect the Camera using the USB3 cable
+![](IMAGES/unpack/xyz_2_12.jpg)
+
+Add the sample using magnets
+![](IMAGES/unpack/xyz_2_13.jpg)
+
+Make sure everything is in place
+![](IMAGES/unpack/xyz_2_14.jpg)
+
+If everything is connected to the computer, hit the connect button on the PS4 controller and wait until the blinking white LED is continuing to shine, meaning it's connected
+![](IMAGES/unpack/xyz_2_15.jpg)
+
+For fluorescence imaging, please add the Laser cover
+![](IMAGES/unpack/xyz_2_16.jpg)
+
+It's easier to add the laser mount if you remove the brightfield lamp first
+![](IMAGES/unpack/xyz_2_17.jpg)
+
+Once mounted, mount the brightfield lamp back in
+![](IMAGES/unpack/xyz_2_18.jpg)
+
+### Swapping the objective lens
+
+This part is yet a bit tricky (Sorry).. The mount for the objective mount features a special adapter that follows a bajonett design. Once the three pits fit in the three holes, a 40° clockwise rotation will fix the objective in place. If it gets too complicated, take a hex key and remove the sample mount to better access the objective.
+![](IMAGES/unpack/xyz_2_19.jpg)
+
+Remove the sample mount:
+![](IMAGES/unpack/xyz_2_20.jpg)
+
+Remove the lens by unscrewing it counter-clockwise:
+![](IMAGES/unpack/xyz_2_21.jpg)
+
+Carefully take the lens out:
+![](IMAGES/unpack/xyz_2_22.jpg)
+
+In motion:
+![](IMAGES/unpack/xyz_2_25.gif)
+
+
+### Veritcal Operation
+ 
+![](IMAGES/unpack/xyz_2_23.jpg)
 
 
 
@@ -115,9 +182,8 @@ You can find a full description of how to dissassemble the microscope here: http
 
 We scanned arabidopsis in darkfield (LEDs >9 on):
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/unpack/animation.gif" width="700"/>
-</p>
+![](IMAGES/unpack/animation.jpg)
+
 
 ## Connecting the microscope to the browser and controll it
 

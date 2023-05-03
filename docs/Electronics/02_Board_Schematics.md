@@ -23,10 +23,7 @@ We use the ESP32 in order to ensure connectivity via
 - Bluetooth
 - USB Serial (mostly used)
 
-
-<p align="center">
-<img src="/ELECTRONICS/UC2_electronics_board_Kicad_6.png" width="600"/>
-</p>
+![](./IMAGES/UC2_electronics_board_Kicad_6.png)
 
 <!----------------------------------------->
 ## ⚡ Wiring
@@ -43,16 +40,13 @@ The polarity of the LED Array matters! The UC2 LED ring module comes with a JST 
 
 Below you can find a rendering of the PCB that is sitting inside the 3D printed Box with all its connectors.
 
-<p align="center">
-<img src="/ELECTRONICS/UC2_electronics_board_Kicad_0.png" width="600"/>
-</p>
+![](./IMAGES/UC2_electronics_board_Kicad_0.png)
 
 
 For those who are keen to understand the wiring, please click on the schematics below. The sources of the board will be published soon.
 
-<p align="center">
-<img src="/ELECTRONICS/UC2eSchematics.png" width="600"/>
-</p>
+![](./IMAGES/UC2eSchematics.png)
+
 
 <!----------------------------------------->
 ## 💡 UC2 LED Ring
@@ -60,13 +54,8 @@ Duration:2
 
 As for the illumination, you can use a large variation of different light sources to get your sample in the right light. But sometimes you want to have the ability to change the contrast by illuminating from oblique, only in the center, using a darkfield ring or change degree of coherence. An off-the-shelf LED Matrix is very sufficient in most cases, but it lacks the rotational symmetry. For this we have the UC2 LED Ring Module that fits directly in the Cube, has concentric rings and still offers all the degrees of freedom that the Adafruit Neopixel gives you (e.g. RGB, white, patterns..).
 
-<p align="center">
-<img src="/ELECTRONICS/UC2_electronics_board2.jpg" width="600"/>
-</p>
+![](./IMAGES/UC2_electronics_board2.jpg)
 
 The 3 wires that leave the satellite board deliver 5V, Data and GND and directly connect to the UC2e via the LED pin:
 
-<p align="center">
-<img src="/ELECTRONICS/UC2_electronics_board3.jpg" width="600"/>
-</p>
-
+![](./IMAGES/UC2_electronics_board3.jpg)

@@ -6,7 +6,10 @@ title: UC2 miniBOX (english)
 
 
 ## What's in the MiniBOX?
-Duration: 1
+
+:::warning
+We have compiled this document into a ***PDF*** which can be downloaded <a href="/MINIBOX/Manual_Corebox_EM.pdf" target="_blank" >here</a>
+:::
 
 **Sample holder:** holds an object in a cube\
 **Lens:** affects the way light is propagated (spread out)\
@@ -118,4 +121,3 @@ Take one or more of the cubes that have a lens in them and look at the UC2 symbo
 <p align="center">
 <img src="/MINIBOX/8.png" width="300"/>
 </p>
-

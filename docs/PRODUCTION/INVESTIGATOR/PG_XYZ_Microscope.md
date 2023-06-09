@@ -122,59 +122,36 @@ Same with the gear on the lower end
 Remove the part:
 
 ![](IMAGES/openUC2_XYZmicroscope_38.jpg)
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_38.jpg" width="500"/>
-</p>
 
 
 Unscrew the special-shaped nut. **Attention:** this holds lubricon, make sure you cover your fingers. Use papertowels to cover the part / your fingers.
 
-
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_25.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_25.jpg)
 
 Eventually take pliers to release the nut
-
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_26.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_26.jpg)
 
 Remove the round metal plate by pulling it up (use paper towels!!)
-
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_27.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_27.jpg)
 
 Use the small Philips and remove the screws along the side and remove the metal part
-
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_28.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_28.jpg)
 
 Remove the screws inside the assembly in order to enlarge the travel range (PH1)
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_29.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_29.jpg)
 
 Take the wrench (12mm) and loosen the special-shaped screw assembly. Hold the lower nut and unscrew it counter-clockwise. Fully remove the screw using the papertowel by hand - all the way off.
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_30.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_30.jpg)
 
 It's not 100% straight forward, but it'll work out:
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_31.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_31.jpg)
 
 Tidy up the workplace:
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_32.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_32.jpg)
 
 
 ### Add drill holes to the XY Stage assembly
@@ -198,74 +175,61 @@ For now we will add the parts manually as shown below:
 - NEMA12 100mm linear stage
 - NEMA12 150mm linear stage
 
+![](IMAGES/openUC2_XYZmicroscope_32.jpg)
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_33.jpg" width="500"/>
-</p>
 
 #### Steps
 
 Take the 150mm stage and hold it on the plate as shown in the photo. Mark the holes that will mount the stage on the xy plate_
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_34.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_34.jpg)
+
 
 Same for the other (100mm) linear stage:
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_39.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_39.jpg)
+
 
 Add markers for the positioning on the xy stage
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_40.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_40.jpg)
+
 
 Quick check:
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_41.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_41.jpg)
+
 
 Take the Ständerbohrmaschine and use a drill for the M3 Tap. Make through holes everywhere, where you marked the spots. Use safety goggles:
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_42.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_42.jpg)
 
-Remove dust with a facuum cleaner
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_43.jpg" width="500"/>
-</p>
+Remove dust with a vacuum cleaner
+
+![](IMAGES/openUC2_XYZmicroscope_43.jpg)
+
 
 Cut taps. Make sure holes are clearn and through! Mount the linear motorized stage on the xy stage with M3 cylindrical screws (DIN908, 8mm)
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_45.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_45.jpg)
+
 
 Mount stage on the other side as well:
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_46.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_46.jpg)
+
 
 We also need to add the M5 long-rods (155mm). They have to fit through the holes of the uc2 mounting plate (see last step)
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_110.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_110.jpg)
+
 
 
 
 The metal-parts are done
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_47.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_47.jpg)
 
 #### Adding the auxilary/3D-printed parts
 
@@ -273,40 +237,25 @@ The remaining parts will first connect the linear motors to the stage in order t
 
 Add the mounting arm on the upper part:
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_48.jpg" width="500"/>
-</p>
-
+![](IMAGES/openUC2_XYZmicroscope_48.jpg)
 
 Add the mounting arm on the lower part:
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_49.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_49.jpg)
 
 Equip the Plate with the Illumination adapter (which side depends on the later assembly - if not fluorescence, it doesn't matter)
 The M5 nuts are not necessary anymore. The remaining holes help you guiding the M5 rodsinto the holes. (see former photo)
 Add M3 screws to the plate from above such that you have open-ended threads lurking from the other side (hardly visible **TODO:** add image!)
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_50.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_50.jpg)
 
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_94.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_94.jpg)
 
 Fixate the illumination arm holder with the metal stage using an M3 hole (eventually drill a hole 2.7mm)
-<p align="center">
-<img src="IMAGES/IMG_20230130_101828.jpg" width="500"/>
-</p>
-
+![](IMAGES/IMG_20230130_101828.jpg)
 
 Screw the plate to the M3 screw holes on the xy stage (bottom part). The stage should look like this. Now, we can continue to the next step.
-
-<p align="center">
-<img src="IMAGES/openUC2_XYZmicroscope_51.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_51.jpg)
 
 ### Prepare the Z-stage
 
@@ -315,9 +264,7 @@ https://openuc2.github.io/docs/PRODUCTION/PG_12_STAGE_Z_NEMA
 
 Once done, lock the Stage with the Puzzle piece with M5x8 worm screws:
 
-<p align="center">
-<img src="/INVESTIGATOR/XYZMicroscope/prepzstage/openUC2_XYZmicroscope_63.jpg" width="500"/>
-</p>
+![](IMAGES/openUC2_XYZmicroscope_63.jpg)
 
 
 ### Prepare Electronics

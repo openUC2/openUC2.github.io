@@ -264,9 +264,6 @@ https://openuc2.github.io/docs/PRODUCTION/PG_12_STAGE_Z_NEMA
 
 Once done, lock the Stage with the Puzzle piece with M5x8 worm screws:
 
-![](IMAGES/openUC2_XYZmicroscope_63.jpg)
-
-
 ### Prepare Electronics
 
 #### Bill of Material

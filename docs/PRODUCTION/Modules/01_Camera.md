@@ -52,27 +52,21 @@ All parts you need to assemble the module:
 
 Remove the lens (M12/cellphone) from the camera board.
 
-<p align="center">
-<img src="/img/IMG_01_CAMERA/UC2_camera_0.jpg" width="400"/>
-
-</p>
+![](IMG_01_CAMERA/UC2_camera_0.jpg)
 
 **STEP 2**
 
 Use the DIN912 M3x12mm screws to mount the camera securely.
 **ATTENTION:** Use the decentered holes such that the Camera is placed in the inserts's center!
 
-<p align="center">
-<img src="/img/IMG_01_CAMERA/UC2_camera_1.jpg" width="400"/>
-</p>
+![](IMG_01_CAMERA/UC2_camera_1.jpg)
 
 **STEP 3**
 
 Add the insert to the cube, close it and store the cable safely.
 
-<p align="center">
-<img src="/img/IMG_01_CAMERA/UC2_camera_2.jpg" width="400"/>
-</p>
+![](IMG_01_CAMERA/UC2_camera_2.jpg)
+
 
 
 ### IMX179 (Waveshare)
@@ -81,6 +75,7 @@ Add the insert to the cube, close it and store the cable safely.
 
 All parts you need to assemble the module:
 
+![](IMG_01_CAMERA/UC2_camera_4.jpg)
 
 <p align="center">
 <img src="/img/IMG_01_CAMERA/UC2_cameraIMX179_4.jpg" width="400"/>
@@ -90,34 +85,25 @@ All parts you need to assemble the module:
 
 Remove the lens (M12) from the camera board using a cross key.
 
-<p align="center">
-<img src="/img/IMG_01_CAMERA/UC2_cameraIMX179_3.jpg" width="400"/>
-</p>
 
 **STEP 3**
 
 Use the DIN912 M3x12mm screws to mount the camera securely.
 **ATTENTION**: Use the centered screws to have the camera's lens in the center of the module!
 
-<p align="center">
-<img src="/img/IMG_01_CAMERA/UC2_cameraIMX179_2.jpg" width="400"/>
-</p>
+![](IMG_01_CAMERA/UC2_cameraIMX179_2.jpg)
 
 **STEP 4**
 
 To remove the lens take a cloth/tissue and pliers and knock it of with some force. Don't break the part!
 
-<p align="center">
-<img src="/img/IMG_01_CAMERA/UC2_cameraIMX179_1.jpg" width="400"/>
-</p>
+![](IMG_01_CAMERA/UC2_cameraIMX179_1.jpg)
 
 **STEP 5**
 
 Add the part to the cube and you're done.
 
-<p align="center">
-<img src="/img/IMG_01_CAMERA/UC2_cameraIMX179_0.jpg" width="400"/>
-</p>
+![](IMG_01_CAMERA/UC2_cameraIMX179_0.jpg)
 
 ### Design files
 

@@ -47,16 +47,18 @@ Below we describe how the device can be build and assembled in order to replicat
 
 All parts you need to assemble the module:
 
-<p align="center">
-<img src="/img/IMG_03_LENS/UC2_lens_0.jpg" width="600"/>
-</p>
+![](IMG_03_LENS/UC2_lens_0.jpg)
 
 **STEP 2**
 
-<p align="center">
-<img src="/img/IMG_03_LENS/UC2_lens_1.jpg" width="600"/>
-</p>
+Thread in the round piece tand fix the lens. Make sure you use the right ring for the right lens!
+![](IMG_03_LENS/UC2_lens_1.jpg)
 
+:::caution
+
+Clean the lenses with a cotton cloth.
+
+:::
 
 ### Design files
 

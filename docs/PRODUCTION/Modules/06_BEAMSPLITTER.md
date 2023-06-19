@@ -42,16 +42,14 @@ Below we describe how the device can be build and assembled in order to replicat
 
 All parts you need to assemble the module:
 
-<p align="center">
-<img src="/img/IMG_06_BEAMSPLITTER/UC2_beamsplitter_0.jpg" width="600"/>
-</p>
+![](IMG_06_BEAMSPLITTER/UC2_beamsplitter_0.jpg)
 
 **STEP 2**
 
-<p align="center">
-<img src="/img/IMG_06_BEAMSPLITTER/UC2_beamsplitter_1.jpg" width="600"/>
-</p>
-
+:::caution
+Insert the beam splitter in such a way that the mirroring/coated surface points away from the printed part!
+:::
+![](IMG_06_BEAMSPLITTER/UC2_beamsplitter_1.jpg)
 
 ### Design files
 

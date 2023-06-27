@@ -46,16 +46,18 @@ Below we describe how the device can be build and assembled in order to replicat
 
 All parts you need to assemble the module:
 
-<p align="center">
-<img src="/img/IMG_14_SAMPLE_HOLDER/UC2_sampleholder_0.jpg" width="600"/>
-</p>
+![](IMG_14_SAMPLE_HOLDER/UC2_sampleholder_0.jpg)
 
 **STEP 2**
 
-<p align="center">
-<img src="/img/IMG_14_SAMPLE_HOLDER/UC2_sampleholder_1.jpg" width="600"/>
-</p>
+![](IMG_14_SAMPLE_HOLDER/UC2_sampleholder_1.jpg)
 
+
+:::alert
+
+this has been updated with magnets! Make sure you label the magnets with prior to insertion so that polarity is correct. 
+
+:::
 ### Design files
 
 The original design files are in the [INVENTOR](../INVENTOR) folder.

@@ -75,7 +75,7 @@ Add the insert to the cube, close it and store the cable safely.
 
 All parts you need to assemble the module:
 
-![](IMG_01_CAMERA/UC2_camera_4.jpg)
+![](IMG_01_CAMERA/UC2_camera_0.jpg)
 
 <p align="center">
 <img src="/img/IMG_01_CAMERA/UC2_cameraIMX179_4.jpg" width="400"/>

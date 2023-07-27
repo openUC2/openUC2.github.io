@@ -1,40 +1,69 @@
-**Technical Description: openUC2 Electronics Kit for Finite-Corrected Digital Microscope Automation**
+---
+id: Automation_intro
+title: openUC2 Electronics kit that enables automation
+---
 
-The openUC2 Electronics Kit is a comprehensive package designed to enable automation in microscopy, particularly for building a finite-corrected digital microscope. This kit provides all the necessary components and instructions to assemble a fully functional microscope capable of imaging microscopic samples using a digital webcam. Key components included in the kit are as follows:
+The openUC2 Electronics Kit enables the construction of a finite-corrected digital microscope with automated features. The kit includes various components and cubes that can be assembled to create a versatile microscope capable of imaging microscopic samples using a digital webcam. The setup features a motorized Z-stage with a resolution of approximately 300 nanometers per step (when using 16 microsteps) and a ring-shaped LED array for digital phase-contrast imaging of transparent samples.
 
-**Components in Cubes:**
-- Camera (Webcam)
-- Motorized Z-Stage (NEMA 11 stepper motor-based)
-- 1x openUC2 LED array (comprising 3 circles)
-- 10x Baseplates (to support the assembly)
+**Components Included in the Kit:**
 
-**Components Not in Cubes:**
-- 1x Objective Lens (10x finite or 4x finite with RMS thread, other lenses possible)
-- 1x openUC2 Electronics (ESP32-based controller for automation)
-- Box with Foam Insert (to store and protect the components)
-- Micro USB Cable (for device connectivity)
-- Controller (for stage and LED array control)
-- 12V Power Supply (to power the motorized components)
+![](IMAGES/automation_content.png)
 
-**Finite-Corrected Digital Microscope:**
-The kit allows users to build a finite-corrected digital microscope capable of imaging transparent samples with digital phase-contrast. It utilizes a stepper motor-based Z-stage with a resolution of around 300 nanometers per step (when using 16 microsteps). Additionally, the integrated ring-shaped LED array enables digital phase-contrast imaging of the samples.
 
-The assembly of the microscope involves combining various cubes, including the webcam, Z-stage, 45° folding mirror, sample mount, and LED array, into an L-shaped configuration. Once assembled, the microscope features a folded beampath with a tubelength of approximately 100mm, slightly less than the standard 160mm specified for finite-corrected objective lenses. Despite this, the setup provides valuable insights into building small, automated microscopes.
+**In Cubes:**
+1. Camera
+2. Motorized Z-Stage (NEMA 11)
+3. 1x openUC2 LED Array (3 circles)
+4. 10x Baseplates
+
+**Not in Cubes:**
+1. 1x Objective Lens (10x, finite, or 4x finite - compatible with RMS thread)
+2. 1x openUC2 Electronic (ESP32-based)
+3. Box + Foam Insert
+4. Micro USB Cable
+5. Controller
+6. 12V Power Supply
+
+**Microscope Assembly:**
+The assembly process involves combining the different cubes and components to build the finite-corrected microscope. A webcam, Z-stage, 45° folding mirror, sample mount, and LED array are assembled in an L-shape configuration. These cubes are stacked on top of each other to form a complete microscope setup. Optionally, the LED array can be placed in the same cube as the sample or on a separate layer above the sample, creating a 4-layer "tower" setup.
+
+![Microscope Assembly Steps](IMAGES/Incubatormicroscpoe.png)
+*Steps involved in assembling the finite-corrected digital microscope.*
+
+Once assembled, the microscope's folded beampath achieves a tubelength of approximately 100mm, which is less than the required 160mm according to the RMS standard for finite-corrected objective lenses. As a result, the magnification is slightly reduced. However, this setup provides a practical example of how to build compact and automated microscopes.
+
+![Microscope Assembly - Side View](IMAGES/Incubatormicroscpoe3.png)
+*Side view of the assembled microscope.*
 
 **Instructional Videos:**
-The kit includes instructional videos to guide users through the assembly process. Two main videos are provided:
+Two videos guide users through the assembly process:
 
-1. Assembling a Standard Microscope: This video demonstrates the assembly of a basic microscope using the components in the kit.
+![](IMAGES/incubatorrot1.gif)
 
-2. Assembling a Finite-Corrected Microscope with a Webcam: This video specifically guides users in assembling the finite-corrected digital microscope with the included webcam.
+1. Assembling a standard microscope.
+2. Assembling a finite-corrected microscope with a webcam.
 
 **Microscope Control:**
-The motorized Z-stage and LED array are connected to the openUC2 electronics module. The kit supports control through a browser interface, utilizing Web-Serial (compatible with Chrome). Alternatively, users can utilize the Python interface to control the hardware components.
+The motor and the LED array are connected to the openUC2 electronics module. Users can control the hardware components using Web-Serial (Chrome only for now) or the Python interface.
+
+![openUC2 Electronics Module](IMAGES/Electronics.png)
+*openUC2 electronics module for controlling the microscope components.*
 
 **Web-Serial Interface:**
-An installation-free Web-Serial interface (experimental) is provided, allowing users to control the microscope's hardware components directly from a browser. The Web-Serial interface currently supports Chrome.
-
-Web-Serial Interface URL: https://youseetoo.github.io/indexWebSerialTest.html
+For control via the web, a new Web-Serial interface is implemented (experimental) and can be accessed at: https://youseetoo.github.io/indexWebSerialTest.html.
 
 **Getting a Sharp Image:**
-To achieve optimal image quality, users are advised to test the microscope with nearly transparent samples while enabling LED illumination. By adjusting the focus manually (approximately 10-15mm from the last lens), users can obtain a sharp image on the screen produced by the USB camera. Once the correct focus position is found, the sample adapter (insert) can be placed to roughly position the sample in focus. Further fine-tuning of focus can be done using the focus adjustment buttons available on the microscope.
+To achieve a sharp image, it is recommended to test the microscope with a nearly transparent sample and the LED illumination turned on. Users can adjust the focus by hand to find the optimal position (~10-15mm from the last lens). Once found, the sample adapter can be placed at that position, roughly aligning the sample with the focus. Fine adjustments to the focus can then be made using the focus adjustment buttons provided.
+
+## Images to Sort
+![](IMAGES/Cellphonemount.png)
+![](IMAGES/Camera.png)
+![](IMAGES/Ledarray.png)
+![](IMAGES/Lensmount.png)
+![](IMAGES/Mirrormount.png)
+![](IMAGES/Objectivemount.png)
+![](IMAGES/pscontroller.png)
+![](IMAGES/Samplebox.png)
+![](IMAGES/Samplemount.png)
+![](IMAGES/xyzstagemicro.jpeg)
+![](IMAGES/zstage.png)

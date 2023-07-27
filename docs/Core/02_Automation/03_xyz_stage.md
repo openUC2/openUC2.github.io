@@ -1,4 +1,9 @@
-**Technical Description: XYZ Micrometer Stage for Precise Motion Control**
+
+---
+id: XYZ_stage_mico
+title: XYZ Micrometer Stage for Precise Motion Control
+---
+
 
 The XYZ Micrometer Stage, branded as "openUC2 XYZ Stage," is a highly accurate motion control device designed for precise manipulation in three dimensions (XYZ). The stage is primarily intended for use in microscopy applications and interferometers, where precise sample positioning is essential. It offers microstepping control with a step size of approximately 320 nanometers in all directions, enabling micron-level adjustments.
 

@@ -1,4 +1,9 @@
-**Technical Description: openUC2 Camera Setup**
+---
+id: Camera_Setup
+title: Technical Description: openUC2 Camera Setup
+---
+
+
 
 The openUC2 Camera Setup provides guidance on configuring and using webcams and Daheng cameras for imaging purposes within the openUC2 ecosystem. This setup allows users to seamlessly integrate cameras into their experimental setups and utilize them for imaging and data acquisition. Below are detailed instructions for setting up cameras on different platforms:
 

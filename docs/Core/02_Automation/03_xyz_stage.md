@@ -1,4 +1,3 @@
-
 ---
 id: XYZ_stage_mico
 title: XYZ Micrometer Stage for Precise Motion Control

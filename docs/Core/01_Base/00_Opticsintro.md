@@ -139,6 +139,5 @@ Digital cameras can be used instead of screens or eyepieces, but their magnifica
 ![](IMAGES/playmouth_6.png)
 ![](IMAGES/playmouth_7.png)
 ![](IMAGES/playmouth_8.jpeg)
-![](IMAGES/playmouth_8.png)
 ![](IMAGES/playmouth_9.png)
 ![](IMAGES/playmouth_10.png)

@@ -19,9 +19,7 @@ Here you are going to learn:
 
 This is what you want to build now:
 
-<p align="left">
-<a href="#logo" name="logo"><img src="./IMAGES/Application_Inline_Holographic_Microscopy_v3.png" width="600"></a>
-</p>
+![](./IMAGES/Application_Inline_Holographic_Microscopy_v3.png)
 
 
 
@@ -36,9 +34,7 @@ This is what you want to build now:
 
 The inline holographic microscope utilizes the principles of holography and coherent light sources to capture and reconstruct 3D images of transparent samples. Instead of using traditional lenses, we rely on interference patterns between a reference beam and the scattered light from the sample. The resulting hologram is then computationally reconstructed to visualize the sample.
 
-<p align="center">
-<a href="#index" name="logo"><img src="./IMAGES/UC2Holo.png" width="1000"></a>
-</p>
+![](./IMAGES/UC2Holo.png)
 
 
 ### Materials Needed
@@ -156,9 +152,9 @@ plt.imshow(np.abs(holo))
 
 In [this video](https://youtu.be/2P4FSSlXXQA) you will learn how to setup a UC2 system and also how to build the holographic Microscope
 
-<p align="center">
-<a href="https://youtu.be/2P4FSSlXXQA	" name="logo"><img src="./IMAGES/YoutubeHolo.png" width="1000"></a>
-</p>
+![](./IMAGES/YoutubeHolo.png)
+https://youtu.be/2P4FSSlXXQA
+
 
 
 ### Conclusion
@@ -202,9 +198,8 @@ Here you will finde a guide how to setup the ImSwitch Software:
 
 This video will show you how to reconstruct holographic data using UC2 and ImSwitch.
 
-<p align="center">
-<a href="https://youtu.be/CWXx0Dw-Jro" name="logo"><img src="./IMAGES/YoutubeHoloRecon.png" width="1000"></a>
-</p>
+![](./IMAGES/YoutubeHoloRecon.png)
+https://youtu.be/CWXx0Dw-Jro
 
 *Things to explore:*
 * Get Familiar with ImSwitch

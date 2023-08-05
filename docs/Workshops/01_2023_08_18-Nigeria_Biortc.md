@@ -1,3 +1,8 @@
+---
+id: Workshop Nigeria
+title: openUC2 Workshop at BioRTC in Nigeria
+---
+
 # UC2 Microscopy Building Workshop at BioRTC Yobe University, Nigeria
 
 Welcome to the UC2 Microscopy Workshop! 📷🔬
@@ -22,7 +27,13 @@ Let's embark on this adventure together! Happy exploring! 🚀✨
 ## Furhter links
 
 - Inline Holographic Microscope:
+https://openuc2.github.io/docs/Core/Interferometer/InlineHolography/
 
-- Michelson Interferometer
+- Simple SEEED ESP32S3 Xiao Sense-based microscope:
+https://openuc2.github.io/docs/Core/Automation/seeedmicroscope/
 
-- Light-sheet microscope
+- Michelson Interferometer:
+https://openuc2.github.io/docs/Core/Interferometer/MichelsonInterferometer/
+
+- Light-sheet microscope:
+https://openuc2.github.io/docs/Core/Interferometer/LightSheet/

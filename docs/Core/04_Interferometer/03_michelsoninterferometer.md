@@ -1,6 +1,6 @@
 ---
-id: InlineHolography
-title: openUC2 In-line holography
+id: MichelsonInterferometer
+title: openUC2 Michelson Interferometer
 ---
 
 ## Workshop Manual: Building a Michelson Interferometer using UC2

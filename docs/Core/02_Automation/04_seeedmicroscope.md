@@ -45,6 +45,141 @@ The microscope's general assembly involves setting up a light source to illumina
 1. Connect the empty cube with the objective lens to the camera cube using the provided puzzle pieces.
 2. Ensure that all components are securely attached and aligned properly.
 
+
+## Assembly with photos
+
+
+**All necessary parts**
+![Seeedmicroscope_1](./IMAGES/seeed/Seeedmicroscope_1.jpg)
+
+### Mirror Cube
+
+**All necessary parts**
+![Seeedmicroscope_2](./IMAGES/seeed/Seeedmicroscope_2.jpg)
+
+**Add Mirror to holder**
+![Seeedmicroscope_3](./IMAGES/seeed/Seeedmicroscope_3.jpg)
+
+**Add Holder to Cube**
+![Seeedmicroscope_4](./IMAGES/seeed/Seeedmicroscope_4.jpg)
+
+### Manual Z-stage
+
+**All necessary parts**
+![Seeedmicroscope_5](./IMAGES/seeed/Seeedmicroscope_5.jpg)
+
+**Add 5mm rods to base**
+![Seeedmicroscope_6](./IMAGES/seeed/Seeedmicroscope_6.jpg)
+
+**Add slide and second rod and close base**
+![Seeedmicroscope_7](./IMAGES/seeed/Seeedmicroscope_7.jpg)
+
+**Add knob with one screw**
+![Seeedmicroscope_8](./IMAGES/seeed/Seeedmicroscope_8.jpg)
+
+**When adding second screw make sure you have slide and knob down so that you can move the slide along the z-axis freely**
+![Seeedmicroscope_9](./IMAGES/seeed/Seeedmicroscope_9.jpg)
+
+**Add objective (eventually other side!!)**
+![Seeedmicroscope_10](./IMAGES/seeed/Seeedmicroscope_10.jpg)
+
+**Add module to cube**
+![Seeedmicroscope_11](./IMAGES/seeed/Seeedmicroscope_11.jpg)
+
+
+### Seeed Xiao Sense Camera Cube
+
+**All necessary parts**
+![Seeedmicroscope_12](./IMAGES/seeed/Seeedmicroscope_12.jpg)
+
+**Unpack Camera**
+![Seeedmicroscope_13](./IMAGES/seeed/Seeedmicroscope_13.jpg)
+
+**Assemble Camera**
+![Seeedmicroscope_14](./IMAGES/seeed/Seeedmicroscope_14.jpg)
+
+**Remove lens from camera sensor (Be careful!!) by unscrewing it using pliers**
+![Seeedmicroscope_15](./IMAGES/seeed/Seeedmicroscope_15.jpg)
+
+**Have Camera seperate makes it easier to unscrew the lens**
+![Seeedmicroscope_16](./IMAGES/seeed/Seeedmicroscope_16.jpg)
+
+**Add camera back to the xiao module**
+![Seeedmicroscope_17](./IMAGES/seeed/Seeedmicroscope_17.jpg)
+
+**Place camera in cube insert**
+![Seeedmicroscope_18](./IMAGES/seeed/Seeedmicroscope_18.jpg)
+
+**Make sure camera lurkes through the hole**
+![Seeedmicroscope_19](./IMAGES/seeed/Seeedmicroscope_19.jpg)
+
+**Add lid with screws**
+![Seeedmicroscope_20](./IMAGES/seeed/Seeedmicroscope_20.jpg)
+
+**Stick wifi antenna round the edge**
+![Seeedmicroscope_21](./IMAGES/seeed/Seeedmicroscope_21.jpg)
+
+**Place inside cube**
+![Seeedmicroscope_22](./IMAGES/seeed/Seeedmicroscope_22.jpg)
+
+**Make sure USB entry is facing to one side without the pins**
+![Seeedmicroscope_23](./IMAGES/seeed/Seeedmicroscope_23.jpg)
+
+### Sample and Light Cube
+
+**All necessary parts**
+![Seeedmicroscope_24](./IMAGES/seeed/Seeedmicroscope_24.jpg)
+
+**ADd light to insert**
+![Seeedmicroscope_25](./IMAGES/seeed/Seeedmicroscope_25.jpg)
+
+**Add sample mount to cube and close it**
+![Seeedmicroscope_26](./IMAGES/seeed/Seeedmicroscope_26.jpg)
+
+### Final assembly of all cubes
+
+**All cubes**
+![Seeedmicroscope_27](./IMAGES/seeed/Seeedmicroscope_27.jpg)
+
+
+**First layer: Have to puzzle pieces and add camera and mirror cube**
+![Seeedmicroscope_29](./IMAGES/seeed/Seeedmicroscope_29.jpg)
+
+**Second layer: Have to puzzle pieces and add z-stage and empty cube**
+![Seeedmicroscope_30](./IMAGES/seeed/Seeedmicroscope_30.jpg)
+![Seeedmicroscope_31](./IMAGES/seeed/Seeedmicroscope_31.jpg)
+
+**Merge first and second layer**
+![Seeedmicroscope_32](./IMAGES/seeed/Seeedmicroscope_32.jpg)
+
+**Add two more puzzle pieces and add sample/light cube**
+![Seeedmicroscope_33](./IMAGES/seeed/Seeedmicroscope_33.jpg)
+
+### Flashing software
+
+Go to https://matchboxscope.github.io/firmware/FLASH.html and select XIAO and connect to the board
+![Seeedmicroscope_34](./IMAGES/seeed/Seeedmicroscope_34.jpg)
+
+**Select the port and connect (Chrome only!)**
+![Seeedmicroscope_35](./IMAGES/seeed/Seeedmicroscope_35.jpg)
+
+**Flash the firmware and wait until done**
+![Seeedmicroscope_36](./IMAGES/seeed/Seeedmicroscope_36.jpg)
+
+**Turn on the light**
+![Seeedmicroscope_37](./IMAGES/seeed/Seeedmicroscope_37.jpg)
+
+**Search for Wifi Matchboxscope-XXX and connect, go to http://192.168.4.1**
+
+**Turn on Stream and find sample in focus**
+![Seeedmicroscope_39](./IMAGES/seeed/Seeedmicroscope_39.jpg)
+![Seeedmicroscope_40](./IMAGES/seeed/Seeedmicroscope_40.jpg)
+
+**Focus sample with manual focusing stage**
+![Seeedmicroscope_41](./IMAGES/seeed/Seeedmicroscope_41.gif)
+
+
+
 ## Conclusion
 Congratulations! You have successfully assembled your modular microscope. With this microscope, you can now observe various samples and capture images using the camera connected to your smartphone or computer. This modular design allows for easy customization and experimentation, making it a versatile tool for exploring the microscopic world.
 

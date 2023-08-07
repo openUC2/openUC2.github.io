@@ -1,3 +1,7 @@
+---
+id: LightSheetOld
+title: openUC2 Light-Sheet Microscope (Old Version)
+---
 # Light sheet Setup (Workshop)
 This is the manual for the Light sheet Microscope.
 

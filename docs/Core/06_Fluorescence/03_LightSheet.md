@@ -36,7 +36,7 @@ The core components of the light-sheet microscope are as follows:
 
 ### A Video walk-through the process of the light-sheet assembly
 
-<iframe width="560" height="315" src="https://youtu.be/FLtDSjuhrro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FLtDSjuhrro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 ### Final assembly

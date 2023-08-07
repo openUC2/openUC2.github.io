@@ -26,14 +26,15 @@ Let's embark on this adventure together! Happy exploring! 🚀✨
 
 ## Furhter links
 
-- Inline Holographic Microscope:
-https://openuc2.github.io/docs/Core/Interferometer/InlineHolography/
+**Inline Holographic Microscope:**
+- https://openuc2.github.io/docs/Core/Interferometer/InlineHolography/
 
-- Simple SEEED ESP32S3 Xiao Sense-based microscope:
-https://openuc2.github.io/docs/Core/Automation/seeedmicroscope/
+**Simple SEEED ESP32S3 Xiao Sense-based microscope:**
+- https://openuc2.github.io/docs/Core/Automation/seeedmicroscope/
 
-- Michelson Interferometer:
-https://openuc2.github.io/docs/Core/Interferometer/MichelsonInterferometer/
+**Michelson Interferometer:**
+- https://openuc2.github.io/docs/Core/Interferometer/MichelsonInterferometer/
 
-- Light-sheet microscope:
-https://openuc2.github.io/docs/Core/Interferometer/LightSheet/
+**Light-sheet microscope:**
+- https://openuc2.github.io/docs/Core/Fluorescence/Lightsheet_Old
+- https://openuc2.github.io/docs/Core/Fluorescence/Lightsheet

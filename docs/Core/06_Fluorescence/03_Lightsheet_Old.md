@@ -4,14 +4,12 @@ This is the manual for the Light sheet Microscope.
 ### Purpose
 Produce 3D images with better sectioning.
 
-<p align="center">
-<img src="./IMAGES/Application_Light-Sheet_Microscope_v20.png" width="700">
-</p>
+![](./IMAGES/LightsheetOld/Application_Light-Sheet_Microscope_v20.png)
 
 
 Note: The pictures on this site might not show the latest version of the cubes. Follow the respective assembly guidelines.
 
-## <img src="./IMAGES/D.png" width="40">Parts
+## Parts
 
 ### Modules for this setup
 
@@ -28,7 +26,7 @@ Note: The pictures on this site might not show the latest version of the cubes. 
 |  Module: Z-Stage | Without Fluomodule!  | ?? €  | [Z-Stage](../ASSEMBLY_CUBE_Z-STAGE_v2)  | 1|
 |  Module: Raspberry Camera  | - | ??€  | [RaspiCam](../ASSEMBLY_CUBE_RaspiCam_v2)  | 1|
 
-### <img src="./IMAGES/P.png" width="40"> Parts to print
+###  Parts to print
 * 1× [Base-Plate 4×4](./STL/Assembly_base_4x4.stl)
 * 1× [Base-Plate 4×1](./STL/Assembly_base_4x1.stl)
 * 6× [1×1 Cube](./STL/10_Cube_1x1_v2.stl)
@@ -50,7 +48,7 @@ Note: The pictures on this site might not show the latest version of the cubes. 
 * Optional but useful: 1× [Sample comb](./STL/20_Cube_Sampleholder)
 
 
-## <img src="./IMAGES/B.png" width="40"> Additional components
+##   Additional components
 * Check out the [RESOURCES](../../../TUTORIALS/RESOURCES) for more information!
 *  40 × - 83× 5mm Ball magnets [🢂](https://www.magnetmax.de/Neodym-Kugelmagnete/Magnetkugel-Kugelmagnet-O-5-0-mm-Neodym-vernickelt-N40-haelt-400-g::158.html)
 * 50× - 70× Screws DIN912 ISO 4762 M3×12 mm [🢂](https://eshop.wuerth.de/Zylinderschraube-mit-Innensechskant-SHR-ZYL-ISO4762-88-IS25-A2K-M3X12/00843%20%2012.sku/de/DE/EUR/)
@@ -82,7 +80,7 @@ For Raspberry Pi (you may also just use one that you have, use it with a standar
 * For convenience and safety of your RasPi: [an according case for the RasPi and display](https://www.reichelt.de/gehaeuse-fuer-raspberry-pi-4-7-touch-display-rpi4-case-lcd7bk-p268976.html?&trstct=pol_57)
 
 
-## <img src="./IMAGES/A.png" width="40"> Assembly and alignment
+##  Assembly and alignment
 * [Baseplate ](../ASSEMBLY_Baseplate_v2/)
 * [Laser Cube ](../ASSEMBLY_CUBE_Laser_v2/)
 * [Beamexpander Cube ](../ASSEMBLY_CUBE_Beamexpander_v2/)
@@ -94,24 +92,24 @@ For Raspberry Pi (you may also just use one that you have, use it with a standar
 * [Raspberry Camera Cube ](../ASSEMBLY_CUBE_RaspiCam_v2/)
 * Sample comb: insert four M2×12 screws (head on the non-comb side)
 
-## <img src="./IMAGES/L.png" width="40"> Electronics
+##  Electronics
 * [Z-stage and S-stage](../Z-Stage)
 
-## <img src="./IMAGES/W.png" width="40"> Software
+##   Software
 * [Raspberry Pi](../RASPBERRY_PI)
 * [Hardware control](../ESP32)
 
 ### Alignment of the optical path
-<p align="center">
-<img src="./IMAGES/UC2Lightsheet.gif" width="400">
-</p>
+![](./IMAGES/LightsheetOld/UC2Lightsheet.gif)
+
+
 Here we give a step-by-step tutorial on how-to align the beam-path.
 
 The illumination path is independent from the detection path - the order how you align it is up to you.
 
 A simplified scheme can be found [here](./DOCUMENTS).
 
-## <img src="./IMAGES/Y.png" width="40">Safety
+##  Safety
 Don't touch the optical surfaces of lenses and objectives!
 
 Attention, don't cut your fingers while removing the lens from the iPhone sensor and the support material from 3D printed parts!
@@ -125,10 +123,8 @@ Use the Sample comb to hold a thicker piece of paper (at best black one) and alw
 * NEVER SWITCH ON THE LASER WITHOUT INTENDED USE
 * BEAM HAS TO GO AWAY FROM ONESELF - ALWAYS!
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_00.jpg" width="400">
-<img src="./IMAGES/LS_alignment_30.jpg" width="400">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_00.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_30.jpg)
 
 ### Align the illumination path (light sheet)
 Here we try to form the light sheet.
@@ -144,11 +140,10 @@ Here we try to form the light sheet.
 * ATTENTION: !Don't hit your or anybody's eyes!
 * If you make a break or do something else than aligning at the moment, always switch off the laser to make sure you don't endanger anybody's eyesight!
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_01.jpg" width="300">
-<img src="./IMAGES/LS_alignment_03.jpg" width="300">
-<img src="./IMAGES/LS_alignment_04.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_01.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_03.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_04.jpg)
+
 
 ##### 2. Align the telescope
 * Place the pre-assembled telescope on the baseplate right after the laser.
@@ -159,10 +154,8 @@ Here we try to form the light sheet.
 * Align the telescope and the laser to the same height - The beam profile must not be visible after collimation. If the height is not correctly aligned, the collimated beam will fade away on one side.
 * ATTENTION: !Don't hit your or anybody's eyes!
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_05.jpg" width="300">
-<img src="./IMAGES/LS_alignment_06.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_05.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_06.jpg)
 
 ##### 3. Add the cylindrical lens
 * Place the pre-assembled lens-mount on the baseplate right after the telescope.
@@ -172,20 +165,16 @@ Here we try to form the light sheet.
 * Observe the line-focus of the collimated beam. The focus line must be vertical.
 * ATTENTION: !Don't hit your or anybody's eyes!
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_07.jpg" width="300">
-<img src="./IMAGES/LS_alignment_08.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_07.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_08.jpg)
 
 ##### 4. Add the pre-mounted fold-mirror
 * Place the pre-assembled 45° fold kinematic mirror on the baseplate after the cylindrical lens.
 * It the beginning, the mirror should fold the beam by roughly 90°.
 * ATTENTION: !Now the laser beam is going to a perpendicular direction to the one before. Make sure to block the light with i.e. a cardboard, so it can't leave you setup and hit somebody's eyes!
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_09.jpg" width="300">
-<img src="./IMAGES/LS_alignment_10.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_09.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_10.jpg)
 
 ##### 5. Add the pre-mounted objective lens
 * If not done already, remove the covers of the 4× objective - they're in the way of your working distance.
@@ -196,10 +185,9 @@ Here we try to form the light sheet.
 * Tune the focus of the illumination so that the light sheet is roughly in the center of the following block-position.
 * Tuning the objective lens can be done by shifting it back and forth in the spring-loaded spiral bearing.
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_11.jpg" width="300">
-<img src="./IMAGES/LS_alignment_12.jpg" width="300">
-</p>
+
+![](./IMAGES/LightsheetOld/LS_alignment_11.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_12.jpg)
 
 ##### 6. Add the sample-stage
 * Add the 4×1 baseplate next to the bigger one. You could also screw them or glue them together beforehand, for more stability.
@@ -208,11 +196,10 @@ Here we try to form the light sheet.
 * The light sheet should be aligned in the center of the sample area and in mid-height.
 * Switch the laser off for now.
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_13.jpg" width="300">
-<img src="./IMAGES/LS_alignment_14.jpg" width="300">
-<img src="./IMAGES/LS_alignment_15.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_13.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_14.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_15.jpg)
+
 
 ### Time to check the electronics
 
@@ -221,27 +208,26 @@ Here we try to form the light sheet.
 * Plug the Raspi into an electrical socket. It will switch on automatically.
 * When loaded, open the UC2 GUI. Wait until it loads.
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_17.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_17.jpg)
+
 
 ##### 2. Motors
 * Plug the USB hub in the RasPi.
 * Plug the Z-stage and sample-stage into the USB hub using the two USB-microUSB cables. There should be a light on the ESP, once you plug it in.
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_18.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_18.jpg)
+
 
 ##### 3. Check if everything works
 * Check the camera by clicking on "Camera preview" in the GUI. Let it run.
 * Check the Z-stage: Choose Z in the bottom left part on the screen. You can change the step size and move it in either of the directions. Check that the stage really moves in both directions when you press the buttons.
 * Check the sample-stage: Choose X in the bottom left part on the screen. You can change the step size and move it in either of the directions. Check that the stage really moves in both directions when you press the buttons.
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_19.jpg" width="300">
-<img src="./IMAGES/LS_alignment_20.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_19.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_20.jpg)
+
+
+
 
 ### Assemble the detection path
 Here we try to form the simple microscope.
@@ -251,18 +237,14 @@ Here we try to form the simple microscope.
 * Place the Z-stage perpendicular to the illumination light sheet. The objective is now looking roughly on the center of the sample area.
 * Be careful, do not break any electronics.
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_21.jpg" width="300">
-<img src="./IMAGES/LS_alignment_22.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_21.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_22.jpg)
 
 ##### 2. Place the camera cube
 * Place the camera cube behind the Z-stage, with leaving one free position in between them.
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_23.jpg" width="300">
-<img src="./IMAGES/LS_alignment_24.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_23.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_24.jpg)
 
 ##### 3. Find the focus of the detection path
 * Put the Sample-stage aside.
@@ -272,10 +254,8 @@ Here we try to form the simple microscope.
 * Move the objective in the Z-stage by hand in order to bring the focus plane of your detection path to the center of the sample area.
 * The detection objective has to "hang" out of the Z-stage quite a lot in order to allow you to image the center of the sample-stage.  
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_25.jpg" width="300">
-<img src="./IMAGES/LS_alignment_26.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_25.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_26.jpg)
 
 ##### 4. Align the detection path
 * Remove the illumination objective cube if it's in your way.
@@ -288,10 +268,8 @@ Here we try to form the simple microscope.
 * This is the kind of view you want to find when you place the sample in the stage - get familiar with the distances and the appearance of a slightly defocused image, it will help you with focusing later on.
 * Remove the sample (and the comb) for now.
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_27.jpg" width="300">
-<img src="./IMAGES/LS_alignment_28.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_27.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_28.jpg)
 
 ##### 5. Align the illumination path
 * Switch on the laser. Be careful! Do not hit somebody's eyes! Use covers to block the light.
@@ -300,21 +278,18 @@ Here we try to form the simple microscope.
 * Align the light sheet roughly in such a way that the waist (the thinnest part of the light sheet) is in front of the detection objective). Trace your light sheet with a piece of paper to find the waist.
 * The focus of the 4× objective lens (therefore of the light-sheet) can be varied coarsely by shifting the lens back and forth in the spiral mount.
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_29.jpg" width="300">
-<img src="./IMAGES/LS_alignment_31.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_29.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_31.jpg)
 
 * Place the sample (the tissue) on the sample stage. Use a flashlight and move the sample-stage in big steps (100 um) in one direction or the other to find a rough focus -> see a focused stripe of the tissue structure. Adjust the focus of the Z-stage to have the focused area in the center of your field of view.
 * Now it is necessary to do the experiment in a dark room (close curtains, switch off the lights).
 * Once you see the structure of the paper, align the light sheet onto the focus plane - tilt the kinematic mirror, adjust the focus of the 4× objective.
 * Kinematic mirror: Take a hex key and turn the screw of the mirror - this mirror varies the angle of the light sheet and the position where it hits the back focal plane of the 4x objective lens respectively.
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_32.jpg" width="300">
-<img src="./IMAGES/LS_alignment_33.jpg" width="300">
-<img src="./IMAGES/LS_alignment_34.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_32.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_33.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_34.jpg)
+
 
 ##### 5. Use of filters
 * When using a correct filter between the Z-stage and the camera, it's possible to observe a fluorescent image of the sample.
@@ -326,40 +301,25 @@ Here we try to form the simple microscope.
 * To acquire an image: Choose "Start experiment" on the right side of the screen, click "Custom" on the top right side and then "Snap" on the bottom right side.
 * To acquire a z-stack use the tomographic mode:
 
-<p align="center">
-<img src="./IMAGES/LS_alignment_35.jpg" width="300">
-<img src="./IMAGES/LS_alignment_36.jpg" width="300">
-</p>
+![](./IMAGES/LightsheetOld/LS_alignment_35.jpg)
+![](./IMAGES/LightsheetOld/LS_alignment_36.jpg)
 
-## <img src="./IMAGES/E.png" width="40"> Results
+## Results
 
-<p align="center">
-<img src="./IMAGES/MAKE_LS.gif" width="400">
-</p>
+![](./IMAGES/LightsheetOld/MAKE_LS.gif)
 
 ### What can you see with the simplest possible light sheet setup:
-<p align="center">
-<img src="./IMAGES/MAKE_LS_sample.gif" width="400">
-</p>
 
+![](./IMAGES/LightsheetOld/MAKE_LS_sample.gif)
 
 ### The result could look like this:
 
-##### Fluorescent Image (*Pollen grain in Agarose*)
-<p align="center">
-<img src="./IMAGES/Assembly_simple_Lightsheet_v4.png" width="400">
-</p>
-
-##### Brightfield Image (*Pollen grain in Agarose*)
-<p align="center">
-<img src="./IMAGES/Assembly_simple_Lightsheet_v5.png" width="400">
-</p>
 
 ##### Zebra fish embryo
-<p align="center">
-<img src="./IMAGES/example_zebrafish.jpeg" width="400">
-</p>
 
-## <img src="./IMAGES/S.png" width="40"> Participate!
+![](./IMAGES/LightsheetOld/example_zebrafish.jpeg)
+
+
+## Participate!
 
 Do you want to show your own results? Do you have ideas for improvements? Let us know!

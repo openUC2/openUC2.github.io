@@ -19,6 +19,12 @@ Approximately 200 years ago, ultramicroscopy was established as a method to impr
 2. Assemble the basic components of the light-sheet microscope using the UC2 toolbox.
 3. Construct a three-dimensional stack of a sample using the light-sheet microscope.
 
+## UC2 Light-sheet setup
+
+This is the sketch of the microscope that we will realize with UC2 cubes:
+
+![](./IMAGES/LightsheetSample/UC2_Lightsheet_Setup.png)
+
 ## Step 1: Assembling the Basic Components
 
 The core components of the light-sheet microscope are as follows:

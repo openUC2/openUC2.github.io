@@ -62,6 +62,19 @@ Interference is a fundamental concept in wave physics, and the Michelson Interfe
 
 9. The Michelson Interferometer is now aligned and ready for use.
 
+
+## Experimental Data
+
+![](./IMAGES/IMG_20230812_144849.jpg)
+
+![](./IMAGES/IMG_20230812_144127.jpg)
+
+![](./IMAGES/IMG_20230812_144857.jpg)
+
+![](./IMAGES/IMG_20230812_144123.jpg)
+
+
+
 ### Conclusion
 
 Congratulations! You have successfully built a Michelson Interferometer using the UC2 modular microscope toolbox. This device allows you to explore the interference properties of light and perform fascinating experiments. As you move one of the arms, you will observe constructive and destructive interference patterns on the camera, demonstrating the wave-like nature of light. Have fun experimenting with different setups and learning more about the wave-particle duality of light!

@@ -54,6 +54,9 @@ This is a work in progress. The text for the pictures will follow in a moment..
 
 ![](./IMAGES/LightsheetSample/LightsheetSample_5.jpg)
 
+
+## Fixing the XYZ stage from below
+
 ![](./IMAGES/LightsheetSample/LightsheetSample_2.jpg)
 
 
@@ -68,12 +71,18 @@ This is a work in progress. The text for the pictures will follow in a moment..
 
 ![](./IMAGES/LightsheetSample/LightsheetSample_11.jpg)
 
-## Add Sample Cube
+## Add Sample Cube (old version /w pins)
 
 
 ![](./IMAGES/LightsheetSample/LightsheetSample_3.jpg)
 
 ![](./IMAGES/LightsheetSample/LightsheetSample_13.jpg)
+
+## Add Sample (new version /w magnets)
+
+![](./IMAGES/LightsheetSample/IMG_20230811_163453.jpg)
+![](./IMAGES/LightsheetSample/IMG_20230811_163457.jpg)
+![](./IMAGES/LightsheetSample/IMG_20230811_165551.jpg)
 
 ## Add Syringe
 

@@ -25,7 +25,7 @@ The microscope's general assembly involves setting up a light source to illumina
 
 ### Step 1: Setting Up the Camera
 1. Connect the camera to a USB power source to create a Wi-Fi access point.
-2. On your smartphone, go to the Wi-Fi settings and connect to the access point named "Matchbox scope."
+2. On your smartphone, go to the Wi-Fi settings and connect to the access point named "Matchboxscope-****."
 3. Open your web browser and enter the camera's IP address. This will open a control interface for the camera.
 4. Adjust the camera's settings as needed and make sure to start the camera stream by clicking the "Start Stream" button.
 
@@ -57,7 +57,7 @@ The microscope's general assembly involves setting up a light source to illumina
 **All necessary parts**
 ![Seeedmicroscope_2](./IMAGES/seeed/Seeedmicroscope_2.jpg)
 
-**Add Mirror to holder**
+**Add Mirror to holder** (Mirror has double-sided sticky tape)
 ![Seeedmicroscope_3](./IMAGES/seeed/Seeedmicroscope_3.jpg)
 
 **Add Holder to Cube**
@@ -68,7 +68,8 @@ The microscope's general assembly involves setting up a light source to illumina
 **All necessary parts**
 ![Seeedmicroscope_5](./IMAGES/seeed/Seeedmicroscope_5.jpg)
 
-**Add 5mm rods to base**
+**Add 5mm rods to base** (tricky part since the holes are just large enough to hold the rods, be careful not to destroy the base)
+
 ![Seeedmicroscope_6](./IMAGES/seeed/Seeedmicroscope_6.jpg)
 
 **Add slide and second rod and close base**
@@ -80,7 +81,7 @@ The microscope's general assembly involves setting up a light source to illumina
 **When adding second screw make sure you have slide and knob down so that you can move the slide along the z-axis freely**
 ![Seeedmicroscope_9](./IMAGES/seeed/Seeedmicroscope_9.jpg)
 
-**Add objective (eventually other side!!)**
+**Add objective (Attention: mount the objective not on the side of the rib!!)**
 ![Seeedmicroscope_10](./IMAGES/seeed/Seeedmicroscope_10.jpg)
 
 **Add module to cube**
@@ -178,7 +179,12 @@ Go to https://matchboxscope.github.io/firmware/FLASH.html and select XIAO and co
 **Focus sample with manual focusing stage**
 ![Seeedmicroscope_41](./IMAGES/seeed/Seeedmicroscope_41.gif)
 
+### Using an Android APP
 
+For Android users, plesae have a look here:
+https://matchboxscope.github.io/docs/APP
+
+This app will help you connect and capture images using this microscope. 
 
 ## Conclusion
 Congratulations! You have successfully assembled your modular microscope. With this microscope, you can now observe various samples and capture images using the camera connected to your smartphone or computer. This modular design allows for easy customization and experimentation, making it a versatile tool for exploring the microscopic world.

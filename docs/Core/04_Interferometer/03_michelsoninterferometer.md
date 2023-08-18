@@ -16,14 +16,29 @@ In this workshop, we will construct a Michelson Interferometer using the UC2 mod
 5. Screen or camera sensor (e.g., ESP32 camera module).
 6. UC2 Modular Microscope Toolbox (cubes, puzzle pieces, and holders).
 
+![](./IMAGES/Michelson_1.png)
+
 ### Theory of Operation
 
 A Michelson Interferometer splits a laser beam into two equal parts using a beam splitter. The two beams are then reflected by mirrors and recombined to interfere with each other. When the paths of the two beams are equal, they constructively interfere, resulting in a bright output. However, if one path is shifted by 1/4 of the wavelength, the beams destructively interfere, resulting in a dark output.
 Certainly! Let's delve into more theoretical background about interference and how the Michelson Interferometer was historically used to measure the speed of light.
 
+![](./IMAGES/Michelson_2.png)
+
+![](./IMAGES/Michelson_3.png)
+
+
+
 ## Theoretical Background: Interference
 
 Interference is a phenomenon that occurs when two or more waves overlap in space and combine their amplitudes. When the waves are in-phase (their crests and troughs align), they constructively interfere, resulting in a larger amplitude. On the other hand, if they are out of phase (their crests and troughs are misaligned), they destructively interfere, resulting in a smaller or zero amplitude. Interference is a fundamental concept in wave physics and plays a crucial role in understanding the behavior of light.
+
+![](./IMAGES/Michelson_4.png)
+
+![](./IMAGES/Michelson_5.png)
+
+![](./IMAGES/Michelson_6.png)
+
 
 ## Michelson Interferometer and Measurement of the Speed of Light
 
@@ -44,6 +59,11 @@ Interference is a fundamental concept in wave physics, and the Michelson Interfe
 
 ### Assembly Steps
 
+We want to replicate the following setup:
+
+![](./IMAGES/MichlesonInCubes.png)
+
+
 1. Build the telescope using two lenses with different focal lengths to expand the laser beam.
 
 2. Use the beam splitter cube to split the enlarged beam into two equal beams.
@@ -63,27 +83,25 @@ Interference is a fundamental concept in wave physics, and the Michelson Interfe
 9. The Michelson Interferometer is now aligned and ready for use.
 
 
+
 ## Experimental Data
+
+This is the fully assembled UC2 interferometer with a green laser diode, a camera representing a scree and to digitize the inteference, a beamsplitter, a kinematic mirror and a mirror that can be translated along Z.
 
 ![](./IMAGES/IMG_20230812_144849.jpg)
 
+If you bring the two beams on top of each other, you will be able to observe the interference pattern, which in case of one beam exactly overlaying the other will be a ring pattern. These rings are also called Newton rings and come from the fact that we interfere two divergent beams, leading to a super position of two spherical caps/waves.
+
 ![](./IMAGES/IMG_20230812_144127.jpg)
+
+Using the ESP32 camera, we can quantify the motion of the beams and e.g. measure distances or angles.
 
 ![](./IMAGES/IMG_20230812_144857.jpg)
 
-![](./IMAGES/IMG_20230812_144123.jpg)
+
 
 
 
 ### Conclusion
 
 Congratulations! You have successfully built a Michelson Interferometer using the UC2 modular microscope toolbox. This device allows you to explore the interference properties of light and perform fascinating experiments. As you move one of the arms, you will observe constructive and destructive interference patterns on the camera, demonstrating the wave-like nature of light. Have fun experimenting with different setups and learning more about the wave-particle duality of light!
-
-
-![](./IMAGES/Michelson_1.png)
-![](./IMAGES/Michelson_2.png)
-![](./IMAGES/Michelson_3.png)
-![](./IMAGES/Michelson_4.png)
-![](./IMAGES/Michelson_5.png)
-![](./IMAGES/Michelson_6.png)
-![](./IMAGES/Michelson_7.png)

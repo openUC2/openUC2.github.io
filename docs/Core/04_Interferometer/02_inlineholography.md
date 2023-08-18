@@ -67,21 +67,25 @@ The inline holographic microscope utilizes the principles of holography and cohe
 
 1. **Creating the Light Source**
    - Attach the LED holder to one side of a cube using the provided puzzle pieces.
-   - Insert the LED into the holder and connect it to an appropriate power source.
-   - Place the gel color filter in front of the LED to create a quasi-monochromatic coherent light source.
-   - Position the aluminum foil with a pinhole in front of the LED-light source, allowing the light to pass through the pinhole.
+   - Insert the LED into the holder and connect it to an appropriate power source or use the battery-driven one without external power.
+   - Produce a pinhole using aluminium foil: Take a needle, fold the aluminium foil 8 times, punch a hole, unfold the foil and take the smallest hole that is still intact
+   - Position the aluminum foil with a pinhole in front of the LED-light source, allowing the light to pass through the pinhole   
+   - Place the gel color filter in front of the aluminium foil to create a quasi-monochromatic coherent light source.
+.
 
 2. **Setting Up the Sample and Camera**
    - Place an empty cube right next to the light source cube.
    - Position another empty cube on the other side of the light source cube.
-   - Combine the transparent sample mount and the camera module into a single cube. Glue the sample onto the camera sensor surface, ensuring that there is little space between them.
+   - Combine the transparent sample mount and the camera module into a single cube. Mount the sample onto the camera sensor surface, ensuring that there is little space between them.
 
 3. **Assembling the Microscope**
    - Arrange the cubes in the following order (from left to right): Light Source Cube, Empty Cube, Empty Cube, Sample & Camera Cube.
-   - Securely mount each cube on puzzle pieces at the lower end and upper bar to ensure stability.
+   - Securely mount each cube on puzzle pieces at the lower end and upper bar using the puzzle pieces to ensure stability.
 
 4. **Powering Up the Microscope**
-   - Turn on the camera and connect to it via Wi-Fi using a web app or browser.
+   - Use the ESP32 camera inside the cube and flash the XIAO firmware
+   - The link comes here: https://matchboxscope.github.io/firmware/FLASH.html
+   - Turn on the camera and connect to it via Wi-Fi (the Wifi SSID is Matchboxscope-****, where the number is displayed during boot-up phase in the serial monitor after the flashing process) using a web app or browser (http://192.168.4.1)
    - Power on the LED light source.
 
 5. **Adjusting the Contrast**
@@ -89,9 +93,10 @@ The inline holographic microscope utilizes the principles of holography and cohe
    - If the contrast is low due to scattering background light, cover the system with a box or use some shading to prevent direct light from hitting the sensor.
 
 6. **Reconstructing the Hologram**
-   - Capture an image using the ESP32 camera and download it onto your computer.
+   - Capture an image using the ESP32 camera and download it onto your computer (full resolution, i.e. 1600x1200, the capture button in the GUI will offer to download the image, give it some name and save it).
    - Start the Jupiter notebook server in the command line.
-   - Open the provided example Jupiter notebook for hologram reconstruction.
+   - (Installation: `pip install jupyterlab` and then start it using `jupyterlab`)
+   - Create a new Jupiter notebook for hologram reconstruction (see step 7)
    - Input the path to the downloaded image file in the notebook.
    - Reconstruct the hologram using a fast Fourier transform (FFT) and numerical back-propagation.
    - Be aware of twin-image artifacts and potential ringing artifacts in the reconstruction due to interference.

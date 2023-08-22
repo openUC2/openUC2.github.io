@@ -30,7 +30,7 @@ So far, we only have a windows installer, but for mac and linux it should work e
 
 2. Double click on the installer and go through the process
 
-![](./IMAGES/Installer_1.PNG)
+![](./IMAGES/installer_1.PNG)
 
 3. Agree to the license terms (yet a placeholder, text has to be updated..)
 

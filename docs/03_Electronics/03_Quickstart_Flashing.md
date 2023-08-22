@@ -111,7 +111,7 @@ Similar to the legacy UC2-REST Firmware, the microcontroller can communicate usi
 {"task":"/state_get"}
 ```
 
-A list of all commands that can be sent via HTTP requests and serial commands (e.g. by using the Arduino IDE-contained Serial monitor at 115200 BAUD) can be found in the [RestApi.md](./RestApi.md)-file.
+A list of all commands that can be sent via HTTP requests and serial commands (e.g. by using the Arduino IDE-contained Serial monitor at 115200 BAUD) can be found in the [JSON API](https://github.com/youseetoo/uc2-esp32/blob/main/main/json_api_BD.txt)-file.
 
 # Setting up the build environment
 

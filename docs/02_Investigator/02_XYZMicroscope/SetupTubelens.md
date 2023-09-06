@@ -36,6 +36,7 @@ Make sure that the camera is securely attached to the CCTV lens, preventing it f
 
 Insert "the crown" tool between the camera and the CCTV lens. This tool will assist in aligning the rings correctly.
 
+![](./IMAGES/crown.png)
 ### 4. Secure the Camera
 
 Turn the camera clockwise, typically 2-3 full rotations, to fully secure it to the CCTV lens.

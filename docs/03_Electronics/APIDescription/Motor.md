@@ -63,6 +63,7 @@ The API expects a JSON document with the following structure:
 }
 ```
 
+
 ## Response
 
 The response from the motor interface API will depend on the actual execution of the motor movement task. It might include status updates, completion notifications, or any relevant error messages.
@@ -76,6 +77,42 @@ For querying motor information, an additional endpoint is available:
 **Endpoint:** `/motor_get`
 
 This endpoint can be used to retrieve information about the current state of the motor or its settings.
+
+
+## Motor Action: Move at Constant Speed
+
+To move a motor at a constant speed in a certain direction, you can use the following API request format:
+
+```json
+{
+  "task": "/motor_act",
+  "motor": {
+    "steppers": [
+      {
+        "stepperid": 1,
+        "isforever": 1,
+        "speed": -1500,
+        "isabs": 0,
+        "isaccel": 0
+      }
+    ]
+  }
+}
+```
+
+- `"task"`: Specifies the task to perform, in this case, it is `/motor_act`.
+- `"motor"`: This object contains motor-related parameters.
+  - `"steppers"`: An array of stepper motor configurations.
+    - `"stepperid"`: The ID of the motor to control. Motor IDs are typically represented as 0, 1, 2, 3, corresponding to motors A, X, Y, Z.
+    - `"isforever"`: A new parameter indicating whether the motor should move at a constant speed indefinitely. Set to `1` to enable continuous movement.
+    - `"speed"`: The speed at which the motor should move. A negative value indicates movement in one direction, while a positive value indicates movement in the opposite direction.
+    - `"isabs"`: A flag indicating whether the speed value should be interpreted as an absolute speed (`1`) or as a relative speed (`0`).
+    - `"isaccel"`: A flag indicating whether the motor should accelerate during the movement (`1`) or maintain a constant speed (`0`).
+
+With the `"isforever"` parameter set to `1`, the motor specified by `"stepperid"` will move at a constant speed in the specified direction, following the speed and acceleration settings as configured. This is useful for continuous or long-duration motor movements.
+
+This addition to the motor API allows for precise control over motor behavior, including the ability to perform continuous movements in a specified direction, enhancing the functionality and versatility of the UC2-ESP motor control system.
+
 
 ## Conclusion
 

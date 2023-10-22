@@ -113,6 +113,37 @@ With the `"isforever"` parameter set to `1`, the motor specified by `"stepperid"
 
 This addition to the motor API allows for precise control over motor behavior, including the ability to perform continuous movements in a specified direction, enhancing the functionality and versatility of the UC2-ESP motor control system.
 
+## Set Position of motors
+
+To set the position of motors using the UC2-ESP motor control system, you can make use of the following API request format:
+
+```json
+{
+  "task": "/motor_act",
+  "setpos": {
+    "steppers": [
+      {
+        "stepperid": 0,
+        "posval": 100
+      },
+      {
+        "stepperid": 1,
+        "posval": 0
+      },
+      {
+        "stepperid": 2,
+        "posval": 0
+      },
+      {
+        "stepperid": 3,
+        "posval": 0
+      }
+    ]
+  }
+}
+```
+
+In this configuration, the `"task"` parameter specifies the action to be performed, which is `/motor_act`, indicating a motor-related task. The `"setpos"` object within the request contains an array of stepper motor configurations, each identified by its `"stepperid"`. You can set the desired position of each motor using the `"posval"` parameter. By sending this request, you can precisely control the position of multiple motors simultaneously, enabling you to achieve specific motor positions as needed for your application. This functionality enhances the versatility of the UC2-ESP motor control system, allowing for precise positioning in various automation and control scenarios.
 
 ## Conclusion
 

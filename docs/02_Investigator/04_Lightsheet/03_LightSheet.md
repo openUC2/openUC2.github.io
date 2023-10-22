@@ -75,6 +75,48 @@ Light-sheet microscopy offers several advantages for imaging biological samples:
 - High-speed imaging: Light-sheet microscopy enables rapid volumetric imaging, capturing dynamic processes in real-time.
 - High resolution: The combination of optical sectioning and minimal scattering allows for high-resolution imaging, revealing fine cellular structures.
 
+## Bill-of-Material
+
+This is a list of components that are used in the latest version of the openUC2 light-sheet microscope. This is subject to changes. If you are interested to build one of these devices and need a kit, please, don't hesitate to contact us via Mail, Github or other channels :)
+Find more information on www.openuc2.com
+
+
+| Category | Amount | Part | Shop | Price (€) | Comment | Quantity | URL/Source | Alternative |
+|-------------------|---------|----------------------------------------------------------|------------|---------|---------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| External Parts | 1 | Cylindrical lens, comar | Thorolabs | 150 | | 1 | [Link](https://www.thorlabs.com/thorproduct.cfm?partnumber=LJ1567L1) | |
+| | 1 | Camera, monochrome, CMOS | Daheng | 350 | | 1 | [Link](https://www.machinevisionkamera.de/USB3-Bildverarbeitungskamera-12.2MP-Monochrome-Sony-IMX226-MER2-1220-32U3M) | |
+| | 1 | Focusing stage, micrometer, motorized (NEMA12) | China | 100 | | 1 | Haoran | |
+| | 1 | 10x objective, NA0.3, long-working distance | USA | 250 | | 1 | [Link](https://bolioptics.com/10x-infinity-corrected-plan-achromatic-microscope-objective-lens-bm05073332/) | |
+| | 1 | XYZ stage, AliExpress, micrometer | China | 250 | | 1 | [Link](https://de.aliexpress.com/item/33013923564.html?gatewayAdapt=glo2deu) | [Link](https://www.mjkzz.de/products/xyz-40x40mm-manual-microstage?variant=43281669488885) |
+| | 3 | Motor for stage | China | 80 | | 3 | [Link](https://eckstein-shop.de/PololuStepperMotorNEMA11Bipolar200StepsRev28C39732mm38V067APhase) | [Link](https://de.nanotec.com/produkte/2604-captive-nema8-linear-actuator-lga20) |
+| | 1 | Tube lens | China | 200 | | 1 | [Link](https://www.berrybase.de/100mm-teleobjektiv-c-mount) | |
+| | 1 | Fiber laser | China | 200 | | 1 | Haoran | [Link](https://www.lasertack.com/en/50mw-488nm-fiber-coupled-laser-nds7175-nds4116-nds4216/) |
+| | 1 | Mirror | PGI | 5 | | 1 | [Link](https://pgi-shop.de/vorderflaechen-glasspiegel-30-0-x-40-0-mm/) | |
+| | 1 | 4x objective lens finite | China | 10 | | 1 | Haoran | |
+| | 1 | Fiber Collimator | China | 100 | | 1 | Haoran | |
+| | 14 | Baseplates | openUC2 | 3 | | 14 | | |
+| | 8 | Cubes | openUC2 | 5 | | 10 | | |
+| | 1 | Solid baseplate (aluminium) | openUC2 | - | | 1 | | |
+| | 1 | Excitation filter (Thorlabs) | Thorolabs | 120 | | 1 | [Link](https://www.thorlabs.com/thorproduct.cfm?partnumber=FELH0500) | |
+| Inserts | 1 | Fiber Collimator Mount | openUC2 | 5 | | 1 | | |
+| | 1 | Cylindrical Lens Mount | openUC2 | 5 | | 1 | | |
+| | 1 | 45° Mirror Mount (kinematic) | openUC2 | 25 | | 1 | | |
+| | 1 | RMS Lens Mount | openUC2 | 5 | | 1 | | |
+| | 1 | Sample mount (printed) | openUC2 | 30 | | 1 | | |
+| | 1 | Base for XYZ Stage | openUC2 | 2 | | 1 | | |
+| | 1 | Sample mount for XYZ Stage | openUC2 | 15 | | 1 | | |
+| | 1 | Holder for Z-stage motorized | openuc2 | 30 | | 1 | | |
+| | 1 | Holder for Tubelens | openUC2 | 10 | | 1 | | |
+| | 1 | Holder for UC2 Electronics | openUC2 | 30 | | 1 | | |
+| Electronics | 1 | Electronics, Powersupply, Stepper driver | openUC2 | 100 | | 1 | | |
+| | 2 | USB cables (camera, micro) | Germany | 60 | | 2 | | |
+| | 1 | Playstation Controller | Germany | 50 | | 1 | | |
+| | 1 | Box + Foam insert | openUC2 | 100 | | 1 | [Link](https://www.contorion.de/p/stier-universal-outdoor-koffer-flugtauglich-lxbxh-418x317x151-mm-86520627?aid=&targetid=&campaignid=19484268152&utm_medium=SEA&utm_source=google&utm_campaign=[4]_Shopping_STIER_PMax&gclid=Cj0KCQiAw8OeBhCeARIsAGxWtUyHb9BCPHC_ap3qEnnl6NLGITkMEiZFRu66OuupmgptESC4aGEiri8aAgdREALw_wcB) | |
+| Labour & Shipping | - | Labour + Shipping | - | 500 | | 1 | | |
+| TOTAL | - | - | - | 2790 | | - | | |
+
+The 3D printing files can be found [here](./STL.zip)
+
 ## Conclusion
 
 Congratulations! You have successfully built a light-sheet microscope using the UC2 modular toolbox. This powerful technique allows you to acquire high-resolution three-dimensional images of samples like zebrafishes. With the ability to perform optical sectioning and minimal phototoxicity, light-sheet microscopy is a valuable tool for studying biological structures in 3D. You can now explore the fascinating world of 3D biological imaging and discover new insights into the complexities of life at the microscopic level. Happy imaging!

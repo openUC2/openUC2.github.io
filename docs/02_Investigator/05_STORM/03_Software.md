@@ -173,6 +173,4 @@ The setup file with the actual hardware configuration can be placed here:
 
 Here you can find a tour on Youtube how to set up everything and what it can do.
 
-<p align="center">
-<a href="https://www.youtube.com/watch?v=r8f-wmeq5i0" name="logo"><img src="https://i3.ytimg.com/vi/r8f-wmeq5i0/maxresdefault.jpg"></a>
-</p>
+![https://www.youtube.com/watch?v=r8f-wmeq5i0](https://i3.ytimg.com/vi/r8f-wmeq5i0/maxresdefault.jpg)

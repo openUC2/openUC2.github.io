@@ -36,15 +36,12 @@ bioRxiv 2023.05.31.542706; doi: https://doi.org/10.1101/2023.05.31.542706
 
 ### Top View
 
-<p align="center">
-<a href="#logo" name="logo"><img width=400 src="./IMAGES/Application_Fluorescence_Microscope_Infinity_Inverted_STORM_v3_1.png"></a>
-</p>
+![](./IMAGES/Application_Fluorescence_Microscope_Infinity_Inverted_STORM_v3_1.png")
 
 ### Side View
 
 <p align="center">
-<a href="#logo" name="logo"><img width=400 src="./IMAGES/Application_Fluorescence_Microscope_Infinity_Inverted_STORM_v3.png"></a>
-</p>
+![](./IMAGES/Application_Fluorescence_Microscope_Infinity_Inverted_STORM_v3.png")
 
 
 ***Features:***
@@ -305,32 +302,17 @@ The original design files are in the [INVENTOR](./INVENTOR) folder.
 The compact size of the setup and the modular character allow to adapt the setup to any incubator. ImSwitch can be started from any given compute ror laptop. Simple USB cables connect the microscope to the outside (computer) for full control over its functionalities.
 Here you can see the device in action:
 
-<p align="center">
-<a href="#logo" name="logo"><img src="./IMAGES/microscope_1.jpeg"></a>
-</p>gith
+![](./IMAGES/microscope_1.jpeg")
 
+![](./IMAGES/microscope_2.jpeg)
 
-<p align="center">
-<a href="#logo" name="logo"><img src="./IMAGES/microscope_2.jpeg"></a>
-</p>
+![](./IMAGES/microscope_3.jpeg)
 
-<p align="center">
-<a href="#logo" name="logo"><img src="./IMAGES/microscope_3.jpeg"></a>
-</p>
+![](./IMAGES/microscope_4.jpeg)
 
-<p align="center">
-<a href="#logo" name="logo"><img src="./IMAGES/microscope_4.jpeg"></a>
-</p>
+![](./IMAGES/microscope_5.jpeg)
 
-<p align="center">
-<a href="#logo" name="logo"><img src="./IMAGES/microscope_5.jpeg"></a>
-</p>
-
-<p align="center">
-<a href="#logo" name="logo"><img src="./IMAGES/microscope_6.jpeg"></a>
-</p>
-
-
+![](./IMAGES/microscope_6.jpeg)
 
 ## Wide-field imaging
 

@@ -36,12 +36,11 @@ bioRxiv 2023.05.31.542706; doi: https://doi.org/10.1101/2023.05.31.542706
 
 ### Top View
 
-![](./IMAGES/Application_Fluorescence_Microscope_Infinity_Inverted_STORM_v3_1.png")
+![](./IMAGES/Application_Fluorescence_Microscope_Infinity_Inverted_STORM_v3_1.png)
 
 ### Side View
 
-<p align="center">
-![](./IMAGES/Application_Fluorescence_Microscope_Infinity_Inverted_STORM_v3.png")
+![](./IMAGES/Application_Fluorescence_Microscope_Infinity_Inverted_STORM_v3.png)
 
 
 ***Features:***

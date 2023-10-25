@@ -301,7 +301,7 @@ The original design files are in the [INVENTOR](./INVENTOR) folder.
 The compact size of the setup and the modular character allow to adapt the setup to any incubator. ImSwitch can be started from any given compute ror laptop. Simple USB cables connect the microscope to the outside (computer) for full control over its functionalities.
 Here you can see the device in action:
 
-![](./IMAGES/microscope_1.jpeg")
+![](./IMAGES/microscope_1.jpeg)
 
 ![](./IMAGES/microscope_2.jpeg)
 

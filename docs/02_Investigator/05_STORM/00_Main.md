@@ -35,11 +35,10 @@ bioRxiv 2023.05.31.542706; doi: https://doi.org/10.1101/2023.05.31.542706
 ![](./IMAGES/stormuc2.gif)
 
 ### Top View
-
 ![](./IMAGES/Application_Fluorescence_Microscope_Infinity_Inverted_STORM_v3_1.png)
 
-### Side View
 
+### Side View
 ![](./IMAGES/Application_Fluorescence_Microscope_Infinity_Inverted_STORM_v3.png)
 
 
@@ -55,7 +54,17 @@ bioRxiv 2023.05.31.542706; doi: https://doi.org/10.1101/2023.05.31.542706
 
 Certainly! The instructions you provided seem like a comprehensive guide to building a single molecule localization microscope using the modular optical system UC2. Below, I've expanded on a few aspects to ensure that the steps are clear and more detailed, providing information about some safety precautions, required materials, and additional tips.
 
+### Possible to assemble in <2 Minutes
+
+![](./IMAGES/assembly_final.gif)
+Obviously, adjusting the lenses and mirrors, as well as adapting self-made 3D printed parts will take some time. However, the framework of the microscope is rapid and simple to build. The cubes can simply be stuck together to get the outlay of the microscope in few minutes. This allows to swiftly exchange modules, make changes and even replace components.
+
 ### Microscope Building Instructions
+
+![](./IMAGES/setup_building2.jpg)
+**Building the UC2 widefield microscope: a.** Photograph of the finished setup. **b.** Photograph of all single pieces of the dismanteled setup. The bill of materials lists all these components, including CAD files for the 3D printed parts. **c.** Emission pathway of the microscope. **d.** Stability increased by using a layer of puzzles below and above the cubes. **e.** CAD schematic of the emission pathway. **f.** Excitation pathway of the microscope. **g.** Excitation layer is also covered by a puzzle layer. **h.** CAD schematic of the excitation pathway. **i.** Z-stage photograph and corresponding CAD file. **j.** Empty cubes work as place-holder between the excitation layer and the microscope stage. **k.** The objective is screwed into the objective holder. **l.** By wiring the electronica the stage is ready to use and the microscope functional (see photograph in **a.**).
+
+![](./assembly_final.mp4)
 
 #### 0. Introduction and Precautions
 
@@ -82,7 +91,7 @@ Before we begin, make sure that you are working in a well-ventilated area and we
 
 #### 1. Detection Layer
 
-
+The schematic of the layer and the actual composition can be seen in the **setup building figure**.
 The camera is positioned within a cube, so that the camera chip is
 centered. At a distance of 100 mm, the tube lens is positioned on the
 same optical axis. As a cube is 50 mm broad, an empty cube is placed
@@ -96,30 +105,23 @@ The emissions from the objective are parallel. The distance can be
 chosen accordingly to the build. A mirror tilted by 45 degrees reflects
 the vertical emissions of the sample into the tube lens and subsequently
 onto the camera.
-
+<!---
 ![](./IMAGES/image1.png)
 
 Emissions from the objective are reflected by the mirror, focused by the
 tube lens, displaced with the tiltable mirror and imaged on the
 detector.
-
+--->
 #### 2. Laser
-
 
 The laser profile can be tuned to match the application the microscope
 will be used for. When imaging a Chroma red fluorescent slide, the laser
-profile can be characterized. Without any modification, the laser only
+profile can be characterized, and possible variations or inhomogenities can be removed.
+Without any modification, the laser only
 illuminates a subset of the field of view. By adding a telescope build,
-the laser beam is magnified. The telescope is built by placing two
-convex lenses in a distance equal to the sum of their focal distances in
-the light path. The magnification can then be calculated by the ratio of
-the focal lengths (e.g. f1 = 3\*f2 magn. = 3x). If the beam is not
-homogeneous or does not have a smooth profile or patterns that vary over
-time, the beam can be homogenized through diffusing the light in the
-common focal point of both telescope lenses. The diffuser can be as
-simple as a cling foil, attached to a rotor or a fan motor and spinning
-the foil.
+the laser beam is magnified. The modifications proposed in the **Illumination** section show different illumination patterns, leading to different possible imaging modalities.
 
+<!---
 ![](./IMAGES/image2.png)
 
 ![](./IMAGES/image3.png)
@@ -137,7 +139,7 @@ advantageous for applications needing higher laser densities. The laser
 profile with a 2 times magnification (middle) and the magnification with
 diffuser (right) enable homogeneous illumination of most of the field of
 view.
-
+--->
 ##### Tips:
 
 - Ensure that the diffuser is balanced properly to avoid vibrations that might affect the image quality.
@@ -151,10 +153,10 @@ the filter cube in a higher vertical plane). Through a tiltable mirror,
 the beam can be positioned into the center of the field of view. The
 filter cube has filters adapted to the laser and the fluorophores used
 in the experiments. The mount for the laser, the lens, the mirror as
-well as the filter cube can all be 3D printed.
-
+well as the filter cube can all be 3D printed. The schematic and actual photograph of the layer within the setup are shown in the **setup building figure**.
+<!---
 ![](./IMAGES/image6.png)
-
+--->
 
 ##### Tips:
 
@@ -162,9 +164,9 @@ well as the filter cube can all be 3D printed.
 - The choice of filters must correspond with the laser and the fluorophores used in the experiments.
 
 #### 4. Z Stage
-
+<!---
 ![](./IMAGES/image7.png)
-
+--->
 The z stage is a motor driven translation stage. The
 stage is embedded into a 3D printed case to make the dimensions fit the
 cube design. A puzzle piece on the top and in the bottom allow to build
@@ -173,6 +175,8 @@ a stable connection between the stage and the rest of the microscope. A
 advised to print the objective holder with a high percentage of infill
 and a stable plastic, as the heavy objective causes strain on the
 material.
+
+![](./IMAGES/microscope_1.jpeg)
 
 ##### Tips:
 
@@ -303,26 +307,22 @@ Here you can see the device in action:
 
 ![](./IMAGES/microscope_1.jpeg)
 
+Example of the setup being used within a cell culture incubator for continuous imaging of cells.
+
 ![](./IMAGES/microscope_2.jpeg)
-
 ![](./IMAGES/microscope_3.jpeg)
-
 ![](./IMAGES/microscope_4.jpeg)
-
 ![](./IMAGES/microscope_5.jpeg)
-
 ![](./IMAGES/microscope_6.jpeg)
-
-## Wide-field imaging
 
 
 ## Mechanical stability of the setup
 
-## Live-cell imaging
+See the mechanical stability section of the repository.
 
-## Single molecule applications
+## Wide-field imaging, Live-cell imaging, Single molecule applications
 
-
+See the Results section of the repository.
 
 
 ## Get Involved
@@ -343,10 +343,10 @@ REMARK: All files have been designed using Autodesk Inventor 2019 (EDUCATION)
 
 
 ## Collaborating
-If you find this project useful, please like this repository, follow us on Twitter and cite the webpage! :-)
+If you find this project useful, please like this repository, follow us on Twitter and cite the webpage or the publication! :-)
 
 
-
+<!---
 # Unsorted Images
 ![](./IMAGES/Application_Fluorescence_Microscope_Infinity_Inverted_STORM_v3.png)
 ![](./IMAGES/Application_Fluorescence_Microscope_Infinity_Inverted_STORM_v3_1.png)
@@ -374,7 +374,7 @@ If you find this project useful, please like this repository, follow us on Twitt
 ![](./IMAGES/microscope_5.jpeg)
 ![](./IMAGES/microscope_6.jpeg)
 ![](./IMAGES/STORM.gif)
-![](./IMAGES/STORM2.png)
+
 ![](./IMAGES/UC2_STORM.png)
 ![](./IMAGES/SetupImages_1.jpeg)
 ![](./IMAGES/SetupImages_2.jpeg)
@@ -382,3 +382,4 @@ If you find this project useful, please like this repository, follow us on Twitt
 ![](./IMAGES/SetupImages_4.jpeg)
 ![](./IMAGES/SetupImages_5.jpeg)
 ![](./IMAGES/SetupImages_6.jpeg)
+--->

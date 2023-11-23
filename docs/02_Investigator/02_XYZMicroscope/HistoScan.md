@@ -2,6 +2,8 @@
 
 Welcome to the documentation page for the Histo Scanner Plugin, a powerful tool for scanning large areas and stitching images onto a large canvas. This page provides detailed information on how to configure and use the plugin effectively.
 
+![](IMAGES/histoscan/Scanning.gif)
+
 ## Overview
 
 The Histoscanner Plugin integrates with the ImSwitch widget and controller to facilitate the scanning of large sample areas. Users can select a sample geometry and initiate scanning, which captures images and stitches them together to form a comprehensive view.
@@ -16,7 +18,15 @@ Before starting a scan, ensure the following settings are configured correctly:
 
 ## Scanning Process
 
+
+The microscope will compute the scan area and the necessary scan stepsize on its own and will perform a snake scan. Alternatively you can provide a list of coordinates.
+
+![](IMAGES/histoscan/snakescan.png)
+
 Once the scan is successfully initiated, the final output is displayed in a downscaled version on napari to conserve memory.
+
+![](IMAGES/histoscan/stagescanner.png)
+
 
 ## ImSwitch Configuration
 
@@ -102,6 +112,9 @@ The configuration settings for the detector and stage are crucial. Here are the 
 
 Correct orientation of the stage coordinates and camera coordinates is essential. The configuration ensures that the camera orientation matches the stage scanning positions.
 
+In order to have correct orientation it's important that the stage coordinates and the camera coordaintes are matching. The below image shows how the camera has to be orietned w.r.t. the stage scanning positions
+![](IMAGES/histoscan/Coordinatesystems.png)
+
 ## Tutorials and Demonstrations
 
 - **Tutorial on Matching Axes**: A tutorial explaining the matching of different axes is available on [YouTube](https://www.youtube.com/embed/Uze1imGPru4?si=NiWNVGJBRndXV8yM).
@@ -109,3 +122,12 @@ Correct orientation of the stage coordinates and camera coordinates is essential
 
 Feel free to reach out with any queries or suggestions to enhance this documentation. Happy scanning with Histo Scanner!
 uUlJuI&ab_channel=openUC2
+
+
+## Tutorial that explains how the different axes can be matched
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Uze1imGPru4?si=NiWNVGJBRndXV8yM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## The Full plugin in action
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bQ3B7uUlJuI?si=WuIyXiXs8RZWZ0p9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -27,7 +27,6 @@ A quick tour through an exemplary box and how the cubes look like (state Oct. 20
 
 
 ## What is UC2?
-Duration: 2
 
 The core element of the UC2 project is a simple cube.
 The cube consists of two halves and houses a sliding insert.
@@ -49,10 +48,7 @@ The cube can be mounted on a base plate. The base plate modules can be put toget
 <img src="/MINIBOX/3.png" width="300"/>
 </p>
 
-
-
 ## UC2 for printing yourself
-Duration: 3
 
 The UC2 cube can also be 3D printed. It looks the same as the injection molded model, but here it consists of a cube lid and the cube body, which are held together with screws. The screws are great for being put on the magnetic plate. By combining different cube modules, different optical structures can be easily assembled. A new function can be added with each dice. Your creativity knows no limits.
 

@@ -1,14 +1,11 @@
-Sure, I can help translate the document into Spanish. Here's the translated text:
-
 ---
-
 id: uc2miniboxES
 título: UC2 miniBOX (español)
 ---
 
 ## ¿Qué hay en la MiniBOX?
 
-:::advertencia
+:::warning
 Hemos compilado este documento en un ***PDF*** que se puede descargar <a href="/MINIBOX/Manual_Corebox_SP.pdf" target="_blank" >aquí</a>
 :::
 
@@ -28,7 +25,6 @@ Un recorrido rápido a través de una caja ejemplar y cómo se ven los cubos (es
 
 
 ## ¿Qué es UC2?
-Duración: 2
 
 El elemento central del proyecto UC2 es un cubo simple.
 El cubo consta de dos mitades y alberga un inserto deslizable.
@@ -50,10 +46,7 @@ El cubo se puede montar en una placa base. Los módulos de la placa base se pued
 <img src="/MINIBOX/3.png" width="300"/>
 </p>
 
-
-
 ## UC2 para imprimir tú mismo
-Duración: 3
 
 El cubo UC2 también se puede imprimir en 3D. Se ve igual que el modelo moldeado por inyección, pero aquí consiste en una tapa de cubo y el cuerpo del cubo, que se mantienen unidos con tornillos. Los tornillos son excelentes para colocarlos en la placa magnética. Al combinar diferentes módulos de cubos, se pueden ensamblar fácilmente diferentes estructuras ópticas. Una nueva función se puede agregar con cada dado. Tu creatividad no tiene límites.
 
@@ -124,5 +117,3 @@ Toma uno o más de los cubos que tienen una lente y observa el símbolo UC2 most
 <p align="center">
 <img src="/MINIBOX/8.png" width="300"/>
 </p>
-
----

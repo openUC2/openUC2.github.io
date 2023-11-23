@@ -1,42 +1,111 @@
-# Histo Scanner
+# Histo Scanner Plugin Documentation
 
-The Histoscanner Plugin is meant to be used for scanning large areas and use the images to stitch them to a large canvas.
+Welcome to the documentation page for the Histo Scanner Plugin, a powerful tool for scanning large areas and stitching images onto a large canvas. This page provides detailed information on how to configure and use the plugin effectively.
 
-![](IMAGES/histoscan/snakescan.png)
+## Overview
 
-![](IMAGES/histoscan/Scanning.gif)
+The Histoscanner Plugin integrates with the ImSwitch widget and controller to facilitate the scanning of large sample areas. Users can select a sample geometry and initiate scanning, which captures images and stitches them together to form a comprehensive view.
 
-![](IMAGES/histoscan/Coordinatesystems.png)
-![](IMAGES/histoscan/stagescanner.png)
+## Initial Setup
 
-https://openuc2.github.io/docs/Investigator/XYZMicroscope/HistoScan
+Before starting a scan, ensure the following settings are configured correctly:
 
-## Starting ImSwitch on Ubuntu and Start the ROI Scanner
+- **Pixel Size**: Set in the `setup.json` file. This size must be calibrated, possibly using a ruler.
+- **Step Size of Axis**: Also set in the `setup.json`. It typically depends on the steps/mm defined by the leadscrew.
+- **Sample Configuration File**: An example file can be found [here](https://raw.githubusercontent.com/openUC2/ImSwitchConfig/master/imcontrol_setups/example_uc2_hik_histo.json).
 
-First of all: Open the terminal. Type the following (all case sensitive):
+## Scanning Process
 
+Once the scan is successfully initiated, the final output is displayed in a downscaled version on napari to conserve memory.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bQ3B7uUlJuI?si=CLOexwn4dmZZxFdX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+## ImSwitch Configuration
 
+The configuration settings for the detector and stage are crucial. Here are the JSON settings for both:
+
+### For the Stage
+
+```json
+  "positioners": {
+    "ESP32Stage": {
+      "managerName": "ESP32StageManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "isEnable": true,
+        "enableauto": false,
+        "stepsizeX": -0.3125,
+        "stepsizeY": -0.3125,
+        "stepsizeZ": 0.3125,
+        "homeSpeedX": 15000,
+        "homeSpeedY": 15000,
+        "homeSpeedZ": 15000,
+        "isDualaxis": true,
+        "homeDirectionX": 1,
+        "backlashXOld": 15,
+        "backlashYOld": 40,
+        "backlashX": 0,
+        "backlashY": 0,
+        "homeEndstoppolarityY": 0,
+        "homeDirectionY": -1,
+        "homeDirectionZ": 0,
+        "homeXenabled": 1,
+        "homeYenabled": 1,
+        "homeZenabled": 0,
+        "initialSpeed": {
+          "X": 15000,
+          "Y": 15000,
+          "Z": 15000
+        }
+      },
+      "axes": [
+        "X",
+        "Y",
+        "Z"
+      ],
+      "forScanning": true,
+      "forPositioning": true
+    }
+  }
 ```
-conda activate imswitch
 
-sudo chown user:user  /dev/ttyUSB0 # where user is the current user you're logged into (then enter password)
+### For the Detector
+
+```json
+  "detectors": {
+    "WidefieldCamera": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "HikCamManager",
+      "managerProperties": {
+        "isRGB": 1,
+        "cameraListIndex": 0,
+        "cameraEffPixelsize": 0.2257,
+        "hikcam": {
+          "exposure": 0,
+          "gain": 0,
+          "blacklevel": 100,
+          "image_width": 1000,
+          "image_height": 1000
+        }
+      },
+      "forAcquisition": true,
+      "forFocusLock": true
+    }
 ```
 
-The USB port may differ, so perhaps also try this:
-```
-sudo chown veo:veo /dev/ttyUSB1
-sudo chown veo:veo /dev/ttyUSB2
-```
+## File Handling
 
-Then:
+- **Storing Metadata**: All metadata is stored in the `OME.TIF` format.
+- **Opening in Fiji**: Files can be easily opened and stitched in Fiji by importing them as OME.TIF.
+- **Opening in ASHLAR**: Use the script developed during the openUC2 hackathon available [here](https://gist.github.com/frauzufall/047d0739ce3f1032af32b221523bc66c) as a starting point for handling files in Ashlar.
 
-```
-python -m imswitch
-```
+## Hardware/Software Setup
 
-The images are stored in the working directory of the terminal.
+Correct orientation of the stage coordinates and camera coordinates is essential. The configuration ensures that the camera orientation matches the stage scanning positions.
 
+## Tutorials and Demonstrations
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WATAgUStyF0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+- **Tutorial on Matching Axes**: A tutorial explaining the matching of different axes is available on [YouTube](https://www.youtube.com/embed/Uze1imGPru4?si=NiWNVGJBRndXV8yM).
+- **Full Plugin in Action**: Watch the plugin in action [here](https://www.youtube.com/watch?v=bQ3B7uUlJuI&ab_channel=openUC2).
+
+Feel free to reach out with any queries or suggestions to enhance this documentation. Happy scanning with Histo Scanner!
+uUlJuI&ab_channel=openUC2

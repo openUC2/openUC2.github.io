@@ -84,7 +84,7 @@ UC2立方体也可以3D打印。它看起来与注塑模型相同，但这里它
 
 这里你可以找到一个小视频，解释了立方体的核心概念
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yl0lgNJu_AQ" title="YouTube视频播
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NZZ6n620eV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 用户: 你能把这个文件翻译成西班牙语吗？

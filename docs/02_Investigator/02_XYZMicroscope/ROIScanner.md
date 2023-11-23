@@ -4,6 +4,7 @@
 
 First of all: Open the terminal. Type the following (all case sensitive):
 
+
 ```
 conda activate imswitch
 

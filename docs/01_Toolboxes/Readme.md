@@ -1,5 +1,4 @@
-# Toolbox Components
-
+# Educational Kits
 
 ## CoreBox: Entry-Level Education Box
      - Features and Specifications

@@ -1,7 +1,4 @@
----
-id: uc2miniboxES
-título: UC2 miniBOX (español)
----
+
 
 ## ¿Qué hay en la MiniBOX?
 

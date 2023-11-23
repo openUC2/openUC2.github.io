@@ -9,6 +9,7 @@ The Histoscanner Plugin is meant to be used for scanning large areas and use the
 ![](IMAGES/histoscan/Coordinatesystems.png)
 ![](IMAGES/histoscan/stagescanner.png)
 
+https://openuc2.github.io/docs/Investigator/XYZMicroscope/HistoScan
 
 ## Starting ImSwitch on Ubuntu and Start the ROI Scanner
 

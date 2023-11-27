@@ -1,13 +1,4 @@
-Improving the documentation for a GitHub wiki involves enhancing the clarity, structure, and comprehensiveness of the existing content, while incorporating additional theoretical background and sources. I'll rework the provided content to enhance its quality. Let's begin:
-
----
-
-<p align="left">
-<a href="#logo" name="logo"><img src="https://raw.githubusercontent.com/bionanoimaging/UC2-GIT/master/IMAGES/UC2-Spectrometer/IMAGES/UC2_logo_text.png" width="400"></a>
-</p>
-
 # openUC2 *Spectrometer*
----
 
 Welcome to the openUC2 Spectrometer repository. This guide will assist you in constructing and setting up a simple spectrometer, a fundamental tool in the field of spectroscopy.
 
@@ -163,6 +154,3 @@ For details on the licensing, please visit [License.md](https://github.com/openU
 
 If you find this project beneficial, please star this repository, follow us on Twitter, and cite our webpage in your work!
 
----
-
-This revised documentation provides a clearer, more detailed, and educational approach to understanding and building the openUC2 Spectrometer. The structure is improved for better readability, and additional theoretical background enhances the educational value.

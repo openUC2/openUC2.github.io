@@ -12,24 +12,24 @@ id: uc2miniboxCN
 
 **样品架：** 在一个立方体中固定物体\
 **透镜：** 影响光的传播方式（扩散）\
-**镜子：** 反射光\
-**显微镜物镜：** 一种特殊的镜头系统，可以放大物体
+**反光镜：** 改变光的传播方向\
+**显微镜物镜：** 一种特殊的透镜系统，可以放大物体
 
 <p align="center">
 <img src="/MINIBOX/1.png" width="500"/>
 </p>
 
-通过一个典型的箱子快速浏览，以及立方体的外观（2022年10月的状态），可以在这里找到：
+接下来将通过一个视频介绍一个MiniBox（2022年10月的版本）里面有什么:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NZZ6n620eV0" title="YouTube视频播放器" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 什么是UC2?
 
 UC2项目的核心元素是一个简单的立方体。
-这个立方体由两半部分组成，内有一个滑动插件。
-插件可以容纳各种光学组件（例如透镜、镜子），这意味着每个立方体可以实现不同的功能。
+这个立方体由两半部分组成，通常内有一个可以滑动的插件。
+插件可以容纳各种光学元件（例如透镜、反光镜），这意味着每个立方体可以通过安装不同的插件来实现不同的功能。
 
-### 立方体类型1：注塑成型，带插头连接
+### 立方体类型1：带插头连接注塑成型件
 
 **底板**
 
@@ -49,9 +49,9 @@ UC2项目的核心元素是一个简单的立方体。
 
 UC2立方体也可以3D打印。它看起来与注塑模型相同，但这里它由立方体盖和立方体体组成，用螺丝固定在一起。螺丝非常适合放在磁性板上。通过结合不同的立方体模块，可以轻松组装不同的光学结构。每个骰子可以增加一个新功能。你的创造力没有限制。
 
-### 立方体类型2：3D打印，带磁性连接
+### 立方体类型2：带磁性连接的3D打印件
 
-**骰子**
+**立方体**
 
 <p align="center">
 <img src="/MINIBOX/4.png" width="300"/>
@@ -65,10 +65,10 @@ UC2立方体也可以3D打印。它看起来与注塑模型相同，但这里它
 <img src="/MINIBOX/5.png" width="300"/>
 </p>
 
-想要更多骰子？那你可以自己制作。你可以在[这里](https://github.com/openUC2/UC2-GIT)找到所有信息
+想要更多的立方体？那你可以自行3D打印。你可以在[这里](https://github.com/openUC2/UC2-GIT)找到所有信息
 
-## 这就是骰子如何组合在一起
-持续时间：1
+## 这就是立方体如何组合在一起
+持续时间：1分钟
 
 确保立方体正确放置在板上，并且没有倾斜。最后重要的是插件放置在正确的位置。
 
@@ -76,7 +76,7 @@ UC2立方体也可以3D打印。它看起来与注塑模型相同，但这里它
 <img src="/MINIBOX/6.png" width="300"/>
 </p>
 
-如果你没有看到清晰的图像，移动插件（例如镜头），直到你看到它很清楚。图片中的绿色箭头显示了如何做。
+如果你没有看到清晰的图像，移动插件（例如透镜），直到你看到它很清楚。图片中的绿色箭头显示了如何做。
 
 <p align="center">
 <img src="/MINIBOX/7.png" width="300"/>
@@ -87,7 +87,6 @@ UC2立方体也可以3D打印。它看起来与注塑模型相同，但这里它
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NZZ6n620eV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-用户: 你能把这个文件翻译成西班牙语吗？
 
 文档内容：
 
@@ -107,7 +106,7 @@ UC2立方体也可以3D打印。它看起来与注塑模型相同，但这里它
 </p>
 
 ## 透镜能做什么？
-持续时间：2
+持续时间：2分钟
 
 拿一个或多个内有透镜的立方体，看着这里展示的UC2符号。手持立方体，改变透镜和图像之间的距离。
 

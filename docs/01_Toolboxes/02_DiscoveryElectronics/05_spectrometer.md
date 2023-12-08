@@ -136,18 +136,6 @@ Youtube: https://www.youtube.com/watch?app=desktop&v=T_goVwwxKE4&ab_channel=Les%
 Software: https://github.com/leswright1977/PySpectrometer
 
 
-## Determination of the Flowrate
-
-```python
-# this is to compute the mean and stdv of the flow-reate of the low-cost pump
-# measured by weighing the water that was pumped at 1000 steps/s
-import numpy as np
-mArray = np.array((860, 940, 850)) # ml/min
-print(f"Flowrate: %f +/-  %f ml/min", np.mean(mArray), np.std(mArray))
-#Flowrate: %f +/-  %f ml/min 883.3333333333334 40.2768199119819
-```
-
-![](./IMAGES/fluidicscope/measureflowrate.jpeg)
 ## Contributing and Collaboration
 
 This open-source project welcomes contributions from everyone. Whether you're experienced in CAD design or programming,

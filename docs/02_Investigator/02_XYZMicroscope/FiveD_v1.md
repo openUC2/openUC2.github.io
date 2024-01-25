@@ -1,9 +1,4 @@
----
-id: FiveD_v1
-title: XYZ Microscope v1
-git
-
----
+# openUC2 FiveD v1
 
 ## Unpacking the microscope
 

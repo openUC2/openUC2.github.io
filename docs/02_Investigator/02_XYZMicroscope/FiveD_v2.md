@@ -1,8 +1,5 @@
----
-id: FiveD_v2
-title: XYZ Microscope v2
----
 
+# openUC2 FiveD v2
 
 ## Design Files
 

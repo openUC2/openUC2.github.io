@@ -1,4 +1,7 @@
 
+# To do
+- Remove underscore in sidebar 'core_lens'
+-
 ## Lenses
 Duration: 2
 
@@ -307,6 +310,3 @@ For g = 65 mm → b = 104 mm\
 The projector always produces an enlarged, inverted (reversed) image.
 The position of the image and its magnification depend on the position and size of the object.
 </div><br/>
-
-
-

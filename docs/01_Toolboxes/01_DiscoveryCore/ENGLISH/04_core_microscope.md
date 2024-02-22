@@ -1,4 +1,7 @@
-
+---
+id: coreLens
+title: Core microscope
+---
 
 ## Light microscope with "infinity optics"
 Duration: 2
@@ -323,6 +326,3 @@ Duration: 2
 <p align="center">
 <img src="/MINIBOX/UC2_minibox_55.png" width="800"/>
 </p>
-
-
-

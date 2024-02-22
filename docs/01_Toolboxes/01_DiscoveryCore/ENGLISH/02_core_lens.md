@@ -1,3 +1,7 @@
+---
+id: coreLens
+title: Core lens
+---
 
 # To do
 - Remove underscore in sidebar 'core_lens'

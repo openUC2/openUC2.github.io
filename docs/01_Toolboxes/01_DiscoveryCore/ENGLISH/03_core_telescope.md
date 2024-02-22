@@ -1,4 +1,7 @@
-
+---
+id: coreLens
+title: Core telescope
+---
 ## What is a Galileo telescope?
 Duration: 10
 
@@ -185,5 +188,3 @@ The picture is
 *Upright
 *mirrored
 </div><br/>
-
-

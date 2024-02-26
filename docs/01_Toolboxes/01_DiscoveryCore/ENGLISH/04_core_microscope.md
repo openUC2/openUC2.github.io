@@ -1,5 +1,5 @@
 ---
-id: coreLens
+id: coreMicroscope
 title: Core microscope
 ---
 

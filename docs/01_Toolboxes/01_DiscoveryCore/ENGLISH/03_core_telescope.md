@@ -1,5 +1,5 @@
 ---
-id: coreLens
+id: coreTelescope
 title: Core telescope
 ---
 ## What is a Galileo telescope?

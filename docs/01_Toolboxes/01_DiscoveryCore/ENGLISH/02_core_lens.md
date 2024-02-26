@@ -1,6 +1,6 @@
 ---
 id: coreLens
-title: Core lens
+title: Lens
 ---
 
 ## Lenses

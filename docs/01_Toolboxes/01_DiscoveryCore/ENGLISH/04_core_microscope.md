@@ -1,6 +1,6 @@
 ---
 id: coreMicroscope
-title: Core microscope
+title: Microscope
 ---
 
 ## Light microscope with "infinity optics"

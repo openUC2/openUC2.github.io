@@ -1,6 +1,6 @@
 ---
 id: coreTelescope
-title: Core telescope
+title: Telescope
 ---
 ## What is a Galileo telescope?
 Duration: 10

@@ -4,7 +4,6 @@ title: Microscope
 ---
 
 ## Light microscope with "infinity optics"
-Duration: 2
 
 <div class="alert info">
 What happens when you turn the Kepler telescope upside down?
@@ -12,7 +11,7 @@ What happens when you turn the Kepler telescope upside down?
 
 Place the object about 40mm in front of the lens and find the image about 100mm behind the tube lens (using a paper or the wall as a screen) as shown in the diagram. Move the lenses to get a sharp image.
 
-![](../IMAGES/MINIBOX/UC2_minibox_28.png)
+![](../IMAGES/MINIBOXNEW/31.png)
 
 <div class="alert info">
 Place the object with the lens on the paper as one unit. Place the tube lens at a distance of 100mm from your screen (paper, wall). Change the distance between the lenses - does the image change?
@@ -21,13 +20,13 @@ Place the object with the lens on the paper as one unit. Place the tube lens at 
 
 
 ## This means "infinity optics"
-Duration: 2
+
 
 A microscope is a device that allows objects to be viewed or imaged at high magnification.
 
 The image is called an **intermediate image** because it is often further enlarged with an eyepiece.
 
-![](../IMAGES/MINIBOX/UC2_minibox_29.png)
+![](../IMAGES/MINIBOXNEW/32.png)
 
 The object is roughly in the object-side focal plane of the lens. Thus, all incident rays are converted into a parallel bundle of rays behind the lens. The lens has a short focal length.
 
@@ -41,11 +40,11 @@ The image in the plane of the intermediate image is reversed, flipped, enlarged 
 
 
 ## This means "infinity optics"
-Duration: 2
+
 
 What is the magnification of the image?
 
-![](../IMAGES/MINIBOX/UC2_minibox_30.png)
+![](../IMAGES/MINIBOXNEW/33.png)
 
 Magnification of the image
 
@@ -59,7 +58,8 @@ As long as the object is in the focal plane of the lens and the screen is in the
 
 ## "Infinity optics" microscope with eyepiece
 
-![](../IMAGES/MINIBOX/UC2_minibox_34.png)
+![](../IMAGES/MINIBOXNEW/34.png)
+
 
 <div class="alert info">
 Can you see the microscopic image through the eyepiece lens with your eyes? What effect does the mirror have? Set up the microscope without the mirror. Make sure you still have two empty spaces between the tube lens and the eyepiece. Then what are you observing?
@@ -70,11 +70,12 @@ A quick intro into mirrors and its applications can be found here:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/azxLqej7yqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What is the eyepiece good for?
-Duration: 2
+
 
 Newer microscopes are equipped with so-called "infinity optics". In this case, the lens does not produce a real intermediate image. The light exits the lens as infinite parallel rays. At the end of the "infinite" tube is a tube lens. This creates an intermediate image, which is then enlarged again through the eyepiece.
 
-![](../IMAGES/MINIBOX/UC2_minibox_35.png)
+![](../IMAGES/MINIBOXNEW/35.png)
+
 
 The image behind the eyepiece is reversed, reversed, enlarged and virtual. The virtual image can be seen with the eye.
 
@@ -87,13 +88,15 @@ A filter can be used to change the brightness and color of the image.
 
 
 ## The eyepiece is good for that
-Duration: 2
+
 
 What is the magnification after the eyepiece?
 
-![](../IMAGES/MINIBOX/UC2_minibox_36.png)
+![](../IMAGES/MINIBOXNEW/36.png)
+
 
 overall magnification
+
 
 ![](../IMAGES/MINIBOX/UC2_minibox_37.png)
 
@@ -116,8 +119,7 @@ Place the dice in the positions shown in the diagram below and look through the 
 Build the microscope like a sandwich by adding a second layer using a base plate. Look through the eyepiece from above.
 </div><br/>
 
-
-![](../IMAGES/MINIBOX/UC2_minibox_39.png)
+![](../IMAGES/MINIBOXNEW/37.png)
 
 <div class="alert info">
 Do you see the image through the eyepiece as before? Can you find the real intermediate image with a piece of paper?
@@ -130,15 +132,15 @@ Turn the small gear on the lens holder. This is how you move or focus the lens. 
 
 
 ## "Finite optics" versus "Infinite optics"
-Duration: 2
 
-![](../IMAGES/MINIBOX/UC2_minibox_40.png)
+![](../IMAGES/MINIBOXNEW/38.png)
 
 The lenses of older or smaller microscopes are often so-called finite lenses. They behave like a lens with an extremely short focal length and create an intermediate image behind the lens with an image distance that is defined by the tube length. The tube length is printed and corresponds to 160mm for our lens. The real intermediate image is created there and is enlarged by the eyepiece optics.
 
 
 Microscopes have the ability to focus or sharpen the object either by moving the object or the lens. Here we move the lens through a simple mechanism. The rotation of the gear is translated into a displacement of the objective lens. For larger movements, you can also move the lens in the rail.
 
+![](../IMAGES/MINIBOXNEW/38.png)
 <p align="center">
 <img src="/MINIBOX/UC2_minibox_41.png" width="450"/>
 </p>
@@ -149,7 +151,7 @@ Microscopes have the ability to focus or sharpen the object either by moving the
 
 
 ## "Finite optics" versus "Infinite optics"
-Duration: 2
+
 
 What is the magnification of the intermediate image? And what is the magnification after the eyepiece?
 
@@ -168,7 +170,7 @@ overall magnification
 The image is larger than with the infinity microscope. The magnification of the lens here is 4×. If you calculated the magnification with the previous microscope, this certainly doesn't surprise you.
 </div><br/>
 
-![](../IMAGES/MINIBOX/UC2_minibox_46_2.png)
+![](../IMAGES/MINIBOXNEW/40.png)
 
 <div class="alert-success">
 The intermediate image is now only formed by the lens and is 160 mm behind it. We'll find out why in the next step.
@@ -178,23 +180,24 @@ The intermediate image is now only formed by the lens and is 160 mm behind it. W
 
 
 ## Objective and eyepiece
-Duration: 2
 
-![](../IMAGES/MINIBOX/UC2_minibox_48_1.png)
+![](../IMAGES/MINIBOXNEW/41.png)
 
 <div class="alert info">
 </div><br/>
 
 
 ## This is the lens
-Duration: 2
+
 
 A lens is an optical system that creates a magnified image of an object. The different numbers printed on the lens have different meanings:
 
-![](../IMAGES/MINIBOX/UC2_minibox_48.png)
+![](../IMAGES/MINIBOXNEW/42.png)
+
 
 The 4× lens has only one lens in it. The lenses with higher magnification are complete lens systems.
 
+![](../IMAGES/MINIBOXNEW/.png)
 ![](../IMAGES/MINIBOX/UC2_minibox_49.png)
 
 <div class="alert-success">
@@ -204,14 +207,14 @@ The lens is also a converging lens with a short focal length. The 4x lens has a 
 
 
 ## The eyepiece
-Duration: 2
+
 
 An eyepiece is actually a magnifying glass because it enlarges the intermediate image. The eyepiece we use here is a so-called Ramsden eyepiece.
 A single lens can also be used as an eyepiece. However, with a Ramsden eyepiece consisting of a lens system, the field of view is better because it creates fewer errors at the edge of the field of view. The Ramsden eyepiece consists of two lenses with the same focal length. Its focal length is f Ramsden eyepiece = 3/4 f lens
 
 What is the magnification of the Ramsden eyepiece?
 
-![](../IMAGES/MINIBOX/UC2_minibox_50.png)
+![](../IMAGES/MINIBOXNEW/45.png)
 
 
 <div class="alert-success">
@@ -223,14 +226,16 @@ The field of view is larger and the image looks clearer with the Ramsden eyepiec
 Each eyepiece has a so-called Ramsden disc, which is the smallest diameter
 </div><br/>
 
+
 ![](../IMAGES/MINIBOX/UC2_minibox_51.png)
 
 ## Smartphone microscope
-Duration: 2
+
 
 Build the smartphone microscope as shown. Use any two cubes here to safely place the smartphone.
 
-![](../IMAGES/MINIBOX/UC2_minibox_52.png)
+![](../IMAGES/MINIBOXNEW/46.png)
+
 
 <div class="alert info">
 </div><br/>
@@ -248,17 +253,18 @@ Replace the Ramsden eyepiece with the 40mm lens. What is better for the eye and 
 
 
 ## Better with smartphone or eye?
-Duration: 2
+
 
 The smartphone camera has a lens with a very short focal length because it has to fit into the thin smartphone. The lens then creates an image on the camera sensor whose properties are similar to those of the human eye.
 
 The eye can see objects from both a distance and near. This property is called accommodation.
 
-![](../IMAGES/MINIBOX/UC2_minibox_53.png)
+![](../IMAGES/MINIBOXNEW/47.png)
+
 
 The smartphone camera can also do this, but it is called autofocus. It describes the ability to sharply image objects at different distances on the sensor.
 
-![](../IMAGES/MINIBOX/UC2_minibox_54.png)
+![](../IMAGES/MINIBOXNEW/48.png)
 
 The image from the eyepiece comes in parallel rays, as if coming from infinity. You observed with a relaxed eye (looking into the distance) or with a camera focused at infinity.
 

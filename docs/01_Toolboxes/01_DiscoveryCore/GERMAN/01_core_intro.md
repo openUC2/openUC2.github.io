@@ -1,6 +1,6 @@
 ---
-id: uc2miniboxDE
-title: UC2 miniBOX (Deutsch)
+id: CoreIntro
+title: Introduction
 ---
 
 :::warning

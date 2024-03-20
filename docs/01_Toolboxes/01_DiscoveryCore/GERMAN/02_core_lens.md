@@ -1,7 +1,10 @@
-
+---
+id: CoreLinse
+title: Linse
+---
 
 ## Was kann eine Linse?
-Duration: 2
+
 
 Nimm einen oder mehrere der Würfel in denen eine Linse steckt und schaue dir das hier abgebildet UC2 Symbol dadurch an. Halte den Würfel dabei in der Hand und verändere den Abstand zwischen der Linse und dem Bild.  
 
@@ -12,7 +15,7 @@ Nimm einen oder mehrere der Würfel in denen eine Linse steckt und schaue dir da
 
 
 ## Linsen
-Duration: 2
+
 
 In der Strahlenoptik wird das Licht als Strahlenbündel (Pfeile) dargestellt, was eine Vereinfachung der physikalischen Eigenschaften von Licht mit sich bringt.  Ein Strahl hat eine Richtung und wird daher mit einem Pfeil gezeichnet. Eine Linse „bricht“ denn Strahl und ändert so seine Richtung.
 
@@ -218,7 +221,7 @@ Berechne die Vergrößerung der Lupe mit der folgenden Formel:
 
 
 ## Wie funktioniert ein Kinoprojektor?
-Duration: 2
+
 
 
 Nimm dir den UC2-Linsenwürfel mit der Brennweite 𝑓=40𝑚𝑚 und platziere ihn hinter den Probenhalterwürfel. Der Abstand zwischen dem Objekt und der Linse (also die Gegenstandsweite g) sollte ca. 50 mm entsprechen. Wenn du nun mit der Taschenlampe das Objekt beleuchtest, wirst du es in einem Abstand von ca. 200 mm auf der Wand scharf sehen. Ein Kinoprojektor hat statt des Objekts einen Filmstreifen und natürlich eine viel stärkere Lichtquelle.
@@ -244,7 +247,7 @@ Schiebe die Linse in dem Würfel hin und her und beobachte, wann das Bild scharf
 
 
 ## Wie funktioniert ein Kinoprojektor?
-Duration: 2
+
 
 <p align="center">
 <img src="/MINIBOX/UC2_minibox_9.png" width="800"/>
@@ -269,7 +272,7 @@ Die Vergrößerung des Objekts auf dem Schirm lässt sich einfach mit der folgen
 
 
 ## So funktioniert der Projektor
-Duration: 2
+
 
 <p align="center">
 <img src="/MINIBOX/UC2_minibox_9.png" width="800"/>
@@ -304,5 +307,3 @@ Für g = 65 mm → b = 104 mm\
 Der Projektor erzeugt immer ein vergrößertes, invertiertes (umgekehrtes)  Bild.
 Die Position des Bildes und seine Vergrößerung hängen von der Position und der Größe des Objekts ab.
 </div><br/>
-
-

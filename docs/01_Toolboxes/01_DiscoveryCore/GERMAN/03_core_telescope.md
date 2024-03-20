@@ -1,7 +1,10 @@
-
+---
+id: CoreTeleskop
+title: Teleskop
+---
 
 ## Was ist ein Galilei-Fernrohr?
-Duration: 10
+
 
 Stell die Linsen-Würfel auf das Blatt, wie in dem Diagramm gezeigt und schaure dann durch das Fernrohr in die Ferne.
 
@@ -22,7 +25,7 @@ Während du durch das Fernrohr schauest, passe die Abstände zwischen den Kompon
 
 
 ## Das ist ein Galilei-Fernrohr
-Duration: 2
+
 
 Ein Fernrohr ist ein optisches Instrument, das entfernte Objekte um ein Vielfaches näher oder größer erscheinen lässt.
 
@@ -45,7 +48,7 @@ Das Galilei-Fernrohr wird auch in Operngläsern verwendet.
 
 ## So funktioniert das Galilei-Fernrohr
 
-Duration: 2
+
 
 Wie lautet die Vergrößerung dieses Galilei-Fernrohrs?
 
@@ -77,7 +80,7 @@ Das Sichtfeld ist klein.
 
 
 ## Was ist ein Kepler-Fernrohr?
-Duration: 2
+
 
 Stell die Linsen in die richtige Positionen, wie in dem Diagramm gezeigt. Dann schaue durch das Fernrohr in die Ferne.
 
@@ -101,7 +104,7 @@ Während du durch das Fernrohr schauest, variiere die Abstände zwischen den Kom
 
 ## Das ist ein Kepler-Fernrohr
 
-Duration: 2
+
 
 <p align="center">
 <img src="/MINIBOX/UC2_minibox_22.png" width="800"/>
@@ -112,7 +115,7 @@ Diese Art von Fernrohr wird häufig in der Astronomie benutzt.
 
 
 ## So funktioniert das Kepler-Fernrohr
-Duration: 2
+
 
 Was ist die Vergrößerung dieses Kepler-Fernrohrs?
 
@@ -150,7 +153,7 @@ Das Video zeigt das justieren eines Teleskops
 
 
 ## Was ist ein Beobachtungsfernrohr?
-Duration: 2
+
 
 Das Beobachtungsfernrohr ist lang, deshalb ist das Schema nicht gleichgroß.
 Stell die Linsen in die richtige Positionen wie im Diagramm dargestellt und schaue durch das Fernrohr in die Ferne.
@@ -176,7 +179,7 @@ Während du durch das Fernrohr schauest, passe die Abstände zwischen den Kompon
 
 
 ## So funktioniert das Beobachtungsfernrohr
-Duration: 2
+
 
 Die Vergrößerung ist wie die des Kepler-Fernrohrs. Die Umkehrlinse verändert nur die Orientierung (das Bild wird umgekehrt), nicht die Vergrößerung.
 
@@ -193,6 +196,3 @@ Das Bild ist
 *Aufrecht
 *Seitenrichtig
 </div><br/>
-
-
-

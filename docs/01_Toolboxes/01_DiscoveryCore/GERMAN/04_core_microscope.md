@@ -1,4 +1,7 @@
-
+---
+id: CoreMikroskop
+title: Mikroskop
+---
 ## Lichtmikroskop mit „Unendlich-Optik“
 Duration: 2
 
@@ -323,6 +326,3 @@ Duration: 2
 <p align="center">
 <img src="/MINIBOX/UC2_minibox_55.png" width="800"/>
 </p>
-
-
-

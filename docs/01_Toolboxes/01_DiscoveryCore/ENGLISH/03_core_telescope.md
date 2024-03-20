@@ -13,7 +13,7 @@ How is the image oriented?
 </div><br/>
 
 
-![](../IMAGES/MINIBOX/UC2_minibox_15.png)
+![](../IMAGES/MINIBOXNEW/22.png)
 
 
 <div class="alert-success">
@@ -23,29 +23,25 @@ As you look through the telescope, adjust the distances between the components t
 
 
 ## This is a Galileo telescope
-Duration: 2
+
 
 A telescope is an optical instrument that makes distant objects appear many times closer or larger.
 
-
 The lens on the object side is called the lens.
 
-![](../IMAGES/MINIBOX/UC2_minibox_16.png)
+![](../IMAGES/MINIBOXNEW/23.png)
 
 The lens facing the eye is called the eyepiece.
-
 The Galileo telescope is also used in opera glasses.
-
-![](../IMAGES/MINIBOX/UC2_minibox_17.png)
 
 
 ## This is how the Galileo telescope works
 
-Duration: 2
+
 
 What is the magnification of this Galileo telescope?
 
-![](../IMAGES/MINIBOX/UC2_minibox_18.png)
+![](../IMAGES/MINIBOXNEW/24.png)
 
 Formula for calculating magnification
 
@@ -69,11 +65,11 @@ The field of view is small.
 
 
 ## What is a Kepler telescope?
-Duration: 2
+
 
 Set the lenses in the correct positions as shown in the diagram. Then look through the telescope into the distance.
 
-![](../IMAGES/MINIBOX/UC2_minibox_20.png)
+![](../IMAGES/MINIBOXNEW/25.png)
 
 <div class="alert info">
 What does the picture look like?
@@ -84,24 +80,19 @@ How is the image oriented?
 As you look through the telescope, vary the distances between the components to see such a sharp image!
 </div><br/>
 
-![](../IMAGES/MINIBOX/UC2_minibox_21.png)
+![](../IMAGES/MINIBOXNEW/26.png)
 
 ## This is a Kepler telescope
 
-Duration: 2
-
-![](../IMAGES/MINIBOX/UC2_minibox_22.png)
+![](../IMAGES/MINIBOXNEW/27.png)
 
 This type of telescope is often used in astronomy.
 
-
-
 ## This is how the Kepler telescope works
-Duration: 2
 
 What is the magnification of this Kepler telescope?
 
-![](../IMAGES/MINIBOX/UC2_minibox_24.png)
+![](../IMAGES/MINIBOXNEW/28.png)
 
 Formula for calculating magnification
 
@@ -122,14 +113,17 @@ larger than with the Galileo telescope.
 
 
 ## What is a spotting scope?
-Duration: 2
+
 
 The spotting scope is long, so the scheme is not the same size.
 Set the lenses in the correct positions as shown in the diagram and look into the distance through the telescope.
 
-![](../IMAGES/MINIBOX/UC2_minibox_25.png)
+![](../IMAGES/MINIBOXNEW/29.png)
 
-![](../IMAGES/MINIBOX/UC2_minibox_26.png)
+which results into
+
+![](../IMAGES/MINIBOXNEW/30.png)
+
 
 <div class="alert info">
 How does the image here compare to the Kepler telescope?
@@ -143,7 +137,7 @@ As you look through the telescope, adjust the distances between the components t
 
 
 ## This is how the spotting scope works
-Duration: 2
+
 
 The magnification is like that of the Kepler telescope. The erecting lens only changes the orientation (the image is reversed), not the magnification.
 

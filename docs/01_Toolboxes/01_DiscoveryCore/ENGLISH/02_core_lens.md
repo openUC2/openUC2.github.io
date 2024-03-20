@@ -218,27 +218,15 @@ The lens equation describes the relationship between image distance (b) and obje
 ### How big is the picture?
 The magnification of the object on the screen can easily be calculated using the following formula:
 
-
 ![](../IMAGES/MINIBOX/UC2_minibox_11.png)
-
-
-
-
-
 
 ## How the projector works
 
-
 ![](../IMAGES/MINIBOX/UC2_minibox_9.png)
-
-
 
 Check if your observation agrees with the calculation
 
-
 ![](../IMAGES/MINIBOX/UC2_minibox_12.png)
-
-
 
 Calculate the magnification of the projector for the different values of g and b.
 

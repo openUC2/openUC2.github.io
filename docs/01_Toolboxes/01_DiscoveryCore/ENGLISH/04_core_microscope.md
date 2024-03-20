@@ -197,8 +197,8 @@ A lens is an optical system that creates a magnified image of an object. The dif
 
 The 4× lens has only one lens in it. The lenses with higher magnification are complete lens systems.
 
-![](../IMAGES/MINIBOXNEW/.png)
-![](../IMAGES/MINIBOX/UC2_minibox_49.png)
+![](../IMAGES/MINIBOXNEW/43.png)
+
 
 <div class="alert-success">
 The lens is also a converging lens with a short focal length. The 4x lens has a focal length of f=32 mm. When used as a magnifying glass, it has a higher magnification than the 40mm lens. The field of view is sharp but small.

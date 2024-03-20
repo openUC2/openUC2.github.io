@@ -11,9 +11,9 @@ In this workshop, we will construct a Michelson Interferometer using the UC2 mod
 
 1. Green Laser Pointer with a relatively high temporal coherence.
 2. Lenses for beam expansion.
-3. Beam splitter cube with a partially reflective mirror coating.
-4. Two mirrors.
-5. Screen or camera sensor (e.g., ESP32 camera module).
+3. Beam splitter plate or cube with a partially reflective mirror coating.
+4. Three mirrors.
+5. Screen or camera sensor (e.g., ESP32 camera module) with USB cable.
 6. UC2 Modular Microscope Toolbox (cubes, puzzle pieces, and holders).
 
 ![](./IMAGES/Michelson_1.png)
@@ -64,9 +64,9 @@ We want to replicate the following setup:
 ![](./IMAGES/MichlesonInCubes.png)
 
 
-1. Build the telescope using two lenses with different focal lengths to expand the laser beam.
+1. Build the telescope using two lenses with different focal lengths to expand the laser beam. (Depending on the laser beam shape this step can be ignored)
 
-2. Use the beam splitter cube to split the enlarged beam into two equal beams.
+2. Use the beam splitter plate/cube to split the enlarged beam into two equal beams.
 
 3. Place mirrors at the end of each beam path and adjust their positions.
 
@@ -82,6 +82,28 @@ We want to replicate the following setup:
 
 9. The Michelson Interferometer is now aligned and ready for use.
 
+Aaron Proposal with bunch of details:
+*Note: After realizing the alignment of each element remember to turn off the Laser for safety!*
+
+1. Insert the Laser diode in two nested cubes.
+  _Image_
+2. Insert a diaphragm in a cube and connect it to the other two. Then, close the diaphragm until you get a pinhole and with the screws, align the Laser beam.
+  _Image_
+3. Remove the cube with the diaphragm, leave it aside for later use and in the same spot add the tilted kinematic mirror.
+  _Image_
+4. Place the rest of cubes to build one arm of the interferometer including the beamsplitter and instead of placing the Linear movable Mirror, place the diaphragm cube.
+  _Image_
+5. Align the Laser beam so that it hits the pinhole in the diaphragm center. After aligning replace the diaphragm cube with the Linear movable mirror.
+  _Image_
+6. Place the cubes to build the detection and reference arm of the interferometer with the kinematic mirror. Place the diaphragm cube in the detection arm end and use the screws of both kinematic mirrors if needed to make the two beams overlap as much as possible.
+  _Image_
+
+7. Use a screen after the pinhole produced by the diaphragm to see two beams and adjust both kinematic mirrors so that the beams overlap.
+  _Image_
+8. At this point you should see the interference ring-like pattern somewhere on the diaphragm. Align the center of the pattern to the center of the pinhole using the kinematic mirrors.
+  _Image_
+9. Insert the camera in a cube and replace the diaphragm cube with it. Check alignment again.
+  _Image_
 
 
 ## Experimental Data

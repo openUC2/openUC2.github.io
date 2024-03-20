@@ -8,14 +8,13 @@ title: UC2 miniBOX (english)
 ## What's in the MiniBOX?
 
 :::warning
-We have compiled this document into a ***PDF*** which can be downloaded <a href="/MINIBOX/Manual_Corebox_EM.pdf" target="_blank" >here</a>
+We have compiled this document into a ***PDF*** which can be downloaded <a href="/IMAGES/MINIBOX/Manual_Corebox_EM.pdf" target="_blank" >here</a>
 :::
 
 **Sample holder:** holds an object in a cube\
 **Lens:** affects the way light is propagated (spread out)\
 **Mirror:** Reflects the light\
 **Microscope objective:** a special lens system that enlarges an object
-
 
 ![](../IMAGES/MINIBOX/1.png)
 
@@ -69,9 +68,6 @@ Make sure that the cubes are placed correctly on the plate and are not tilted. I
 docs/01_Toolboxes/01_DiscoveryCore/IMAGES/MINIBOX/2.png
 ![](../IMAGES/MINIBOX/6.png)
 
-<p align="center">
-<img src="/MINIBOX/6.png" width="300"/>
-</p>
 
 If you don't see a sharp image, move the inserts (e.g. lens) until you see it clearly. The green arrow in the picture shows you how to do this.
 

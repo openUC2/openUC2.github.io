@@ -16,7 +16,7 @@ We have compiled this document into a ***PDF*** which can be downloaded <a href=
 **Mirror:** Reflects the light\
 **Microscope objective:** a special lens system that enlarges an object
 
-![](../IMAGES/MINIBOX/1.png)
+![](../IMAGES/MINIBOXNEW/5.png)
 
 A quick tour through an exemplary box and how the cubes look like (state Oct. 2022) can be found here:
 
@@ -98,4 +98,4 @@ Duration: 2
 
 Take one or more of the cubes that have a lens in them and look at the UC2 symbol shown here. Hold the cube in your hand and change the distance between the lens and the image.
 
-![](../IMAGES/MINIBOX/8.png)
+![](../IMAGES/MINIBOXNEW/11.png)

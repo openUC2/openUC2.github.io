@@ -13,48 +13,62 @@ neatly.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image3.png)
 
-## Galileo's telescope
+## Instructions for Galileo's telescope
 
 ![](../IMAGES/MINIBOXTUTORIAL/image5.gif)
 
-### Elements
+### Elements:
+
+
+- Four base plates.
+- 100 mm positive lens (in cube).
+- -50 mm negative lens (in cube).
 
 ![](../IMAGES/MINIBOXTUTORIAL/image125.png)
 
+### Diagram (side view):
+![](../IMAGES/MINIBOXTUTORIAL/image4.png)
+
 ### Instructions:
 
-**Step 1**
+**Step 1: Place the base plates on top**
 
 ![](../IMAGES/MINIBOXTUTORIAL/image19.png)
-Place one base plate on top of  each lens cube.
+Place one base plate on top of each lens cube.
 
-**Step 2**
+**Step 2: Place the base plates on the bottom**
 ![](../IMAGES/MINIBOXTUTORIAL/image52.png)
 Place one base plate on the bottom of each lens cube.
 
-**Step 3**
+**Step 3: Assemble the cubes**
 ![](../IMAGES/MINIBOXTUTORIAL/image18.png)
 Assemble the two cubes in such a way that the distance between the lenses' surfaces is the longest.
 
-**Step 4**
+**Step 4: Adjust the lenses' distance**
 ![](../IMAGES/MINIBOXTUTORIAL/image93.png)
 Adjust distance between negative and positive lens to the maximum possible.
 
-**Step 5**
+**Step 5: Use the telescope!**
 ![](../IMAGES/MINIBOXTUTORIAL/image117.png)
 Look for an object to the distance and use Galileo's telescope to look at it.
 
-## Kepler's Telescope
+## Instructions for Kepler's Telescope
 
 ![](../IMAGES/MINIBOXTUTORIAL/image75.gif)
 
-## Elements
+### Elements:
+
+- Eight base plates.
+- 100 mm positive lens (in cube).
+- 50 mm positive lens (in cube).
+- Two empty cubes.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image127.png)
+### Diagram (side view):
+
 ![](../IMAGES/MINIBOXTUTORIAL/image22.png)
 
-
-## Instructions for Light Microscope with Infinity Optics
+### Instructions:
 
 **Step 1: Align the cubes**
 
@@ -80,47 +94,61 @@ Look for an object to the distance and use Kepler's telescope to look at it.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image110.png)
 
-## Light Microscope with Infinity Optics
+## Instructions for the Light Microscope with Infinity Optics
 
 ### Elements:
 
+- Kepler's telescope.
+- Torch lamp.
+- Sample holder (in cube) with sample.
+
 ![](../IMAGES/MINIBOXTUTORIAL/image120.png)
+
+### Diagram (side view):
 ![](../IMAGES/MINIBOXTUTORIAL/image20.png)
 
-## Instructions for Light Microscope with Infinity Optics and Eyepiece
+### Instructions:
 
-**Step 1: Align the cubes**
+**Step 1: Add the sample**
 
-Align the cubes such that the two lenses lay at the extremes and the two empty cubes in the middle.
+Add the sample cube behind to the 50 mm positive lens. Don’t forget to add the base plates.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image24.png)
 
 **Step 2: Fix the cubes with base plates**
 
-Fix the cubes with the base plates placing them on top and on the bottom. Also, include an additional image as shown.
+Use the torch to illuminate the sample. Look for a screen (notebook, piece of paper) to project the image onto.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image6.png)
 ![](../IMAGES/MINIBOXTUTORIAL/image7.png)
 
 **Step 3: Adjust the distance**
 
-Adjust the distance between the lenses as shown in the images. Multiple images are included for clarity.
+Turn off ambient light to see the image on the screen clearly. Adjust the distance between the microscope and the screen until you see a sharp focused image (check the diagram).
 
 ![](../IMAGES/MINIBOXTUTORIAL/image87.png)
 ![](../IMAGES/MINIBOXTUTORIAL/image33.png)
 
-## Light Microscope with Infinity Optics and Eyepiece
+## Instructions for the Light Microscope with Infinity Optics and Eyepiece
 
 ### Elements:
 
+- Kepler's telescope.
+- Torch lamp.
+- Eight base plates.
+- Sample holder (in cube) with sample.
+- Mirror (in cube).
+- Empty cube.
+- Eyepiece (in cube).
+
 ![](../IMAGES/MINIBOXTUTORIAL/image126.png)
 
-### Diagram:
+### Diagram (side view):
 
 ![](../IMAGES/MINIBOXTUTORIAL/image64.png)
 
 
-## Instructions for Adding Sample-Holder and Assembling the Microscope
+### Instructions:
 
 **Step 1: Add the sample-holder cube**
 
@@ -142,20 +170,28 @@ Place the eyepiece on top of the mirror cube with the right orientation. Illumin
 
 **Step 5: Adjust for a sharp image**
 
-Look through the eyepiece. Adjust the lenses distance until you see a focused sharp image. Note: Adjust the slide's position if necessary.
+Look through the eyepiece. Adjust the lenses distance until you see a focused sharp image. Note: If you don’t see the specimen try to adjust the slide’s position carefully until you see the specimen.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image81.png)
 ![](../IMAGES/MINIBOXTUTORIAL/image31.png)
 
-## Light Microscope with Finite Optics and Eyepiece
+## Instructions for the Light Microscope with Finite Optics and Eyepiece
 
 ![](../IMAGES/MINIBOXTUTORIAL/image48.gif)
 
 ### Elements:
 
+- Microscope objective (4x) with gear mount (linear stage).
+- Torch lamp with lamp base.
+- Twelve base plates.
+- Sample holder (in cube) with sample.
+- Mirror (in cube).
+- Three empty cubes.
+- Eyepiece (in cube).
+
 ![](../IMAGES/MINIBOXTUTORIAL/image139.jpg)
 
-### Diagram:
+### Diagram (side view):
 
 ![](../IMAGES/MINIBOXTUTORIAL/image2.png)
 

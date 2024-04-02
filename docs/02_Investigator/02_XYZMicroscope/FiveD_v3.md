@@ -266,7 +266,7 @@ The motor (Nema12) with 200 steps/revolution runs with 16 microstepps and offers
 - `isabs`: absolute or relative motion
 - `isaccel`: for now, use only non-accelerated motion!
 
-### Inserting the Modules
+## Inserting the Modules
 
 This shows how the optics module have to be slided into the FiveD assembly. There is a series of groves, slides and accompanying spring-loaded mechanisms to keep the module in exactly one place. It is mechanically well defined. The way to slide it in is a bit involved, but worth it:
 

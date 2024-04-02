@@ -1,4 +1,4 @@
-# Firmware Callback Functionality Documentation
+# UC2-REST: Messaging
 
 This documentation covers the callback functionality integrated into the firmware, particularly focusing on the `Message` class. The `Message` class is designed to parse incoming messages from the ESP32, facilitating the conversion of hardware inputs and other events into software actions.
 

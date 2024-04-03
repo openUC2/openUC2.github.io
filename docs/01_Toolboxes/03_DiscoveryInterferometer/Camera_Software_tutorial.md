@@ -7,7 +7,7 @@ title: HIK-Camera Software Installation
 
 Camera model: MV-CE060-10UC. Visit the HIKROBOTICS website and download the MVS software suitable for your computer. Below are steps exemplifying the software installation for Mac.
 
-![](../IMAGES/MINIBOXTUTORIAL/image140.png)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image140.png)
 
 Install the downloaded file.
 

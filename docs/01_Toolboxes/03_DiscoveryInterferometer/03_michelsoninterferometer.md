@@ -73,11 +73,11 @@ Interference is a fundamental concept in wave physics, and the Michelson Interfe
 - Pinhole in cube
 - Screwdriver to adjust alignment (1,5x60)
 
-![](../IMAGES/MINIBOXTUTORIAL/image82.png)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image82.png)
 
 ### Diagram:
 
-![](../IMAGES/MINIBOXTUTORIAL/image36.png)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image36.png)
 
 ### Instructions for assembling the Michelson's Interferometer:
 
@@ -87,91 +87,91 @@ Build a four base plate as shown. This will be used to connect the laser diode, 
 
 *Note: At this point the laser diode should be turned off the whole time. Don't look at the laser directly. Always use screens to look for the laser light.*
 
-![](../IMAGES/MINIBOXTUTORIAL/image65.png)
-![](../IMAGES/MINIBOXTUTORIAL/image41.png)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image65.png)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image41.png)
 
 **Step 2: Place the pinhole**
 
 Place the pinhole such that it is as far as possible to the laser diode.
 
-![](../IMAGES/MINIBOXTUTORIAL/image37.png)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image37.png)
 
 **Step 3: Close the diaphragm**
 
 Close the diaphragm as much as possible to end up with a small hole.
 
-![](../IMAGES/MINIBOXTUTORIAL/image102.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image102.jpg)
 
 **Step 4: Place the screen and align the laser**
 
 Place the screen after the pinhole and turn the laser on. The alignment is most likely off. So to align the laser you should use the screwdriver and adjust the laser mount screws so that the beam is centered on the pinhole. Turn the laser off.
 
-![](../IMAGES/MINIBOXTUTORIAL/image123.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image108.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image94.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image123.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image108.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image94.jpg)
 
 **Step 5: Replace the pinhole with a kinematic mirror**
 
 Without touching the screws of the laser, remove the pinhole from the group of cubes and add a kinematic mirror instead.
 
-![](../IMAGES/MINIBOXTUTORIAL/image97.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image51.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image23.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image97.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image51.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image23.jpg)
 
 **Step 6: Align the beam with the pinhole**
 
 Using the top and bottom base plates, place the pinhole after the beamsplitter connecting the pinhole and the kinematic mirror in a straight line. Place the screen after the pinhole, turn the laser on and align the beam to the center of the pinhole as shown. Turn the laser off.
 
-![](../IMAGES/MINIBOXTUTORIAL/image60.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image35.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image73.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image60.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image35.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image73.jpg)
 
 **Step 7: Set the Michelson interferometer arms**
 
 Remove the pinhole and set other base plates as shown. These are the variable and reference arms of the Michelson interferometer. Place the reference and movable mirrors as shown. Place the pinhole in the detection spot. Fix everything with base plates.
 
-![](../IMAGES/MINIBOXTUTORIAL/image55.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image29.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image16.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image55.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image29.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image16.jpg)
 
 **Step 8: Align and observe the interference**
 
 Place the screen after the pinhole, turn the laser on. You will see two beam spots, one from each mirror. Adjust the movable mirror angles with the screwdriver so that you can see an improvement in brightness of one of the spots and look for the maximum.
 
-![](../IMAGES/MINIBOXTUTORIAL/image118.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image67.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image47.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image115.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image118.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image67.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image47.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image115.jpg)
 
 **Step 9: Adjust the reference mirror**
 
 Adjust the screws of the reference mirror so that the two beams overlap as much as possible.
 
-![](../IMAGES/MINIBOXTUTORIAL/image91.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image88.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image91.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image88.jpg)
 
 **Step 10: Observe the interference pattern**
 
 Remove the pinhole and place the screen only. You will see two extended beams. Adjust the reference mirror screws to overlap the beams perfectly. You will see the interference pattern emerging. Then try to center the pattern on the screen. Turn the laser off.
 
-![](../IMAGES/MINIBOXTUTORIAL/image66.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image43.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image122.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image66.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image43.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image122.jpg)
 
 **Step 11: Set up the camera**
 
 Place the camera and fix it with the base plates. Connect it to the computer and open the MV Software. To check the MVS tutorial click ([here](https://github.com/openUC2/openUC2.github.io/blob/master/docs/01_Toolboxes/01_DiscoveryCore/ENGLISH/Camera_Software_tutorial.md)).
 
-![](../IMAGES/MINIBOXTUTORIAL/image106.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image42.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image14.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image106.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image42.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image14.jpg)
 
 **Step 12: Adjust the camera exposure**
 
 Adjust the exposure time of the camera. You should see a fringe pattern. Try to adjust the reference mirror screws finely to bring the center of the interference pattern to the center of the camera.
 
-![](../IMAGES/MINIBOXTUTORIAL/image113.png)
-![](../IMAGES/MINIBOXTUTORIAL/image80.png)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image113.png)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image80.png)
 
 ## Experimental Data
 

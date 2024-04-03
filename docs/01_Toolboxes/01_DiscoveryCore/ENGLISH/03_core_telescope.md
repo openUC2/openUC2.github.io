@@ -230,4 +230,5 @@ The picture is
 * Magnified at the same magnification as the Keppler telescope
 * Upright
 * mirrored
+
 </div><br/>

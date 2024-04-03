@@ -56,6 +56,43 @@ As long as the object is in the focal plane of the lens and the screen is in the
 </div><br/>
 
 
+
+## Tutorial: Light Microscope with Infinity Optics
+
+### Materials needed:
+
+- Kepler's telescope
+- Torch lamp
+- Sample holder (in cube) with sample
+
+![](../IMAGES/MINIBOXTUTORIAL/image120.png)
+
+### Diagram (side view):
+![](../IMAGES/MINIBOXTUTORIAL/image20.png)
+
+### Instructions for assembling the Light Microscope with Infinity Optics:
+
+**Step 1: Add the sample**
+
+Add the sample cube behind to the 50 mm positive lens. Don’t forget to add the base plates.
+
+![](../IMAGES/MINIBOXTUTORIAL/image24.png)
+
+**Step 2: Fix the cubes with base plates**
+
+Use the torch to illuminate the sample. Look for a screen (notebook, piece of paper) to project the image onto.
+
+![](../IMAGES/MINIBOXTUTORIAL/image6.png)
+![](../IMAGES/MINIBOXTUTORIAL/image7.png)
+
+**Step 3: Adjust the distance**
+
+Turn off ambient light to see the image on the screen clearly. Adjust the distance between the microscope and the screen until you see a sharp focused image (check the diagram).
+
+![](../IMAGES/MINIBOXTUTORIAL/image87.png)
+![](../IMAGES/MINIBOXTUTORIAL/image33.png)
+
+
 ## "Infinity optics" microscope with eyepiece
 
 ![](../IMAGES/MINIBOXNEW/34.png)
@@ -110,6 +147,52 @@ An eyepiece is actually just a lens that enlarges the intermediate image. It map
 With the mirror you can not only see yourself, but also reflect the incoming light in any direction. So you can fold the optical path and make it more comfortable to work with. The mirror doesn't affect the magnification, but it does rotate the image in one direction.
 </div><br/>
 
+## Tutorial: Light Microscope with Infinity Optics and Eyepiece
+
+### Materials needed:
+
+- Kepler's telescope
+- Torch lamp
+- Eight base plates
+- Sample holder (in cube) with sample
+- Mirror (in cube)
+- Empty cube
+- Eyepiece (in cube)
+
+![](../IMAGES/MINIBOXTUTORIAL/image126.png)
+
+### Diagram (side view):
+
+![](../IMAGES/MINIBOXTUTORIAL/image64.png)
+
+
+### Instructions for assembling the Light Microscope with Infinity Optics and Eyepiece:
+
+**Step 1: Add the sample-holder cube**
+
+Add the sample-holder cube in the Kepler's telescope next to the 50 mm converging lens.
+
+![](../IMAGES/MINIBOXTUTORIAL/image12.png)
+
+**Step 2: Assemble next to the 100 mm lens**
+
+Next to the 100 mm converging lens, assemble one empty cube and the mirror cube next to it.
+
+![](../IMAGES/MINIBOXTUTORIAL/image45.png)
+
+**Step 3: Place the eyepiece**
+
+Place the eyepiece on top of the mirror cube with the right orientation. Illuminate the sample from a considerable distance.
+
+![](../IMAGES/MINIBOXTUTORIAL/image70.png)
+
+**Step 5: Adjust for a sharp image**
+
+Look through the eyepiece. Adjust the lenses distance until you see a focused sharp image. Note: If you don’t see the specimen try to adjust the slide’s position carefully until you see the specimen.
+
+![](../IMAGES/MINIBOXTUTORIAL/image81.png)
+![](../IMAGES/MINIBOXTUTORIAL/image31.png)
+
 
 ## Light microscope with "finite optics"
 
@@ -129,6 +212,78 @@ Do you see the image through the eyepiece as before? Can you find the real inter
 Turn the small gear on the lens holder. This is how you move or focus the lens. If you can't go any further, you can also move the lens in the holder.
 </div><br/>
 
+
+## Tutorial: Light Microscope with Finite Optics and Eyepiece
+
+![](../IMAGES/MINIBOXTUTORIAL/image48.gif)
+
+### Materials needed:
+
+- Microscope objective (4x) with gear mount (linear stage)
+- Torch lamp with lamp base
+- Twelve base plates
+- Sample holder (in cube) with sample
+- Mirror (in cube)
+- Three empty cubes
+- Eyepiece (in cube)
+
+![](../IMAGES/MINIBOXTUTORIAL/image139.jpg)
+
+### Diagram (side view):
+
+![](../IMAGES/MINIBOXTUTORIAL/image2.png)
+
+## Instructions for assembling the Light Microscope with Finite Optics:
+
+**Step 1: Connect the base plates**
+
+Connect the base plates in the following way.
+
+![](../IMAGES/MINIBOXTUTORIAL/image139.jpg)
+
+**Step 2: Place the sample**
+
+Place the sample on the leftmost plate.
+
+![](../IMAGES/MINIBOXTUTORIAL/image105.jpg)
+
+**Step 3: Build and place the cubes**
+
+Build a cube with the microscope objective inside and place both microscope objective and gear cubes in the next two base plates. Include all additional images as shown.
+
+**Sub Step 1:**
+![](../IMAGES/MINIBOXTUTORIAL/image58.jpg)
+
+**Sub Step 2:**
+![](../IMAGES/MINIBOXTUTORIAL/image63.jpg)
+
+**Sub Step 3:**
+![](../IMAGES/MINIBOXTUTORIAL/image86.jpg)
+
+**Step 4: Reflect the light**
+
+Place two empty cubes and the cube with the mirror at the last base plate such that it reflects the light coming from the sample upwards.
+
+![](../IMAGES/MINIBOXTUTORIAL/image128.jpg)
+
+**Step 5: Secure the cubes**
+
+Place the base plates on top of the cubes to fix them tightly.
+
+![](../IMAGES/MINIBOXTUTORIAL/image62.jpg)
+
+**Step 6: Attach the eyepiece**
+
+Place the eyepiece on top of the mirror cube. Mind the right orientation of the eyepiece.
+
+![](../IMAGES/MINIBOXTUTORIAL/image69.jpg)
+
+**Step 7: Illuminate the sample**
+
+Fix the lamp with a base and illuminate the sample from a considerable distance. Look through the eyepiece and adjust the microscope distance using the gear until you see a focused image of the specimen.
+
+![](../IMAGES/MINIBOXTUTORIAL/image61.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image92.png)
 
 
 ## "Finite optics" versus "Infinite optics"
@@ -231,7 +386,6 @@ Each eyepiece has a so-called Ramsden disc, which is the smallest diameter
 
 ## Smartphone microscope
 
-
 Build the smartphone microscope as shown. Use any two cubes here to safely place the smartphone.
 
 ![](../IMAGES/MINIBOXNEW/46.png)
@@ -247,6 +401,80 @@ Build the microscope like a sandwich by adding a second layer using a base plate
 <div class="alert info">
 Replace the Ramsden eyepiece with the 40mm lens. What is better for the eye and what for the smartphone?
 </div><br/>
+
+## Tutorial: Smartphone Microscope
+
+![](../IMAGES/MINIBOXTUTORIAL/image1.png)
+![](../IMAGES/MINIBOXTUTORIAL/image28.gif)
+
+### Materials needed:
+
+- Microscope objective 4x
+- Microscope objective long mount with gear
+- Ramsden-Eyepiece (in cube)
+- Two non-kinematic mirrors (in cubes)
+- Sample holder (in cube)
+- Three empty cubes
+- 11 base plates
+- Smartphone base plate
+- Torch lamp
+- 50 mm lens (in cube)
+
+![](../IMAGES/MINIBOXTUTORIAL/image38.jpg)
+
+### Diagram (Side view):
+
+![](../IMAGES/MINIBOXTUTORIAL/image98.png)
+
+## Instructions for assembling the Smartphone Microscope:
+
+**Step 1: Build a four-base plate line**
+
+![](../IMAGES/MINIBOXTUTORIAL/image49.jpg)
+
+**Step 2: Assemble the components**
+
+Place the Microscope objective mount on one extreme followed by the two mirrors facing each other and one empty cube in the other extreme. Fix them with base plates.
+
+![](../IMAGES/MINIBOXTUTORIAL/image103.jpg)
+
+**Step 3: Adjust the objective**
+
+Build one cube with the microscope objective inside. Adjust the objective's height if necessary by using the gear.
+
+![](../IMAGES/MINIBOXTUTORIAL/image68.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image100.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image34.jpg)
+
+**Step 4: Place the eyepiece**
+
+Place the eyepiece next to the microscope objective and one empty cube next to it. Mind the right orientation of the eyepiece.
+
+![](../IMAGES/MINIBOXTUTORIAL/image90.png)
+
+**Step 5: Align the smartphone base**
+
+Place the smartphone base with the hole aligned with the eyepiece. Note: You can adjust the orientation of the smartphone base to adapt your smartphone's size.
+
+![](../IMAGES/MINIBOXTUTORIAL/image95.png)
+
+**Step 6: Set up the sample holder**
+
+Place the sample holder cube on top of the microscope objective. Mind the distance between them. You can adjust the coarse distance by sliding the sample holder inside the cube and the finer distance by using the gear.
+
+![](../IMAGES/MINIBOXTUTORIAL/image46.jpg)
+
+**Step 7: Add the converging lens and lamp**
+
+Place a converging lens cube on top of the sample holder cube and place the torch lamp on top. Place the smartphone aligned to the eyepiece.
+
+![](../IMAGES/MINIBOXTUTORIAL/image1.png)
+
+**Step 8: Adjust for clarity**
+
+Try to move the smartphone such that the whole eyepiece circle appears illuminated. Then, turn the gear to focus and get a sharp image of the specimen.
+
+![](../IMAGES/MINIBOXTUTORIAL/image83.gif)
 
 
 

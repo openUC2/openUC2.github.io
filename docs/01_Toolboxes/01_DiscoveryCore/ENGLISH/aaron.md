@@ -4,54 +4,6 @@ title: Tutorial
 ---
 
 
-## How to check the focal distance of a positive lens?
-
-Use a light source, for example, the room's illumination source. Place
-the lens parallel to a table. change the distance from the lens to the
-table and find the height at which the source is imaged into the table
-neatly.
-
-![](../IMAGES/MINIBOXTUTORIAL/image3.png)
-
-## Instructions for Galileo's telescope
-
-![](../IMAGES/MINIBOXTUTORIAL/image5.gif)
-
-### Elements:
-
-
-- Four base plates.
-- 100 mm positive lens (in cube).
-- -50 mm negative lens (in cube).
-
-![](../IMAGES/MINIBOXTUTORIAL/image125.png)
-
-### Diagram (side view):
-![](../IMAGES/MINIBOXTUTORIAL/image4.png)
-
-### Instructions:
-
-**Step 1: Place the base plates on top**
-
-![](../IMAGES/MINIBOXTUTORIAL/image19.png)
-Place one base plate on top of each lens cube.
-
-**Step 2: Place the base plates on the bottom**
-![](../IMAGES/MINIBOXTUTORIAL/image52.png)
-Place one base plate on the bottom of each lens cube.
-
-**Step 3: Assemble the cubes**
-![](../IMAGES/MINIBOXTUTORIAL/image18.png)
-Assemble the two cubes in such a way that the distance between the lenses' surfaces is the longest.
-
-**Step 4: Adjust the lenses' distance**
-![](../IMAGES/MINIBOXTUTORIAL/image93.png)
-Adjust distance between negative and positive lens to the maximum possible.
-
-**Step 5: Use the telescope!**
-![](../IMAGES/MINIBOXTUTORIAL/image117.png)
-Look for an object to the distance and use Galileo's telescope to look at it.
-
 ## Instructions for Kepler's Telescope
 
 ![](../IMAGES/MINIBOXTUTORIAL/image75.gif)

@@ -62,6 +62,42 @@ The field of view is small.
 </div><br/>
 
 
+## Tutorial: Galileo's telescope
+
+![](../IMAGES/MINIBOXTUTORIAL/image5.gif)
+
+### Materials needed:
+- Four base plates
+- 100 mm positive lens (in cube)
+- -50 mm negative lens (in cube)
+
+![](../IMAGES/MINIBOXTUTORIAL/image125.png)
+
+### Diagram (side view):
+![](../IMAGES/MINIBOXTUTORIAL/image4.png)
+
+### Instructions for assembling Galileo's telescope:
+
+**Step 1: Place the base plates on top**
+
+![](../IMAGES/MINIBOXTUTORIAL/image19.png)
+Place one base plate on top of each lens cube.
+
+**Step 2: Place the base plates on the bottom**
+![](../IMAGES/MINIBOXTUTORIAL/image52.png)
+Place one base plate on the bottom of each lens cube.
+
+**Step 3: Assemble the cubes**
+![](../IMAGES/MINIBOXTUTORIAL/image18.png)
+Assemble the two cubes in such a way that the distance between the lenses' surfaces is the longest.
+
+**Step 4: Adjust the lenses' distance**
+![](../IMAGES/MINIBOXTUTORIAL/image93.png)
+Adjust distance between negative and positive lens to the maximum possible.
+
+**Step 5: Use the telescope!**
+![](../IMAGES/MINIBOXTUTORIAL/image117.png)
+Search for an object to the distance and use Galileo's telescope to look at it.
 
 
 ## What is a Kepler telescope?
@@ -112,6 +148,48 @@ larger than with the Galileo telescope.
 </div><br/>
 
 
+## Tutorial: Kepler's Telescope
+
+![](../IMAGES/MINIBOXTUTORIAL/image75.gif)
+
+### Materials needed:
+- Eight base plates
+- 100 mm positive lens (in cube)
+- 50 mm positive lens (in cube)
+- Two empty cubes
+
+![](../IMAGES/MINIBOXTUTORIAL/image127.png)
+### Diagram (side view):
+
+![](../IMAGES/MINIBOXTUTORIAL/image22.png)
+
+### Instructions for assembling Kepler's telescope:
+
+**Step 1: Align the cubes**
+
+Align the cubes such that the two lenses lay at the extremes and the two empty cubes in the middle.
+
+![](../IMAGES/MINIBOXTUTORIAL/image13.png)
+
+**Step 2: Fix the cubes with base plates**
+
+Fix the cubes with the base plates placing them on top and on the bottom.
+
+![](../IMAGES/MINIBOXTUTORIAL/image76.png)
+
+**Step 3: Adjust the distance**
+
+Adjust the distance between the lenses as shown in the image.
+
+![](../IMAGES/MINIBOXTUTORIAL/image59.png)
+
+**Step 4: Use Kepler's telescope**
+
+Look for an object to the distance and use Kepler's telescope to look at it.
+
+![](../IMAGES/MINIBOXTUTORIAL/image110.png)
+
+
 ## What is a spotting scope?
 
 
@@ -149,7 +227,8 @@ An upright image is necessary for terrestrial observations. True terrestrial tel
 <div class="alert-success">
 The picture is
 
-*Magnified at the same magnification as the Keppler telescope
-*Upright
-*mirrored
+* Magnified at the same magnification as the Keppler telescope
+* Upright
+* mirrored
+
 </div><br/>

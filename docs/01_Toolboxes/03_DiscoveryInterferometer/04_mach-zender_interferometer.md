@@ -19,7 +19,7 @@ title: Tutorial
 - Screwdriver to adjust alignment (1,5x60)
 - Two 100 mm converging lenses.
 
-![](../IMAGES/MINIBOXTUTORIAL/image111.jpg)
+![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image111.jpg)
 
 ### Instructions for assembling the Mach-Zender Interferometer:
 

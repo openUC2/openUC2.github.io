@@ -1,6 +1,6 @@
 ---
-id: picturedTutorial
-title: Tutorial
+id: MachZenderInterferometer
+title: openUC2 Mach-Zender Interferometer
 ---
 
 ## Tutorial: Mach-Zender Interferometer

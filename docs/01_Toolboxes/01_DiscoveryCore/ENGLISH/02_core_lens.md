@@ -249,3 +249,17 @@ For g = 65 mm → b = 104 mm\
 The projector always produces an enlarged, inverted (reversed) image.
 The position of the image and its magnification depend on the position and size of the object.
 </div><br/>
+
+## Tutorial: Determining the Focal Distance of a Positive Lens
+
+### Materials needed:
+- Light source (e.g., room's illumiation)
+- Positive lens
+- Screen (e.g. table, piece of paper, etc.)
+
+### Instructions:
+1. Position the positive lens so that it faces the light source. Align a screen parallel to the focal plane of the lens.
+2. Modify the distance between the lens and the screen.
+3. Carefully observe and record the position at which the light source forms a clear image on the surface of the screen.
+
+![](../IMAGES/MINIBOXTUTORIAL/image3.png)

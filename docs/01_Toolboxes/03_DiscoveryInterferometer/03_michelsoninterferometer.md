@@ -57,54 +57,121 @@ The Michelson Interferometer remains an essential tool in modern optics and has 
 Interference is a fundamental concept in wave physics, and the Michelson Interferometer is a classic optical device that exploits this phenomenon to make precise measurements. By understanding the principles of interference and the working of the Michelson Interferometer, we gain valuable insights into the nature of light and its behavior in different optical setups. It stands as a testament to the ingenuity of scientific instruments and continues to play a significant role in advancing our understanding of the physical world.
 
 
-### Assembly Steps
+## Tutorial: Michelson Interferometer
 
-We want to replicate the following setup:
+### Materials needed:
 
-![](./IMAGES/MichlesonInCubes.png)
+- Laser diode
+- Hikrobot Camera (MV-CE060-10UC) with USB cable
+- Stage with gear with mirror
+- Three kinematic mirrors (in cubes)
+- Beam splitter in cube
+- Sample holder (in cube)
+- One empty cube
+- 16 base plates
+- Screen
+- Pinhole in cube
+- Screwdriver to adjust alignment (1,5x60)
 
+![](../IMAGES/MINIBOXTUTORIAL/image82.png)
 
-1. Build the telescope using two lenses with different focal lengths to expand the laser beam. (Depending on the laser beam shape this step can be ignored)
+### Diagram:
 
-2. Use the beam splitter plate/cube to split the enlarged beam into two equal beams.
+![](../IMAGES/MINIBOXTUTORIAL/image36.png)
 
-3. Place mirrors at the end of each beam path and adjust their positions.
+### Instructions for assembling the Michelson's Interferometer:
 
-4. Position the camera or screen at the exit of the interferometer to observe the interference patterns.
+**Step 1: Build a four base plate**
 
-5. Cover one mirror path and adjust the other mirror so that the beam on the camera is in the center of the sensor.
+Build a four base plate as shown. This will be used to connect the laser diode, pinhole, the beamsplitter, and an empty cube. Add the base plates to fix them.
 
-6. Repeat step 5 for the other arm to align the reference and sample arms.
+*Note: At this point the laser diode should be turned off the whole time. Don't look at the laser directly. Always use screens to look for the laser light.*
 
-7. Remove the covers from both arms, and you should see interference patterns on the camera.
+![](../IMAGES/MINIBOXTUTORIAL/image65.png)
+![](../IMAGES/MINIBOXTUTORIAL/image41.png)
 
-8. Carefully align one of the mirrors to remove the interference patterns by turning the screws slightly.
+**Step 2: Place the pinhole**
 
-9. The Michelson Interferometer is now aligned and ready for use.
+Place the pinhole such that it is as far as possible to the laser diode.
 
-Aaron Proposal with bunch of details:
-*Note: After realizing the alignment of each element remember to turn off the Laser for safety!*
+![](../IMAGES/MINIBOXTUTORIAL/image37.png)
 
-1. Insert the Laser diode in two nested cubes.
-  _Image_
-2. Insert a diaphragm in a cube and connect it to the other two. Then, close the diaphragm until you get a pinhole and with the screws, align the Laser beam.
-  _Image_
-3. Remove the cube with the diaphragm, leave it aside for later use and in the same spot add the tilted kinematic mirror.
-  _Image_
-4. Place the rest of cubes to build one arm of the interferometer including the beamsplitter and instead of placing the Linear movable Mirror, place the diaphragm cube.
-  _Image_
-5. Align the Laser beam so that it hits the pinhole in the diaphragm center. After aligning replace the diaphragm cube with the Linear movable mirror.
-  _Image_
-6. Place the cubes to build the detection and reference arm of the interferometer with the kinematic mirror. Place the diaphragm cube in the detection arm end and use the screws of both kinematic mirrors if needed to make the two beams overlap as much as possible.
-  _Image_
+**Step 3: Close the diaphragm**
 
-7. Use a screen after the pinhole produced by the diaphragm to see two beams and adjust both kinematic mirrors so that the beams overlap.
-  _Image_
-8. At this point you should see the interference ring-like pattern somewhere on the diaphragm. Align the center of the pattern to the center of the pinhole using the kinematic mirrors.
-  _Image_
-9. Insert the camera in a cube and replace the diaphragm cube with it. Check alignment again.
-  _Image_
+Close the diaphragm as much as possible to end up with a small hole.
 
+![](../IMAGES/MINIBOXTUTORIAL/image102.jpg)
+
+**Step 4: Place the screen and align the laser**
+
+Place the screen after the pinhole and turn the laser on. The alignment is most likely off. So to align the laser you should use the screwdriver and adjust the laser mount screws so that the beam is centered on the pinhole. Turn the laser off.
+
+![](../IMAGES/MINIBOXTUTORIAL/image123.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image108.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image94.jpg)
+
+**Step 5: Replace the pinhole with a kinematic mirror**
+
+Without touching the screws of the laser, remove the pinhole from the group of cubes and add a kinematic mirror instead.
+
+![](../IMAGES/MINIBOXTUTORIAL/image97.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image51.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image23.jpg)
+
+**Step 6: Align the beam with the pinhole**
+
+Using the top and bottom base plates, place the pinhole after the beamsplitter connecting the pinhole and the kinematic mirror in a straight line. Place the screen after the pinhole, turn the laser on and align the beam to the center of the pinhole as shown. Turn the laser off.
+
+![](../IMAGES/MINIBOXTUTORIAL/image60.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image35.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image73.jpg)
+
+**Step 7: Set the Michelson interferometer arms**
+
+Remove the pinhole and set other base plates as shown. These are the variable and reference arms of the Michelson interferometer. Place the reference and movable mirrors as shown. Place the pinhole in the detection spot. Fix everything with base plates.
+
+![](../IMAGES/MINIBOXTUTORIAL/image55.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image29.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image16.jpg)
+
+**Step 8: Align and observe the interference**
+
+Place the screen after the pinhole, turn the laser on. You will see two beam spots, one from each mirror. Adjust the movable mirror angles with the screwdriver so that you can see an improvement in brightness of one of the spots and look for the maximum.
+
+![](../IMAGES/MINIBOXTUTORIAL/image118.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image67.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image47.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image115.jpg)
+
+**Step 9: Adjust the reference mirror**
+
+Adjust the screws of the reference mirror so that the two beams overlap as much as possible.
+
+![](../IMAGES/MINIBOXTUTORIAL/image91.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image88.jpg)
+
+**Step 10: Observe the interference pattern**
+
+Remove the pinhole and place the screen only. You will see two extended beams. Adjust the reference mirror screws to overlap the beams perfectly. You will see the interference pattern emerging. Then try to center the pattern on the screen. Turn the laser off.
+
+![](../IMAGES/MINIBOXTUTORIAL/image66.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image43.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image122.jpg)
+
+**Step 11: Set up the camera**
+
+Place the camera and fix it with the base plates. Connect it to the computer and open the MV Software. To check the MVS tutorial click here.
+
+![](../IMAGES/MINIBOXTUTORIAL/image106.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image42.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image14.jpg)
+
+**Step 12: Adjust the camera exposure**
+
+Adjust the exposure time of the camera. You should see a fringe pattern. Try to adjust the reference mirror screws finely to bring the center of the interference pattern to the center of the camera.
+
+![](../IMAGES/MINIBOXTUTORIAL/image113.png)
+![](../IMAGES/MINIBOXTUTORIAL/image80.png)
 
 ## Experimental Data
 
@@ -119,9 +186,6 @@ If you bring the two beams on top of each other, you will be able to observe the
 Using the ESP32 camera, we can quantify the motion of the beams and e.g. measure distances or angles.
 
 ![](./IMAGES/IMG_20230812_144857.jpg)
-
-
-
 
 
 ### Conclusion

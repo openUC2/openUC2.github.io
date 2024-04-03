@@ -148,6 +148,48 @@ larger than with the Galileo telescope.
 </div><br/>
 
 
+## Tutorial: Kepler's Telescope
+
+![](../IMAGES/MINIBOXTUTORIAL/image75.gif)
+
+### Materials needed:
+- Eight base plates
+- 100 mm positive lens (in cube)
+- 50 mm positive lens (in cube)
+- Two empty cubes
+
+![](../IMAGES/MINIBOXTUTORIAL/image127.png)
+### Diagram (side view):
+
+![](../IMAGES/MINIBOXTUTORIAL/image22.png)
+
+### Instructions for assembling Kepler's telescope:
+
+**Step 1: Align the cubes**
+
+Align the cubes such that the two lenses lay at the extremes and the two empty cubes in the middle.
+
+![](../IMAGES/MINIBOXTUTORIAL/image13.png)
+
+**Step 2: Fix the cubes with base plates**
+
+Fix the cubes with the base plates placing them on top and on the bottom.
+
+![](../IMAGES/MINIBOXTUTORIAL/image76.png)
+
+**Step 3: Adjust the distance**
+
+Adjust the distance between the lenses as shown in the image.
+
+![](../IMAGES/MINIBOXTUTORIAL/image59.png)
+
+**Step 4: Use Kepler's telescope**
+
+Look for an object to the distance and use Kepler's telescope to look at it.
+
+![](../IMAGES/MINIBOXTUTORIAL/image110.png)
+
+
 ## What is a spotting scope?
 
 

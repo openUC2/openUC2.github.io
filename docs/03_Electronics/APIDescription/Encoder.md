@@ -23,6 +23,13 @@ Feedback-loop in action:
 ![](./IMAGES/Encoder/as5311_3.jpeg)
 *First UC2 Prototype (more to come soon)*
 
+### Electronic interface
+
+How to wire the UC2 AS5311 board to the UC2_V3 board?
+![](./IMAGES/Encoder/encoderinterface.png)
+
+[Here](./IMAGES/Encoder/UC2_V3_schematics.pdf) are the ESP32 pins:
+![](./IMAGES/Encoder/image.png)
 
 ### Understanding the AS5311 Encoder
 

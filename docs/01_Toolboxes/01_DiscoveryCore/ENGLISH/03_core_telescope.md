@@ -185,7 +185,7 @@ An upright image is necessary for terrestrial observations. True terrestrial tel
 <div class="alert-success">
 The picture is
 
-*Magnified at the same magnification as the Keppler telescope
-*Upright
-*mirrored
+* Magnified at the same magnification as the Keppler telescope
+* Upright
+* mirrored
 </div><br/>

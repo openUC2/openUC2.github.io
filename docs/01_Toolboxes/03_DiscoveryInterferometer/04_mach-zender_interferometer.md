@@ -7,7 +7,7 @@ title: Tutorial
 
 ### Materials needed:
 - Laser diode
-- Hikrobot Camera (MV-CE060-10UC) with USB cable.
+- Hikrobot Camera (MV-CE060-10UC) with USB cable ([Hikrobot Camera Software installation](Camera_Software_tutorial.md)).
 - Small stage with gear.
 - Two kinematic mirrors (in cubes).
 - Two beam splitters in cube.

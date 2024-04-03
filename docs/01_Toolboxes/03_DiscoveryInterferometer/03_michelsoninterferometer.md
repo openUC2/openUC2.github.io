@@ -62,7 +62,7 @@ Interference is a fundamental concept in wave physics, and the Michelson Interfe
 ### Materials needed:
 
 - Laser diode
-- Hikrobot Camera (MV-CE060-10UC) with USB cable
+- Hikrobot Camera (MV-CE060-10UC) with USB cable ([Hikrobot Camera Software installation](https://github.com/openUC2/openUC2.github.io/blob/master/docs/01_Toolboxes/01_DiscoveryCore/ENGLISH/Camera_Software_tutorial.md))
 - Stage with gear with mirror
 - Three kinematic mirrors (in cubes)
 - Beam splitter in cube
@@ -160,7 +160,7 @@ Remove the pinhole and place the screen only. You will see two extended beams. A
 
 **Step 11: Set up the camera**
 
-Place the camera and fix it with the base plates. Connect it to the computer and open the MV Software. To check the MVS tutorial click here.
+Place the camera and fix it with the base plates. Connect it to the computer and open the MV Software. To check the MVS tutorial click ([here](https://github.com/openUC2/openUC2.github.io/blob/master/docs/01_Toolboxes/01_DiscoveryCore/ENGLISH/Camera_Software_tutorial.md)).
 
 ![](../IMAGES/MINIBOXTUTORIAL/image106.jpg)
 ![](../IMAGES/MINIBOXTUTORIAL/image42.jpg)

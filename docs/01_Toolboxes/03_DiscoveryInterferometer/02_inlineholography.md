@@ -19,6 +19,7 @@ Here you are going to learn:
 
 This is what you want to build now:
 
+![](./IMAGES/Inline_diagram.png)
 ![](./IMAGES/Application_Inline_Holographic_Microscopy_v3.png)
 
 

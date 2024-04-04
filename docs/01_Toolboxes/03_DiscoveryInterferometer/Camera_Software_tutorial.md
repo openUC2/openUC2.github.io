@@ -23,9 +23,13 @@ You should see the following window.
 
 ![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image44.png)
 
-Connect the camera. Refresh the USB line to detect the camera. Then, select the make-link button on the detected camera.
+Connect the camera. Refresh the USB line to detect the camera.
+
 ![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image71.png)
 ![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image53.png)
+
+Select the make-link button on the detected camera.
+
 ![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image136.png)
 
 The following window should be displayed.

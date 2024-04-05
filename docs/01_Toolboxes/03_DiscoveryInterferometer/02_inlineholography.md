@@ -219,7 +219,7 @@ Using the In-line Holography plug-in widget in ImSwitch we can refocus the sampl
 ![](./IMAGES/Set_up.png)
 ![](./IMAGES/Refocus.gif)
 
-The In-line holography experiment can also be produced with a laser source.
+The In-line holography experiment can also be produced with a laser source. In this version of the In-line holography setup, we use white light as source and we use filters to have quasi-monochromatic light illuminating the sample.
 
 #### ADDITIONAL Speach-to-text
 

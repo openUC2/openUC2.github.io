@@ -27,7 +27,7 @@ As you look through the telescope, adjust the distances between the components t
 
 A telescope is an optical instrument that makes distant objects appear many times closer or larger.
 
-The lens on the object side is called the lens.
+The lens on the object side is called the objective lens.
 
 ![](../IMAGES/MINIBOXNEW/23.png)
 

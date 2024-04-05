@@ -32,8 +32,10 @@ Differential Phase Contrast Microscopy is a Computational Imaging technique that
 
 ...
 Attach the LED array to the LED array base plate.
+
 ![](./IMAGES/LED_base.png)
 
 
 Congrats! You have created a DPC microscope!
+
 ![](./IMAGES/DPC_final_setup.png)

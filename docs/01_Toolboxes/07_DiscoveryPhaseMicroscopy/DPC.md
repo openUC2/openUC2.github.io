@@ -14,6 +14,7 @@ Differential Phase Contrast Microscopy is a Computational Imaging technique that
 
 - LED array
 - Hikrobot Camera (MV-CE060-10UC) with USB cable ([Hikrobot Camera Software installation](Camera_Software_tutorial.md))
+- ESP32 Module
 - Microscope Objective
 - Motorized Linear stage
 - Non-Kinematic Mirror

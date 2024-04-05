@@ -91,7 +91,7 @@ Turn off ambient light to see the image on the screen clearly. Adjust the distan
 
 ![](../IMAGES/MINIBOXTUTORIAL/image87.png)
 ![](../IMAGES/MINIBOXTUTORIAL/image33.png)
-![](../IMAGES/MINIBOXTUTORIAL/Microscope_infinity_optics.png)
+![](../IMAGES/MINIBOXTUTORIAL/Microscope_infinity_optics.gif)
 
 ## "Infinity optics" microscope with eyepiece
 

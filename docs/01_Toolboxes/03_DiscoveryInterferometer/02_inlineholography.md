@@ -212,10 +212,14 @@ https://youtu.be/CWXx0Dw-Jro
 * Get a sparse sample e.g. plankton on coverslip would be best, or just dust/sand/cheeck cells and try to acquire some holograms
 
 
+#### Refocusing using ImSwitch
 
+Using the In-line Holography plug-in widget in ImSwitch we can refocus the sample by using a propagator in reverse from the recorded hologram in real-time.
 
+![](./IMAGES/Set_up.png)
+![](./IMAGES/Refocus.gif)
 
-
+The In-line holography experiment can also be produced with a laser source.
 
 #### ADDITIONAL Speach-to-text
 

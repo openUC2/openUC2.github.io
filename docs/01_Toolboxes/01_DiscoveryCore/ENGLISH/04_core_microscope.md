@@ -91,7 +91,7 @@ Turn off ambient light to see the image on the screen clearly. Adjust the distan
 
 ![](../IMAGES/MINIBOXTUTORIAL/image87.png)
 ![](../IMAGES/MINIBOXTUTORIAL/image33.png)
-
+![](../IMAGES/MINIBOXTUTORIAL/Microscope_infinity_optics.gif)
 
 ## "Infinity optics" microscope with eyepiece
 
@@ -282,8 +282,7 @@ Place the eyepiece on top of the mirror cube. Mind the right orientation of the 
 
 Fix the lamp with a base and illuminate the sample from a considerable distance. Look through the eyepiece and adjust the microscope distance using the gear until you see a focused image of the specimen.
 
-![](../IMAGES/MINIBOXTUTORIAL/image61.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image92.png)
+![](../IMAGES/MINIBOXTUTORIAL/Finite_Optics_result.png)
 
 
 ## "Finite optics" versus "Infinite optics"

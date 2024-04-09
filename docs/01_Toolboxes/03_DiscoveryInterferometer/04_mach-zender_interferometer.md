@@ -80,6 +80,7 @@ Process the data. Phase unwrapping possible.
 
 ### First Tests with Modifications to the Original Setup
 
+
 Using Lei code, the need of a linear stage for the sample was identified. Adjusting the objective and tube lens enhances the interference, making it crucial to use the ImSwitch interface to see the FFT in real time and optimize. The final goal is to move the position of the first order interference to use Lei algorithm (or some Phase unwrapping algorithm) to retrieve the Phase. To achieve this, two images need to be acquired: a sample image and a background image (without a cover slide or a slide region with no specimen).
 
 ![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image133.png)

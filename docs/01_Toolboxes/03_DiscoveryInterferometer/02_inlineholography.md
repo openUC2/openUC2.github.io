@@ -19,6 +19,7 @@ Here you are going to learn:
 
 This is what you want to build now:
 
+![](./IMAGES/Inline_diagram.png)
 ![](./IMAGES/Application_Inline_Holographic_Microscopy_v3.png)
 
 
@@ -211,10 +212,14 @@ https://youtu.be/CWXx0Dw-Jro
 * Get a sparse sample e.g. plankton on coverslip would be best, or just dust/sand/cheeck cells and try to acquire some holograms
 
 
+#### Refocusing using ImSwitch
 
+Using the In-line Holography plug-in widget in ImSwitch we can refocus the sample by using a propagator in reverse from the recorded hologram in real-time.
 
+![](./IMAGES/Set_up.png)
+![](./IMAGES/Refocus.gif)
 
-
+The In-line holography experiment can also be produced with a laser source. In this version of the In-line holography setup, we use white light as source and we use filters to have quasi-monochromatic light illuminating the sample.
 
 #### ADDITIONAL Speach-to-text
 

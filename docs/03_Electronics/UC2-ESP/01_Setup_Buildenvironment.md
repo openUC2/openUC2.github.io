@@ -88,14 +88,14 @@ A new way to flash the firmware to the ESP32 is to use the open-source ESPHome W
 
 There you can select the board you have and flash the code. If the driver is properly installed, you simply select the port and hit `start`. The firmware will automatically be downloaded and flashed through the browser.
 
-<p align="center">
-<img src="./IMAGES/webtool.png" width="550">
-<br> This shows the gui to first select the board you have before the browser (chrome/edge) automatically flashes the firmware.
-</p>
+
+![](https://github.com/youseetoo/uc2-esp32/raw/main/IMAGES/webtool.png)
+*This shows the gui to first select the board you have before the browser (chrome/edge) automatically flashes the firmware.*
+
 
 # Additional information
 
-This is a fastly moving repo and the information may get outdated quickly. Please also check the relevant information in our [documentation](https://openuc2.github.io/docs/Electronics/)
+This is a fastly moving repo and the information may get outdated quickly. Please also check the relevant information in our [documentation](https://openuc2.github.io/docs/Electronics/uc2e1)
 
 
 # Information about the REST commands

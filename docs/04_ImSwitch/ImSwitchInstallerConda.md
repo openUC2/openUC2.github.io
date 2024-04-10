@@ -1,5 +1,5 @@
 ---
-id: ImSwitchInstaller
+id: ImSwitchInstallerConda
 title: Install ImSwitch using the ImSwitch Installer (CONDA INSTALLER OUTDATED)
 ---
 

@@ -1,106 +1,87 @@
 ---
 id: ImSwitchInstaller
-title: Install ImSwitch using the ImSwitch Installer
+title: Install ImSwitch using the ImSwitch Installer (CONDA INSTALLER OUTDATED)
 ---
 
+:::warn
+This is a work-in-progress installer. Please have a look for updates or file an issue here https://github.com/openUC2/ImSwitchInstaller/issues
+:::
 
-We created a customized conda installer for the ImSwitchUC2 package that is based on the open-source [conda constructor](https://github.com/conda/constructor/) project. All files to construct the package installer can be found in this repository https://github.com/beniroquai/ImSwitchInstaller
-
-
-## General concept
-
-We were seeking for a way to ship the latest version of ImSwitchUC2 as the simplest possible solution without using any command line hacks. Besides the PyInstaller Implementation that's still somewhere existent, we were looking for a nicer way in terms of shipping updates. The PyInstaller packages all the necessary libraries in one large ZIP file, but lacks the abbility to simply update it. A new version requires yet another >1GB file to be downloaded.
-Our solution works as follows:
-
-- A local conda environemnt is created called `ImSwitchopenUC2`
-- The installer will start `post_install` scripts that will:
-1. try to download and install the necessary usb drivers
-2. download the latest imswitch code and `pip install` it
-3. Create a double-clickable icon on the desktop to start ImSwitch
+# ImSwitch Installer
 
 
-## How to install?
+## Introduction
 
-So far, we only have a windows installer, but for mac and linux it should work equally well. Ping us, if you need this :)
+The ImSwitch Installer is an Electron-based application designed to streamline the installation process of the ImSwitch environment. It automates the download and setup of a Mamba environment along with all necessary dependencies from GitHub via pip. This tool simplifies the installation process, reducing it to a few clicks and eliminating the need for executing multiple complex commands.
 
+## Installation Process
 
-1. Download the latest exectuable here: https://github.com/beniroquai/ImSwitchInstaller
+The following youtube video shows you how to install ImSwitch using the installer. 
+[![IMAGE ALT TEXT HERE](https://i3.ytimg.com/vi/N4P1sH2E9RU/maxresdefault.jpg)](https://www.youtube.com/watch?v=N4P1sH2E9RU?si=jyhAzLshAbg26YHu)
 
-![](./IMAGES/installer_0.PNG)
+## Features
 
-2. Double click on the installer and go through the process
+- **Easy Installation:** Downloads and installs all necessary dependencies automatically.
+- **Cross-Platform Support:** Available for ARM64 and Intel-based Mac, Windows, and Linux systems.
+- **Simple Uninstallation:** Remove by deleting the ImSwitch folder.
+- **Security:** Instructions provided for bypassing system security warnings due to unsigned code.
+- **Update Mechanism:** Integrated update functionality to easily fetch the latest versions.
 
-![](./IMAGES/installer_1.PNG)
+## Requirements
 
-3. Agree to the license terms (yet a placeholder, text has to be updated..)
+- **Disk Space:** Minimum of 5GB.
+- **Memory:** 8GB RAM.
+- **Processor:** Intel i5 or Apple Silicon.
 
-![](./IMAGES/installer_2.PNG)
+## Installation Guide
 
-4. Install for me, which does not yet require admin rights
-![](./IMAGES/installer_3.PNG)
+1. **Download the Installer:** Choose the appropriate installer (ARM64 for Mac, Windows) from the [releases section](https://github.com/openUC2/ImSwitchInstaller/releases/).
+2. **Run the Installer:** Double-click the downloaded file. Ignore any security warnings as the installer is not yet signed.
+   - For macOS, follow [Apple's guide](https://support.apple.com/en-us/HT202491) for running unsigned code.
+   - On Windows, grant permission to run the application.
+3. **Installation Process:** The installer will set up a Python environment using Mamba in `/User/yourname/ImSwitch` and install all dependencies. This process may take between 10 to 30 minutes depending on your internet connection.
+4. **Starting ImSwitch:** Once installed, launch ImSwitch by executing `start imswitch`.
 
-5. Choose a path to install the conda environment to (Hint: path should not exceed 40 digits)
+![Installation Screen 1](./assets/Screen1.png)
+![Installation Screen 2](./assets/Screen2.png)
 
-![](./IMAGES/installer_4.PNG)
+## Updating ImSwitch
 
-6. Proceed
+To update, click the update button within the application. This will download the latest ZIP from GitHub, unzip it, and execute `pip install -e .` within the Mamba base environment.
 
-![](./IMAGES/installer_5.PNG)
+## Driver Installation
 
-7. Wait until the packages are installed
+Drivers for Daheng and HIK Vision cameras can be found under the "Driver Installation" link provided within the installer.
 
-![](./IMAGES/installer_6.PNG)
+## Upcoming Features
 
-8. A command prompt will appear and ask you for granting admin rights; Here a python script tries to download and install the silabs USB UART drivers for the ESP32
-![](./IMAGES/installer_7.PNG)
+- Flashing the latest version of the UC2 firmware.
+- Building the ImSwitch Hardware Configuration using a drag-and-drop GUI.
 
-9. The installation will tell you if the installation process scussful
+## Install from Source
 
-![](./IMAGES/installer_8.PNG)
+For those interested in building from source:
 
-10. In the next steps, all necessary packages in the environemnt for ImSwitch will be downloaded and installed
+```bash
+# Clone the repository
+git clone https://github.com/openuc2/imswitchinstaller.git
 
-![](./IMAGES/installer_9.PNG)
+# Install dependencies (skip if you already have yarn)
+npm install
 
-11. The installer informs you once it's done
-
-![](./IMAGES/installer_10.PNG)
-
-12. Once everything has been installed, the installer tells you it'S done
-
-![](./IMAGES/installer_11.PNG)
-
-13. Exit the installer by hitting finish
-
-![](./IMAGES/installer_12.PNG)
-
-14. On the desktop a new icon has been created to start the ImSwitch software. Double click and wait until the windows shows up
-![](./IMAGES/installer_13.PNG)
-
-
-## Trouble shoot
-
-The conda installer installs your environment in the location that you have selected previously. To find out, you can open a command line window by hiting the keys WIN+r and type "cmd" and enter. Then enter
-
-```
-conda env list
+# Run the Electron app
+npm start
 ```
 
-The name `imswitchopenuc2` should appear. You can activate this python environemnt by typing
+## Debugging
 
-```
-conda activate imswitchopenuc2
-```
+### Python Environment Locations
 
-If this works successfully, you can start imswitch by typing
-
-```
-imswitch
-```
-
-
-
+- **Windows Installation Path:** `C:\Users\UCadmin2\ImSwitch\miniforge\condabin`
+- **Python Executable:** `C:\\Users\\UCadmin2\\ImSwitch\\miniforge\\python.exe`
+- **ImSwitch Package Location:** `C:\\Users\\UCadmin2\\ImSwitch\\miniforge\\lib\\site-packages\\imswitch\\__init__.py'`
+- **Conda Environment** `/Users/ImSwitch/miniforge/condabin/mamba install devbio-napari -c conda-forge`
 
 # Disclaimer
 
-This is still very early stage and may have errors. **Exepect Errors**  Feel free to file any issues in our repository  or write us a mail. :)
+This installer is based on the BellJar project. Thanks a lot for making it open-source! :)

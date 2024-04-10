@@ -42,8 +42,8 @@ The following youtube video shows you how to install ImSwitch using the installe
 3. **Installation Process:** The installer will set up a Python environment using Mamba in `/User/yourname/ImSwitch` and install all dependencies. This process may take between 10 to 30 minutes depending on your internet connection.
 4. **Starting ImSwitch:** Once installed, launch ImSwitch by executing `start imswitch`.
 https://camo.githubusercontent.com/d12b826a278a7dcb877c8524a22cc3408b82883a27edc9464f865b7d5403e6ef/68747470733a2f2f69332e7974696d672e636f6d2f76692f4e345031734832453952552f6d617872657364656661756c742e6a7067
-![Installation Screen 1]([./assets/Screen1.png](https://raw.githubusercontent.com/openUC2/ImSwitchInstaller/main/assets/icons/Screen1.png))
-![Installation Screen 2]([./assets/Screen2.png](https://raw.githubusercontent.com/openUC2/ImSwitchInstaller/main/assets/icons/Screen2.png))
+![Installation Screen 1](https://raw.githubusercontent.com/openUC2/ImSwitchInstaller/main/assets/icons/Screen1.png)
+![Installation Screen 2](https://raw.githubusercontent.com/openUC2/ImSwitchInstaller/main/assets/icons/Screen2.png)
 
 ## Updating ImSwitch
 

@@ -1,6 +1,6 @@
 ---
 id: ImSwitchInstaller
-title: Install ImSwitch using the ImSwitch Installer (CONDA INSTALLER OUTDATED)
+title: Install ImSwitch using the ImSwitch Installer (Electron updated Version)
 ---
 
 :::warn

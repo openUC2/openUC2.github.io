@@ -289,6 +289,13 @@ This shows how the optics module have to be slided into the FiveD assembly. Ther
 *Final position. All fixed balls in their "pin yokes" and both spring balls press the optics module against them*.
 
 
+### Final result
+
+
+![](./IMAGES/fiveDv3/moduleinsertation/IMG_20240305_132109.jpg)
+
+![](./IMAGES/fiveDv3/moduleinsertation/IMG_20240305_132114.jpg)
+
 
 ## Safety
 

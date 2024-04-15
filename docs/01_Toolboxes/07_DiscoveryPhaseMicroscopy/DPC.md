@@ -59,7 +59,7 @@ Insert the non-kinematic mirror and the linear stage accordingly. Then, place th
 ![](./IMAGES/DPC_setup_step_2.jpg)
 
 **Substep 3**
-Finally on top place the led array cube with the dispersive element (diffuser). You can add a second pile of cubes next to the microscope objective to give more support and make the a more stable setup.
+Finally, on top, place the led array cube with the dispersive element (diffuser). You can add a second pile of cubes next to the microscope objective to give more support and make the a more stable setup.
 
 ![](./IMAGES/DPC_setup_step_3.jpg)
 ![](./IMAGES/Support_cubes.jpg)

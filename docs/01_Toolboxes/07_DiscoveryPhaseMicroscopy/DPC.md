@@ -59,6 +59,7 @@ Mount the LED array into the LED array base plate and insert it in a cube as sho
 **Substep 1**
 
 Build the camera module as shown. It comprises of a tube lens and a Hikrobot Camera. Adjust the screw which binds the camera to the camera base plate to get the right distance between the camera and the tube lens.
+![](./IMAGES/Camera_module.jpg)
 ![](./IMAGES/DPC_setup_step_1.jpg)
 
 **Substep 2**

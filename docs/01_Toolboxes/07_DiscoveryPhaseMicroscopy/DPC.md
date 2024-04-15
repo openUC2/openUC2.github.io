@@ -10,6 +10,9 @@ Differential Phase Contrast Microscopy is a Computational Imaging technique that
 ### The role of the diffuser
 A diffuser is a dispersive element that changes the path of light in a random way resulting in a continuous illumination source instead of a sum of discrete sources.
 
+![](./IMAGES/LED_nodiff.jpg)
+![](./IMAGES/LED_diff.jpg)
+
 Imaging we are doing a DPC experiment and we illuminate the sample with half-circle illumination. We compute the WOTF and PTF of the system. In Figure a) one can see what happens to the information in Fourier space. The discrete source causes phase jumps (non-smooth) transitions between different frequency regions reaching to the camera. If we add a diffuser we get the source to be more continuous-like which in turn makes the WOTF and hence the PTF smoother as shown in Figure b).
 
 ![](./IMAGES/Diffuser_effect.png)
@@ -83,6 +86,7 @@ Turn the LEDs on using Imswitch  and focus on the sample. Be careful if your sam
 Once you have focused on the sample remove the sample and take the Flatfield images (Sequence of images with the DPC patterns with no sample). Then insert the sample again, adjust the desired FoV. Now you are set. Click _Start_ on the DPC widget!
 
 Congrats! You have created a DPC microscope with OpenUC2!
+
 ![](./IMAGES/DPC_final_setup.png)
 
 ## DPC Images

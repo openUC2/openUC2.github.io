@@ -6,18 +6,6 @@ title: Differential Phase Contrast Microscopy
 # Differential Phase Contrast
 
 Differential Phase Contrast Microscopy is a Computational Imaging technique that uses partial coherent sources to illuminate a sample at various angles. The angle determines the illumination NA which contributes to the final resolution due to the oblique illumination.
-...
-### The role of the diffuser
-A diffuser is a dispersive element that changes the path of light in a random way resulting in a continuous illumination source instead of a sum of discrete sources.
-
-![](./IMAGES/LED_nodiff.jpg)
-![](./IMAGES/LED_diff.jpg)
-
-Imaging we are doing a DPC experiment and we illuminate the sample with half-circle illumination. We compute the WOTF and PTF of the system. In Figure a) one can see what happens to the information in Fourier space. The discrete source causes phase jumps (non-smooth) transitions between different frequency regions reaching to the camera. If we add a diffuser we get the source to be more continuous-like which in turn makes the WOTF and hence the PTF smoother as shown in Figure b).
-
-![](./IMAGES/Diffuser_effect.png)
-
-The diffuser also gets rid of coherent artifacts that are still present when illuminating with discrete sources. (We approximate each single LED as a point source)
 
 ## Tutorial: DPC setup
 

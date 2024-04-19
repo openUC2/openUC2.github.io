@@ -83,4 +83,4 @@ Using the reconstruction algorithm we can retrieve the phase of the sample.
 
 First test with the OpenUC2-DPC setup:
 
-![](./IMAGES/Reconstruction-ANIMATION.gif)
+![](./IMAGES/Brightfield_test_cells_10x0.25-ANIMATION.gif)

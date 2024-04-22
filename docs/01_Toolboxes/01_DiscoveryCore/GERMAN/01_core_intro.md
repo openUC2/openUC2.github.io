@@ -4,7 +4,7 @@ title: Introduction
 ---
 
 :::warning
-Wir haben die Anleitung in einem  ***PDF*** zusammengefasst. Es kann  <a href="/MINIBOX/Manual_Corebox_EM.pdf" target="_blank" >hier</a> heruntergeladen werden.
+Wir haben die Anleitung in einem  ***PDF*** zusammengefasst. Es kann  <a href="/MINIBOX/Manual_Corebox_DE.pdf" target="_blank" >hier</a> heruntergeladen werden.
 
 **Update**: Das OpenUC2 Projekt befindet sich in einer steten Entwicklungsphase. Es kann daher sein, dass einige der Anleitungen nicht mehr zu den tatsächlichen Komonenten in der Kiste passen. Wir bemühen uns sehr die Kompatibilität bis zur allerletzten Version aufrecht zu halten. Meldet euch gerne wenn ihr Fragen habt oder postet einen [**ISSUE**](https://github.com/openUC2/openuc2.github.io/issues), falls ihr Fragen habt!
 :::

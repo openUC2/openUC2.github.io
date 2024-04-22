@@ -1,302 +1,210 @@
 ---
-id: CoreLinse
+id: CoreLens
 title: Linse
 ---
 
-## Was kann eine Linse?
-
-
-Nimm einen oder mehrere der Würfel in denen eine Linse steckt und schaue dir das hier abgebildet UC2 Symbol dadurch an. Halte den Würfel dabei in der Hand und verändere den Abstand zwischen der Linse und dem Bild.  
-
-
-<p align="center">
-<img src="/MINIBOX/8.png" width="300"/>
-</p>
-
-
 ## Linsen
 
+In der Strahlenoptik wird Licht als Bündel von Strahlen (Pfeilen) dargestellt, was die physikalischen Eigenschaften des Lichts vereinfacht. Ein Strahl hat eine Richtung und wird daher mit einem Pfeil gezeichnet. Eine Linse „bricht“ den Strahl und ändert dessen Richtung.
 
-In der Strahlenoptik wird das Licht als Strahlenbündel (Pfeile) dargestellt, was eine Vereinfachung der physikalischen Eigenschaften von Licht mit sich bringt.  Ein Strahl hat eine Richtung und wird daher mit einem Pfeil gezeichnet. Eine Linse „bricht“ denn Strahl und ändert so seine Richtung.
+Die **Brennweite** einer Linse entspricht der Entfernung von der Linse zur Brennebene, auf der der Brennpunkt liegt. Sie wird in Millimetern angegeben (f = mm).
 
-Die **Brennweite** einer Linse entspricht hier der Distanz von der Linse zur Brennebene, auf der der Brennpunkt liegt. Sie wird in Millimeter angegeben (f = mm).
+### Sammellinsen (positiv) und Zerstreuungslinsen (negativ)
 
-### Sammellinsen
+![](../IMAGES/MINIBOXNEW/12.png)
 
-<p align="center">
-<img src="/MINIBOX/9.png" width="400"/>
-</p>
+Sammellinsen brechen die Lichtstrahlen, die parallel zur optischen Achse verlaufen, in einem Punkt, der Brennpunkt genannt wird.
 
-<p align="center">
-<img src="/MINIBOX/11.png" width="400"/>
-</p>
-
-Sammellinsen brechen die Lichtstrahlen, die parallel zur optische Achse laufen, in einem Punkt, der Brennpunkt gennant wird.
-
-
-### Zerstreuungslinsen
-
-<p align="center">
-<img src="/MINIBOX/10.png" width="400"/>
-</p>
-
-<p align="center">
-<img src="/MINIBOX/12.png" width="400"/>
-</p>
-
-Die Zerstreuungslinsen brechen die Lichtstrahlen, die parallel zur optische Achse laufen, als würden einem Punkt entspringen, der „virtuellen“ Brennpunkt gennant wird.
-
-
+Die Zerstreuungslinsen brechen die Lichtstrahlen, die parallel zur optischen Achse verlaufen, so, als ob sie von einem Punkt, dem „virtuellen“ Brennpunkt, ausgingen.
 
 ## Linsen „brechen“ die Lichtstrahlen
 
+Sie können die Brennweite der Linse als aufgedruckte Zahl am Linsenhalter finden. Die MiniBOX erhält eine 100mm Sammellinse, zwei 40mm Sammellinsen und eine -50mm negative Linse. Die Zahlen geben die Brennweite an.
 
-Die Brennweite der Linse findest du als eine gedruckte Nummer auf den Linsenhaltern. Bie MiniBOX/CoreBOX erhält eine 100-mm-Sammellinse, zwei 40-mm-Sammellinse und eine -50-mm-Zersteruungslinse. Die Zahlen geben die Brennweite an.
-
-Die Sammellinse heißt auch positive oder konvexe Linse. Der mittlere Teil der Linse ist immer dicker als der Rand.
-
-<div class="alert-success">
-Mit der Sammellinse wird das Bild vergrößert. Die Vergrößerung ist für die 40-mm-Linse und die 100-mm-Linse unterschiedlich.  Das Bild kann aufrecht oder umgekehrt sein.
-</div><br/>
-
-Die Zerstreuungslinse (Streulinse) heißt manchmal auch negative oder konkave Linse. Der mittlere Teil der Linse ist immer dünner als der Rand.
+Die Sammellinse wird auch positive oder konvexe Linse genannt. Der mittlere Teil der Linse ist immer dicker als der Rand.
 
 <div class="alert-success">
-Mit der Zerstreuungslinse (hier: -50-mm-Linse) ist das Bild immer verkleinert und immer aufrecht
+Die Sammellinse vergrößert das Bild. Die Vergrößerung unterscheidet sich zwischen der 40mm Linse und der 100mm Linse. Das Bild kann aufrecht oder invertiert sein.
 </div><br/>
 
-Wir gehen davon aus, dass unsere Linsen so genannte "dünne Linsen" sind. Das bedeutet, dass wir sie als eine Ebene betrachten können und uns nicht um ihre Dicke kümmern. Das macht Erklärungen und Berechnungen viel einfacher.
+Die negative Linse (Streulinse) wird manchmal auch negative oder konkave Linse genannt. Der mittlere Teil der Linse ist immer dünner als der Rand.
 
-<div class="alert-info">
-Haben die Antworten noch mehr Fragen aufgeworfen? Dann fahre, um herauszufinden, wie genau Linsen funktionieren…
+<div class="alert-success">
+Mit der negativen Linse (hier: -50 mm Linse) wird das Bild immer verkleinert und immer aufrecht dargestellt.
 </div><br/>
 
+Wir gehen davon aus, dass unsere Linsen sogenannte „dünne Linsen“ sind. Das bedeutet, dass wir sie als eine Ebene betrachten können und uns nicht um ihre Dicke kümmern müssen. Das macht Erklärungen und Berechnungen viel einfacher.
 
-## Linsen- Abbildung
+<div class="alert info">
+Haben die Antworten weitere Fragen aufgeworfen? Dann fahren Sie fort, um genau zu verstehen, wie Linsen funktionieren...
+</div><br/>
 
+## Linsenbild
 
-Nimm jetzt die Linsen-Würfel zur Hand. Versuche, mit der passenden Linse die jeweilige Angabe über Brennweite in den abgebildeten Würfeln zu entziffern. Bewege die Linse über der Schrift bis sie die gleiche Größe hat wie der Text "UC2".
+Nehmen Sie jetzt die Linsenwürfel. Versuchen Sie mit der richtigen Linse, die Brennweiteninformation in den Würfeln zu entziffern. Bewegen Sie die Linse über die Schrift, bis sie dieselbe Größe wie der Text "UC2" hat.
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_0.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXNEW/13.png)
 
-<div class="alert-info">
-Kannst du den Text in der gleichen Größe und Ausrichtung wie das "UC2" sehen? Was passiert, wenn du den Abstand zwischen der Linse und dem Bild veränderst?
+<div class="alert info">
+Können Sie den Text in derselben Größe und Ausrichtung wie das "UC2" sehen? Was passiert, wenn Sie den Abstand zwischen Linse und Bild ändern?
 </div><br/>
 
 <div class="alert-success">
-Was passiert, wenn du eine Linse mit der falschen Brennweite verwendest?
+Was passiert, wenn Sie eine Linse mit der falschen Brennweite verwenden?
 </div><br/>
 
+## Bild eines Objekts durch eine positive Linse
 
+![](../IMAGES/MINIBOXNEW/14.png)
 
+Nehmen wir die Sammellinse als Beispiel. Wir starten mit einem Objekt (grüner Pfeil) und sehen, was mit den Strahlen passiert, die von der Spitze ausgehen. Es gibt unendlich viele Strahlen in alle Richtungen, aber für die Zeichnung der Figur reichen die folgenden drei Strahlen aus:
 
-## Abbildung eines Gegenstandes durch eine positive Linse
+1. Der **Zentralstrahl** (orange) passiert ungestört das Zentrum der Linse.
+2. Der **Fokusstrahl** (gelb) startet ebenfalls von der Spitze des Pfeils, geht aber durch den objektseitigen Fokus bei Brennweite f. Nach der Linse geht er in gleicher Höhe, aber jetzt parallel zur optischen Achse weiter.
+3. Der **Parallelstrahl** (rot) verläuft zunächst parallel zur optischen Achse, wird dann aber an
 
+ der Linse so gebrochen, dass er durch den bildseitigen Brennpunkt bei Brennweite f verläuft.
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_2.png" width="800"/>
-</p>
+Das Bild entsteht dort, wo alle Strahlen sich schneiden. Dieses Prinzip wird für alle Punkte oder die von ihnen ausgehenden Strahlen eines Objekts verwendet. Je nach verwendeter Linse und Position des Objekts ändern sich die Eigenschaften des Bildes, wie Größe, Orientierung und Position.
 
+## Bild eines Objekts durch eine negative Linse
 
-Als Beispiel nehmen wir die Sammellinse. Wir starten mit einem Gegenstand (grüner Pfeil) und schauen, was mit den Strahlen passiert, die von der Spitze aus starten. Es gibt unendlich viele Strahlen in alle Richtung, für das Zeichnen der Abbildung reichen uns aber die drei folgenden Strahlen:
+Im Fall der negativen Linse verwenden wir dieselbe Methode, um den Strahlengang abzubilden. Anders als bei der Sammellinse ist das Bild immer verkleinert und virtuell. Die Vergrößerung hängt von der Position des Objekts vor der Linse ab. Anders als bei der Sammellinse wird das Bild auf der Objektseite erzeugt und daher als virtuelles Bild bezeichnet. Sie können es direkt mit Ihren Augen sehen, aber nicht auf einen Bildschirm projizieren.
 
-1. Der **Mittelpunktstrahl** (orange) geht ungestört durch das Zentrum der Linse.
-2. Der **Brennpunktstrahl** (gelb) startet auch von der Spitze des Pfeils, geht aber durch den objektseitigen Brennpunkt in der Brennweite f. Nach der Linse verläuft er auf gleicher Höhe weiter, aber nun parallel zur optischen Achse.
-3. Der **Parallelstrahl** (rot) läuft zunächst parallel zur optischen Achse, wird dann aber an der Linse so gebrochen, dass er durch den bildseitigen Brennpunkt in der Brennweite f verläuft.
-
-Das Bild entsteht dort, wo sich alle Strahlen schneiden. Das Prinzip macht man für alle Punkte bzw. die davon ausgehenden Strahlen eines Objekts. Je nach dem, welche Linse benutzt wird und je nach Position des Objekts verändern sich die Eigenschaften des Bildes, die Große, Orientierung und Position.
-
-
-## Abbildung eines Gegenstandes durch eine negative Linse
-
-
-Im Fall der Zerstreuungslinse benutzen wir die gleiche Methode, um den Strahlengang abzubilden. Anders als im Fall der Sammellinse ist das Bild immer verkleinert und virtuell. Die Vergrößerung ist von der Position des Gegenstands vor der Linse abhängig. Anders als bei der Sammellinse entsteht das Bild auf der Objektseite und heißt damit virtuelles Bild. Du kannst es direkt mit deinen Augen sehen aber nicht auf einen Bildschirm projizieren.
-
-<p align="center">  
-<img src="/MINIBOX/UC2_minibox_3.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXNEW/15.png)
 
 <div class="alert-success">
-Die Art und Weise, wie eine Linse ein Bild erzeugt, ist vorhersehbar, wenn man die Brennweite dieser Linse kennt. Deshalb muss ein bestimter Abstand eingehalten werden, damit du die Schrift mit derangegebenen Linse auf dem vorhergehenden Blatt erkennst.
+Die Art, wie eine Linse ein Bild erzeugt, ist vorhersehbar, wenn man die Brennweite dieser Linse kennt. Daher muss ein bestimmter Abstand eingehalten werden, damit Sie die Schrift mit der angegebenen Linse auf dem vorherigen Blatt sehen können.
 </div><br/>
 
 <div class="alert-success">
-Die Vergrößerung und der Ort, an dem das Bild entsteht, hängen von der Brennweite der Linse und vom Abstand zwischen Linse und Objekt ab.
+Die Vergrößerung und der Ort, an dem das Bild entsteht, hängen von der Brennweite der Linse und dem Abstand zwischen Linse und Objekt ab.
 </div><br/>
 
 <div class="alert-success">
-Mit der Zerstreuungslinse (f = -50 mm) siehst du  immer ein verkleinertes virtuelles Bild. Ein virtuelles Bild kann nur mit dem Auge betrachtet werden. Bislang haben wir nur virtuelle
-Bilder gesehen.
+Mit der Zerstreuungslinse (f = -50 mm) sehen Sie immer ein verkleinertes virtuelles Bild. Ein virtuelles Bild kann nur mit dem Auge betrachtet werden. Bisher haben wir nur virtuelle Bilder gesehen.
 </div><br/>
-
 
 ## Die Sammellinse als Lupe
 
-Nimm den UC2 Linsen-Würfel mit der Brennweite f = 40 mm und benutze ihn als eine Lupe.
+Nehmen Sie den UC2-Linsenwürfel mit einer Brennweite von f=40mm und verwenden Sie ihn als Lupe.
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_4.png" width="400"/>
-</p>
+![](../IMAGES/MINIBOXNEW/16.png)
 
-<div class="alert-info">
-Kannst du durch die Sammellinse die kleine Buchstaben lesen? Was steht dort geschrieben?  
+<div class="alert info">
+Können Sie die kleinen Buchstaben durch die Sammellinse lesen? Was steht dort?
 </div><br/>
 
-Eine Sammellinse in Aktion (Englisch) wird hier gezeigt:
+Eine Linse in Aktion finden Sie hier:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rCtZjRKU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rCtZjRKU8" title="YouTube-Video-Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Das machen Sammellinsen
 
+Mit den Sammellinsen hängen Bild und Vergrößerung von der Position des Objekts ab.
 
-Mit die Sammellinsen hängt die Abbildung und die Vergrößerung von der Position des Gegenstands ab.
+![](../IMAGES/MINIBOXNEW/17.png)
 
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_5.png" width="800"/>
-</p>
-
-Wenn der Abstand zwischen Objekt und Linse mehr als dem doppelten der Brennweite der Linse entspricht, dann ist das Bild …
+Wenn der Abstand zwischen Objekt und Linse mehr als das Doppelte der Brennweite der Linse beträgt, dann ist das Bild...
 - Umgekehrt
-- Seitenvertauscht
+- Seitlich getauscht
 - Verkleinert
-- Reell
+- Real
 
-
-Wenn der Abstand zwischen Objekt und Linse genau der doppelten der Brennweite der Linse entspricht, dann ist das Bild…
+Wenn der Abstand zwischen Objekt und Linse genau das Doppelte der Brennweite der Linse beträgt, dann ist das Bild...
 - Umgekehrt
-- Seitenvertauscht
-- Gleich groß
-- Reell
+- Seitlich getauscht
+- Gleiche Größe
+- Real
 
-Wenn der Abstand zwischen Objekt und Linse mehr als die Brennweite und weniger als dem doppelten der Brennweite der Linse entspricht, dann ist das Bild ist…
+Wenn der Abstand zwischen Objekt und Linse mehr als die Brennweite und weniger als das Doppelte der Brennweite der Linse beträgt, dann ist das Bild...
 - Umgekehrt
-- Seitenvertauscht
+- Seitlich getauscht
 - Vergrößert
-- Reell
+- Real
 
-### Gegenstandsweite (g)
+### Objektabstand (g)
 Der Abstand zwischen dem Objekt und der Linsenebene wird als g bezeichnet.
 
 ### Bildweite (b)
-Der Abstand zwischen der Linsenebene und dem von der Linse erzeugten Bild wird als b bezeichnet.
+Der Abstand zwischen der Linsenebene und dem durch die Linse gebildeten Bild wird als b bezeichnet.
 
-Die Sammellinse kann ein reelles Bild erzeugen. Das reelle Bild sieht man dann auf einem Bildschirm.
+Die Sammellinse kann ein reales Bild erzeugen. Das reale Bild kann dann auf einem Schirm gesehen werden.
 
-
-
-## Darum vergrößert die Lupe
-
+## Deshalb vergrößert die Lupe
 
 ### Lupeneffekt!
 
-
-Wenn der Abstand zwischen Objekt und Linse weniger als der Brennweite der Linse entspricht, dann ist das Bild ist…
+Wenn der Abstand zwischen dem Objekt und der Linse weniger als die Brennweite der Linse beträgt, dann ist das Bild...
 - Aufrecht
-- Seitenrichtig
+- Richtig herum
 - Vergrößert
 - Virtuell
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_6.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXNEW/18.png)
 
 <div class="alert-success">
-Die Lupe ist das einfachste aller optischen Geräte, denn es bloß aus einer einfachen Sammellinse mit passender Brennweite besteht. Warum vergrößert der Würfel mit der 50𝑚𝑚 den kleinen Text? Befindet sich das Objekt vor der Brennweite der Linse – also weniger als 50 𝑚𝑚 vor der Linse – erzeugt die Linse ein virtuelles Bild, welches hinter dem eigentlichen Objekt liegt. Das Auge nimmt es vergrößert wahr. Schau dir dazu das Diagramm oben an.
+Die Lupe ist das einfachste aller optischen
+
+ Geräte, da sie nur aus einer einfachen Sammellinse mit geeigneter Brennweite besteht. Warum vergrößert der Würfel mit 50 𝑚𝑚 den kleinen Text? Wenn das Objekt vor der Brennweite der Linse liegt – also weniger als 50 𝑚𝑚 vor der Linse – erzeugt die Linse ein virtuelles Bild, das hinter dem eigentlichen Objekt liegt. Das Auge nimmt es vergrößert wahr. Schauen Sie sich das obenstehende Diagramm an.
 </div><br/>
 
-Berechne die Vergrößerung der Lupe mit der folgenden Formel:
+Berechnen Sie die Vergrößerung der Lupe mit der folgenden Formel:
 
+![](../IMAGES/MINIBOX/UC2_minibox_7.png)
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_7.png" width="200"/>
-</p>
-
-250 𝑚𝑚 ist die Entfernung der deutlichen Sehweite – also der Abstand zwischen Objekt und Auge bei dem die meisten Menschen gut lesen können. Mehr dazu später in der „Akkommodation“ des Auges.
-
-
+250 𝑚𝑚 ist der Abstand der klaren Sehweite – d. h. der Abstand zwischen dem Objekt und dem Auge, bei dem die meisten Menschen gut lesen können. Mehr dazu später bei der „Akkommodation“ des Auges.
 
 ## Wie funktioniert ein Kinoprojektor?
 
+Nehmen Sie den UC2-Linsenwürfel mit einer Brennweite von 𝑓 =40 𝑚𝑚 und platzieren Sie ihn hinter dem Probenhalterwürfel. Der Abstand zwischen dem Objekt und der Linse (also der Objektabstand g) sollte ca. 50 mm betragen. Wenn Sie das Objekt jetzt mit der Taschenlampe beleuchten, sehen Sie es in etwa 200 mm Entfernung scharf an der Wand. Ein Kinoprojektor hat anstelle des Objekts einen Filmstreifen und natürlich eine viel stärkere Lichtquelle.
 
-
-Nimm dir den UC2-Linsenwürfel mit der Brennweite 𝑓=40𝑚𝑚 und platziere ihn hinter den Probenhalterwürfel. Der Abstand zwischen dem Objekt und der Linse (also die Gegenstandsweite g) sollte ca. 50 mm entsprechen. Wenn du nun mit der Taschenlampe das Objekt beleuchtest, wirst du es in einem Abstand von ca. 200 mm auf der Wand scharf sehen. Ein Kinoprojektor hat statt des Objekts einen Filmstreifen und natürlich eine viel stärkere Lichtquelle.
-
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_8.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXNEW/19.png)
 
 <div class="alert-success">
-Benutz eine Taschenlampe (z.b. von deinem Handy) als Lichtquelle und halt es vor das Objekt
+Verwenden Sie eine Taschenlampe (z. B. von Ihrem Handy) als Lichtquelle und halten Sie sie vor das Objekt
 </div><br/>
 
 <div class="alert-success">
-Benutz das Bild oder den Text an dem Mikroskop-Objektträger als das Objekt
+Verwenden Sie das Bild oder den Text auf dem Mikroskopobjektträger als Objekt
 </div><br/>
 
-<div class="alert-info">
-Wie ist das Bild orientiert?
-Schiebe die Linse in dem Würfel hin und her und beobachte, wann das Bild scharf ist. Finde das Bild für g = 50 mm, 60 mm, 65 mm und messe den Abstand zwischen der Linse und dem Bild.  
+<div class="alert info">
+Wie ist das Bild ausgerichtet?
+Schieben Sie die Linse hin und her im Würfel und sehen Sie, wann das Bild scharf ist. Finden Sie das Bild für g = 50mm, 60mm, 65mm und messen Sie den Abstand zwischen der Linse und dem Bild.
 </div><br/>
-
-
 
 ## Wie funktioniert ein Kinoprojektor?
 
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_9.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXNEW/20.png)
 
 ### Wo ist das Bild?
-Bei der Abbildung eines Gegenstands durch eine Sammellinse hängen Lage und Größe des Bildes von der Entfernung (g) des Gegenstands zur Linse und von deren Brennweite (f) ab.
-Die Linsengleichung beschreibt den Zusammenhang zwischen der Bildweite (b) und Objektweite (g):
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_10.png" width="150"/>
-</p>
+Wenn ein Objekt durch eine Sammellinse abgebildet wird, hängen Position und Größe des Bildes von der Entfernung (g) des Objekts zur Linse und deren Brennweite (f) ab.
+Die Linsengleichung beschreibt die Beziehung zwischen Bildweite (b) und Objektabstand (g):
+![](../IMAGES/MINIBOX/UC2_minibox_10.png)
 
 ### Wie groß ist das Bild?
-Die Vergrößerung des Objekts auf dem Schirm lässt sich einfach mit der folgenden Formel ausrechnen:
+Die Vergrößerung des Objekts auf der Leinwand kann einfach mit der folgenden Formel berechnet werden:
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_11.png" width="150"/>
-</p>
+![](../IMAGES/MINIBOX/UC2_minibox_11.png)
 
+## Wie der Projektor funktioniert
 
+![](../IMAGES/MINIBOX/UC2_minibox_9.png)
 
+Überprüfen Sie, ob Ihre Beobachtung mit der Berechnung übereinstimmt
 
-## So funktioniert der Projektor
+![](../IMAGES/MINIBOX/UC2_minibox_12.png)
 
+Berechnen Sie die Vergrößerung des Projektors für die verschiedenen Werte von g und b.
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_9.png" width="800"/>
-</p>
-
-
-Prüfe, ob deine Beobachtung mit der Berechnung übereinstimmt
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_12.png" width="150"/>
-</p>
-
-Berechne die Vergrößerung des Projektors für die verschiedenen Werte von  g und b.
-
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_13.png" width="150"/>
-</p>
+![](../IMAGES/MINIBOX/UC2_minibox_13.png)
 
 <div class="alert-success">
 
 Unsere Linse hat eine Brennweite von f= 40 mm.
 
-Für g = 50 mm → b = 200 mm
+Für g = 50mm → b = 200mm
 
 Für g = 60 mm → b = 120 mm\
 
@@ -304,6 +212,22 @@ Für g = 65 mm → b = 104 mm\
 </div><br/>
 
 <div class="alert-success">
-Der Projektor erzeugt immer ein vergrößertes, invertiertes (umgekehrtes)  Bild.
-Die Position des Bildes und seine Vergrößerung hängen von der Position und der Größe des Objekts ab.
+Der Projektor erzeugt immer ein vergrößertes, invertiertes (umgekehrtes) Bild.
+Die Position des Bildes und seine Vergrößerung hängen von der Position und Größe des Objekts ab.
 </div><br/>
+
+## Tutorial: Bestimmung der Brennweite einer positiven Linse
+
+### Benötigte Materialien:
+- Lichtquelle (z. B. Raumbeleuchtung)
+- Positive Linse
+- Schirm (z
+
+. B. Tisch, Stück Papier usw.)
+
+### Anleitung:
+1. Positionieren Sie die positive Linse so, dass sie der Lichtquelle zugewandt ist. Richten Sie einen Schirm parallel zur Brennebene der Linse aus.
+2. Ändern Sie den Abstand zwischen Linse und Schirm.
+3. Beobachten und dokumentieren Sie sorgfältig die Position, an der die Lichtquelle ein klares Bild auf der Oberfläche des Schirms bildet.
+
+![](../IMAGES/MINIBOXTUTORIAL/image3.png)

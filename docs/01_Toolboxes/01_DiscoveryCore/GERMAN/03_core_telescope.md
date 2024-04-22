@@ -5,8 +5,7 @@ title: Teleskop
 
 ## Was ist ein Galilei-Fernrohr?
 
-
-Stell die Linsen-Würfel auf das Blatt, wie in dem Diagramm gezeigt und schaure dann durch das Fernrohr in die Ferne.
+Stelle die Linsen-Würfel auf das Blatt, wie im Diagramm gezeigt, und schaue dann durch das Fernrohr in die Ferne.
 
 <div class="alert-info">
 Wie sieht das Bild aus?
@@ -17,18 +16,13 @@ Wie ist das Bild orientiert?
 <img src="/MINIBOX/UC2_minibox_15.png" width="800"/>
 </p>
 
-
 <div class="alert-success">
-Während du durch das Fernrohr schauest, passe die Abstände zwischen den Komponenten an, um ein scharfes Bild zu sehen!
+Während du durch das Fernrohr schaust, passe die Abstände zwischen den Komponenten an, um ein scharfes Bild zu sehen!
 </div><br/>
-
-
 
 ## Das ist ein Galilei-Fernrohr
 
-
 Ein Fernrohr ist ein optisches Instrument, das entfernte Objekte um ein Vielfaches näher oder größer erscheinen lässt.
-
 
 Die Linse auf der Objektseite nennt man Objektiv.
 
@@ -36,19 +30,15 @@ Die Linse auf der Objektseite nennt man Objektiv.
 <img src="/MINIBOX/UC2_minibox_16.png" width="800"/>
 </p>
 
-Die Linse, die dem Auge zugewandt ist nennt man Okular.
+Die Linse, die dem Auge zugewandt ist, nennt man Okular.
 
 Das Galilei-Fernrohr wird auch in Operngläsern verwendet.
-
 
 <p align="center">
 <img src="/MINIBOX/UC2_minibox_17.png" width="800"/>
 </p>
 
-
 ## So funktioniert das Galilei-Fernrohr
-
-
 
 Wie lautet die Vergrößerung dieses Galilei-Fernrohrs?
 
@@ -62,9 +52,7 @@ Formel zur Berechnung der Vergrößerung
 <img src="/MINIBOX/UC2_minibox_19.png" width="150"/>
 </p>
 
-
-
-Mit diesem Fernrohr kann man keine sehr hohe Vergrößerung erreiche. Dafür ist es sehr kompakt.
+Mit diesem Fernrohr kann man keine sehr hohe Vergrößerung erreichen. Dafür ist es sehr kompakt.
 
 <div class="alert-success">
 Das Bild ist immer
@@ -76,13 +64,9 @@ Das Bild ist immer
 Das Sichtfeld ist klein.
 </div><br/>
 
-
-
-
 ## Was ist ein Kepler-Fernrohr?
 
-
-Stell die Linsen in die richtige Positionen, wie in dem Diagramm gezeigt. Dann schaue durch das Fernrohr in die Ferne.
+Stelle die Linsen in die richtigen Positionen, wie im Diagramm gezeigt. Dann schaue durch das Fernrohr in die Ferne.
 
 <p align="center">
 <img src="/MINIBOX/UC2_minibox_20.png" width="800"/>
@@ -94,17 +78,14 @@ Wie ist das Bild orientiert?
 </div><br/>
 
 <div class="alert-success">
-Während du durch das Fernrohr schauest, variiere die Abstände zwischen den Komponenten um so ein scharfes Bild zu sehen!
+Während du durch das Fernrohr schaust, variiere die Abstände zwischen den Komponenten, um ein scharfes Bild zu sehen!
 </div><br/>
 
 <p align="center">
 <img src="/MINIBOX/UC2_minibox_21.png" width="800"/>
 </p>
 
-
 ## Das ist ein Kepler-Fernrohr
-
-
 
 <p align="center">
 <img src="/MINIBOX/UC2_minibox_22.png" width="800"/>
@@ -112,14 +93,9 @@ Während du durch das Fernrohr schauest, variiere die Abstände zwischen den Kom
 
 Diese Art von Fernrohr wird häufig in der Astronomie benutzt.
 
-
-
 ## So funktioniert das Kepler-Fernrohr
 
-
 Was ist die Vergrößerung dieses Kepler-Fernrohrs?
-
-
 
 <p align="center">
 <img src="/MINIBOX/UC2_minibox_24.png" width="800"/>
@@ -136,28 +112,22 @@ Dieses Teleskop kann eine höhere Vergrößerung als das Galilei-Fernrohr erreic
 <div class="alert-success">
 Das Bild ist immer
 
-* Vergrößert mit der Vergrößerung aus der obiger Formel
+* Vergrößert mit der Vergrößerung aus obiger Formel
 * Umgekehrt
-* Seitenvertauschet
+* Seitenvertauscht
 
-Das Sichtfeld ist
-größer als beim Galilei-Fernrohr.
+Das Sichtfeld ist größer als beim Galilei-Fernrohr.
 </div><br/>
 
-
-Das Video zeigt das justieren eines Teleskops
+Das Video zeigt das Justieren eines Teleskops
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Jp3uU7wly64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-
-
 ## Was ist ein Beobachtungsfernrohr?
 
+Das Beobachtungsfernrohr ist lang, deshalb ist das Schema
 
-Das Beobachtungsfernrohr ist lang, deshalb ist das Schema nicht gleichgroß.
-Stell die Linsen in die richtige Positionen wie im Diagramm dargestellt und schaue durch das Fernrohr in die Ferne.
-
+ nicht gleichgroß. Stelle die Linsen in die richtigen Positionen wie im Diagramm dargestellt und schaue durch das Fernrohr in die Ferne.
 
 <p align="center">
 <img src="/MINIBOX/UC2_minibox_25.png" width="800"/>
@@ -172,14 +142,10 @@ Wie sieht das Bild hier aus im Vergleich zum Kepler-Fernrohr?
 </div><br/>
 
 <div class="alert-success">
-Während du durch das Fernrohr schauest, passe die Abstände zwischen den Komponenten an, um ein scharfes Bild zu sehen!
+Während du durch das Fernrohr schaust, passe die Abstände zwischen den Komponenten an, um ein scharfes Bild zu sehen!
 </div><br/>
 
-
-
-
 ## So funktioniert das Beobachtungsfernrohr
-
 
 Die Vergrößerung ist wie die des Kepler-Fernrohrs. Die Umkehrlinse verändert nur die Orientierung (das Bild wird umgekehrt), nicht die Vergrößerung.
 
@@ -192,7 +158,7 @@ Für terrestrische Beobachtungen ist ein aufrechtes Bild notwendig. Echte terres
 <div class="alert-success">
 Das Bild ist
 
-*Vergrößert mit der gleichen Vergrößerung wie mit dem Keppler Fernrohr
-*Aufrecht
-*Seitenrichtig
+* Vergrößert mit der gleichen Vergrößerung wie mit dem Kepler-Fernrohr
+* Aufrecht
+* Seitenrichtig
 </div><br/>

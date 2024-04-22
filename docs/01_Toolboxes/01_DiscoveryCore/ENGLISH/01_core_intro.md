@@ -8,7 +8,7 @@ title: UC2 miniBOX (english)
 ## What's in the MiniBOX?
 
 :::warning
-We have compiled this document into a ***PDF*** which can be downloaded <a href="MINIBOX/Manual_Corebox_EM.pdf" target="_blank" >here</a>
+We have compiled this document into a ***PDF*** which can be downloaded <a href="/MINIBOX/Manual_Corebox_EM.pdf" target="_blank" >here</a>
 :::
 
 **Sample holder:** holds an object in a cube\

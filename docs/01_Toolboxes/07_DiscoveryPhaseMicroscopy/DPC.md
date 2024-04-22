@@ -5,21 +5,27 @@ title: Differential Phase Contrast Microscopy
 
 # Differential Phase Contrast
 
-Differential Phase Contrast Microscopy is a Computational Imaging technique that uses partial coherent sources to illuminate a sample at various angles. The angle determines the illumination NA which contributes to the final resolution due to the oblique illumination.
+Differential Phase Contrast Microscopy is a Computational Microscopy technique that uses partial coherent sources to illuminate a sample at various angles (oblique illumination). The angle determines the illumination NA which contributes to the final resolution. Throughout this tutorial we are going to revise the theory and implementation of DPC using OpenUC2! The tutorial will explain how to build your own DPC setup and we provide with the reconstruction algorithm given the physical parameters (based on Waller's Lab reconstruction algorithm).
+
+
+## Weak Object Transfer Function
+
+## Condenser lens
 
 ## Tutorial: DPC setup
 
 ### Materials needed:
 
-- LED array
+- LED array (4x4)
 - Hikrobot Camera (MV-CE060-10UC) with USB cable ([Hikrobot Camera Software installation](Camera_Software_tutorial.md))
 - ESP32 Module
-- Microscope Objective
+- XYZ sample mount stage
+- Microscope Objective (0.25 _NA_ x10 )
 - Motorized Linear stage
 - Non-Kinematic Mirror
-- Sample holder (in cube)
-- One empty cube
-- 11 base plates
+- Positive lens with 50 mm focal length
+- Five empty cubes
+- 15 base plates
 - Tube lens (with camera adapter)
 
 ![](./IMAGES/DPC_setup.png)
@@ -48,30 +54,41 @@ Mount the LED array into the LED array base plate and insert it in a cube as sho
 
 Build the camera module as shown. It comprises of a tube lens and a Hikrobot Camera. Adjust the screw which binds the camera to the camera base plate to get the right distance between the camera and the tube lens.
 ![](./IMAGES/Camera_module.jpg)
-![](./IMAGES/DPC_setup_step_1.jpg)
+
 
 **Substep 2**
 
-Insert the non-kinematic mirror and the linear stage accordingly. Then, place the microscope objective and in the same cube insert a sample holder.
-![](./IMAGES/DPC_setup_step_2.jpg)
+Insert the non-kinematic mirror, the microscope objective in the fixed mount and the XYZ stage accordingly.
+![](./IMAGES/DPC_setup_step_1.jpg)
+
 
 **Substep 3**
 
-Finally, on top, place the led array cube. You can add a second pile of cubes next to the microscope objective to give more support and make the a more stable setup.
+Build the illumination module which comprises of the LED array and the condenser lens as shown.
 
-![](./IMAGES/Support_cubes.jpg)
+![](./IMAGES/DPC_setup_step_2.jpg)
+
+**Substep 4**
+
+Finally, on top of the module built in substep 2 add the illimination module.
+
+![](./IMAGES/DPC_setup_step_3.jpg)
 
 **Step 4: Adjust the Source-sample distance**
 
-Using the microscope objective _NA_ and the LED geometry, calculate the distance required from the LED array to the sample. This will determine the illumination _NA_. Use the ruler and adjust the distance moving the sample holder towards the LED array or viceversa. (Revise the theory to calculate the distance correctly according to the match illumination condition).
+First, adjust the distance between the LED array and the condenser lens by placing them a focal distance (_f_ = 50 mm) apart. This assures the plane wave illumination. Then, adjust the XYZ to the central positions. Adjust the Microscope objective position so that it matches roughly the working distance.
+
 
 **Step 5: Focus on the sample**
 
-Turn the LEDs on using Imswitch  and focus on the sample. Be careful if your sample is too transparent, there is a high probability of crashing the objective with the sample! Mind the working distance of your microscope objective. To focus you can use oblique illumination (one LED or one half-circle). This enables some phase gradients to show in the intensity images.
+ Use Imswitch to turn one of the central LEDs, place a test sample to focus on it by coarse moving the microscope objective and finely tuning the height using the XYZ stage. Once it is in focus, adjust the distance from the condenser to the sample to be the focal length (_f_ = 50 mm).  In this geometry the LED array dimensions are near the match illumination condition. Hence, some LEDs illuminate at the objective _NA_ (_NAi_ = _NAobj_).
+
+*Note:* If your sample is transparent be careful not to crash the sample with the microscope objective! For more information about this experimental setup look at: [3D differential phase-contrast microscopy with computational illumination using an LED array](http://dx.doi.org/10.1364/OL.39.001326).
+
 
 **Step 6: Run the ImDPC experiment!**
 
-Once you have focused on the sample remove the sample and take the Flatfield images (Sequence of images with the DPC patterns with no sample). Then insert the sample again, adjust the desired FoV. Now you are set. Click _Start_ on the DPC widget!
+Once you have focused on the sample, adjust the desired FoV. Now you are set. Click _Start_ on the DPC widget!
 
 Congrats! You have created a DPC microscope with OpenUC2!
 
@@ -86,3 +103,7 @@ First test with the OpenUC2-DPC setup:
 ![](./IMAGES/Brightfield_test_cells_10x0.25-ANIMATION.gif)
 
 In the animation you can compare the contrast that we can get with brightfield illumination and the DPC reconstruction generated by the four images taken with the half circle illumination.
+
+## Reconstruction algorithm (Waller-Lab)
+
+The reconstruction algorithm works with the development of the Weak Object Transfer Function (WOTF). Using the code implemented by Waller ([Waller-Lab/DPC](https://github.com/Waller-Lab/DPC)), we are able to reconstruct the absorption and phase of the samples. Here we explain each step and implementation of the code using Imswitch.

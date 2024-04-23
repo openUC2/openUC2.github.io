@@ -156,9 +156,12 @@ Die Vergrößerung ist wie die des Kepler-Fernrohrs. Die Umkehrlinse verändert 
 Für terrestrische Beobachtungen ist ein aufrechtes Bild notwendig. Echte terrestrische Teleskope verwenden Prismensysteme, um das Bild zu drehen und kompakt zu halten.
 
 <div class="alert-success">
-Das Bild ist
+Das Bild ist 
 
 * Vergrößert mit der gleichen Vergrößerung wie mit dem Kepler-Fernrohr
 * Aufrecht
 * Seitenrichtig
+
+Das Sichtfeld ist klein.
 </div><br/>
+

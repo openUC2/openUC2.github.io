@@ -7,4 +7,4 @@ Here you can find all information to enhance, repair, improve, use, communicate,
 
 |   |  Topic |Description |
 |---|---|---|
-| <img src="./static/img/icons/icon_geometric.png" style="width: 30%; height: auto;"> | Geometrical Optics [[EN](./01_Toolboxes/01_DiscoveryCore/ENGLISH/01_core_intro.md), [DE](./01_Toolboxes/01_DiscoveryCore/GERMAN/01_core_intro.md)] ||
+| <img src="/img/icons/icon_geometric.png" style="width: 30%; height: auto;"> | Geometrical Optics [[EN](./01_Toolboxes/01_DiscoveryCore/ENGLISH/01_core_intro.md), [DE](./01_Toolboxes/01_DiscoveryCore/GERMAN/01_core_intro.md)] ||

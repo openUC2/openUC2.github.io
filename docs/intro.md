@@ -5,16 +5,60 @@ Here you can find all information to enhance, repair, improve, use, communicate,
 
 
 
-|   |  Topic |Description |
-|---|---|---|
-| <img src="/img/icons/icon_geometric.png" style="width: 30%; height: auto;"> | Geometrical Optics [[EN](./01_Toolboxes/01_DiscoveryCore/ENGLISH/01_core_intro.md), [DE](./01_Toolboxes/01_DiscoveryCore/GERMAN/01_core_intro.md)] ||
-| <img src="/img/icons/icon_wave.png" style="width: 30%; height: auto;"> | Wave Optics [[EN](./01_Toolboxes/03_DiscoveryInterferometer/01_interferometer_intro.md)]||
-| <img src="/img/icons/icon_microscopy.png" style="width: 30%; height: auto;"> | Microsocpy [[EN](./01_Toolboxes/01_DiscoveryCore/ENGLISH/04_core_microscope.md)]  ||
-| <img src="/img/icons/icon_telescope.png" style="width: 30%; height: auto;"> | Telescope ||
-| <img src="/img/icons/icon_electronics.png" style="width: 30%; height: auto;"> | Electronics||
-| <img src="/img/icons/icon_imswitch.png" style="width: 30%; height: auto;"> | ImSwitch||
-| <img src="/img/icons/icon_lightsheet.png" style="width: 30%; height: auto;"> | Light-Sheet Microscopy ||
-| <img src="/img/icons/icon_storm.png" style="width: 30%; height: auto;"> | STORM Microscopy | |
-| <img src="/img/icons/icon_xyz.png" style="width: 30%; height: auto;"> | openUC2 FiveD ||
-| <img src="/img/icons/icon_workshop.png" style="width: 30%; height: auto;"> | Workshops ||
-| <img src="/img/icons/icon_build.png" style="width: 30%; height: auto;"> | Production ||
+<table>
+    <tr>
+        <td><img src="/img/icons/icon_geometric.png" style="width: 30%; height: auto;"></td>
+        <td>Geometrical Optics <a href="./01_Toolboxes/01_DiscoveryCore/ENGLISH/01_core_intro.md">EN</a>, <a href="./01_Toolboxes/01_DiscoveryCore/GERMAN/01_core_intro.md">DE</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><img src="/img/icons/icon_interferometry.png"></td>
+        <td>Wave Optics <a href="./01_Toolboxes/03_DiscoveryInterferometer/01_interferometer_intro.md">EN</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><img src="/img/icons/icon_microscopy.png"></td>
+        <td>Microscopy <a href="./01_Toolboxes/01_DiscoveryCore/ENGLISH/04_core_microscope.md">EN</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><img src="/img/icons/icon_telescope.png"></td>
+        <td>Telescope</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><img src="/img/icons/icon_electronics.png"></td>
+        <td>Electronics</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><img src="/img/icons/icon_imswitch.png"></td>
+        <td>ImSwitch</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><img src="/img/icons/icon_lightsheet.png"></td>
+        <td>Light-Sheet Microscopy</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><img src="/img/icons/icon_storm.png"></td>
+        <td>STORM Microscopy</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><img src="/img/icons/icon_xyz.png"></td>
+        <td>openUC2 FiveD</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><img src="/img/icons/icon_workshop.png"></td>
+        <td>Workshops</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><img src="/img/icons/icon_build.png"></td>
+        <td>Production</td>
+        <td></td>
+    </tr>
+</table>

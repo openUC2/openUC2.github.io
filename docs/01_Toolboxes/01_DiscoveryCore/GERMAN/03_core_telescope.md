@@ -1,167 +1,220 @@
 ---
-id: CoreTeleskop
+id: CoreTelescope
 title: Teleskop
 ---
 
-## Was ist ein Galilei-Fernrohr?
+## Was ist ein Galilei-Teleskop?
+Dauer: 10
 
-Stelle die Linsen-Würfel auf das Blatt, wie im Diagramm gezeigt, und schaue dann durch das Fernrohr in die Ferne.
+Platziere die Linsen-Würfel auf dem Blatt wie im Diagramm gezeigt und blicke dann durch das Teleskop in die Ferne.
 
-<div class="alert-info">
+<div class="alert info">
 Wie sieht das Bild aus?
-Wie ist das Bild orientiert?
+Wie ist die Bildausrichtung?
 </div><br/>
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_15.png" width="800"/>
-</p>
+
+![](../IMAGES/MINIBOXNEW/22.png)
+
 
 <div class="alert-success">
-Während du durch das Fernrohr schaust, passe die Abstände zwischen den Komponenten an, um ein scharfes Bild zu sehen!
+Während du durch das Teleskop schaust, justiere die Abstände zwischen den Komponenten, um ein scharfes Bild zu sehen!
 </div><br/>
 
-## Das ist ein Galilei-Fernrohr
+## Das ist ein Galilei-Teleskop
 
-Ein Fernrohr ist ein optisches Instrument, das entfernte Objekte um ein Vielfaches näher oder größer erscheinen lässt.
+Ein Teleskop ist ein optisches Instrument, das entfernte Objekte um ein Vielfaches näher oder größer erscheinen lässt.
 
-Die Linse auf der Objektseite nennt man Objektiv.
+Die Linse auf der Objektseite wird Objektiv genannt.
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_16.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXNEW/23.png)
 
-Die Linse, die dem Auge zugewandt ist, nennt man Okular.
+Die Linse, die dem Auge zugewandt ist, heißt Okular.
+Das Galilei-Teleskop wird auch in Operngläsern verwendet.
 
-Das Galilei-Fernrohr wird auch in Operngläsern verwendet.
+## So funktioniert das Galilei-Teleskop
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_17.png" width="800"/>
-</p>
+Welche Vergrößerung hat dieses Galilei-Teleskop?
 
-## So funktioniert das Galilei-Fernrohr
-
-Wie lautet die Vergrößerung dieses Galilei-Fernrohrs?
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_18.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXNEW/24.png)
 
 Formel zur Berechnung der Vergrößerung
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_19.png" width="150"/>
-</p>
+![](../IMAGES/MINIBOX/UC2_minibox_19.png)
 
-Mit diesem Fernrohr kann man keine sehr hohe Vergrößerung erreichen. Dafür ist es sehr kompakt.
+Mit diesem Teleskop ist keine sehr hohe Vergrößerung möglich. Es ist jedoch sehr kompakt.
 
 <div class="alert-success">
 Das Bild ist immer
 
-* Vergrößert mit der Vergrößerung aus obiger Formel
+* Vergrößert mit der Vergrößerung aus der obigen Formel
 * Aufrecht
-* Seitenrichtig
+* Richtungsgetreu
 
 Das Sichtfeld ist klein.
 </div><br/>
 
-## Was ist ein Kepler-Fernrohr?
+## Tutorial: Galileis Teleskop
 
-Stelle die Linsen in die richtigen Positionen, wie im Diagramm gezeigt. Dann schaue durch das Fernrohr in die Ferne.
+![](../IMAGES/MINIBOXTUTORIAL/image5.gif)
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_20.png" width="800"/>
-</p>
+### Benötigte Materialien:
+- Vier Bodenplatten
+- 100 mm positive Linse (im Würfel)
+- -50 mm negative Linse (im Würfel)
 
-<div class="alert-info">
+![](../IMAGES/MINIBOXTUTORIAL/image125.png)
+
+### Diagramm (Seitenansicht):
+![](../IMAGES/MINIBOXTUTORIAL/image4.png)
+
+### Anleitung zum Zusammenbau von Galileis Teleskop:
+
+**Schritt 1: Bodenplatten oben platzieren**
+
+![](../IMAGES/MINIBOXTUTORIAL/image19.png)
+Platziere eine Bodenplatte auf jedem Linsen-Würfel.
+
+**Schritt 2: Bodenplatten unten platzieren**
+![](../IMAGES/MINIBOXTUTORIAL/image52.png)
+Platziere eine Bodenplatte unter jedem Linsen-Würfel.
+
+**Schritt 3: Würfel zusammenbauen**
+![](../IMAGES/MINIBOXTUTORIAL/image18.png)
+Setze die beiden Würfel so zusammen, dass der Abstand zwischen den Linsenoberflächen am größten ist.
+
+**Schritt 4: Linsenabstand justieren**
+![](../IMAGES/MINIBOXTUTORIAL/image93.png)
+Justiere den Abstand zwischen der negativen und der positiven Linse maximal.
+
+**Schritt 5: Teleskop verwenden!**
+![](../IMAGES/MINIBOXTUTORIAL/image117.png)
+Suche ein Objekt in der Ferne und betrachte es durch Galileis Teleskop.
+
+## Was ist ein Kepler-Teleskop?
+
+Setze die Linsen gemäß dem Diagramm in die richtigen Positionen. Dann schaue durch das Teleskop in die Ferne.
+
+![](../IMAGES/MINIBOXNEW/25.png)
+
+<div class="alert info">
 Wie sieht das Bild aus?
-Wie ist das Bild orientiert?
+Wie ist die Bildausrichtung?
 </div><br/>
 
 <div class="alert-success">
-Während du durch das Fernrohr schaust, variiere die Abstände zwischen den Komponenten, um ein scharfes Bild zu sehen!
+Während du durch das Teleskop schaust, variiere die Abstände zwischen den Komponenten, um ein solch scharfes Bild zu sehen!
 </div><br/>
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_21.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXNEW/26.png)
 
-## Das ist ein Kepler-Fernrohr
+## Das ist ein Kepler-Teleskop
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_22.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXNEW/27.png)
 
-Diese Art von Fernrohr wird häufig in der Astronomie benutzt.
+Dieser Teleskoptyp wird oft in der Astronomie verwendet.
 
-## So funktioniert das Kepler-Fernrohr
+## So funktioniert das Kepler-Teleskop
 
-Was ist die Vergrößerung dieses Kepler-Fernrohrs?
+Welche Vergrößerung hat dieses Kepler-Teleskop?
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_24.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXNEW/28.png)
 
-Formel zur Berechnung der Vergrößerung
+Formel zur Berechnung der Vergrö
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_23.png" width="150"/>
-</p>
+ßerung
 
-Dieses Teleskop kann eine höhere Vergrößerung als das Galilei-Fernrohr erreichen. Es erzeugt aber ein umgekehrtes Bild. Für die Beobachtung der Sterne ist das aber kein Problem.
+![](../IMAGES/MINIBOX/UC2_minibox_23.png)
+
+Dieses Teleskop kann eine höhere Vergrößerung als das Galilei-Teleskop erreichen. Es erzeugt jedoch ein umgekehrtes Bild. Das ist jedoch kein Problem bei der Beobachtung von Sternen.
 
 <div class="alert-success">
 Das Bild ist immer
 
-* Vergrößert mit der Vergrößerung aus obiger Formel
+* Vergrößert durch die Vergrößerung aus der obigen Formel
 * Umgekehrt
-* Seitenvertauscht
+* Seitlich vertauscht
 
-Das Sichtfeld ist größer als beim Galilei-Fernrohr.
+Das Sichtfeld ist
+größer als beim Galilei-Teleskop.
 </div><br/>
 
-Das Video zeigt das Justieren eines Teleskops
+## Tutorial: Keplers Teleskop
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Jp3uU7wly64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![](../IMAGES/MINIBOXTUTORIAL/image75.gif)
 
-## Was ist ein Beobachtungsfernrohr?
+### Benötigte Materialien:
+- Acht Bodenplatten
+- 100 mm positive Linse (im Würfel)
+- 50 mm positive Linse (im Würfel)
+- Zwei leere Würfel
 
-Das Beobachtungsfernrohr ist lang, deshalb ist das Schema
+![](../IMAGES/MINIBOXTUTORIAL/image127.png)
+### Diagramm (Seitenansicht):
 
- nicht gleichgroß. Stelle die Linsen in die richtigen Positionen wie im Diagramm dargestellt und schaue durch das Fernrohr in die Ferne.
+![](../IMAGES/MINIBOXTUTORIAL/image22.png)
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_25.png" width="800"/>
-</p>
+### Anleitung zum Zusammenbau von Keplers Teleskop:
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_26.png" width="800"/>
-</p>
+**Schritt 1: Würfel ausrichten**
 
-<div class="alert-info">
-Wie sieht das Bild hier aus im Vergleich zum Kepler-Fernrohr?
+Richte die Würfel so aus, dass die beiden Linsen an den Extremen liegen und die beiden leeren Würfel in der Mitte.
+
+![](../IMAGES/MINIBOXTUTORIAL/image13.png)
+
+**Schritt 2: Würfel mit Bodenplatten fixieren**
+
+Fixiere die Würfel mit den Bodenplatten, indem du sie oben und unten platzierst.
+
+![](../IMAGES/MINIBOXTUTORIAL/image76.png)
+
+**Schritt 3: Abstand justieren**
+
+Justiere den Abstand zwischen den Linsen, wie im Bild gezeigt.
+
+![](../IMAGES/MINIBOXTUTORIAL/image59.png)
+
+**Schritt 4: Keplers Teleskop verwenden**
+
+Suche ein Objekt in der Ferne und betrachte es durch Keplers Teleskop.
+
+![](../IMAGES/MINIBOXTUTORIAL/image110.png)
+
+
+## Was ist ein Spektiv?
+
+Das Spektiv ist lang, daher ist das Schema nicht gleich groß.
+Setze die Linsen gemäß dem Diagramm in die richtigen Positionen und schaue durch das Teleskop in die Ferne.
+
+![](../IMAGES/MINIBOXNEW/29.png)
+
+was zu folgendem führt
+
+![](../IMAGES/MINIBOXNEW/30.png)
+
+
+<div class="alert info">
+Wie vergleicht sich das Bild hier mit dem Kepler-Teleskop?
 </div><br/>
 
 <div class="alert-success">
-Während du durch das Fernrohr schaust, passe die Abstände zwischen den Komponenten an, um ein scharfes Bild zu sehen!
+Während du durch das Teleskop schaust, justiere die Abstände zwischen den Komponenten, um ein scharfes Bild zu sehen!
 </div><br/>
 
-## So funktioniert das Beobachtungsfernrohr
 
-Die Vergrößerung ist wie die des Kepler-Fernrohrs. Die Umkehrlinse verändert nur die Orientierung (das Bild wird umgekehrt), nicht die Vergrößerung.
+## So funktioniert das Spektiv
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_27.png" width="150"/>
-</p>
+Die Vergrößerung ist wie beim Kepler-Teleskop. Die Umkehrlinse ändert nur die Orientierung (das Bild wird umgekehrt), nicht die Vergrößerung.
 
-Für terrestrische Beobachtungen ist ein aufrechtes Bild notwendig. Echte terrestrische Teleskope verwenden Prismensysteme, um das Bild zu drehen und kompakt zu halten.
+![](../IMAGES/MINIBOX/UC2_minibox_27.png)
+
+Ein aufrechtes Bild ist für terrestrische Beobachtungen notwendig. Echte terrestrische Teleskope verwenden Prismensysteme, um das Bild zu drehen und kompakt zu halten.
 
 <div class="alert-success">
-Das Bild ist 
+Das Bild ist
 
-* Vergrößert mit der gleichen Vergrößerung wie mit dem Kepler-Fernrohr
+* Mit der gleichen Vergrößerung wie das Kepler-Teleskop vergrößert
 * Aufrecht
-* Seitenrichtig
+* Gespiegelt
 
-Das Sichtfeld ist klein.
 </div><br/>
-

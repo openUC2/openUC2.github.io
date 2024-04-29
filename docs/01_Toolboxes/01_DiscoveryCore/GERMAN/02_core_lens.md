@@ -201,7 +201,6 @@ Berechnen Sie die Vergrößerung des Projektors für die verschiedenen Werte von
 ![](../IMAGES/MINIBOX/UC2_minibox_13.png)
 
 <div class="alert-success">
-
 Unsere Linse hat eine Brennweite von f= 40 mm.
 
 Für g = 50mm → b = 200mm

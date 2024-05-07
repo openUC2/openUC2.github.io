@@ -31,7 +31,9 @@ Welcome to the openUC2 Light-Sheet Microscope documentation. This page aims to p
 7. **Community Collaboration:**
    The openUC2 project thrives on community collaboration. We encourage users to share their experiences, insights, and modifications with the community. This collective effort ensures that the openUC2 light-sheet microscope continues to evolve and meet the needs of its users.
 
-Thank you for your interest and engagement with the openUC2 light-sheet microscope project. Together, we can unlock new dimensions of microscopic exploration through accessible and versatile imaging techniques. Your involvement in this endeavor is greatly appreciated.
+### ImSwitch integration into 3D imaging including 3D volumetric rendering
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EadREZTqJFo?si=IXIoxpxwjvSjv5M_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Please dive into the documentation and begin your journey into the technical intricacies of the openUC2 light-sheet microscope.
 

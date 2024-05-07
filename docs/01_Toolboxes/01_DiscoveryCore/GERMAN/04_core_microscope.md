@@ -1,328 +1,182 @@
 ---
-id: CoreMikroskop
+id: coreMicroscope
 title: Mikroskop
 ---
-## Lichtmikroskop mit „Unendlich-Optik“
-Duration: 2
 
-<div class="alert-info">
-Was passiert wenn man das Kepler-Fernrohr umdreht?
+## Lichtmikroskop mit "Unendlichkeitsoptik"
+
+<div class="alert info">
+Was passiert, wenn du das Kepler-Teleskop umdrehst?
 </div><br/>
 
-Stell das Objekt ca. 40 mm vor das Objektiv und finde das Bild ca. 100 mm hinter der Tubuslinse (mit einem Papier oder der Wand als Bildschirm), wie im Diagramm gezeigt. Bewege die Linsen so, dass du ein scharfes Bild erhältst.
+Platziere das Objekt etwa 40 mm vor der Linse und finde das Bild etwa 100 mm hinter der Tubuslinse (verwende ein Papier oder die Wand als Schirm) wie im Diagramm gezeigt. Bewege die Linsen, um ein scharfes Bild zu erhalten.
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_28.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXNEW/31.png)
 
-<div class="alert-info">
-Platziere das Objekt mit dem Objektiv zusammen als eine Einheit auf das Papier.  Stell die Tubuslinse in einem Abstand von 100 mm zu deinem Bildschirm (Papier, Wand). Ändere die Entfernung zwischen den Linsen – ändert sich das Bild?
+<div class="alert info">
+Platziere das Objekt zusammen mit der Linse auf dem Papier als eine Einheit. Setze die Tubuslinse in einem Abstand von 100 mm zu deinem Schirm (Papier, Wand). Ändere den Abstand zwischen den Linsen - ändert sich das Bild?
 </div><br/>
 
+## Das bedeutet "Unendlichkeitsoptik"
 
+Ein Mikroskop ist ein Gerät, das Objekte mit hoher Vergrößerung betrachtet oder abbildet.
 
-## Das bedeutet „Unendlich-Optik“
-Duration: 2
+Das Bild wird als **Zwischenbild** bezeichnet, weil es oft noch weiter mit einem Okular vergrößert wird.
 
-Ein Mikroskop ist ein Gerät, das es erlaubt, Objekte stark vergrößert anzusehen oder bildlich darzustellen.
+![](../IMAGES/MINIBOXNEW/32.png)
 
-Das Bild wird **Zwischenbild** genannt, da es häufig noch mit einem Okular weiter vergrößert wird.
+Das Objekt befindet sich ungefähr in der objektseitigen Brennebene der Linse. Dadurch werden alle einfallenden Strahlen hinter der Linse in ein paralleles Strahlenbündel umgewandelt. Die Linse hat eine kurze Brennweite.
 
+Die Tubuslinse erzeugt ein reales Bild, indem sie die parallelen Strahlen sammelt, die die Tubuslinse in ihrer Brennebene treffen. Wenn wir sie hinter der Linse platzieren, wird das Objekt aus der Brennebene der Linse abgebildet. Die Tubuslinse hat eine längere Brennweite als das Objektiv.
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_29.png" width="800"/>
-</p>
+Das Bild in der Ebene des Zwischenbildes ist umgekehrt, gespiegelt, vergrößert und real. Das reale Bild kann auf einem Schirm gesehen werden.
 
-Das Objekt steht ungefähr in der objektseitigen Brennebene des Objektivs. Somit werden alle einfallenden Strahlen in ein paralleles Strahlenbündel hinter dem Objektiv umgewandelt. Das Objektiv hat eine kurze Brennweite..
-
-Die Tubuslinse erzeugt ein reelles Bild indem sie parallelen Strahlen, die auf die Tubuslinse treffen, in ihrer Brennebene gesammelt werden. Wenn wir sie hinter dem Objektiv platzieren, wird das Objekt aus der Brennebene des Objektivs abgebildet.  Die Tubuslinse hat eine längere Brennweite als das Objektiv.
-
-Das Bild in der Ebene des Zwischenbildes ist umgekehrt, seitenvertauscht, vergrößert und reell. Das reelle Bild kann man auf einem Bildschirm sehen.
-
-
-<div class="alert-info">
+<div class="alert info">
 </div><br/>
 
+## Das bedeutet "Unendlichkeitsoptik"
 
-## Das bedeutet „Unendlich-Optik“
-Duration: 2
+Wie groß ist die Vergrößerung des Bildes?
 
-Was ist die Vergrößerung des Bildes?
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_30.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXNEW/33.png)
 
 Vergrößerung des Bildes
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_31.png" width="150"/>
-</p>
+![](../IMAGES/MINIBOX/UC2_minibox_31.png)
 
 <div class="alert-success">
-Die Linsen des Kepler-Fernrohrs können auch für ein Mikroskop verwendet werden, aber in einer anderen Reihenfolge.
-Solange das Objekt in der Brennebene des Objektivs und der Bildschirm in der Brennebene der Tubuslinse ist, ist die Entfernung zwischen Objektiv und Tubuslinse egal, weil die Lichtstrahlen parallel sind.
+Die Linsen des Kepler-Teleskops können auch für ein Mikroskop verwendet werden, jedoch in anderer Reihenfolge.
+Solange das Objekt in der Brennebene der Linse und der Schirm in der Brennebene der Tubuslinse ist, spielt der Abstand zwischen Linse und Tubuslinse keine Rolle, da die Lichtstrahlen parallel sind.
 </div><br/>
 
+## Tutorial: Lichtmikroskop mit Unendlichkeitsoptik
 
-## „Unendlich-Optik“-Mikroskop mit Okular
-Duration: 2
+### Benötigte Materialien:
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_34.png" width="800"/>
-</p>
+- Keplers Teleskop
+- Taschenlampe
+- Probenhalter (im Würfel) mit Probe
 
-<div class="alert-info">
-Kannst du das mikroskopische Bild durch die Okularlinse mit dem Auge sehen? Welche Wirkung hat der Spiegel? Baue das Mikroskop ohne den Spiegel auf. Vergewissere dich, dass du nach wie vor zwei Leerräumen zwischen der Tubuslinse und dem Okular hast. Was beobachtest du dann?
+![](../IMAGES/MINIBOXTUTORIAL/image120.png)
+
+### Diagramm (Seitenansicht):
+![](../IMAGES/MINIBOXTUTORIAL/image20.png)
+
+### Anleitung zum Zusammenbau des Lichtmikroskops mit Unendlichkeitsoptik:
+
+**Schritt 1: Probe hinzufügen**
+
+Füge den Proben-Würfel hinter die 50-mm-Positivlinse hinzu. Vergiss nicht, die Bodenplatten hinzuzufügen.
+
+![](../IMAGES/MINIBOXTUTORIAL/image24.png)
+
+**Schritt 2: Würfel mit Bodenplatten fixieren**
+
+Verwende die Taschenlampe, um die Probe zu beleuchten. Suche einen Schirm (Notizbuch, Papier), um das Bild darauf zu projizieren.
+
+![](../IMAGES/MINIBOXTUTORIAL/image6.png)
+![](../IMAGES/MINIBOXTUTORIAL/image7.png)
+
+**Schritt 3: Abstand einstellen**
+
+Schalte das Umgebungslicht aus, um das Bild auf dem Schirm deutlich zu sehen. Justiere den Abstand zwischen Mikroskop und Schirm, bis du ein scharf fokussiertes Bild siehst (siehe Diagramm).
+
+![](../IMAGES/MINIBOXTUTORIAL/image87.png)
+![](../IMAGES/MINIBO
+
+XTUTORIAL/image33.png)
+![](../IMAGES/MINIBOXTUTORIAL/Microscope_infinity_optics.gif)
+
+## Mikroskop mit "Unendlichkeitsoptik" und Okular
+
+![](../IMAGES/MINIBOXNEW/34.png)
+
+<div class="alert info">
+Kannst du das mikroskopische Bild durch die Okularlinse mit deinen Augen sehen? Welchen Effekt hat der Spiegel? Richte das Mikroskop ohne den Spiegel ein. Stelle sicher, dass du immer noch zwei leere Räume zwischen der Tubuslinse und dem Okular hast. Was beobachtest du dann?
 </div><br/>
 
-
-Eine kurze Einführung in die Spiegel und was damit machen kann, kannst du hier finden:
+Eine kurze Einführung in Spiegel und deren Anwendungen findest du hier:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/azxLqej7yqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Wozu ist das Okular gut?
-Duration: 2
+## Wozu dient das Okular?
 
-Neuere Mikroskope sind mit einer sogenannten „Unendlich-Optik“ ausgestattet. In diesem Fall erzeugt das Objektiv kein reelles Zwischenbild. Das Licht verlässt das Objektiv als unendliche parallele Strahlen. Am Ende von dem „unendlichen“ Tubus befindet sich eine Tubuslinse. Diese erzeugt ein Zwischenbild, das dann wieder durch das Okular vergrößert wird.
+Neuere Mikroskope sind mit sogenannten "Unendlichkeitsoptiken" ausgestattet. In diesem Fall erzeugt die Linse kein reales Zwischenbild. Das Licht verlässt die Linse als unendliche parallele Strahlen. Am Ende des "unendlichen" Tubus befindet sich eine Tubuslinse. Diese erzeugt ein Zwischenbild, das dann durch das Okular erneut vergrößert wird.
 
+![](../IMAGES/MINIBOXNEW/35.png)
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_35.png" width="800"/>
-</p>
+Das Bild hinter dem Okular ist umgekehrt, umgekehrt, vergrößert und virtuell. Das virtuelle Bild kann mit dem Auge gesehen werden.
 
-Das Bild hinter dem Okular ist umgekehrt, seitenvertauschet, vergrößert und virtuell. Das virtuelle Bild kann man mit dem Auge sehen.
+Diese Konfiguration ist sehr nützlich in modernen Mikroskopen, da sie das Einfügen zusätzlicher Komponenten wie Filter zwischen Objektiv und Tubuslinse erlaubt, ohne den optischen Weg zu beeinflussen.
 
-Diese Konfiguration ist in modernen Mikroskopen sehr nützlich, da zusätzliche Komponenten wie Filter zwischen Objektiv und Tubuslinse platziert werden können, ohne den optischen Pfad zu beeinträchtigen.
+Ein Filter kann verwendet werden, um die Helligkeit und Farbe des Bildes zu ändern.
 
-Ein Filter kann dazu verwendet werden, die Helligkeit und Farbe des Bildes zu verändern.
-
-<div class="alert-info">
+<div class="alert info">
 </div><br/>
 
+## Das Okular ist dafür gut
 
-## Dazu ist das Okular gut
-Duration: 2
+Wie groß ist die Vergrößerung nach dem Okular?
 
-Was ist die Vergrößerung nach dem Okular?
-
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_36.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXNEW/36.png)
 
 Gesamtvergrößerung
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_37.png" width="150"/>
-</p>
+![](../IMAGES/MINIBOX/UC2_minibox_37.png)
 
 <div class="alert-success">
-Ein Okular ist eigentlich bloß eine Linse, die das Zwischenbild vergrößert. Es bildet das virtuelle Bild so ab, dass du es mit dem Auge betrachten kannst.
+Ein Okular ist eigentlich nur eine Linse, die das Zwischenbild vergrößert. Es bildet das virtuelle Bild so ab, dass du es mit deinen Augen sehen kannst.
 </div><br/>
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_38.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOX/UC2_minibox_38.png)
 
 <div class="alert-success">
-Mit dem Spiegel kannst du nicht nur dich selbst sehen, sondern auch das einfallende Licht in eine beliebige Richtung reflektieren. So kannst du den optischen Weg falten und die Arbeit damit angenehmer zu gestalten. Der Spiegel hat keinen Einfluss auf die Vergrößerung, aber er dreht das Bild in eine Richtung.
+Mit dem Spiegel kannst du nicht nur dich selbst sehen, sondern auch das einfallende Licht in jede Richtung reflektieren. So kannst du den optischen Weg falten und die Arbeit komfortabler gestalten. Der Spiegel beeinflusst zwar nicht die Vergrößerung, dreht aber das Bild in eine Richtung.
 </div><br/>
 
+## Tutorial: Lichtmikroskop mit Unendlichkeitsoptik und Okular
 
-## Lichtmikroskop mit „Endlich-Optik“
-Duration: 2
+### Benötigte Materialien:
 
-Stell die Würfel auf die Positionen, wie unten im Diagramm gezeigt und schaue durch das Okular.
+- Keplers Teleskop
+- Taschenlampe
+- Acht Bodenplatten
+- Probenhalter (im Würfel) mit Probe
+- Spiegel (im Würfel)
+- Leerwürfel
+- Okular (im Würfel)
 
-<div class="alert-success">
-Bau das Mikroskop wie ein Sandwich indem du eine zweite Schicht mittels Grundplatte hinzufügt. Schau von oben durch das Okular.
-</div><br/>
+![](../IMAGES/MINIBOXTUTORIAL/image126.png)
 
+### Diagramm (Seitenansicht):
 
+![](../IMAGES/MINIBOXTUTORIAL/image64.png)
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_39.png" width="800"/>
-</p>
+### Anleitung zum Zusammenbau des Lichtmikroskops mit Unendlichkeitsoptik und Okular:
 
-<div class="alert-info">
-Siehst du das Bild wie bisher durch das Okular? Kannst du das echte Zwischenbild auch mit einem Blatt Papier finden?
-</div><br/>
+**Schritt 1: Probenhalter-Würfel hinzufügen**
 
-<div class="alert-success">
-Drehe das kleine Zahnrad des Objektivhalters. Damit bewegst bzw. fokussierst du das Objektiv. Wenn es nicht weiter geht, kannst du auch das Objektiv in dem Halter verschieben.
-</div><br/>
+Füge den Probenhalter-Würfel im Keplers Teleskop neben der 50-mm-Sammellinse hinzu.
 
+![](../IMAGES/MINIBOXTUTORIAL/image12.png)
 
+**Schritt 2: Neben der 100-mm-Linse zusammenbauen**
 
-## „Endlich-Optik“ versus „Unendlich-Optik“
-Duration: 2
+Montiere neben der 100-mm-Sammellinse einen Leerwürfel und daneben den Spiegelwürfel.
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_40.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXTUTORIAL/image45.png)
 
-Die Objektive von älteren oder kleineren Mikroskopen sind häufig so genannte Endlich-Objektive. Sie verhalten sich wie eine Linse mit äußerst kurzer Brennweite und erzeugen ein Zwischenbild hinter dem Objektiv mit einer Bildweite die sich durch die Tubuslänge definiert. Die Tubuslänge ist aufgedruckt und entspricht bei unserem Objektiv 160mm. Dort entsteht das reele Zwischenbild und wird durch die Okularoptik vergrößert.
+**Schritt 3: Das Okular platzieren**
 
+Platziere das Okular oben auf dem Spiegelwürfel mit der richtigen Orientierung. Beleuchte die Probe aus ein
 
-Mikroskope haben die Möglichkeit, das Objekt entweder durch Bewegen des Objekts oder des Objektivs zu fokussieren bzw. scharfzustellen. Hier bewegen wir das Objektiv durch einen einfachen Mechanismus. Die Drehung des Zahnrads wird in eine Verschiebung der Objektivlinse umgesetzt. Für größere Bewegungen kannst du das Objektiv zusätzlich in der Schiene verschieben.
+iger Entfernung.
 
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_41.png" width="450"/>
-</p>
+![](../IMAGES/MINIBOXTUTORIAL/image70.png)
 
-<div class="alert-info">
-</div><br/>
+**Schritt 5: Für ein scharfes Bild justieren**
 
+Schaue durch das Okular. Justiere den Linsenabstand, bis du ein fokussiertes scharfes Bild siehst. Hinweis: Wenn du das Präparat nicht siehst, versuche vorsichtig die Position der Probe zu justieren, bis du das Präparat siehst.
 
-
-## „Endlich-Optik“ versus „Unendlich-Optik“
-Duration: 2
-
-Was ist die Vergrößerung des Zwischenbildes? Und was ist die Vergrößerung nach dem Okular?
-
-Objektivvergrößerung
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_44.png" width="150"/>
-</p>
-wie geschrieben darauf
-
-Okularvergrößerung
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_45.png" width="200"/>
-</p>
-
-Gesamtvergrößerung
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_46_1.png" width="200"/>
-</p>
-
-<div class="alert-success">
-Das Bild ist größer als mit dem Unendlich-Mikroskop. Die Vergrößerung des Objektivs beträgt hier 4×. Wenn du die Vergrößerung mit dem vorherigen Mikroskop berechnet hast, überrascht dich das sicherlich nicht.
-</div><br/>
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_46_2.png" width="800"/>
-</p>
-
-<div class="alert-success">
-Das Zwischenbild wird jetzt nur noch durch das Objektiv gebildet und liegt 160 mm dahinter. Wir werden im nächsten Schritt herausfinden, warum.
-</div><br/>
-
-
-
-
-## Objektiv und Okular
-Duration: 2
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_48_1.png" width="800"/>
-</p>
-
-<div class="alert-info">
-</div><br/>
-
-
-## Das ist das Objektiv
-Duration: 2
-
-Ein Objektiv ist ein optisches System, das eine vergrößerte Abbildung eines Gegenstandes erzeugt. Die verschiedenen auf dem Objektiv abgedruckten Zahlen haben verschiedene Bedeutungen:
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_48.png" width="800"/>
-</p>
-
-Das 4× Objektiv hat nur eine Linse drin. Die Objektive mit stärkere Vergrößerung sind ganze Linsensystemen.
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_49.png" width="800"/>
-</p>
-
-
-<div class="alert-success">
-Das Objektiv ist auch eine Sammellinse mit kurzer Brennweite. Das 4x Objektiv hat eine Brennweite von f=32 mm. Wenn es als Lupe verwendet wird, hat es eine höhere Vergrößerung als die 40-mm-Linse. Das Sichtfeld ist scharf, aber klein.
-</div><br/>
-
-
-
-## Das Okular
-Duration: 2
-
-Ein Okular ist eigentlich eine Lupe, da es das Zwischenbild vergrößert. Das Okular, was wir hier verwenden, ist ein sogenanntes Ramsden-Okular.
-Eine einzelne Linse kann auch als Okular benutzt werden. Allerdings ist bei einem aus Linsensystem bestehendes Ramsden-Okular das Sichtfeld besser, weil es weniger Fehler am Rand des Sichtfelds erzeugt. Das Ramsden-Okular besteht aus zwei Linsen mit der gleichen Brennweite. Seine Brennweite beträgt  fRamsden-Okular = 3/4 fLinse
-
-Was ist die Vegrößerung des Ramsden-Okulars?
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_50.png" width="800"/>
-</p>
-
-<div class="alert-success">
-Jedes Okular hat eine so genannte Ramsden-Scheibe, das ist der kleinste Durchmesser des Lichtstrahls, der aus dem Mikroskop durch das Okular austritt.
-</div><br/>
-
-<div class="alert-success">
-Das Sichtfeld ist größer und das Bild sieht mit dem Ramsden-Okular klarer aus.
-Jedes Okular hat eine so genannte Ramsden-Scheibe, das ist der kleinste Durchmesser
-</div><br/>
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_51.png" width="150"/>
-</p>
-
-
-## Smartphone Mikroskop
-Duration: 2
-
-Baue das Smartphone Mikroskop wie dargestellt. Nutze zwei beliebige Würfel hier um das Smartphone sicher zu platzieren.
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_52.png" width="800"/>
-</p>
-
-<div class="alert-info">
-</div><br/>
-
-<div class="alert-success">
-Bau das Mikroskop wie ein Sandwich indem du eine zweite Schicht mittels Grundplatte hinzufügt. Schau von oben durch das Okular.
-</div><br/>
-
-<div class="alert-info">
-Tausche das Ramsden-Okular mit der 40-mm-Linse aus. Was eignet sich besser für das Auge und was für das Smartphone?
-</div><br/>
-
-
-
-
-
-## Besser mit Smartphone oder Auge?
-Duration: 2
-
-Die Smartphone Kamera hat eine Linse mit sehr kurzer Brennweite da diese in das dünne Smartphone passen muss. Die Linse erzeugt dann ein Bild auf dem Kamera-Sensor dessen Eingeschaften denem menschlischen Auge ähneln.
-
-Das Auge kann Objekte aus sowohl Ferne als auch aus der Nähe abbilden. Diese Eigenschaft heißt Akkommodation.
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_53.png" width="800"/>
-</p>
-
-Die Smartphone-Kamera kann das auch, es wird allerdings als Autofokus bezeichnet. Es beschreibt die Fähigkeit, Objekte in unterschiedlichen Entfernungen scharf auf dem Sensor abzubilden.
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_54.png" width="500"/>
-</p>
-
-Das Bild aus dem Okular kommt in parallelen Strahlen, als käme es aus dem Unendlichen. Sie haben mit einem entspannten Auge (Blick in die Ferne) oder mit einer auf Unendlich fokussierten Kamera beobachtet.
-
-
-<div class="alert-info">
-</div><br/>
-
-
-
-## Berechnungsergebnisse
-Duration: 2
-
-<p align="center">
-<img src="/MINIBOX/UC2_minibox_55.png" width="800"/>
-</p>
+![](../IMAGES/MINIBOXTUTORIAL/image81.png)
+![](../IMAGES/MINIBOXTUTORIAL/image31.png)

@@ -85,6 +85,9 @@ First, adjust the distance between the LED array and the condenser lens by placi
 
 *Note:* If your sample is transparent be careful not to crash the sample with the microscope objective! For more information about this experimental setup look at: [3D differential phase-contrast microscopy with computational illumination using an LED array](http://dx.doi.org/10.1364/OL.39.001326).
 
+Example of illuminating sample with one half circle illumination. We should be able to see the phase gradient using oblique illumination. In the figure we can compare a defocused and focused image of a cheek cells sample.
+
+![](./IMAGES/Cheek_cells_focused_DPC.png)
 
 **Step 6: Run the ImDPC experiment!**
 

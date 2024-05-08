@@ -32,7 +32,7 @@ Differential Phase Contrast Microscopy is a Computational Microscopy technique t
 
 ### Diagram:
 
-![](./IMAGES/DPC_diagram.png)
+![](./IMAGES/DPC_diagram.png)![](./IMAGES/LED_array_patterns.gif)
 
 ### Instructions for assembling the DPC setup:
 **Step 1: Download Imswitch and the ESP32 microcontroller drivers**

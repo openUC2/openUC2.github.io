@@ -32,14 +32,14 @@ Differential Phase Contrast Microscopy is a Computational Microscopy technique t
 
 ### Diagram:
 
-![](./IMAGES/DPC_diagram.png)![](./IMAGES/LED_array_patterns.gif)
+![](./IMAGES/DPC_diagram.png)
 
 ### Instructions for assembling the DPC setup:
 **Step 1: Download Imswitch and the ESP32 microcontroller drivers**
 
 Once the drivers are installed you can visit ([youseetoo.github.io](https://youseetoo.github.io/indexWebSerialTest.html)) to test the LED array pattern sequences.
 
-![](./IMAGES/ESP32.png)
+![](./IMAGES/ESP32.png)![](./IMAGES/LED_array_patterns.gif)
 
 **Step 2: Mount the LED array**
 

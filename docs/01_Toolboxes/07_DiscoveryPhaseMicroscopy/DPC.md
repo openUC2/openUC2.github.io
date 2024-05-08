@@ -113,7 +113,7 @@ Taking a series of DPC images at different focal planes.
 
 ![](./IMAGES/dpc_4x_0.17NA.gif)![](./IMAGES/Cheek_defocused_DPC.gif)
 
-Cropped DPC image captured with 0.17 NA microscope objective with 4x magnification.
+Left:Cropped DPC image captured with 0.17 NA microscope objective with 4x magnification. Right: Cropped DPC captured with 0.25 NA microscope objective with 10x magnification.
 
 ## Reconstruction algorithm (Waller-Lab)
 

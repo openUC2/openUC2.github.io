@@ -231,8 +231,7 @@ With this Jupyter notebook you can test the DPC reconstruction algorithm using y
 
 # Import Modules
 
-<code>
-%load_ext autoreload
+<code>%load_ext autoreload
 %autoreload 2
 %matplotlib notebook
 import numpy as np
@@ -240,8 +239,7 @@ import matplotlib.pyplot as plt
 from os import listdir
 from skimage import io
 from mpl_toolkits.axes_grid1 import make_axes_locatable
-from dpc_algorithm import DPCSolver
-</code>
+from dpc_algorithm import DPCSolver</code>
 
 # Load DPC Measurements
 

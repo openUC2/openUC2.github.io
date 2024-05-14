@@ -230,7 +230,8 @@ Jupyer notebook: main_dpc.ipynb
 With this Jupyter notebook you can test the DPC reconstruction algorithm using your own images!
 
 # Import Modules
-```{code-cell} python3
+```python
+{code-cell}
 %load_ext autoreload
 %autoreload 2
 %matplotlib notebook

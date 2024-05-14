@@ -137,7 +137,7 @@ Python script: dpc_algorithm.py
 
 This script contains the core algorithm to solve the DPC problem and from the four acquired images retrieve the phase.
 
-```
+```python
 import numpy as np
 from scipy.ndimage import uniform_filter
 pi    = np.pi
@@ -230,8 +230,8 @@ Jupyer notebook: main_dpc.ipynb
 With this Jupyter notebook you can test the DPC reconstruction algorithm using your own images!
 
 # Import Modules
-
-<code>%load_ext autoreload
+```{code-cell} python3
+%load_ext autoreload
 %autoreload 2
 %matplotlib notebook
 import numpy as np
@@ -239,7 +239,8 @@ import matplotlib.pyplot as plt
 from os import listdir
 from skimage import io
 from mpl_toolkits.axes_grid1 import make_axes_locatable
-from dpc_algorithm import DPCSolver</code>
+from dpc_algorithm import DPCSolver
+```
 
 # Load DPC Measurements
 

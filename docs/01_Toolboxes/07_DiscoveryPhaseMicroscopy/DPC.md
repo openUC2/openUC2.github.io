@@ -231,7 +231,6 @@ With this Jupyter notebook you can test the DPC reconstruction algorithm using y
 
 # Import Modules
 ```python
-{code-cell}
 %load_ext autoreload
 %autoreload 2
 %matplotlib notebook
@@ -245,10 +244,63 @@ from dpc_algorithm import DPCSolver
 
 # Load DPC Measurements
 
-<code>
+```python
 data_path  = "../sample_data/" #INSERT YOUR DATA PATH HERE
 image_list = listdir(data_path)
 image_list = [image_file for image_file in image_list if image_file.endswith(".tif")]
 image_list.sort()
 dpc_images = np.array([io.imread(data_path+image_list[image_index]) for image_index in range(len(image_list))])
-</code>
+```
+
+```python
+#plot first set of measured DPC measurements
+f, ax = plt.subplots(2, 2, sharex=True, sharey=True, figsize=(6, 6))
+
+for plot_index in range(4):
+    plot_row = plot_index//2
+    plot_col = np.mod(plot_index, 2)
+    ax[plot_row, plot_col].imshow(dpc_images[plot_index], cmap="gray",\
+                                  extent=[0, dpc_images[0].shape[-1], 0, dpc_images[0].shape[-2]])
+    ax[plot_row, plot_col].axis("off")
+    ax[plot_row, plot_col].set_title("DPC {:02d}".format(plot_index))
+    plt.show()
+```
+# Set System Parameters
+
+```python
+wavelength     =  0.514 #micron
+mag            =   40.0
+na             =   0.40 #numerical aperture
+na_in          =    0.0
+pixel_size_cam =    6.5 #pixel size of camera
+dpc_num        =      4 #number of DPC images captured for each absorption and phase frame
+pixel_size     = pixel_size_cam/mag
+rotation       = [0, 180, 90, 270] #degree
+```
+# DPC Absorption and Phase Retrieval
+
+## Initialize DPC Solver
+
+```python
+dpc_solver_obj = DPCSolver(dpc_images, wavelength, na, na_in, pixel_size, rotation, dpc_num=dpc_num)
+```
+## Visualize Source Patterns
+
+```python
+#plot the sources
+max_na_x = max(dpc_solver_obj.fxlin.real*dpc_solver_obj.wavelength/dpc_solver_obj.na)
+min_na_x = min(dpc_solver_obj.fxlin.real*dpc_solver_obj.wavelength/dpc_solver_obj.na)
+max_na_y = max(dpc_solver_obj.fylin.real*dpc_solver_obj.wavelength/dpc_solver_obj.na)
+min_na_y = min(dpc_solver_obj.fylin.real*dpc_solver_obj.wavelength/dpc_solver_obj.na)
+f, ax  = plt.subplots(2, 2, sharex=True, sharey=True, figsize=(6, 6))
+for plot_index, source in enumerate(list(dpc_solver_obj.source)):
+    plot_row = plot_index//2
+    plot_col = np.mod(plot_index, 2)
+    ax[plot_row, plot_col].imshow(np.fft.fftshift(dpc_solver_obj.source[plot_index]),\
+                                  cmap='gray', clim=(0,1), extent=[min_na_x, max_na_x, min_na_y, max_na_y])
+    ax[plot_row, plot_col].axis("off")
+    ax[plot_row, plot_col].set_title("DPC Source {:02d}".format(plot_index))
+    ax[plot_row, plot_col].set_xlim(-1.2, 1.2)
+    ax[plot_row, plot_col].set_ylim(-1.2, 1.2)
+    ax[plot_row, plot_col].set_aspect(1)
+```

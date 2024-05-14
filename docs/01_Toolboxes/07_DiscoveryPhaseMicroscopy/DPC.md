@@ -109,7 +109,7 @@ In the animation you can compare the contrast that we can get with brightfield i
 
 ![](./IMAGES/focusing_dpc_animation.gif)![](./IMAGES/Cheek_defocused_DPC.gif)
 
-Taking a series of DPC images at different focal planes. Left: Cropped DPC image of Unknown cells (top) and Cheek cells (bottom) captured with 0.25 NA microscope objective with 10x magnification.
+Taking a series of DPC images at different focal planes. Cropped DPC image of Unknown cells (top) and Cheek cells (bottom) captured with 0.25 NA microscope objective with 10x magnification.
 
 ![](./IMAGES/dpc_4x_0.17NA.gif)
 

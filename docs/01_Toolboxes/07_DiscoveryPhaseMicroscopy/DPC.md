@@ -95,7 +95,7 @@ Once you have focused on the sample, adjust the desired FoV. Now you are set. Cl
 
 Congrats! You have created a DPC microscope with OpenUC2!
 
-![](./IMAGES/DPC_final_setup.jpg)
+![](./IMAGES/DPC_final_setup.png)
 
 ## DPC Images
 

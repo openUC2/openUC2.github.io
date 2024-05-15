@@ -137,7 +137,7 @@ Python script: dpc_algorithm.py
 
 This script contains the core algorithm to solve the DPC problem and from the four acquired images retrieve the phase.
 
-```python
+```py
 import numpy as np
 from scipy.ndimage import uniform_filter
 pi    = np.pi

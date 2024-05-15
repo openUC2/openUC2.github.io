@@ -304,3 +304,51 @@ for plot_index, source in enumerate(list(dpc_solver_obj.source)):
     ax[plot_row, plot_col].set_ylim(-1.2, 1.2)
     ax[plot_row, plot_col].set_aspect(1)
 ```
+## Visualize Weak Object Transfer Functions
+
+```python
+#plot the transfer functions
+f, ax = plt.subplots(2, 4, sharex=True, sharey=True, figsize = (10, 4))
+for plot_index in range(ax.size):
+    plot_row = plot_index//4
+    plot_col = np.mod(plot_index, 4)
+    divider  = make_axes_locatable(ax[plot_row, plot_col])
+    cax      = divider.append_axes("right", size="5%", pad=0.05)
+    if plot_row == 0:
+        plot = ax[plot_row, plot_col].imshow(np.fft.fftshift(dpc_solver_obj.Hu[plot_col].real), cmap='jet',\
+                                             extent=[min_na_x, max_na_x, min_na_y, max_na_y], clim=[-2., 2.])
+        ax[plot_row, plot_col].set_title("Absorption WOTF {:02d}".format(plot_col))
+        plt.colorbar(plot, cax=cax, ticks=[-2., 0, 2.])
+    else:
+        plot = ax[plot_row, plot_col].imshow(np.fft.fftshift(dpc_solver_obj.Hp[plot_col].imag), cmap='jet',\
+                                             extent=[min_na_x, max_na_x, min_na_y, max_na_y], clim=[-.8, .8])
+        ax[plot_row, plot_col].set_title("Phase WOTF {:02d}".format(plot_col))
+        plt.colorbar(plot, cax=cax, ticks=[-.8, 0, .8])
+    ax[plot_row, plot_col].set_xlim(-2.2, 2.2)
+    ax[plot_row, plot_col].set_ylim(-2.2, 2.2)
+    ax[plot_row, plot_col].axis("off")
+    ax[plot_row, plot_col].set_aspect(1)
+```
+
+## Solve DPC Least Squares Problem
+
+```python
+#parameters for Tikhonov regurlarization [absorption, phase] ((need to tune this based on SNR)
+dpc_solver_obj.setTikhonovRegularization(reg_u = 1e-1, reg_p = 5e-3)
+dpc_result = dpc_solver_obj.solve()
+```
+```python
+_, axes  = plt.subplots(1, 2, figsize=(10, 6), sharex=True, sharey=True)
+divider  = make_axes_locatable(axes[0])
+cax_1    = divider.append_axes("right", size="5%", pad=0.05)
+plot     = axes[0].imshow(dpc_result[0].real, clim=[-0.15, 0.02], cmap="gray", extent=[0, dpc_result[0].shape[-1], 0, dpc_result[0].shape[-2]])
+axes[0].axis("off")
+plt.colorbar(plot, cax=cax_1, ticks=[-0.15, 0.02])
+axes[0].set_title("Absorption")
+divider  = make_axes_locatable(axes[1])
+cax_2    = divider.append_axes("right", size="5%", pad=0.05)
+plot     = axes[1].imshow(dpc_result[0].imag, clim=[-1.0, 3.0], cmap="gray", extent=[0, dpc_result[0].shape[-1], 0, dpc_result[0].shape[-2]])
+axes[1].axis("off")
+plt.colorbar(plot, cax=cax_2, ticks=[-1.0, 3.0])
+axes[1].set_title("Phase")
+```

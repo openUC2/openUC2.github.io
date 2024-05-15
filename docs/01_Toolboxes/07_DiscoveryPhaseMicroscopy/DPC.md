@@ -125,7 +125,7 @@ We are going to revise each part of the code and understand it.
 
 We need four images corresponding to each half-circle illumination pattern. With a good exposure time for the camera to reduce noise. In the figure we can see an example of the four captured DPC images.
 
-![](./IMAGES/Top_bottom_right_left.gif)
+![](./IMAGES/Top_bottom_right_left.png)
 
 We can correct the images using flatfield correction. Flatfield correction consists on taking an image without the sample, then we take the image to be corrected and divided by the flatfield image. This enables us to get rid of noise like dust on the camera, for instance.
 

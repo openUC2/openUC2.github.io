@@ -265,6 +265,10 @@ for plot_index in range(4):
     ax[plot_row, plot_col].set_title("DPC {:02d}".format(plot_index))
     plt.show()
 ```
+Output (example):
+
+![](./IMAGES/DPC_measurements.png)
+
 # Set System Parameters
 
 ```python

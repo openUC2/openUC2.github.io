@@ -308,6 +308,11 @@ for plot_index, source in enumerate(list(dpc_solver_obj.source)):
     ax[plot_row, plot_col].set_ylim(-1.2, 1.2)
     ax[plot_row, plot_col].set_aspect(1)
 ```
+
+Output (example):
+
+![](./IMAGES/Source_patterns.png)
+
 ## Visualize Weak Object Transfer Functions
 
 ```python
@@ -333,6 +338,9 @@ for plot_index in range(ax.size):
     ax[plot_row, plot_col].axis("off")
     ax[plot_row, plot_col].set_aspect(1)
 ```
+Output (example):
+
+![](./IMAGES/WOTFs.png)
 
 ## Solve DPC Least Squares Problem
 
@@ -356,3 +364,6 @@ axes[1].axis("off")
 plt.colorbar(plot, cax=cax_2, ticks=[-1.0, 3.0])
 axes[1].set_title("Phase")
 ```
+Output (example):
+
+![](./IMAGES/Reconstruction_example.png)

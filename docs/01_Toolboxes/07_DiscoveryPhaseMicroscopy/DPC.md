@@ -349,6 +349,7 @@ Output (example):
 dpc_solver_obj.setTikhonovRegularization(reg_u = 1e-1, reg_p = 5e-3)
 dpc_result = dpc_solver_obj.solve()
 ```
+
 ```python
 _, axes  = plt.subplots(1, 2, figsize=(10, 6), sharex=True, sharey=True)
 divider  = make_axes_locatable(axes[0])

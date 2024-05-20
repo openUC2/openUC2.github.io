@@ -188,9 +188,7 @@ Construisez le microscope comme un sandwich en ajoutant une deuxième couche en 
 
 ![](../IMAGES/MINIBOXNEW/37.png)
 
-<div class="
-
-alert info">
+<div class="alert info">
 Voyez-vous l'image à travers l'oculaire comme avant ? Pouvez-vous trouver l'image intermédiaire réelle avec un morceau de papier ?
 </div><br/>
 

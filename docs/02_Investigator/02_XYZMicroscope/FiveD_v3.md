@@ -208,6 +208,94 @@ The device runs using ImSwitch with the following Configuration. Find the ImSwit
 }
 ```
 
+
+## Assembly Instructions
+
+### Assembly of the Optics Cube
+
+To begin the assembly of the microscope, the following components are needed:
+
+- The "ESP32 DEV-based UC2 standalone board V3"
+- Screws
+- Housing parts
+
+![Electronic components including a development board](./IMAGES/fiveDv3/assemblyprocess/image1.jpeg)
+
+Mount the middle plate with M3x12 screws:
+
+![Mounting the middle plate with screws](./IMAGES/fiveDv3/assemblyprocess/image2.jpeg)
+
+Ensure the screws are fixed properly on both sides. Also, cover the screws with non-conductive tape to prevent any shorts on the ESP32-based board side:
+
+![Covering screws with non-conductive tape](./IMAGES/fiveDv3/assemblyprocess/image3.jpeg)
+
+The top plate is attached with 8 screws on the red edges. Then, flip the microscope and attach the bottom plate with adhesive feet. For better stability, it is recommended to use 4 adhesive feet. Then the microscope can be placed upright again.
+
+![Attaching the top plate with screws](./IMAGES/fiveDv3/assemblyprocess/image4.jpeg)
+![Adhesive feet on the bottom plate](./IMAGES/fiveDv3/assemblyprocess/image5.jpeg)
+
+### Assembly of the Optics Module (e.g., Camera)
+
+Next, you will need the following parts:
+
+- Camera
+- Mirror
+- Parts for the camera module
+
+The mirror is placed in the module.
+
+![Placing the mirror in the module](./IMAGES/fiveDv3/assemblyprocess/image6.jpeg)
+![Securing the mirror in the module](./IMAGES/fiveDv3/assemblyprocess/image7.jpeg)
+
+Apply double-sided tape around the camera for additional adhesion and assemble the camera housing parts.
+
+![Applying double-sided tape to the camera](./IMAGES/fiveDv3/assemblyprocess/image8.jpeg)
+![Assembled camera module](./IMAGES/fiveDv3/assemblyprocess/image9.jpeg)
+
+Insert the camera module into the microscope as shown:
+
+![Inserting the camera module into the microscope](./IMAGES/fiveDv3/assemblyprocess/image10.jpeg)
+![Securing the camera module](./IMAGES/fiveDv3/assemblyprocess/image11.jpeg)
+
+### Mounting the Stage on Top of the Optics Cube
+
+The stage is attached to the top plate with 4 screws and nuts. Rotate the threaded spindles to access the screw holes.
+
+![Attaching the stage to the top plate](./IMAGES/fiveDv3/assemblyprocess/image12.jpeg)
+![Securing the stage with screws and nuts](./IMAGES/fiveDv3/assemblyprocess/image13.jpeg)
+
+Now the objective can be installed:
+
+![Installing the objective](./IMAGES/fiveDv3/assemblyprocess/image14.jpeg)
+![Securing the objective](./IMAGES/fiveDv3/assemblyprocess/image15.jpeg)
+
+### Wiring Up the Motors and Endstops
+
+Next, connect the stepper motors to the board:
+
+![Connecting the stepper motors](./IMAGES/fiveDv3/assemblyprocess/image16.jpeg)
+![Stepper motors connected to the board](./IMAGES/fiveDv3/assemblyprocess/image17.jpeg)
+
+If the zero point is incorrect after installing the firmware, you can reverse the connections accordingly:
+
+![Reversing the connections if necessary](./IMAGES/fiveDv3/assemblyprocess/image18.jpeg)
+
+To connect the endstops, first rewire them and then connect them to the board.
+
+![Rewiring the endstops](./IMAGES/fiveDv3/assemblyprocess/image19.jpeg)
+![Connecting the endstops to the board](./IMAGES/fiveDv3/assemblyprocess/image20.jpeg)
+
+Next, you need to attach additional components. If necessary, drill new holes. The placement will depend on the objective, which needs to be positioned at the bottom left corner. After that, secure the components with two screws each.
+
+![Drilling new holes if necessary](./IMAGES/fiveDv3/assemblyprocess/image21.jpeg)
+![Securing additional components](./IMAGES/fiveDv3/assemblyprocess/image22.jpeg)
+
+Finally, attach the slide holder with 8 screws.
+
+![Attaching the slide holder](./IMAGES/fiveDv3/assemblyprocess/image23.jpeg)
+
+This completes the assembly of the UC2 FiveD v3 microscope. Follow each step carefully to ensure proper assembly and functionality.
+
 ## Troubleshoot
 
 We learn from mistakes. So lets start learning. The system is fully open, meaning, you can adjust and change the vast majority of the parts on your own. The entire system consists of the openUC2 frame / skeleton and the 3D printed housing to shield it from dust and light. By removing all M3 cylindrical screws, you can detach the housing from the inner structure to eventually repair or alter the system.
@@ -270,31 +358,31 @@ The motor (Nema12) with 200 steps/revolution runs with 16 microstepps and offers
 
 This shows how the optics module have to be slided into the FiveD assembly. There is a series of groves, slides and accompanying spring-loaded mechanisms to keep the module in exactly one place. It is mechanically well defined. The way to slide it in is a bit involved, but worth it:
 
-![](./IMAGES/fiveDv3/moduleinsertation/moduleinsert_1.jpeg)
+![](./IMAGES/IMAGES/fiveDv3/moduleinsertation/moduleinsert_1.jpeg)
 *one of the positioning spheres (without spring) beaks first*
 
-![](./IMAGES/fiveDv3/moduleinsertation/moduleinsert_2.jpeg)
+![](./IMAGES/IMAGES/fiveDv3/moduleinsertation/moduleinsert_2.jpeg)
 *immediately after this comes the first spring-loaded ball*
 
-![](./IMAGES/fiveDv3/moduleinsertation/moduleinsert_3.jpeg)
+![](./IMAGES/IMAGES/fiveDv3/moduleinsertation/moduleinsert_3.jpeg)
 *Both balls have to pass over this hill on their bhan. But since one of them is spring-loaded, this should work.
 
-![](./IMAGES/fiveDv3/moduleinsertation/moduleinsert_4.jpeg)
+![](./IMAGES/IMAGES/fiveDv3/moduleinsertation/moduleinsert_4.jpeg)
 *the second spring ball now plays along*
 
-![](./IMAGES/fiveDv3/moduleinsertation/moduleinsert_5.jpeg)
+![](./IMAGES/IMAGES/fiveDv3/moduleinsertation/moduleinsert_5.jpeg)
 *The last two fixed balls find their groove almost immediately before the front ball moves up its ramp to the pins*
 
-![](./IMAGES/fiveDv3/moduleinsertation/moduleinsert_6.jpeg)
+![](./IMAGES/IMAGES/fiveDv3/moduleinsertation/moduleinsert_6.jpeg)
 *Final position. All fixed balls in their "pin yokes" and both spring balls press the optics module against them*.
 
 
 ### Final result
 
 
-![](./IMAGES/fiveDv3/moduleinsertation/IMG_20240305_132109.jpg)
+![](./IMAGES/IMAGES/fiveDv3/moduleinsertation/IMG_20240305_132109.jpg)
 
-![](./IMAGES/fiveDv3/moduleinsertation/IMG_20240305_132114.jpg)
+![](./IMAGES/IMAGES/fiveDv3/moduleinsertation/IMG_20240305_132114.jpg)
 
 
 ## Safety

@@ -1,5 +1,90 @@
 # Stage Mapping and Stage Calibration
 
+## Stage Coordinates
+
+In this tutorial, we will guide you through the process of aligning the coordinate systems for the UC2 microscope stage. Proper alignment ensures that the movement of the stage corresponds accurately with the image displayed on the screen, facilitating an intuitive user experience. In principle all of this can be handled in software (e.g. flipping the camera image, changing stage axis), but it's always good to start with a common ground from the hardware side.
+
+![](IMAGES/stagemapping/StageOverview.png)
+*This is the microscope (UC2 XYZ v3) with the ingredients controlled by ImSwitch*
+
+### Alignment of Axes
+
+The goal of aligning the coordinate systems is to ensure they are correctly matched. The alignment of the stage is considered from the origin point (zero point). The desired behavior is as follows:
+- When the stage moves to the right (x+), the image on the screen should also move to the right.
+- When the stage moves upwards (y+), the image on the screen should move upwards as well.
+
+![](./IMAGES/stagemapping/StageMapping2.png)
+
+This is illustrated in the following Figure. When viewing the sample from above with the microscope positioned in front, the image should match what is shown in Imswitch.
+This is also represented by the `VirtualMicroscope` with the `VirtualStage` and `VirtualCamera` in this config (Config: https://github.com/openUC2/ImSwitchConfig/blob/master/imcontrol_setups/example_virtualmicroscope.json).
+
+
+### Understanding Axes in NumPy
+
+It's important to note the labeling of axes. In NumPy, x = 1 and y = 0. This means:
+- The x-axis is the second axis (index 1) of an array.
+- The y-axis is the first axis (index 0) of an array.
+
+![](./IMAGES/stagemapping/numpy-arrays-have-axes_updated_v2.png)
+
+NumPy arrays are multidimensional, with axes numbered as follows:
+- Axis 0 is the first axis (often the vertical direction).
+- Axis 1 is the second axis (often the horizontal direction).
+
+### Stage Coordinate System
+
+When viewing the stage from above, the coordinate system is arranged as follows:
+
+- **X-Axis (Horizontal)**
+  - Positive direction: Right
+  - Negative direction: Left
+- **Y-Axis (Vertical)**
+  - Positive direction: Up
+  - Negative direction: Down
+
+![](./IMAGES/stagemapping/StageMappingSampleView.png)
+
+
+### Aligning Axes with Imswitch
+
+To enable intuitive operation, the stage and camera axes must be correctly aligned with the coordinate system in Imswitch. To achieve this, the commands "flip x" and "flip y" are used. These commands invert the direction of the axes in the coordinate system, meaning that movement or position along the axes is reversed.
+
+#### Steps for Aligning Axes:
+
+1. **Initial Setup:**
+   - Ensure the microscope and stage are properly connected to the control software (e.g., Imswitch).
+
+2. **Define Origin:**
+   - Identify the origin (zero point) of the stage coordinate system. (in Hardware this would be defined by the Endstops that are used for homing the axes; The motor will run - if the direction is set correctly - until it hits the switch)
+
+3. **Test Movement:**
+   - Move the stage to the right and observe the direction of the image on the screen.
+     - If the image moves left, apply the "flip x" command.
+   - Move the stage upwards and observe the direction of the image on the screen.
+     - If the image moves down, apply the "flip y" command.
+
+4. **Adjust Axes:**
+   - Use the following commands as needed to align the axes:
+     ```python
+     # Flip the x-axis if necessary
+     if x_movement_incorrect:
+         stage.flip_x()
+
+     # Flip the y-axis if necessary
+     if y_movement_incorrect:
+         stage.flip_y()
+     ```
+
+5. **Verify Alignment:**
+   - After applying the flips, verify that the stage movements correspond correctly with the image movements on the screen.
+
+6. **Save Configuration:**
+   - Save the configuration settings to ensure the alignment persists across sessions.
+
+
+
+## Stage Calibration
+
 Richard Bowman and his team provided a very nice way to calibrate stage coordinates to camera pixel coordinates. We burtally integrated the open-source software which you can find here: https://gitlab.com/openflexure/microscope-extensions/camera-stage-mapping into ImSwitch. If you activate the `HistoScan` Controller and Widget you can start it either by the GUI or using the HTTP interface by calling http://localhost:8002/HistoScanController/startStageMapping (URL and PORT may differ). What the stage will do is moving a certain series of steps in XY, performs a cross-correlation of the images and computes the shift in XY of the mciroscope image on the camera, compares it to the expected shift on and returns the Image-To-Stage-Displacement Matrix as well as the Backlashvector. Both matrices/vectors are microscope specificand will help you matching e.g. stage coordinates for stitching software such as ASHLAR or OFM Stitching. This document should give you a rough idea of what's happening.
 
 Some terminology:
@@ -80,10 +165,10 @@ The result of the stage mapping is a json file containing (under `/ImSwitch/cali
         "image_to_stage_displacement": [
             [
                 0.0,
-                -1.0013599686228885
+                -1.0
             ],
             [
-                -1.0013599686228885,
+                -1.0,
                 0.0
             ]
         ]

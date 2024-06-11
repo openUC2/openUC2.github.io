@@ -6,7 +6,7 @@ We have multiple ways to perform stage scanning and stitching using ImSwitch. Be
 2. Perform GUI-based stitching and perform stitching using ASHLAR / simple pixel assignmens online (e.g. within/after the scanning process)
 3. Coming soon
 
-## Using Imswitch for Image Retrieval and Stitching with Interactive ImScripting
+## 1. Using Imswitch for Image Retrieval and Stitching with Interactive ImScripting
 
 ### Overview
 This documentation outlines the steps to use Imswitch and Interactive IMScripting to retrieve images and stitch them together. The process involves configuring the motor settings, capturing images in a grid pattern, and stitching these images using ASHLAR.
@@ -155,3 +155,10 @@ flip_y=False
 ```
 
 ![](./IMAGES/stagemapping/ASHLARWalkthrough.gif)
+
+
+## 2. Perform GUI-based stitching and perform stitching using ASHLAR in the Main GUI
+
+Navigate to the HistoScan Menu and perform the grid-based scanning. Select ASHLAR stitching and the appropriate flipping of the axes (will be suggested by the previously performed stage mapping) and run the scanning. The stitched result will be displayed after some computational time which may vary depending on your CPU and memory availabililty.
+
+![](./images/stagemapping/ASHLARStitching.gif)

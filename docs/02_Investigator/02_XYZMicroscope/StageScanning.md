@@ -161,4 +161,4 @@ flip_y=False
 
 Navigate to the HistoScan Menu and perform the grid-based scanning. Select ASHLAR stitching and the appropriate flipping of the axes (will be suggested by the previously performed stage mapping) and run the scanning. The stitched result will be displayed after some computational time which may vary depending on your CPU and memory availabililty.
 
-![](./images/stagemapping/ASHLARStitching.gif)
+![](./IMAGES/stagemapping/ASHLARStitching.gif)

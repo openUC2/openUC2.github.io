@@ -4,7 +4,7 @@ We have multiple ways to perform stage scanning and stitching using ImSwitch. Be
 
 1. Use ImScripting to take snapshots, save them locally and perform stitching using ASHLAR offline
 2. Perform GUI-based stitching and perform stitching using ASHLAR / simple pixel assignmens online (e.g. within/after the scanning process)
-3. Coming soon
+3. Stitching using the Chatbot
 
 ## 1. Using Imswitch for Image Retrieval and Stitching with Interactive ImScripting
 
@@ -162,3 +162,55 @@ flip_y=False
 Navigate to the HistoScan Menu and perform the grid-based scanning. Select ASHLAR stitching and the appropriate flipping of the axes (will be suggested by the previously performed stage mapping) and run the scanning. The stitched result will be displayed after some computational time which may vary depending on your CPU and memory availabililty.
 
 ![](./images/stagemapping/ASHLARStitching.gif)
+
+
+## 3. Stitching using the Chatbot
+
+A recent experimental feature is to use the [BioImage.io](https://bioimage.io/#/) chatbot and provide a customized extension to interact with the microscope. The extension is implemented in the [HyphaController](https://github.com/openUC2/ImSwitch/blob/master/imswitch/imcontrol/controller/controllers/HyphaController.py) and exposes certain functions to the chatbot interface. This lets us formulate prompts that will then interact with the microscope. Below we formulate a simple query:
+
+```
+Can you turn on the light of the uc2 microscope to 512 and perform a slide scan with default parameters?
+```
+
+which gets interpreted on the microscope side
+
+```
+Tool Call: U2MicroscopeSetIllumination
+Arguments:
+- channel: 0
+
+- intensity: 512
+
+Result: Set the illumination!
+Tool Call: U2MicroscopeSlideScan
+Arguments:
+- numberTilesX: 3
+
+- numberTilesY: 3
+
+- stepSizeX: 0
+
+- stepSizeY: 0
+
+- nTimes: 1
+
+- tPeriod: 1
+
+- illuSource: ``
+
+- initPosX: 0
+
+- initPosY: 0
+
+- isStitchAshlar: true
+
+- isStitchAshlarFlipX: true
+
+- isStitchAshlarFlipY: false
+
+Result: Started slide scanning!
+```
+
+The result is a scan and a following stitching routine using ASHLAR:
+
+![](./IMAGES/stagemapping/ASHLARStageScanningChatGPT.gif)

@@ -354,35 +354,6 @@ The motor (Nema12) with 200 steps/revolution runs with 16 microstepps and offers
 - `isabs`: absolute or relative motion
 - `isaccel`: for now, use only non-accelerated motion!
 
-## Inserting the Modules
-
-This shows how the optics module have to be slided into the FiveD assembly. There is a series of groves, slides and accompanying spring-loaded mechanisms to keep the module in exactly one place. It is mechanically well defined. The way to slide it in is a bit involved, but worth it:
-
-![](./IMAGES/fiveDv3/moduleinsertation/moduleinsert_1.jpeg)
-*one of the positioning spheres (without spring) beaks first*
-
-![](./IMAGES/fiveDv3/moduleinsertation/moduleinsert_2.jpeg)
-*immediately after this comes the first spring-loaded ball*
-
-![](./IMAGES/fiveDv3/moduleinsertation/moduleinsert_3.jpeg)
-*Both balls have to pass over this hill on their bhan. But since one of them is spring-loaded, this should work.
-
-![](./IMAGES/fiveDv3/moduleinsertation/moduleinsert_4.jpeg)
-*the second spring ball now plays along*
-
-![](./IMAGES/fiveDv3/moduleinsertation/moduleinsert_5.jpeg)
-*The last two fixed balls find their groove almost immediately before the front ball moves up its ramp to the pins*
-
-![](./IMAGES/fiveDv3/moduleinsertation/moduleinsert_6.jpeg)
-*Final position. All fixed balls in their "pin yokes" and both spring balls press the optics module against them*.
-
-
-### Final result
-
-
-![](./IMAGES/fiveDv3/moduleinsertation/IMG_20240305_132109.jpg)
-
-![](./IMAGES/fiveDv3/moduleinsertation/IMG_20240305_132114.jpg)
 
 
 ## Safety

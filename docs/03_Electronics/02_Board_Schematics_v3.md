@@ -1,6 +1,6 @@
 ---
-id: uc2e2
-title: Hardware
+id: uc2e2v3
+title: UC2 Standalone Boar V3
 ---
 
 

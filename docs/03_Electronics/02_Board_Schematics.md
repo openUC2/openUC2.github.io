@@ -5,8 +5,7 @@ title: Hardware
 
 
 <!----------------------------------------->
-## 🔌 Board layout and schematics
-Duration:5
+## 🔌 Board layout and schematics (UC2 Standalon v2)
 
 The board comes with 4 motor controllers (e.g. A4988 Bipolar Stepper controller), the ESP32 Dev Kit, a bunch of pins for in/outgoing connections, 3 darlington transistors (BD809) and the power distribution. It is inspired by the CNC shield and can
 

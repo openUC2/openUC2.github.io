@@ -42,8 +42,8 @@ The core components of the light-sheet microscope are as follows:
 - A LED for transmission illumination.
 ![](IMAGES/Lightsheet/IMG_20240607_113421.jpg)
 - A ten-fold objective lens with a long working distance for detection.
-![](IMAGES/Lightsheet/IMG_20240607_113421.jpg)
-![](IMAGES/Lightsheet\IMG_20240607_114005.jpg)
+![](IMAGES/Lightsheet/IMG_20240607_113542.jpg)
+![](IMAGES/Lightsheet/IMG_20240607_114005.jpg)
 - An emission filter and a tube lens connected to a monochromatic CMOS camera for image acquisition.
 ![](IMAGES/Lightsheet/IMG_20240607_114202.jpg)
 ![](IMAGES/Lightsheet/IMG_20240607_114304.jpg)

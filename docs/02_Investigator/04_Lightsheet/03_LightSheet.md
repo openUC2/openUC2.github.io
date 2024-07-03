@@ -38,6 +38,9 @@ The core components of the light-sheet microscope are as follows:
 - A LED for transmission illumination.
 - A ten-fold objective lens with a long working distance for detection.
 - An emission filter and a tube lens connected to a monochromatic CMOS camera for image acquisition.
+![](IMAGES\Lightsheet\IMG_20240607_114202.jpg)
+![](IMAGES\Lightsheet\IMG_20240607_114304.jpg)
+![](IMAGES\Lightsheet\IMG_20240607_114311.jpg)
 - A micrometer-precise XYZ stage to move the sample.
 
 ### A Video walk-through the process of the light-sheet assembly
@@ -120,3 +123,6 @@ The 3D printing files can be found [here](./STL.zip)
 ## Conclusion
 
 Congratulations! You have successfully built a light-sheet microscope using the UC2 modular toolbox. This powerful technique allows you to acquire high-resolution three-dimensional images of samples like zebrafishes. With the ability to perform optical sectioning and minimal phototoxicity, light-sheet microscopy is a valuable tool for studying biological structures in 3D. You can now explore the fascinating world of 3D biological imaging and discover new insights into the complexities of life at the microscopic level. Happy imaging!
+
+
+[def]: docs\02_Investigator\04_Lightsheet\IMAGES\Lightsheet\IMG_20240607_114311.jpg

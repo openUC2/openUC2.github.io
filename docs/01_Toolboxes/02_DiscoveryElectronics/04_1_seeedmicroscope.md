@@ -1,6 +1,6 @@
 # openUC2 XIAO Microscope Documentation
 
-:::warning Avoid colliding IDs
+:::warning **OpenUC2 Forum and Helpdesk**
 
 If you have any question, please refer to our forum: openuc2.discourse.group
 
@@ -59,8 +59,8 @@ The openUC2 XIAO Microscope features a solid body, a high-quality camera for ima
 
 Traditional microscopes are often limited by fixed functionalities and high costs. The openUC2 XIAO Microscope's modular, open-source design offers unparalleled flexibility and affordability, making advanced microscopy accessible for educational, research, and field applications.
 
-![](./IMAGES/OpenUC2xSeeed/IMG_20240708_125607.jpg)
-*The objective lens can easily
+![](./IMAGES/OpenUC2xSeeed/IMG_20240708_125521.jpg)
+*The objective lens can easily be swapped by unscrewing it from the RMS thread*
 
 ## Getting Started
 
@@ -76,24 +76,22 @@ For enhanced functionality, download the [Anglerfish APP](https://github.com/Mat
 
 ## Experiments
 
-### Experiment 1: Flow Microscopy with External UC2 Electronics
+### Experiment 1: Field Tripping
+- Take the microscope and explore the microverse wherever you go
+
+### Experiment 2: Autofocus and Miniaturized Stage for Large Samples with the UC2 Electronic
+- Implement a motorized stage for precise sample positioning and autofocusing.
 - Use external electronics to control fluid samples and capture images as they move. Curious? Click [here](./)
 
-### Experiment 2: Autofocus and Miniaturized Stage for Large Samples
-- Implement a motorized stage for precise sample positioning and autofocusing.
 
 ### Experiment 3: Timelapse of Yeast Cells
 - Capture the growth of yeast cells over time to study their behavior and development.
 
-## Community and Support
-
-Join our community on Discord in the #tinyml channel for support and collaboration. Explore the extensive library of UC2-compatible parts to expand the capabilities of your microscope.
-
-For detailed tutorials and further information, visit [openUC2 GitHub Repository](https://github.com/openUC2/openUC2-SEEED-XIAO-Camera).
 
 
+# Experiment 1 - Field Tripping
 
-# Experiment 1 - Flow Microscopy
+*More explanation and how-to's are comming* **SOON**
 
 ![](./IMAGES/OpenUC2xSeeed/PontWater.png)
 
@@ -107,15 +105,43 @@ For detailed tutorials and further information, visit [openUC2 GitHub Repository
 # Experiment 2 - UC2e + Microscopy
 
 
+
 ![](./IMAGES/OpenUC2xSeeed/ConnectionDiagram.png)
+
+
+## Add motorized focussing
+
+![](./IMAGES/OpenUC2xSeeed/IMG_20240726_081131.jpg)
+
+![](./IMAGES/OpenUC2xSeeed/IMG_20240726_081427.jpg)
+
+![](./IMAGES/OpenUC2xSeeed/IMG_20240726_081400.jpg)
+
+![](./IMAGES/OpenUC2xSeeed/IMG_20240726_081547.jpg)
+
+
+## Add motorized flow-stop microscopy
+
 
 ![](./IMAGES/OpenUC2xSeeed/VID_20240721_164303.gif)
 
 ![](./IMAGES/OpenUC2xSeeed/IMG_20240721_164131.jpg)
 
+## Add stage scanning
+
+![](./IMAGES/OpenUC2xSeeed/VID_20240729_100942.gif)
 
 # Experiment 3 - Timelapse Imaging
 
-HeLa Cells 
+HeLa Cells
+
+
+
+
+## Community and Support
+
+Join our community on Discord in the #tinyml channel for support and collaboration. Explore the extensive library of UC2-compatible parts to expand the capabilities of your microscope.
+
+For detailed tutorials and further information, visit [openUC2 GitHub Repository](https://github.com/openUC2/openUC2-SEEED-XIAO-Camera).
 
 By combining the best components from the MatchboxScope and UC2 modular systems, the openUC2 XIAO Microscope offers a powerful and flexible tool for a wide range of applications, making advanced microscopy accessible to a broader audience.

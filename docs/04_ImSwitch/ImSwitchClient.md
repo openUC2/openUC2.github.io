@@ -4,6 +4,9 @@
 
 [![PyPI Version](https://img.shields.io/pypi/v/imswitchclient.svg)](https://pypi.python.org/pypi/imswitchclient)
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WSDORF31O2M?si=hzqvJeZak0D13vFn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Features
 
 - **Remote Control**: Interact with ImSwitchUC2 from Jupyter Notebooks via fastapi endpoints.

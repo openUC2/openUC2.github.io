@@ -17,7 +17,7 @@ The openUC2 XIAO Microscope is a revolutionary step towards making high-quality,
 ## Key Features
 
 - **Powerful Camera**: Equipped with the ESP32-S3 camera and an OV2560 sensor, it streams high-resolution microscopic images to your screen, supported by Arduino and CircuitPython.
-- **Micrometer-Precise Focus**: The metal-based focusing mechanism ensures precise movement of the objective lens, allowing for detailed studies. It supports motorized focus stacking for automation.
+- **Micrometer-Precise Focus**: The met kal-based focusing mechanism ensures precise movement of the objective lens, allowing for detailed studies. It supports motorized focus stacking for automation.
 - **Robust Power Design**: The solid housing ensures reliability for everyday field research.
 - **Swappable Microscope Objectives**: Easily change magnifications to observe live samples from different angles.
 - **Customized Firmware**: Utilizes TinyML for on-the-fly image processing directly on the MCU, integrating sensors and other hardware for automated experiments.
@@ -91,22 +91,101 @@ For enhanced functionality, download the [Anglerfish APP](https://github.com/Mat
 
 # Experiment 1 - Field Tripping
 
-*More explanation and how-to's are comming* **SOON**
+## Experiment 1: Field Microscopy with the openUC2 XIAO Microscope
+
+In this experiment, we will take the Seeed Studio openUC2 XIAO Microscope on a field trip to explore microscopic details of water samples from various natural sources. This tutorial will guide you through setting up the microscope, collecting samples, and analyzing them.
 
 ![](./IMAGES/OpenUC2xSeeed/PontWater.png)
 
+
+### Materials Needed
+
+- openUC2 XIAO Microscope
+- USB cable
+- Power bank or smartphone (for power)
+- Flashlight (for illumination)
+- Plastic petri dish
+- Syringe or spoon (for collecting samples)
+- Android device with the openUC2 app (optional)
+
+### Steps
+
+#### 1. Preparation
+
+1. **Pack the Equipment**: Secure the openUC2 XIAO Microscope in a protective box. Ensure you have a USB cable, a power bank or smartphone, a flashlight, and a plastic petri dish.
+
+2. **Collect Samples**: During your field trip, use a syringe or spoon to collect water samples from ponds, lakes, or puddles. Transfer the water into the plastic petri dish.
+
+
+#### 2. Setting Up the Microscope
+
+1. **Power Up**: Connect the openUC2 XIAO Microscope to a power source using the USB cable. This can be either a power bank or your smartphone.
+
+2. **Illumination**: Use the flashlight to illuminate the sample from above or below, as needed.
+
+#### 3. Analyzing the Sample
+
+1. **Connecting to the Microscope**:
+    - Turn on the openUC2 XIAO Microscope.
+    - Connect your smartphone to the microscope's Wi-Fi hotspot, named `OpenUC2xSeeed-XXXXX` (where `XXXXX` is the MAC address).
+    - Open a web browser and navigate to `192.168.4.1` to access the microscope's web interface.
+    - Alternatively, you can use the openUC2 Android app to view the live stream.
+
+2. **Placing the Sample**:
+    - Place the petri dish with your water sample on the microscope stage.
+    - Ensure that the sample is directly under the objective lens.
+
+3. **Focusing the Microscope**:
+    - Start the live stream on the web interface or the Android app.
+    - Observe the live feed and adjust the position of the sample to find areas with potential microscopic details.
+    - Use the focus knob to move the objective lens up and down while observing the live stream for changes in contrast and sharpness.
+    - Continue adjusting until the sample is in sharp focus.
+
+4. **Exploring the Sample**:
+    - Once focused, move the sample in the XY direction to explore different areas.
+    - Look for interesting microscopic structures such as single-celled organisms, fibers, or particles.
+
 ![](./IMAGES/OpenUC2xSeeed/SVID_20240721_113753_1.gif)
+*This is our Android APP that enables you to save video files as well*
+
+#### 4. Sharing Your Findings
+
+- Capture images or record videos of interesting findings directly from the web interface or app.
+- Share your discoveries on social media using the hashtag #openUC2. You can also post your images on the openUC2 Twitter channel to share with the community.
+
+### Tips and Tricks
+
+- Ensure the sample is relatively still to get clear images.
+- If the sample contains a lot of debris, let it settle before placing it under the microscope.
+- Use different lighting angles to enhance the visibility of certain structures.
+
+### Example Observations
+
+During our field trip to the Bavarian Alps, we collected various water samples and observed the following:
+- **Microplastics**: Small fibers from textiles and plastics were clearly visible.
+- **Microorganisms**: Single-celled organisms were observed moving through the water, searching for food.
+- **Debris**: Various small particles, including tiny stones, were also present.
 
 ![](./IMAGES/OpenUC2xSeeed/MeinFilm21.gif)
+*Is this a fiber or a worm?*
+
+### Conclusion
+
+Field microscopy with the openUC2 XIAO Microscope allows for real-time exploration of microscopic worlds directly in nature. This portable setup is perfect for educational purposes, environmental research, and hobbyist exploration. Enjoy your microscopy adventures and share your findings with the openUC2 community!
+
 
 ![](./IMAGES/OpenUC2xSeeed/MeinFilm22.gif)
+*It's alive and hunting for prey*
+
 
 
 # Experiment 2 - UC2e + Microscopy
 
-
+**More coming soon!**
 
 ![](./IMAGES/OpenUC2xSeeed/ConnectionDiagram.png)
+
+![](./IMAGES/OpenUC2xSeeed/Bildschirmaufnahme2024-07-29um10.11.30.gif)
 
 
 ## Add motorized focussing
@@ -118,6 +197,14 @@ For enhanced functionality, download the [Anglerfish APP](https://github.com/Mat
 ![](./IMAGES/OpenUC2xSeeed/IMG_20240726_081400.jpg)
 
 ![](./IMAGES/OpenUC2xSeeed/IMG_20240726_081547.jpg)
+
+![](./IMAGES/OpenUC2xSeeed/VID_20240731_091903.gif)
+
+![](./IMAGES/OpenUC2xSeeed/VID_20240731_091926.gif)
+
+![](./IMAGES/OpenUC2xSeeed/VID_20240731_170805.gif)
+
+![](./IMAGES/OpenUC2xSeeed/VID_20240731_170950.gif)
 
 
 ## Add motorized flow-stop microscopy

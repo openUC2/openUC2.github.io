@@ -76,29 +76,16 @@ For enhanced functionality, download the [Anglerfish APP](https://github.com/Mat
 
 ## Experiments
 
-### Experiment 1: Field Tripping
-- Take the microscope and explore the microverse wherever you go
 
-### Experiment 2: Autofocus and Miniaturized Stage for Large Samples with the UC2 Electronic
-- Implement a motorized stage for precise sample positioning and autofocusing.
-- Use external electronics to control fluid samples and capture images as they move. Curious? Click [here](./)
+### Experiment 1: Field Microscopy with the openUC2 XIAO Microscope
 
-
-### Experiment 3: Timelapse of Yeast Cells
-- Capture the growth of yeast cells over time to study their behavior and development.
-
-
-
-# Experiment 1 - Field Tripping
-
-## Experiment 1: Field Microscopy with the openUC2 XIAO Microscope
-
+*Take the microscope and explore the microverse wherever you go*
 In this experiment, we will take the Seeed Studio openUC2 XIAO Microscope on a field trip to explore microscopic details of water samples from various natural sources. This tutorial will guide you through setting up the microscope, collecting samples, and analyzing them.
 
 ![](./IMAGES/OpenUC2xSeeed/PontWater.png)
 
 
-### Materials Needed
+#### Materials Needed
 
 - openUC2 XIAO Microscope
 - USB cable
@@ -108,22 +95,22 @@ In this experiment, we will take the Seeed Studio openUC2 XIAO Microscope on a f
 - Syringe or spoon (for collecting samples)
 - Android device with the openUC2 app (optional)
 
-### Steps
+#### Steps
 
-#### 1. Preparation
+##### 1. Preparation
 
 1. **Pack the Equipment**: Secure the openUC2 XIAO Microscope in a protective box. Ensure you have a USB cable, a power bank or smartphone, a flashlight, and a plastic petri dish.
 
 2. **Collect Samples**: During your field trip, use a syringe or spoon to collect water samples from ponds, lakes, or puddles. Transfer the water into the plastic petri dish.
 
 
-#### 2. Setting Up the Microscope
+##### 2. Setting Up the Microscope
 
 1. **Power Up**: Connect the openUC2 XIAO Microscope to a power source using the USB cable. This can be either a power bank or your smartphone.
 
 2. **Illumination**: Use the flashlight to illuminate the sample from above or below, as needed.
 
-#### 3. Analyzing the Sample
+##### 3. Analyzing the Sample
 
 1. **Connecting to the Microscope**:
     - Turn on the openUC2 XIAO Microscope.
@@ -148,18 +135,18 @@ In this experiment, we will take the Seeed Studio openUC2 XIAO Microscope on a f
 ![](./IMAGES/OpenUC2xSeeed/SVID_20240721_113753_1.gif)
 *This is our Android APP that enables you to save video files as well*
 
-#### 4. Sharing Your Findings
+##### 4. Sharing Your Findings
 
 - Capture images or record videos of interesting findings directly from the web interface or app.
 - Share your discoveries on social media using the hashtag #openUC2. You can also post your images on the openUC2 Twitter channel to share with the community.
 
-### Tips and Tricks
+#### Tips and Tricks
 
 - Ensure the sample is relatively still to get clear images.
 - If the sample contains a lot of debris, let it settle before placing it under the microscope.
 - Use different lighting angles to enhance the visibility of certain structures.
 
-### Example Observations
+#### Example Observations
 
 During our field trip to the Bavarian Alps, we collected various water samples and observed the following:
 - **Microplastics**: Small fibers from textiles and plastics were clearly visible.
@@ -169,7 +156,7 @@ During our field trip to the Bavarian Alps, we collected various water samples a
 ![](./IMAGES/OpenUC2xSeeed/MeinFilm21.gif)
 *Is this a fiber or a worm?*
 
-### Conclusion
+#### Conclusion
 
 Field microscopy with the openUC2 XIAO Microscope allows for real-time exploration of microscopic worlds directly in nature. This portable setup is perfect for educational purposes, environmental research, and hobbyist exploration. Enjoy your microscopy adventures and share your findings with the openUC2 community!
 
@@ -179,7 +166,11 @@ Field microscopy with the openUC2 XIAO Microscope allows for real-time explorati
 
 
 
-# Experiment 2 - UC2e + Microscopy
+
+### Experiment 2: Autofocus and Miniaturized Stage for Large Samples with the UC2 Electronic
+- Implement a motorized stage for precise sample positioning and autofocusing.
+- Use external electronics to control fluid samples and capture images as they move. Curious? Click [here](./)
+
 
 **More coming soon!**
 
@@ -218,11 +209,13 @@ Field microscopy with the openUC2 XIAO Microscope allows for real-time explorati
 
 ![](./IMAGES/OpenUC2xSeeed/VID_20240729_100942.gif)
 
-# Experiment 3 - Timelapse Imaging
+
+
+### Experiment 3: Timelapse of Yeast Cells
+- Capture the growth of yeast cells over time to study their behavior and development.
+
 
 HeLa Cells
-
-
 
 
 ## Community and Support

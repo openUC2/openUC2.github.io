@@ -133,6 +133,7 @@ In this experiment, we will take the Seeed Studio openUC2 XIAO Microscope on a f
     - Look for interesting microscopic structures such as single-celled organisms, fibers, or particles.
 
 ![](./IMAGES/OpenUC2xSeeed/SVID_20240721_113753_1.gif)
+
 *This is our Android APP that enables you to save video files as well*
 
 ##### 4. Sharing Your Findings
@@ -154,66 +155,147 @@ During our field trip to the Bavarian Alps, we collected various water samples a
 - **Debris**: Various small particles, including tiny stones, were also present.
 
 ![](./IMAGES/OpenUC2xSeeed/MeinFilm21.gif)
+
 *Is this a fiber or a worm?*
 
 #### Conclusion
 
 Field microscopy with the openUC2 XIAO Microscope allows for real-time exploration of microscopic worlds directly in nature. This portable setup is perfect for educational purposes, environmental research, and hobbyist exploration. Enjoy your microscopy adventures and share your findings with the openUC2 community!
 
-
 ![](./IMAGES/OpenUC2xSeeed/MeinFilm22.gif)
+
 *It's alive and hunting for prey*
 
 
+# Experiment 2: Autofocus and Miniaturized Stage for Large Samples with the UC2 Electronic
+
+## Introduction
+
+Why would one need a modular microscope like the openUC2 XIAO when a $10 USB microscope from AliExpress might suffice? The answer lies in the versatility and expandability of the openUC2 XIAO. This hackable microscope allows for the adaptation of various modules, enhancing its functionality significantly. In this tutorial, we will demonstrate how to add autofocus and stage scanning capabilities using simple components and a few 3D-printed parts.
+
+## Connectivity of openUC2 with the Microscope
+
+The general idea of connecting various microscope components like an X-stage or a focus motor to the Xiao Microscope is illustrated in the diagram below. The microscope provides a server and an access point for Wi-Fi. An app connects to the microscope to start the image stream and control camera commands. Another ESP32 with our firmware connects to the microscope via Wi-Fi, performing a handshake so the microscope recognizes devices like LEDs or focus motors. Control commands are sent from the app through the microscope to the motor, all using HTTP REST commands.
+
+- Camera: [GitHub - Matchboxscope Simple Camera](https://github.com/Matchboxscope/matchboxscope-simplecamera/tree/openUC2xSEEED)
+- UC2 ESP32 Firmware: [GitHub - UC2 ESP32 Firmware](https://github.com/youseetoo/uc2-esp32/)
+- For questions, please visit our [Forum](https://openuc2.discourse.group/)
+
+![Connection Diagram](./IMAGES/OpenUC2xSeeed/ConnectionDiagram.png)
+
+## Adding Motorized Focusing
+
+The Xiao Microscope has a high-precision micrometer screw for moving the objective lens along the optical axis to achieve focus. For high magnification, a motor can help move the focus knob precisely without manual intervention. A simple and inexpensive servo motor can move the focus knob by ±90°, connected via a slip clutch to avoid damage.
 
 
-### Experiment 2: Autofocus and Miniaturized Stage for Large Samples with the UC2 Electronic
-- Implement a motorized stage for precise sample positioning and autofocusing.
-- Use external electronics to control fluid samples and capture images as they move. Curious? Click [here](./)
+![](./IMAGES/OpenUC2xSeeed/UC2Focus.gif)
+
+**Simple Rendering of the even simpler motorized Focus cube module**
 
 
-**More coming soon!**
+### Printing Parts
 
-![](./IMAGES/OpenUC2xSeeed/ConnectionDiagram.png)
+Print the following parts using a 3D printer with PETG filament at 20% infill and 0.2mm layer height:
+
+- [Knob Adapter](./IMAGES/OpenUC2xSeeed/Assembly_Cube_MiniServoCenteredFocus_v3_20_Cube_Insert_MiniServoFocus_Knobadapter_20mm_6.stl)
+- [Servo Holder](./IMAGES/OpenUC2xSeeed/Assembly_Cube_MiniServoCenteredFocus_v3_20_Cube_Insert_MiniServoFocus_5.stl)
+
+### Additional Components
+
+- Servo Motor 9G
+- M2 screws
+- UC2 ESP32-capable board (available at UC2-Shop)
+
+### Assembly
+
+1. Gather all the parts:
+   ![All the parts](./IMAGES/OpenUC2xSeeed/IMG_20240726_081131.jpg)
+
+2. Add the Cube to the Microscope base:
+   ![Add Cube to the Microscope base](./IMAGES/OpenUC2xSeeed/IMG_20240726_081427.jpg)
+
+3. Insert the Servo into the UC2 Cube:
+   ![Insert Servo](./IMAGES/OpenUC2xSeeed/IMG_20240726_081400.jpg)
+
+4. Close the cube and attach it to the focus knob:
+   ![Close cube and attach it to the focus knob](./IMAGES/OpenUC2xSeeed/IMG_20240726_081547.jpg)
+
+5. Observe the motorized focus in action:
+   ![Motorized Focus in Action](./IMAGES/OpenUC2xSeeed/VID_20240731_091903.gif)
+
+## Adding Stage Scanning
+
+Stage scanning allows the automatic movement of the sample to enlarge the visible field. We use a simple servo motor to move a rubber-band-fitted sled, carrying the sample along an axis. This method provides a reliable movement path using steel rods salvaged from old CD/DVD drives.
+
+
+![](./IMAGES/OpenUC2xSeeed/UC2LinSlide.gif)
+
+*Simple rendering of an even simpler device*
+
+
+### Printing Parts
+
+Print the following parts using a 3D printer with PETG filament at 20% infill and 0.2mm layer height:
+
+- [Base](./IMAGES/OpenUC2xSeeed/Assembly_Cube_Linear_Sampleslide_Servo_20_Cube_Insert_linearslide_servodriven_v2_6.stl)
+- [Slide](./IMAGES/OpenUC2xSeeed/Assembly_Cube_Linear_Sampleslide_Servo_20_Cube_Insert_linearslide_servodriven_slide_v2_8.stl)
+
+### Additional Components
+
+- Servo Motor 9G
+- M2 screws
+- UC2 ESP32-capable board (available at UC2-Shop)
+- Rubber band
+- 2x 3mm diameter, >50mm length steel rods (chrome), e.g., from an old DVD/CD drive or from online retailers.
+
+### Assembly
+
+1. Assemble the base and slide components as illustrated:
+   ![Assemble the Base](./IMAGES/OpenUC2xSeeed/VID_20240729_100942.gif)
+
+2. Ensure the servo motor moves the slide smoothly to scan the sample area.
+
+For more information and community support, visit our [GitHub Repository](https://github.com/openUC2/openUC2-SEEED-XIAO-Camera) and [Forum](https://openuc2.discourse.group/).
+
+
+##### Assembly
+
+*Comming Soon*
+
+##### Results
 
 ![](./IMAGES/OpenUC2xSeeed/Bildschirmaufnahme2024-07-29um10.11.30.gif)
 
-
-## Add motorized focussing
-
-![](./IMAGES/OpenUC2xSeeed/IMG_20240726_081131.jpg)
-
-![](./IMAGES/OpenUC2xSeeed/IMG_20240726_081427.jpg)
-
-![](./IMAGES/OpenUC2xSeeed/IMG_20240726_081400.jpg)
-
-![](./IMAGES/OpenUC2xSeeed/IMG_20240726_081547.jpg)
-
-![](./IMAGES/OpenUC2xSeeed/VID_20240731_091903.gif)
-
-![](./IMAGES/OpenUC2xSeeed/VID_20240731_091926.gif)
+*Scanning of red blood cells contaminated with malaria in the field*
 
 ![](./IMAGES/OpenUC2xSeeed/VID_20240731_170805.gif)
 
+*Stage in Action in continous mode*
+
 ![](./IMAGES/OpenUC2xSeeed/VID_20240731_170950.gif)
 
+*Stage in Action in continous mode*
 
-## Add motorized flow-stop microscopy
 
+#### Add motorized flow-stop microscopy
+
+**More coming soon**
 
 ![](./IMAGES/OpenUC2xSeeed/VID_20240721_164303.gif)
 
 ![](./IMAGES/OpenUC2xSeeed/IMG_20240721_164131.jpg)
 
-## Add stage scanning
-
-![](./IMAGES/OpenUC2xSeeed/VID_20240729_100942.gif)
 
 
 
 ### Experiment 3: Timelapse of Yeast Cells
-- Capture the growth of yeast cells over time to study their behavior and development.
 
+- Capture the growth of yeast cells over time to study their behavior and development.
+- This can be set up in the Web GUI
+- Insert a FAT32 formated SD card into the Xiao and verify it gets mounted correctly (monitor the USB Serial )
+
+
+![](./IMAGES/OpenUC2xSeeed/VID_20240731_091926.gif)
 
 HeLa Cells
 

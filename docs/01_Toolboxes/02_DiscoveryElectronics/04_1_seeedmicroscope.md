@@ -7,7 +7,7 @@ If you have any question, please refer to our forum: openuc2.discourse.group
 :::
 
 
-:::details **First Step: Flash The Firmware**
+:::info **First Step: Flash The Firmware**
 
 To get the lastest firmware for the Xiao Microscope, please follow this link: https://matchboxscope.github.io/firmware/FLASH.html
 

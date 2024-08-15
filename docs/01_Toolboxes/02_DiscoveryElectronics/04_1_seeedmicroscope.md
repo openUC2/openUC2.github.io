@@ -6,6 +6,16 @@ If you have any question, please refer to our forum: openuc2.discourse.group
 
 :::
 
+
+:::details **First Step: Flash The Firmware**
+
+To get the lastest firmware for the Xiao Microscope, please follow this link: https://matchboxscope.github.io/firmware/FLASH.html
+
+
+![](./IMAGES/OpenUC2xSeeed/flashingprocedure.gif)
+:::
+
+
 ## Introduction
 
 The openUC2 XIAO Microscope is a revolutionary step towards making high-quality, automated microscopy accessible to everyone. Created in collaboration with Seeed Studio, this device is ideal for hackers, optics newcomers, and biologists. It offers more functionalities than a standard USB microscope, including timelapse, autofocusing, and autonomous operation with image storage on an SD card. This guide will help you understand the capabilities of the openUC2 XIAO Microscope and provide a comprehensive tutorial for its use.

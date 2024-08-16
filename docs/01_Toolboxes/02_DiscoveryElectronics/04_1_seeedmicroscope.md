@@ -303,11 +303,14 @@ For more information and community support, visit our [GitHub Repository](https:
 - Capture the growth of yeast cells over time to study their behavior and development.
 - This can be set up in the Web GUI
 - Insert a FAT32 formated SD card into the Xiao and verify it gets mounted correctly (monitor the USB Serial )
-
+- Set timelpase slider to a value that is suitable
+- enable timelpase with the timelapse switch
+- ensure the SD card is mounted. It should state that during boot (e.g. SDHC)
 
 ![](./IMAGES/OpenUC2xSeeed/VID_20240731_091926.gif)
 
-HeLa Cells
+![](./IMAGES/OpenUC2xSeeed/HeLaXiao.gif)
+*HeLa Cells in a cell incubator*
 
 
 ## Community and Support

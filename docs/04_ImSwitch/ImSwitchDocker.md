@@ -47,21 +47,44 @@ Install the docker image and run it:
 sudo docker run -it --rm -p 8001:8001 -p 2222:22 -e HEADLESS=1 -e HTTP_PORT=8001 -e CONFIG_FILE=example_uc2_hik_flowstop.json -e UPDATE_GIT=0 -e UPDATE_CONFIG=0 --privileged ghcr.io/openuc2/imswitch-noqt-x64:latest
 ```
 
-*List of arguments:*
+Certainly! Here’s the updated section of the documentation with the changes incorporated:
+
+---
+
+### Install the Docker Image and Run It
+
+To install and run the ImSwitch Docker image, use the following command:
 
 ```bash
-HEADLESS=1                # ImSwitch will start without any GUI
-HTTP_PORT=8001            # Port to access e.g. the ImSwitch React GUI
-CONFIG_FILE=example_virtual_microscope.json # default setup configuration
-UPDATE_GIT=true           # pull the latest ImSwitch git
-UPDATE_INSTALL_GIT=true   # pull and pip install all changes (e.g. new packages)
-UPDATE_UC2=true           # pull UC2-REST
-UPDATE_INSTALL_UC2=true   # pull and pip install all changes
-UPDATE_CONFIG=true        # pull changes for setup configurations
-MODE=terminal             # start Docker with bash for better debugging
-CONFIG_PATH=/Users/bene/Downloads # path to the local ImSwitchConfig folder (will use the default inside the container if not specified)
-DATA_PATH=/Users/bene/Downloads # remote path to store data (e.g. USB drive, needs to be mounted via commandline, (will use the default inside the container if not specified))
+sudo docker run -it --rm -p 8001:8001 -p 2222:22 \
+-e HEADLESS=1 \
+-e HTTP_PORT=8001 \
+-e CONFIG_FILE=example_uc2_hik_flowstop.json \
+-e UPDATE_GIT=0 \
+-e UPDATE_CONFIG=0 \
+--privileged ghcr.io/openuc2/imswitch-noqt-x64:latest
 ```
+
+### List of Arguments
+
+Here’s a breakdown of the arguments you can use to customize the ImSwitch Docker container:
+
+```bash
+HEADLESS=1                # ImSwitch will start without any GUI.
+HTTP_PORT=8001            # Port to access e.g. the ImSwitch React GUI.
+CONFIG_FILE=example_virtual_microscope.json # Default setup configuration.
+UPDATE_GIT=true           # Pull the latest ImSwitch repository.
+UPDATE_INSTALL_GIT=true   # Pull the latest ImSwitch repository and install all changes (e.g., new packages).
+UPDATE_UC2=true           # Pull the latest UC2-REST repository.
+UPDATE_INSTALL_UC2=true   # Pull the latest UC2-REST repository and install all changes.
+UPDATE_CONFIG=true        # Pull the latest changes for setup configurations.
+MODE=terminal             # Start Docker with bash for better debugging.
+CONFIG_PATH=/Users/bene/Downloads # Path to the local ImSwitchConfig folder (uses the default inside the container if not specified).
+DATA_PATH=/Users/bene/Downloads # Path to store data (e.g., USB drive; needs to be mounted via command line; uses the default inside the container if not specified).
+PIP_PACKAGES (e.g. "arkitekt UC2-REST") # add new packages after container building
+```
+
+
 
 ### External folders for Config and Data
 
@@ -81,7 +104,62 @@ This means that ImSwitch inside docker will use the folder `/config/ImSwitchConf
 Images will be stored in that folder. Ensure the folder exists!
 
 
+```
 -v ~/Downloads:/config
+```
+
+### Make changes persistent
+
+
+This command configures and runs the ImSwitch Docker container with the following features:
+
+1. **Update the ImSwitch Repository and Make Changes Persistent:**
+    - The `UPDATE_INSTALL_GIT=1` environment variable triggers an update and reinstallation of the ImSwitch repository.
+    - The ImSwitch repository changes are stored in the `/tmp/ImSwitch-changes` directory within the container, which is mounted to `~/Documents/imswitch_docker/imswitch_git` on the host. This makes any updates or modifications persistent across container restarts.
+
+2. **Persistent Storage of Installed Pip Packages:**
+    - The `PIP_PACKAGES` environment variable allows you to specify additional pip packages to install. In this example, "arkitekt" and "UC2-REST" are installed.
+    - The installed pip packages are stored in the `/persistent_pip_packages` directory within the container, which is mounted to `~/Documents/imswitch_docker/imswitch_pip` on the host, ensuring persistence across container restarts.
+
+3. **Using an External ImSwitchConfig Folder:**
+    - The ImSwitch configuration files are stored in the `/root/ImSwitchConfig` directory within the container, which is mounted to `~/Downloads` on the host. This allows you to easily manage and update your configuration files from your host machine.
+
+4. **Using an External Dataset Folder:**
+    - The dataset files are stored in the `/dataset` directory within the container, which is mounted to `/media/uc2/SD2/` on the host. This allows you to work with large datasets stored on your host machine.
+
+**Command Example:**
+```bash
+sudo docker run -it --rm -p 8001:8001 -p 2222:22 \
+-e UPDATE_INSTALL_GIT=1 \
+-e PIP_PACKAGES="arkitekt UC2-REST" \
+-e DATA_PATH=/dataset \
+-e CONFIG_PATH=/config \
+-v ~/Documents/imswitch_docker/imswitch_git:/tmp/ImSwitch-changes \
+-v ~/Documents/imswitch_docker/imswitch_pip:/persistent_pip_packages \
+-v /media/uc2/SD2/:/dataset \
+-v ~/Downloads:/config \
+imswitch_hik
+```
+
+### Breakdown of the Command:
+
+- **Port Mapping:**
+  - `-p 8001:8001`: Maps the container’s HTTP server port 8001 to the host’s port 8001.
+  - `-p 2222:22`: Maps the container’s SSH server port 22 to the host’s port 2222.
+
+- **Environment Variables:**
+  - `-e UPDATE_INSTALL_GIT=1`: Updates and reinstalls the ImSwitch repository during container startup.
+  - `-e PIP_PACKAGES="arkitekt UC2-REST"`: Installs additional pip packages (`arkitekt`, `UC2-REST`) and makes them persistent.
+
+- **Volume Mounting:**
+  - `-v ~/Documents/imswitch_docker/imswitch_git:/tmp/ImSwitch-changes`: Mounts the host directory `~/Documents/imswitch_docker/imswitch_git` to `/tmp/ImSwitch-changes` inside the container to persist changes to the ImSwitch repository.
+  - `-v ~/Documents/imswitch_docker/imswitch_pip:/persistent_pip_packages`: Mounts the host directory `~/Documents/imswitch_docker/imswitch_pip` to `/persistent_pip_packages` inside the container for persistent pip package storage.
+  - `-v /media/uc2/SD2/:/dataset`: Mounts the host directory `/media/uc2/SD2/` to `/dataset` inside the container to use external datasets.
+  - `-v ~/Downloads:/config`: Mounts the host directory `~/Downloads` to `/config` inside the container to use external configuration files.
+
+This command is a comprehensive way to set up and run the ImSwitch Docker container, ensuring that updates, configurations, and additional installations are persistent and easily manageable.
+
+
 
 
 ### Setting up docker on Raspi

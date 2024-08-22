@@ -289,27 +289,79 @@ For more information and community support, visit our [GitHub Repository](https:
 
 #### Add motorized flow-stop microscopy
 
+
+
+
 **More coming soon**
 
 ![](./IMAGES/OpenUC2xSeeed/VID_20240721_164303.gif)
 
 ![](./IMAGES/OpenUC2xSeeed/IMG_20240721_164131.jpg)
 
+![](./IMAGES/OpenUC2xSeeed/VID_20240731_091926.gif)
+
 
 
 
 ### Experiment 3: Timelapse of Yeast Cells
 
-- Capture the growth of yeast cells over time to study their behavior and development.
-- This can be set up in the Web GUI
-- Insert a FAT32 formated SD card into the Xiao and verify it gets mounted correctly (monitor the USB Serial )
-- Set timelpase slider to a value that is suitable
-- enable timelpase with the timelapse switch
-- ensure the SD card is mounted. It should state that during boot (e.g. SDHC)
+Here’s an enhanced version of the documentation for your GitHub tutorial:
 
-![](./IMAGES/OpenUC2xSeeed/VID_20240731_091926.gif)
+---
+
+### Experiment 3: Timelapse of HeLa Cells (or Any Other Moving Subject)
+
+In this experiment, you will capture a timelapse of growing yeast cells (or any other subject that changes over time) to observe and study their behavior and development. The setup process can be easily managed via the Web GUI.
+
+#### Step-by-Step Instructions
+
+1. **Prepare the SD Card**:
+   - Insert a FAT32-formatted SD card into your Xiao device.
+   - Verify that the SD card mounts correctly by monitoring the USB Serial output. The output should indicate successful mounting, e.g., as "SDHC".
+   - If you need to format your SD card to FAT32, use the official SD Card Formatter tool. You can download it [here](#).
+
+![](./IMAGES/OpenUC2xSeeed/SDCard_1.png)
+
+![](./IMAGES/OpenUC2xSeeed/SDCard_2.png)
+
+
+2. **Insert the SD Card**:
+   - Insert the SD card into the SD card slot on the Xiao device. The slot is larger than the card, so using tweezers can help with precise insertion.
+   - Check the Serial Output on startup to confirm that the SD card has been mounted correctly. If mounted, the card type (e.g., SDHC) will be displayed.
+
+![](./IMAGES/OpenUC2xSeeed/IMG_20240820_073109.jpg)
+
+
+3. **Configure the Timelapse Settings**:
+   - **Set the Timelapse Interval**: Access the Web GUI at `http://192.168.4.1`. Use the slider to set a suitable interval for capturing images (e.g., 60 seconds for one image per minute).
+   - **Enable Timelapse Mode**: Activate the timelapse feature by toggling the timelapse switch in the Web GUI.
+   - **Verify SD Card Mounting**: Ensure the SD card is still mounted by checking the SD card name; it should show a value greater than 0.
+
+4. **Start Capturing the Timelapse**:
+   - Once the timelapse is enabled, the device will start capturing images at the set interval.
+   - Note that the live stream may temporarily go off after each image is captured. This is normal behavior.
+   - You can refresh the Web GUI page to see the image counter increase, indicating that new images are being saved to the SD card.
+
+![](./IMAGES/OpenUC2xSeeed/IMG_20240816_101110.jpg)
+
+
+5. **Retrieve the Images**:
+   - After the timelapse is complete, carefully remove the SD card from the Xiao device.
+   - Transfer the images from the SD card to your computer.
+   - The images will be named with an incremental number corresponding to each timelapse capture and include a CPU timestamp measured in microseconds for precise timing information.
+
+#### Tips and Troubleshooting
+
+- **SD Card Compatibility**: Not all SD cards may work with the Xiao device. If your card is not recognized, try a different one.
+- **Timelapse Duration**: Consider the length of your experiment when setting the timelapse interval to avoid excessive data or missed events.
+- **Web GUI Connection**: Ensure your device is connected to the correct network to access the Web GUI. If you encounter issues, try restarting the Xiao or rechecking the network configuration.
+
+By following these steps, you should be able to successfully capture and analyze a timelapse of cellular or other biological processes with ease.
 
 ![](./IMAGES/OpenUC2xSeeed/HeLaXiao.gif)
+
+
+
 *HeLa Cells in a cell incubator*
 
 

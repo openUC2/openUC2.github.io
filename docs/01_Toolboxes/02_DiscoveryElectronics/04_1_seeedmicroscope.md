@@ -72,6 +72,24 @@ Traditional microscopes are often limited by fixed functionalities and high cost
 ![](./IMAGES/OpenUC2xSeeed/IMG_20240708_125521.jpg)
 *The objective lens can easily be swapped by unscrewing it from the RMS thread*
 
+| Feature                           | openUC2 XIAO Microscope                              | Standard USB Microscopes                       |
+|-----------------------------------|------------------------------------------------------|------------------------------------------------|
+| **Camera Quality**                | High-resolution with ESP32-S3 camera and OV2560 sensor | Moderate resolution, varying by model          |
+| **Focusing**                      | Micrometer-precise motorized focusing, focus stacking supported | Manual focusing, often less precise           |
+| **Modularity**                    | Modular design with swappable objectives, customizable with 3D-printed parts and additional modules | Fixed design, limited customization            |
+| **Connectivity**                  | Wi-Fi enabled with a dedicated hotspot, supports external app control | USB connection only                           |
+| **Image Processing**              | Onboard TinyML for real-time image processing         | No onboard processing, relies on external software |
+| **Power Source**                  | USB-C, can be powered by a smartphone or power bank   | USB power, requires connection to a computer   |
+| **Timelapse & Autonomous Operation** | Supports timelapse imaging, autonomous operation, image storage on SD card | Typically no support for timelapse or autonomous operation |
+| **Field Research Suitability**    | Portable, robust design suitable for field research   | Generally not designed for field use, less robust |
+| **Firmware**                      | Open-source, customizable firmware                   | Proprietary firmware, limited or no customization |
+| **Use Cases**                     | Suitable for education, environmental research, health monitoring, and prototyping | Basic educational or hobbyist use              |
+| **Expandability**                 | Supports additional components like motorized stages, external sensors | Limited expandability, mostly standalone       |
+| **Ease of Use**                   | Easy setup, even for beginners, with app and web interface | Simple plug-and-play setup                     |
+| **Cost**                          | Higher, due to advanced features and modularity       | Lower, but with fewer features and capabilities |
+| **Weight & Portability**          | Lightweight and compact, easy to carry in a backpack  | Typically lightweight but less robust for fieldwork |
+
+
 ## Getting Started
 
 The openUC2 XIAO Microscope is a combination of the MatchboxScope (based on the ESP32 camera) and the UC2 modular system. The firmware is open-source and can be flashed using a web interface.

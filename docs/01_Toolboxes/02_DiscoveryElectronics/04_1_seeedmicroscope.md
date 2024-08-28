@@ -378,9 +378,62 @@ By following these steps, you should be able to successfully capture and analyze
 
 ![](./IMAGES/OpenUC2xSeeed/HeLaXiao.gif)
 
-
-
 *HeLa Cells in a cell incubator*
+
+
+#### Code to convert images from the SD card into a video
+
+Once the experiment is done, you would need to convert the images into a video. This can be done by carefully removing the micro SD card from the microscope and inserting it into your computer. We used a microSD card adapter and inserted that into the SD card slot of our macbook. Then we download all images into a local folder and execute the below script. The SD card will have multiple files in one single folder (base-folder) which may cause problems if you had mutiple timeseries acquired one after another. Therfore, the camera writes an `index.txt` file where the file names are stored in consecutive order. The below script will read the files based on this index file and outputs the videofile (or TIF file respectively). Adjust the filepaths accordingly.
+
+```py
+import numpy as np
+import tifffile as tif
+import os
+import cv2
+import matplotlib.pyplot as plt
+
+# load the images from the list
+basePath = '/Users/bene/Downloads/2024_08_27-Cells_XiaoMicroscope_Lena'
+savePathFile = 'ImageStack.tif'
+fileIndexList = os.path.join(basePath, 'index.txt')
+
+# read the list of files
+mAllFiles = []
+with open(fileIndexList, 'r') as f:
+    for line in f:
+        mAllFiles.append(line.strip())
+
+# select images from the list
+mSelectedFiles = mAllFiles[2500:-1]
+mSelectedFiles
+
+#video writer
+width, height, _ = plt.imread(basePath + mSelectedFiles[0] + '.jpg').shape
+fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+out = cv2.VideoWriter(os.path.join(basePath, 'output.avi'), fourcc, 40, (height,width))
+
+# read images and save as tiff/mp4
+for iFile in mSelectedFiles:
+    # read the image
+    try:
+
+        mImage = plt.imread(basePath + iFile + '.jpg')
+        frame = cv2.convertScaleAbs(mImage)
+        out.write(frame)
+
+        print("read image: ", iFile, " with shape: ", mImage.shape)
+        # save the image as tiff
+        # tif.imsave(os.path.join(basePath, savePathFile), mImage, append=True, bigtiff=True)
+    except:
+        continue
+
+out.release()
+```
+
+The result (Sorry for the bad compression of the result):
+
+![](./IMAGES/OpenUC2xSeeed/output.gif)
 
 
 ## Community and Support

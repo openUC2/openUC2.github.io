@@ -435,6 +435,9 @@ The result (Sorry for the bad compression of the result):
 
 ![](./IMAGES/OpenUC2xSeeed/output.gif)
 
+and also as a youtube video in slighlty better quality (next time I'll share the raw video :)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/omXEBV_astQ?si=XFezMBOowycvvTLO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Community and Support
 

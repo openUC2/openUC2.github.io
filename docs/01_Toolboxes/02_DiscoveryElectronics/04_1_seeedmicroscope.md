@@ -443,7 +443,7 @@ and also as a youtube video in slighlty better quality (next time I'll share the
 
 The microscope did not show any heat buildup when placed in the cell incubator. So the effect of massive abopotosis may be found in an infection event.
 
-![](./IMAGES/OpenUC2xSeeed/HeatXiao.png)
+![](./IMAGES/HeatXiao.png)
 
 ## Community and Support
 

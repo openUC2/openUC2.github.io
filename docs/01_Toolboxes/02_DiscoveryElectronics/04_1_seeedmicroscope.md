@@ -439,6 +439,12 @@ and also as a youtube video in slighlty better quality (next time I'll share the
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/omXEBV_astQ?si=XFezMBOowycvvTLO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+#### Heat Dissipation of the microscope
+
+The microscope did not show any heat buildup when placed in the cell incubator. So the effect of massive abopotosis may be found in an infection event.
+
+![](./IMAGES/OpenUC2xSeeed/HeatXiao.png)
+
 ## Community and Support
 
 Join our community on Discord in the #tinyml channel for support and collaboration. Explore the extensive library of UC2-compatible parts to expand the capabilities of your microscope.

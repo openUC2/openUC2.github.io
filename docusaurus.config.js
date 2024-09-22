@@ -36,7 +36,7 @@ const config = {
         keepDebugHtmls: true,
         sidebarNames: ['tutorialSidebar'],
         addDownloadButton: true,
-        autoBuildPdfs: true,
+        autoBuildPdfs: false,
         ignoreDocs: ['licenses'],
         author: 'Author name'
       },

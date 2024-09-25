@@ -53,17 +53,11 @@ Since the cube is point symmetric around the origin, the inserts can be rotated 
 
 When you create a new insert, you have to make sure it follows the following design criteria (e.g. dimensions):
 
-<p align=center>
-<img src="./IMAGES/MDK_CAD_scheme_perpendicular.jpg" width=450>
-<br><em>CAD for UC2 Cube insert</em>
-</p>
+![](./IMAGES/MDK_CAD_scheme_perpendicular.jpg)
 
 For the baseplate you must follow these dimensions:
 
-<p align=center>
-<img src="./IMAGES/MDK_CAD_scheme_base.jpg" width=450>
-<br><em>CAD for UC2 Cube baseplate</em>
-</p>
+![](./IMAGES/MDK_CAD_scheme_base.jpg)
 
 The CAD templates for Autodesk Inventor 2022 (```.ipt```) and ```STL/STEP```-standard can be found in the [INVENTOR](./INVENTOR)-folder and  [STL](./STL)/ [STP](./STP)-folder .
 
@@ -114,10 +108,7 @@ You can find additional information about the cube in the folder [CAD](./CAD).
 
 ### CAD file for the cube (injection molded / IM)
 
-<p align=center>
-<img src="./IMAGES/10_Cube_1x1_IM.png" width=750>
-<br><em>CAD for UC2 Cube (IM)</em>
-</p>
+![](./IMAGES/10_Cube_1x1_IM.png)
 
 ## Get Involved
 

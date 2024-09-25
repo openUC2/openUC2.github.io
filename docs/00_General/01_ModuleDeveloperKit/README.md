@@ -47,10 +47,6 @@ This serves as a template for your optics. Fill it with whatever you have and mo
 The cube inserts can be fully customized to adapt any optical element to the cubes. So far a perpendicular and diagonal version exists. The design files for Autodesk Inventor and OpenSCAD are available. Once you have a customized version, please share it so that the open-aspect of the system reaches its full potential :)
 
 
-<p align=center>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" width=70>
-</p>
-
 A Youtube tutorial showing you how to create your own insert can be found [here](https://youtu.be/CUzuymscB5k)
 
 Since the cube is point symmetric around the origin, the inserts can be rotated in all directions and bridges external components to the modules by acting as an open-standard.

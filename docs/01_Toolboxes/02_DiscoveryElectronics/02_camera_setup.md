@@ -92,7 +92,7 @@ Then checkout the files under `/tmp/Galaxy_Linux_Python_2.0.2106.9041/`
 
 Here is an extended documentation for the HIK camera setup:
 
-### HIK Cameras
+## HIK Cameras
 
 We use the MV-CS060-10UM/UC-PRO 600 with the IMX179 sensor.
 
@@ -156,3 +156,5 @@ The openUC2 Camera Setup provides users with easy-to-follow instructions for con
 Coming Soon.
 
 You can have a glimpse here https://github.com/openUC2/openUC2-SEEED-XIAO-Camera/
+
+and Here https://openuc2.github.io/docs/Toolboxes/DiscoveryElectronics/04_1_seeedmicroscope

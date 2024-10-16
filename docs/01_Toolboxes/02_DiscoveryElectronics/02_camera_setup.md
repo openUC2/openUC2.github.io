@@ -94,7 +94,9 @@ Here is an extended documentation for the HIK camera setup:
 
 ### HIK Cameras
 
-![](IMAGES/hikuc2.jpeg)
+We use the MV-CS060-10UM/UC-PRO 600 with the IMX179 sensor.
+
+![](IMAGES/dahenguc2.jpeg)
 *This may look completely different now, but important: A camera is inside the cube :)*
   
 ### On Windows

@@ -1,6 +1,4 @@
-### openUC2 Discovery Electronics Kit - Extended Tutorial
-
----
+# openUC2 Discovery Electronics Kit - Extended Tutorial
 
 ## Introduction
 

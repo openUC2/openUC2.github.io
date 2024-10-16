@@ -36,9 +36,9 @@ const config = {
         keepDebugHtmls: true,
         sidebarNames: ['tutorialSidebar'],
         addDownloadButton: true,
-        autoBuildPdfs: false,
+        autoBuildPdfs: true,
         ignoreDocs: ['licenses'],
-        author: 'Author name'
+        author: 'Benedict Diederich'
       },
     ],
   ],

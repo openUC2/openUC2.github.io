@@ -1,107 +1,181 @@
 ## ImSwitch Config File
 
-This is a sample `uc2_hik_histo.json`configuration file:
+# ImSwitch configurations for UC2
+
+This repository will help you setting up the `JSON`-files for the UC2-specific devices, namely:
+
+- Allied Vision Alvium Camera / Vimba 
+- Daheng Imaging Machine Vision 
+- UC2 electronics (ESP32-based) 
+	- XYZ Stage
+	- Laser 
+	- LED
+	- LED Matrix
+- Raspberry Pi camera (experimental) 
+- ESP32 camera 
+
+More information can be found in the original documentation of ImSwitch can be found in the [***READTHEDOCS of IMSWITCH***](https://imswitch.readthedocs.io/en/stable/)
+
+## Setting up the current ImSwitch Config 
+
+### Available Modules
+
+The file under `$USER$/Documents/ImSwitchConfig/config/modules.json` (Windows) and `/User/$username$/ImSwitchConfig/config/modules.json` (Mac/Linux) may look like this:
 
 ```json
 {
-  "positioners": {
-    "ESP32Stage": {
-      "managerName": "ESP32StageManager",
-      "managerProperties": {
-        "rs232device": "ESP32",
-        "isEnable": true,
-        "enableauto": false,
-        "stepsizeX": -0.3125,
-        "stepsizeY": -0.3125,
-        "stepsizeZ": 0.3125,
-        "homeSpeedX": 15000,
-        "homeSpeedY": 15000,
-        "homeSpeedZ": 15000,
-        "isDualaxis": true,
-        "homeDirectionX": 1,
-        "backlashXOld": 15,
-        "backlashYOld": 40,
-        "backlashX": 0,
-        "backlashY": 0,
-        "homeEndstoppolarityY": 0,
-        "homeDirectionY": -1,
-        "homeDirectionZ": 0,
-        "homeXenabled": 1,
-        "homeYenabled": 1,
-        "homeZenabled": 0,
-        "initialSpeed": {
-          "X": 15000,
-          "Y": 15000,
-          "Z": 15000
-        }
-      },
-      "axes": [
-        "X",
-        "Y",
-        "Z"
-      ],
-      "forScanning": true,
-      "forPositioning": true
+    "enabled": [
+        "imcontrol",
+        "imscripting",
+	"imnotebook"
+    ]
+}
+```
+These are the available modules that will be loaded on startup of imswitch. ImControl is the general control GUI, ImScripting is the python interpreter to control the system, ImNotebook launches a jupyter server that can be used to control ImSwitch inside imswitch using Jupyter.
+
+### Setup Configuration
+
+The file under `$USER$/Documents/ImSwitchConfig/config/imcontrol_options.json` (Windows) and `/User/$username$/ImSwitchConfig/config/imcontrol_options.json` (Mac/Linux) may look like this:
+
+```json
+{
+    "setupFileName": "example_virtual_microscope.json",
+    "recording": {
+        "outputFolder": "./ImSwitch/ImSwitch/recordings",
+        "includeDateInOutputFolder": true
+    },
+    "watcher": {
+        "outputFolder": "/Users/bene/ImSwitchConfig/scripts"
     }
-  },
-  "rs232devices": {
+}
+```
+
+The entry `"setupFileName": "example_virtual_microscope.json",` determines the current active configuration file that defines the hardware configuration (E.g. camera, positioner.. see below). This file is stored under `..imcontrol_setups`.
+
+
+## Setting up this repository
+
+ImSwitch will create a folder that stores all settings in:
+
+- Windows `$USER$/Documents/ImSwitchConfig`
+- MAC `/User/$username$/ImSwitchConfig` 
+
+There you will find several subfolders:
+
+```
+config
+imcontrol_setups
+imcontrol_slm
+scripts
+```
+
+You can download this repo and replace all files in this folder. Alternatively, you can clone it and keep it up to date with upcoming configurations. 
+
+
+## UC2 configurations 
+
+A recent sample configuration is for example the [imcontrol_setups/example_uc2_multicolour.json](imcontrol_setups/example_uc2_multicolour.json). It controls an ESP32-driven XYZ stage, hosts 2 lasers and has a Daheng Vision camera: 
+
+```json
+{
+"rs232devices": {
     "ESP32": {
       "managerName": "ESP32Manager",
       "managerProperties": {
         "host_": "192.168.43.129",
-        "serialport": "COM3"
+        "serialport_windows": "COM3",
+        "serialport": "/dev/cu./dev/cu.SLAB_USBtoUART"
       }
     }
   },
-  "lasers": {
-    "LED": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "ESP32LEDLaserManager",
-      "managerProperties": {
+  "positioners": {
+    "ESP32Stage": {
+        "managerName": "ESP32StageManager",
+        "managerProperties": {
+            "rs232device": "ESP32"
+        },
+        "axes": ["X", "Y", "Z"],
+        "forScanning": true,
+        "forPositioning": true
+    }
+},
+"lasers": {
+  "488 Laser": {
+    "analogChannel": null,
+    "digitalLine": null,
+    "managerName": "ESP32LEDLaserManager",
+    "managerProperties": {
         "rs232device": "ESP32",
-        "channel_index": 1
-      },
-      "wavelength": 635,
-      "valueRangeMin": 0,
-      "valueRangeMax": 1023
-    }
-  },
-  "detectors": {
-    "WidefieldCamera": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "HikCamManager",
-      "managerProperties": {
-        "isRGB": 1,
-        "cameraListIndex": 0,
-        "cameraEffPixelsize": 0.2257,
-        "hikcam": {
-          "exposure": 0,
-          "gain": 0,
-          "blacklevel": 100,
-          "image_width": 1000,
-          "image_height": 1000
-        }
-      },
-      "forAcquisition": true,
-      "forFocusLock": true
+        "channel_index": "B",
+        "filter_change": true
     },
-    "Observer": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "OpenCVCamManager",
-      "managerProperties": {
-        "cameraListIndex": 1,
-        "cameraListIndexWIN": 0,
-        "isRGB":1,
-        "opencvcam": {
-          "exposure": 10
-        }
-      },
-      "forAcquisition": true
-    }
+    "wavelength": 488,
+    "valueRangeMin": 0,
+    "valueRangeMax": 32768
+},
+"635 Laser": {
+  "analogChannel": null,
+  "digitalLine": null,
+  "managerName": "ESP32LEDLaserManager",
+  "managerProperties": {
+      "rs232device": "ESP32",
+      "channel_index": "R",
+      "filter_change": true
   },
+  "wavelength": 635,
+  "valueRangeMin": 0,
+  "valueRangeMax": 32768
+},
+"LED": {
+  "analogChannel": null,
+  "digitalLine": null,
+  "managerName": "ESP32LEDLaserManager",
+  "managerProperties": {
+      "rs232device": "ESP32",
+      "channel_index": "W",
+      "filter_change": false
+  },
+  "wavelength": 635,
+  "valueRangeMin": 0,
+  "valueRangeMax": 32768
+}
+},
+"detectors": {
+  "WidefieldCamera": {
+    "analogChannel": null,
+    "digitalLine": null,
+    "managerName": "GXPIPYManager",
+    "managerProperties": {
+      "cameraListIndex": 1,
+      "gxipycam": {
+        "exposure": 0,
+        "gain": 0,
+        "blacklevel": 100,
+        "image_width": 1000,
+        "image_height": 1000
+      }
+    },
+    "forAcquisition": true,
+    "forFocusLock": true
+  }
+},
+"rois": {
+  "Full chip": {
+    "x": 600,
+    "y": 600,
+    "w": 1200,
+    "h": 1200
+  }
+},
+  "availableWidgets": [
+    "Settings",
+    "View",
+    "Recording",
+    "Image",
+    "Laser",
+    "Positioner", 
+    "Autofocus"
+  ],
   "autofocus": {
     "camera": "WidefieldCamera",
     "positioner": "ESP32Stage",
@@ -110,88 +184,116 @@ This is a sample `uc2_hik_histo.json`configuration file:
     "frameCropy": 400,
     "frameCropw": 500,
     "frameCroph": 100
-  },
-  "mct": {
-    "monitorIdx": 2,
-    "width": 1080,
-    "height": 1920,
-    "wavelength": 0,
-    "pixelSize": 0,
-    "angleMount": 0,
-    "patternsDirWin": "C:\\Users\\wanghaoran\\Documents\\ImSwitchConfig\\imcontrol_slm\\488\\",
-    "patternsDir": "/users/bene/ImSwitchConfig/imcontrol_sim/488"
-  },
-  "dpc": {
-    "wavelength": 0.53,
-    "pixelsize": 0.2,
-    "NA": 0.3,
-    "NAi": 0.3,
-    "n": 1.0,
-    "rotations": [
-      0,
-      180,
-      90,
-      270
-    ]
-  },
-  "webrtc": {},
-  "PixelCalibration": {},
-  "focusLock": {
-    "camera": "WidefieldCamera",
-    "positioner": "ESP32StageManager",
-    "updateFreq": 4,
-    "frameCropx": 0,
-    "frameCropy": 0,
-    "frameCropw": 0,
-    "frameCroph": 0
-  },
-  "LEDMatrixs": {
-    "ESP32 LEDMatrix": {
-      "analogChannel": null,
-      "digitalLine": null,
-      "managerName": "ESP32LEDMatrixManager",
-      "managerProperties": {
-        "rs232device": "ESP32",
-        "Nx": 4,
-        "Ny": 4,
-        "wavelength": 488,
-        "valueRangeMin": 0,
-        "valueRangeMax": 32768
-      }
-    }
-  },
-  "availableWidgets": [
-    "Settings",
-    "View",
-    "Recording",
-    "Image",
-    "Laser",
-    "Positioner",
-    "Autofocus",
-    "MCT",
-    "UC2Config",
-    "ImSwitchServer",
-    "PixelCalibration",
-    "HistoScan",
-    "LEDMatrix",
-    "Joystick",
-    "Flatfield",
-    "ROIScan"
-  ],
-  "nonAvailableWidgets": [
-    "STORMRecon",
-    "DPC",
-    "Hypha",
-    "FocusLock",
-    "HistoScan",
-    "FocusLock",
-    "FOVLock"
-  ]
+  }
 }
 ```
 
+## Explanation: 
 
-### Configuration File Documentation
+### RS232 Manager
+
+Since multiple devices (stage, laser, filterswitcher) are connected to a single USB/Serial device (ESP32), we have to write a wrapper that connects to all individual devices. This is called `rs232devices `:
+
+```json
+"rs232devices": {
+    "ESP32": {
+      "managerName": "ESP32Manager",
+      "managerProperties": {
+        "host_": "192.168.43.129",
+        "serialport_windows": "COM3",
+        "serialport": "/dev/cu./dev/cu.SLAB_USBtoUART"
+      }
+    }
+  },
+```
+
+The `serialport` specifies the correct physical address of the device and has to be adapted. Alternatively, one can specify the `host` if you want to connect over Wifi. 
+Theoretically, if everything goes right, ImSwitch is smart enough to detect the ESP32 on its own. Thhe name for this device (i.e. internal reference) is `ESP32` and will be reused by all external components. 
+
+The ***firmware*** can be found [here](https://github.com/openUC2/UC2-REST). 
+
+
+### Stage
+
+All devices refer to the `rs232device` defined earlier: 
+
+```json
+  "positioners": {
+    "ESP32Stage": {
+        "managerName": "ESP32StageManager",
+        "managerProperties": {
+            "rs232device": "ESP32"
+        },
+        "axes": ["X", "Y", "Z"],
+        "forScanning": true,
+        "forPositioning": true
+    }
+},
+```
+
+This defines the x-y-z axis and will control the `ESP32` device. 
+`forScanning` - states that the stage is used for a potential Multiwellplate scanner and 
+`forPositioning - states that it can be used as a normal positining device. 
+
+
+### Laser
+
+
+The name `635 Laser` is chosen for the red laser.
+`filter_change` is an option to rotate the motor that moves the filter. 
+The `channel_index` (e.g. R, G, B) state the different colours / channels. (TODO: perhaps this is now 1,2,3). 
+
+
+```json
+"635 Laser": {
+  "analogChannel": null,
+  "digitalLine": null,
+  "managerName": "ESP32LEDLaserManager",
+  "managerProperties": {
+      "rs232device": "ESP32",
+      "channel_index": "R",
+      "filter_change": true
+  },
+  "wavelength": 635,
+  "valueRangeMin": 0,
+  "valueRangeMax": 32768
+},
+```
+
+
+### Camera
+
+Example for the Daheng Imaging camera:
+
+```json
+"detectors": {
+  "WidefieldCamera": {
+    "analogChannel": null,
+    "digitalLine": null,
+    "managerName": "GXPIPYManager",
+    "managerProperties": {
+      "cameraListIndex": 1,
+      "gxipycam": {
+        "exposure": 0,
+        "gain": 0,
+        "blacklevel": 100,
+        "image_width": 1000,
+        "image_height": 1000
+      }
+    },
+    "forAcquisition": true,
+    "forFocusLock": true
+  }
+},
+```
+
+
+
+If you have any questions, please reach out to us in the Forum: openuc2.discourse.group.
+
+
+
+### Additional Configuration File Documentation
 
 #### Overview
 This configuration file is designed to manage settings and properties of various components in a complex system, such as positioners, RS232 devices, lasers, detectors, autofocus settings, etc. It is structured in JSON format for ease of reading and editing.
@@ -246,5 +348,3 @@ This configuration file is designed to manage settings and properties of various
 13. **Non-Available Widgets**
     - A list of widgets that are not available, possibly indicating features not supported or deactivated in the current setup.
 
-#### Conclusion
-This configuration file is a comprehensive document that outlines the settings and parameters for various hardware and software components in a specialized system. It is critical for ensuring the correct operation of the equipment it is designed to control.

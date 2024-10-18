@@ -10,7 +10,7 @@ This PCB connects a Seeed Studio Xiao ESP32S3 module to the openUC2 modular cube
 
 1. **Microcontroller:**
    - **Seeed Studio Xiao ESP32S3**: A small ESP32-based microcontroller module, mounted via header sockets. The microcontroller is responsible for handling the firmware (UC2-ESP) and communicating with the peripherals.
-   
+
 2. **Power:**
    - Powered via **5V** input from the Xiao USB port, with a power distribution setup across the board.
    - **Voltage regulators and capacitors** (such as 100uF, 16V) ensure stable power to the motors and peripherals.
@@ -59,7 +59,7 @@ This PCB connects a Seeed Studio Xiao ESP32S3 module to the openUC2 modular cube
 ### **Firmware Integration:**
    - The board runs on the UC2-ESP firmware, leveraging the ESP32S3's capabilities to control motors, Neopixel LEDs, and servos while communicating over I2C.
    - Firmware includes support for both **manual control** via touch inputs and **automated sequences** for driving motors and lighting.
-   
+
 ### **Usage Notes:**
    - Ensure all components are connected before powering the system via USB.
    - The onboard Neopixel can be extended by attaching an external strip to the **Neopixel Extend** port.
@@ -73,7 +73,7 @@ It gets as easy as placing the PCB inside a cube. Et voila:
 
 ![](./IMAGES/xiao-insert-with-illumination/IMG_20241016_152830.jpg)
 
-## Schematics 
+## Schematics
 
 ![](./IMAGES/xiao-insert-with-illumination/xiao-insert-with-illumination-1.png)
 
@@ -90,66 +90,66 @@ It gets as easy as placing the PCB inside a cube. Et voila:
 ![](./IMAGES/xiao-insert-with-illumination/xiao-insert-with-illumination-6.png)
 
 
-## Pin Table 
+## Pin Table
 
 
 | **ESP32S3 Pin**        | **PCB Port/Component**                    | **Function**                              |
 |------------------------|-------------------------------------------|-------------------------------------------|
-| **PA02 (A0/D0)**        | Motor Driver 1 (IN1)                     | Motor control (Input 1)                   |
-| **PA04 (A1/D1)**        | Motor Driver 1 (IN2)                     | Motor control (Input 2)                   |
-| **PA10 (A2/D2)**        | Motor Driver 2 (IN1)                     | Motor control (Input 1)                   |
-| **PA11 (A3/D3)**        | Motor Driver 2 (IN2)                     | Motor control (Input 2)                   |
-| **PA08 (A4/D4/SDA)**    | I2C SDA                                  | I2C Data Line                             |
-| **PA09 (A5/D5/SCL)**    | I2C SCL                                  | I2C Clock Line                            |
-| **PB08 (A6/TX)**        | Neopixel LED (DIN)                       | Neopixel Data Line                        |
-| **PB09 (D7/RX)**        | Neopixel Extend (DIN)                    | Extension for external Neopixel LED       |
-| **PA05 (A9/D9/MISO)**   | Touch Button 1 (TP103)                   | Touch input 1                             |
-| **PA06 (A10/D10/MOSI)** | Touch Button 2 (TP104)                   | Touch input 2                             |
-| **PA07 (A8/D8/SCK)**    | Servo Connector 1 (PWM)                  | PWM signal for Servo 1                    |
-| **PA11 (D3)**           | Servo Connector 2 (PWM)                  | PWM signal for Servo 2                    |
+| **D6 (TX)**             | Neopixel                                  | Neopixel data pin                         |
+| **D0 (GPIO1)**          | Touch Button 1                            | Touch input 1 using `touchRead`           |
+| **D1 (GPIO2)**          | Touch Button 2                            | Touch input 2 using `touchRead`           |
+| **D3 (GPIO0)**          | Motor Driver 1 (IN1)                     | Motor 1 control                           |
+| **D4 (GPIO9)**          | Motor Driver 1 (IN2)                     | Motor 1 control                           |
+| **D9 (GPIO10)**         | Motor Driver 2 (IN1)                     | Motor 2 control                           |
+| **D10 (GPIO3)**         | Motor Driver 2 (IN2)                     | Motor 2 control                           |
+| **D4 (GPIO4)**          | I2C SDA                                  | I2C Data Line                             |
+| **D5 (GPIO5)**          | I2C SCL                                  | I2C Clock Line                            |
+| **D7 (GPIO8)**          | Servo Connector 1 (PWM)                  | Servo 1 PWM signal                        |
+| **D8 (GPIO11)**         | Servo Connector 2 (PWM)                  | Servo 2 PWM signal                        |
 | **3.3V**                | Power Supply                             | Powers Xiao and connected components      |
 | **5V**                  | Power Supply (Neopixel and Motor Drivers)| Powers high-power components like motors  |
 | **GND**                 | Ground                                   | Common ground for all components          |
 
-## Sample Programm for the Arduino IDE 
+## Sample Programm for the Arduino IDE
 
 Here’s a simple Arduino sketch for the ESP32S3 on the Seeed Studio Xiao module. This sketch will test the Neopixel LED, motor drivers, touch buttons, servos, and I2C functionality on the PCB. You need the required libraries installed (`Adafruit_NeoPixel`, `Wire` for `I2C`, and `ESP_Servo` for servo control). The sketch assumes the UC2-ESP firmware isn't running.
 
 ```cpp
 #include <Adafruit_NeoPixel.h>
 #include <Wire.h>
-#include <ESP32Servo.h>  // ESP32-specific servo library
 
 // Pin definitions for Xiao ESP32S3 (using D1, D2, etc.)
 #define NEOPIXEL_PIN D6         // Neopixel data pin (TX)
-#define TOUCH_PIN_1 D1          // Touch Button 1 (GPIO1)
-#define TOUCH_PIN_2 D2          // Touch Button 2 (GPIO2)
-#define MOTOR_1_IN1 D0          // Motor 1 IN1 (GPIO0)
-#define MOTOR_1_IN2 D9          // Motor 1 IN2 (GPIO9)
-#define MOTOR_2_IN1 D10         // Motor 2 IN1 (GPIO10)
-#define MOTOR_2_IN2 D3          // Motor 2 IN2 (GPIO3)
+#define TOUCH_PIN_1 D0          // Touch Button 1 (Touch Pad 1)
+#define TOUCH_PIN_2 D1          // Touch Button 2 (Touch Pad 2)
+#define MOTOR_1_IN1 D3          // Motor 1 IN1 (GPIO0)
+#define MOTOR_1_IN2 D4          // Motor 1 IN2 (GPIO9)
+#define MOTOR_2_IN1 D9          // Motor 2 IN1 (GPIO10)
+#define MOTOR_2_IN2 D10         // Motor 2 IN2 (GPIO3)
 #define I2C_SDA D4              // I2C SDA (GPIO4)
 #define I2C_SCL D5              // I2C SCL (GPIO5)
-#define SERVO_PIN_1 D8          // Servo 1 PWM (GPIO8)
-#define SERVO_PIN_2 D11         // Servo 2 PWM (GPIO11)
+#define SERVO_PIN_1 D7          // Servo 1 PWM (GPIO8)
+#define SERVO_PIN_2 D8          // Servo 2 PWM (GPIO11)
 
-// Motor driver setup
-#define MOTOR_SPEED 255    // Max PWM value for motors
+#define PWM_CHANNEL_SERVO_1 0
+#define PWM_CHANNEL_SERVO_2 1
+#define minPulseWidth 500      // Minimum pulse width for servos (in microseconds)
+#define maxPulseWidth 2500     // Maximum pulse width for servos (in microseconds)
 
 // Neopixel setup
-#define NUMPIXELS 1        // Number of neopixels
+#define NUMPIXELS 1
 Adafruit_NeoPixel neopixel(NUMPIXELS, NEOPIXEL_PIN, NEO_GRB + NEO_KHZ800);
 
-// Servo setup
-Servo servo1;
-Servo servo2;
+// Servo control variables
+int pwm_frequency = 50;
+int pwm_resolution = 16;
 
 // I2C test address
-const int i2cAddress = 0x3C;  // Example I2C address (adjust for your setup)
+const int i2cAddress = 0x3C;
 
-// Test variables
-int touchState1 = 0;
-int touchState2 = 0;
+// Touch thresholds
+int touchThreshold1 = 30;
+int touchThreshold2 = 30;
 
 void setup() {
   // Initialize Serial for debugging
@@ -158,10 +158,6 @@ void setup() {
   // Initialize Neopixel
   neopixel.begin();
   neopixel.setBrightness(50);  // Adjust brightness (0-255)
-
-  // Initialize touch pins
-  pinMode(TOUCH_PIN_1, INPUT);
-  pinMode(TOUCH_PIN_2, INPUT);
 
   // Initialize motor pins
   pinMode(MOTOR_1_IN1, OUTPUT);
@@ -172,9 +168,9 @@ void setup() {
   // Initialize I2C
   Wire.begin(I2C_SDA, I2C_SCL);
 
-  // Initialize servos
-  servo1.attach(SERVO_PIN_1);
-  servo2.attach(SERVO_PIN_2);
+  // Configure PWM for servos
+  configurePWM(SERVO_PIN_1, pwm_resolution, PWM_CHANNEL_SERVO_1, pwm_frequency);
+  configurePWM(SERVO_PIN_2, pwm_resolution, PWM_CHANNEL_SERVO_2, pwm_frequency);
 }
 
 void loop() {
@@ -188,7 +184,8 @@ void loop() {
   motorTest();
 
   // Test Servo Motors
-  servoTest();
+  moveServo(PWM_CHANNEL_SERVO_1, 90, pwm_frequency, pwm_resolution);  // Move servo to 90°
+  moveServo(PWM_CHANNEL_SERVO_2, 90, pwm_frequency, pwm_resolution);  // Move servo to 90°
 
   // Test I2C Communication
   i2cTest();
@@ -210,59 +207,46 @@ void neopixelTest() {
   delay(500);
 }
 
-// Touch Button Test: Reads touch inputs
+// Touch Test: Reads touch inputs
 void touchTest() {
-  touchState1 = digitalRead(TOUCH_PIN_1);
-  touchState2 = digitalRead(TOUCH_PIN_2);
-  
+  int touchValue1 = touchRead(TOUCH_PIN_1);
+  int touchValue2 = touchRead(TOUCH_PIN_2);
+
   Serial.print("Touch Button 1: ");
-  Serial.println(touchState1);
+  Serial.println(touchValue1);
   Serial.print("Touch Button 2: ");
-  Serial.println(touchState2);
+  Serial.println(touchValue2);
+
+  if (touchValue1 < touchThreshold1) {
+    Serial.println("Touch Button 1 activated!");
+  }
+  if (touchValue2 < touchThreshold2) {
+    Serial.println("Touch Button 2 activated!");
+  }
 }
 
 // Motor Test: Drives both motors forward and backward
 void motorTest() {
   Serial.println("Testing Motor 1...");
-  // Motor 1 Forward
   digitalWrite(MOTOR_1_IN1, HIGH);
   digitalWrite(MOTOR_1_IN2, LOW);
   delay(1000);
-  // Motor 1 Backward
   digitalWrite(MOTOR_1_IN1, LOW);
   digitalWrite(MOTOR_1_IN2, HIGH);
   delay(1000);
-  
+
   Serial.println("Testing Motor 2...");
-  // Motor 2 Forward
   digitalWrite(MOTOR_2_IN1, HIGH);
   digitalWrite(MOTOR_2_IN2, LOW);
   delay(1000);
-  // Motor 2 Backward
   digitalWrite(MOTOR_2_IN1, LOW);
   digitalWrite(MOTOR_2_IN2, HIGH);
   delay(1000);
-  
-  // Stop both motors
+
   digitalWrite(MOTOR_1_IN1, LOW);
   digitalWrite(MOTOR_1_IN2, LOW);
   digitalWrite(MOTOR_2_IN1, LOW);
   digitalWrite(MOTOR_2_IN2, LOW);
-}
-
-// Servo Test: Sweep both servos back and forth
-void servoTest() {
-  Serial.println("Testing Servos...");
-  for (int pos = 0; pos <= 180; pos++) {
-    servo1.write(pos);
-    servo2.write(pos);
-    delay(15);  // Wait for the servo to reach the position
-  }
-  for (int pos = 180; pos >= 0; pos--) {
-    servo1.write(pos);
-    servo2.write(pos);
-    delay(15);
-  }
 }
 
 // I2C Test: Scans for I2C devices
@@ -275,11 +259,84 @@ void i2cTest() {
     Serial.println("No I2C device found.");
   }
 }
+
+// Configure PWM for servo motor control
+void configurePWM(int servoPin, int resolution, int ledChannel, int frequency) {
+  ledcDetachPin(servoPin);
+  setupLaser(servoPin, ledChannel, frequency, resolution);
+}
+
+// Move Servo using PWM
+void moveServo(int ledChannel, int angle, int frequency, int resolution) {
+  int pulseWidth = map(angle, 0, 180, minPulseWidth, maxPulseWidth);
+  int dutyCycle = map(pulseWidth, 0, 1000000 / frequency, 0, (1 << resolution) - 1);
+  ledcWrite(ledChannel, dutyCycle);
+}
+
+// Helper function to setup the servo PWM channel
+void setupLaser(int pin, int channel, int frequency, int resolution) {
+  ledcSetup(channel, frequency, resolution);
+  ledcAttachPin(pin, channel);
+}
 ```
-## iBOM 
+## GPIO converter
+
+| **Pin Label**  | **ESP32S3 GPIO**  | **PCB Port/Component**                    | **Function**                              |
+|----------------|-------------------|-------------------------------------------|-------------------------------------------|
+| **D0**         | **GPIO1**          | Touch Button 1                            | Touch input 1 using `touchRead`           |
+| **D1**         | **GPIO2**          | Touch Button 2                            | Touch input 2 using `touchRead`           |
+| **D2**         | **GPIO3**          | Motor Driver 2 (IN2)                      | Motor 2 control                           |
+| **D3**         | **GPIO4**          | Motor Driver 1 (IN1)                      | Motor 1 control                           |
+| **D4**         | **GPIO5**          | Motor Driver 1 (IN2)                      | Motor 1 control                           |
+| **D5**         | **GPIO6**          | I2C SCL                                  | I2C Clock Line                            |
+| **D6**         | **GPIO7**          | Neopixel                                  | Neopixel data pin                         |
+| **D7**         | **GPIO8**          | Servo Connector 1 (PWM)                  | Servo 1 PWM signal                        |
+| **D8**         | **GPIO9**          | Servo Connector 2 (PWM)                  | Servo 2 PWM signal                        |
+| **D9**         | **GPIO10**         | Motor Driver 2 (IN1)                      | Motor 2 control                           |
+| **D10**        | **GPIO11**         | I2C SDA                                  | I2C Data Line                             |
+
+### Get Pin numbers from Macros
+
+```cpp
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  Serial.print("D0: ");
+  Serial.println(D0);
+  Serial.print("D1: ");
+  Serial.println(D2);
+  Serial.print("D2: ");
+  Serial.println(D2);    
+  Serial.print("D3: ");
+  Serial.println(D3);    
+  Serial.print("D4: ");
+  Serial.println(D4);    
+  Serial.print("D5: ");
+  Serial.println(D5);    
+  Serial.print("D6: ");
+  Serial.println(D6);    
+  Serial.print("D7: ");
+  Serial.println(D7);    
+  Serial.print("D8: ");
+  Serial.println(D8);    
+  Serial.print("D9: ");
+  Serial.println(D9);    
+  Serial.print("D10: ");
+  Serial.println(D10);   
+  delay(1000);
+
+}
+```
+
+## iBOM
 
 <iframe width="100%" style={{"aspect-ratio": "16 / 9"}} src="https://openuc2.github.io/kicad/ibom-led-xiao.html" title="iBOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Troubleshoot 
+## Troubleshoot
 
-If you have any questions, please feel free to reach out to us using the Forum: openuc2.discourse.group. 
+If you have any questions, please feel free to reach out to us using the Forum: openuc2.discourse.group.

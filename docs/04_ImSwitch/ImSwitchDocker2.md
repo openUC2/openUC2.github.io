@@ -28,6 +28,15 @@ ImSwitch is a modular Python application installed inside a Docker container. Th
 - Image processing**: Integration of the image viewer *Napari*, which supports numerous open source image processing tools.
 
 
+### UC2-ESP32 Firmware
+
+This is the firmware running on the ESP32 mostly pushed by @KillerInk. It's very modular by being able to compile only those hardware modules that are actually used (e.g. Motors, LEDs, Input controllers, Wifi,...). Each module has a `loop`, `get`, `act` and `setup` method that are registered and executed during runtime, explicit call (e.g. via serial, via I2c..) and during boot. In order to save RAM and CPU resources the next version outsources e.g. the motors from the main loop by sending/relaying the commands e.g. from the PS4 controller to auxialry hardware that's connceted via I2C
+
+<img width="928" alt="image" src="https://github.com/user-attachments/assets/98bcb7e8-14e4-411a-8176-4ce11333d5cc">
+
+The firmware can be found here:
+https://github.com/youseetoo/uc2-esp32/tree/reworkBD
+
 ### One-Step Installation (Raspi + Debian?)
 
 For Debian-based systems (Raspberry Pi and others), there is a one-step installation script that installs Docker, camera drivers, and pulls the Docker container for ImSwitch:

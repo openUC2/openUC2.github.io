@@ -13,24 +13,24 @@ ImSwitch is a modular Python application installed inside a Docker container. Th
 
 ![](./IMAGES/ImSwitchDocker.png)
 
-- Central component**: Python-based microscopy software *ImSwitch*.
+- **Central component**: Python-based microscopy software *ImSwitch*.
 - **Function**: Connects hardware elements and their device drivers as well as controllers.
-- Application**: Realization of time-lapse recordings and complex scanning patterns.
-- Abstraction**: Software acts as an independent server.
-- Generic interface**: Can be used by different programming languages and browsers.
-- Docker integration**: ImSwitch is packaged as a Docker container and can be compiled cloud-based.
+- **Application**: Realization of time-lapse recordings and complex scanning patterns.
+- **Abstraction**: Software acts as an independent server.
+- **Generic interface**: Can be used by different programming languages and browsers.
+- **Docker integration**: ImSwitch is packaged as a Docker container and can be compiled cloud-based.
 - **Easy updates**: Script downloads changes and integrates them automatically.
 - **Hardware workflow**: Hardware is integrated into the workflow via configuration files.
-- USB integration**: Devices can interact with the Docker container via USB.
-- Docker on different systems**: Docker container runs on Raspberry Pi or other computers, for example.
+- **USB integration**: Devices can interact with the Docker container via USB.
+- **Docker on different systems**: Docker container runs on Raspberry Pi or other computers, for example.
 - **Web-based interface**: Access to Rest API via a website.
 - **Alternative installation**: ImSwitch can also be installed outside a Docker container, with QT elements.
-- Image processing**: Integration of the image viewer *Napari*, which supports numerous open source image processing tools.
+- **Image processing**: Integration of the image viewer *Napari*, which supports numerous open source image processing tools.
 
 
 ### UC2-ESP32 Firmware
 
-This is the firmware running on the ESP32 mostly pushed by @KillerInk. It's very modular by being able to compile only those hardware modules that are actually used (e.g. Motors, LEDs, Input controllers, Wifi,...). Each module has a `loop`, `get`, `act` and `setup` method that are registered and executed during runtime, explicit call (e.g. via serial, via I2c..) and during boot. In order to save RAM and CPU resources the next version outsources e.g. the motors from the main loop by sending/relaying the commands e.g. from the PS4 controller to auxialry hardware that's connceted via I2C
+This is the firmware running on the ESP32 mostly pushed by "KillerInk". It's very modular by being able to compile only those hardware modules that are actually used (e.g. Motors, LEDs, Input controllers, Wifi,...). Each module has a `loop`, `get`, `act` and `setup` method that are registered and executed during runtime, explicit call (e.g. via serial, via I2c..) and during boot. In order to save RAM and CPU resources the next version outsources e.g. the motors from the main loop by sending/relaying the commands e.g. from the PS4 controller to auxialry hardware that's connceted via I2C
 
 <img width="928" alt="image" src="https://github.com/user-attachments/assets/98bcb7e8-14e4-411a-8176-4ce11333d5cc">
 

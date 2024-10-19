@@ -13,6 +13,21 @@ ImSwitch is a modular Python application installed inside a Docker container. Th
 
 ![](./IMAGES/ImSwitchDocker.png)
 
+- Central component**: Python-based microscopy software *ImSwitch*.
+- **Function**: Connects hardware elements and their device drivers as well as controllers.
+- Application**: Realization of time-lapse recordings and complex scanning patterns.
+- Abstraction**: Software acts as an independent server.
+- Generic interface**: Can be used by different programming languages and browsers.
+- Docker integration**: ImSwitch is packaged as a Docker container and can be compiled cloud-based.
+- **Easy updates**: Script downloads changes and integrates them automatically.
+- **Hardware workflow**: Hardware is integrated into the workflow via configuration files.
+- USB integration**: Devices can interact with the Docker container via USB.
+- Docker on different systems**: Docker container runs on Raspberry Pi or other computers, for example.
+- **Web-based interface**: Access to Rest API via a website.
+- **Alternative installation**: ImSwitch can also be installed outside a Docker container, with QT elements.
+- Image processing**: Integration of the image viewer *Napari*, which supports numerous open source image processing tools.
+
+
 ### One-Step Installation (Raspi + Debian?)
 
 For Debian-based systems (Raspberry Pi and others), there is a one-step installation script that installs Docker, camera drivers, and pulls the Docker container for ImSwitch:

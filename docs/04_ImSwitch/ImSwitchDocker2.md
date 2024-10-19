@@ -32,7 +32,7 @@ ImSwitch is a modular Python application installed inside a Docker container. Th
 
 This is the firmware running on the ESP32 mostly pushed by "KillerInk". It's very modular by being able to compile only those hardware modules that are actually used (e.g. Motors, LEDs, Input controllers, Wifi,...). Each module has a `loop`, `get`, `act` and `setup` method that are registered and executed during runtime, explicit call (e.g. via serial, via I2c..) and during boot. In order to save RAM and CPU resources the next version outsources e.g. the motors from the main loop by sending/relaying the commands e.g. from the PS4 controller to auxialry hardware that's connceted via I2C
 
-<img width="928" alt="image" src="https://github.com/user-attachments/assets/98bcb7e8-14e4-411a-8176-4ce11333d5cc">
+![](https://github.com/user-attachments/assets/98bcb7e8-14e4-411a-8176-4ce11333d5cc)
 
 The firmware can be found here:
 https://github.com/youseetoo/uc2-esp32/tree/reworkBD
@@ -93,8 +93,8 @@ python3 /tmp/ImSwitch/main.py $params
 1. **Main Execution**:
    ImSwitch is launched from the main Python script, where configuration files and parameters are passed to set up the environment.
    - Entry point file:
-     [main.py](https://github.com/openUC2/ImSwitch/blob/master/main.py)
-     [__main__.py](https://github.com/openUC2/ImSwitch/blob/master/imswitch/__main__.py)
+     - [main.py](https://github.com/openUC2/ImSwitch/blob/master/main.py) (from python script)
+     - [__main__.py](https://github.com/openUC2/ImSwitch/blob/master/imswitch/__main__.py) (from terminal)
 
 2. **API Decorators**:
    Functions decorated with `@APIExport` are automatically exposed as API endpoints in the FastAPI server.

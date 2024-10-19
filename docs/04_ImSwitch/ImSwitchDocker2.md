@@ -11,12 +11,29 @@ ImSwitch is a modular Python application installed inside a Docker container. Th
 - Setting up FastAPI to expose a REST API interface for remote control.
 - Running a React app on top of the REST API for web-based control.
 
-### One-Step Installation
+![](./IMAGES/ImSwitchDocker.png)
+
+### One-Step Installation (Raspi + Debian?)
 
 For Debian-based systems (Raspberry Pi and others), there is a one-step installation script that installs Docker, camera drivers, and pulls the Docker container for ImSwitch:
 
 Repository: [openUC2/ImSwitchDockerInstall](https://github.com/openUC2/ImSwitchDockerInstall)
 Script: `install_all.sh` installs everything you need.
+
+#### Two-step installation (most other cases)
+
+Pull the docker-container and run it
+
+```bash
+docker pull ghcr.io/openuc2/imswitch-noqt-x64:latest
+sudo docker run -it --rm -p 8001:8001 -p 2222:22 -e HEADLESS=1 -e HTTP_PORT=8001 -e CONFIG_FILE=example_uc2_hik_flowstop.json -e UPDATE_GIT=0 -e UPDATE_CONFIG=0 --privileged ghcr.io/openuc2/imswitch-noqt-x64:latest
+```
+
+More information about this here:
+https://openuc2.github.io/docs/ImSwitch/ImSwitchDocker#docker-quick-start
+
+
+
 
 ### Building the Docker Image
 

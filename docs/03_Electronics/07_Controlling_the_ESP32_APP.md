@@ -3,7 +3,11 @@
 
 The **UC2Serial** app is a control interface for managing various hardware components of a modular microscopy or optical system, specifically using serial communication protocols. The app provides intuitive controls for adjusting motor positions across multiple axes, controlling LED and laser intensities, and configuring communication settings.
 
-You can find the APP in the following repository (including the release APK): https://github.com/openUC2/UC2Serial
+:::warning
+You can find the APP in the following [repository](https://github.com/openUC2/UC2Serial/)(including the release APK):
+:::
+
+
 
 ## Features
 - **Motor Control**: Allows precise control over the A, X, Y, and Z motor axes with coarse and fine adjustments.
@@ -15,7 +19,8 @@ You can find the APP in the following repository (including the release APK): ht
 
 ## APK File
 
-You can download the file from the source repository: https://github.com/openUC2/UC2Serial/releases/tag/v0.1
+You can download the file from the [source repository](https://github.com/openUC2/UC2Serial/releases/tag/v0.1)
+
 
 ## User Interface Overview
 The app’s interface includes:

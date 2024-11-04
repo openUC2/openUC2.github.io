@@ -21,6 +21,9 @@ You can find the APP in the following [repository](https://github.com/openUC2/UC
 
 You can download the file from the [source repository](https://github.com/openUC2/UC2Serial/releases/tag/v0.1)
 
+## Video Tutorial
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rHU_FXlQ6MY?si=p7w40A2JUpLbEX_p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## User Interface Overview
 The app’s interface includes:

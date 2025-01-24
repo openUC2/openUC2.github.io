@@ -229,3 +229,50 @@ void loop() {
 2. **Encoder Setup (AS5600)**: Uses I2C to read the encoder’s current position. The encoder provides feedback with a 12-bit resolution (4096 steps per revolution).
 3. **MoveStepper Function**: Moves the motor in a given direction (based on step count). The direction and steps are controlled using the DIR and STEP pins.
 4. **Feedback Loop**: The motor moves based on encoder feedback. If the encoder position is less than 180° (half of 4096 steps), the motor moves forward; otherwise, it moves backward to maintain a 360° operation.
+
+
+## Revision: CAN BUS
+
+The updated version has several improvements:
+
+- CAN BUS with a dedicated transreceiver
+- power safety features
+
+
+### The updated Pinout:
+
+
+```cpp
+// Pin definitions for Xiao ESP32S3
+#define PIN_PA02_A0_D0     0   // Analog/Digital Pin A0/D0
+#define PIN_PA04_A1_D1     1   // Analog/Digital Pin A1/D1
+#define PIN_PA06_A2_D2     2   // Analog/Digital Pin A2/D2
+#define PIN_PA15_A3_D3     3   // Analog/Digital Pin A3/D3
+#define PIN_PA13_A4_D4_SDA 4   // I2C SDA / Analog Pin A4/D4
+#define PIN_PA15_A5_D5_SCL 5   // I2C SCL / Analog Pin A5/D5
+#define PIN_PA6_D6_TX      6   // UART TX Pin
+#define PIN_PB09_D7_RX     7   // UART RX Pin
+
+// Motor Control Pins
+#define PIN_MOT_EN         8   // Motor Enable
+#define PIN_MOT_STEP       9   // Motor Step
+#define PIN_MOT_DIR        10  // Motor Direction
+#define PIN_UART_PICO      11  // UART PICO
+
+// CAN Bus Pins
+#define PIN_CAN_RECV       16  // CAN Receive
+#define PIN_CAN_SEND       17  // CAN Send
+
+// I2C Bus (Alternate definition for clarity)
+#define I2C_SDA_PIN        PIN_PA13_A4_D4_SDA
+#define I2C_SCL_PIN        PIN_PA15_A5_D5_SCL
+
+// Additional Pins
+#define PIN_ENDSTOP        12  // Endstop for motor
+#define PIN_MOT_DIAG       13  // Motor diagnostics
+```
+
+
+## Attention:
+
+![](./IMAGES/ESP32S3CanOverview.jpeg)

@@ -260,8 +260,8 @@ The updated version has several improvements:
 #define PIN_UART_PICO      11  // UART PICO
 
 // CAN Bus Pins
-#define PIN_CAN_RECV       16  // CAN Receive
-#define PIN_CAN_SEND       17  // CAN Send
+#define PIN_CAN_RECV       D1  // CAN Receive
+#define PIN_CAN_SEND       D2  // CAN Send
 
 // I2C Bus (Alternate definition for clarity)
 #define I2C_SDA_PIN        PIN_PA13_A4_D4_SDA

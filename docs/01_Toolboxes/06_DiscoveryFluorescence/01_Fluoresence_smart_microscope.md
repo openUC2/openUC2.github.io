@@ -10,8 +10,8 @@ Image einfügen, vollständiger Aufbau / Fluoresence Bild
 
 ### Materials Needed
 
-1. Blue LED for exitation of the fluoresence moleculs
-2. white LED for ?
+1. Blue LED for exitation of the fluoresence moleculs - fluoresence microscopy
+2. white LED for bright Field microscopy
 3. electronic Z-stage
 4. PS4 Controller for controlling the Z-Stage
 5. infinity-objective
@@ -19,7 +19,7 @@ Image einfügen, vollständiger Aufbau / Fluoresence Bild
 7. Emissionfilter
 8. aspherical lens for beam-collimation
 9. bikonvex lens (f'=100mm) for focusing
-10. Camera with tubelense
+10. camera with tubelense
 11. UC2 Electronicsbox, Infinity Box and Corebox (cubes, puzzle pieces and holders)
 
 Image einfügen Foto real nur Bauteile
@@ -45,7 +45,7 @@ so just the light emmitted from the probe is detected by the camera.
 ## Step 1: Assembly the microscope
 
 
-## Step 9.1.: plug in the electronics
+## Step 9.1.: plug in the electronics as you see below
 
 
 <div style="background-color: rgba(255, 255, 0, 0.3); padding: 10px; border-radius: 5px;">
@@ -54,13 +54,11 @@ so just the light emmitted from the probe is detected by the camera.
 </p>
 </div>
 
-plug in all the vires as you see in this picture
 - connect the Z-stage to ``Z-Motor`` on the main board, make shure there's a driver.
 - connect the blue LED to the LED driver (red plate) at ``out1``
   - cable at ``-`` goes to ``-``
   - cable at ``+`` goes to ``+``
 - connect the LED driver to the main board
-  - cable at Ground (``GND``) goes to ``PMW 1 - GND``
   - cable at ``in 1`` goas to ``PM2- PMW2``
   - cable at ``V In -`` goes to ``12V - GND``
   - cable at ``V IN +`` goas to ``12V - 12V``
@@ -77,7 +75,6 @@ plug in all the vires as you see in this picture
 ![](./IMAGES/EXP_1_Serial/Electronics_Box_5.png)
 The source-code can be found [here](https://github.com/youseetoo/uc2-esp32)
 
-
 2. Connect the ESP32 to your computer using the micro-USB cable.
 ![](./IMAGES/EXP_1_Serial/Electronics_Box_4.png)
 
@@ -87,7 +84,7 @@ The source-code can be found [here](https://github.com/youseetoo/uc2-esp32)
 
 4. Wait until the firmware has been flashed successfully.
 
-### Step 2: Connecting and Testing the Web Interface
+### Step 2: Connecting to the Web Interface
 1. After flashing the firmware, go to the testing section on the same website.
 
 2. Connect to your ESP32 board using the "Connect" button again, ensuring the correct COM port is selected.
@@ -104,56 +101,70 @@ This command will move the Z-axis motor by -1000 steps (1 full rotation) at a sp
 
 > **Note:** Ensure the command string has no line breaks.
 
-4. After that test all the other Components via buttons:
+4. Connect the LED-Arry panel with another USB-cable to your PC. Dublicate the current tab, and again connect the LED-Array via the button. Choose the right COM Port again.
+Now you can test all the compontents via these two tabs.
+
+
+### Step 3: Testing in the web Interface
+1. After that test go back to the first tab all the other Components via buttons:
 -  ``Laser 2(on)``and ``Laser 2(off)``controlls the blue exitation LED
 - ``Motor Z(+)`` and ``Motor Z(-)`` controlls the Z-Stage
-- ``LED (on)`` and ``LED (off)`` controlls the LED-Array panel
+- ``LED (on)`` and ``LED (off)`` controlls the LED-Array panel, you have to change the tab to controll it.
 
-5. Pairing the PS4 Controller
-The UC2-ESP firmware is designed to support various input devices, including the PS4 controller, making it easier to interact with the microscope. You’ve already worked with USB Serial commands, but using the PS4 controller will give you a more flexible, hands-on approach.
+2. Pairing the PS4 Controller
+The UC2-ESP firmware is designed to support various input devices, including the PS4 controller, making it easier to interact with the microscope. You’ve already worked with USB Serial commands, but using the PS4 controller will give you a more flexible, hands-on approach.For more detailed instructions on pairing, refer to the [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller). But briefly:
 
-  How to Pair the PS4 Controller:
-
-  For more detailed instructions on pairing, refer to the [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller). But briefly:
-
-  1. First, put your PS4 controller into pairing mode by holding down the **Share** button and the **PS button** simultaneously until the light bar starts blinking.
-  2. Open the serial prompt in your browser (connected to the ESP32 board) or use the web interface.
-  3. Enter the command:
+  1. First, put your PS4 controller into pairing mode by holding down the ``Share`` button and the ``PS``-button simultaneously until the light bar starts blinking.
+  2. klick the Button ``Pair Controlller`` in the web Interface. Alternatively open the serial prompt in your browser (connected to the ESP32 board) or use the web interface and enter the command:
 
     ```json
     {"bt_scan":1}
     ```
-This will initiate the Bluetooth scan on the ESP32, which will detect and pair with the controller. Alternatively, you can use the **"Pair Controller"** button in the web interface.
+This will initiate the Bluetooth scan on the ESP32, which will detect and pair with the controller.
 
-  4. Once paired, you should be able to control the motorized stage using the analog sticks on the controller and switch the LED array on/off using the buttons.
-
-
-
-  ## Step 9.3: Controlling the Microscope with the PS4 Controller
-
-  Now that the microscope is built and the PS4 controller is paired, you can control the motorized Z-stage and LED array:
+  3. Once paired, you should be able to control the motorized stage using the analog sticks on the controller and switch the LED array on/off using the buttons.
 
   - **Move the Z-stage**: Use the **left analog stick** to move the stage up and down (adjust focus).
   - **Control the LEDs**: Use the **controller buttons** to turn the LED array on/off and cycle through different illumination patterns.
 
-  This setup allows you to navigate through your sample and adjust focus without touching the hardware, which is particularly useful when working with sensitive samples or in teaching environments where ease of use is essential.
 
-  ### Video Tutorial
+ ## Step 10: Setup and use the camera-software
+ 1. conect the camera with you PC
+ 2. For the installation process follow these instructions https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization
 
-  For a visual guide on how to set up the microscope and use the PS4 controller for control, watch the following video:
+# Congraduation! You did all the Setup Steps! Now lets use the microscope
 
-  <iframe width="700" src="https://www.youtube.com/embed/y06lRu2dsUk?si=hGGhUpTugzL1LZdK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ ## Experiment 1: bright field illumination
+ 1. Turn the LED-array on and the blue LED off.
+ 2. put the probe in the probe insert
+ 3. start the camera via pressing the play &#9654; button
+ 4. make shure, your probe is centered, shift it around until you see some structure on your screen
+ 5. the imgae you see might be very blurry or to be axact, out of foucs. with the PS-controller, move the Z-stage up or down to get a sharp inmage.
+ 6. now you can move arround your probe an inspect it properly
 
 
-  This experiment provides a more interactive experience with your microscope, enabling smooth, hands-free control of the imaging process using a PS4 controller. You can continue to experiment with different settings, such as motor speeds and LED illumination patterns, to optimize your microscope for various samples.
+ ## Experiment 2: fluoresence microscopy
+ 1. To turn your microscope into a fluoresence microscope, turn the LED-Array off, and the blue LED on.
+ 2. the Probe should still be in the probe insert and the camera still on
+ 3. now your likely are seeing nothing but black. This is because the fluoresence (the photons emitted by the probe) is much weaker than the bright LED-Array. To fix this, open the feature Tree, go to Acquisition Control and move the Gain all he way up. Now you should see something like this.
 
 
 
-  ### Experiment #3: Controlling the UC2 Electronics using ImSwitch
 
-  In this experiment, you'll combine everything you've learned so far by controlling the UC2 system through ImSwitch, a powerful software interface designed for modular microscopy control. This tutorial provides a basic introduction to setting up ImSwitch, configuring your microscope components, and automating functions such as stage movement and LED control.
+--------
+Benedicts stuff
 
-  ---
+--------
+
+
+
+
+
+
+
+
+
+
 
   ### Step 1: Installing ImSwitch
 
@@ -301,10 +312,13 @@ This will initiate the Bluetooth scan on the ESP32, which will detect and pair w
 
 1. Download Raspberry PI Imager
 2. Flash Raspberry Pi OS 64Bit Bookworm Lite on an SD card with appropriate size (e.g. 64GB ) -> add the necessary settings (i.e. SSH, wifi password, uc2/youseetoo password/login ) )> Flash
-3. Boot Raspberry Pi and wait until it's full there; ~5 minutes => It should be connected to you r wifi; you're computer should be in the same network 
-4. You should be able to log into that using ssh
+3. Boot Raspberry Pi and wait until it's full there; ~5 minutes => It should be connected to you r wifi; you're computer should be in the same network
+4. You should be able to log into that using ssh => (Windows + R => CMD ) = > Terminal opens and then type `ssh uc2@IP-OF-YOURRASPI` (You can find this using e.g. angry ip scanner or a screen connected to your rapsberry pi)
 5. Install imswitch; Go to https://github.com/openUC2/ImSwitchDockerInstall?tab=readme-ov-file#imswitch--docker-on-raspi and then follow the procedures:
 ```bash
+mkdir Downloads
+mkdir Desktop
+sudo apt-get install git -y
 cd ~/Downloads
 git clone https://github.com/openUC2/ImSwitchDockerInstall
 cd ImSwitchDockerInstall
@@ -320,6 +334,16 @@ This will:
 
 6. Go to your browser and enter the `https://IP-OF-YOUR-RASPI:8001/imswitch/index.html`
 7. Have a look for additional information here: https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi/
+8. Close the applicaiton by hitting ctrl + c
+9. update the applicaoin by executing `bash ~/Desktop/update_docker_container.sh`
+
+## launch imswitch
+if you have installed it alredy execute the following
+
+```
+bash ~/Desktop/launch_docker_container.sh
+```
+
 
   ### Video Tutorial
 

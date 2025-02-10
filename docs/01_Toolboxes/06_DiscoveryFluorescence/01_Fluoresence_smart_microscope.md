@@ -25,7 +25,7 @@ Image einfügen, vollständiger Aufbau / Fluoresence Bild
 Image einfügen Foto real nur Bauteile
 
 ### Diagram
-![](docs\01_Toolboxes\06_DiscoveryFluorescence\01_Fluoresence_smart_microscope)
+![](./IMAGES/FluoMicroscrope_Diagram.png)
 
 ### Theory of Operation
 
@@ -295,6 +295,31 @@ This will initiate the Bluetooth scan on the ESP32, which will detect and pair w
 
   3. **Control the System**:
      Use the ImSwitch GUI to move the motorized stage, control the LED array, and capture images. The interface allows you to automate tasks such as focus stacking and digital phase-contrast imaging.
+
+
+## Install Raspberry Pi + ImSwitch
+
+1. Download Raspberry PI Imager
+2. Flash Raspberry Pi OS 64Bit Bookworm Lite on an SD card with appropriate size (e.g. 64GB ) -> add the necessary settings (i.e. SSH, wifi password, uc2/youseetoo password/login ) )> Flash
+3. Boot Raspberry Pi and wait until it's full there; ~5 minutes => It should be connected to you r wifi; you're computer should be in the same network 
+4. You should be able to log into that using ssh
+5. Install imswitch; Go to https://github.com/openUC2/ImSwitchDockerInstall?tab=readme-ov-file#imswitch--docker-on-raspi and then follow the procedures:
+```bash
+cd ~/Downloads
+git clone https://github.com/openUC2/ImSwitchDockerInstall
+cd ImSwitchDockerInstall
+chmod +x install_all.sh
+./install_all.sh
+```
+This will:
+- install docker
+- install all necessary camera drivers
+- install imswitch via Python
+- create necessray startup files on the desktop
+- You can launch it by doing; `bash ~/Desktop/launch_docker_container.sh`
+
+6. Go to your browser and enter the `https://IP-OF-YOUR-RASPI:8001/imswitch/index.html`
+7. Have a look for additional information here: https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi/
 
   ### Video Tutorial
 

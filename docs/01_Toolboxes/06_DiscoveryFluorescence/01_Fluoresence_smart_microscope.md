@@ -388,7 +388,7 @@ if you have installed it alredy execute the following
 ```
 bash ~/Desktop/launch_docker_container.sh
 ```
-
+(hier auch unbedingt screenshot machen!)
 
   ### Video Tutorial
 

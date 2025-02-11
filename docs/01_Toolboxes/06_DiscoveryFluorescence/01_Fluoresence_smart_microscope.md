@@ -22,30 +22,57 @@ Image einfügen, vollständiger Aufbau / Fluoresence Bild
 10. camera with tubelense
 11. UC2 Electronicsbox, Infinity Box and Corebox (cubes, puzzle pieces and holders)
 
-Image einfügen Foto real nur Bauteile
+Image einfügen Foto real nur Bauteile erst nach CAD optimierung
 
 ### Diagram
-![](./IMAGES/FluoMicroscrope_Diagram.png)
+![](./IMAGES/Diagramm_Aufbau_light.png)
 
 ### Theory of Operation
 
-A fluoresence Microscope uses a second light source to exite the fluoresence-marked probe. this is called absorbtion.
-after a short while, the molecul turns back to its orignal state, and emitts light itsself. Due to the Stokes-shift the
-emitted light always has a longer wavelength than the exitation light source. with an emission-Filter you, guess what, filter out the exitation-light,
-so just the light emmitted from the probe is detected by the camera.
+A fluorescence microscope is a specialized optical microscope that uses high-energy light (such as UV or blue light) to excite fluorescent molecules in a sample. These molecules absorb the light and then emit it at a longer wavelength, producing a glowing image. Special filters ensure that only the emitted fluorescence is detected by the camera, allowing for high-contrast visualization of specific structures, such as cells, proteins, or organelles. This technique is widely used in biology and medicine to study microscopic details with high sensitivity.
+
+![](./IMAGES/fluoresence_microscope.png)
+
+
+
 
 ### Theoretical Background: Fluoresence
-...
+Fluorescence is a photophysical process that describes the spontaneous emission of light shortly after an electron is excited to a higher-energy state.
+First, an electron is excited from the ground state to the higher-energy state  through absorption. After a short time (approximately 10⁻⁹ s), the excited electron returns to the ground state, releasing energy in the form of radiation. Due to the Stokes-shift within the S₁ state, the emitted light has a longer wavelength (λ₂) than the radiation used for excitation (λ₁).
 
-### Fluoresence microscope as the ultimative standard-tool for biology
+![](./IMAGES/A-simple-schematic-drawing-of-fluorescence-The-excited-electron-relaxes-to-the-lowest.png)
 
 
 # Tutorial: LED-powered fluoresence microscope
 
 ## Step 1: Assembly the microscope
+In the first step you are going to click the microscope together piece by piece. For educational purpose this instruction will go by functional groups, but feel free to do it by yourself, following the diagramm a section above.
+
+### 1.1: Assembly the bright field microscope
+ 1. build a baseplate as shown. This will be used to connect the LED-Array, probe instert, the movable infinity-objective, the beamsplitter, the filter insert and the Camera. The Camera already is connected to the tube-lens.
+
+ 2. start with the LED-Array and place the probe insert behind it. fix both with two baseplates on top
+ 3. For the movable infinity-onjetive, drill the objective into the attatchment of the electronic Z-stage and place the objective behind the probe insert. Place the Z-Stage next to it as shown below. You don't need an extra cube for the objective, but you should use a base plate on top for stability.
+ 4. next in line is the beamsplitter.you can leave the cube empty for now, though you only need it when you assembly the fluoresence microscope
+ 5. after that comes the emission filter insert. As before, for the bright field microscope you don't need to insert the filter just jet.
+ 6. the last step is to place the camera  behind the emission filter. Now your bright field microscope is already built.
 
 
-## Step 9.1.: plug in the electronics as you see below
+ ### 1.2: Assembly the fluorescent Microscope
+ 1. For the fluoresence microscope lets follow the path of light. First build a 4x1 baseplate and attach it to the beamsplitter cube.
+ 2. Then lets start from the spot furthest away and place the blue LED there.
+ 3. next lets collimate the light the LED emitts with an asphere and place it next to it. Between the LED and the asphere shouldn't be more than 30mm space
+ 4. now we want to focus the collimated light into the objective. Herefore we first place an emty cube and then the biconvex lensbehind it. We need the extra cube to have enouhght space between the asphere and the biconvex-lens. to be precisly, the space between the two lenses equals the sum of the focal leghts of those lenses.
+ The asperical lens has a focal length of 20mm, the biconvex lens 100mm so you need round about 120mm space between them.
+ 5. now we insert the Beamsplitter. Insert it as shown below and don't mix up the filter sides, otherwhise you block exactly the wrong wavelegths ;)
+ 6. to focus the light into the infinity objective, between the biconvexlens and the infinty objective there should a distance of 100mm between them. you can mesure it as shown below
+ 7. lastly insert the emission filter into it's insert. As before don't mess up the sides and after that you're done with the assembly, nice job!
+
+
+
+ ## Step 2: turn your microscope into a smart one - aka the electronics  
+
+### 2.1: plug in the electronics as you see below
 
 
 <div style="background-color: rgba(255, 255, 0, 0.3); padding: 10px; border-radius: 5px;">
@@ -66,9 +93,7 @@ so just the light emmitted from the probe is detected by the camera.
 - Plug in the 12V Power Cable
 
 
-## Step 9.2.: test the electronics
-
-### Step 1: Flashing the ESP32 Firmware
+### 2.2: Flashing the ESP32 Firmware
 1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official
  [openUC2 website](https://youseetoo.github.io/), selecting your version
  (row 2, colum 1) and click on the ``connect``-button.
@@ -84,7 +109,7 @@ The source-code can be found [here](https://github.com/youseetoo/uc2-esp32)
 
 4. Wait until the firmware has been flashed successfully.
 
-### Step 2: Connecting to the Web Interface
+### 2.3: Connecting to the Web Interface
 1. After flashing the firmware, go to the testing section on the same website.
 
 2. Connect to your ESP32 board using the "Connect" button again, ensuring the correct COM port is selected.
@@ -105,7 +130,7 @@ This command will move the Z-axis motor by -1000 steps (1 full rotation) at a sp
 Now you can test all the compontents via these two tabs.
 
 
-### Step 3: Testing in the web Interface
+### 2.4: Testing in the web Interface
 1. After that test go back to the first tab all the other Components via buttons:
 -  ``Laser 2(on)``and ``Laser 2(off)``controlls the blue exitation LED
 - ``Motor Z(+)`` and ``Motor Z(-)`` controlls the Z-Stage
@@ -128,7 +153,7 @@ This will initiate the Bluetooth scan on the ESP32, which will detect and pair w
   - **Control the LEDs**: Use the **controller buttons** to turn the LED array on/off and cycle through different illumination patterns.
 
 
- ## Step 10: Setup and use the camera-software
+ ### 2.5: Setup and use the camera-software
  1. conect the camera with you PC
  2. For the installation process follow these instructions https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization
 

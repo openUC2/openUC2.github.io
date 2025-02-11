@@ -132,12 +132,14 @@ Now you can test all the compontents via these two tabs.
 
 ### 2.4: Testing in the web Interface
 1. After that test go back to the first tab all the other Components via buttons:
--  ``Laser 2(on)``and ``Laser 2(off)``controlls the blue exitation LED
-- ``Motor Z(+)`` and ``Motor Z(-)`` controlls the Z-Stage
-- ``LED (on)`` and ``LED (off)`` controlls the LED-Array panel, you have to change the tab to controll it.
+  -  ``Laser 2(on)``and ``Laser 2(off)``controlls the blue exitation LED
+  - ``Motor Z(+)`` and ``Motor Z(-)`` controlls the Z-Stage
+  - ``LED (on)`` and ``LED (off)`` controlls the LED-Array panel, you have to change the tab to controll it.
+
 
 2. Pairing the PS4 Controller
-The UC2-ESP firmware is designed to support various input devices, including the PS4 controller, making it easier to interact with the microscope. You’ve already worked with USB Serial commands, but using the PS4 controller will give you a more flexible, hands-on approach.For more detailed instructions on pairing, refer to the [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller). But briefly:
+
+  The UC2-ESP firmware is designed to support various input devices, including the PS4 controller, making it easier to interact with the microscope. You’ve already worked with USB Serial commands, but using the PS4 controller will give you a more flexible, hands-on approach.For more detailed instructions on pairing, refer to the [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller). But briefly:
 
   1. First, put your PS4 controller into pairing mode by holding down the ``Share`` button and the ``PS``-button simultaneously until the light bar starts blinking.
   2. klick the Button ``Pair Controlller`` in the web Interface. Alternatively open the serial prompt in your browser (connected to the ESP32 board) or use the web interface and enter the command:
@@ -154,7 +156,7 @@ This will initiate the Bluetooth scan on the ESP32, which will detect and pair w
 
 
  ### 2.5: Setup and use the camera-software
- 1. conect the camera with you PC
+ 1. connect the camera with you PC
  2. For the installation process follow these instructions https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization
 
 # Congraduation! You did all the Setup Steps! Now lets use the microscope
@@ -164,7 +166,7 @@ This will initiate the Bluetooth scan on the ESP32, which will detect and pair w
  2. put the probe in the probe insert
  3. start the camera via pressing the play &#9654; button
  4. make shure, your probe is centered, shift it around until you see some structure on your screen
- 5. the imgae you see might be very blurry or to be axact, out of foucs. with the PS-controller, move the Z-stage up or down to get a sharp inmage.
+ 5. the imgae you see might be very blurry or to be axact, out of foucs. with the PS-controller, move the Z-stage up or down to get a sharp image.
  6. now you can move arround your probe an inspect it properly
 
 
@@ -335,11 +337,27 @@ Benedicts stuff
 
 ## Install Raspberry Pi + ImSwitch
 
-1. Download Raspberry PI Imager
-2. Flash Raspberry Pi OS 64Bit Bookworm Lite on an SD card with appropriate size (e.g. 64GB ) -> add the necessary settings (i.e. SSH, wifi password, uc2/youseetoo password/login ) )> Flash
-3. Boot Raspberry Pi and wait until it's full there; ~5 minutes => It should be connected to you r wifi; you're computer should be in the same network
-4. You should be able to log into that using ssh => (Windows + R => CMD ) = > Terminal opens and then type `ssh uc2@IP-OF-YOURRASPI` (You can find this using e.g. angry ip scanner or a screen connected to your rapsberry pi)
-5. Install imswitch; Go to https://github.com/openUC2/ImSwitchDockerInstall?tab=readme-ov-file#imswitch--docker-on-raspi and then follow the procedures:
+1. Download Raspberry PI Imager here: https://www.raspberrypi.com/software/
+
+![](./IMAGES/Rasberry_pi_download.png)
+
+2. Flash Raspberry Pi OS 64Bit Bookworm Lite on an SD card with appropriate size (e.g. 64GB ) -> add the necessary settings (i.e. SSH, wifi password, uc2/youseetoo password/login ) )> Flash (was ist damit gemeint..? Keine Screenshots vorhanden..)
+
+![](./IMAGES/RaspiOS_1.png)
+![](./IMAGES/RaspiOS_2.png)
+
+
+3. Boot Raspberry Pi and wait until it's full there; ~5 minutes => It should be connected to you r wifi; you're computer should be in the same network (startet das booten, wenn man auf ``weiter`` klickt? siehe bild)
+4. You should be able to log into that using ssh => (Windows + R => CMD ) = > Terminal opens and then type `ssh uc2@IP-OF-YOURRASPI`
+
+![](./IMAGES/ssh_uc2_IP_of_your_Raspi.png)
+
+(You can find the IP-Adress of your Raspberry using e.g. angry ip scanner or a screen connected to your rapsberry pi)
+![](./IMAGES/angry_IP_scanner.png)
+5. Install imswitch; Go to https://github.com/openUC2/ImSwitchDockerInstall?tab=readme-ov-file#imswitch--docker-on-raspi and then follow the procedures: (wrong code on the website, no other than crack know what a sudo is)
+
+  in the last line copypaste the following code: (not completly correct.. do you have to type ~ $ before as shown in picture?)
+
 ```bash
 mkdir Downloads
 mkdir Desktop
@@ -355,10 +373,12 @@ This will:
 - install all necessary camera drivers
 - install imswitch via Python
 - create necessray startup files on the desktop
-- You can launch it by doing; `bash ~/Desktop/launch_docker_container.sh`
 
-6. Go to your browser and enter the `https://IP-OF-YOUR-RASPI:8001/imswitch/index.html`
-7. Have a look for additional information here: https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi/
+6. launch it by doing; `bash ~/Desktop/launch_docker_container.sh`
+(hier fehlt auch ein screenshot.. wo soll ich das eingeben? in die reine cmd console oder muss davor wieder irgendwas aufgerufen werden..?)
+
+8. Go to your browser and enter the `https://IP-OF-YOUR-RASPI:8001/imswitch/index.html`
+9. Have a look for additional information here: https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi/ (nicht wirklich hilfreich)
 8. Close the applicaiton by hitting ctrl + c
 9. update the applicaoin by executing `bash ~/Desktop/update_docker_container.sh`
 
@@ -372,6 +392,6 @@ bash ~/Desktop/launch_docker_container.sh
 
   ### Video Tutorial
 
-  For a visual guide on how to set up ImSwitch and control the UC2 system, watch the following video:
+  For a visual guide on how to set up ImSwitch and control the UC2 system, watch the following video: (link wird nicht angezeigt. außerdem zeigt das video nur wie man das programm benutzt nicht wie man es intalliert.)
 
   <iframe width="700" src="https://www.youtube.com/embed/Iw_Bg9aYe1U?si=VQgLP854Hg29dwxW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="fluoreszenzshemasvg.svg"
+   inkscape:export-filename="..\IMAGES\fluoreszenzshema.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="0.65834035"
+     inkscape:cx="356.95822"
+     inkscape:cy="278.73121"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="2869"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:export-bgcolor="#ffffffff">
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="0.99999998"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Rounded arrow"
+       markerWidth="4"
+       markerHeight="4"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Rounded arrow"
+       markerWidth="4"
+       markerHeight="4"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-7-0"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Rounded arrow"
+       markerWidth="4"
+       markerHeight="4"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-7-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-7-0-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Rounded arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-7-9-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-7-0-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Rounded arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-7-9-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-7-0-9"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Rounded arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-7-9-4" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#000000;stroke-width:0.264583;stroke-miterlimit:2.91"
+       d="M 40.000002,34.999998 H 165"
+       id="path1" />
+    <path
+       style="fill:#000000;stroke-width:0.264583;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-miterlimit:2.91"
+       d="M 35.000001,34.999998 H 170"
+       id="path2" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-opacity:1;stroke-miterlimit:2.91"
+       d="M 35.000001,44.999999 H 170"
+       id="path3" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-opacity:1;stroke-miterlimit:2.91"
+       d="M 35.000001,64.999998 H 170"
+       id="path3-7" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-opacity:1;stroke-miterlimit:2.91"
+       d="M 35.000001,54.999998 H 170"
+       id="path4" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-opacity:1;stroke-miterlimit:2.91"
+       d="M 35.000001,149.8677 H 170"
+       id="path4-0" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.265;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#RoundedArrow);stroke-miterlimit:2.91"
+       d="M 19.867709,150 20,34.999999"
+       id="path4-0-3"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#001cff;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-7);stroke-miterlimit:2.91"
+       d="M 60.305638,150 60.000001,39.999999"
+       id="path4-0-3-5"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#00ff06;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-7-0);stroke-miterlimit:2.91"
+       d="M 120,64.999998 V 145"
+       id="path4-0-3-5-5"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#ff0000;stroke-width:0.265;stroke-miterlimit:2.91;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-7-0-7)"
+       d="m 80.000002,34.999999 0,8"
+       id="path4-0-3-5-5-2"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#ff0002;stroke-width:0.265;stroke-miterlimit:2.91;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-7-0-3)"
+       d="m 90.000002,44.999999 0,8"
+       id="path4-0-3-5-5-3"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#ff0000;stroke-width:0.265;stroke-miterlimit:2.91;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-7-0-9)"
+       d="m 100,54.999998 0,8"
+       id="path4-0-3-5-5-4"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;fill:#000000;stroke:none;stroke-width:0.264999;stroke-miterlimit:2.91;stroke-dasharray:none;stroke-opacity:1"
+       x="35"
+       y="30"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="stroke-width:0.265;stroke:none"
+         x="35"
+         y="30">exicted state levels</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;fill:#000000;stroke:none;stroke-width:0.264999;stroke-miterlimit:2.91;stroke-dasharray:none;stroke-opacity:1"
+       x="35"
+       y="160.23532"
+       id="text1-1"><tspan
+         sodipodi:role="line"
+         id="tspan1-7"
+         style="stroke:none;stroke-width:0.265"
+         x="35"
+         y="160.23532">ground state</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;fill:#000000;stroke:none;stroke-width:0.264999;stroke-miterlimit:2.91;stroke-dasharray:none;stroke-opacity:1"
+       x="65"
+       y="100"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="stroke-width:0.265"
+         x="65"
+         y="100">absorbed</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.265"
+         x="65"
+         y="108.81945"
+         id="tspan3">excitation</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.265"
+         x="65"
+         y="117.6389"
+         id="tspan4">light</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;fill:#000000;stroke:none;stroke-width:0.264999;stroke-miterlimit:2.91;stroke-dasharray:none;stroke-opacity:1"
+       x="125"
+       y="100"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="stroke-width:0.265"
+         x="125"
+         y="100">emitted </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.265"
+         x="125"
+         y="108.81945"
+         id="tspan6">fluoresent </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.265"
+         x="125"
+         y="117.6389"
+         id="tspan7">light</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;fill:#000000;stroke:none;stroke-width:0.264999;stroke-miterlimit:2.91;stroke-dasharray:none;stroke-opacity:1"
+       x="-107.33978"
+       y="14.347145"
+       id="text8"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         style="stroke-width:0.265"
+         x="-107.33978"
+         y="14.347145">Energy </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;fill:#000000;stroke:none;stroke-width:0.264999;stroke-miterlimit:2.91;stroke-dasharray:none;stroke-opacity:1"
+       x="112.81326"
+       y="43.217159"
+       id="text9"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         style="stroke-width:0.265"
+         x="112.81326"
+         y="43.217159">non-radiative</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.265"
+         x="112.81326"
+         y="52.03661"
+         id="tspan10">transition</tspan></text>
+  </g>
+</svg>

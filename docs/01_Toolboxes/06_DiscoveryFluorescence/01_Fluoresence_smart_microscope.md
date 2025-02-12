@@ -12,6 +12,7 @@ Image einfügen, vollständiger Aufbau / Fluoresence Bild
 
 1. Blue LED for exitation of the fluoresence moleculs - fluoresence microscopy
 2. white LED for bright Field microscopy
+3. electronic Z-stage with 8 grub screws
 4. PS4 Controller for controlling the Z-Stage
 5. infinity-objective
 6. Beamsplitter
@@ -45,19 +46,28 @@ First, an electron is excited from the ground state to the higher-energy state  
 # Tutorial: LED-powered fluoresence microscope
 
 ## Step 1: Assembly the microscope
+In the first step you are going to click the microscope together piece by piece. For educational purpose this instruction will go by functional groups, but feel free to do it by yourself, following the diagramm the section above.
 
 ### 1.1: Assembly the bright field microscope
  1. build a baseplate as shown. This will be used to connect the LED-Array, probe instert, the movable infinity-objective, the beamsplitter, the filter insert and the Camera. The Camera already is connected to the tube-lens.
 
+ 2. start with the LED-Array and place the probe insert behind it. fix both with two baseplates on top.
 
+ 3. For the movable infinity-objetive, drill the objective into the stage of the electronic Z-stage. because in this assembly the z-stage lays flat on the ground use the insert, thats closer to the Z-stage. As see below the lettering "stage" is placed upward. For the Z-Stage itself, if not already done insert the 8 grub screws on the two long sides of the Z-Stage, so you can connect the base plates to it as shown below.
+ Now place the unit behind the probe insert. You don't need an extra cube for the objective, but you should use a base plate on top for stability.
+ 4. next in line is the beamsplitter-cube. you can leave the cube empty for now, though you only need it when you assembly the fluoresence microscope
+ 6. the last spep is placing place the camera unit behind the beamsplitter. Now your bright field microscope is already built. finish it up with a second layer of base plates on the top to secure everything.
 
 
  ### 1.2: Assembly the fluorescent Microscope
  1. For the fluoresence microscope lets follow the path of light. First build a 4x1 baseplate and attach it to the beamsplitter cube.
  2. Then lets start from the spot furthest away and place the blue LED there.
+ 3. The blue LED is a divergent light source so now lets collimate the light with an asphere and place it next to it. Between the LED and the asphere shouldn't be more than 30mm space.
  4. now we want to focus the collimated light into the objective. Herefore we first place an emty cube and then the biconvex lensbehind it. We need the extra cube to have enouhght space between the asphere and the biconvex-lens. to be precisly, the space between the two lenses equals the sum of the focal leghts of those lenses.
  The asperical lens has a focal length of 20mm, the biconvex lens 100mm so you need round about 120mm space between them.
  5. now we insert the Beamsplitter. Insert it as shown below and don't mix up the filter sides, otherwhise you block exactly the wrong wavelegths ;)
+ 6. to focus the light into the infinity objective, between the biconvexlens and the infinty objective there should a distance of round about 100mm between them. you can mesure it as shown below.
+
 
 
 
@@ -72,6 +82,7 @@ First, an electron is excited from the ground state to the higher-energy state  
 </p>
 </div>
 
+- connect the Z-stage to ``Z-Motor`` on the main board, make shure there's a motor driver.
 - connect the blue LED to the LED driver (red plate) at ``out1``
   - cable at ``-`` goes to ``-``
   - cable at ``+`` goes to ``+``
@@ -151,10 +162,22 @@ This will initiate the Bluetooth scan on the ESP32, which will detect and pair w
 
 # Congraduation! You did all the Setup Steps! Now lets use the microscope
 
+## Experiment 1: Bright Field Illumination
 
+1. Turn the LED-array on and the blue LED off.
+2. Insert the probe into the probe insert.
+3. Start the camera by pressing the play button (▶).
+4. Make sure your probe is centered. Shift it around until you see some structure on your screen.
+5. The image you see might be blurry or, to be precise, out of focus. Use the PS4 controller to move the Z-stage up or down to get a sharp image.
+6. Now you can move the probe around and inspect it properly.
 
+---
 
+## Experiment 2: Fluorescence Microscopy
 
+1. To turn your microscope into a fluorescence microscope, turn the LED-Array off and the blue LED on.
+2. The probe should still be in the probe insert, and the camera should still be on.
+3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree, go to **Acquisition Control**, and increase the **Gain** all the way up. You should now see the fluorescence image.
 --------
 Benedicts stuff
 

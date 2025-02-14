@@ -26,7 +26,7 @@ In this workshop, we will guide you through assembling a LED-powered fluorescenc
 
 ### Diagram
 
-![](./IMAGES/diagramm_no_filter.png)
+![](./IMAGES/diagramm.png)
 ---
 
 ### Theory of Operation

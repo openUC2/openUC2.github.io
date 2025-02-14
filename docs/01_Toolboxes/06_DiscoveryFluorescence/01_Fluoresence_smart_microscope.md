@@ -26,7 +26,8 @@ In this workshop, we will guide you through assembling a LED-powered fluorescenc
 
 ### Diagram
 
-![](./IMAGES/diagramm_no_filter.png)
+![](./IMAGES/diagramm.png)
+
 ---
 
 ### Theory of Operation
@@ -57,12 +58,11 @@ This guide will walk you through building the microscope step by step. You can f
 
 #### 1.1: Assembling the Bright-Field Microscope
 
-1. **Build the Baseplate**: This will connect the LED array, probe insert, movable infinity objective, beamsplitter, filter insert, and the camera (which is already connected to the tube lens).
-2. **Attach the LED-Array**: Place the LED array and probe insert behind it, securing both with two baseplates.
-3. **Install the Movable Infinity-Objective**: Drill the objective into the attachment of the electronic Z-stage. Use the insert closest to the Z-stage for better positioning. because in this Assembly the Z-stage lays flat on the ground use the insert thats closest to the Z-stage. As shown below the lettering "stage" is placed upward.
-If the Z-stage isn't already set up, insert the 8 grub screws on the long sides to attach the baseplates.
-4. **Position the Beamsplitter Cube**: Insert the beamsplitter cube (you can leave it empty for now, it will be needed when assembling the fluorescence microscope).
-5. **Add the Camera**: Finally, attach the camera unit behind the beamsplitter and secure everything with a second layer of baseplates.
+1. **Build the Baseplate**: This will connect the LED-matrix, probe insert, movable infinity objective, beamsplitter and the camera (which is already connected to the tube lens).Attach wo extra baseplates for the Z-stage
+2. **Attach the LED-matrix**: Place the LED-matrix and than the probe insert behind it, securing both with two baseplates on top.
+3. **Install the movable Infinity-Objective**: Drill the objective into the attachment of the electronic Z-stage. Because in this Assembly the Z-stage lays flat on the ground use the insert thats closest to the Z-stage. As shown below the lettering "stage" is placed upward. If the Z-stage isn't already set up, insert the 8 grub screws on the long sides to attach the baseplates.
+4. **Position the beamsplitter cube**: Insert the beamsplitter cube (you can leave it empty for now, it will be needed when assembling the fluorescence microscope).
+5. **Add the camera**: Finally, attach the camera unit behind the beamsplitter and secure everything with a second layer of baseplates.
 
 Now, your bright-field microscope is ready!
 
@@ -90,7 +90,7 @@ After completing these steps, you're done with the assembly, nice job!
   <p>If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!</p>
 </div>
 
-- connect the LED-Array panel by plugging in the micro-USB and connect it to your PC.
+- connect the LED-matrix panel by plugging in the micro-USB and connect it to your PC.
 - Connect the Z-stage to the ``Z-Motor`` on the main board. Ensure there's a motor driver.
 - Connect the blue LED to the LED driver (red plate) at ``out1``:
   - The cable at ``-`` goes to ``-``
@@ -127,7 +127,7 @@ After completing these steps, you're done with the assembly, nice job!
 
 4. Wait until the firmware has been successfully flashed.
 
-5. &#x1F4A1; **flash your LED-Array**. Repeat the same steps, but this time for the LED-Array
+5. &#x1F4A1; **flash your LED-matrix**. Repeat the same steps, but this time for the LED-matrix
    ![](./IMAGES/LED_install.png)
 ---
 
@@ -150,7 +150,7 @@ This command will move the Z-axis motor by -1000 steps (1 full rotation) at a sp
 
 > **Note:** Ensure that the command string has no line breaks.
 
-4. &#x1F4A1;**Connect your LED-Array as well**. Duplicate the current tab and connect the LED-Array again via the button. Choose the correct COM Port.  
+4. &#x1F4A1;**Connect your LED-matrix as well**. Duplicate the current tab and connect the LED-matrix again via the button. Choose the correct COM Port.  
 Now you can test all components through these two tabs.
 
 ---
@@ -160,7 +160,7 @@ Now you can test all components through these two tabs.
 1. After completing the test, go back to the first tab to control the other components via buttons:
    - `Laser 2(on)` and `Laser 2(off)` control the blue excitation LED.
    - `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
-   - `LED (on)` and `LED (off)` control the LED-Array panel (&#x1F4A1;you must change tabs to control it).
+   - `LED (on)` and `LED (off)` control the LED-matrix panel (&#x1F4A1;you must change tabs to control it).
 
 ---
 
@@ -178,10 +178,10 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
   This will initiate the Bluetooth scan on the ESP32, which will detect and pair with the controller.
 
-  Once paired, you can control the motorized stage using the analog sticks and switch the LED array on/off using the buttons:
+  Once paired, you can control the motorized stage using the analog sticks and switch the LED-matrix on/off using the buttons:
 
   - **Move the Z-stage**: Use the **left analog stick** to move the stage up and down (adjust focus).
-  - **Control the LEDs**: Use the **controller buttons** to turn the LED array on/off and cycle through different illumination patterns.
+  - **Control the LEDs**: Use the **controller buttons** to turn the LED-matrix on/off and cycle through different illumination patterns.
 
   ---
 
@@ -198,7 +198,7 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
 ## Experiment 1: Bright Field Illumination
 
-1. Turn the LED-array on and the blue LED off.
+1. Turn the LED-matrix on and the blue LED off.
 2. Insert the probe into the probe insert.
 3. Start the camera by pressing the play button (▶).
 4. Make sure your probe is centered. Shift it around until you see some structure on your screen.
@@ -211,9 +211,9 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
 ## Experiment 2: Fluorescence Microscopy
 
-1. To turn your microscope into a fluorescence microscope, turn the LED-Array off and the blue LED on.
+1. To turn your microscope into a fluorescence microscope, turn the LED-matrix off and the blue LED on.
 2. The probe should still be in the probe insert, and the camera should still be on.
-3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree, go to ``Acquisition Control``, and increase the ``exposure time`` to 300000ms. You should now see the fluorescence image.
+3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-matrix. To adjust, open the feature tree, go to ``Acquisition Control``, and increase the ``exposure time`` to 300000ms. You should now see the fluorescence image.
 Optional you can go to ``Analog Control``, and increase the ``Gain``.
 
 ![](./IMAGES/cameraaufnahme_fluoreszenz.png)
@@ -372,7 +372,7 @@ Benedicts stuff
      Upon launch, choose **"Virtual Microscope"** or load your custom configuration file, such as `uc2_hik_histo.json`.
 
   3. **Control the System**:
-     Use the ImSwitch GUI to move the motorized stage, control the LED array, and capture images. The interface allows you to automate tasks such as focus stacking and digital phase-contrast imaging.
+     Use the ImSwitch GUI to move the motorized stage, control the LED-matrix, and capture images. The interface allows you to automate tasks such as focus stacking and digital phase-contrast imaging.
 
 
 ## Install Raspberry Pi + ImSwitch

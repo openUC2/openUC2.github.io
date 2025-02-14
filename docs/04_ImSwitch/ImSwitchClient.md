@@ -1,75 +1,137 @@
 # ImSwitchClient Documentation
 
-`ImSwitchClient` is a Python package designed to connect to the ImSwitch REST API, enabling remote control of ImSwitchUC2 functionalities directly from Jupyter Notebooks. This client facilitates easy integration with the ImSwitch ecosystem, offering programmable access to various features like laser control, stage manipulation, and image acquisition.
+## Introduction
+
+`ImSwitchClient` is a Python wrapper designed for interacting with the ImSwitch REST API, enabling remote control over ImSwitch functionalities, such as stage positioning, laser control, and image acquisition. This client simplifies API interactions and allows seamless integration into Python scripts and Jupyter Notebooks.
 
 [![PyPI Version](https://img.shields.io/pypi/v/imswitchclient.svg)](https://pypi.python.org/pypi/imswitchclient)
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WSDORF31O2M?si=hzqvJeZak0D13vFn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 ## Features
 
-- **Remote Control**: Interact with ImSwitchUC2 from Jupyter Notebooks via fastapi endpoints.
-- **Comprehensive Documentation**: Access detailed documentation and explore API endpoints at [https://imswitchclient.readthedocs.io](https://imswitchclient.readthedocs.io).
-- **API Exploration**: Utilize FastAPI's interface at http://localhost:8000/docs for an interactive API experience.
-- **Broad Functionality**: Current implementations include laser control, stage manipulation, and image acquisition, with the possibility for future expansion based on user requests.
-- **Global API Testing**: Test the client using the globally hosted API at [https://youseetoo.github.io/imswitch/api.html](https://youseetoo.github.io/imswitch/api.html).
-- **Open Source**: Inspired by the OpenFlexure Client, `ImSwitchClient` is freely available for modification and distribution under the MIT license.
-- **Implemented functions** (so far, please file an issue for feature requests):
-  - Laser
-  - Stage
-  - Image Acquisition
-- You can test the client with the globally hosted api here: https://youseetoo.github.io/imswitch/api.html
-- It is inspired by the OpenFlexure Client: https://gitlab.com/openflexure/openflexure-microscope-pyclient/-/blob/master/openflexure_microscope_client/microscope_client.py
-- The source files can be found here: https://github.com/openUC2/imswitchclient/
+- **Remote Control**: Interface with ImSwitch through REST API endpoints.
+- **Comprehensive API Access**: Easily control positioners, lasers, detectors, and imaging settings.
+- **Interactive API Exploration**: Utilize the FastAPI Swagger UI at `http://localhost:8000/docs`.
+- **Modular Design**: Includes managers for lasers, positioners, image acquisition, and more.
+- **Open Source**: Inspired by OpenFlexure Client, freely available under the MIT license.
 
 ## Installation
 
-To install `ImSwitchClient`, use the following pip command:
+You can install `ImSwitchClient` via pip:
 
 ```bash
 pip install imswitchclient
 ```
 
-## Quick Start Example
+## Getting Started
 
-This example demonstrates basic usage of `ImSwitchClient` for moving a positioner and acquiring an image.
+### Initializing the Client
 
 ```python
 import imswitchclient.ImSwitchClient as imc
+
+# Initialize the client
+client = imc.ImSwitchClient(host="0.0.0.0", isHttps=True, port=8001)
+```
+
+### Example: Moving a Stage and Acquiring an Image
+
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 import time
 
-# Initialize the client
-client = imc.ImSwitchClient()
-
-# Retrieve the first positioner's name and current position
+# Retrieve positioner names
 positioner_names = client.positionersManager.getAllDeviceNames()
 positioner_name = positioner_names[0]
-currentPositions = client.positionersManager.getPositionerPositions()[positioner_name]
-initialPosition = (currentPositions["X"], currentPositions["Y"])
 
-# Define and move to a new position
-newPosition = (initialPosition[0] + 10, initialPosition[1] + 10)
-client.positionersManager.movePositioner(positioner_name, "X", newPosition[0], is_absolute=True, is_blocking=True)
-client.positionersManager.movePositioner(positioner_name, "Y", newPosition[1], is_absolute=True, is_blocking=True)
+# Get current position
+current_positions = client.positionersManager.getPositionerPositions()[positioner_name]
+initial_position = (current_positions["X"], current_positions["Y"])
 
-# Acquire and display an image
-time.sleep(0.5)  # Allow time for the move
-lastFrame = client.recordingManager.snapNumpyToFastAPI()
-plt.imshow(lastFrame)
-plt.show()
+# Turn on illumination
+laser_name = client.lasersManager.getLaserNames()[0]
+client.lasersManager.setLaserActive(laser_name, True)
+client.lasersManager.setLaserValue(laser_name, 512)
 
-# Return the positioner to its initial position
-client.positionersManager.movePositioner(positioner_name, "X", initialPosition[0], is_absolute=True, is_blocking=True)
-client.positionersManager.movePositioner(positioner_name, "Y", initialPosition[1], is_absolute=True, is_blocking=True)
+# Move the stage and capture an image
+def capture_image_at_position(x, y):
+    client.positionersManager.movePositioner(positioner_name, "X", x, is_absolute=True, is_blocking=True)
+    client.positionersManager.movePositioner(positioner_name, "Y", y, is_absolute=True, is_blocking=True)
+    last_frame = client.recordingManager.snapNumpyToFastAPI()
+    plt.imshow(last_frame)
+    plt.show()
+
+# Example scanning
+for ix in range(5):
+    for iy in range(5):
+        new_x = initial_position[0] + ix * 50
+        new_y = initial_position[1] + iy * 50
+        capture_image_at_position(new_x, new_y)
+
+# Return stage to initial position
+client.positionersManager.movePositioner(positioner_name, "X", initial_position[0], is_absolute=True, is_blocking=True)
+client.positionersManager.movePositioner(positioner_name, "Y", initial_position[1], is_absolute=True, is_blocking=True)
 ```
+
+### Laser Control Example
+
+```python
+laser_name = client.lasersManager.getLaserNames()[0]
+client.lasersManager.setLaserActive(laser_name, True)
+client.lasersManager.setLaserValue(laser_name, 800)
+
+# Verify laser status
+print(client.lasersManager.getLaserNames())
+client.lasersManager.setLaserActive(laser_name, False)
+```
+
+### Recording an Image
+
+```python
+# Take a snapshot
+image = client.recordingManager.snapNumpyToFastAPI()
+plt.imshow(image)
+plt.show()
+```
+
+### Setting Live View
+
+```python
+client.viewManager.setLiveViewActive(True)
+client.viewManager.setLiveViewCrosshairVisible(True)
+client.viewManager.setLiveViewGridVisible(False)
+```
+
+## API Overview
+
+The ImSwitch API provides access to various components:
+
+### Positioners Manager
+- `getAllDeviceNames()` - Get all available positioners.
+- `getPositionerPositions()` - Get current position.
+- `movePositioner(name, axis, value, is_absolute, is_blocking)` - Move the stage.
+- `homeAxis(name, axis, is_blocking)` - Home the positioner.
+
+### Lasers Manager
+- `getLaserNames()` - Get available lasers.
+- `setLaserActive(name, status)` - Turn laser on/off.
+- `setLaserValue(name, value)` - Set laser intensity.
+
+### Recording Manager
+- `snapNumpyToFastAPI()` - Capture an image.
+- `startRecording()` - Begin recording.
+- `stopRecording()` - Stop recording.
+
+### View Manager
+- `setLiveViewActive(status)` - Enable live view.
+- `setLiveViewCrosshairVisible(status)` - Show/hide crosshair.
+- `setLiveViewGridVisible(status)` - Show/hide grid.
 
 ## Contributing
 
-Contributions to `ImSwitchClient` are welcome! Please refer to the project's GitHub repository for contribution guidelines: [https://github.com/openUC2/imswitchclient/](https://github.com/openUC2/imswitchclient/).
+Contributions are welcome! Visit the GitHub repository for details: [https://github.com/openUC2/imswitchclient](https://github.com/openUC2/imswitchclient)
 
 ## License
 
-`ImSwitchClient` is licensed under the MIT License. For more details, see the LICENSE file in the project repository.
+This project is licensed under the MIT License.
+

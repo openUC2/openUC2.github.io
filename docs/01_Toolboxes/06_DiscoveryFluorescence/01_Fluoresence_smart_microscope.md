@@ -1,12 +1,12 @@
 id: LED_Fluoresence_microscope
 title: openUC2 LED Fluoresence microscope
----
+
 
 # Workshop Manual: Building a Smart LED-Powered Fluorescence Microscope
 
 In this workshop, we will guide you through assembling a LED-powered fluorescence microscope, allowing you to explore fascinating experiments with microscopic details.
 
----
+
 
 ### Materials Needed
 
@@ -22,12 +22,12 @@ In this workshop, we will guide you through assembling a LED-powered fluorescenc
 10. Camera with tube lens
 11. UC2 Electronics box, Infinity Box, and Corebox (cubes, puzzle pieces, and holders)
 
----
+
 
 ### Diagram
 
 ![](./IMAGES/diagramm.png)
----
+
 
 ### Theory of Operation
 
@@ -36,7 +36,7 @@ First, an electron is excited from the ground state to the higher-energy state  
 
 ![](./IMAGES/fluoresence_microscope.png)
 
----
+
 
 ### Theoretical Background: Fluorescence
 
@@ -47,7 +47,7 @@ First, an electron is excited from the ground state to the higher-energy state  
 ![](./IMAGES/fluoreszenzshema.png)
 
 
----
+
 
 ## Tutorial: LED-Powered Fluorescence Microscope
 
@@ -66,7 +66,7 @@ If the Z-stage isn't already set up, insert the 8 grub screws on the long sides 
 
 Now, your bright-field microscope is ready!
 
----
+
 
 #### 1.2: Assembling the Fluorescence Microscope
 But of course if you got this box you want more, so now let#s start buidling the fluorescene Microscope
@@ -80,38 +80,38 @@ But of course if you got this box you want more, so now let#s start buidling the
 
 After completing these steps, you're done with the assembly, nice job!
 
----
+
 # Step 2: Turn Your Microscope Into a Smart One - aka the Electronics  
 
 ### 2.1: Plug in the Electronics as Shown Below
 
-<div style="background-color: rgba(255, 255, 0, 0.3); padding: 10px; border-radius: 5px;">
-  <strong style="font-size: 20px;">⚠️ Caution!</strong>
-  <p>If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!</p>
-</div>
+:::caution
+**⚠️ Caution!**
+If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!
+:::
 
 - connect the LED-Array panel by plugging in the micro-USB and connect it to your PC.
-- Connect the Z-stage to the ``Z-Motor`` on the main board. Ensure there's a motor driver.
-- Connect the blue LED to the LED driver (red plate) at ``out1``:
-  - The cable at ``-`` goes to ``-``
-  - The cable at ``+`` goes to ``+``
+- Connect the Z-stage to the `Z-Motor` on the main board. Ensure there's a motor driver.
+- Connect the blue LED to the LED driver (red plate) at `out1`:
+  - The cable at `-` goes to `-`
+  - The cable at `+` goes to `+`
 - Connect the LED driver to the main board:
-  - The cable at ``in 1`` goes to ``PM2 - PMW2``
-  - The cable at ``V In -`` goes to ``12V - GND``
-  - The cable at ``V IN +`` goes to ``12V - 12V``
+  - The cable at `in 1` goes to `PM2 - PMW2`
+  - The cable at `V In -` goes to `12V - GND`
+  - The cable at `V IN +` goes to `12V - 12V`
 - Plug in the micro-USB and connect to your PC.
 - Plug in the 12V power cable.
 
 
----
+
 
 ### 2.2: Flashing the ESP32 Firmware
 
-1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (**row 2, column 1**), then click on the ``connect`` button.
+1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (**row 2, column 1**), then click on the `connect` button.
 
-   ![](./IMAGES/Electronics_Box_5.png)
+![](./IMAGES/Electronics_Box_5.png)
 
-   The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
+The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
 
 2. Connect the ESP32 to your computer using the micro-USB cable.  
 
@@ -129,7 +129,7 @@ After completing these steps, you're done with the assembly, nice job!
 
 5. &#x1F4A1; **flash your LED-Array**. Repeat the same steps, but this time for the LED-Array
    ![](./IMAGES/LED_install.png)
----
+
 
 ### 2.3: Connecting to the Web Interface
 
@@ -144,16 +144,17 @@ After completing these steps, you're done with the assembly, nice job!
 ```json
 {"task":"/motor_act", "motor": { "steppers": [ { "stepperid": 3, "position": -1000, "speed": 1000, "isabs": 0, "isaccel": 0} ] } }
 ```
-   ![](./IMAGES/Electronics_Box_1.png)
+
+![](./IMAGES/Electronics_Box_1.png)
 
 This command will move the Z-axis motor by -1000 steps (1 full rotation) at a speed of 1000 steps per second. Each step corresponds to a movement of 300nm when using microstepping. You’ll observe the motor rotating, adjusting the focus.
 
-> **Note:** Ensure that the command string has no line breaks.
+**Note:** Ensure that the command string has no line breaks.
 
 4. &#x1F4A1;**Connect your LED-Array as well**. Duplicate the current tab and connect the LED-Array again via the button. Choose the correct COM Port.  
 Now you can test all components through these two tabs.
 
----
+
 
 ### 2.4: Testing in the Web Interface
 
@@ -162,7 +163,7 @@ Now you can test all components through these two tabs.
    - `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
    - `LED (on)` and `LED (off)` control the LED-Array panel (&#x1F4A1;you must change tabs to control it).
 
----
+
 
 ### 2.5: Pairing the PS4 Controller &#x1F3AE;
 
@@ -183,18 +184,18 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
   - **Move the Z-stage**: Use the **left analog stick** to move the stage up and down (adjust focus).
   - **Control the LEDs**: Use the **controller buttons** to turn the LED array on/off and cycle through different illumination patterns.
 
-  ---
+  
 
 ### 2.6: Setup and Use the Camera Software
 
 1. Connect the camera to your PC.
 2. For the installation process, follow these instructions: [Install MVS App for Camera Utilization](https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization).
 
----
 
-# Congratulations! You Have Completed All the Setup Steps! Now Let's Use the Microscope
 
----
+**Congratulations! You Have Completed All the Setup Steps! Now Let's Use the Microscope**
+
+
 
 ## Experiment 1: Bright Field Illumination
 
@@ -207,21 +208,21 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
 ![](./IMAGES/cameraaufnahme_hellfeld.png)
 
----
+
 
 ## Experiment 2: Fluorescence Microscopy
 
 1. To turn your microscope into a fluorescence microscope, turn the LED-Array off and the blue LED on.
 2. The probe should still be in the probe insert, and the camera should still be on.
-3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree, go to ``Acquisition Control``, and increase the ``exposure time`` to 300000ms. You should now see the fluorescence image.
-Optional you can go to ``Analog Control``, and increase the ``Gain``.
+3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree, go to `Acquisition Control`, and increase the `exposure time` to 300000ms. You should now see the fluorescence image.
+Optional you can go to `Analog Control`, and increase the `Gain`.
 
 ![](./IMAGES/cameraaufnahme_fluoreszenz.png)
 
---------
+--
 Benedicts stuff
 
---------
+--
 
 
 
@@ -242,25 +243,25 @@ Benedicts stuff
   A more detailed explantion can be found here: https://openuc2.discourse.group/t/imswitch-installation-on-mac-and-windows/37
 
   1. **Set up your Python environment** (using Conda or Mamba):
-     ```bash
+     ``bash
      mamba create -n imswitchhackathon python=3.9 -y
      mamba activate imswitchhackathon
-     ```
+     ``
 
   2. **Install ImSwitch**:
-     ```bash
+     ``bash
      pip install https://github.com/openUC2/ImSwitch/archive/refs/heads/master.zip # this installs the lastest master
      # do the same if you want to update the system
      # alternative:
      git clone https://github.com/openUC2/ImSwitch/
      cd ImSwitch
      pip install -e .
-     ```
+     ``
 
   3. **Optional**: Install the required dependencies for QT and Napari:
-     ```bash
+     ``bash
      pip install pyqtgraph qdarkstyle
-     ```
+     ``
 
   This setup will allow you to run ImSwitch with full functionality, including graphical user interface (GUI) support for Napari.
 
@@ -269,12 +270,12 @@ Benedicts stuff
   For a simpler, platform-agnostic solution, you can run ImSwitch using Docker:
 
   1. **Pull the Docker container**:
-     ```bash
+     ``bash
      sudo docker pull ghcr.io/openuc2/imswitch-noqt-x64:latest
-     ```
+     ``
 
   2. **Run the Docker container**:
-     ```bash
+     ``bash
      sudo docker run -it --rm -p 8001:8001 -p 2222:22 \
      -e HEADLESS=1 \
      -e HTTP_PORT=8001 \
@@ -282,13 +283,13 @@ Benedicts stuff
      -e CONFIG_PATH=/config \
      -v ~/Downloads:/config \
      --privileged ghcr.io/openuc2/imswitch-noqt-x64:latest
-     ```
+     ``
 
   Once you have ImSwitch installed and running, you can access the web interface at `localhost:8001` to control the system.
 
   For detailed instructions on Docker installation, visit the [ImSwitch Docker Guide](https://openuc2.github.io/docs/ImSwitch/ImSwitchDocker/).
 
-  ---
+  
 
   ### Step 2: Using the ImSwitch Config File
 
@@ -355,18 +356,18 @@ Benedicts stuff
       "frameCropy": 400
     }
   }
-  ```
+  ``
 
   This file configures the ESP32 stage, LED control, and the camera for widefield imaging. Ensure the `host_` and `serialport` match your system setup.
 
-  ---
+  
 
   ### Step 3: Running the Microscope with ImSwitch
 
   1. **Launch ImSwitch**:
-     ```bash
+     ``bash
      python -m imswitch
-     ```
+     ``
 
   2. **Select the Configuration**:
      Upon launch, choose **"Virtual Microscope"** or load your custom configuration file, such as `uc2_hik_histo.json`.
@@ -387,7 +388,7 @@ Benedicts stuff
 ![](./IMAGES/RaspiOS_2.png)
 
 
-3. Boot Raspberry Pi and wait until it's full there; ~5 minutes => It should be connected to you r wifi; you're computer should be in the same network (startet das booten, wenn man auf ``weiter`` klickt? siehe bild)
+3. Boot Raspberry Pi and wait until it's full there; ~5 minutes => It should be connected to you r wifi; you're computer should be in the same network (startet das booten, wenn man auf `weiter` klickt? siehe bild)
 4. You should be able to log into that using ssh => (Windows + R => CMD ) = > Terminal opens and then type `ssh uc2@IP-OF-YOURRASPI`
 
 ![](./IMAGES/ssh_uc2_IP_of_your_Raspi.png)
@@ -398,7 +399,7 @@ Benedicts stuff
 
   in the last line copypaste the following code: (not completly correct.. do you have to type ~ $ before as shown in picture?)
 
-```bash
+``bash
 mkdir Downloads
 mkdir Desktop
 sudo apt-get install git -y
@@ -407,7 +408,7 @@ git clone https://github.com/openUC2/ImSwitchDockerInstall
 cd ImSwitchDockerInstall
 chmod +x install_all.sh
 ./install_all.sh
-```
+``
 This will:
 - install docker
 - install all necessary camera drivers
@@ -425,9 +426,9 @@ This will:
 ## launch imswitch
 if you have installed it alredy execute the following
 
-```
+``
 bash ~/Desktop/launch_docker_container.sh
-```
+``
 (hier auch unbedingt screenshot machen!)
 
 

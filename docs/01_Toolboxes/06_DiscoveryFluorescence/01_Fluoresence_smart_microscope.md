@@ -2,165 +2,199 @@ id: LED_Fluoresence_microscope
 title: openUC2 LED Fluoresence microscope
 ---
 
-# Workshop Manual: Building a smart LED powered fluoresence microscope
+# Workshop Manual: Building a Smart LED-Powered Fluorescence Microscope
 
-In this workshop, we will construct a LED-powered fluoresence microscope to perform interesting experiments.
+In this workshop, we will guide you through assembling a LED-powered fluorescence microscope, allowing you to explore fascinating experiments with microscopic details.
 
-Image einfügen, vollständiger Aufbau / Fluoresence Bild
+---
 
 ### Materials Needed
 
-1. Blue LED for exitation of the fluoresence moleculs - fluoresence microscopy
-2. white LED for bright Field microscopy
-3. electronic Z-stage with 8 grub screws
-4. PS4 Controller for controlling the Z-Stage
-5. infinity-objective
+1. Blue LED (for exciting fluorescence molecules)
+2. White LED (for bright-field microscopy)
+3. Electronic Z-stage with 8 grub screws
+4. PS4 Controller (for controlling the Z-stage)
+5. Infinity objective
 6. Beamsplitter
-7. Emissionfilter
-8. aspherical lens for beam-collimation
-9. bikonvex lens (f'=100mm) for focusing
-10. camera with tubelense
-11. UC2 Electronicsbox, Infinity Box and Corebox (cubes, puzzle pieces and holders)
+7. Emission filter
+8. Aspherical lens (for beam collimation)
+9. Biconvex lens (f' = 100mm, for focusing)
+10. Camera with tube lens
+11. UC2 Electronics box, Infinity Box, and Corebox (cubes, puzzle pieces, and holders)
 
-Image einfügen Foto real nur Bauteile erst nach CAD optimierung
+---
 
 ### Diagram
-![](./IMAGES/Diagramm_Aufbau_light.png)
+
+![](./IMAGES/diagramm.png)
+---
 
 ### Theory of Operation
 
-A fluorescence microscope is a specialized optical microscope that uses high-energy light (such as UV or blue light) to excite fluorescent molecules in a sample. These molecules absorb the light and then emit it at a longer wavelength, producing a glowing image. Special filters ensure that only the emitted fluorescence is detected by the camera, allowing for high-contrast visualization of specific structures, such as cells, proteins, or organelles. This technique is widely used in biology and medicine to study microscopic details with high sensitivity.
-
-![](./IMAGES/fluoresence_microscope.png)
-
-
-
-
-### Theoretical Background: Fluoresence
 Fluorescence is a photophysical process that describes the spontaneous emission of light shortly after an electron is excited to a higher-energy state.
 First, an electron is excited from the ground state to the higher-energy state  through absorption. After a short time (approximately 10⁻⁹ s), the excited electron returns to the ground state, releasing energy in the form of radiation. Due to the Stokes-shift within the S₁ state, the emitted light has a longer wavelength (λ₂) than the radiation used for excitation (λ₁).
 
-![](./IMAGES/A-simple-schematic-drawing-of-fluorescence-The-excited-electron-relaxes-to-the-lowest.png)
+![](./IMAGES/fluoresence_microscope.png)
+
+---
+
+### Theoretical Background: Fluorescence
+
+Fluorescence is a photophysical process that describes the spontaneous emission of light shortly after an electron is excited to a higher-energy state.
+First, an electron is excited from the ground state to the higher-energy state  through absorption. After a short time (approximately 10⁻⁹ s), the excited electron returns to the ground state, releasing energy in the form of radiation. Due to the Stokes-shift within the S₁ state, the emitted light has a longer wavelength (λ₂) than the radiation used for excitation (λ₁).
 
 
-# Tutorial: LED-powered fluoresence microscope
-
-## Step 1: Assembly the microscope
-In the first step you are going to click the microscope together piece by piece. For educational purpose this instruction will go by functional groups, but feel free to do it by yourself, following the diagramm the section above.
-
-### 1.1: Assembly the bright field microscope
- 1. build a baseplate as shown. This will be used to connect the LED-Array, probe instert, the movable infinity-objective, the beamsplitter, the filter insert and the Camera. The Camera already is connected to the tube-lens.
-
- 2. start with the LED-Array and place the probe insert behind it. fix both with two baseplates on top.
-
- 3. For the movable infinity-objetive, drill the objective into the stage of the electronic Z-stage. because in this assembly the z-stage lays flat on the ground use the insert, thats closer to the Z-stage. As see below the lettering "stage" is placed upward. For the Z-Stage itself, if not already done insert the 8 grub screws on the two long sides of the Z-Stage, so you can connect the base plates to it as shown below.
- Now place the unit behind the probe insert. You don't need an extra cube for the objective, but you should use a base plate on top for stability.
- 4. next in line is the beamsplitter-cube. you can leave the cube empty for now, though you only need it when you assembly the fluoresence microscope
- 6. the last spep is placing place the camera unit behind the beamsplitter. Now your bright field microscope is already built. finish it up with a second layer of base plates on the top to secure everything.
+![](./IMAGES/fluoreszenzshema.png)
 
 
- ### 1.2: Assembly the fluorescent Microscope
- 1. For the fluoresence microscope lets follow the path of light. First build a 4x1 baseplate and attach it to the beamsplitter cube.
- 2. Then lets start from the spot furthest away and place the blue LED there.
- 3. The blue LED is a divergent light source so now lets collimate the light with an asphere and place it next to it. Between the LED and the asphere shouldn't be more than 30mm space.
- 4. now we want to focus the collimated light into the objective. Herefore we first place an emty cube and then the biconvex lensbehind it. We need the extra cube to have enouhght space between the asphere and the biconvex-lens. to be precisly, the space between the two lenses equals the sum of the focal leghts of those lenses.
- The asperical lens has a focal length of 20mm, the biconvex lens 100mm so you need round about 120mm space between them.
- 5. now we insert the Beamsplitter. Insert it as shown below and don't mix up the filter sides, otherwhise you block exactly the wrong wavelegths ;)
- 6. to focus the light into the infinity objective, between the biconvexlens and the infinty objective there should a distance of round about 100mm between them. you can mesure it as shown below.
+---
 
+## Tutorial: LED-Powered Fluorescence Microscope
 
+### Step 1: Assemble the Microscope
 
+This guide will walk you through building the microscope step by step. You can follow the assembly process according to the functional groups or refer to the diagram above.
 
- ## Step 2: turn your microscope into a smart one - aka the electronics  
+#### 1.1: Assembling the Bright-Field Microscope
 
-### 2.1: plug in the electronics as you see below
+1. **Build the Baseplate**: This will connect the LED array, probe insert, movable infinity objective, beamsplitter, filter insert, and the camera (which is already connected to the tube lens).
+2. **Attach the LED-Array**: Place the LED array and probe insert behind it, securing both with two baseplates.
+3. **Install the Movable Infinity-Objective**: Drill the objective into the attachment of the electronic Z-stage. Use the insert closest to the Z-stage for better positioning. because in this Assembly the Z-stage lays flat on the ground use the insert thats closest to the Z-stage. As shown below the lettering "stage" is placed upward.
+If the Z-stage isn't already set up, insert the 8 grub screws on the long sides to attach the baseplates.
+4. **Position the Beamsplitter Cube**: Insert the beamsplitter cube (you can leave it empty for now, it will be needed when assembling the fluorescence microscope).
+5. **Add the Camera**: Finally, attach the camera unit behind the beamsplitter and secure everything with a second layer of baseplates.
 
+Now, your bright-field microscope is ready!
+
+---
+
+#### 1.2: Assembling the Fluorescence Microscope
+But of course if you got this box you want more, so now let#s start buidling the fluorescene Microscope
+
+1. **Prepare a 4x1 Baseplate**: After that, attach it to the beamsplitter cube.
+2. **Position the Blue LED**: Place the blue LED at the furthest point from the beamsplitter.
+3. **Collimate the Light**: The blue LED is a divergent light source, so use the aspherical lens to collimate the light. Place the aspherical lens right after the LED with a gap no larger than 30mm.
+4. **Focus the Light**: To focus the collimated light into the objective, insert an empty cube, followed by the biconvex lens. The space between the aspherical lens and the biconvex lens should be the sum of their focal lengths. The aspherical lens has a focal length of 20mm, and the biconvex lens has 100mm, so you need approximately 120mm between the two.
+5. **Insert the Beamsplitter**: Place the beamsplitter carefully. Make sure the filter sides are oriented correctly to avoid blocking the wrong wavelengths.
+6. **Focus Light into the Infinity Objective**: to correctly focus the ligth into the infinity objective, position the biconvex lens and infinity objective with about 100mm of space between them.
+
+After completing these steps, you're done with the assembly, nice job!
+
+---
+# Step 2: Turn Your Microscope Into a Smart One - aka the Electronics  
+
+### 2.1: Plug in the Electronics as Shown Below
 
 <div style="background-color: rgba(255, 255, 0, 0.3); padding: 10px; border-radius: 5px;">
   <strong style="font-size: 20px;">⚠️ Caution!</strong>
-  <p> if you need to change any of the cables or their position, always plug the 12V-Power cable out, bevor you do. Otherwhise the electronic components my get damaged!
-</p>
+  <p>If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!</p>
 </div>
 
-- connect the Z-stage to ``Z-Motor`` on the main board, make shure there's a motor driver.
-- connect the blue LED to the LED driver (red plate) at ``out1``
-  - cable at ``-`` goes to ``-``
-  - cable at ``+`` goes to ``+``
-- connect the LED driver to the main board
-  - cable at ``in 1`` goas to ``PM2- PMW2``
-  - cable at ``V In -`` goes to ``12V - GND``
-  - cable at ``V IN +`` goas to ``12V - 12V``
-- plug in the micro-USB an connect to your PC
-- Plug in the 12V Power Cable
+- connect the LED-Array panel by plugging in the micro-USB and connect it to your PC.
+- Connect the Z-stage to the ``Z-Motor`` on the main board. Ensure there's a motor driver.
+- Connect the blue LED to the LED driver (red plate) at ``out1``:
+  - The cable at ``-`` goes to ``-``
+  - The cable at ``+`` goes to ``+``
+- Connect the LED driver to the main board:
+  - The cable at ``in 1`` goes to ``PM2 - PMW2``
+  - The cable at ``V In -`` goes to ``12V - GND``
+  - The cable at ``V IN +`` goes to ``12V - 12V``
+- Plug in the micro-USB and connect to your PC.
+- Plug in the 12V power cable.
 
+
+---
 
 ### 2.2: Flashing the ESP32 Firmware
-1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official
- [openUC2 website](https://youseetoo.github.io/), selecting your version
- (row 2, colum 1) and click on the ``connect``-button.
-![](./IMAGES/EXP_1_Serial/Electronics_Box_5.png)
-The source-code can be found [here](https://github.com/youseetoo/uc2-esp32)
 
-2. Connect the ESP32 to your computer using the micro-USB cable.
-![](./IMAGES/EXP_1_Serial/Electronics_Box_4.png)
+1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (**row 2, column 1**), then click on the ``connect`` button.
 
-3. In your Chrome browser a dialog will prompt you to select the COM port for your
- ESP32, wich should be shown as `CP2102 USB to UART Bridge Controller`. Once connected, you can install the latest firmware by simply clicking the "Install" button. If nothing shows up, you can install the drivers from the following propmpt that results when you hit anywhere on the screen:
-![](./IMAGES/EXP_1_Serial/Electronics_Box_3.png)
+   ![](./IMAGES/Electronics_Box_5.png)
 
-4. Wait until the firmware has been flashed successfully.
+   The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
+
+2. Connect the ESP32 to your computer using the micro-USB cable.  
+
+
+3. In your Chrome browser, a dialog will prompt you to select the COM port for your ESP32, which should be shown as `CP2102 USB to UART Bridge Controller`. Once connected, you can install the latest firmware by simply clicking the "Install" button.
+  ![](./IMAGES/port_selection.png)
+
+  ![](./IMAGES/install_esp.png)
+
+  If nothing shows up, you can install the drivers from the prompt that appears when you click anywhere on the screen:
+
+   ![](./IMAGES/Electronics_Box_3.png)
+
+4. Wait until the firmware has been successfully flashed.
+
+5. &#x1F4A1; **flash your LED-Array**. Repeat the same steps, but this time for the LED-Array
+   ![](./IMAGES/LED_install.png)
+---
 
 ### 2.3: Connecting to the Web Interface
+
 1. After flashing the firmware, go to the testing section on the same website.
 
-2. Connect to your ESP32 board using the "Connect" button again, ensuring the correct COM port is selected.
+2. Connect to your ESP32 board using the "Connect" button again, ensuring the correct COM port is selected.  
 
-![](./IMAGES/EXP_1_Serial/Electronics_Box_1.png)
+   ![](./IMAGES/connect_again.png)
 
 3. Once connected, test the system by sending a simple command:
 
 ```json
 {"task":"/motor_act", "motor": { "steppers": [ { "stepperid": 3, "position": -1000, "speed": 1000, "isabs": 0, "isaccel": 0} ] } }
 ```
+   ![](./IMAGES/Electronics_Box_1.png)
 
-This command will move the Z-axis motor by -1000 steps (1 full rotation) at a speed of 1000 steps per second. Each step corresponds to a movement of 300nm when using microstepping. You’ll see the motor rotate, adjusting the focus.
+This command will move the Z-axis motor by -1000 steps (1 full rotation) at a speed of 1000 steps per second. Each step corresponds to a movement of 300nm when using microstepping. You’ll observe the motor rotating, adjusting the focus.
 
-> **Note:** Ensure the command string has no line breaks.
+> **Note:** Ensure that the command string has no line breaks.
 
-4. Connect the LED-Arry panel with another USB-cable to your PC. Dublicate the current tab, and again connect the LED-Array via the button. Choose the right COM Port again.
-Now you can test all the compontents via these two tabs.
+4. &#x1F4A1;**Connect your LED-Array as well**. Duplicate the current tab and connect the LED-Array again via the button. Choose the correct COM Port.  
+Now you can test all components through these two tabs.
+
+---
+
+### 2.4: Testing in the Web Interface
+
+1. After completing the test, go back to the first tab to control the other components via buttons:
+   - `Laser 2(on)` and `Laser 2(off)` control the blue excitation LED.
+   - `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
+   - `LED (on)` and `LED (off)` control the LED-Array panel (&#x1F4A1;you must change tabs to control it).
+
+---
+
+### 2.5: Pairing the PS4 Controller &#x1F3AE;
+
+The UC2-ESP firmware supports various input devices, including the PS4 controller, to make interacting with the microscope easier. While you've already worked with USB serial commands, using the PS4 controller offers a more flexible, hands-on approach. For more detailed instructions on pairing, refer to the [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller). Here’s a brief summary:
+
+1. **Put your PS4 controller into pairing mode** by holding down the `Share` button and the `PS` button simultaneously until the light bar starts blinking.
+2. Click the `Pair Controller` button in the web interface. Alternatively, open the serial prompt in your browser (connected to the ESP32 board) or use the web interface and enter the following command:
 
 
-### 2.4: Testing in the web Interface
-1. After that test go back to the first tab all the other Components via buttons:
-  -  ``Laser 2(on)``and ``Laser 2(off)``controlls the blue exitation LED
-  - ``Motor Z(+)`` and ``Motor Z(-)`` controlls the Z-Stage
-  - ``LED (on)`` and ``LED (off)`` controlls the LED-Array panel, you have to change the tab to controll it.
+```json
+{"bt_scan":1}
+```
 
+  This will initiate the Bluetooth scan on the ESP32, which will detect and pair with the controller.
 
-2. Pairing the PS4 Controller
-
-  The UC2-ESP firmware is designed to support various input devices, including the PS4 controller, making it easier to interact with the microscope. You’ve already worked with USB Serial commands, but using the PS4 controller will give you a more flexible, hands-on approach.For more detailed instructions on pairing, refer to the [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller). But briefly:
-
-  1. First, put your PS4 controller into pairing mode by holding down the ``Share`` button and the ``PS``-button simultaneously until the light bar starts blinking.
-  2. klick the Button ``Pair Controlller`` in the web Interface. Alternatively open the serial prompt in your browser (connected to the ESP32 board) or use the web interface and enter the command:
-
-    ```json
-    {"bt_scan":1}
-    ```
-This will initiate the Bluetooth scan on the ESP32, which will detect and pair with the controller.
-
-  3. Once paired, you should be able to control the motorized stage using the analog sticks on the controller and switch the LED array on/off using the buttons.
+  Once paired, you can control the motorized stage using the analog sticks and switch the LED array on/off using the buttons:
 
   - **Move the Z-stage**: Use the **left analog stick** to move the stage up and down (adjust focus).
   - **Control the LEDs**: Use the **controller buttons** to turn the LED array on/off and cycle through different illumination patterns.
 
+  ---
 
- ### 2.5: Setup and use the camera-software
- 1. connect the camera with you PC
- 2. For the installation process follow these instructions https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization
+### 2.6: Setup and Use the Camera Software
 
-# Congraduation! You did all the Setup Steps! Now lets use the microscope
+1. Connect the camera to your PC.
+2. For the installation process, follow these instructions: [Install MVS App for Camera Utilization](https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization).
+
+---
+
+# Congratulations! You Have Completed All the Setup Steps! Now Let's Use the Microscope
+
+---
 
 ## Experiment 1: Bright Field Illumination
 
@@ -171,13 +205,19 @@ This will initiate the Bluetooth scan on the ESP32, which will detect and pair w
 5. The image you see might be blurry or, to be precise, out of focus. Use the PS4 controller to move the Z-stage up or down to get a sharp image.
 6. Now you can move the probe around and inspect it properly.
 
+![](./IMAGES/cameraaufnahme_hellfeld.png)
+
 ---
 
 ## Experiment 2: Fluorescence Microscopy
 
 1. To turn your microscope into a fluorescence microscope, turn the LED-Array off and the blue LED on.
 2. The probe should still be in the probe insert, and the camera should still be on.
-3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree, go to **Acquisition Control**, and increase the **Gain** all the way up. You should now see the fluorescence image.
+3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree, go to ``Acquisition Control``, and increase the ``exposure time`` to 300000ms. You should now see the fluorescence image.
+Optional you can go to ``Analog Control``, and increase the ``Gain``.
+
+![](./IMAGES/cameraaufnahme_fluoreszenz.png)
+
 --------
 Benedicts stuff
 

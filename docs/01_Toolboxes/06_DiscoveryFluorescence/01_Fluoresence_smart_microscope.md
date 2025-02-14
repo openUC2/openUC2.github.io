@@ -301,8 +301,8 @@ This will initiate the Bluetooth scan on the ESP32, which will detect and pair w
 
 1. Download Raspberry PI Imager
 2. Flash Raspberry Pi OS 64Bit Bookworm Lite on an SD card with appropriate size (e.g. 64GB ) -> add the necessary settings (i.e. SSH, wifi password, uc2/youseetoo password/login ) )> Flash
-3. Boot Raspberry Pi and wait until it's full there; ~5 minutes => It should be connected to you r wifi; you're computer should be in the same network 
-4. You should be able to log into that using ssh
+3. Boot Raspberry Pi and wait until it's full there; ~5 minutes => It should be connected to you r wifi; you're computer should be in the same network, you can check it's ip by using tools like Fing (Android app) which scans the ips in your network or Angry ip scanner which is for MAC OsX which will do the same on mac
+4. You should be able to log into that using ssh => `ssh uc2@IP-ADDRESS`
 5. Install imswitch; Go to https://github.com/openUC2/ImSwitchDockerInstall?tab=readme-ov-file#imswitch--docker-on-raspi and then follow the procedures:
 ```bash
 cd ~/Downloads
@@ -320,6 +320,12 @@ This will:
 
 6. Go to your browser and enter the `https://IP-OF-YOUR-RASPI:8001/imswitch/index.html`
 7. Have a look for additional information here: https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi/
+
+
+## altternaive :
+
+Flash the pre-built image from this link using this software
+
 
   ### Video Tutorial
 

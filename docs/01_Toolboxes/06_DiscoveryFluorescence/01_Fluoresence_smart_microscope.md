@@ -2,158 +2,236 @@ id: LED_Fluoresence_microscope
 title: openUC2 LED Fluoresence microscope
 ---
 
-# Workshop Manual: Building a smart LED powered fluoresence microscope
+# Workshop Manual: Building a Smart LED-Powered Fluorescence Microscope
 
-In this workshop, we will construct a LED-powered fluoresence microscope to perform interesting experiments.
+In this workshop, we will guide you through assembling a LED-powered fluorescence microscope, allowing you to explore fascinating experiments with microscopic details.
 
-Image einfügen, vollständiger Aufbau / Fluoresence Bild
+---
 
 ### Materials Needed
 
-1. Blue LED for exitation of the fluoresence moleculs
-2. white LED for ?
-3. electronic Z-stage
-4. PS4 Controller for controlling the Z-Stage
-5. infinity-objective
+1. Blue LED (for exciting fluorescence molecules)
+2. White LED (for bright-field microscopy)
+3. Electronic Z-stage with 8 grub screws
+4. PS4 Controller (for controlling the Z-stage)
+5. Infinity objective
 6. Beamsplitter
-7. Emissionfilter
-8. aspherical lens for beam-collimation
-9. bikonvex lens (f'=100mm) for focusing
-10. Camera with tubelense
-11. UC2 Electronicsbox, Infinity Box and Corebox (cubes, puzzle pieces and holders)
+7. Emission filter
+8. Aspherical lens (for beam collimation)
+9. Biconvex lens (f' = 100mm, for focusing)
+10. Camera with tube lens
+11. UC2 Electronics box, Infinity Box, and Corebox (cubes, puzzle pieces, and holders)
 
-Image einfügen Foto real nur Bauteile
+---
 
 ### Diagram
-![](./IMAGES/FluoMicroscrope_Diagram.png)
+
+![](./IMAGES/diagramm_no_filter.png)
+---
 
 ### Theory of Operation
 
-A fluoresence Microscope uses a second light source to exite the fluoresence-marked probe. this is called absorbtion.
-after a short while, the molecul turns back to its orignal state, and emitts light itsself. Due to the Stokes-shift the
-emitted light always has a longer wavelength than the exitation light source. with an emission-Filter you, guess what, filter out the exitation-light,
-so just the light emmitted from the probe is detected by the camera.
+Fluorescence is a photophysical process that describes the spontaneous emission of light shortly after an electron is excited to a higher-energy state.
+First, an electron is excited from the ground state to the higher-energy state  through absorption. After a short time (approximately 10⁻⁹ s), the excited electron returns to the ground state, releasing energy in the form of radiation. Due to the Stokes-shift within the S₁ state, the emitted light has a longer wavelength (λ₂) than the radiation used for excitation (λ₁).
 
-### Theoretical Background: Fluoresence
-...
+![](./IMAGES/fluoresence_microscope.png)
 
-### Fluoresence microscope as the ultimative standard-tool for biology
+---
 
+### Theoretical Background: Fluorescence
 
-# Tutorial: LED-powered fluoresence microscope
-
-## Step 1: Assembly the microscope
+Fluorescence is a photophysical process that describes the spontaneous emission of light shortly after an electron is excited to a higher-energy state.
+First, an electron is excited from the ground state to the higher-energy state  through absorption. After a short time (approximately 10⁻⁹ s), the excited electron returns to the ground state, releasing energy in the form of radiation. Due to the Stokes-shift within the S₁ state, the emitted light has a longer wavelength (λ₂) than the radiation used for excitation (λ₁).
 
 
-## Step 9.1.: plug in the electronics
+![](./IMAGES/fluoreszenzshema.png)
 
+
+---
+
+## Tutorial: LED-Powered Fluorescence Microscope
+
+### Step 1: Assemble the Microscope
+
+This guide will walk you through building the microscope step by step. You can follow the assembly process according to the functional groups or refer to the diagram above.
+
+#### 1.1: Assembling the Bright-Field Microscope
+
+1. **Build the Baseplate**: This will connect the LED array, probe insert, movable infinity objective, beamsplitter, filter insert, and the camera (which is already connected to the tube lens).
+2. **Attach the LED-Array**: Place the LED array and probe insert behind it, securing both with two baseplates.
+3. **Install the Movable Infinity-Objective**: Drill the objective into the attachment of the electronic Z-stage. Use the insert closest to the Z-stage for better positioning. because in this Assembly the Z-stage lays flat on the ground use the insert thats closest to the Z-stage. As shown below the lettering "stage" is placed upward.
+If the Z-stage isn't already set up, insert the 8 grub screws on the long sides to attach the baseplates.
+4. **Position the Beamsplitter Cube**: Insert the beamsplitter cube (you can leave it empty for now, it will be needed when assembling the fluorescence microscope).
+5. **Add the Camera**: Finally, attach the camera unit behind the beamsplitter and secure everything with a second layer of baseplates.
+
+Now, your bright-field microscope is ready!
+
+---
+
+#### 1.2: Assembling the Fluorescence Microscope
+But of course if you got this box you want more, so now let#s start buidling the fluorescene Microscope
+
+1. **Prepare a 4x1 Baseplate**: After that, attach it to the beamsplitter cube.
+2. **Position the Blue LED**: Place the blue LED at the furthest point from the beamsplitter.
+3. **Collimate the Light**: The blue LED is a divergent light source, so use the aspherical lens to collimate the light. Place the aspherical lens right after the LED with a gap no larger than 30mm.
+4. **Focus the Light**: To focus the collimated light into the objective, insert an empty cube, followed by the biconvex lens. The space between the aspherical lens and the biconvex lens should be the sum of their focal lengths. The aspherical lens has a focal length of 20mm, and the biconvex lens has 100mm, so you need approximately 120mm between the two.
+5. **Insert the Beamsplitter**: Place the beamsplitter carefully. Make sure the filter sides are oriented correctly to avoid blocking the wrong wavelengths.
+6. **Focus Light into the Infinity Objective**: to correctly focus the ligth into the infinity objective, position the biconvex lens and infinity objective with about 100mm of space between them.
+
+After completing these steps, you're done with the assembly, nice job!
+
+---
+# Step 2: Turn Your Microscope Into a Smart One - aka the Electronics  
+
+### 2.1: Plug in the Electronics as Shown Below
 
 <div style="background-color: rgba(255, 255, 0, 0.3); padding: 10px; border-radius: 5px;">
   <strong style="font-size: 20px;">⚠️ Caution!</strong>
-  <p> if you need to change any of the cables or their position, always plug the 12V-Power cable out, bevor you do. Otherwhise the electronic components my get damaged!
-</p>
+  <p>If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!</p>
 </div>
 
-plug in all the vires as you see in this picture
-- connect the Z-stage to ``Z-Motor`` on the main board, make shure there's a driver.
-- connect the blue LED to the LED driver (red plate) at ``out1``
-  - cable at ``-`` goes to ``-``
-  - cable at ``+`` goes to ``+``
-- connect the LED driver to the main board
-  - cable at Ground (``GND``) goes to ``PMW 1 - GND``
-  - cable at ``in 1`` goas to ``PM2- PMW2``
-  - cable at ``V In -`` goes to ``12V - GND``
-  - cable at ``V IN +`` goas to ``12V - 12V``
-- plug in the micro-USB an connect to your PC
-- Plug in the 12V Power Cable
+- connect the LED-Array panel by plugging in the micro-USB and connect it to your PC.
+- Connect the Z-stage to the ``Z-Motor`` on the main board. Ensure there's a motor driver.
+- Connect the blue LED to the LED driver (red plate) at ``out1``:
+  - The cable at ``-`` goes to ``-``
+  - The cable at ``+`` goes to ``+``
+- Connect the LED driver to the main board:
+  - The cable at ``in 1`` goes to ``PM2 - PMW2``
+  - The cable at ``V In -`` goes to ``12V - GND``
+  - The cable at ``V IN +`` goes to ``12V - 12V``
+- Plug in the micro-USB and connect to your PC.
+- Plug in the 12V power cable.
 
 
-## Step 9.2.: test the electronics
+---
 
-### Step 1: Flashing the ESP32 Firmware
-1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official
- [openUC2 website](https://youseetoo.github.io/), selecting your version
- (row 2, colum 1) and click on the ``connect``-button.
-![](./IMAGES/EXP_1_Serial/Electronics_Box_5.png)
-The source-code can be found [here](https://github.com/youseetoo/uc2-esp32)
+### 2.2: Flashing the ESP32 Firmware
+
+1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (**row 2, column 1**), then click on the ``connect`` button.
+
+   ![](./IMAGES/Electronics_Box_5.png)
+
+   The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
+
+2. Connect the ESP32 to your computer using the micro-USB cable.  
 
 
-2. Connect the ESP32 to your computer using the micro-USB cable.
-![](./IMAGES/EXP_1_Serial/Electronics_Box_4.png)
+3. In your Chrome browser, a dialog will prompt you to select the COM port for your ESP32, which should be shown as `CP2102 USB to UART Bridge Controller`. Once connected, you can install the latest firmware by simply clicking the "Install" button.
+  ![](./IMAGES/port_selection.png)
 
-3. In your Chrome browser a dialog will prompt you to select the COM port for your
- ESP32, wich should be shown as `CP2102 USB to UART Bridge Controller`. Once connected, you can install the latest firmware by simply clicking the "Install" button. If nothing shows up, you can install the drivers from the following propmpt that results when you hit anywhere on the screen:
-![](./IMAGES/EXP_1_Serial/Electronics_Box_3.png)
+  ![](./IMAGES/install_esp.png)
 
-4. Wait until the firmware has been flashed successfully.
+  If nothing shows up, you can install the drivers from the prompt that appears when you click anywhere on the screen:
 
-### Step 2: Connecting and Testing the Web Interface
+   ![](./IMAGES/Electronics_Box_3.png)
+
+4. Wait until the firmware has been successfully flashed.
+
+5. &#x1F4A1; **flash your LED-Array**. Repeat the same steps, but this time for the LED-Array
+   ![](./IMAGES/LED_install.png)
+---
+
+### 2.3: Connecting to the Web Interface
+
 1. After flashing the firmware, go to the testing section on the same website.
 
-2. Connect to your ESP32 board using the "Connect" button again, ensuring the correct COM port is selected.
+2. Connect to your ESP32 board using the "Connect" button again, ensuring the correct COM port is selected.  
 
-![](./IMAGES/EXP_1_Serial/Electronics_Box_1.png)
+   ![](./IMAGES/connect_again.png)
 
 3. Once connected, test the system by sending a simple command:
 
 ```json
 {"task":"/motor_act", "motor": { "steppers": [ { "stepperid": 3, "position": -1000, "speed": 1000, "isabs": 0, "isaccel": 0} ] } }
 ```
+   ![](./IMAGES/Electronics_Box_1.png)
 
-This command will move the Z-axis motor by -1000 steps (1 full rotation) at a speed of 1000 steps per second. Each step corresponds to a movement of 300nm when using microstepping. You’ll see the motor rotate, adjusting the focus.
+This command will move the Z-axis motor by -1000 steps (1 full rotation) at a speed of 1000 steps per second. Each step corresponds to a movement of 300nm when using microstepping. You’ll observe the motor rotating, adjusting the focus.
 
-> **Note:** Ensure the command string has no line breaks.
+> **Note:** Ensure that the command string has no line breaks.
 
-4. After that test all the other Components via buttons:
--  ``Laser 2(on)``and ``Laser 2(off)``controlls the blue exitation LED
-- ``Motor Z(+)`` and ``Motor Z(-)`` controlls the Z-Stage
-- ``LED (on)`` and ``LED (off)`` controlls the LED-Array panel
+4. &#x1F4A1;**Connect your LED-Array as well**. Duplicate the current tab and connect the LED-Array again via the button. Choose the correct COM Port.  
+Now you can test all components through these two tabs.
 
-5. Pairing the PS4 Controller
-The UC2-ESP firmware is designed to support various input devices, including the PS4 controller, making it easier to interact with the microscope. You’ve already worked with USB Serial commands, but using the PS4 controller will give you a more flexible, hands-on approach.
+---
 
-  How to Pair the PS4 Controller:
+### 2.4: Testing in the Web Interface
 
-  For more detailed instructions on pairing, refer to the [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller). But briefly:
+1. After completing the test, go back to the first tab to control the other components via buttons:
+   - `Laser 2(on)` and `Laser 2(off)` control the blue excitation LED.
+   - `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
+   - `LED (on)` and `LED (off)` control the LED-Array panel (&#x1F4A1;you must change tabs to control it).
 
-  1. First, put your PS4 controller into pairing mode by holding down the **Share** button and the **PS button** simultaneously until the light bar starts blinking.
-  2. Open the serial prompt in your browser (connected to the ESP32 board) or use the web interface.
-  3. Enter the command:
+---
 
-    ```json
-    {"bt_scan":1}
-    ```
-This will initiate the Bluetooth scan on the ESP32, which will detect and pair with the controller. Alternatively, you can use the **"Pair Controller"** button in the web interface.
+### 2.5: Pairing the PS4 Controller &#x1F3AE;
 
-  4. Once paired, you should be able to control the motorized stage using the analog sticks on the controller and switch the LED array on/off using the buttons.
+The UC2-ESP firmware supports various input devices, including the PS4 controller, to make interacting with the microscope easier. While you've already worked with USB serial commands, using the PS4 controller offers a more flexible, hands-on approach. For more detailed instructions on pairing, refer to the [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller). Here’s a brief summary:
 
+1. **Put your PS4 controller into pairing mode** by holding down the `Share` button and the `PS` button simultaneously until the light bar starts blinking.
+2. Click the `Pair Controller` button in the web interface. Alternatively, open the serial prompt in your browser (connected to the ESP32 board) or use the web interface and enter the following command:
 
 
-  ## Step 9.3: Controlling the Microscope with the PS4 Controller
+```json
+{"bt_scan":1}
+```
 
-  Now that the microscope is built and the PS4 controller is paired, you can control the motorized Z-stage and LED array:
+  This will initiate the Bluetooth scan on the ESP32, which will detect and pair with the controller.
+
+  Once paired, you can control the motorized stage using the analog sticks and switch the LED array on/off using the buttons:
 
   - **Move the Z-stage**: Use the **left analog stick** to move the stage up and down (adjust focus).
   - **Control the LEDs**: Use the **controller buttons** to turn the LED array on/off and cycle through different illumination patterns.
 
-  This setup allows you to navigate through your sample and adjust focus without touching the hardware, which is particularly useful when working with sensitive samples or in teaching environments where ease of use is essential.
-
-  ### Video Tutorial
-
-  For a visual guide on how to set up the microscope and use the PS4 controller for control, watch the following video:
-
-  <iframe width="700" src="https://www.youtube.com/embed/y06lRu2dsUk?si=hGGhUpTugzL1LZdK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-  This experiment provides a more interactive experience with your microscope, enabling smooth, hands-free control of the imaging process using a PS4 controller. You can continue to experiment with different settings, such as motor speeds and LED illumination patterns, to optimize your microscope for various samples.
-
-
-
-  ### Experiment #3: Controlling the UC2 Electronics using ImSwitch
-
-  In this experiment, you'll combine everything you've learned so far by controlling the UC2 system through ImSwitch, a powerful software interface designed for modular microscopy control. This tutorial provides a basic introduction to setting up ImSwitch, configuring your microscope components, and automating functions such as stage movement and LED control.
-
   ---
+
+### 2.6: Setup and Use the Camera Software
+
+1. Connect the camera to your PC.
+2. For the installation process, follow these instructions: [Install MVS App for Camera Utilization](https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization).
+
+---
+
+# Congratulations! You Have Completed All the Setup Steps! Now Let's Use the Microscope
+
+---
+
+## Experiment 1: Bright Field Illumination
+
+1. Turn the LED-array on and the blue LED off.
+2. Insert the probe into the probe insert.
+3. Start the camera by pressing the play button (▶).
+4. Make sure your probe is centered. Shift it around until you see some structure on your screen.
+5. The image you see might be blurry or, to be precise, out of focus. Use the PS4 controller to move the Z-stage up or down to get a sharp image.
+6. Now you can move the probe around and inspect it properly.
+
+![](./IMAGES/cameraaufnahme_hellfeld.png)
+
+---
+
+## Experiment 2: Fluorescence Microscopy
+
+1. To turn your microscope into a fluorescence microscope, turn the LED-Array off and the blue LED on.
+2. The probe should still be in the probe insert, and the camera should still be on.
+3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree, go to ``Acquisition Control``, and increase the ``exposure time`` to 300000ms. You should now see the fluorescence image.
+Optional you can go to ``Analog Control``, and increase the ``Gain``.
+
+![](./IMAGES/cameraaufnahme_fluoreszenz.png)
+
+--------
+Benedicts stuff
+
+--------
+
+
+
+
+
+
+
+
+
+
 
   ### Step 1: Installing ImSwitch
 
@@ -299,12 +377,31 @@ This will initiate the Bluetooth scan on the ESP32, which will detect and pair w
 
 ## Install Raspberry Pi + ImSwitch
 
-1. Download Raspberry PI Imager
-2. Flash Raspberry Pi OS 64Bit Bookworm Lite on an SD card with appropriate size (e.g. 64GB ) -> add the necessary settings (i.e. SSH, wifi password, uc2/youseetoo password/login ) )> Flash
-3. Boot Raspberry Pi and wait until it's full there; ~5 minutes => It should be connected to you r wifi; you're computer should be in the same network, you can check it's ip by using tools like Fing (Android app) which scans the ips in your network or Angry ip scanner which is for MAC OsX which will do the same on mac
-4. You should be able to log into that using ssh => `ssh uc2@IP-ADDRESS`
-5. Install imswitch; Go to https://github.com/openUC2/ImSwitchDockerInstall?tab=readme-ov-file#imswitch--docker-on-raspi and then follow the procedures:
+1. Download Raspberry PI Imager here: https://www.raspberrypi.com/software/
+
+![](./IMAGES/Rasberry_pi_download.png)
+
+2. Flash Raspberry Pi OS 64Bit Bookworm Lite on an SD card with appropriate size (e.g. 64GB ) -> add the necessary settings (i.e. SSH, wifi password, uc2/youseetoo password/login ) )> Flash (was ist damit gemeint..? Keine Screenshots vorhanden..)
+
+![](./IMAGES/RaspiOS_1.png)
+![](./IMAGES/RaspiOS_2.png)
+
+
+3. Boot Raspberry Pi and wait until it's full there; ~5 minutes => It should be connected to you r wifi; you're computer should be in the same network (startet das booten, wenn man auf ``weiter`` klickt? siehe bild)
+4. You should be able to log into that using ssh => (Windows + R => CMD ) = > Terminal opens and then type `ssh uc2@IP-OF-YOURRASPI`
+
+![](./IMAGES/ssh_uc2_IP_of_your_Raspi.png)
+
+(You can find the IP-Adress of your Raspberry using e.g. angry ip scanner or a screen connected to your rapsberry pi)
+![](./IMAGES/angry_IP_scanner.png)
+5. Install imswitch; Go to https://github.com/openUC2/ImSwitchDockerInstall?tab=readme-ov-file#imswitch--docker-on-raspi and then follow the procedures: (wrong code on the website, no other than crack know what a sudo is)
+
+  in the last line copypaste the following code: (not completly correct.. do you have to type ~ $ before as shown in picture?)
+
 ```bash
+mkdir Downloads
+mkdir Desktop
+sudo apt-get install git -y
 cd ~/Downloads
 git clone https://github.com/openUC2/ImSwitchDockerInstall
 cd ImSwitchDockerInstall
@@ -316,10 +413,22 @@ This will:
 - install all necessary camera drivers
 - install imswitch via Python
 - create necessray startup files on the desktop
-- You can launch it by doing; `bash ~/Desktop/launch_docker_container.sh`
 
-6. Go to your browser and enter the `https://IP-OF-YOUR-RASPI:8001/imswitch/index.html`
-7. Have a look for additional information here: https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi/
+6. launch it by doing; `bash ~/Desktop/launch_docker_container.sh`
+(hier fehlt auch ein screenshot.. wo soll ich das eingeben? in die reine cmd console oder muss davor wieder irgendwas aufgerufen werden..?)
+
+8. Go to your browser and enter the `https://IP-OF-YOUR-RASPI:8001/imswitch/index.html`
+9. Have a look for additional information here: https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi/ (nicht wirklich hilfreich)
+8. Close the applicaiton by hitting ctrl + c
+9. update the applicaoin by executing `bash ~/Desktop/update_docker_container.sh`
+
+## launch imswitch
+if you have installed it alredy execute the following
+
+```
+bash ~/Desktop/launch_docker_container.sh
+```
+(hier auch unbedingt screenshot machen!)
 
 
 ## altternaive :
@@ -329,6 +438,6 @@ Flash the pre-built image from this link using this software
 
   ### Video Tutorial
 
-  For a visual guide on how to set up ImSwitch and control the UC2 system, watch the following video:
+  For a visual guide on how to set up ImSwitch and control the UC2 system, watch the following video: (link wird nicht angezeigt. außerdem zeigt das video nur wie man das programm benutzt nicht wie man es intalliert.)
 
   <iframe width="700" src="https://www.youtube.com/embed/Iw_Bg9aYe1U?si=VQgLP854Hg29dwxW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

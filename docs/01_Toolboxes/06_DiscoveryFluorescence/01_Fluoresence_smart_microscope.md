@@ -8,6 +8,7 @@ In this workshop, we will guide you through assembling a LED-powered fluorescenc
 
 ---
 
+
 ### Materials Needed
 
 1. Blue LED (for exciting fluorescence molecules)
@@ -23,6 +24,7 @@ In this workshop, we will guide you through assembling a LED-powered fluorescenc
 11. UC2 Electronics box, Infinity Box, and Corebox (cubes, puzzle pieces, and holders)
 
 ---
+
 
 ### Diagram
 
@@ -68,6 +70,7 @@ Now, your bright-field microscope is ready!
 
 ---
 
+
 #### 1.2: Assembling the Fluorescence Microscope
 But of course if you got this box you want more, so now let#s start buidling the fluorescene Microscope
 
@@ -81,37 +84,42 @@ But of course if you got this box you want more, so now let#s start buidling the
 After completing these steps, you're done with the assembly, nice job!
 
 ---
+
 # Step 2: Turn Your Microscope Into a Smart One - aka the Electronics  
 
 ### 2.1: Plug in the Electronics as Shown Below
 
-<div style="background-color: rgba(255, 255, 0, 0.3); padding: 10px; border-radius: 5px;">
-  <strong style="font-size: 20px;">⚠️ Caution!</strong>
-  <p>If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!</p>
-</div>
 
 - connect the LED-matrix panel by plugging in the micro-USB and connect it to your PC.
 - Connect the Z-stage to the ``Z-Motor`` on the main board. Ensure there's a motor driver.
 - Connect the blue LED to the LED driver (red plate) at ``out1``:
   - The cable at ``-`` goes to ``-``
   - The cable at ``+`` goes to ``+``
+=======
+- connect the LED-Array panel by plugging in the micro-USB and connect it to your PC.
+- Connect the Z-stage to the `Z-Motor` on the main board. Ensure there's a motor driver.
+- Connect the blue LED to the LED driver (red plate) at `out1`:
+  - The cable at `-` goes to `-`
+  - The cable at `+` goes to `+`
+>>>>>>> 71c0398dd737fa5c1183ae087bf67ad92c0a9f37
 - Connect the LED driver to the main board:
   - The cable at ``in 1`` goes to ``PM2 - PMW2``
   - The cable at ``V In -`` goes to ``12V - GND``
   - The cable at ``V IN +`` goes to ``12V - 12V``
+  - The cable at `in 1` goes to `PM2 - PMW2`
+  - The cable at `V In -` goes to `12V - GND`
+  - The cable at `V IN +` goes to `12V - 12V`
 - Plug in the micro-USB and connect to your PC.
 - Plug in the 12V power cable.
 
 
 ---
 
+
 ### 2.2: Flashing the ESP32 Firmware
 
-1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (**row 2, column 1**), then click on the ``connect`` button.
 
-   ![](./IMAGES/Electronics_Box_5.png)
 
-   The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
 
 2. Connect the ESP32 to your computer using the micro-USB cable.  
 
@@ -129,7 +137,6 @@ After completing these steps, you're done with the assembly, nice job!
 
 5. &#x1F4A1; **flash your LED-matrix**. Repeat the same steps, but this time for the LED-matrix
    ![](./IMAGES/LED_install.png)
----
 
 ### 2.3: Connecting to the Web Interface
 
@@ -144,16 +151,13 @@ After completing these steps, you're done with the assembly, nice job!
 ```json
 {"task":"/motor_act", "motor": { "steppers": [ { "stepperid": 3, "position": -1000, "speed": 1000, "isabs": 0, "isaccel": 0} ] } }
 ```
-   ![](./IMAGES/Electronics_Box_1.png)
 
 This command will move the Z-axis motor by -1000 steps (1 full rotation) at a speed of 1000 steps per second. Each step corresponds to a movement of 300nm when using microstepping. You’ll observe the motor rotating, adjusting the focus.
 
-> **Note:** Ensure that the command string has no line breaks.
 
 4. &#x1F4A1;**Connect your LED-matrix as well**. Duplicate the current tab and connect the LED-matrix again via the button. Choose the correct COM Port.  
 Now you can test all components through these two tabs.
 
----
 
 ### 2.4: Testing in the Web Interface
 
@@ -183,16 +187,13 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
   - **Move the Z-stage**: Use the **left analog stick** to move the stage up and down (adjust focus).
   - **Control the LEDs**: Use the **controller buttons** to turn the LED-matrix on/off and cycle through different illumination patterns.
 
-  ---
 
 ### 2.6: Setup and Use the Camera Software
 
 1. Connect the camera to your PC.
 2. For the installation process, follow these instructions: [Install MVS App for Camera Utilization](https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization).
 
----
 
-# Congratulations! You Have Completed All the Setup Steps! Now Let's Use the Microscope
 
 ---
 
@@ -359,7 +360,7 @@ Benedicts stuff
 
   This file configures the ESP32 stage, LED control, and the camera for widefield imaging. Ensure the `host_` and `serialport` match your system setup.
 
-  ---
+  
 
   ### Step 3: Running the Microscope with ImSwitch
 

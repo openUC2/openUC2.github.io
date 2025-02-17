@@ -195,7 +195,7 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
   - **Move the Z-stage**: Use the **left analog stick** to move the stage up and down (adjust focus).
   - **Control the LEDs**: Use the **controller buttons** to turn the LED-matrix on/off and cycle through different illumination patterns.
 
-  
+
 
 ### 2.6: Setup and Use the Camera Software
 
@@ -305,7 +305,7 @@ Benedicts stuff
 
   For detailed instructions on Docker installation, visit the [ImSwitch Docker Guide](https://openuc2.github.io/docs/ImSwitch/ImSwitchDocker/).
 
-  
+
 
   ### Step 2: Using the ImSwitch Config File
 
@@ -376,7 +376,7 @@ Benedicts stuff
 
   This file configures the ESP32 stage, LED control, and the camera for widefield imaging. Ensure the `host_` and `serialport` match your system setup.
 
-  
+
 
   ### Step 3: Running the Microscope with ImSwitch
 
@@ -390,7 +390,7 @@ Benedicts stuff
 
   3. **Control the System**:
      Use the ImSwitch GUI to move the motorized stage, control the LED-matrix, and capture images. The interface allows you to automate tasks such as focus stacking and digital phase-contrast imaging.
-
+````
 
 ## Install Raspberry Pi + ImSwitch
 

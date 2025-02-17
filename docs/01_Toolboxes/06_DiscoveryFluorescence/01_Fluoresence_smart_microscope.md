@@ -1,6 +1,7 @@
+---
 id: LED_Fluoresence_microscope
 title: openUC2 LED Fluoresence microscope
-
+---
 
 # Workshop Manual: Building a Smart LED-Powered Fluorescence Microscope
 
@@ -27,11 +28,6 @@ In this workshop, we will guide you through assembling a LED-powered fluorescenc
 ### Diagram
 
 ![](./IMAGES/diagramm.png)
-
-<<<<<<< HEAD
----
-=======
->>>>>>> 71c0398dd737fa5c1183ae087bf67ad92c0a9f37
 
 ### Theory of Operation
 
@@ -93,19 +89,12 @@ After completing these steps, you're done with the assembly, nice job!
 If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!
 :::
 
-<<<<<<< HEAD
-- connect the LED-matrix panel by plugging in the micro-USB and connect it to your PC.
-- Connect the Z-stage to the ``Z-Motor`` on the main board. Ensure there's a motor driver.
-- Connect the blue LED to the LED driver (red plate) at ``out1``:
-  - The cable at ``-`` goes to ``-``
-  - The cable at ``+`` goes to ``+``
-=======
 - connect the LED-Array panel by plugging in the micro-USB and connect it to your PC.
 - Connect the Z-stage to the `Z-Motor` on the main board. Ensure there's a motor driver.
 - Connect the blue LED to the LED driver (red plate) at `out1`:
   - The cable at `-` goes to `-`
   - The cable at `+` goes to `+`
->>>>>>> 71c0398dd737fa5c1183ae087bf67ad92c0a9f37
+
 - Connect the LED driver to the main board:
   - The cable at `in 1` goes to `PM2 - PMW2`
   - The cable at `V In -` goes to `12V - GND`
@@ -225,13 +214,8 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
 1. To turn your microscope into a fluorescence microscope, turn the LED-matrix off and the blue LED on.
 2. The probe should still be in the probe insert, and the camera should still be on.
-<<<<<<< HEAD
-3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-matrix. To adjust, open the feature tree, go to ``Acquisition Control``, and increase the ``exposure time`` to 300000ms. You should now see the fluorescence image.
-Optional you can go to ``Analog Control``, and increase the ``Gain``.
-=======
 3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree, go to `Acquisition Control`, and increase the `exposure time` to 300000ms. You should now see the fluorescence image.
 Optional you can go to `Analog Control`, and increase the `Gain`.
->>>>>>> 71c0398dd737fa5c1183ae087bf67ad92c0a9f37
 
 ![](./IMAGES/cameraaufnahme_fluoreszenz.png)
 

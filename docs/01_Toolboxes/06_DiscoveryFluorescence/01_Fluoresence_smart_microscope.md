@@ -11,16 +11,21 @@ In this workshop, we will guide you through assembling a LED-powered fluorescenc
 
 ### Materials Needed
 
-1. Blue LED (for exciting fluorescence molecules)
-2. White LED (for bright-field microscopy)
-3. Electronic Z-stage with some technical nobs
-4. PS4 Controller (for controlling the Z-stage)
-5. Infinity objective
-6. Beamsplitter
-7. Aspherical lens (for beam collimation)
-8. Biconvex lens (f' = 100mm, for focusing)
-9. Camera with tube lens
-10. UC2 Electronics box, Infinity Box, and Corebox (cubes, base plate pieces, and holders)
+1. Blue LED (for exciting fluorescence molecules).
+2. LED Lid
+3. LED-Matrix with USB-C cable (for bright-field microscopy)
+4. Electronic Z-stage with some technical nobs
+5. Mainboard with UBC-mini cable
+6. PS4 Controller (for controlling the Z-stage)
+7. Infinity objective
+8. Beamsplitter
+9. Aspherical lens (for beam collimation)
+10. Biconvex lens (f' = 100mm, for focusing)
+11. Diaphragm
+12. Camera with tube lens
+13. Probe insert
+14. Probes
+15. cubes and base plates
 
 
 
@@ -50,17 +55,35 @@ First, an electron is excited from the ground state to the higher-energy state  
 
 ## Tutorial: LED-Powered Fluorescence Microscope
 
+
+![](./IMAGES/allebauteile.png)
+
 ### Step 1: Assemble the Microscope
 
 This guide will walk you through building the microscope step by step. You can follow the assembly process according to the functional groups or refer to the diagram above.
 
 #### 1.1: Assembling the Bright-Field Microscope
 
-1. **Build the Baseplate**: This will connect the LED-matrix, probe insert, movable infinity objective, beamsplitter and the camera (which is already connected to the tube lens).Attach wo extra baseplates for the Z-stage
+1. **Build the Baseplate**: This will connect the LED-matrix, probe insert, movable infinity objective, beamsplitter and the camera (which is already connected to the tube lens).Attach wo extra baseplates for the Z-stage.
+
+![](./IMAGES/baseplates1.jpeg)
 2. **Attach the LED-matrix**: Place the LED-matrix and than the probe insert behind it, securing both with two baseplates on top.
+
+![](./IMAGES/ledmatrix.png)
+
+![](./IMAGES/probeinsert.png)
 3. **Install the movable Infinity-Objective**: Drill the objective into the attachment of the electronic Z-stage. Because in this Assembly the Z-stage lays flat on the ground choose the insert thats closest to the Z-stage. As shown below the lettering "stage" is placed upward. Innsert the technical pins on the long sides to attach the baseplates.
+![](./IMAGES/zstage.png)
+
 4. **Position the beamsplitter cube**: Insert the beamsplitter cube (you can leave it empty for now, it will be needed when assembling the fluorescence microscope).
+
+![](./IMAGES/emtybeamsplitter.png)
+
 5. **Add the camera**: Finally, attach the camera unit behind the beamsplitter and secure everything with a second layer of baseplates.
+
+![](./IMAGES/camera.png)
+
+![](./IMAGES/brightfieldcomplete.png)
 
 Now, your bright-field microscope is ready!
 
@@ -70,11 +93,43 @@ Now, your bright-field microscope is ready!
 But of course if you got this box you want more, so now let#s start buidling the fluorescene Microscope
 
 1. **Prepare a 4x1 Baseplate**: After that, attach it to the beamsplitter cube.
-2. **Position the Blue LED**: Place the blue LED at the furthest point from the beamsplitter.
-3. **Collimate the Light**: The blue LED is a divergent light source, so use the aspherical lens to collimate the light. Place the aspherical lens right after the LED with a gap no larger than 30mm.
-4. **Focus the Light/ insert the diaphragm**: To focus the collimated light into the objective, insert an empty cube, followed by the biconvex lens. The space between the aspherical lens and the biconvex lens should be the sum of their focal lengths. The aspherical lens has a focal length of 20mm, and the biconvex lens has 100mm, so you need approximately 120mm between the two.
-5. **Insert the Beamsplitter**: Place the beamsplitter carefully. Make sure the filter sides are oriented correctly to avoid blocking the wrong wavelengths.
-6. **Focus Light into the Infinity Objective**: to correctly focus the ligth into the infinity objective, position the biconvex lens and infinity objective with about 100mm of space between them.
+
+![](./IMAGES/baseplate2.png)
+
+2. **Position the Blue LED**: Place the blue LED at the furthest point from the beamsplitter. Place the LED lid in front of it, to reduce stray light.
+
+
+![](./IMAGES/fluorLED.png)
+
+![](./IMAGES/LEDlid.png)
+
+3. **Collimate the Light**: The blue LED is a divergent light source, so use the aspherical lens to collimate the light. Place the aspherical lens right after the LED with a gap no larger than 30mm.Insert the diaphragm right next to it in the same cube. It's used as a field diaphragm and defines the size of the illuminated area and prevents unnecessary stray light outside the desired field of view.
+
+![](./IMAGES/asphäreblende.png)
+
+![](./IMAGES/asphäreinsert.png)
+
+5. **Focus the Light**: To focus the collimated light into the objective, insert an empty cube, followed by the biconvex lens. The space between the aspherical lens and the biconvex lens should be the sum of their focal lengths. The aspherical lens has a focal length of 20mm, and the biconvex lens has 100mm, so you need approximately 120mm between the two.
+
+![](./IMAGES/100lens.png)
+
+![](./IMAGES/lensdistance.png)
+
+
+6. **Insert the Beamsplitter**: Place the beamsplitter carefully. Make sure the filter sides are oriented correctly to avoid blocking the wrong wavelengths.
+
+![](./IMAGES/beamsplitternah.png)
+
+![](./IMAGES/beamsplitterinsert.png)
+
+
+7. **Focus Light into the Infinity Objective**: to correctly focus the ligth into the infinity objective, position the biconvex lens and infinity objective with about 100mm of space between them.
+
+![](./IMAGES/lastmesure.png)
+
+![](./IMAGES/lastmesure2.png)
+
+
 
 After completing these steps, you're done with the assembly, nice job!
 
@@ -83,18 +138,32 @@ After completing these steps, you're done with the assembly, nice job!
 
 ### 2.1: Plug in the Electronics as Shown Below
 
-:::caution
 **⚠️ Caution!**
 If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!
 :::
 
 - connect the LED-Matrix panel by plugging in the micro-USB and connect it to your PC.
+
+![](./IMAGES/ledmatrixplug.jpeg)
+
 - Connect the Z-stage to the `Z-Motor` on the main board. Ensure there's a motor driver.
+
 - Connect the blue LED to the Mainboard at `PMW2`
-  - The cable that has a small banner goes to `PMW2-GND`
-- Plug in the micro-USB and connect to your PC.
+  - The **white** cable goes to `PMW2-GND`
+
+![](./IMAGES/ledplug2.jpeg)
+
+![](./IMAGES/zstageplug.jpeg)
+
+
+- Plug in the micro-USB at your ESP32 and connect to your PC.
+
+![](./IMAGES/espplug.jpeg)
+
+
 - Plug in the 12V power cable.
 
+![](./IMAGES/powerplug.jpeg)
 
 
 
@@ -182,6 +251,9 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 ### 2.6: Setup and Use the Camera Software
 
 1. Connect the camera to your PC.
+
+![](./IMAGES/cameraplug.jpeg)
+
 2. For the installation process and useage of the software, follow these instructions: [Install MVS App for Camera Utilization](https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization).
 
 

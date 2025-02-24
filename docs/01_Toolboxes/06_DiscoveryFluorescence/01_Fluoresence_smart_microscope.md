@@ -1,6 +1,7 @@
+---
 id: LED_Fluoresence_microscope
 title: openUC2 LED Fluoresence microscope
-
+---
 
 # Workshop Manual: Building a Smart LED-Powered Fluorescence Microscope
 
@@ -10,24 +11,27 @@ In this workshop, we will guide you through assembling a LED-powered fluorescenc
 
 ### Materials Needed
 
-1. Blue LED (for exciting fluorescence molecules)
-2. White LED (for bright-field microscopy)
-3. Electronic Z-stage with 8 grub screws
-4. PS4 Controller (for controlling the Z-stage)
-5. Infinity objective
-6. Beamsplitter
-7. Emission filter
-8. Aspherical lens (for beam collimation)
-9. Biconvex lens (f' = 100mm, for focusing)
-10. Camera with tube lens
-11. UC2 Electronics box, Infinity Box, and Corebox (cubes, puzzle pieces, and holders)
+1. Blue LED (for exciting fluorescence molecules).
+2. LED Lid
+3. LED-Matrix with USB-C cable (for bright-field microscopy)
+4. Electronic Z-stage with some technical nobs
+5. Mainboard with UBC-mini cable
+6. PS4 Controller (for controlling the Z-stage)
+7. Infinity objective
+8. Beamsplitter
+9. Aspherical lens (for beam collimation)
+10. Biconvex lens (f' = 100mm, for focusing)
+11. Diaphragm
+12. Camera with tube lens
+13. Probe insert
+14. Probes
+15. cubes and base plates
 
 
 
 ### Diagram
 
 ![](./IMAGES/diagramm.png)
-
 
 ### Theory of Operation
 
@@ -51,18 +55,35 @@ First, an electron is excited from the ground state to the higher-energy state  
 
 ## Tutorial: LED-Powered Fluorescence Microscope
 
+
+![](./IMAGES/allebauteile.png)
+
 ### Step 1: Assemble the Microscope
 
 This guide will walk you through building the microscope step by step. You can follow the assembly process according to the functional groups or refer to the diagram above.
 
 #### 1.1: Assembling the Bright-Field Microscope
 
-1. **Build the Baseplate**: This will connect the LED array, probe insert, movable infinity objective, beamsplitter, filter insert, and the camera (which is already connected to the tube lens).
-2. **Attach the LED-Array**: Place the LED array and probe insert behind it, securing both with two baseplates.
-3. **Install the Movable Infinity-Objective**: Drill the objective into the attachment of the electronic Z-stage. Use the insert closest to the Z-stage for better positioning. because in this Assembly the Z-stage lays flat on the ground use the insert thats closest to the Z-stage. As shown below the lettering "stage" is placed upward.
-If the Z-stage isn't already set up, insert the 8 grub screws on the long sides to attach the baseplates.
-4. **Position the Beamsplitter Cube**: Insert the beamsplitter cube (you can leave it empty for now, it will be needed when assembling the fluorescence microscope).
-5. **Add the Camera**: Finally, attach the camera unit behind the beamsplitter and secure everything with a second layer of baseplates.
+1. **Build the Baseplate**: This will connect the LED-matrix, probe insert, movable infinity objective, beamsplitter and the camera (which is already connected to the tube lens).Attach wo extra baseplates for the Z-stage.
+
+![](./IMAGES/baseplates1.jpeg)
+2. **Attach the LED-matrix**: Place the LED-matrix and than the probe insert behind it, securing both with two baseplates on top.
+
+![](./IMAGES/ledmatrix.png)
+
+![](./IMAGES/probeinsert.png)
+3. **Install the movable Infinity-Objective**: Drill the objective into the attachment of the electronic Z-stage. Because in this Assembly the Z-stage lays flat on the ground choose the insert thats closest to the Z-stage. As shown below the lettering "stage" is placed upward. Innsert the technical pins on the long sides to attach the baseplates.
+![](./IMAGES/zstage.png)
+
+4. **Position the beamsplitter cube**: Insert the beamsplitter cube (you can leave it empty for now, it will be needed when assembling the fluorescence microscope).
+
+![](./IMAGES/emtybeamsplitter.png)
+
+5. **Add the camera**: Finally, attach the camera unit behind the beamsplitter and secure everything with a second layer of baseplates.
+
+![](./IMAGES/camera.png)
+
+![](./IMAGES/brightfieldcomplete.png)
 
 Now, your bright-field microscope is ready!
 
@@ -72,11 +93,43 @@ Now, your bright-field microscope is ready!
 But of course if you got this box you want more, so now let#s start buidling the fluorescene Microscope
 
 1. **Prepare a 4x1 Baseplate**: After that, attach it to the beamsplitter cube.
-2. **Position the Blue LED**: Place the blue LED at the furthest point from the beamsplitter.
-3. **Collimate the Light**: The blue LED is a divergent light source, so use the aspherical lens to collimate the light. Place the aspherical lens right after the LED with a gap no larger than 30mm.
-4. **Focus the Light**: To focus the collimated light into the objective, insert an empty cube, followed by the biconvex lens. The space between the aspherical lens and the biconvex lens should be the sum of their focal lengths. The aspherical lens has a focal length of 20mm, and the biconvex lens has 100mm, so you need approximately 120mm between the two.
-5. **Insert the Beamsplitter**: Place the beamsplitter carefully. Make sure the filter sides are oriented correctly to avoid blocking the wrong wavelengths.
-6. **Focus Light into the Infinity Objective**: to correctly focus the ligth into the infinity objective, position the biconvex lens and infinity objective with about 100mm of space between them.
+
+![](./IMAGES/baseplate2.png)
+
+2. **Position the Blue LED**: Place the blue LED at the furthest point from the beamsplitter. Place the LED lid in front of it, to reduce stray light.
+
+
+![](./IMAGES/fluorLED.png)
+
+![](./IMAGES/LEDlid.png)
+
+3. **Collimate the Light**: The blue LED is a divergent light source, so use the aspherical lens to collimate the light. Place the aspherical lens right after the LED with a gap no larger than 30mm.Insert the diaphragm right next to it in the same cube. It's used as a field diaphragm and defines the size of the illuminated area and prevents unnecessary stray light outside the desired field of view.
+
+![](./IMAGES/asphäreblende.png)
+
+![](./IMAGES/asphäreinsert.png)
+
+5. **Focus the Light**: To focus the collimated light into the objective, insert an empty cube, followed by the biconvex lens. The space between the aspherical lens and the biconvex lens should be the sum of their focal lengths. The aspherical lens has a focal length of 20mm, and the biconvex lens has 100mm, so you need approximately 120mm between the two.
+
+![](./IMAGES/100lens.png)
+
+![](./IMAGES/lensdistance.png)
+
+
+6. **Insert the Beamsplitter**: Place the beamsplitter carefully. Make sure the filter sides are oriented correctly to avoid blocking the wrong wavelengths.
+
+![](./IMAGES/beamsplitternah.png)
+
+![](./IMAGES/beamsplitterinsert.png)
+
+
+7. **Focus Light into the Infinity Objective**: to correctly focus the ligth into the infinity objective, position the biconvex lens and infinity objective with about 100mm of space between them.
+
+![](./IMAGES/lastmesure.png)
+
+![](./IMAGES/lastmesure2.png)
+
+
 
 After completing these steps, you're done with the assembly, nice job!
 
@@ -85,29 +138,38 @@ After completing these steps, you're done with the assembly, nice job!
 
 ### 2.1: Plug in the Electronics as Shown Below
 
-:::caution
 **⚠️ Caution!**
 If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!
 :::
 
-- connect the LED-Array panel by plugging in the micro-USB and connect it to your PC.
+- connect the LED-Matrix panel by plugging in the micro-USB and connect it to your PC.
+
+![](./IMAGES/ledmatrixplug.jpeg)
+
 - Connect the Z-stage to the `Z-Motor` on the main board. Ensure there's a motor driver.
-- Connect the blue LED to the LED driver (red plate) at `out1`:
-  - The cable at `-` goes to `-`
-  - The cable at `+` goes to `+`
-- Connect the LED driver to the main board:
-  - The cable at `in 1` goes to `PM2 - PMW2`
-  - The cable at `V In -` goes to `12V - GND`
-  - The cable at `V IN +` goes to `12V - 12V`
-- Plug in the micro-USB and connect to your PC.
+
+- Connect the blue LED to the Mainboard at `PMW2`
+  - The **white** cable goes to `PMW2-GND`
+
+![](./IMAGES/ledplug2.jpeg)
+
+![](./IMAGES/zstageplug.jpeg)
+
+
+- Plug in the micro-USB at your ESP32 and connect to your PC.
+
+![](./IMAGES/espplug.jpeg)
+
+
 - Plug in the 12V power cable.
 
+![](./IMAGES/powerplug.jpeg)
 
 
 
 ### 2.2: Flashing the ESP32 Firmware
 
-1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (**row 2, column 1**), then click on the `connect` button.
+1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (most likely **ESO32-DEV-based UC2 standalone board V3 (beta)**), then click on the `connect` button.
 
 ![](./IMAGES/Electronics_Box_5.png)
 
@@ -127,7 +189,7 @@ The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
 
 4. Wait until the firmware has been successfully flashed.
 
-5. &#x1F4A1; **flash your LED-Array**. Repeat the same steps, but this time for the LED-Array
+5. &#x1F4A1; **flash your LED-matrix**. Repeat the same steps, but this time for the LED-matrix
    ![](./IMAGES/LED_install.png)
 
 
@@ -151,7 +213,7 @@ This command will move the Z-axis motor by -1000 steps (1 full rotation) at a sp
 
 **Note:** Ensure that the command string has no line breaks.
 
-4. &#x1F4A1;**Connect your LED-Array as well**. Duplicate the current tab and connect the LED-Array again via the button. Choose the correct COM Port.  
+4. &#x1F4A1;**Connect your LED-matrix as well**. Duplicate the current tab and connect the LED-matrix again via the button. Choose the correct COM Port.  
 Now you can test all components through these two tabs.
 
 
@@ -161,7 +223,7 @@ Now you can test all components through these two tabs.
 1. After completing the test, go back to the first tab to control the other components via buttons:
    - `Laser 2(on)` and `Laser 2(off)` control the blue excitation LED.
    - `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
-   - `LED (on)` and `LED (off)` control the LED-Array panel (&#x1F4A1;you must change tabs to control it).
+   - `LED (on)` and `LED (off)` control the LED-matrix panel (&#x1F4A1;you must change tabs to control it).
 
 
 
@@ -179,17 +241,20 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
   This will initiate the Bluetooth scan on the ESP32, which will detect and pair with the controller.
 
-  Once paired, you can control the motorized stage using the analog sticks and switch the LED array on/off using the buttons:
+  Once paired, you can control the motorized stage using the analog sticks and switch the LED-matrix on/off using the buttons:
 
   - **Move the Z-stage**: Use the **left analog stick** to move the stage up and down (adjust focus).
-  - **Control the LEDs**: Use the **controller buttons** to turn the LED array on/off and cycle through different illumination patterns.
+  - **Control the LEDs**: Use the **controller buttons** to turn the LED-matrix on/off and cycle through different illumination patterns.
 
-  
+
 
 ### 2.6: Setup and Use the Camera Software
 
 1. Connect the camera to your PC.
-2. For the installation process, follow these instructions: [Install MVS App for Camera Utilization](https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization).
+
+![](./IMAGES/cameraplug.jpeg)
+
+2. For the installation process and useage of the software, follow these instructions: [Install MVS App for Camera Utilization](https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization).
 
 
 
@@ -199,7 +264,7 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
 ## Experiment 1: Bright Field Illumination
 
-1. Turn the LED-array on and the blue LED off.
+1. Turn the LED-matrix on and the blue LED off.
 2. Insert the probe into the probe insert.
 3. Start the camera by pressing the play button (▶).
 4. Make sure your probe is centered. Shift it around until you see some structure on your screen.
@@ -212,7 +277,7 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
 ## Experiment 2: Fluorescence Microscopy
 
-1. To turn your microscope into a fluorescence microscope, turn the LED-Array off and the blue LED on.
+1. To turn your microscope into a fluorescence microscope, turn the LED-matrix off and the blue LED on.
 2. The probe should still be in the probe insert, and the camera should still be on.
 3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree, go to `Acquisition Control`, and increase the `exposure time` to 300000ms. You should now see the fluorescence image.
 Optional you can go to `Analog Control`, and increase the `Gain`.
@@ -289,7 +354,7 @@ Benedicts stuff
 
   For detailed instructions on Docker installation, visit the [ImSwitch Docker Guide](https://openuc2.github.io/docs/ImSwitch/ImSwitchDocker/).
 
-  
+
 
   ### Step 2: Using the ImSwitch Config File
 
@@ -360,7 +425,7 @@ Benedicts stuff
 
   This file configures the ESP32 stage, LED control, and the camera for widefield imaging. Ensure the `host_` and `serialport` match your system setup.
 
-  
+
 
   ### Step 3: Running the Microscope with ImSwitch
 
@@ -373,8 +438,8 @@ Benedicts stuff
      Upon launch, choose **"Virtual Microscope"** or load your custom configuration file, such as `uc2_hik_histo.json`.
 
   3. **Control the System**:
-     Use the ImSwitch GUI to move the motorized stage, control the LED array, and capture images. The interface allows you to automate tasks such as focus stacking and digital phase-contrast imaging.
-
+     Use the ImSwitch GUI to move the motorized stage, control the LED-matrix, and capture images. The interface allows you to automate tasks such as focus stacking and digital phase-contrast imaging.
+````
 
 ## Install Raspberry Pi + ImSwitch
 

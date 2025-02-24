@@ -1,234 +1,168 @@
 ---
-id: CoreTelescope
-title: Telescope
+id: CoreTelescopeAR
+title: التلسكوب
 ---
-## What is a Galileo telescope?
-Duration: 10
 
-Place the lens cubes on the sheet as shown in the diagram, then peer through the telescope into the distance.
+## ما هو تلسكوب غاليليو؟
+المدة: 10 دقائق
+
+ضع مكعبات العدسة على الورقة كما هو موضح في المخطط، ثم انظر عبر التلسكوب إلى البعيد.
 
 <div class="alert info">
-What does the picture look like?
-How is the image oriented?
+كيف تبدو الصورة؟
+كيف يكون اتجاه الصورة؟
 </div><br/>
-
 
 ![](../IMAGES/MINIBOXNEW/22.png)
 
-
 <div class="alert-success">
-As you look through the telescope, adjust the distances between the components to see a sharp image!
+أثناء النظر من خلال التلسكوب، قم بضبط المسافات بين المكونات لرؤية صورة واضحة!
 </div><br/>
 
+## هذا هو تلسكوب غاليليو
 
+التلسكوب هو أداة بصرية تجعل الأشياء البعيدة تبدو أقرب أو أكبر بكثير.
 
-## This is a Galileo telescope
-
-
-A telescope is an optical instrument that makes distant objects appear many times closer or larger.
-
-The lens on the object side is called the objective lens.
+العدسة على جانب الجسم تُسمى العدسة الشيئية.
 
 ![](../IMAGES/MINIBOXNEW/23.png)
 
-The lens facing the eye is called the eyepiece.
-The Galileo telescope is also used in opera glasses.
+العدسة المواجهة للعين تُسمى العدسة العينية.
 
+يُستخدم تلسكوب غاليليو أيضًا في نظارات الأوبرا.
 
-## This is how the Galileo telescope works
+## كيف يعمل تلسكوب غاليليو؟
 
-
-
-What is the magnification of this Galileo telescope?
+ما هو التكبير في هذا التلسكوب؟
 
 ![](../IMAGES/MINIBOXNEW/24.png)
 
-Formula for calculating magnification
+معادلة حساب التكبير:
 
 ![](../IMAGES/MINIBOX/UC2_minibox_19.png)
 
-
-
-It is not possible to achieve very high magnification with this telescope. But it is very compact.
-
 <div class="alert-success">
-The picture is always
+الصورة تكون دائمًا:
 
-* Magnified with the magnification from the formula above
-* Upright
-* Right reading
+* مكبرة وفقًا للمعادلة أعلاه
+* قائمة
+* تُقرأ بشكل صحيح
 
-The field of view is small.
+لكن مجال الرؤية صغير.
 </div><br/>
 
-
-## Tutorial: Galileo's telescope
+## دليل عملي: تلسكوب غاليليو
 
 ![](../IMAGES/MINIBOXTUTORIAL/image5.gif)
 
-### Materials needed:
-- Four base plates
-- 100 mm positive lens (in cube)
-- -50 mm negative lens (in cube)
+### المواد المطلوبة:
+- أربع قواعد
+- عدسة موجبة 100 مم (في مكعب)
+- عدسة سالبة -50 مم (في مكعب)
 
-![](../IMAGES/MINIBOXTUTORIAL/image125.png)
+### التعليمات:
 
-### Diagram (side view):
-![](../IMAGES/MINIBOXTUTORIAL/image4.png)
-
-### Instructions for assembling Galileo's telescope:
-
-**Step 1: Place the base plates on top**
+**الخطوة 1: ضع القواعد على العدسات**
 
 ![](../IMAGES/MINIBOXTUTORIAL/image19.png)
-Place one base plate on top of each lens cube.
 
-**Step 2: Place the base plates on the bottom**
+**الخطوة 2: ضع القواعد على الأسفل**
+
 ![](../IMAGES/MINIBOXTUTORIAL/image52.png)
-Place one base plate on the bottom of each lens cube.
 
-**Step 3: Assemble the cubes**
+**الخطوة 3: ركب المكعبات**
+
 ![](../IMAGES/MINIBOXTUTORIAL/image18.png)
-Assemble the two cubes in such a way that the distance between the lenses' surfaces is the longest.
 
-**Step 4: Adjust the lenses' distance**
+**الخطوة 4: اضبط المسافة بين العدسات**
+
 ![](../IMAGES/MINIBOXTUTORIAL/image93.png)
-Adjust distance between negative and positive lens to the maximum possible.
 
-**Step 5: Use the telescope!**
+**الخطوة 5: استخدم التلسكوب!**
+
 ![](../IMAGES/MINIBOXTUTORIAL/image117.png)
-Search for an object to the distance and use Galileo's telescope to look at it.
 
-
-## What is a Kepler telescope?
-
-
-Set the lenses in the correct positions as shown in the diagram. Then look through the telescope into the distance.
+## ما هو تلسكوب كبلر؟
 
 ![](../IMAGES/MINIBOXNEW/25.png)
 
 <div class="alert info">
-What does the picture look like?
-How is the image oriented?
+كيف تبدو الصورة؟
+كيف يكون اتجاه الصورة؟
 </div><br/>
 
 <div class="alert-success">
-As you look through the telescope, vary the distances between the components to see such a sharp image!
+قم بضبط المسافات بين المكونات للحصول على صورة واضحة!
 </div><br/>
 
-![](../IMAGES/MINIBOXNEW/26.png)
+## كيف يعمل تلسكوب كبلر؟
 
-## This is a Kepler telescope
-
-![](../IMAGES/MINIBOXNEW/27.png)
-
-This type of telescope is often used in astronomy.
-
-## This is how the Kepler telescope works
-
-What is the magnification of this Kepler telescope?
+ما هو التكبير في هذا التلسكوب؟
 
 ![](../IMAGES/MINIBOXNEW/28.png)
 
-Formula for calculating magnification
+معادلة حساب التكبير:
 
 ![](../IMAGES/MINIBOX/UC2_minibox_23.png)
 
-This telescope can achieve a higher magnification than the Galilean telescope. But it creates the opposite picture. However, this is not a problem for observing the stars.
-
 <div class="alert-success">
-The picture is always
+الصورة تكون دائمًا:
 
-* Magnified by the magnification from the formula above
-* Vice versa
-* Sides reversed
+* مكبرة وفقًا للمعادلة أعلاه
+* مقلوبة
+* الجوانب معكوسة
 
-The field of view is
-larger than with the Galileo telescope.
+ومجال الرؤية أكبر من تلسكوب غاليليو.
 </div><br/>
 
+## دليل عملي: تلسكوب كبلر
 
-## Tutorial: Kepler's Telescope
+### المواد المطلوبة:
+- ثماني قواعد
+- عدسة موجبة 100 مم (في مكعب)
+- عدسة موجبة 50 مم (في مكعب)
+- مكعبان فارغان
 
-![](../IMAGES/MINIBOXTUTORIAL/image75.gif)
+### التعليمات:
 
-### Materials needed:
-- Eight base plates
-- 100 mm positive lens (in cube)
-- 50 mm positive lens (in cube)
-- Two empty cubes
-
-![](../IMAGES/MINIBOXTUTORIAL/image127.png)
-### Diagram (side view):
-
-![](../IMAGES/MINIBOXTUTORIAL/image22.png)
-
-### Instructions for assembling Kepler's telescope:
-
-**Step 1: Align the cubes**
-
-Align the cubes such that the two lenses lay at the extremes and the two empty cubes in the middle.
+**الخطوة 1: محاذاة المكعبات**
 
 ![](../IMAGES/MINIBOXTUTORIAL/image13.png)
 
-**Step 2: Fix the cubes with base plates**
-
-Fix the cubes with the base plates placing them on top and on the bottom.
+**الخطوة 2: تثبيت المكعبات بالقواعد**
 
 ![](../IMAGES/MINIBOXTUTORIAL/image76.png)
 
-**Step 3: Adjust the distance**
-
-Adjust the distance between the lenses as shown in the image.
+**الخطوة 3: ضبط المسافة**
 
 ![](../IMAGES/MINIBOXTUTORIAL/image59.png)
 
-**Step 4: Use Kepler's telescope**
-
-Look for an object to the distance and use Kepler's telescope to look at it.
+**الخطوة 4: استخدام التلسكوب**
 
 ![](../IMAGES/MINIBOXTUTORIAL/image110.png)
 
-
-## What is a spotting scope?
-
-
-The spotting scope is long, so the scheme is not the same size.
-Set the lenses in the correct positions as shown in the diagram and look into the distance through the telescope.
+## ما هو منظار الرصد؟
 
 ![](../IMAGES/MINIBOXNEW/29.png)
 
-which results into
-
-![](../IMAGES/MINIBOXNEW/30.png)
-
-
 <div class="alert info">
-How does the image here compare to the Kepler telescope?
+كيف تقارن الصورة هنا مع تلسكوب كبلر؟
 </div><br/>
 
 <div class="alert-success">
-As you look through the telescope, adjust the distances between the components to see a sharp image!
+قم بضبط المسافات بين المكونات للحصول على صورة واضحة!
 </div><br/>
 
+## كيف يعمل منظار الرصد؟
 
-
-
-## This is how the spotting scope works
-
-
-The magnification is like that of the Kepler telescope. The erecting lens only changes the orientation (the image is reversed), not the magnification.
+التكبير مشابه لتلسكوب كبلر، لكن عدسة التوجيه تغير الاتجاه فقط دون تغيير التكبير.
 
 ![](../IMAGES/MINIBOX/UC2_minibox_27.png)
 
-
-An upright image is necessary for terrestrial observations. True terrestrial telescopes use prism systems to rotate the image and keep it compact.
-
 <div class="alert-success">
-The picture is
+الصورة تكون:
 
-* Magnified at the same magnification as the Keppler telescope
-* Upright
-* mirrored
-
+* مكبرة بنفس مقدار تلسكوب كبلر
+* قائمة
+* معكوسة أفقيًا
 </div><br/>

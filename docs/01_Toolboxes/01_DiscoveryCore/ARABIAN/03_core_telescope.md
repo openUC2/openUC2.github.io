@@ -160,9 +160,10 @@ title: التلسكوب
 ![](../IMAGES/MINIBOX/UC2_minibox_27.png)
 
 <div class="alert-success">
-الصورة تكون:
+The picture is
 
-* مكبرة بنفس مقدار تلسكوب كبلر
-* قائمة
-* معكوسة أفقيًا
+* Magnified at the same magnification as the Keppler telescope
+* Upright
+* mirrored
+
 </div><br/>

@@ -1,3 +1,8 @@
+---
+id: DigitalInput
+title: Digital Input
+---
+
 # UC2-ESP Digital Input API Documentation
 
 The UC2-ESP firmware provides an API for managing digital input channels. This allows querying the state (high or low) of digital inputs which are useful for reading endstops, buttons, or other binary sensors.

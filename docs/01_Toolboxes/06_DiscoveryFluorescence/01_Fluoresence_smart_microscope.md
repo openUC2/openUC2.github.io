@@ -283,3 +283,15 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 Optional you can go to `Analog Control`, and increase the `Gain`.
 
 ![](./IMAGES/cameraaufnahme_fluoreszenz.png)
+
+## Experiment 3: Smart Microscopy Using ImSwitch and openUC2
+
+For this, please refer to the installation instructions [here](https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi#install-raspberry-pi--imswitch).
+
+On top of this, you can use the following `ImSwitchClient` template to remote control your microscopy using google colab or jupyter notebook. This gives some hints on the use of the API:
+
+<a target="_blank" href="https://colab.research.google.com/drive/1W3Jcw4gFn0jtQXa3_2aCtJYJglMNGkXr?usp=sharing">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+This makes use of the default URL hosted publicly on https://imswitch.openuc2.com/imswitch/index.html, but you can change this to the `PORT` (i.e. 8001) nad `URL` (e.g. the Raspberry Pi's IP address that runs ImSwitch in docker and is in the same network as you computer). 

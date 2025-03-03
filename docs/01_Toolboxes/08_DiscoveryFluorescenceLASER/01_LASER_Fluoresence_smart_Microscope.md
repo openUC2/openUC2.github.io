@@ -1,37 +1,32 @@
 ---
-id: LED_Fluoresence_microscope
-title: openUC2 LED Fluoresence microscope
+id: LASER_Fluoresence_microscope
+title: openUC2 LASER Fluoresence microscope
 ---
 
-# Workshop Manual: Building a Smart LED-Powered Fluorescence Microscope
+# Workshop Manual: Building a Smart laser-Powered Fluorescence Microscope
 
-In this workshop, we will guide you through assembling a LED-powered fluorescence microscope, allowing you to explore fascinating experiments with microscopic details.
+In this workshop, we will guide you through assembling a laser-powered fluorescence microscope, allowing you to explore fascinating experiments with microscopic details.
 
 
 
 ### Materials Needed
 
-1. Blue LED (for exciting fluorescence molecules).
-2. LED Lid
+1. laser diode
+2. Beamsplitter
 3. LED-Matrix with USB-C cable (for bright-field microscopy)
 4. Electronic Z-stage with some technical nobs
 5. Mainboard with UBC-mini cable
 6. PS4 Controller (for controlling the Z-stage)
 7. Infinity objective
-8. Beamsplitter
-9. Aspherical lens (for beam collimation)
-10. Biconvex lens (f' = 100mm, for focusing)
-11. Diaphragm
-12. Camera with tube lens
-13. Probe insert
-14. Probes
-15. cubes and base plates
+8. biconvex lens (f'=50mm)
+9. Camera with tube lens
+10. Probe insert
+11. Probes
+12. cubes and base plates
 
 
 
 ### Diagram
-
-![](./IMAGES/diagramm.png)
 
 ### Theory of Operation
 
@@ -53,7 +48,7 @@ First, an electron is excited from the ground state to the higher-energy state  
 
 
 
-## Tutorial: LED-Powered Fluorescence Microscope
+## Tutorial: LASER-Powered Fluorescence Microscope
 
 
 ![](./IMAGES/allebauteile.png)
@@ -90,26 +85,23 @@ Now, your bright-field microscope is ready!
 
 
 #### 1.2: Assembling the Fluorescence Microscope
-But of course if you got this box you want more, so now let#s start buidling the fluorescene Microscope
+But of course if you got this box you want more, so now let's start buidling the fluorescene Microscope
 
 1. **Prepare a 4x1 Baseplate**: After that, attach it to the beamsplitter cube.
 
 ![](./IMAGES/baseplate2.png)
 
-2. **Position the Blue LED**: Place the blue LED at the furthest point from the beamsplitter. Place the LED lid in front of it, to reduce stray light.
-
+2. **Position the laser**: Place the laser at the furthest point from the beamsplitter.
 
 ![](./IMAGES/fluorLED.png)
 
-![](./IMAGES/LEDlid.png)
-
-3. **Collimate the Light**: The blue LED is a divergent light source, so use the aspherical lens to collimate the light. Place the aspherical lens right after the LED with a gap no larger than 30mm.Insert the diaphragm right next to it in the same cube. It's used as a field diaphragm and defines the size of the illuminated area and prevents unnecessary stray light outside the desired field of view.
+3. **Collimate the Light**: The blue laser is a divergent light source because its a fiber laser, so use the aspherical lens to collimate the light. Place the aspherical lens right after the LED with a gap no larger than 30mm.
 
 ![](./IMAGES/asphäreblende.png)
 
 ![](./IMAGES/asphäreinsert.png)
 
-5. **Focus the Light**: To focus the collimated light into the objective, insert an empty cube, followed by the biconvex lens. The space between the aspherical lens and the biconvex lens should be the sum of their focal lengths. The aspherical lens has a focal length of 20mm, and the biconvex lens has 100mm, so you need approximately 120mm between the two.
+5. **Focus the Light**: To focus the collimated light into the objective, insert an empty cube, followed by the biconvex lens. The space between the two lenses should be the sum of their focal lengths. The first lens has a focal length of 50 mm, and the second lens has 100 mm, so you need approximately 120mm between the two.
 
 ![](./IMAGES/100lens.png)
 
@@ -148,12 +140,8 @@ If you need to change any of the cables or their position, always unplug the 12V
 
 - Connect the Z-stage to the `Z-Motor` on the main board. Ensure there's a motor driver.
 
-- Connect the Laser to the Mainboard at `PMW1`and to `12V` Power:
-  - the laser has two plugs: the one coming out of the big white cable goes to `12V` power supply
-    - The **black** cable goes to `12V-GND`
-  - the second plug goes to `PMW1`  
-    - The **black** cable goes to `PMW1-GND`
-
+- Connect the blue LED to the Mainboard at `PMW2`
+  - The **white** cable goes to `PMW2-GND`
 
 ![](./IMAGES/ledplug2.jpeg)
 
@@ -201,7 +189,7 @@ The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
 
 1. After flashing the firmware, go to the testing section on the same website.
 
-2. Connect to your ESP32 board using the `connect` button again, ensuring the correct COM port is selected.  
+2. Connect to your ESP32 board using the "Connect" button again, ensuring the correct COM port is selected.  
 
    ![](./IMAGES/connect_again.png)
 
@@ -225,7 +213,7 @@ Now you can test all components through these two tabs.
 ### 2.4: Testing in the Web Interface
 
 1. After completing the test, go back to the first tab to control the other components via buttons:
-   - `Laser 1(on)` and `Laser 2(off)` control the laser diode.
+   - `Laser 2(on)` and `Laser 2(off)` control the blue excitation LED.
    - `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
    - `LED (on)` and `LED (off)` control the LED-matrix panel (&#x1F4A1;you must change tabs to control it).
 
@@ -281,21 +269,233 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
 ## Experiment 2: Fluorescence Microscopy
 
-1. To turn your microscope into a fluorescence microscope, turn the LED-matrix off and the laser on.
+1. To turn your microscope into a fluorescence microscope, turn the LED-matrix off and the blue LED on.
 2. The probe should still be in the probe insert, and the camera should still be on.
-3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree in your camera programm, go to `Acquisition Control`, and increase the `Exposure time` to 300000 ms. You should now see the fluorescence image.
+3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree, go to `Acquisition Control`, and increase the `exposure time` to 300000ms. You should now see the fluorescence image.
 Optional you can go to `Analog Control`, and increase the `Gain`.
 
 ![](./IMAGES/cameraaufnahme_fluoreszenz.png)
 
-## Experiment 3: Smart Microscopy Using ImSwitch and openUC2
+--
+Benedicts stuff
 
-For this, please refer to the installation instructions [here](https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi#install-raspberry-pi--imswitch).
+--
 
-On top of this, you can use the following `ImSwitchClient` template to remote control your microscopy using google colab or jupyter notebook. This gives some hints on the use of the API:
 
-<a target="_blank" href="https://colab.research.google.com/drive/1W3Jcw4gFn0jtQXa3_2aCtJYJglMNGkXr?usp=sharing">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
 
-This makes use of the default URL hosted publicly on https://imswitch.openuc2.com/imswitch/index.html, but you can change this to the `PORT` (i.e. 8001) nad `URL` (e.g. the Raspberry Pi's IP address that runs ImSwitch in docker and is in the same network as you computer). 
+
+
+
+
+
+
+
+
+  ### Step 1: Installing ImSwitch
+
+  There are two ways to install ImSwitch, depending on your system preferences.
+
+  #### Method 1: Install ImSwitch via Python Package (with Napari support)
+
+  A more detailed explantion can be found here: https://openuc2.discourse.group/t/imswitch-installation-on-mac-and-windows/37
+
+  1. **Set up your Python environment** (using Conda or Mamba):
+     ``bash
+     mamba create -n imswitchhackathon python=3.9 -y
+     mamba activate imswitchhackathon
+     ``
+
+  2. **Install ImSwitch**:
+     ``bash
+     pip install https://github.com/openUC2/ImSwitch/archive/refs/heads/master.zip # this installs the lastest master
+     # do the same if you want to update the system
+     # alternative:
+     git clone https://github.com/openUC2/ImSwitch/
+     cd ImSwitch
+     pip install -e .
+     ``
+
+  3. **Optional**: Install the required dependencies for QT and Napari:
+     ``bash
+     pip install pyqtgraph qdarkstyle
+     ``
+
+  This setup will allow you to run ImSwitch with full functionality, including graphical user interface (GUI) support for Napari.
+
+  #### Method 2: Running ImSwitch using Docker
+
+  For a simpler, platform-agnostic solution, you can run ImSwitch using Docker:
+
+  1. **Pull the Docker container**:
+     ``bash
+     sudo docker pull ghcr.io/openuc2/imswitch-noqt-x64:latest
+     ``
+
+  2. **Run the Docker container**:
+     ``bash
+     sudo docker run -it --rm -p 8001:8001 -p 2222:22 \
+     -e HEADLESS=1 \
+     -e HTTP_PORT=8001 \
+     -e CONFIG_FILE=example_uc2_hik_flowstop.json \
+     -e CONFIG_PATH=/config \
+     -v ~/Downloads:/config \
+     --privileged ghcr.io/openuc2/imswitch-noqt-x64:latest
+     ``
+
+  Once you have ImSwitch installed and running, you can access the web interface at `localhost:8001` to control the system.
+
+  For detailed instructions on Docker installation, visit the [ImSwitch Docker Guide](https://openuc2.github.io/docs/ImSwitch/ImSwitchDocker/).
+
+
+
+  ### Step 2: Using the ImSwitch Config File
+
+  Now that ImSwitch is installed, you need to configure it for your specific setup. Here is an example configuration file (`uc2_hik_histo.json`) for controlling the UC2 system:
+
+  ```json
+  {
+    "positioners": {
+      "ESP32Stage": {
+        "managerName": "ESP32StageManager",
+        "managerProperties": {
+          "rs232device": "ESP32",
+          "stepsizeX": -0.3125,
+          "stepsizeY": -0.3125,
+          "stepsizeZ": 0.3125,
+          "homeSpeedX": 15000,
+          "homeSpeedY": 15000,
+          "homeSpeedZ": 15000
+        },
+        "axes": ["X", "Y", "Z"],
+        "forScanning": true
+      }
+    },
+    "rs232devices": {
+      "ESP32": {
+        "managerName": "ESP32Manager",
+        "managerProperties": {
+          "host_": "192.168.43.129",
+          "serialport": "COM3"
+        }
+      }
+    },
+    "lasers": {
+      "LED": {
+        "managerName": "ESP32LEDLaserManager",
+        "managerProperties": {
+          "rs232device": "ESP32",
+          "channel_index": 1
+        },
+        "wavelength": 635
+      }
+    },
+    "detectors": {
+      "WidefieldCamera": {
+        "managerName": "HikCamManager",
+        "managerProperties": {
+          "isRGB": 1,
+          "hikcam": {
+            "exposure": 0,
+            "gain": 0,
+            "blacklevel": 100,
+            "image_width": 1000,
+            "image_height": 1000
+          }
+        },
+        "forAcquisition": true
+      }
+    },
+    "autofocus": {
+      "camera": "WidefieldCamera",
+      "positioner": "ESP32Stage",
+      "updateFreq": 10,
+      "frameCropx": 780,
+      "frameCropy": 400
+    }
+  }
+  ``
+
+  This file configures the ESP32 stage, LED control, and the camera for widefield imaging. Ensure the `host_` and `serialport` match your system setup.
+
+
+
+  ### Step 3: Running the Microscope with ImSwitch
+
+  1. **Launch ImSwitch**:
+     ``bash
+     python -m imswitch
+     ``
+
+  2. **Select the Configuration**:
+     Upon launch, choose **"Virtual Microscope"** or load your custom configuration file, such as `uc2_hik_histo.json`.
+
+  3. **Control the System**:
+     Use the ImSwitch GUI to move the motorized stage, control the LED-matrix, and capture images. The interface allows you to automate tasks such as focus stacking and digital phase-contrast imaging.
+````
+
+## Install Raspberry Pi + ImSwitch
+
+1. Download Raspberry PI Imager here: https://www.raspberrypi.com/software/
+
+![](./IMAGES/Rasberry_pi_download.png)
+
+2. Flash Raspberry Pi OS 64Bit Bookworm Lite on an SD card with appropriate size (e.g. 64GB ) -> add the necessary settings (i.e. SSH, wifi password, uc2/youseetoo password/login ) )> Flash (was ist damit gemeint..? Keine Screenshots vorhanden..)
+
+![](./IMAGES/RaspiOS_1.png)
+![](./IMAGES/RaspiOS_2.png)
+
+
+3. Boot Raspberry Pi and wait until it's full there; ~5 minutes => It should be connected to you r wifi; you're computer should be in the same network (startet das booten, wenn man auf `weiter` klickt? siehe bild)
+4. You should be able to log into that using ssh => (Windows + R => CMD ) = > Terminal opens and then type `ssh uc2@IP-OF-YOURRASPI`
+
+![](./IMAGES/ssh_uc2_IP_of_your_Raspi.png)
+
+(You can find the IP-Adress of your Raspberry using e.g. angry ip scanner or a screen connected to your rapsberry pi)
+![](./IMAGES/angry_IP_scanner.png)
+5. Install imswitch; Go to https://github.com/openUC2/ImSwitchDockerInstall?tab=readme-ov-file#imswitch--docker-on-raspi and then follow the procedures: (wrong code on the website, no other than crack know what a sudo is)
+
+  in the last line copypaste the following code: (not completly correct.. do you have to type ~ $ before as shown in picture?)
+
+``bash
+mkdir Downloads
+mkdir Desktop
+sudo apt-get install git -y
+cd ~/Downloads
+git clone https://github.com/openUC2/ImSwitchDockerInstall
+cd ImSwitchDockerInstall
+chmod +x install_all.sh
+./install_all.sh
+``
+This will:
+- install docker
+- install all necessary camera drivers
+- install imswitch via Python
+- create necessray startup files on the desktop
+
+6. launch it by doing; `bash ~/Desktop/launch_docker_container.sh`
+(hier fehlt auch ein screenshot.. wo soll ich das eingeben? in die reine cmd console oder muss davor wieder irgendwas aufgerufen werden..?)
+
+8. Go to your browser and enter the `https://IP-OF-YOUR-RASPI:8001/imswitch/index.html`
+9. Have a look for additional information here: https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi/ (nicht wirklich hilfreich)
+8. Close the applicaiton by hitting ctrl + c
+9. update the applicaoin by executing `bash ~/Desktop/update_docker_container.sh`
+
+## launch imswitch
+if you have installed it alredy execute the following
+
+``
+bash ~/Desktop/launch_docker_container.sh
+``
+(hier auch unbedingt screenshot machen!)
+
+
+## altternaive :
+
+Flash the pre-built image from this link using this software
+
+
+  ### Video Tutorial
+
+  For a visual guide on how to set up ImSwitch and control the UC2 system, watch the following video: (link wird nicht angezeigt. außerdem zeigt das video nur wie man das programm benutzt nicht wie man es intalliert.)
+
+  <iframe width="700" src="https://www.youtube.com/embed/Iw_Bg9aYe1U?si=VQgLP854Hg29dwxW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

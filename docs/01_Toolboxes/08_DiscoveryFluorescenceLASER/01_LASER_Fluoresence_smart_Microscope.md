@@ -1,37 +1,32 @@
 ---
-id: LED_Fluoresence_microscope
-title: openUC2 LED Fluoresence microscope
+id: LASER_Fluoresence_microscope
+title: openUC2 LASER Fluoresence microscope
 ---
 
-# Workshop Manual: Building a Smart LED-Powered Fluorescence Microscope
+# Workshop Manual: Building a Smart laser-Powered Fluorescence Microscope
 
-In this workshop, we will guide you through assembling a LED-powered fluorescence microscope, allowing you to explore fascinating experiments with microscopic details.
+In this workshop, we will guide you through assembling a laser-powered fluorescence microscope, allowing you to explore fascinating experiments with microscopic details.
 
 
 
 ### Materials Needed
 
-1. Blue LED (for exciting fluorescence molecules).
-2. LED Lid
+1. laser diode
+2. Beamsplitter
 3. LED-Matrix with USB-C cable (for bright-field microscopy)
 4. Electronic Z-stage with some technical nobs
 5. Mainboard with UBC-mini cable
 6. PS4 Controller (for controlling the Z-stage)
 7. Infinity objective
-8. Beamsplitter
-9. Aspherical lens (for beam collimation)
-10. Biconvex lens (f' = 100mm, for focusing)
-11. Diaphragm
-12. Camera with tube lens
-13. Probe insert
-14. Probes
-15. cubes and base plates
+8. biconvex lens (f'=50mm)
+9. Camera with tube lens
+10. Probe insert
+11. Probes
+12. cubes and base plates
 
 
 
 ### Diagram
-
-![](./IMAGES/diagramm.png)
 
 ### Theory of Operation
 
@@ -53,7 +48,7 @@ First, an electron is excited from the ground state to the higher-energy state  
 
 
 
-## Tutorial: LED-Powered Fluorescence Microscope
+## Tutorial: LASER-Powered Fluorescence Microscope
 
 
 ![](./IMAGES/allebauteile.png)
@@ -90,26 +85,23 @@ Now, your bright-field microscope is ready!
 
 
 #### 1.2: Assembling the Fluorescence Microscope
-But of course if you got this box you want more, so now let#s start buidling the fluorescene Microscope
+But of course if you got this box you want more, so now let's start buidling the fluorescene Microscope
 
 1. **Prepare a 4x1 Baseplate**: After that, attach it to the beamsplitter cube.
 
 ![](./IMAGES/baseplate2.png)
 
-2. **Position the Blue LED**: Place the blue LED at the furthest point from the beamsplitter. Place the LED lid in front of it, to reduce stray light.
-
+2. **Position the laser**: Place the laser at the furthest point from the beamsplitter.
 
 ![](./IMAGES/fluorLED.png)
 
-![](./IMAGES/LEDlid.png)
-
-3. **Collimate the Light**: The blue LED is a divergent light source, so use the aspherical lens to collimate the light. Place the aspherical lens right after the LED with a gap no larger than 30mm.Insert the diaphragm right next to it in the same cube. It's used as a field diaphragm and defines the size of the illuminated area and prevents unnecessary stray light outside the desired field of view.
+3. **Collimate the Light**: The blue laser is a divergent light source because its a fiber laser, so use the aspherical lens to collimate the light. Place the aspherical lens right after the LED with a gap no larger than 30mm.
 
 ![](./IMAGES/asphäreblende.png)
 
 ![](./IMAGES/asphäreinsert.png)
 
-5. **Focus the Light**: To focus the collimated light into the objective, insert an empty cube, followed by the biconvex lens. The space between the aspherical lens and the biconvex lens should be the sum of their focal lengths. The aspherical lens has a focal length of 20mm, and the biconvex lens has 100mm, so you need approximately 120mm between the two.
+5. **Focus the Light**: To focus the collimated light into the objective, insert an empty cube, followed by the biconvex lens. The space between the two lenses should be the sum of their focal lengths. The first lens has a focal length of 50 mm, and the second lens has 100 mm, so you need approximately 120mm between the two.
 
 ![](./IMAGES/100lens.png)
 
@@ -148,12 +140,8 @@ If you need to change any of the cables or their position, always unplug the 12V
 
 - Connect the Z-stage to the `Z-Motor` on the main board. Ensure there's a motor driver.
 
-- Connect the Laser to the Mainboard at `PMW1`and to `12V` Power:
-  - the laser has two plugs: the one coming out of the big white cable goes to `12V` power supply
-    - The **black** cable goes to `12V-GND`
-  - the second plug goes to `PMW1`  
-    - The **black** cable goes to `PMW1-GND`
-
+- Connect the blue LED to the Mainboard at `PMW2`
+  - The **white** cable goes to `PMW2-GND`
 
 ![](./IMAGES/ledplug2.jpeg)
 
@@ -201,7 +189,7 @@ The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
 
 1. After flashing the firmware, go to the testing section on the same website.
 
-2. Connect to your ESP32 board using the `connect` button again, ensuring the correct COM port is selected.  
+2. Connect to your ESP32 board using the "Connect" button again, ensuring the correct COM port is selected.  
 
    ![](./IMAGES/connect_again.png)
 
@@ -225,7 +213,7 @@ Now you can test all components through these two tabs.
 ### 2.4: Testing in the Web Interface
 
 1. After completing the test, go back to the first tab to control the other components via buttons:
-   - `Laser 1(on)` and `Laser 2(off)` control the laser diode.
+   - `Laser 2(on)` and `Laser 2(off)` control the blue excitation LED.
    - `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
    - `LED (on)` and `LED (off)` control the LED-matrix panel (&#x1F4A1;you must change tabs to control it).
 
@@ -281,9 +269,9 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
 ## Experiment 2: Fluorescence Microscopy
 
-1. To turn your microscope into a fluorescence microscope, turn the LED-matrix off and the laser on.
+1. To turn your microscope into a fluorescence microscope, turn the LED-matrix off and the blue LED on.
 2. The probe should still be in the probe insert, and the camera should still be on.
-3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree in your camera programm, go to `Acquisition Control`, and increase the `Exposure time` to 300000 ms. You should now see the fluorescence image.
+3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree, go to `Acquisition Control`, and increase the `exposure time` to 300000ms. You should now see the fluorescence image.
 Optional you can go to `Analog Control`, and increase the `Gain`.
 
 ![](./IMAGES/cameraaufnahme_fluoreszenz.png)

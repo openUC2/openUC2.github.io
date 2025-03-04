@@ -50,8 +50,7 @@ First, an electron is excited from the ground state to the higher-energy state  
 
 ## Tutorial: LASER-Powered Fluorescence Microscope
 
-
-![](./IMAGES/allebauteile.png)
+bild alle bauteile
 
 ### Step 1: Assemble the Microscope
 
@@ -83,46 +82,36 @@ This guide will walk you through building the microscope step by step. You can f
 Now, your bright-field microscope is ready!
 
 
-<!--# This is a comment
-
 #### 1.2: Assembling the Fluorescence Microscope
 But of course if you got this box you want more, so now let's start buidling the fluorescene Microscope
 
 1. **Prepare a 4x1 Baseplate**: After that, attach it to the beamsplitter cube.
 
-![](./IMAGES/baseplate2.png)
+baseplate2
 
 2. **Position the laser**: Place the laser at the furthest point from the beamsplitter.
 
-![](./IMAGES/fluorLED.png)
+Laser
 
-3. **Collimate the Light**: The blue laser is a divergent light source because its a fiber laser, so use the aspherical lens to collimate the light. Place the aspherical lens right after the LED with a gap no larger than 30mm.
+3. **Collimate the Light**: The blue laser is a divergent light source because its a fiber laser, so use the 50mm biconvex lens to collimate the light.
 
-![](./IMAGES/asphäreblende.png)
-
-![](./IMAGES/asphäreinsert.png)
+thelescope
 
 5. **Focus the Light**: To focus the collimated light into the objective, insert an empty cube, followed by the biconvex lens. The space between the two lenses should be the sum of their focal lengths. The first lens has a focal length of 50 mm, and the second lens has 100 mm, so you need approximately 120mm between the two.
 
-![](./IMAGES/100lens.png)
+bild 100 linse
 
-![](./IMAGES/lensdistance.png)
-
+bild linsenabstand
 
 6. **Insert the Beamsplitter**: Place the beamsplitter carefully. Make sure the filter sides are oriented correctly to avoid blocking the wrong wavelengths.
 
 ![](./IMAGES/beamsplitternah.png)
 
-![](./IMAGES/beamsplitterinsert.png)
-
 
 7. **Focus Light into the Infinity Objective**: to correctly focus the ligth into the infinity objective, position the biconvex lens and infinity objective with about 100mm of space between them.
 
-![](./IMAGES/lastmesure.png)
-
-![](./IMAGES/lastmesure2.png)
-
-
+last messure 1
+last messure 2
 
 After completing these steps, you're done with the assembly, nice job!
 
@@ -137,7 +126,7 @@ If you need to change any of the cables or their position, always unplug the 12V
 
 - connect the LED-Matrix panel by plugging in the micro-USB and connect it to your PC.
 
-![](./IMAGES/ledmatrixplug.jpeg)
+ledmatrixplug
 
 - Connect the Z-stage to the `Z-Motor` on the main board. Ensure there's a motor driver.
 
@@ -147,20 +136,17 @@ If you need to change any of the cables or their position, always unplug the 12V
   - the second plug goes to `PMW1`  
       - The **black** cable goes to `PMW1-GND`
 
-![](./IMAGES/ledplug2.jpeg)
-
-![](./IMAGES/zstageplug.jpeg)
-
+laser plug
+z-stage plug
 
 - Plug in the micro-USB at your ESP32 and connect to your PC.
 
-![](./IMAGES/espplug.jpeg)
+esp plug
 
 
 - Plug in the 12V power cable.
 
-![](./IMAGES/powerplug.jpeg)
-
+power plug
 
 
 ### 2.2: Flashing the ESP32 Firmware
@@ -248,7 +234,7 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
 1. Connect the camera to your PC.
 
-![](./IMAGES/cameraplug.jpeg)
+camera plug
 
 2. For the installation process and useage of the software, follow these instructions: [Install MVS App for Camera Utilization](https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization).
 
@@ -267,8 +253,7 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 5. The image you see might be blurry or, to be precise, out of focus. Use the PS4 controller to move the Z-stage up or down to get a sharp image.
 6. Now you can move the probe around and inspect it properly.
 
-![](./IMAGES/cameraaufnahme_hellfeld.png)
-
+cameraufnahme hellfeld
 
 
 ## Experiment 2: Fluorescence Microscopy
@@ -278,5 +263,4 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree in your camera programm, go to `Acquisition Control`, and increase the `Exposure time` to 300000 ms. You should now see the fluorescence image.
 Optional you can go to `Analog Control`, and increase the `Gain`.
 
-![](./IMAGES/cameraaufnahme_fluoreszenz.png)
--->
+cameraaufnahme dunkelfeld

@@ -1,58 +1,52 @@
-# Quickstart to use the Raspberry Pi with our ImSwitch and UC2-ESP
+# Quickstart Guide: Using Raspberry Pi with ImSwitch and UC2-ESP
 
-The Raspberry Pi connects the UC2-ESP via USB and the USB3 camera to the ImSwitch that runs in Docker. You can access the frontend via your browser on a phone or laptop. It's experimental at the moment! A demo version of the latest ImSwitch running in the web can be found here:
-- https://imswitch.openuc2.com/imswitch/index.html
-including its API:
-- https://imswitch.openuc2.com/docs
+The Raspberry Pi serves as a bridge between the UC2-ESP board and a USB3 camera, running the ImSwitch software inside a Docker container. The system allows you to control the microscope through a web interface accessible from a phone or laptop.
 
+> **Note:** This setup is experimental! You can try a demo version of the latest ImSwitch here:
+> - [Live Demo](https://imswitch.openuc2.com/imswitch/index.html)
+> - [ImSwitch API](https://imswitch.openuc2.com/docs)
 
+---
 
-## Login Data for Raspberry Pi (SSH / Login)
+## Getting Started
 
-The Raspberry Pi login credentials are:
+### Raspberry Pi Login Credentials
 - **Username:** `UC2`
 - **Password:** `youseetoo`
 
-It runs the Raspberry Pi OS Light version with a Docker integration of our systems, linked on Twitter. You can log in via SSH and start the ImSwitch server.
+The system runs Raspberry Pi OS Lite and includes a Docker integration for ImSwitch. You can log in via SSH to start the ImSwitch server.
 
 [ImSwitch Docker Installation Guide](https://github.com/openUC2/ImSwitchDockerInstall?tab=readme-ov-file#imswitch--docker-on-raspi)
 
-## WiFi Hotspot
-
+### WiFi Hotspot
 - **SSID:** `openuc2-RANDOMNUMBER`
 - **Password:** `youseetoo`
 
-Configure the hotspot using RaspAP:
-- Go to [http://10.3.141.1/](http://10.3.141.1/)
-- Login: **admin** / **secret**
-- (Refer to RaspAP GitHub for more details)
+To configure the hotspot using RaspAP:
+1. Open a browser and go to [http://10.3.141.1/](http://10.3.141.1/)
+2. Login with:
+   - **Username:** `admin`
+   - **Password:** `secret`
 
-## Accessing ImSwitch
-
-If the Docker image has started automatically, you can access ImSwitch at:
+### Accessing ImSwitch
+If the Docker container starts automatically, access ImSwitch at:
 - [https://10.3.141.1:8001/imswitch/index.html](https://10.3.141.1:8001/imswitch/index.html)
-- (Self-signed certificate warning: Accept untrusted, this will be fixed in the future.)
+- Ignore self-signed certificate warnings (this will be fixed later).
 
-## Connecting via SSH
-
-To SSH into the Raspberry Pi and manually start ImSwitch:
+### Connecting via SSH
+To manually start ImSwitch:
 ```sh
 ssh uc2@10.3.141.1  # Password: youseetoo
-# Start ImSwitch
 cd ~/Desktop
 ./launch_docker_container.sh
 ```
 
-## Changing ImSwitch Parameters
-
-Configuration file path:
+### Modifying ImSwitch Configuration
+To adjust settings, edit the configuration file:
 ```sh
 nano ~/ImSwitchConfig/config/imcontrol_options.json
 ```
-
-- **Active setup file:** `example_uc2_vimba.json`
-
-Example JSON snippet:
+For example, changing the active setup file:
 ```json
 {
     "setupFileName": "example_uc2_vimba.json",
@@ -63,191 +57,61 @@ Example JSON snippet:
 }
 ```
 
-To modify configurations:
-```sh
-nano ~/ImSwitchConfig/imcontrol_setups/example_histo_daheng.json
-```
+More details: [ImSwitchConfig GitHub](https://github.com/openUC2/imswitchconfig)
 
-Example positioner settings:
-```json
-"positioners":{
-    "ESP32Stage":{
-        "managerName":"ESP32StageManager",
-        "managerProperties":{
-            "rs232device":"ESP32",
-            "isEnable":true,
-            "stepsizeX":-0.3125,
-            "stepsizeY":-0.3125,
-            "stepsizeZ":0.3125,
-            "homeSpeedX":15000,
-            "homeSpeedY":15000,
-            "homeSpeedZ":25000
-        }
-    }
-}
-```
+---
 
-For more details, visit: [ImSwitchConfig GitHub](https://github.com/openUC2/imswitchconfig)
-
-
-A full example file:
-
-  ### Step 2: Using the ImSwitch Config File
-
-  Now that ImSwitch is installed, you need to configure it for your specific setup. Here is an example configuration file (`uc2_hik_histo.json`) for controlling the UC2 system:
-
-  ```json
-  {
-    "positioners": {
-      "ESP32Stage": {
-        "managerName": "ESP32StageManager",
-        "managerProperties": {
-          "rs232device": "ESP32",
-          "stepsizeX": -0.3125,
-          "stepsizeY": -0.3125,
-          "stepsizeZ": 0.3125,
-          "homeSpeedX": 15000,
-          "homeSpeedY": 15000,
-          "homeSpeedZ": 15000
-        },
-        "axes": ["X", "Y", "Z"],
-        "forScanning": true
-      }
-    },
-    "rs232devices": {
-      "ESP32": {
-        "managerName": "ESP32Manager",
-        "managerProperties": {
-          "host_": "192.168.43.129",
-          "serialport": "COM3"
-        }
-      }
-    },
-    "lasers": {
-      "LED": {
-        "managerName": "ESP32LEDLaserManager",
-        "managerProperties": {
-          "rs232device": "ESP32",
-          "channel_index": 1
-        },
-        "wavelength": 635
-      }
-    },
-    "detectors": {
-      "WidefieldCamera": {
-        "managerName": "HikCamManager",
-        "managerProperties": {
-          "isRGB": 1,
-          "hikcam": {
-            "exposure": 0,
-            "gain": 0,
-            "blacklevel": 100,
-            "image_width": 1000,
-            "image_height": 1000
-          }
-        },
-        "forAcquisition": true
-      }
-    },
-    "autofocus": {
-      "camera": "WidefieldCamera",
-      "positioner": "ESP32Stage",
-      "updateFreq": 10,
-      "frameCropx": 780,
-      "frameCropy": 400
-    }
-  }
-  ``
-
-  This file configures the ESP32 stage, LED control, and the camera for widefield imaging. Ensure the `host_` and `serialport` match your system setup.
-
-
-Close the application with:
-```sh
-CTRL + C
-```
-
-## Hardware Connection
-
-- Connect **UC2-ESP Board** via USB to Raspberry Pi
+## Hardware Setup
+- Connect **UC2-ESP Board** via USB to the Raspberry Pi
 - Connect **USB3 Camera** to Raspberry Pi
 
-## Accessing ImSwitch via Web Browser
+To access ImSwitch via a browser:
+- Open: [https://10.3.141.1:8001/imswitch/index.html](https://10.3.141.1:8001/imswitch/index.html)
 
-Open the following URL in a browser:
-[https://10.3.141.1:8001/imswitch/index.html](https://10.3.141.1:8001/imswitch/index.html)
+![](./IMAGES/imswitchraspi/ImSwitchInTheWeb.png)
 
+---
 
-## The installation process
+## Installing Raspberry Pi OS & ImSwitch
 
-There are multiple ways to install ImSwitch on multiple different platforms. Each comes with its pros and cons. Here we are only looking at the Docker-based installation on an ARM64 (i.e. CPU architecture of the Raspberry Pi or MAC Metall). Alternatively you can install it "natively" as a python application. Reach out to us if you need help!
+There are two ways to set up the Raspberry Pi for ImSwitch:
+1. **Manual Installation** (for full control over package installation)
+2. **Pre-built Image** (faster setup using a ready-made Raspberry Pi image)
 
-We have packaged everything into a docker file for you! This means it has all the drivers and python packages included and its guaranteed to run - at lesat from the dependency point of view! Yay!
+### **Option 1: Manual Installation**
 
-In collaboration with Ethan from the Forklift Project https://github.com/forklift-run we have put all the necessary steps into a single img file that you simply need to download and flash to your SD card and boom. Everthing is working out of the box. It contains all the drivers on both host and docker side as well as the necessary settings to get you starting. Modifications still need to be done following the protocols above (e.g. ImSwitchConfig), but it'll be a lot easier for you to get starting. If you want to perform an installation on your own, this is still possible and explained here step by step (e.g. from Raspberry Pi OS to ImSwitch running on the Raspi). We recommmend to use the Raspberry Pi 5 with 8GB. Rasip 4 works, but a lot slower!
-
-
-  1. **Pull the Docker container**:
-     ``bash
-     sudo docker pull ghcr.io/openuc2/imswitch-noqt-x64:latest
-     ``
-
-  2. **Run the Docker container**:
-     ``bash
-     sudo docker run -it --rm -p 8001:8001 -p 2222:22 \
-     -e HEADLESS=1 \
-     -e HTTP_PORT=8001 \
-     -e CONFIG_FILE=example_uc2_hik_flowstop.json \
-     -e CONFIG_PATH=/config \
-     -v ~/Downloads:/config \
-     --privileged ghcr.io/openuc2/imswitch-noqt-x64:latest
-     ``
-
-  Once you have ImSwitch installed and running, you can access the web interface at `localhost:8001` to control the system.
-
-  For detailed instructions on Docker installation, visit the [ImSwitch Docker Guide](https://openuc2.github.io/docs/ImSwitch/ImSwitchDocker/).
-
-
-
-
-
-
-  ### Step 3: Running the Microscope with ImSwitch
-
-  1. **Launch ImSwitch**:
-     ```bash
-     python -m imswitch
-     ```
-
-  2. **Select the Configuration**:
-     Upon launch, choose **"Virtual Microscope"** or load your custom configuration file, such as `uc2_hik_histo.json`.
-
-  3. **Control the System**:
-     Use the ImSwitch GUI to move the motorized stage, control the LED-matrix, and capture images. The interface allows you to automate tasks such as focus stacking and digital phase-contrast imaging.
-
-
-## Install Raspberry Pi + ImSwitch
-
-1. Download and INstall the  Raspberry PI Imager here: https://www.raspberrypi.com/software/
+#### **Step 1: Install Raspberry Pi OS**
+1. Download and install the Raspberry Pi Imager: [Download Here](https://www.raspberrypi.com/software/)
 
 ![](./IMAGES/imswitchraspi/Rasberry_pi_download.png)
 
-2. Flash Raspberry Pi OS 64Bit Bookworm Lite on an SD card with appropriate size (e.g. 64GB for the Raspi 5) -> add the necessary settings (i.e. enable SSH access, Choose the wifi password and ssid from the Wifi you know) )> Flash the firmware onto the SD card
+2. Flash **Raspberry Pi OS 64-bit Bookworm Lite** onto an SD card (64GB recommended for Raspberry Pi 5).
+3. Configure settings:
+   - Enable SSH
+   - Set WiFi SSID and password
+4. Insert the SD card into the Raspberry Pi and boot it up.
 
 ![](./IMAGES/imswitchraspi/RaspiOS_1.png)
 ![](./IMAGES/imswitchraspi/RaspiOS_2.png)
 
+#### **Step 2: Connect to Raspberry Pi**
+1. Wait ~5 minutes for booting.
+2. Find the Raspberry Pi’s IP address using:
+   - [Angry IP Scanner](https://angryip.org/download)
+   - A monitor connected via micro-HDMI
 
-3. Insert the SD Card into the Raspberry Pi and Boot Raspberry Pi and wait until it's full there; ~5 minutes => It should be connected to your wifi (make sure you are in the same network as the pi); **HINT** If you connect e.g. to the AP created with your phone you can easily retreive the IP of the raspberry pi.  you're computer should be in the same network; Alternatively you can also hook up a montiro via the micro HDMI cabel
-4. You should be able to log into that using ssh => (Windows + R => CMD ) = > Terminal opens and then type `ssh uc2@IP-OF-YOURRASPI`
+![](./IMAGES/imswitchraspi/angry_IP_scanner.png)
+
+3. Log in via SSH:
+```sh
+ssh uc2@IP-OF-YOURRASPI
+```
 
 ![](./IMAGES/imswitchraspi/ssh_uc2_IP_of_your_Raspi.png)
 
-(You can find the IP-Adress of your Raspberry using e.g. [angry ip scanner](https://angryip.org/download) or a screen connected to your rapsberry pi)
-![](./IMAGES/imswitchraspi/angry_IP_scanner.png)
-5. Install imswitch; Go to https://github.com/openUC2/ImSwitchDockerInstall?tab=readme-ov-file#imswitch--docker-on-raspi and then follow the procedures by copy-pasting the following code into the terminal (e.g. Windows Command Line INterface, Mac Terminal, etc.):
-
-```bash
+#### **Step 3: Install ImSwitch**
+1. Run the following commands:
+```sh
 mkdir Downloads
 mkdir Desktop
 sudo apt-get install git -y
@@ -258,73 +122,58 @@ chmod +x install_all.sh
 ./install_all.sh
 ```
 
-This will:
-- install docker
-- install all necessary camera drivers (e.g. Allied Vision, HIK, Daheng)
-- install imswitch via docker
-- create necessray startup files on the desktop so that you can launch imsiwtch and update it (the desktop won't be visible on a headless machine of course)
+2. This will:
+   - Install Docker
+   - Install necessary camera drivers (Allied Vision, HIK, Daheng)
+   - Set up ImSwitch via Docker
+   - Create startup files for launching ImSwitch
 
-6. ONce everything has been downloaded, By typing the following command via the SSH prompt (e.g. Windows CMD or MAC Terminal) you can launch ImSwitch it by doing; `bash ~/Desktop/launch_docker_container.sh`
-
-
-8. Go to your browser and enter the `https://IP-OF-YOUR-RASPI:8001/imswitch/index.html`
-You should see something like this:
-![](./IMAGES/imswitchraspi/ImSwitchInTheWeb.png)
-
-
-
-9. Have a look for additional information here: https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi/ or any related page in this wiki
-8. Close the applicaiton by hitting ctrl + c
-9. update the applicaoin by executing `bash ~/Desktop/update_docker_container.sh`
-
-### launch imswitch
-if you have installed it alredy execute the following
-
-```
+3. Start ImSwitch:
+```sh
 bash ~/Desktop/launch_docker_container.sh
 ```
-
-This will run the following code:
-```bash
-echo "#!/bin/bash
-#!/bin/bash
-# Run the docker container with specified parameters
-sudo docker run -it --rm -p 8001:8001 -p 8002:8002 -p 8003:8003 -p 8888:8888 -p 2222:22 \
--e CONFIG_PATH=/config \
--e DATA_PATH=/dataset \
--v ~/Documents/imswitch_docker/imswitch_git:/tmp/ImSwitch-changes \
--v ~/Documents/imswitch_docker/imswitch_pip:/persistent_pip_packages \
--v ~/Downloads:/dataset \
--v ~/:/config \
--e HEADLESS=1 \
--e HTTP_PORT=8001 \
--e UPDATE_INSTALL_GIT=0 \
--e UPDATE_CONFIG=0 \
---privileged ghcr.io/openuc2/imswitch-noqt-arm64:latest
-" >"$DESKTOP_PATH/launch_docker_container.sh"
+4. Access the interface at:
+```sh
+https://IP-OF-YOUR-RASPI:8001/imswitch/index.html
+```
+5. Update ImSwitch when needed:
+```sh
+bash ~/Desktop/update_docker_container.sh
 ```
 
+---
 
-### update imswitch
+### **Option 2: Using the Pre-Built Forklift Image**
 
-run this code via SSH:
-```bash
-docker pull ghcr.io/openuc2/imswitch-noqt-arm64:latest
-```
+If you prefer a faster setup, you can use a **pre-built image** that includes all necessary software and drivers. This image was created with the [Forklift Project](https://github.com/forklift-run) and automates all setup steps.
 
+#### **How to Use the Pre-Built Image:**
+1. **Download the image** from our Google Drive link (external storage required due to large file size).
+2. **Extract the image** (~3GB as a ZIP, ~7GB uncompressed).
+3. **Flash it to an SD card** (using [Raspberry Pi Imager](https://www.raspberrypi.com/software/)).
 
-
-## altternaive use the img file provided by forklift
-
-Flash the pre-built image from this link using this software., .As mentioned previously we use the fork lift mechanism to modify the raspberry pi image files using github actions. This is a powerful tool and will essentially outsource the above steps and returns the prebuild image file for you which you simply need to download, extract (~3GB as a zip and 7GB uncompressed) and flash this to an SD card following steps from abiove.
-
-This is where it's getting stored:
 ![](./IMAGES/imswitchraspi/Forkliftbuilt.png)
 
-Unfortutnately we have to provide an external storage for this very large file as github doesn't allow releases to be bigger than 2GB
+> **Note:** The Forklift image is updated automatically and ensures all software is correctly configured.
 
-For a glimpse of how this works follow this link:
-https://github.com/beniroquai/imswitch-os/blob/main/setup.sh#L60
-It essentially performs all the steps above for you! Just with the difference that you get a fully packed IMG file out in the end -ready to flash!
+For a detailed breakdown of the image creation process, see:
+[ImSwitch OS GitHub](https://github.com/beniroquai/imswitch-os/blob/main/setup.sh#L60)
 
-# LINk from GOOGLE DRIVE
+---
+
+## Summary
+- The **manual installation** allows full customization of Raspberry Pi OS and software.
+- The **pre-built image** provides a quick and reliable setup, including all necessary drivers.
+
+For additional details, visit: [ImSwitch Documentation](https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi/)
+
+---
+
+## Troubleshooting & Support
+- If you encounter issues, check the logs using:
+```sh
+docker logs $(docker ps -q --filter ancestor=ghcr.io/openuc2/imswitch-noqt-arm64:latest)
+```
+- Join our community for help: [OpenUC2 GitHub](https://github.com/openUC2/)
+
+Happy experimenting!

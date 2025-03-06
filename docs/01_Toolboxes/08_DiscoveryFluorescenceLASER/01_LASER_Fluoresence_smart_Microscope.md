@@ -28,13 +28,14 @@ In this workshop, we will guide you through assembling a laser-powered fluoresce
 
 ### Diagram
 
+![](./IMAGES/diagramlaserFluo.png)
+
 ### Theory of Operation
 
 Fluorescence is a photophysical process that describes the spontaneous emission of light shortly after an electron is excited to a higher-energy state.
 First, an electron is excited from the ground state to the higher-energy state  through absorption. After a short time (approximately 10⁻⁹ s), the excited electron returns to the ground state, releasing energy in the form of radiation. Due to the Stokes-shift within the S₁ state, the emitted light has a longer wavelength (λ₂) than the radiation used for excitation (λ₁).
 
 ![](./IMAGES/fluoresence_microscope.png)
-
 
 
 ### Theoretical Background: Fluorescence
@@ -50,7 +51,7 @@ First, an electron is excited from the ground state to the higher-energy state  
 
 ## Tutorial: LASER-Powered Fluorescence Microscope
 
-bild alle bauteile
+![](./IMAGES/allebauteile.png)
 
 ### Step 1: Assemble the Microscope
 
@@ -87,31 +88,32 @@ But of course if you got this box you want more, so now let's start buidling the
 
 1. **Prepare a 4x1 Baseplate**: After that, attach it to the beamsplitter cube.
 
-baseplate2
 
 2. **Position the laser**: Place the laser at the furthest point from the beamsplitter.
 
-Laser
+![](./IMAGES/laserdiode.png)
 
-3. **Collimate the Light**: The blue laser is a divergent light source because its a fiber laser, so use the 50mm biconvex lens to collimate the light.
+3. **Collimate the Light**: The blue laser is a divergent light source because its a fiber laser, so use the f'=50mm biconvex lens to collimate the light.
 
-thelescope
 
-5. **Focus the Light**: To focus the collimated light into the objective, insert an empty cube, followed by the biconvex lens. The space between the two lenses should be the sum of their focal lengths. The first lens has a focal length of 50 mm, and the second lens has 100 mm, so you need approximately 120mm between the two.
+5. **Focus the Light**: To focus the collimated light into the objective, insert an empty cube, followed by the f'=100mm biconvex lens.
 
-bild 100 linse
-
-bild linsenabstand
+![](./IMAGES/telescope.jpeg)
 
 6. **Insert the Beamsplitter**: Place the beamsplitter carefully. Make sure the filter sides are oriented correctly to avoid blocking the wrong wavelengths.
 
 ![](./IMAGES/beamsplitternah.png)
 
+![](./IMAGES/beamsplitterinsert.png)
+
 
 7. **Focus Light into the Infinity Objective**: to correctly focus the ligth into the infinity objective, position the biconvex lens and infinity objective with about 100mm of space between them.
 
-last messure 1
-last messure 2
+![](./IMAGES/lastmessurecrop.png)
+
+![](./IMAGES/lastmessure2crop.png)
+
+
 
 After completing these steps, you're done with the assembly, nice job!
 
@@ -126,9 +128,11 @@ If you need to change any of the cables or their position, always unplug the 12V
 
 - connect the LED-Matrix panel by plugging in the micro-USB and connect it to your PC.
 
-ledmatrixplug
+![](./IMAGES/ledmatrixplugcrop.png)
 
 - Connect the Z-stage to the `Z-Motor` on the main board. Ensure there's a motor driver.
+
+![](./IMAGES/zstageplug.png)
 
 - Connect the Laser to the Mainboard at `PMW1`and to `12V` Power:
   - the laser has two plugs: the one coming out of the big white cable goes to `12V` power supply
@@ -136,17 +140,13 @@ ledmatrixplug
   - the second plug goes to `PMW1`  
       - The **black** cable goes to `PMW1-GND`
 
-laser plug
-z-stage plug
+![](./IMAGES/laserplug.png)
 
 - Plug in the micro-USB at your ESP32 and connect to your PC.
 
-esp plug
-
-
 - Plug in the 12V power cable.
 
-power plug
+![](./IMAGES/espplug.png)
 
 
 ### 2.2: Flashing the ESP32 Firmware
@@ -232,9 +232,8 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
 ### 2.6: Setup and Use the Camera Software
 
-1. Connect the camera to your PC.
+1. Connect the camera via cable to your PC.
 
-camera plug
 
 2. For the installation process and useage of the software, follow these instructions: [Install MVS App for Camera Utilization](https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization).
 
@@ -253,8 +252,8 @@ camera plug
 5. The image you see might be blurry or, to be precise, out of focus. Use the PS4 controller to move the Z-stage up or down to get a sharp image.
 6. Now you can move the probe around and inspect it properly.
 
-cameraufnahme hellfeld
-
+![](./IMAGES/hellfeldpollen.png)
+Hellfeld-Bildaufnahme von Pollen
 
 ## Experiment 2: Fluorescence Microscopy
 
@@ -263,7 +262,9 @@ cameraufnahme hellfeld
 3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree in your camera programm, go to `Acquisition Control`, and increase the `Exposure time` to 300000 ms. You should now see the fluorescence image.
 Optional you can go to `Analog Control`, and increase the `Gain`.
 
-cameraaufnahme dunkelfeld
+![](./IMAGES/fluoreszenzfaser.png)
+Fluoreszenz-Bildaufnahme von Lens-tissue-Fasern (mit fluoreszentem Marker präperiert)
+
 
 ## Experiment 3: Smart Microscopy Using ImSwitch and openUC2
 

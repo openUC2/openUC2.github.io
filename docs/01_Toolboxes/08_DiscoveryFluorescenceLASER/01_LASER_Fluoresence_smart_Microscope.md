@@ -91,7 +91,7 @@ But of course if you got this box you want more, so now let's start buidling the
 
 2. **Position the laser**: Place the laser at the furthest point from the beamsplitter.
 
-![](./IMAGES/laserdiode.png)
+![](./IMAGES/Laserdiode.png)
 
 3. **Collimate the Light**: The blue laser is a divergent light source because its a fiber laser, so use the f'=50mm biconvex lens to collimate the light.
 

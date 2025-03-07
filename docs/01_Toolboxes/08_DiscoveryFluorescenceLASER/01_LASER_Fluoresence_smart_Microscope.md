@@ -28,13 +28,14 @@ In this workshop, we will guide you through assembling a laser-powered fluoresce
 
 ### Diagram
 
+![](./IMAGES/diagramlaserFluo.png)
+
 ### Theory of Operation
 
 Fluorescence is a photophysical process that describes the spontaneous emission of light shortly after an electron is excited to a higher-energy state.
 First, an electron is excited from the ground state to the higher-energy state  through absorption. After a short time (approximately 10⁻⁹ s), the excited electron returns to the ground state, releasing energy in the form of radiation. Due to the Stokes-shift within the S₁ state, the emitted light has a longer wavelength (λ₂) than the radiation used for excitation (λ₁).
 
 ![](./IMAGES/fluoresence_microscope.png)
-
 
 
 ### Theoretical Background: Fluorescence
@@ -49,7 +50,6 @@ First, an electron is excited from the ground state to the higher-energy state  
 
 
 ## Tutorial: LASER-Powered Fluorescence Microscope
-
 
 ![](./IMAGES/allebauteile.png)
 
@@ -83,31 +83,22 @@ This guide will walk you through building the microscope step by step. You can f
 Now, your bright-field microscope is ready!
 
 
-<!--# This is a comment
-
 #### 1.2: Assembling the Fluorescence Microscope
 But of course if you got this box you want more, so now let's start buidling the fluorescene Microscope
 
 1. **Prepare a 4x1 Baseplate**: After that, attach it to the beamsplitter cube.
 
-![](./IMAGES/baseplate2.png)
 
 2. **Position the laser**: Place the laser at the furthest point from the beamsplitter.
 
-![](./IMAGES/fluorLED.png)
+![](./IMAGES/Laserdiode.png)
 
-3. **Collimate the Light**: The blue laser is a divergent light source because its a fiber laser, so use the aspherical lens to collimate the light. Place the aspherical lens right after the LED with a gap no larger than 30mm.
+3. **Collimate the Light**: The blue laser is a divergent light source because its a fiber laser, so use the f'=50mm biconvex lens to collimate the light.
 
-![](./IMAGES/asphäreblende.png)
 
-![](./IMAGES/asphäreinsert.png)
+5. **Focus the Light**: To focus the collimated light into the objective, insert an empty cube, followed by the f'=100mm biconvex lens.
 
-5. **Focus the Light**: To focus the collimated light into the objective, insert an empty cube, followed by the biconvex lens. The space between the two lenses should be the sum of their focal lengths. The first lens has a focal length of 50 mm, and the second lens has 100 mm, so you need approximately 120mm between the two.
-
-![](./IMAGES/100lens.png)
-
-![](./IMAGES/lensdistance.png)
-
+![](./IMAGES/telescope.jpeg)
 
 6. **Insert the Beamsplitter**: Place the beamsplitter carefully. Make sure the filter sides are oriented correctly to avoid blocking the wrong wavelengths.
 
@@ -118,9 +109,9 @@ But of course if you got this box you want more, so now let's start buidling the
 
 7. **Focus Light into the Infinity Objective**: to correctly focus the ligth into the infinity objective, position the biconvex lens and infinity objective with about 100mm of space between them.
 
-![](./IMAGES/lastmesure.png)
+![](./IMAGES/lastmessurecrop.png)
 
-![](./IMAGES/lastmesure2.png)
+![](./IMAGES/lastmessure2crop.png)
 
 
 
@@ -137,27 +128,25 @@ If you need to change any of the cables or their position, always unplug the 12V
 
 - connect the LED-Matrix panel by plugging in the micro-USB and connect it to your PC.
 
-![](./IMAGES/ledmatrixplug.jpeg)
+![](./IMAGES/ledmatrixplugcrop.png)
 
 - Connect the Z-stage to the `Z-Motor` on the main board. Ensure there's a motor driver.
 
-- Connect the blue LED to the Mainboard at `PMW2`
-  - The **white** cable goes to `PMW2-GND`
+![](./IMAGES/zstageplug.png)
 
-![](./IMAGES/ledplug2.jpeg)
+- Connect the Laser to the Mainboard at `PMW1`and to `12V` Power:
+  - the laser has two plugs: the one coming out of the big white cable goes to `12V` power supply
+      - The **black** cable goes to `12V-GND`
+  - the second plug goes to `PMW1`  
+      - The **black** cable goes to `PMW1-GND`
 
-![](./IMAGES/zstageplug.jpeg)
-
+![](./IMAGES/laserplug.png)
 
 - Plug in the micro-USB at your ESP32 and connect to your PC.
 
-![](./IMAGES/espplug.jpeg)
-
-
 - Plug in the 12V power cable.
 
-![](./IMAGES/powerplug.jpeg)
-
+![](./IMAGES/espplug.png)
 
 
 ### 2.2: Flashing the ESP32 Firmware
@@ -214,7 +203,7 @@ Now you can test all components through these two tabs.
 ### 2.4: Testing in the Web Interface
 
 1. After completing the test, go back to the first tab to control the other components via buttons:
-   - `Laser 2(on)` and `Laser 2(off)` control the blue excitation LED.
+   - `Laser 1(on)` and `Laser 2(off)` control the laser diode.
    - `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
    - `LED (on)` and `LED (off)` control the LED-matrix panel (&#x1F4A1;you must change tabs to control it).
 
@@ -243,9 +232,8 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
 ### 2.6: Setup and Use the Camera Software
 
-1. Connect the camera to your PC.
+1. Connect the camera via cable to your PC.
 
-![](./IMAGES/cameraplug.jpeg)
 
 2. For the installation process and useage of the software, follow these instructions: [Install MVS App for Camera Utilization](https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization).
 
@@ -264,16 +252,27 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 5. The image you see might be blurry or, to be precise, out of focus. Use the PS4 controller to move the Z-stage up or down to get a sharp image.
 6. Now you can move the probe around and inspect it properly.
 
-![](./IMAGES/cameraaufnahme_hellfeld.png)
-
-
+![](./IMAGES/hellfeldpollen.png)
+Hellfeld-Bildaufnahme von Pollen
 
 ## Experiment 2: Fluorescence Microscopy
 
-1. To turn your microscope into a fluorescence microscope, turn the LED-matrix off and the blue LED on.
+1. To turn your microscope into a fluorescence microscope, turn the LED-matrix off and the laser on.
 2. The probe should still be in the probe insert, and the camera should still be on.
-3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree, go to `Acquisition Control`, and increase the `exposure time` to 300000ms. You should now see the fluorescence image.
+3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree in your camera programm, go to `Acquisition Control`, and increase the `Exposure time` to 300000 ms. You should now see the fluorescence image.
 Optional you can go to `Analog Control`, and increase the `Gain`.
 
-![](./IMAGES/cameraaufnahme_fluoreszenz.png)
--->
+![](./IMAGES/fluoreszenzfaser.png)
+Fluoreszenz-Bildaufnahme von Lens-tissue-Fasern (mit fluoreszentem Marker präperiert)
+
+
+## Experiment 3: Smart Microscopy Using ImSwitch and openUC2
+
+For this, please refer to the installation instructions [here](https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi#install-raspberry-pi--imswitch).
+
+On top of this, you can use the following `ImSwitchClient` template to remote control your microscopy using google colab or jupyter notebook. This gives some hints on the use of the API:
+
+<a target="_blank" href="https://colab.research.google.com/drive/1W3Jcw4gFn0jtQXa3_2aCtJYJglMNGkXr?usp=sharing">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+This makes use of the default URL hosted publicly on https://imswitch.openuc2.com/imswitch/index.html, but you can change this to the `PORT` (i.e. 8001) nad `URL` (e.g. the Raspberry Pi's IP address that runs ImSwitch in docker and is in the same network as you computer).

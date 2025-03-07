@@ -146,14 +146,8 @@ If you need to change any of the cables or their position, always unplug the 12V
 
 ![](./IMAGES/ledmatrixplug.jpeg)
 
-- Connect the Z-stage to the `Z-Motor` on the main board. Ensure there's a motor driver.
-
-- Connect the Laser to the Mainboard at `PMW1`and to `12V` Power:
-  - the laser has two plugs: the one coming out of the big white cable goes to `12V` power supply
-    - The **black** cable goes to `12V-GND`
-  - the second plug goes to `PMW1`  
-    - The **black** cable goes to `PMW1-GND`
-
+- Connect the blue LED to the Mainboard at `PMW2`
+  - The **white** cable goes to `PMW2-GND`
 
 ![](./IMAGES/ledplug2.jpeg)
 
@@ -225,7 +219,7 @@ Now you can test all components through these two tabs.
 ### 2.4: Testing in the Web Interface
 
 1. After completing the test, go back to the first tab to control the other components via buttons:
-   - `Laser 1(on)` and `Laser 2(off)` control the laser diode.
+   - `Laser 2(on)` and `Laser 2(off)` control the blue excitation LED.
    - `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
    - `LED (on)` and `LED (off)` control the LED-matrix panel (&#x1F4A1;you must change tabs to control it).
 
@@ -281,9 +275,9 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
 ## Experiment 2: Fluorescence Microscopy
 
-1. To turn your microscope into a fluorescence microscope, turn the LED-matrix off and the laser on.
+1. To turn your microscope into a fluorescence microscope, turn the LED-matrix off and the blue LED on.
 2. The probe should still be in the probe insert, and the camera should still be on.
-3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree in your camera programm, go to `Acquisition Control`, and increase the `Exposure time` to 300000 ms. You should now see the fluorescence image.
+3. At this point, you're likely seeing a black screen. This is because the fluorescence (the photons emitted by the probe) is much weaker than the bright LED-Array. To adjust, open the feature tree, go to `Acquisition Control`, and increase the `exposure time` to 300000ms. You should now see the fluorescence image.
 Optional you can go to `Analog Control`, and increase the `Gain`.
 
 ![](./IMAGES/cameraaufnahme_fluoreszenz.png)
@@ -297,5 +291,4 @@ On top of this, you can use the following `ImSwitchClient` template to remote co
 <a target="_blank" href="https://colab.research.google.com/drive/1W3Jcw4gFn0jtQXa3_2aCtJYJglMNGkXr?usp=sharing">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
-
-This makes use of the default URL hosted publicly on https://imswitch.openuc2.com/imswitch/index.html, but you can change this to the `PORT` (i.e. 8001) nad `URL` (e.g. the Raspberry Pi's IP address that runs ImSwitch in docker and is in the same network as you computer). 
+This makes use of the default URL hosted publicly on https://imswitch.openuc2.com/imswitch/index.html, but you can change this to the `PORT` (i.e. 8001) and `URL` (e.g. the Raspberry Pi's IP address that runs ImSwitch in docker and is in the same network as you computer).

@@ -145,19 +145,69 @@ bash ~/Desktop/update_docker_container.sh
 
 ### **Option 2: Using the Pre-Built Forklift Image**
 
-If you prefer a faster setup, you can use a **pre-built image** that includes all necessary software and drivers. This image was created with the [Forklift Project](https://github.com/forklift-run) and automates all setup steps.
+This is a compiled image for the Raspberry Pi 5 to deploy ImSwitch in Docker. 
 
-#### **How to Use the Pre-Built Image:**
-1. **Download the image** from our Google Drive link (external storage required due to large file size).
-2. **Extract the image** (~3GB as a ZIP, ~7GB uncompressed).
-3. **Flash it to an SD card** (using [Raspberry Pi Imager](https://www.raspberrypi.com/software/)).
+It is based on the following repository that builds the image file based on Raspberry Pi OS lite using GitHub Actions:
 
-![](./IMAGES/imswitchraspi/Forkliftbuilt.png)
+- [ImSwitch OS Repository](https://github.com/openuc2/imswitch-os/tree/main)
+- [OpenUC2 Pallet Repository](https://github.com/openUC2/pallet)
+
+The image is built from the following workflow:
+
+- [GitHub Actions Build](https://github.com/beniroquai/imswitch-os/actions/runs/13718023729)
+
+#### **Requirements**
+- microSD Card with >32GB
+- Raspberry Pi 4 or preferably Pi 5 (8GB RAM recommended)
+- microSD Card reader
+
+If you prefer a faster setup, you can use this **pre-built image** that includes all necessary software and drivers. This image was created with the [Forklift Project](https://github.com/forklift-run) and automates all setup steps.
+
+### **How to Use the Pre-Built Image:**
+1. **Download the image** from Zenodo: [Zenodo Image Link](https://zenodo.org/uploads/14988987)
+2. **Extract the image** (~3GB as a ZIP, ~11GB uncompressed).
+3. **Flash it to an SD card** using [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
+
+#### **Flashing the Image**
+Use the Raspberry Pi Imager to flash the image onto an SD card, then insert the SD card into the Raspberry Pi and boot it.
+
+![](./IMAGES/imswitchraspi/RaspiOS_2.png)
+
+1. Select your Raspberry Pi model.
+2. Choose the downloaded image file as the OS type.
+3. Select the SD card as the target.
+4. Do **not** specify additional user-specific settings.
+
+#### **Default Credentials**
+- **SSID:** `openUC2-unknown`
+- **WiFi Password:** `copepode`
+- **Username:** `pi`
+- **User Password:** `youseetoo`
 
 > **Note:** The Forklift image is updated automatically and ensures all software is correctly configured.
 
 For a detailed breakdown of the image creation process, see:
-[ImSwitch OS GitHub](https://github.com/beniroquai/imswitch-os/blob/main/setup.sh#L60)
+[ImSwitch OS GitHub Setup Script](https://github.com/beniroquai/imswitch-os/blob/main/setup.sh#L60)
+
+### **Connecting to the Raspberry Pi**
+1. Wait until the Raspberry Pi boots and you see the SSID `openUC2-unknown`.
+2. Connect to the SSID and navigate to `http://192.168.4.1:9090` to access Cockpit.
+
+![](./IMAGES/ImSwitch-OS-1.png)
+
+- **Cockpit Login Credentials:**
+  - Username: `pi`
+  - Password: `youseetoo`
+
+3. Connect to ImSwitch by navigating to `https://192.168.4.1:8001/imswitch/index.html`. Accept the HTTPS warning (the certificate is self-signed for now).
+
+![](./IMAGES/ImSwitch-OS-3.png)
+
+### **Configuring ImSwitch**
+The default configuration is in **Demo Mode**. For hardware-specific configurations, refer to the [ImSwitch Configuration Guide](https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi#modifying-imswitch-configuration).
+
+
+
 
 ---
 

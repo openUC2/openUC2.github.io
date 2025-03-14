@@ -191,6 +191,19 @@ The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
    ![](./IMAGES/LED_install.png)
 
 
+**TROUBLE SHOOT: The firmware doesn't flash**
+
+Sometimes the ESP32(s3) doesn't enter the bootloader. Then you have to first erase the flash and then flash the firmware. For this go here and follow the following steps: https://espressif.github.io/esptool-js/
+
+- connect to the board
+- erase flash
+- wait
+- refresh the page and free the serial connection
+
+
+![](./IMAGES/EraseFlash.gif)
+
+
 ### 2.3: Connecting to the Web Interface
 
 1. After flashing the firmware, go to the testing section on the same website.

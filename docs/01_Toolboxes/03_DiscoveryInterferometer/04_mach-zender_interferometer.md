@@ -5,6 +5,15 @@ title: openUC2 Mach-Zender Interferometer
 
 ## Tutorial: Mach-Zender Interferometer
 
+
+### Setup Arrangement for the Mach Zehnder Interferometer
+
+![](./IMAGES/MachZhender.png)
+
+### Setup using an objective lens for microscopic imaging
+
+![](./IMAGES/OffAxisHolo.png)
+
 ### Materials needed:
 - Laser diode
 - Hikrobot Camera (MV-CE060-10UC) with USB cable ([Hikrobot Camera Software installation](Camera_Software_tutorial.md)).
@@ -78,7 +87,11 @@ Process the data. Phase unwrapping possible.
 
 ![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image99.png)
 
+
+
+
 ### First Tests with Modifications to the Original Setup
+
 
 
 Using Lei code, the need of a linear stage for the sample was identified. Adjusting the objective and tube lens enhances the interference, making it crucial to use the ImSwitch interface to see the FFT in real time and optimize. The final goal is to move the position of the first order interference to use Lei algorithm (or some Phase unwrapping algorithm) to retrieve the Phase. To achieve this, two images need to be acquired: a sample image and a background image (without a cover slide or a slide region with no specimen).

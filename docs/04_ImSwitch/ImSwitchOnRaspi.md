@@ -163,12 +163,12 @@ The image is built from the following workflow:
 
 If you prefer a faster setup, you can use this **pre-built image** that includes all necessary software and drivers. This image was created with the [Forklift Project](https://github.com/forklift-run) and automates all setup steps.
 
-### **How to Use the Pre-Built Image:**
+#### **How to Use the Pre-Built Image:**
 1. **Download the image** from Zenodo: [Zenodo Image Link](https://zenodo.org/uploads/14988987)
 2. **Extract the image** (~3GB as a ZIP, ~11GB uncompressed).
 3. **Flash it to an SD card** using [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 
-#### **Flashing the Image**
+##### **Flashing the Image**
 Use the Raspberry Pi Imager to flash the image onto an SD card, then insert the SD card into the Raspberry Pi and boot it.
 
 ![](./IMAGES/imswitchraspi/RaspiOS_2.png)
@@ -178,7 +178,7 @@ Use the Raspberry Pi Imager to flash the image onto an SD card, then insert the 
 3. Select the SD card as the target.
 4. Do **not** specify additional user-specific settings.
 
-#### **Default Credentials**
+##### **Default Credentials**
 - **SSID:** `openUC2-unknown`
 - **WiFi Password:** `copepode`
 - **Username:** `pi`
@@ -189,7 +189,7 @@ Use the Raspberry Pi Imager to flash the image onto an SD card, then insert the 
 For a detailed breakdown of the image creation process, see:
 [ImSwitch OS GitHub Setup Script](https://github.com/beniroquai/imswitch-os/blob/main/setup.sh#L60)
 
-### **Connecting to the Raspberry Pi**
+#### **Connecting to the Raspberry Pi**
 1. Wait until the Raspberry Pi boots and you see the SSID `openUC2-unknown`.
 2. Connect to the SSID and navigate to `http://192.168.4.1:9090` to access Cockpit.
 
@@ -203,11 +203,179 @@ For a detailed breakdown of the image creation process, see:
 
 ![](./IMAGES/ImSwitch-OS-3.png)
 
-### **Configuring ImSwitch**
+#### Configuring ImSwitch
 The default configuration is in **Demo Mode**. For hardware-specific configurations, refer to the [ImSwitch Configuration Guide](https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi#modifying-imswitch-configuration).
 
 
+##### Configure ImSwitch using the Cockpit
 
+Once you are connected to the Raspberry Pi, you can go to http://192.168.4.1:9090 and move over to the terminal. This is the command line interface that does the same thing as the SSH connection you would otherwise do via e.g. `ssh pi@192.168.4.1` (with `youseetoo`) as a password. Below you will find the commands that are helpful to stop/relaunch docker and add configurations manually:
+
+
+![](./IMAGES/configurecockpit/Cockpit_1.png)
+
+![](./IMAGES/configurecockpit/Cockpit_2.png)
+
+**Stop ImSwitch running in Docker**
+
+```bash
+pi@odocker ps # find out the  hash of the currently running docker container
+docker stop *HASH* # stop container
+```
+
+![](./IMAGES/configurecockpit/Cockpit_10.png)
+
+**Update Docker manually**
+
+```bash
+pi@openuc2-epfl-1:~ $ ~/Desktop/update_docker_container.sh
+```
+
+**Start Docker Container Manually**
+
+
+```bash
+pi@openuc2-epfl-1:~ $ ~/Desktop/launch_docker_container.sh
+```
+
+
+**Edit ImSwitch configuration files**
+
+More information can be found here: [ImSwitch Configuration Guide](https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi#modifying-imswitch-configuration).
+
+Edit the file that is pointing to the currently active configuration file:
+```bash
+pi@openuc2-epfl-nano ImSwitchConfig/imcontrol_setups/epfl_hik.json # => this is the active configuration
+```
+
+Edit the configuration file that you would like to use with ImSwitch (e.g. cameras, stages, controllers...)
+
+```bash
+nano ImSwitchConfig/config/imcontrol_options.json  # => name for the active configuration
+```
+
+Enter content by copy pasting that into the files when using the nano editor (e.g. HIK camera with UC2 electronics):
+
+```json
+{
+    "positioners": {
+        "ESP32Stage": {
+          "managerName": "ESP32StageManager",
+          "managerProperties": {
+            "rs232device": "ESP32",
+            "isEnable": false,
+            "enableauto": true,
+            "stepsizeZ": 0.3125,
+            "stepsizeA": 0.3125,
+            "initialSpeed": {"X": 15000, "Y":  15000,"Z": 15000, "A": 15000}
+          },
+          "axes": [
+            "A",
+            "X",
+            "Y",
+            "Z"
+          ],
+          "forPositioning": true
+        }
+      },
+    "rs232devices": {
+    "ESP32": {
+      "managerName": "ESP32Manager",
+      "managerProperties": {
+        "host_": "192.168.43.129",
+        "serialport": "/dev/cu.SLAB_USBtoUART",
+        "baudrate":115200,
+        "debug":1
+      }
+    }
+  },
+  "lasers": {
+    "LED": {
+      "analogChannel": null,
+      "digitalLine": null,
+      "managerName": "ESP32LEDLaserManager",
+      "managerProperties": {
+        "rs232device": "ESP32",
+        "channel_index": 1
+      },
+      "wavelength": 635,
+      "valueRangeMin": 0,
+      "valueRangeMax": 1023
+    }
+  },
+  "detectors": {
+    "WidefieldCamera": {
+        "analogChannel": null,
+        "digitalLine": null,
+        "managerName": "HikCamManager",
+        "managerProperties": {
+            "isRGB": 0,
+            "cameraListIndex": 0,
+            "cameraEffPixelsize": 0.2257,
+            "hikcam": {
+                "exposure": 0,
+                "gain": 0,
+                "blacklevel": 100,
+                "image_width": 1000,
+                "image_height": 1000
+            }
+        },
+        "forAcquisition": true,
+        "forFocusLock": true
+    }
+    },
+  "rois": {
+    "Full chip": {
+      "x": 600,
+      "y": 600,
+      "w": 1200,
+      "h": 1200
+    }
+  },
+  "autofocus": {
+    "camera": "WidefieldCamera",
+    "positioner": "ESP32Stage",
+    "updateFreq": 10,
+    "frameCropx": 780,
+    "frameCropy": 400,
+    "frameCropw": 500,
+    "frameCroph": 100
+  },
+  "availableWidgets": [
+    "Settings",
+    "View",
+    "Recording",
+    "Image",
+    "Laser",
+    "Positioner",
+    "UC2Config",
+    "FlowStop"
+    ],
+  "nonAvailableWidgets":[
+    "UC2Config",
+    "LEDMatrix",
+    "Hypha",
+    "FlowStop",
+    "Hypha",
+    "FocusLock",
+    "HistoScan",
+    "STORMRecon",
+    "DPC",
+    "ImSwitchServer",
+    "PixelCalibration",
+    "FocusLock"]
+}
+```
+
+#### Alternatively edit the config via UC2-Menu
+
+![](./IMAGES/configurecockpit/Cockpit_11.png)
+
+Overwrite and reboot. Wait for some time, eventually reconnect wifi and refresh the page. Done :)
+
+#### Troubleshooting pallet configurations
+
+If you are facing a problem with a wrong docker configuration (i.e. Docker Compose File is not correct), you can do a temporarily fix by editing the Docker compose file at `~/.local/share/forklift/pallet/packages/imswitch/compose.yml`  on the Raspberry Pi, and then run `forklift pallet stage --no-cache-img` and reboot. The location `~/.local/share/forklift/pallet` is in fact the git repo of the https://github.com/openUC2/pallet repo.
 
 ---
 

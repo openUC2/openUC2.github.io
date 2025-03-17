@@ -67,7 +67,8 @@ This guide will walk you through building the microscope step by step. You can f
 ![](./IMAGES/ledmatrix.png)
 
 ![](./IMAGES/probeinsert.png)
-3. **Install the movable Infinity-Objective**: Drill the objective into the attachment of the electronic Z-stage. Because in this Assembly the Z-stage lays flat on the ground choose the insert thats closest to the Z-stage. As shown below the lettering "stage" is placed upward. Innsert the technical pins on the long sides to attach the baseplates.
+3. **Install the movable Infinity-Objective**: Drill the objective into the objective mount of the electronic Z-stage. As you can see, there are two RMS-inserts for the Objective, how to choose the right one? In this assembly, because the Z-stage lays flat on the ground choose the insert thats closest to the Z-stage (50mm distance). As shown below the lettering "stage" is placed upward. The second option on the other side (55mm distance) you need when you built the microscope not flat laying, but standing on the ground. Why? Because then there will be an extra puzzle piece between the electronic z-stage and the objektive-mount, so to make shure the obejctive is still in fokus you need 5mm more distance to accomodate für the puzzle piece.
+Lastly insert the technical pins on the long sides to attach the baseplates.
 ![](./IMAGES/zstage.png)
 
 4. **Position the beamsplitter cube**: Insert the beamsplitter cube (you can leave it empty for now, it will be needed when assembling the fluorescence microscope).

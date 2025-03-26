@@ -113,3 +113,16 @@ The HAT+ hosts an ESP32 that converts UART/Serial into CAN Control commands for 
 ## HAT+ on Jetson
 
 ![](./IMAGES/HAT+Jetson.jpeg)
+
+
+## Correct Termination of Boards
+
+
+In order to enable the CAN Bus, you need to shortcut the audiolines of the audio jack (left/right):
+![](./IMAGES/CANEmergency.png)
+
+In order to have the correct 50 Ohm termination resistor and indication if the bus is running, you have to add solder pads here:
+![](./IMAGES/CANIndicator.png)
+
+The remote solder jumper for CAN 50 Ohm termination can be done using this pad:
+![](./IMAGES/CANMotorTermination.png)

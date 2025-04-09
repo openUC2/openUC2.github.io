@@ -13,10 +13,10 @@ In this workshop, we will guide you through assembling a light sheet fluorescenc
 
 1. laser diode 488 nm
 2. biconvex lens f'=25 mm
-3. Zylinder lens f'=xxx mm
+3. Cylinder lens f'=xxx mm
 4. Mirror
-3. LED-Sattelite-Matrix (enables bright-field microscopy for allinging)
-4. Electronic Z-stage (for camera fokus)
+3. LED-Satellite-Matrix (enables bright-field microscopy for aligning)
+4. Electronic Z-stage (for camera focus)
 4. Electronic XYZ-Stage (for moving the Probe)
 5. Mainboard with UBC-mini cable
 6. PS4 Controller (for controlling the Z-stage)
@@ -64,44 +64,66 @@ First, an electron is excited from the ground state to the higher-energy state  
 
 ## Step 1: Assemble the Microscope
 
-This guide will walk you through building the microscope step by step. You can follow the assembly process according to the functional groups or refer to the diagram above.
+This guide will walk you through the microscope assembly step by step. You can follow the process according to the functional modules or refer to the diagram above for orientation.
 
-1. **Place the laser**: Connect the fiber end to the fiber coupler insert and screw it down.
+1. **Install the Laser Source**  
+   Connect the fiber-coupled laser to the fiber coupler insert and securely fasten it.
 
-2. **Add the biconvex lens**:  
-to collimate the light, place the f'=25mm lens behind the laser. Check if you have a something placed as a beam trap, so you don't send light across the whole room, than check if your Laser is collimated before you proceed, the focus diameter shouldn't change no matter where you measure it.
+2. **Insert the Collimating Lens**  
+   To collimate the laser beam, insert a biconvex lens with a focal length of f' = 25 mm directly behind the fiber output, within the same optical cube.
 
-3. **leave Space**: for the cylindrical lens. You want to insert it later after you aligned the beam.
+3. **Leave Space for the Cylindrical Lens**  
+   Do not insert the cylindrical lens yet. Leave physical space for it at the appropriate position. It will be inserted after initial beam alignment (see step 3).
 
-4. **place the Mirror**: to direct the beam around the corner. Don't forget to replace your beam trap, before turning the laser back on!
+4. **Place the 45° Mirror**  
+   Insert a dielectric mirror at a 45° angle to redirect the beam around a corner, as needed for the optical path.
 
-5. **assemble the 4x Objective**: take the 4x objective and unscrew it like you see in the picture. this is needed to get the objective focus plane can get close enough to the sample to align everything correctly. then screw it on the RMS-Insert.
+5. **Prepare and Mount the 4× Objective**  
+   Disassemble the 4× objective lens as shown in the reference image. This modification allows the focal plane to be positioned close enough to the sample for proper alignment. Mount the modified objective onto the RMS insert.
 
-6. **place the probe chamber**: and fill it with water.
+6. **Position the sample aquarium chamber**  
+   Place the sample aquarium chamber on the stage and fill it with water or your desired immersion medium.
 
-7. **attach the electronic z-stage**: place the stage as you can see in the picture with the 10x infintiy objective screwed on.
+7. **Mount the electronic Z-stage**  
+   Install the motorized Z-stage. Attach the **10× infinity-corrected objective** to the stage. This objective is used for imaging.
 
-8. **add the emission filter**: if the emission filter is preassembled go to the next step. If not and you don't know were to find the emission filter, it's in the beamsplitter cube insert from the FluoBox, the one on the back side (on the diagonal side is a dirchoric mirror). deassamble the beamsplitter and put the emission filter into it's new insert.
+8. **Install the emission filter**  
+   - If your emission filter is preassembled, proceed to the next step.  
+   - Otherwise, locate the filter inside the **beamsplitter cube insert** from the FluoBox. It’s on the rear-facing side; the diagonal face holds the dichroic mirror.  Disassemble the beamsplitter to retrieve the emission filter and insert it into its designated mount. Secure it with the white retaining ring.
 
-9. **place the camera unit**: together with it's tube lens, place the camera behind the emission filter.
 
-10. **add the LED-Sattelite-Matrix**: in line with the camera path. The Matrix is not a part if the light-sheet-microscope but it is usefull for alligning the microscope in Step 3.
+9. **Attach the Camera Module**  
+   Align the camera unit and its corresponding **tube lens** directly behind the emission filter to ensure proper image formation.
 
-11. **leave Space**: for the XYZ-Stage. for now you do not need it, you can attach it now or after you completed the allignment. Leaving it for now allows you more space to work with while alliging the microscope.
+10. **Add the LED Satellite Matrix (Optional)**  
+    Position the LED matrix in the camera path. While not part of the core light-sheet setup, it is useful for illumination and alignment purposes in Step 3.
 
-12. **connect everything**: with puzzle pieces, but make sure to leave space für the cylindrical lens so you can easely place it in your microscope.
+11. **Leave Space for the XYZ Stage**  
+    The XYZ stage is not required for initial alignment. You may leave it out during this step to increase working space and simplify alignment. Install it later, after completing optical alignment.
+
+12. **Connect and Secure Components**  
+    Use the puzzle connectors to link the modules.  
+     **Important:** Make sure you don't put puzzle pieces on the cylindrical lens and mirror yet — leave them easily removable for adjustments during Step 3. Only secure all components once alignment is complete.
 
 ## Step 2: Electronics
+
+**⚠️ ATTENTION!**
+
+NEVER LOOK DIRECTLY INTO THE LASER! EYE WILL BE DAMAGED DIRECTLY
+
+NEVER SWITCH ON THE LASER WITHOUT INTENDED USE
+
+BEAM HAS TO GO AWAY FROM ONESELF - ALWAYS!
 
 ### 2.1: Plug in the Electronics as Shown Below
 
 **⚠️ Caution!**
 If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!
-:::
+
 
 - connect the LED-Matrix to the Mainboard at `LED1`
 
-- Connect the Z-stage to the postion `Z-Motor` on the main board. Ensure there's a motor driver.
+- Connect the Z-stage to the position `Z-Motor` on the main board. Ensure there's a motor driver.
 
 - Connect the 3 Motors of the XYZ-Stage to the respective positions `A-Motor`,  `X-Motor`,  `Y-Motor`. Ensure there are motor drivers as well.
 
@@ -134,9 +156,6 @@ The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
 
 4. Wait until the firmware has been successfully flashed.
 
-5. &#x1F4A1; **flash your LED-matrix**. Repeat the same steps, but this time for the LED-matrix
-   ![](./IMAGES/LED_install.png)
-
 
 ### 2.3: Connecting to the Web Interface
 
@@ -157,9 +176,6 @@ The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
 This command will move the Z-axis motor by -1000 steps (1 full rotation) at a speed of 1000 steps per second. Each step corresponds to a movement of 300nm when using microstepping. You’ll observe the motor rotating, adjusting the focus.
 
 **Note:** Ensure that the command string has no line breaks.
-
-4. &#x1F4A1;**Connect your LED-matrix as well**. Duplicate the current tab and connect the LED-matrix again via the button. Choose the correct COM Port.  
-Now you can test all components through these two tabs.
 
 
 
@@ -190,7 +206,7 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
   Once paired, you can control the motorized stage using the analog sticks and switch the LED-matrix on/off using the buttons:
 
   - **Move the Z-stage**: Use the **left analog stick** to move the stage up and down (adjust focus).
-  - **Control the LEDs**: Use the **controller buttons** to turn the LED-matrix on/off and cycle through different illumination patterns.
+  - **Control the LED**: Use the **controller buttons** to turn the LED-matrix on/off and cycle through different illumination patterns.
 
 
 
@@ -200,44 +216,97 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
 2. For the installation process and useage of the software, follow these instructions: [Install MVS App for Camera Utilization](https://openuc2.github.io/docs/Toolboxes/DiscoveryInterferometer/SoftwareTutorial/#install-mvs-app-for-camera-utilization).
 
-3. it's unlikley you will see anything and that's fine, because now let's got to step 3..
+
+## Step 3: Aligning the Microscope
+
+Refer again to the alignment diagram that shows how the light sheet should intersect the detection path. The **focal point of the light sheet (its thinnest part)** must coincide precisely with the **optical axis of the detection optics**.
+
+Following these steps carefully will ensure that the light sheet is centered within the field of view (FOV) and in focus with the detection objective. This alignment is crucial for obtaining high-resolution and reliable imaging results with the OpenUC2 light-sheet microscope.
+
+👉 For additional tips and tricks, see:  
+- [Light Sheet Sample Guide](https://openuc2.github.io/docs/Investigator/Lightsheet/LightSheet%20Sample)  
+- [Video of an older light-sheet version](https://openuc2.github.io/docs/Investigator/Lightsheet/LightsheetCalibration)
+
+---
+
+1. **Collimate the Laser**  
+   Remove the mirror temporarily and collimate the laser by adjusting the distance between the laser diode and the f' = 25 mm biconvex lens. The beam diameter should remain consistent regardless of viewing distance—this indicates good collimation.
+
+2. **Insert the Mirror**  
+   Guide the collimated beam into the 4× illumination objective by inserting the 45° mirror back into the microscope.
+
+3. **Prepare the Probe Chamber**  
+   Fill the chamber with water. To make the solution fluorescent, briefly dip the tip of a text marker into the water. This allows you to visualize the light sheet.
+
+4. **Align the 4× Illumination Objective**  
+   Turn on the laser and adjust the 4× objective so that the focus is on the optical axis of the detection path. The beam spot should appear as a small, focused dot.  For this it's easiest to use the camera:
+     - Launch the software and **remove the emission filter**.
+     - Turn on the **LED Satellite Matrix** to verify the camera is working (the screen should be bright white), then turn it off again.
+     - Turn on the laser at full power.
+     - Set the exposure time to **50,000–90,000 ms**, or higher if necessary.
+     - You should now see a **sandglass-shaped beam**. Adjust the 4× objective to move the focal point (thinnest point) into the center.
+     - Use the **Z-stage** to fine-tune the camera focus, making the beam waist as thin and sharp as possible.
+
+     it should look something like this:
 
 
-## Step 3: allinging the microscope
-This diagram shows hwo the light sheet needs to be aligned. The focal  point of the light sheet (thinnest part of it) has to be on the optial axis of the detection optic.
-Following these steps meticulously will ensure that the light-sheet is accurately aligned both within the FOV's center and in-focus with the detection objective lens. This alignment process is essential for obtaining reliable and high-quality imaging results with the openUC2 light-sheet microscope.
+5. **Insert the Emission Filter**  
+   Reinsert the emission filter. This will block the excitation light and allow only fluorescence to pass through to the camera. readjust the exposure time and the gain accordingly.
 
-for Tips and tricks look here: https://openuc2.github.io/docs/Investigator/Lightsheet/LightSheet%20Sample
+   Realign both the imaging and the dedection focus as needed. It then should look like this.
 
-0. **Fill the probe chamber with water**: Then, to make the water fluoresent, dip the tip of a text marker into the water.
+6. **Insert the Cylindrical Lens**  
+      Insert the cylindrical lens to generate the light sheet. It should be positioned so that its focal plane aligns with the **back focal plane of the 4× objective (NA 0.1)**.  
+      - For proper alignment, the **focal length of the cylindrical lens should match** the effective focal length of the 4× objective. Adjust until the sheet is as thin as possible (remove emission filter if needed).
+      - After re-inserting the lens, recheck the alignment, as minor variations can occur during reassembly.
 
-1. **align the 4x Objective:**: now you can turn the laser on and allign the Objective so the focus is on the optical axis of the detection optics, the dot should be as tiny as possible. How to know where's the middle? for better visualization of the detection optical axis you can use a ruler or pen.
+      > ℹ️ Once aligned, the cylindrical lens usually does not need to be recalibrated unless components are moved or replaced.
+---
+  7. **Final Check**
+
+   - If alignment is correct and you **temporarily remove the emission filter**, you should see:
+     - A fully illuminated camera image.
+     - The light sheet filling the entire field of view.
+
+   - If the light sheet appears **too high or too low** like this, check:
+     - Whether the **10× detection objective** is correctly positioned on the optical axis (e.g., loose screws can shift alignment).
+     - Whether all modules and puzzle pieces are properly secured.
+
+  - You should now see **fluorescent particles** in the water as bright dots. Use the **Z-stage** to focus on the plane containing those particles.
+
+  - **Reinsert the Emission Filter**  
+      You should now see a dark image with only **a few bright fluorescent dots**. These are the particles in focus. Adjust exposure time and gain as necessary.
+
+  - **Last step**: Remove the fluorescent water and thoroughly clean the probe aquarium chamber.  
+    - First, use a pipette to extract the water.  
+    - Then, use lint-free tissue paper along with a pointed tool like tweezers or a small screwdriver to gently clean the chamber windows.  
+  This step is **essential**, as fluorescent particles tend to stick to the glass surfaces, causing **unwanted scattering** in future experiments.
 
 
-2. **insert the cylindrical lens**: to form the light sheet. The cylindrical lens should focuses the primary light-sheet in the back focal plane of the illumination objective (4x, 0.1 NA). You should now see the light sheet in the water. As you are looking on it from the top, you'll notice that the light sheet is thinnest in the middle. This is the focus point that you aligned before.
-for aligning your cylindrical lens its focal length should match the focal length of the 4x objective. For that try to get your light sheet as thin as possible, then the two focal lengths match.
 
-Once the cylindrical lens is back in, you can readjust the light-sheet wr.t. to the focus plane of the objective lens since they may be a slight variation after reassembly.
+## Experiment 1: Imaging with the light-sheet microscope
 
-Notably, this step doesn't need to be repeated each time the light-sheet is activated. The position of the cylindrical lens is relatively stable and doesn't require frequent recalibration.
+1. insert a Probe into the Sample Holder of the XYZ-Stage.
 
-3. **turn on the camera**:
-Check if its working with the LED (camera should see something)
+  sample preparation: https://openuc2.github.io/docs/Investigator/Lightsheet/LightSheet%20Sample/#sample-preparation-%C3%A1-la-agarose-in-syringe-method
 
-Exposure time 500.000 ms for laser
-Gain to 20.000
-remove filter
-stir up the fluoresent particals in the water - you should see big dots
-make the dots as small as possible --> move Z-Stage so that the light sheet is inside the 10x objectives depth of field.
---> you should see a line --> line shall not be blurred but sharp (perfect focus)
+2. insert clear water into the sample aqarium chamber
 
-https://openuc2.github.io/docs/Investigator/Lightsheet/LightsheetCalibration
+3. insert the XYZ-Stage on the board and connect the motors to the main board (see Step 2, don't forget to plug the 12V cable before doing so)
 
-## Experiment 1: insert Probe, scroll through it via controller
+4. position the Probe in the light sheet.
 
-sample preparation: https://openuc2.github.io/docs/Investigator/Lightsheet/LightSheet%20Sample/#sample-preparation-%C3%A1-la-agarose-in-syringe-method
+5. adjust the acquisition time and gain accordingly
 
-## Experiment 2: Smart Microscopy Using ImSwitch and openUC2
+6. by moving the X and Y axis you position the probe
+7. by moving the A axis you can "scroll" through your probe
+
+  after you finished your experiemnts, don't forget to clean the sample chamber.
+
+
+## Experiment 2: Generating Sacks Using ImSwitch (Rasperry Pi)
+
+### Step 1: Installation process
 
 For this, please refer to the installation instructions [here](https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi#install-raspberry-pi--imswitch).
 
@@ -247,3 +316,16 @@ On top of this, you can use the following `ImSwitchClient` template to remote co
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 This makes use of the default URL hosted publicly on https://imswitch.openuc2.com/imswitch/index.html, but you can change this to the `PORT` (i.e. 8001) nad `URL` (e.g. the Raspberry Pi's IP address that runs ImSwitch in docker and is in the same network as you computer).
+
+### Step 2: Imaging and generating Stacks:
+
+## ImSwitch data acquisition and Reconstruction
+
+We assume the system is running and you were able to install ImSwitch on your computer. The configuration `JSON`file that describes the light-sheet system can be found further down this document. A tutorial on how to install our ImSwitch Version (SRC: https://github.com/openUC2/ImSwitch/) can be either found in the imSwitch repository or in the ImSwitch section in this wiki.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N00-kKrRXX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+#### ImSwitch integration into 3D imaging including 3D volumetric rendering
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EadREZTqJFo?si=IXIoxpxwjvSjv5M_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -11,9 +11,9 @@ In this workshop, we will guide you through assembling a light sheet fluorescenc
 
 ### Materials Needed
 
-1. laser diode 488 nm
-2. biconvex lens f'=25 mm
-3. Cylinder lens f'=xxx mm
+1. Laser diode 488 nm
+2. Biconvex lens f'=25 mm
+3. Cylindrical lens f'=100 mm
 4. Mirror
 3. LED-Satellite-Matrix (enables bright-field microscopy for aligning)
 4. Electronic Z-stage (for camera focus)
@@ -29,14 +29,15 @@ In this workshop, we will guide you through assembling a light sheet fluorescenc
 12. Cubes and base plates
 
 
-
 ### Diagram
 
-![](./IMAGES/diagramlaserFluo.png)
+![](./IMAGES/lightsheetdiagram.png)
 
 ### Theory of Operation
 
 Light-sheet microscopy is based on the principle of fluorescence and like confocal microscopy, it is a technique that creates optical sections that can then be reconstructed into a coherent image. It differs from traditional microscopy technologies in its special type of illumination and detection, which enables gentler and faster acquisition of 3D images, making it particularly suitable for the three-dimensional visualization of biological samples.
+
+![](./IMAGES/lightsheetSchemaENG.png)
 
 To illuminate the sample, a thin light sheet is used, which is guided through the sample perpendicular to the optical axis of the detection optics. This enables layer-by-layer illumination within the depth of field ∆d of the objective, whereby only the focal plane of the sample is illuminated, while all other planes remain in darkness.
 
@@ -56,11 +57,9 @@ First, an electron is excited from the ground state to the higher-energy state  
 ![](./IMAGES/fluoreszenzshema.png)
 
 
-
-
 ## Tutorial: Light-sheet fluorescence microscope
 
-![](./IMAGES/allebauteile.png)
+![](./IMAGES/lightsheet_10_04_2025_02.jpg)
 
 ## Step 1: Assemble the Microscope
 
@@ -72,38 +71,77 @@ This guide will walk you through the microscope assembly step by step. You can f
 2. **Insert the Collimating Lens**  
    To collimate the laser beam, insert a biconvex lens with a focal length of f' = 25 mm directly behind the fiber output, within the same optical cube.
 
+   ![](./IMAGES/lightsheet_10_04_2025_01.jpg)
+
+   ![](./IMAGES/lightsheet_10_04_2025_03.jpg)
+
+
+
 3. **Leave Space for the Cylindrical Lens**  
    Do not insert the cylindrical lens yet. Leave physical space for it at the appropriate position. It will be inserted after initial beam alignment (see step 3).
 
+   ![](./IMAGES/lightsheet_10_04_2025_04.jpg)
+
+
+
+
 4. **Place the 45° Mirror**  
    Insert a dielectric mirror at a 45° angle to redirect the beam around a corner, as needed for the optical path.
+   ![](./IMAGES/lightsheet_10_04_2025_05.jpg)
 
 5. **Prepare and Mount the 4× Objective**  
    Disassemble the 4× objective lens as shown in the reference image. This modification allows the focal plane to be positioned close enough to the sample for proper alignment. Mount the modified objective onto the RMS insert.
 
+   ![](./IMAGES/lightsheet_10_04_2025_06.jpg)
+
 6. **Position the sample aquarium chamber**  
    Place the sample aquarium chamber on the stage and fill it with water or your desired immersion medium.
 
-7. **Mount the electronic Z-stage**  
+   ![](./IMAGES/lightsheet_10_04_2025_07.jpg)
+
+   ![](./IMAGES/lightsheet_10_04_2025_08.jpg)
+
+7. **Add the LED Satellite Matrix (Optional)**  
+     Position the LED matrix in the camera path. While not part of the core light-sheet setup, it is useful for illumination and alignment purposes in Step 3.
+
+     ![](./IMAGES/lightsheet_10_04_2025_09.jpg)
+
+     ![](./IMAGES/lightsheet_10_04_2025_10.jpg)
+
+
+
+8. **Mount the electronic Z-stage**  
    Install the motorized Z-stage. Attach the **10× infinity-corrected objective** to the stage. This objective is used for imaging.
 
-8. **Install the emission filter**  
+   ![](./IMAGES/lightsheet_10_04_2025_11.jpg)
+
+
+
+9. **Install the emission filter**  
    - If your emission filter is preassembled, proceed to the next step.  
    - Otherwise, locate the filter inside the **beamsplitter cube insert** from the FluoBox. It’s on the rear-facing side; the diagonal face holds the dichroic mirror.  Disassemble the beamsplitter to retrieve the emission filter and insert it into its designated mount. Secure it with the white retaining ring.
 
+   ![](./IMAGES/lightsheet_10_04_2025_12.jpg)
 
-9. **Attach the Camera Module**  
+
+
+10. **Attach the Camera Module**  
    Align the camera unit and its corresponding **tube lens** directly behind the emission filter to ensure proper image formation.
 
-10. **Add the LED Satellite Matrix (Optional)**  
-    Position the LED matrix in the camera path. While not part of the core light-sheet setup, it is useful for illumination and alignment purposes in Step 3.
+   ![](./IMAGES/lightsheet_10_04_2025_13.jpg)
+
+   ![](./IMAGES/lightsheet_10_04_2025_14.jpg)
+
 
 11. **Leave Space for the XYZ Stage**  
     The XYZ stage is not required for initial alignment. You may leave it out during this step to increase working space and simplify alignment. Install it later, after completing optical alignment.
 
+    ![](./IMAGES/lightsheet_10_04_2025_17.jpg)
+
 12. **Connect and Secure Components**  
     Use the puzzle connectors to link the modules.  
      **Important:** Make sure you don't put puzzle pieces on the cylindrical lens and mirror yet — leave them easily removable for adjustments during Step 3. Only secure all components once alignment is complete.
+
 
 ## Step 2: Electronics
 
@@ -120,6 +158,8 @@ BEAM HAS TO GO AWAY FROM ONESELF - ALWAYS!
 **⚠️ Caution!**
 If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!
 
+![](./IMAGES/lightsheet_10_04_2025_16.jpg)
+*Elektronik whithout XYZ-Stage*
 
 - connect the LED-Matrix to the Mainboard at `LED1`
 
@@ -232,11 +272,21 @@ Following these steps carefully will ensure that the light sheet is centered wit
 1. **Collimate the Laser**  
    Remove the mirror temporarily and collimate the laser by adjusting the distance between the laser diode and the f' = 25 mm biconvex lens. The beam diameter should remain consistent regardless of viewing distance—this indicates good collimation.
 
+   ![](./IMAGES/lightsheet_10_04_2025_22.jpg)
+
+   ![](./IMAGES/lightsheet_10_04_2025_19.jpg)
+
+
 2. **Insert the Mirror**  
    Guide the collimated beam into the 4× illumination objective by inserting the 45° mirror back into the microscope.
 
+   ![](./IMAGES/lightsheet_10_04_2025_21.jpg)
+
 3. **Prepare the Probe Chamber**  
    Fill the chamber with water. To make the solution fluorescent, briefly dip the tip of a text marker into the water. This allows you to visualize the light sheet.
+   Tonic Water or Bitter lemon would also work, but they tend to get sticky.
+
+   ![](./IMAGES/lightsheet_10_04_2025_23.jpg)
 
 4. **Align the 4× Illumination Objective**  
    Turn on the laser and adjust the 4× objective so that the focus is on the optical axis of the detection path. The beam spot should appear as a small, focused dot.  For this it's easiest to use the camera:
@@ -248,12 +298,18 @@ Following these steps carefully will ensure that the light sheet is centered wit
      - Use the **Z-stage** to fine-tune the camera focus, making the beam waist as thin and sharp as possible.
 
      it should look something like this:
+     ![](./IMAGES/lightsheet_10_04_2025_24.jpg)
 
 
 5. **Insert the Emission Filter**  
    Reinsert the emission filter. This will block the excitation light and allow only fluorescence to pass through to the camera. readjust the exposure time and the gain accordingly.
 
-   Realign both the imaging and the dedection focus as needed. It then should look like this.
+   ![](./IMAGES/lightsheetcamera_10_04_2025_08.jpg)
+
+  Realign both the imaging and the dedection focus as needed. It then should look like this.
+
+   ![](./IMAGES/lightsheetcamera_10_04_2025_06.jpg)
+
 
 6. **Insert the Cylindrical Lens**  
       Insert the cylindrical lens to generate the light sheet. It should be positioned so that its focal plane aligns with the **back focal plane of the 4× objective (NA 0.1)**.  
@@ -268,16 +324,29 @@ Following these steps carefully will ensure that the light sheet is centered wit
      - A fully illuminated camera image.
      - The light sheet filling the entire field of view.
 
-   - If the light sheet appears **too high or too low** like this, check:
+     ![](./IMAGES/lightsheetcamera_10_04_2025_04.jpg)
+
+
+   - If the light sheet appears **too high or too low** like this
+   ![](./IMAGES/lightsheetcamera_10_04_2025_03.jpg)
+   ![](./IMAGES/lightsheetcamera_10_04_2025_02.jpg)
+
+    check:
      - Whether the **10× detection objective** is correctly positioned on the optical axis (e.g., loose screws can shift alignment).
      - Whether all modules and puzzle pieces are properly secured.
 
-  - You should now see **fluorescent particles** in the water as bright dots. Use the **Z-stage** to focus on the plane containing those particles.
+- You should now see **fluorescent particles** in the water as bright dots. Use the **Z-stage** to focus on the plane containing those particles.
 
-  - **Reinsert the Emission Filter**  
-      You should now see a dark image with only **a few bright fluorescent dots**. These are the particles in focus. Adjust exposure time and gain as necessary.
+- **Reinsert the Emission Filter**  
+    You should now see a dark image with only **a few bright dots**. These are the particles in focus.
 
-  - **Last step**: Remove the fluorescent water and thoroughly clean the probe aquarium chamber.  
+    ![](./IMAGES/lightsheetcamera_10_04_2025_14.jpg)
+
+    Adjust exposure time and gain as necessary.
+
+    ![](./IMAGES/lightsheetcamera_10_04_2025_15.jpg)
+
+- **Last step**: Remove the fluorescent water and thoroughly clean the probe aquarium chamber.  
     - First, use a pipette to extract the water.  
     - Then, use lint-free tissue paper along with a pointed tool like tweezers or a small screwdriver to gently clean the chamber windows.  
   This step is **essential**, as fluorescent particles tend to stick to the glass surfaces, causing **unwanted scattering** in future experiments.
@@ -286,7 +355,11 @@ Following these steps carefully will ensure that the light sheet is centered wit
 
 ## Experiment 1: Imaging with the light-sheet microscope
 
-1. insert a Probe into the Sample Holder of the XYZ-Stage.
+1. insert a Probe into the Sample Holder of the XYZ-Stage, mount the XYZ-Stage to the Board and connect the motors.
+
+  ![](./IMAGES/lightsheet_10_04_2025_20.jpg)
+
+  ![](./IMAGES/lightsheet_10_04_2025_15.jpg)
 
   sample preparation: https://openuc2.github.io/docs/Investigator/Lightsheet/LightSheet%20Sample/#sample-preparation-%C3%A1-la-agarose-in-syringe-method
 
@@ -295,6 +368,8 @@ Following these steps carefully will ensure that the light sheet is centered wit
 3. insert the XYZ-Stage on the board and connect the motors to the main board (see Step 2, don't forget to plug the 12V cable before doing so)
 
 4. position the Probe in the light sheet.
+
+![](./IMAGES/lightsheetcamera_10_04_2025_13.jpg)
 
 5. adjust the acquisition time and gain accordingly
 

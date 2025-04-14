@@ -72,7 +72,7 @@ This guide will walk you through building the microscope step by step. You can f
 ![](./IMAGES/ledmatrix.png)
 
 ![](./IMAGES/probeinsert.png)
-3. **Install the movable Infinity-Objective**: Drill the objective into the objective mount of the electronic Z-stage. As you can see, there are two RMS-inserts for the Objective, how to choose the right one? In this assembly, because the Z-stage lays flat on the ground choose the insert thats closest to the Z-stage (50mm distance). As shown below the lettering "stage" is placed upward. The second option on the other side (55mm distance) you need when you built the microscope not flat laying, but standing on the ground. Why? Because then there will be an extra puzzle piece between the electronic z-stage and the objektive-mount, so to make shure the obejctive is still in fokus you need 5mm more distance to accomodate für the puzzle piece. 
+3. **Install the movable Infinity-Objective**: Drill the objective into the objective mount of the electronic Z-stage. As you can see, there are two RMS-inserts for the Objective, how to choose the right one? In this assembly, because the Z-stage lays flat on the ground choose the insert thats closest to the Z-stage (50mm distance). As shown below the lettering "stage" is placed upward. The second option on the other side (55mm distance) you need when you built the microscope not flat laying, but standing on the ground. Why? Because then there will be an extra puzzle piece between the electronic z-stage and the objektive-mount, so to make shure the obejctive is still in fokus you need 5mm more distance to accomodate für the puzzle piece.
 Lastly insert the technical pins on the long sides to attach the baseplates.
 ![](./IMAGES/zstage.png)
 
@@ -253,11 +253,7 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
   This will initiate the Bluetooth scan on the ESP32, which will detect and pair with the controller.
 
-  Once paired, you can control the motorized stage using the analog sticks and switch the LED-matrix on/off using the buttons:
-
-  - **Move the Z-stage**: Use the **left analog stick** to move the stage up and down (adjust focus).
-  - **Control the LEDs**: Use the **controller buttons** to turn the LED-matrix on/off and cycle through different illumination patterns.
-
+  Once paired, you can control the motorized stage using the analog sticks and switch the LED-matrix on/off using the buttons. The complete pinout of the diffrent function you can find here: https://openuc2.github.io/docs/Electronics/PS4-Controller/
 
 
 ### 2.6: Setup and Use the Camera Software

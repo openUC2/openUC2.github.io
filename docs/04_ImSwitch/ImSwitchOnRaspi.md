@@ -164,7 +164,7 @@ The image is built from the following workflow:
 If you prefer a faster setup, you can use this **pre-built image** that includes all necessary software and drivers. This image was created with the [Forklift Project](https://github.com/forklift-run) and automates all setup steps.
 
 #### **How to Use the Pre-Built Image:**
-1. **Download the image** from Zenodo: [Zenodo Image Link](https://zenodo.org/uploads/14988987)
+1. **Download the image** from Zenodo: [Zenodo Image Link](https://zenodo.org/records/14988987)
 2. **Extract the image** (~3GB as a ZIP, ~11GB uncompressed).
 3. **Flash it to an SD card** using [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 

@@ -1,5 +1,41 @@
 If you are using the webserial online flashing tool provided by UC2 (https://youseetoo.github.io/) to flash the firmware onto your ESP8266 or ESP32 development board, the process of connecting the PS4 controller to the UC2-ESP remains similar to the steps mentioned earlier. However, please note that the flashing tool is a separate tool for uploading firmware, and the Bluetooth communication with the PS4 controller needs to be implemented in your firmware code.
 
+
+# Pinout of the different functions
+
+The different functionalities of our PS4 controllers are mapped out like this:
+
+| **PS4 Controller Input**       | **UC2-ESP32 Firmware Function**          | **Notes**                                                                 |
+|----------------------------------|------------------------------------------|---------------------------------------------------------------------------|
+| Left Analog Stick (X-axis)       | X Stage Movement                         | Moves the stage horizontally (left/right).                              |
+| Left Analog Stick (Y-axis)       | Y Stage Movement                         | Moves the stage vertically (up/down).                                   |
+| Right Analog Stick (Y-axis)      | Z Stage Movement (Coarse)                | Moves the stage in Z by larger increments for focusing.                 |
+| Right Analog Stick (X-axis)      | Scan Speed / Fine X Adjustment           | Adjusts scan speed or offers fine adjustment in X during scanning.        |
+| D-Pad Up                       | Fine Y Stage Increment                   | Increases Y-axis position in small steps.                               |
+| D-Pad Down                     | Fine Y Stage Decrement                   | Decreases Y-axis position in small steps.                               |
+| D-Pad Left                     | Fine X Stage Decrement                   | Decreases X-axis position in small steps.                               |
+| D-Pad Right                    | Fine X Stage Increment                   | Increases X-axis position in small steps.                               |
+| L1 Button                      | Decrease LED/Laser Intensity             | Lowers the brightness/intensity of the currently selected light source. |
+| R1 Button                      | Increase LED/Laser Intensity             | Raises the brightness/intensity of the currently selected light source. |
+| L2 Button                      | Coarse Z Stage Decrement                 | Lowers the Z-axis by a fixed number of steps (e.g., 10 steps per press).  |
+| R2 Button                      | Coarse Z Stage Increment                 | Raises the Z-axis by a fixed number of steps (e.g., 10 steps per press).  |
+| Square Button                  | Save Current Position                    | Saves the current stage coordinates for recall or repeat scanning.      |
+| Cross (X) Button               | Start/Stop Scan                          | Toggles the scanning process on the microscope stage.                   |
+| Circle Button                  | Toggle Illumination                      | Turns fluorescent lasers or LEDs on/off for illumination.               |
+| Triangle Button                | Switch Fluorescent Channel               | Cycles through available fluorescent laser channels.                    |
+| L3 (Left Stick Click)          | Engage Auto-Scan Mode                    | Activates a continuous auto-scanning mode for the stage.                |
+| R3 (Right Stick Click)         | Enter Fine Focus Adjustment Mode         | Enables fine adjustments for Z-axis/focus control.                      |
+| Options Button                 | Open Settings Menu                       | Access advanced firmware settings (e.g., stage speed, scan parameters).   |
+| Share Button                   | Log/Export Scan Data                     | Initiates data logging or exports current scanning session data.        |
+| PS Button                      | System Power Toggle                      | Switches the microscope system or firmware on/off.                      |
+| Touchpad Button                | Reset Stage Position/Center              | Resets the stage to its default home coordinates.                       |
+
+
+![](./IMAGES/uc2controller.png)
+
+
+# Installation
+
 **Attention** Chrome only!
 
 Here's how the process would look like with the webserial online flashing tool:

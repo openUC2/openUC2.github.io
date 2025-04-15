@@ -5,6 +5,10 @@ If you are using the webserial online flashing tool provided by UC2 (https://you
 
 The different functionalities of our PS4 controllers are mapped out like this:
 
+![](./IMAGES/uc2controller.png)
+
+
+
 | **PS4 Controller Input**       | **UC2-ESP32 Firmware Function**          | **Notes**                                                                 |
 |----------------------------------|------------------------------------------|---------------------------------------------------------------------------|
 | Left Analog Stick (X-axis)       | X Stage Movement                         | Moves the stage horizontally (left/right).                              |
@@ -31,7 +35,6 @@ The different functionalities of our PS4 controllers are mapped out like this:
 | Touchpad Button                | Reset Stage Position/Center              | Resets the stage to its default home coordinates.                       |
 
 
-![](./IMAGES/uc2controller.png)
 
 
 # Installation

@@ -7,6 +7,7 @@ title: openUC2 light sheet fluoresence microscope
 
 In this workshop, we will guide you through assembling a light sheet fluorescence microscope. This technique enables fast, gentle, and high-contrast imaging of biological samples by illuminating only a thin slice of the specimen. By systematically shifting the sample in x, y, and z directions and stacking the resulting images, you can reconstruct detailed three-dimensional visualizations of microscopic structures.
 
+![](./IMAGES/IMG_1118.JPG)
 
 
 ### Materials Needed

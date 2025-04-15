@@ -238,6 +238,17 @@ pi@openuc2-epfl-1:~ $ ~/Desktop/update_docker_container.sh
 pi@openuc2-epfl-1:~ $ ~/Desktop/launch_docker_container.sh
 ```
 
+**Get logs back from a started Container**
+
+```bash
+docker logs -f blissful_wescoff
+```
+
+**Get an interactive shell**
+
+```bash
+docker exec -it blissful_wescoff /bin/bash
+```
 
 **Edit ImSwitch configuration files**
 

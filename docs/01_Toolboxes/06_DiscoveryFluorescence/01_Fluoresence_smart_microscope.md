@@ -7,11 +7,7 @@ title: openUC2 LED Fluoresence microscope
 
 In this workshop, we will guide you through assembling a LED-powered fluorescence microscope, allowing you to explore fascinating experiments with microscopic details.
 
-<div style="border: 2px solid #3399ff; border-radius: 8px; padding: 16px; background-color: #e6f2ff; color: #003366; font-family: sans-serif;">
-  <h3 style="margin-top: 0; color: #003366;">📘 Safety Notice (Please Read First!)</h3>
-  <p><strong style="color: #003366;">⚠️ Before continuing with this guide, please read the <a href="https://github.com/openUC2/openUC2-CE-Certificats?tab=readme-ov-file" target="_blank" style="color: #003366; text-decoration: underline;">Safety Data Sheet (SDS)</a> carefully.</strong></p>
-  <p style="color: #003366;">It contains essential information about hazards, protective measures, and the safe handling of materials.</p>
-</div>
+
 
 
 ### Materials Needed

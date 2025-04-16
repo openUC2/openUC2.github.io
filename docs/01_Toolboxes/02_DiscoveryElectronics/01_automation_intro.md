@@ -1,11 +1,17 @@
 # openUC2 Discovery Electronics Kit - Extended Tutorial
 
+<div style="border: 2px solid #3399ff; border-radius: 8px; padding: 16px; background-color: #e6f2ff; color: #003366; font-family: sans-serif;">
+  <h3 style="margin-top: 0; color: #003366;">📘 Safety Notice (Please Read First!)</h3>
+  <p><strong style="color: #003366;">⚠️ Before continuing with this guide, please read the <a href="https://github.com/openUC2/openUC2-CE-Certificats?tab=readme-ov-file" target="_blank" style="color: #003366; text-decoration: underline;">Safety Data Sheet (SDS)</a> carefully.</strong></p>
+  <p style="color: #003366;">It contains essential information about hazards, protective measures, and the safe handling of materials.</p>
+</div>
+
 ## Introduction
 
 The openUC2 Discovery Electronics Kit empowers users to explore advanced microscopy techniques by combining geometric optics and automation. By utilizing affordable, modular components, this kit allows you to build a fully functioning digital microscope with smart features such as automated focus stacking and digital phase contrast. It’s an ideal learning tool for educators, students, and hobbyists interested in microscopy, optics, and electronics.
 
 ![](./IMAGES/EXP_1_Serial/BoxContent.jpg)
-*Electronics components to have a lot of fun with open-source fully automated microscopy* 
+*Electronics components to have a lot of fun with open-source fully automated microscopy*
 
 This tutorial will guide you through building and operating a motorized microscope. By the end of this experiment, you’ll understand how to control a motorized Z-stage for precise focusing, use an LED array for illumination, and experiment with digital contrast methods.
 
@@ -78,7 +84,7 @@ This command will move the Z-axis motor by -1000 steps (1 full rotation) at a sp
 2. Connect the 12V power supply to the provided port.
 3. Attach the NEMA 11 motor to the Z-motor port on the board.
 4. Turn on the system and verify that the motor responds to commands.
-5. The motor should move when you enter the command or hit the buttons. 
+5. The motor should move when you enter the command or hit the buttons.
 
 ![](./IMAGES/EXP_1_Serial/Photo_Control_Stage.jpg)
 
@@ -200,7 +206,7 @@ A more detailed explantion can be found here: https://openuc2.discourse.group/t/
    ```bash
    pip install https://github.com/openUC2/ImSwitch/archive/refs/heads/master.zip # this installs the lastest master
    # do the same if you want to update the system
-   # alternative: 
+   # alternative:
    git clone https://github.com/openUC2/ImSwitch/
    cd ImSwitch
    pip install -e .
@@ -333,7 +339,7 @@ For a visual guide on how to set up ImSwitch and control the UC2 system, watch t
 ## Further Experiments (coming soon)
 
 - Interact with the REST API of ImSwith to integrate this into your workflow
-- Integration into MicroManager 
+- Integration into MicroManager
 - Adding more functions to the Board (Temperature Control, multiple axes, Lasers, etc.)
 
 
@@ -365,7 +371,7 @@ The motor and the LED array are connected to the openUC2 electronics module. Use
 ![openUC2 Electronics Module](IMAGES/Electronics.png)
 *openUC2 electronics module for controlling the microscope components.*
 
-### Web-Serial Interface: 
+### Web-Serial Interface:
 For control via the web, a new Web-Serial interface is implemented (experimental) and can be accessed at: https:/youseetoo.github.io/indexWebSerialTest.html.
 
 ### Getting a Sharp Image:

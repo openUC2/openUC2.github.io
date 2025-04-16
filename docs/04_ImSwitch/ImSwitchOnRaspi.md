@@ -186,6 +186,15 @@ Use the Raspberry Pi Imager to flash the image onto an SD card, then insert the 
 
 > **Note:** The Forklift image is updated automatically and ensures all software is correctly configured.
 
+:::warning
+If you want to have Internet on the Raspberry Pi, you can either plug the LAN port into a router with internet - then the wifi that is shared by the access point is automatically briding that connection. Alternatively, you can use an Android phone in USB access point mode and share the internet connection by that mean.
+:::
+
+:::error
+In case the GUI hangs - this might be due to an older version that expected internet to load javascript libraries/fonts. It times out after 60s and renders the ImSwitch webapp - please update the software.
+:::
+
+
 For a detailed breakdown of the image creation process, see:
 [ImSwitch OS GitHub Setup Script](https://github.com/beniroquai/imswitch-os/blob/main/setup.sh#L60)
 
@@ -240,6 +249,7 @@ pi@openuc2-epfl-1:~ $ ~/Desktop/launch_docker_container.sh
 
 **Get logs back from a started Container**
 
+**Assuming blissful_wecoff** is the name of the docker container `docker ps`
 ```bash
 docker logs -f blissful_wescoff
 ```

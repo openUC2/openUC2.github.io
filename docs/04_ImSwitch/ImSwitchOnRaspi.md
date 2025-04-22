@@ -398,6 +398,11 @@ Overwrite and reboot. Wait for some time, eventually reconnect wifi and refresh 
 
 If you are facing a problem with a wrong docker configuration (i.e. Docker Compose File is not correct), you can do a temporarily fix by editing the Docker compose file at `~/.local/share/forklift/pallet/packages/imswitch/compose.yml`  on the Raspberry Pi, and then run `forklift pallet stage --no-cache-img` and reboot. The location `~/.local/share/forklift/pallet` is in fact the git repo of the https://github.com/openUC2/pallet repo.
 
+
+#### Enabling Tailscale on ImSwitch OS
+
+The filename of the file containing the tailscale auth token should be tailscale-auth-key. The file will need to exist on the boot partition in a new run subdirectory of the init-root directory.
+
 ---
 
 ## Summary

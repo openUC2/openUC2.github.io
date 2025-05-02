@@ -395,16 +395,8 @@ On top of this, you can use the following `ImSwitchClient` template to remote co
 This makes use of the default URL hosted publicly on https://imswitch.openuc2.com/imswitch/index.html, but you can change this to the `PORT` (i.e. 8001) nad `URL` (e.g. the Raspberry Pi's IP address that runs ImSwitch in docker and is in the same network as you computer).
 
 ### Step 2: Imaging and generating Stacks:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kr9_7XD-a4M?si=I0qcmhLNnKMY2EwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-## ImSwitch data acquisition and Reconstruction
-
 We assume the system is running and you were able to install ImSwitch on your computer. The configuration `JSON`file that describes the light-sheet system can be found further down this document. A tutorial on how to install our ImSwitch Version (SRC: https://github.com/openUC2/ImSwitch/) can be either found in the imSwitch repository or in the ImSwitch section in this wiki.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/N00-kKrRXX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+The Video below will show you how to run Imswitch and genereate data stacks.
 
-
-#### ImSwitch integration into 3D imaging including 3D volumetric rendering
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EadREZTqJFo?si=IXIoxpxwjvSjv5M_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kr9_7XD-a4M?si=I0qcmhLNnKMY2EwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

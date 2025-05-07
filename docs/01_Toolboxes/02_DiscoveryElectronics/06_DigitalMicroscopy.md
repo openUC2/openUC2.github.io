@@ -47,12 +47,10 @@ Please go through the following links to check about the:
    a. Assemble two lens holders at 50 mm spacing.
    b. Insert eyepiece (10×) & objective (50 mm f).
    c. Align by sliding cubes until full‑field image is sharp.
-   ![coreBOX telescope](images/telescope.jpg)
 3. Build the **[smartphone microscope](https://openuc2.github.io/docs/Toolboxes/DiscoveryCore/ENGLISH/coreMicroscope#smartphone-microscope)** using the RMS objective holder and phone adapter.
    a. Adjust the setup depending on your phone (add a cube spacer in between eventually)
    b. Mount sample slide on slide‑holder cube.
    c. Use flashlight cube for epi‑illumination.
-   ![smartphone microscope](images/phone_scope.jpg)
 4. Place a sample and capture an image.
 
 Find a cool sample and take pictures of your setup and share them on social media using `#openUC2AQLM` if you like :)

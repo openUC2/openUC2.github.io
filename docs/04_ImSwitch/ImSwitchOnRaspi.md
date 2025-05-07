@@ -403,6 +403,37 @@ If you are facing a problem with a wrong docker configuration (i.e. Docker Compo
 
 The filename of the file containing the tailscale auth token should be tailscale-auth-key. The file will need to exist on the boot partition in a new run subdirectory of the init-root directory.
 
+#### Connect to Wifi
+
+
+By default, the forklift configuration provides an access point and maps internet from the LAN to the AP conveniently. If you have an existing access point and you want to connect to that one using the raspberry pi can you can do that by following the follwoing steps.
+
+**Problem (one‑sentence)**
+Saved profile contains a malformed `ssid=` (often a trailing space added by *nmtui*). NetworkManager then scans for a name that does not exist and returns *WLAN konnte nicht gefunden werden*.
+
+---
+
+##### Quick‑fix workflow
+
+| Goal                                       | Command / action                                                                                                                                                                                                              |
+| ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| List saved connections                     | `sudo nmcli con show`                                                                                                                                                                                                         |
+| Locate profile file                        | `sudo grep -l 'ssid=openUC2' /etc/NetworkManager/system-connections/*`                                                                                                                                                        |
+| **Option A – repair file**                 | `bash sudo nano /etc/NetworkManager/system-connections/<file>.nmconnection   # correct ssid=openUC2 exactly sudo chmod 600 /etc/NetworkManager/system-connections/<file>.nmconnection sudo systemctl restart NetworkManager ` |
+| **Option B – delete & recreate (simpler)** | `bash sudo nmcli con delete "<profile‑name>" sudo nmcli dev wifi connect "openUC2" password "YOUR‑PASSWORD" ifname wlan0 `                                                                                                    |
+| Verify link                                | `ip a show wlan0` → should now show an `inet` address                                                                                                                                                                         |
+
+
+##### Using *nmtui* instead of CLI
+
+1. `sudo nmtui` → *Activate a connection* → highlight your network → **Add** (or **Edit**)
+2. Enter **SSID** exactly (`openUC2`), security = *WPA & WPA2 Personal*, fill password.
+3. Leave *BSSID* blank.
+4. `[X] Automatisch verbinden`, `[X] Für alle Benutzer verfügbar` → **OK** → quit *nmtui*.
+5. `sudo systemctl restart NetworkManager` (or just `sudo nmcli con up wlan0`).
+
+If connection still fails run `sudo journalctl -u NetworkManager -b | grep wlan0`—look for `SSID_NOT_FOUND` (name wrong), `NO_SECRETS` (password wrong), or continuous authentication loops (router’s WPA mode).
+
 ---
 
 ## Summary

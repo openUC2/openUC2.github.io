@@ -2,16 +2,22 @@
 
 Welcome to the openUC2 Workshop on Modular and Digital Microscopy. This hands-on session will introduce participants—especially those with a biology background—to accessible, customizable microscopy using open-source tools. We will walk through building and extending microscopes, from simple lens assemblies to digital microscopy. 👩‍💻🔬
 
-:::warn
+
 ## Installation of Jupyter Notebook
 
 We assume you have a python instance (e.g. inside a anaconda/mamba environment) available.
 Then you can do:
 
 ```bash
-pip install jupyterlab
-``
-
+# optional - probable:
+# conda create -n mjpyter python=3.10 -y
+# conda env activate mjupyter
+# conda activate mjupyter
+pip install notebook jupyterlab
+jupyter lab
+# or
+jupyter notebook
+```
 
 ## Scientific Background
 

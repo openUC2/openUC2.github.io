@@ -1,6 +1,6 @@
 ---
 id: LED_Fluoresence_microscope_V1
-title: openUC2 LED Fluoresence microscope - ordered after March 2025
+title: openUC2 LED Fluoresence microscope - ordered before April 2025
 ---
 
 # Manual: Building a Smart LED-Powered Fluorescence Microscope
@@ -32,7 +32,7 @@ In this workshop, we will guide you through assembling a LED-powered fluorescenc
 
 ### Diagram
 
-![](./IMAGES/diagramm.png)
+![](./IMAGES/diagram_aspheric.png)
 
 ### Theory of Operation
 

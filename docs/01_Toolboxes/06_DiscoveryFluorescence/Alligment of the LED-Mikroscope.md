@@ -21,9 +21,9 @@ To understand the physical principles and mathematical foundations of collimatin
 
 After watching the video, make sure you have the following parameters ready for your setup:
 
-- \( d \) = diagonal size of the LED emitter
-- \( f \) = focal length of the lens
-- \( \theta \) = resulting divergence angle of the collimated beam
+- d = diagonal size of the LED emitter
+- f = focal length of the lens
+- theta = resulting divergence angle of the collimated beam
 
 ---
 
@@ -31,31 +31,30 @@ After watching the video, make sure you have the following parameters ready for 
 
 Use the following formula to approximate the divergence angle of the collimated LED beam:
 
-\[
-\theta = 2 \cdot \tan^{-1}\left(\frac{d/2}{f}\right)
-\]
+theta = 2 * arctan ((d / 2) / f)
+
 
 
 ---
 
 ## Step 2: Calculating the Beam Diameter Difference (ΔD)
 
-To estimate how much the beam spreads over a given distance \( L \), calculate the increase in beam diameter:
+To estimate how much the beam spreads over a given distance L, calculate the increase in beam diameter:
 
-\[
-\Delta D = 2 \cdot L \cdot \tan\left(\frac{\theta}{2}\right)
-\]
+
+Delta D = 2 * L * tan (theta / 2)
+
 
 This yields:
 
-\[
-D_2 = D_1 + \Delta D
-\]
+
+D2 = D11 + Delta D
+
 
 Where:
-- \( D_1 \) = initial beam diameter directly after the collimation lens
-- \( D_2 \) = beam diameter at distance \( L \)
-- \( \Delta D \) = change in diameter over length \( L \)
+- D1 = initial beam diameter directly after the collimation lens
+- D2  = beam diameter at distance L
+- Delta D = change in diameter over length L
 
 ---
 

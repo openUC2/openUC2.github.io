@@ -1,6 +1,6 @@
 ---
-id: Main
-title: Mainpage
+id: intro
+title: Introduction
 ---
 # openUC2 Documentation
 

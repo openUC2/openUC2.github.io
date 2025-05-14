@@ -411,7 +411,6 @@ By default, the forklift configuration provides an access point and maps interne
 **Problem (one‑sentence)**
 Saved profile contains a malformed `ssid=` (often a trailing space added by *nmtui*). NetworkManager then scans for a name that does not exist and returns *WLAN konnte nicht gefunden werden*.
 
----
 
 ##### Quick‑fix workflow
 
@@ -434,7 +433,14 @@ Saved profile contains a malformed `ssid=` (often a trailing space added by *nmt
 
 If connection still fails run `sudo journalctl -u NetworkManager -b | grep wlan0`—look for `SSID_NOT_FOUND` (name wrong), `NO_SECRETS` (password wrong), or continuous authentication loops (router’s WPA mode).
 
----
+
+#### Accessing the Filebrowser:
+
+![](./IMAGES/imswitchraspi/FORKLIFT_FILEBROWSER.png)
+
+#### Managing the Docker Containers with Dozzle:
+
+![](./IMAGES/imswitchraspi/FORKLIFT_DOZZEL.png)
 
 ## Summary
 - The **manual installation** allows full customization of Raspberry Pi OS and software.

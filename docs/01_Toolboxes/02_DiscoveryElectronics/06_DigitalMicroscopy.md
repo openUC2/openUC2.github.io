@@ -73,6 +73,13 @@ Please go through the following links to check about the:
 Find a cool sample and take pictures of your setup and share them on social media using `#openUC2AQLM` if you like :)
 
 
+### Result
+
+This was captured using two crossed polarizers during the course
+
+![](./IMAGES/IMG_7708.MOV)
+
+
 ## Chapter 2: Upgrading Illumination with LED Matrix
 
 ### Goals

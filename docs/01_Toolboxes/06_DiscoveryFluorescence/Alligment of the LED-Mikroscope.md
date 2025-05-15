@@ -67,6 +67,6 @@ Below is a summary table for the two optical setups with different collimating l
 | LED Emission Angle         | 170°                                         | 170°                                        |
 | Diagonal Size of LED       | 2 mm                                         | 2 mm                                        |
 | Focal Length               | 30 mm                                        | 50 mm                                       |
-| Divergence Angle (θ)       | 3,82°                                        | 2,29°                              |
+| Divergence Angle (θ)       | 3,82°                                        | 5,72°                              |
 | Distance \( L \)           | 500 mm                                       | 500 mm                                      |
-| Beam Expansion ΔD          | ~33                                          | ~20 mm                                      |
+| Beam Expansion ΔD          | ~33 mm                                       | ~50 mm                                      |

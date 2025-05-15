@@ -1,6 +1,6 @@
 ---
 id: LED_Fluoresence_microscope_V1
-title: openUC2 LED Fluoresence microscope - ordered before April 2025
+title: openUC2 LED Fluoresence microscope
 ---
 
 # Manual: Building a Smart LED-Powered Fluorescence Microscope
@@ -105,7 +105,10 @@ But of course if you got this box you want more, so now let#s start buidling the
 
 ![](./IMAGES/LEDlid.png)
 
-3. **Collimate the Light**: The blue LED is a divergent light source, so use the aspherical lens to collimate the light. Place the aspherical lens right after the LED with a gap no larger than 30mm.Insert the diaphragm right next to it in the same cube. It's used as a field diaphragm and defines the size of the illuminated area and prevents unnecessary stray light outside the desired field of view.
+3. **Collimate the Light**: The blue LED is a divergent light source, so use the aspherical lens to collimate the light. Your Box comes with a aspherical lens with eighter f'= 20mm or f' = 30mm.  Insert the diaphragm right next to it in the same cube. It's used as a field diaphragm and defines the size of the illuminated area and prevents unnecessary stray light outside the desired field of view.
+Place the aspherical lens it's focal length away from the light source (20mm or 30mm), so that rays emerging from the focal point are rendered collimated.
+Checking if a divergent light source such as a LED is collimated, is not as straight forward as it is with a laser so go [here](https://openuc2.github.io/docs/Toolboxes/DiscoveryFluorescence/Alligment%20of%20the%20LED-Mikroscope) for an in Depth tutorial.
+
 
 ![](./IMAGES/asphäreblende.png)
 

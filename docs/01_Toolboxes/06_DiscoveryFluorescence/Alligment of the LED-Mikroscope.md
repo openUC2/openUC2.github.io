@@ -3,7 +3,7 @@ title: Collimation of an LED Light Source + Parameters for each setup
 
 # Collimation of an LED Light Source
 
-Collimating an LED source is more complex than collimating a laser beam. With a laser, the principle is straightforward: after the collimating optic, the beam diameter should remain constant regardless of the distance at which it is measured. This is achieved by placing the collimating lens at a distance equal to its focal length from the laser output, so that rays emerging from the focal point are rendered collimated (i.e., parallel to the optical axis).
+Collimating an LED source is more complex than collimating a laser beam. With a laser, the principle is straightforward: after the collimating optic, the beam diameter should remain constant regardless of the distance at which it is measured. This is achieved by placing the collimating lens at a distance equal to its focal length from the lightsource output, so that rays emerging from the focal point are rendered collimated (i.e., parallel to the optical axis).
 
 In contrast, LEDs emit light over a much wider angular range. Due to this high divergence, collimating an LED does not yield a perfectly parallel beam. Instead, the beam diameter increases with distance, depending on the initial emission angle and the optical setup. Therefore, understanding the geometry and divergence characteristics of the LED is essential when designing the collimation optics.
 

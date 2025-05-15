@@ -1,16 +1,32 @@
-# Educational Kits
+# BOXES
+
+Here you can find the Documentation for all the different Boxes for example:
 
 ## CoreBox: Entry-Level Education Box
      - Features and Specifications
      - Assembling the CoreBox
      - Core Lens, Telescope, and Microscope
 
-## Discovery Kit: Extension of CoreBox
+## ElectronicsBox: Extension of CoreBox
      - Adding Modules to the Discovery Kit
      - Enhanced Functionality
 
-## Interferometer Kit 
+## InfinityBox: Extension of ElectronicsBox
+    - Enabling camera-based microscopy
+    - With infinity-corrected optics
+
+## FluoBox: Extension of InfinityBox
+    - LED or Laser based 
+    - Enabling camera-based fluorescence microscopy
+
+## LightSheetBox: Extrension of FluoBox (Laser)
+    - new modules to build a light sheet Microscope
+    - moving through probes with included the xyz-stage
+
+## QBox
+     - inlcudes Interferometer and polarisation experiments
      - You can build a Michelson Interferometer
-     - Try enhancing it to become a MAch Zhender Microscope 
+     - Try enhancing it to become a MAch Zhender Microscope
      - Ultimatively test the microscope extension and reconstruct images using holography
-     - 
+     - to learn about Polarisation the set inlcudes the Brewster angle experiment
+     - as well as the Newton Ring experiment

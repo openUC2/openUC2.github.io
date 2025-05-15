@@ -257,7 +257,7 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
   This will initiate the Bluetooth scan on the ESP32, which will detect and pair with the controller.
 
-  Once paired, you can control the motorized stage using the analog sticks and switch the LED-matrix on/off using the buttons. The complete pinout of the diffrent function you can find here: https://openuc2.github.io/docs/Electronics/PS4-Controller/
+  Once paired, you can control the motorized stage using the analog sticks and switch the LED-matrix on/off using the buttons. The complete pinout of the different function you can find here: https://openuc2.github.io/docs/Electronics/PS4-Controller/
 
 
 ### 2.6: Setup and Use the Camera Software

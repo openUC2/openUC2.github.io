@@ -1,6 +1,6 @@
 ---
 id: Camera Setup
-title: openUC2 Camera Setup
+title: openUC2 Daheng Camera Setup
 ---
 
 **We provide Docker Containers for our 3 major camera manufacturers: https://github.com/openUC2/ImSwitchDockerInstall**
@@ -98,7 +98,7 @@ We use the MV-CS060-10UM/UC-PRO 600 with the IMX179 sensor.
 
 ![](IMAGES/dahenguc2.jpeg)
 *This may look completely different now, but important: A camera is inside the cube :)*
-  
+
 ### On Windows
 - Visit the [HIK supplier website](https://www.hikrobotics.com/en/support/download) for the latest software.
 - Download the "MVS V2.1.2" package (or the latest version) for Windows.

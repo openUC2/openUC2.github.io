@@ -1,3 +1,7 @@
+---
+title: CourseBox Introduction
+---
+
 <p align="center">
 <a href="#scheme02" name="scheme02"><img src="/DISCOVERY_BASE/CORE/CourseBOX_logo.png"
 width="600"/></a>

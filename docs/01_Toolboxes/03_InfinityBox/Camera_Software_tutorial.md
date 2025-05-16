@@ -7,57 +7,57 @@ title: HIK-Camera Software Installation
 
 Camera model: MV-CE060-10UC. Visit the HIKROBOTICS website and download the MVS software suitable for your computer. Below are steps exemplifying the software installation for Mac.
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image140.png)
+![](./IMAGES/image140.png)
 
 Install the downloaded file.
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image50.png)
+![](./IMAGES/image50.png)
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image25.png)
+![](./IMAGES/image25.png)
 
 Open the MVS Software.
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image131.png)
+![](./IMAGES/image131.png)
 
 You should see the following window.
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image44.png)
+![](./IMAGES/image44.png)
 
 Connect the camera. Refresh the USB line to detect the camera.
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image71.png)
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image53.png)
+![](./IMAGES/image71.png)
+![](./IMAGES/image53.png)
 
 Select the make-link button on the detected camera.
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image136.png)
+![](./IMAGES/image136.png)
 
 The following window should be displayed.
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image27.png)
+![](./IMAGES/image27.png)
 
 Click on the play button in the actions bar of the camera.
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image141.png)
+![](./IMAGES/image141.png)
 
 If properly connected, you should see a real-time image. Adjust the exposure if the image is overexposed.
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image32.png)
+![](./IMAGES/image32.png)
 
 To adjust the exposure time, go to the Feature tree, select the Acquisition Control Category, and change the Exposure Auto option to *Continuous*.
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image142.png)
+![](./IMAGES/image142.png)
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image129.png)
+![](./IMAGES/image129.png)
 
 Now, a clear image with good contrast should be visible.
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image113.png)
+![](./IMAGES/image113.png)
 
 To stop recording, click on the stop button in the camera's actions bar.
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image26.png)
+![](./IMAGES/image26.png)
 
 To disconnect the camera, click on the break-link button next to the detected camera in the USB devices list.
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image21.png)
+![](./IMAGES/image21.png)

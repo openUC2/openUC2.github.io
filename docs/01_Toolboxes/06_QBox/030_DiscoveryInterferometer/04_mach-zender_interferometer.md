@@ -28,7 +28,7 @@ title: openUC2 Mach-Zender Interferometer
 - Screwdriver to adjust alignment (1,5x60)
 - Two 100 mm converging lenses.
 
-![](../01_DiscoveryCore/IMAGES/MINIBOXTUTORIAL/image111.jpg)
+![](./IMAGES/image111.jpg)
 
 ### Instructions for assembling the Mach-Zender Interferometer:
 

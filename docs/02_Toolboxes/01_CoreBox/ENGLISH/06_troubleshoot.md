@@ -1,6 +1,6 @@
 ---
 id: coreTroubleshoot
-title: Troubleshoot
+title: Troubleshoot smartphone microscope
 ---
 
 

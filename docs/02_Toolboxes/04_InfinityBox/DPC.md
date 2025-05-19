@@ -3,7 +3,7 @@ id: DPCmicroscopy
 title: Differential Phase Contrast Microscopy
 ---
 
-# Differential Phase Contrast
+# Tutorial: Differential Phase Contrast
 
 Differential Phase Contrast Microscopy is a Computational Microscopy technique that uses partial coherent sources to illuminate a sample at various angles (oblique illumination). The angle determines the illumination NA which contributes to the final resolution. Throughout this tutorial we are going to revise the theory and implementation of DPC using OpenUC2! The tutorial will explain how to build your own DPC setup and we provide with the reconstruction algorithm given the physical parameters (based on Waller's Lab reconstruction algorithm).
 

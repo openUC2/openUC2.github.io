@@ -14,7 +14,6 @@ This tutorial will guide you through building and operating a motorized microsco
 This kit is perfect for classrooms or workshops where participants learn how to build and program optical systems. With the added automation, it’s also useful for research projects needing consistent imaging over time or where manual focus and lighting adjustments are too cumbersome. This could include biology labs, maker spaces, or environments that foster innovation in digital imaging.
 
 ---
-
 ## Components Included in the Kit:
 
 ### In Cubes:
@@ -329,45 +328,3 @@ This file configures the ESP32 stage, LED control, and the camera for widefield 
 For a visual guide on how to set up ImSwitch and control the UC2 system, watch the following video:
 
 <iframe width="700" src="https://www.youtube.com/embed/Iw_Bg9aYe1U?si=VQgLP854Hg29dwxW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-## Further Experiments (coming soon)
-
-- Interact with the REST API of ImSwith to integrate this into your workflow
-- Integration into MicroManager
-- Adding more functions to the Board (Temperature Control, multiple axes, Lasers, etc.)
-
-
-
-## Experiment (OLD)
-
-### Microscope Assembly:
-The assembly process involves combining the different cubes and components to build the finite-corrected microscope. A webcam, Z-stage, 45° folding mirror, sample mount, and LED array are assembled in an L-shape configuration. These cubes are stacked on top of each other to form a complete microscope setup. Optionally, the LED array can be placed in the same cube as the sample or on a separate layer above the sample, creating a 4-layer "tower" setup.
-
-![Microscope Assembly Steps](IMAGES/Incubatormicroscpoe.png)
-*Steps involved in assembling the finite-corrected digital microscope.*
-
-Once assembled, the microscope's folded beampath achieves a tubelength of approximately 100mm, which is less than the required 160mm according to the RMS standard for finite-corrected objective lenses. As a result, the magnification is slightly reduced. However, this setup provides a practical example of how to build compact and automated microscopes.
-
-![Microscope Assembly - Side View](IMAGES/Incubatormicroscpoe3.png)
-*Side view of the assembled microscope.*
-
-### Instructional Videos:
-Two videos guide users through the assembly process:
-
-![](IMAGES/incubatorrot1.gif)
-
-1. Assembling a standard microscope.
-2. Assembling a finite-corrected microscope with a webcam.
-
-### Microscope Control:
-The motor and the LED array are connected to the openUC2 electronics module. Users can control the hardware components using Web-Serial (Chrome only for now) or the Python interface.
-
-![openUC2 Electronics Module](IMAGES/Electronics.png)
-*openUC2 electronics module for controlling the microscope components.*
-
-### Web-Serial Interface:
-For control via the web, a new Web-Serial interface is implemented (experimental) and can be accessed at: https:/youseetoo.github.io/indexWebSerialTest.html.
-
-### Getting a Sharp Image:
-To achieve a sharp image, it is recommended to test the microscope with a nearly transparent sample and the LED illumination turned on. Users can adjust the focus by hand to find the optimal position (~10-15mm from the last lens). Once found, the sample adapter can be placed at that position, roughly aligning the sample with the focus. Fine adjustments to the focus can then be made using the focus adjustment buttons provided.

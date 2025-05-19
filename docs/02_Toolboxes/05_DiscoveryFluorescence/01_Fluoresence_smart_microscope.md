@@ -3,7 +3,7 @@ id: LED_Fluoresence_microscope_V1
 title: openUC2 LED Fluoresence microscope
 ---
 
-# Manual: Building a Smart LED-Powered Fluorescence Microscope
+# Tutorial: Building a Smart LED-Powered Fluorescence Microscope
 
 In this workshop, we will guide you through assembling a LED-powered fluorescence microscope, allowing you to explore fascinating experiments with microscopic details.
 

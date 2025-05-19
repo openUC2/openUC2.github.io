@@ -3,7 +3,7 @@ id: LASER_Fluoresence_microscope
 title: openUC2 LASER Fluoresence microscope
 ---
 
-# Workshop Manual: Building a Smart laser-Powered Fluorescence Microscope
+#Tutorial: Building a Smart laser-Powered Fluorescence Microscope
 
 In this workshop, we will guide you through assembling a laser-powered fluorescence microscope, allowing you to explore fascinating experiments with microscopic details.
 

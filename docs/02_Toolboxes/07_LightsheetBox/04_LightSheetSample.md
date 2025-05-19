@@ -4,9 +4,7 @@ title: openUC2 Light-Sheet Tips and Tricks
 ---
 
 
-## Introduction to the openUC2 Light-Sheet Microscope
-
-Welcome to the openUC2 Light-Sheet Microscope documentation. This page aims to provide technical insights and practical guidance for utilizing the openUC2 modular optical toolbox to build and operate a light-sheet microscope. The openUC2 light-sheet microscope endeavors to bring accessible volumetric imaging of fluorescent samples to a wider audience. As you navigate through this documentation, please keep in mind the following key points:
+Welcome to the openUC2 Light-Sheet Microscope Tips and Tricks. The openUC2 light-sheet microscope endeavors to bring accessible volumetric imaging of fluorescent samples to a wider audience. As you navigate through this documentation, please keep in mind the following key points:
 
 1. **Dynamic Nature of the Microscope:**
    The openUC2 light-sheet microscope is in its early stages of development and refinement. As such, expect ongoing changes and updates to various components, techniques, and procedures. Your feedback, suggestions, and contributions are essential to enhancing the microscope's capabilities and documentation.

@@ -2,7 +2,7 @@
 
 ## Setting Up ImSwitch React and Backend (optional: with Docker Compose)
 
-More information on setting upt this on a raspberry pi, please refer to the [INSTALL ON PI](./launch_imswitch_raspi.md) documentation.
+More information on setting upt this on a raspberry pi, please refer to the [INSTALL ON PI](.\docs\05_ImSwitch\01_Quickstart.md) documentation.
 
 **Warning** This is very experimental. What you can expect:
 

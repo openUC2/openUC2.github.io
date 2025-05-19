@@ -50,9 +50,9 @@ Before diving into the development process, ensure you have the following:
    - For Linux/Mac: `upload_port = /dev/cu.SLAB_USBtoUART`
    - For Windows: `upload_port = COM3` (adjust the COM port based on your system)
 3. Examine the `PinConfig.h` file to select the appropriate board configuration by setting the desired `PinConfig` structure, e.g., `const UC2_3 pinConfig;`.
-4. Changing debug level: 
+4. Changing debug level:
 ```
-build_flags = 
+build_flags =
 	-DCORE_DEBUG_LEVEL=0
 ```
 #### Step 5: Building and Uploading the Firmware
@@ -91,11 +91,6 @@ There you can select the board you have and flash the code. If the driver is pro
 
 ![](https://github.com/youseetoo/uc2-esp32/raw/main/IMAGES/webtool.png)
 *This shows the gui to first select the board you have before the browser (chrome/edge) automatically flashes the firmware.*
-
-
-# Additional information
-
-This is a fastly moving repo and the information may get outdated quickly. Please also check the relevant information in our [documentation](https://openuc2.github.io/docs/Electronics/uc2e1)
 
 
 # Information about the REST commands

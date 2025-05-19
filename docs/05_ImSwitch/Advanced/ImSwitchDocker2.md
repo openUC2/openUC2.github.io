@@ -54,7 +54,7 @@ sudo docker run -it --rm -p 8001:8001 -p 2222:22 -e HEADLESS=1 -e HTTP_PORT=8001
 ```
 
 More information about this here:
-https://openuc2.github.io/docs/ImSwitch/ImSwitchDocker#docker-quick-start
+https://openuc2.github.io/docs/05_ImSwitch/Advanced/ImSwitchDocker#docker-quick-start
 
 
 

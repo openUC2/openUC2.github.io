@@ -212,8 +212,6 @@ For a detailed breakdown of the image creation process, see:
 
 ![](./IMAGES/ImSwitch-OS-3.png)
 
-#### Configuring ImSwitch
-The default configuration is in **Demo Mode**. For hardware-specific configurations, refer to the [ImSwitch Configuration Guide](https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi#modifying-imswitch-configuration).
 
 
 ##### Configure ImSwitch using the Cockpit
@@ -261,8 +259,6 @@ docker exec -it blissful_wescoff /bin/bash
 ```
 
 **Edit ImSwitch configuration files**
-
-More information can be found here: [ImSwitch Configuration Guide](https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi#modifying-imswitch-configuration).
 
 Edit the file that is pointing to the currently active configuration file:
 ```bash
@@ -446,7 +442,6 @@ If connection still fails run `sudo journalctl -u NetworkManager -b | grep wlan0
 - The **manual installation** allows full customization of Raspberry Pi OS and software.
 - The **pre-built image** provides a quick and reliable setup, including all necessary drivers.
 
-For additional details, visit: [ImSwitch Documentation](https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi/)
 
 ---
 

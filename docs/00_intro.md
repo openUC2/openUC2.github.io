@@ -24,5 +24,5 @@ Here you can find all information to enhance, repair, improve, use, communicate,
 | <img src="/img/icons/icon_electronics.png"  width="150"/> | Electronics (PCB) [[EN](./04_Electronics/00_Quickstart.md)] | |
 | <img src="/img/icons/icon_imswitch.png"  width="150"/> | ImSwitch [[EN](./05_ImSwitch/01_Quickstart.md)] | |
 | <img src="/img/icons/icon_lightsheet.png"  width="150"/> | Light-Sheet Microscopy [[EN](./02_Toolboxes/07_LightsheetBox/01_light_sheet_microscope.md)] | |
-| <img src="/img/icons/icon_storm.png"  width="150"/> | STORM Microscopy [[EN](./docs/03_Investigator/05_STORM/00_Main.md)] | |
+| <img src="/img/icons/icon_storm.png"  width="150"/> | STORM Microscopy [[EN](./03_Investigator/05_STORM/00_Main.md)] | |
 | <img src="/img/icons/icon_workshop.png"  width="150"/> | Workshops [[EN](./06_WORKSHOPS/README.md)]] | |

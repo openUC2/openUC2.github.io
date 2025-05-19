@@ -143,7 +143,7 @@ ashlar.main(['', collected_tiles_file, '-o', ashlar_output_file, '--pyramid', '-
 ### In action
 
 Here we use the loading of numpy images inside ImSwitch and process them with Ashlar to directly dipslay them in Napari.
-Make sure the orientation is set as in the animation below according to the [Stage Calibration](02_Investigator/02_XYZMicroscope/StageCalibration.md) results.
+Make sure the orientation is set as in the animation below according to the [Stage Calibration](./StageCalibration.md) results.
 
 ```py
 # keep this number low (e.g. 1-2 to check the correction direction of X/Y)

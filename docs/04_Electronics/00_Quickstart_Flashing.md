@@ -4,7 +4,7 @@ title: Getting Started
 ---
 
 <!----------------------------------------->
-## First Steps, Getting Started, Flashing - Simply Quick Start!
+## Quick Start: controlling and testing electronic Components vie Web interface
 Duration:20
 
 ### Installing the driver

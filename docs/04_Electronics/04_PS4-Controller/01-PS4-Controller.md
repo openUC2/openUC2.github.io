@@ -1,3 +1,7 @@
+---
+title: PS4 Controller Pinout
+---
+
 If you are using the webserial online flashing tool provided by UC2 (https://youseetoo.github.io/) to flash the firmware onto your ESP8266 or ESP32 development board, the process of connecting the PS4 controller to the UC2-ESP remains similar to the steps mentioned earlier. However, please note that the flashing tool is a separate tool for uploading firmware, and the Bluetooth communication with the PS4 controller needs to be implemented in your firmware code.
 
 

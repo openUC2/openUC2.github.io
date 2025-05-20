@@ -1,4 +1,4 @@
-# Building The CourseBOX
+# Building The CourseBOX - outdated
 
 This is a guide for building the [CourseBOX](https://openuc2.github.io/docs/Toolboxes/QBox/CourseBox/MicroscopyCore/). If you were looking for another BOX version, [click here](../../).
 

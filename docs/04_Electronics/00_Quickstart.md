@@ -74,7 +74,7 @@ Experiment with other colors by changing the RGB values.
 
 
 
-This first exercise gives you a solid introduction to controlling basic components of the openUC2 system. In future tutorials, we will explore more advanced techniques, such as automated focus stacking and digital phase-contrast imaging -> for this you can have a look here  https://openuc2.github.io/docs/Toolboxes/InfinityBox/DPCmicroscopy
+This first exercise gives you a solid introduction to controlling basic components of the openUC2 system. In future tutorials, we will explore more advanced techniques, such as automated focus stacking and digital phase-contrast imaging -> for this you can have a look [here](https://openuc2.github.io/docs/Toolboxes/InfinityBox/DPCmicroscopy)
 
 Feel free to experiment further with different motor and LED settings to familiarize yourself with the control interface. If you have question reach out to us in our forum: openuc2.discourse.group.
 

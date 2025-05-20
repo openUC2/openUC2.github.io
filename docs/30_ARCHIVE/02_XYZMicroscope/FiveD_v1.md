@@ -78,4 +78,4 @@ In order to get the microscope working, we first need to install additional driv
 - the openUC2 electronics board uses an ESP32, which needs the CH340 USB-Serial driver: https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all
 
 
-For additional information and an in-depth explanation for the UC2e system, please have a look [here](https://openuc2.github.io/docs/04_Electronics/10_Advanced/uc2e1)
+For additional information and an in-depth explanation for the UC2e system, please have a look [here](https://openuc2.github.io/docs/Electronics/Advanced/uc2e1)

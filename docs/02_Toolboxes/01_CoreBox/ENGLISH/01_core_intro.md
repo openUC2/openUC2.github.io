@@ -65,7 +65,6 @@ Want more dice? Then you can build them yourself. You can find everything [here]
 Duration: 1
 
 Make sure that the cubes are placed correctly on the plate and are not tilted. In the end it is important that the inserts are in the right place.
-docs/01_Toolboxes/01_DiscoveryCore/IMAGES/MINIBOX/2.png
 ![](../IMAGES/MINIBOX/6.png)
 
 

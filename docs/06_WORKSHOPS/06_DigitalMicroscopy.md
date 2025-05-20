@@ -42,9 +42,9 @@ Feel free to share any of your data under **`#openUC2AQLM`
 ## Some References
 
 Please go through the following links to check about the:
-- [coreBOX](https://openuc2.github.io/docs/02_Toolboxes/01_CoreBox/ENGLISH/uc2miniboxEN)
--  [openUC2 x Seeed Studio AI Microscope](https://openuc2.github.io/docs/02_Toolboxes/09_SeeedMicroscope/04_1_seeedmicroscope)
-- [openUC2 Electronics](https://openuc2.github.io/docs/02_Toolboxes/02_ElectronicsBox/01_automation_intro)
+- [coreBOX](https://openuc2.github.io/docs/Toolboxes/CoreBox/ENGLISH/uc2miniboxEN)
+-  [openUC2 x Seeed Studio AI Microscope](https://openuc2.github.io/docs/Toolboxes/SeeedMicroscope/04_1_seeedmicroscope)
+- [openUC2 ElectronicsBox](https://openuc2.github.io/docs/Toolboxes/ElectronicsBox/automation_intro)
 
 
 ## Chapter 1: Getting Started with the openUC2 coreBOX
@@ -60,11 +60,11 @@ Please go through the following links to check about the:
 
 0. **Read the manual** (QR‑code inside lid) – note safety icons.
 1. Unpack your **coreBOX** and review the included printed or digital manual.
-2. Assemble a **[simple telescope](https://openuc2.github.io/docs/02_Toolboxes/01_CoreBox/ENGLISH/CoreTelescope)** to understand lens focusing.
+2. Assemble a **[simple telescope](https://openuc2.github.io/docs/Toolboxes/CoreBox/ENGLISH/CoreTelescope)** to understand lens focusing.
    a. Assemble two lens holders at 50 mm spacing.
    b. Insert eyepiece (10×) & objective (50 mm f).
    c. Align by sliding cubes until full‑field image is sharp.
-3. Build the **[smartphone microscope](https://openuc2.github.io/docs/02_Toolboxes/01_CoreBox/ENGLISH/coreMicroscope#smartphone-microscope)** using the RMS objective holder and phone adapter.
+3. Build the **[smartphone microscope](https://openuc2.github.io/docs/Toolboxes/CoreBox/ENGLISH/coreMicroscope#smartphone-microscope)** using the RMS objective holder and phone adapter.
    a. Adjust the setup depending on your phone (add a cube spacer in between eventually)
    b. Mount sample slide on slide‑holder cube.
    c. Use flashlight cube for epi‑illumination.
@@ -157,7 +157,7 @@ In order to get the microscope running it's best to use it in a wired mode. We h
 
 :::error
 This process cannot easily be undone! You have to disassemble the microscope to bring the microcontroller into boot mode, so better think about this step twice!
-More information here: https://openuc2.github.io/docs/02_Toolboxes/09_SeeedMicroscope/04_3_seeedmicroscoperepair#flashing-the-esp32s3-in-case-the-bootloader-is-not-responding
+More information [here](https://openuc2.github.io/docs/Toolboxes/SeeedMicroscope/04_3_seeedmicroscoperepair)
 :::
 
 In order to flash the firmware, follow the following steps:
@@ -295,7 +295,7 @@ Differential Phase Contrast (DPC) uses asymmetric illumination to estimate local
 Quantitative DPC (qDPC) goes one step further by reconstructing the actual phase distribution of the sample—providing information about refractive index variations or thickness. This is done by computing the (weak) object transfer function and then further deconvolves the images with the resutling response function
 
 *Further reading:*
-- Theory and Implementation of DPC: https://openuc2.github.io/docs/02_Toolboxes/04_InfinityBox/DPC/
+- Theory and Implementation of DPC: https://openuc2.github.io/docs/Toolboxes/InfinityBox/DPCmicroscopy
 
 #### Prerequisites
 
@@ -842,7 +842,7 @@ axes[1].set_title("Phase")
 ### Resources
 
 Please visit the dedicated light-sheet documentation at:
-https://openuc2.github.io/docs/02_Toolboxes/07_LightsheetBox/01_light_sheet_Fluoresence_microscope or https://openuc2.com/light-sheet-3
+https://openuc2.github.io/docs/Toolboxes/LightsheetBox/Light_sheet_Fluoresence_microscope or https://openuc2.com/light-sheet-3
 
 ### Instructions
 

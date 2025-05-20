@@ -90,7 +90,7 @@ This command will move the Z-axis motor by -1000 steps (1 full rotation) at a sp
 ### Step 4: Controlling the LED Array
 
 1. Use the web interface to turn the LEDs on and off or control brightness.
-2. Try adjusting the LED patterns (e.g., lighting only certain rings) using the available commands. This turns a ll red. Try to turn on individual LEDs. For this checkout the Documentation to the Command set/API [here](https://openuc2.github.io/docs/Electronics/UC2-ESP/APIDescription/INTRO)
+2. Try adjusting the LED patterns (e.g., lighting only certain rings) using the available commands. This turns a ll red. Try to turn on individual LEDs. For this checkout the Documentation to the Command set/API [here](https://openuc2.github.io/docs/Electronics/Advanced/UC2-ESP/APIDescription/INTRO)
 
 ```json
 {"task":"/ledarr_act", "led":{"LEDArrMode":1, "led_array":[{"id":0, "r":0, "g":50, "b":0}]}}
@@ -108,7 +108,7 @@ Experiment with other colors by changing the RGB values.
 
 
 
-This first exercise gives you a solid introduction to controlling basic components of the openUC2 system. In future tutorials, we will explore more advanced techniques, such as automated focus stacking and digital phase-contrast imaging -> for this you can have a look here  https://openuc2.github.io/docs/Toolboxes/DiscoveryPhaseMicroscopy/DPCmicroscopy
+This first exercise gives you a solid introduction to controlling basic components of the openUC2 system. In future tutorials, we will explore more advanced techniques, such as automated focus stacking and digital phase-contrast imaging -> for this you can have a look [here](https://openuc2.github.io/docs/Toolboxes/InfinityBox/DPCmicroscopy)
 
 Feel free to experiment further with different motor and LED settings to familiarize yourself with the control interface. If you have question reach out to us in our forum: openuc2.discourse.group.
 
@@ -123,7 +123,7 @@ The UC2-ESP firmware is designed to support various input devices, including the
 
 #### How to Pair the PS4 Controller:
 
-For more detailed instructions on pairing, refer to the [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller). But briefly:
+For more detailed instructions on pairing, refer to the [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller/PS4-Controller). But briefly:
 
 1. First, put your PS4 controller into pairing mode by holding down the **Share** button and the **PS button** simultaneously until the light bar starts blinking.
 2. Open the serial prompt in your browser (connected to the ESP32 board) or use the web interface.
@@ -138,7 +138,7 @@ This will initiate the Bluetooth scan on the ESP32, which will detect and pair w
 
 ### Step 2: Building the Microscope
 
-Next, you will build a motorized digital microscope using the components provided in the kit. This setup will be similar to the **smartphone microscope**, which can be found in detail [here](https://openuc2.github.io/docs/Toolboxes/DiscoveryCore/ENGLISH/coreMicroscope#tutorial-smartphone-microscope), but with the added feature of a motorized Z-stage for fine-tuning the focus and the monocrhome USB-3 caemra
+Next, you will build a motorized digital microscope using the components provided in the kit. This setup will be similar to the **smartphone microscope**, which can be found in detail [here](https://openuc2.github.io/docs/Toolboxes/CoreBox/ENGLISH/coreMicroscope#tutorial-smartphone-microscope), but with the added feature of a motorized Z-stage for fine-tuning the focus and the monocrhome USB-3 caemra
 
 #### Components Needed (in addition to the Smartphone micrsocope):
 - **Objective Lens** (RMS 10x or 4x)
@@ -235,7 +235,7 @@ For a simpler, platform-agnostic solution, you can run ImSwitch using Docker:
 
 Once you have ImSwitch installed and running, you can access the web interface at `localhost:8001` to control the system.
 
-For detailed instructions on Docker installation, visit the [ImSwitch Docker Guide](https://openuc2.github.io/docs/ImSwitch/ImSwitchDocker/).
+For detailed instructions on Docker installation, visit the [ImSwitch Docker Guide](https://openuc2.github.io/docs/ImSwitch/Advanced/ImSwitchDocker).
 
 ---
 

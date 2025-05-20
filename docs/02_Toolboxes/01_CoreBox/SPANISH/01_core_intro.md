@@ -1,116 +1,93 @@
-
-
+---
+id: uc2miniboxES
+title: UC2 miniBOX
+---
 ## ¿Qué hay en la MiniBOX?
 
 :::warning
-Hemos compilado este documento en un ***PDF*** que se puede descargar <a href="/MINIBOX/Manual_Corebox_SP.pdf" target="_blank" >aquí</a>
+Hemos compilado este documento en un ***PDF*** que se puede descargar <a href="/MINIBOX/Manual_Corebox_EM.pdf" target="_blank" >aquí</a>
 :::
 
-**Soporte de muestra:** sostiene un objeto en un cubo\
-**Lente:** afecta la manera en que la luz se propaga (se esparce)\
-**Espejo:** refleja la luz\
-**Objetivo del microscopio:** un sistema de lentes especial que agranda un objeto
+**Soporte para muestras:** sostiene un objeto en un cubo  
+**Lente:** afecta la forma en que se propaga la luz (cómo se dispersa)  
+**Espejo:** refleja la luz  
+**Objetivo de microscopio:** un sistema especial de lentes que amplía un objeto
 
-<p align="center">
-<img src="/MINIBOX/1.png" width="500"/>
-</p>
+![](../IMAGES/MINIBOXNEW/5.png)
 
+Un recorrido rápido por una caja ejemplar y cómo se ven los cubos (estado octubre de 2022) se puede encontrar aquí:
 
-Un recorrido rápido a través de una caja ejemplar y cómo se ven los cubos (estado de octubre de 2022) se puede encontrar aquí:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NZZ6n620eV0" title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NZZ6n620eV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## ¿Qué es UC2?
 
-El elemento central del proyecto UC2 es un cubo simple.
-El cubo consta de dos mitades y alberga un inserto deslizable.
+El elemento central del proyecto UC2 es un cubo simple.  
+El cubo consta de dos mitades y contiene un inserto deslizante.  
 El inserto puede contener varios componentes ópticos (por ejemplo, lentes, espejos), lo que significa que se pueden implementar diferentes funciones con cada cubo.
 
-### Tipo de cubo 1: moldeado por inyección con conexión de enchufe
+### Tipo de cubo 1: moldeado por inyección con conexión de encaje
 
-**Base**
+**Placa base**
 
-<p align="center">
-<img src="/MINIBOX/2.png" width="300"/>
-</p>
+![](../IMAGES/MINIBOX/2.png)
 
-**Base**
+**Placa base**
 
-El cubo se puede montar en una placa base. Los módulos de la placa base se pueden juntar como un rompecabezas.
+El cubo se puede montar en una placa base. Los módulos de la placa base se pueden unir como un rompecabezas.
 
-<p align="center">
-<img src="/MINIBOX/3.png" width="300"/>
-</p>
+![](../IMAGES/MINIBOX/4.png)
 
 ## UC2 para imprimir tú mismo
 
-El cubo UC2 también se puede imprimir en 3D. Se ve igual que el modelo moldeado por inyección, pero aquí consiste en una tapa de cubo y el cuerpo del cubo, que se mantienen unidos con tornillos. Los tornillos son excelentes para colocarlos en la placa magnética. Al combinar diferentes módulos de cubos, se pueden ensamblar fácilmente diferentes estructuras ópticas. Una nueva función se puede agregar con cada dado. Tu creatividad no tiene límites.
+El cubo UC2 también se puede imprimir en 3D. Se ve igual que el modelo moldeado por inyección, pero aquí consta de una tapa de cubo y un cuerpo de cubo, que se mantienen unidos con tornillos.  
+Los tornillos son ideales para colocarse sobre la placa magnética.  
+Combinando diferentes módulos de cubo, se pueden ensamblar fácilmente distintas estructuras ópticas. Se puede añadir una nueva función con cada cubo. Tu creatividad no tiene límites.
 
 ### Tipo de cubo 2: impreso en 3D con conexión magnética
 
-**Dados**
+**Cubo**
 
-<p align="center">
-<img src="/MINIBOX/4.png" width="300"/>
-</p>
+![](../IMAGES/MINIBOX/4.png)
 
 **Placa base con imanes**
 
-En la placa base impresa en 3D hay pequeños imanes esféricos en los que se colocan los cubos.
+En la placa base impresa en 3D hay pequeños imanes esféricos sobre los que se colocan los cubos.
 
-<p align="center">
-<img src="/MINIBOX/5.png" width="300"/>
-</p>
+![](../IMAGES/MINIBOX/5.png)
 
-¿Quieres más dados? Entonces puedes construirlos tú mismo. Puedes encontrar todo [aquí](https://github.com/openUC2/UC2-GIT)
+¿Quieres más cubos? Entonces puedes construirlos tú mismo. Puedes encontrar todo [aquí](https://github.com/openUC2/UC2-GIT)
 
-
-
-## Así es como encajan los dados
+## Así es como encajan los cubos  
 Duración: 1
 
-Asegúrate de que los cubos estén colocados correctamente en la placa y no estén inclinados. Al final es importante que los insertos estén en el lugar correcto.
+Asegúrate de que los cubos estén colocados correctamente sobre la placa y que no estén inclinados. Al final, es importante que los insertos estén en el lugar correcto.  
+![](../IMAGES/MINIBOX/6.png)
 
-<p align="center">
-<img src="/MINIBOX/6.png" width="300"/>
-</p>
+Si no ves una imagen nítida, mueve los insertos (por ejemplo, una lente) hasta que la veas claramente. La flecha verde en la imagen te muestra cómo hacerlo.
 
-Si no ves una imagen nítida, mueve los insertos (por ejemplo, lente) hasta que la veas claramente. La flecha verde en la imagen te muestra cómo hacerlo.
+![](../IMAGES/MINIBOX/7.png)
 
-<p align="center">
-<img src="/MINIBOX/7.png" width="300"/>
-</p>
+Aquí puedes encontrar un pequeño video que explica el concepto central del cubo:
 
-Aquí puedes encontrar un pequeño video que explica el concepto central del cubo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Yl0lgNJu_AQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yl0lgNJu_AQ" title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-Of course, here's the translation of the provided text into Spanish:
-
----
-
-## ¿Qué significan los símbolos?
+## ¿Qué significan los símbolos?  
 Duración: 2
 
 |||
-|----|-----|
-|<img src="/MINIBOX/I1.png" width="200"/>|Experimenta Si ves este bloque, ¡hay algo con lo que experimentar! Puedes colocar un cubo UC2 en este bloque. |
-|<img src="/MINIBOX/I2.png" width="100"/>|**Explicaciones**: Si ves este icono, ¡hay algo que aprender! |
-|<img src="/MINIBOX/I3.png" width="100"/>|**Facturas:** Aquí hay algo que calcular. Toma un lápiz y papel y comienza a resolver rompecabezas. |
-|<img src="/MINIBOX/I4.png" width="100"/>|**Precaución:** ¡No toques las superficies de vidrio con tus dedos! |
-|<img src="/MINIBOX/I5.png" width="100"/>|**Limpieza de las lentes:** Si ya has tocado la lente, puedes limpiarla con un paño para gafas. |
+|----|-----|  
+|![](../IMAGES/MINIBOX/I1.png)  |**Experimento:** ¡Si ves este bloque, hay algo para experimentar! Puedes colocar un cubo UC2 sobre este bloque. |
+|![](../IMAGES/MINIBOX/I2.png) |**Explicaciones:** Si ves este ícono, ¡hay algo que aprender! |
+|![](../IMAGES/MINIBOX/I3.png)|**Cálculos:** Aquí hay algo que calcular. Toma lápiz y papel y empieza a resolver. |
+|![](../IMAGES/MINIBOX/I4.png)|**Precaución:** ¡No toques las superficies de vidrio con los dedos! |
+|![](../IMAGES/MINIBOX/I5.png)|**Limpieza de lentes:** Si ya tocaste la lente, puedes limpiarla con un paño para gafas. |
 
-<p align="center">
-<img src="/MINIBOX/I6.png" width="700"/>
-</p>
+![](../IMAGES/MINIBOX/I6.png)
 
-## ¿Qué puede hacer una lente?
-Duración: 2
+## ¿Qué puede hacer una lente?  
+Duración: 2  
+![](../IMAGES/MINIBOX/I1.png)
 
 Toma uno o más de los cubos que tienen una lente y observa el símbolo UC2 mostrado aquí. Sostén el cubo en tu mano y cambia la distancia entre la lente y la imagen.
 
-<p align="center">
-<img src="/MINIBOX/8.png" width="300"/>
-</p>
+![](../IMAGES/MINIBOXNEW/11.png)

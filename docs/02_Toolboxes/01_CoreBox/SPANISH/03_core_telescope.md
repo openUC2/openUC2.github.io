@@ -202,10 +202,8 @@ El aumento es como el del telescopio de Kepler. La lente erectora solo cambia la
 
 Una imagen derecha es necesaria para observaciones terrestres. Los verdaderos telescopios terrestres utilizan sistemas de prismas para rotar la imagen y mantenerla compacta.
 
-<div class="alert-success">
-La imagen es:
 
+La imagen es:
 * Ampliada con el mismo aumento que el telescopio de Kepler  
 * Vertical  
 * Espejada
-</div><br/>

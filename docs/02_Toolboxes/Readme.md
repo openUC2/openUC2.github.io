@@ -1,4 +1,4 @@
-# BOXES
+# Discovery Boxes
 
 Here you can find the Documentation for all the different Boxes for example:
 

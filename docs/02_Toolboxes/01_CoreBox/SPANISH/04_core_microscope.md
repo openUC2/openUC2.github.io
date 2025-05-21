@@ -3,296 +3,283 @@ id: coreMicroscope
 title: microscopio
 ---
 
-## Light microscope with "infinity optics"
+## Microscopio óptico con "óptica al infinito"
 
 <div class="alert info">
-What happens when you turn the Kepler telescope upside down?
+¿Qué pasa cuando le das la vuelta al telescopio de Kepler?
 </div><br/>
 
-Place the object about 40mm in front of the lens and find the image about 100mm behind the tube lens (using a paper or the wall as a screen) as shown in the diagram. Move the lenses to get a sharp image.
+Coloca el objeto a unos 40 mm delante de la lente y encuentra la imagen a unos 100 mm detrás de la lente del tubo (usando un papel o la pared como pantalla), como se muestra en el diagrama. Mueve las lentes hasta obtener una imagen nítida.
 
 ![](../IMAGES/MINIBOXNEW/31.png)
 
 <div class="alert info">
-Place the object with the lens on the paper as one unit. Place the tube lens at a distance of 100mm from your screen (paper, wall). Change the distance between the lenses - does the image change?
+Coloca el objeto junto con la lente sobre el papel como una sola unidad. Coloca la lente del tubo a una distancia de 100 mm de tu pantalla (papel, pared). Cambia la distancia entre las lentes – ¿cambia la imagen?
 </div><br/>
 
 
+## Esto significa "óptica al infinito"
 
-## This means "infinity optics"
+Un microscopio es un dispositivo que permite observar o capturar imágenes de objetos con un gran aumento.
 
-
-A microscope is a device that allows objects to be viewed or imaged at high magnification.
-
-The image is called an **intermediate image** because it is often further enlarged with an eyepiece.
+La imagen se llama **imagen intermedia** porque a menudo se amplía aún más con un ocular.
 
 ![](../IMAGES/MINIBOXNEW/32.png)
 
-The object is roughly in the object-side focal plane of the lens. Thus, all incident rays are converted into a parallel bundle of rays behind the lens. The lens has a short focal length.
+El objeto está aproximadamente en el plano focal del lado del objeto de la lente. Así, todos los rayos incidentes se convierten en un haz paralelo de rayos detrás de la lente. La lente tiene una distancia focal corta.
 
-The tube lens creates a real image by collecting parallel rays that hit the tube lens in its focal plane. If we place them behind the lens, the object will be imaged from the focal plane of the lens. The tube lens has a longer focal length than the objective.
+La lente del tubo crea una imagen real al recoger los rayos paralelos que inciden en su plano focal. Si las colocamos detrás de la lente, el objeto se proyectará desde el plano focal de la lente. La lente del tubo tiene una distancia focal más larga que el objetivo.
 
-The image in the plane of the intermediate image is reversed, flipped, enlarged and real. The real image can be seen on a screen.
-
+La imagen en el plano de la imagen intermedia está invertida, volteada, ampliada y es real. La imagen real puede verse en una pantalla.
 
 <div class="alert info">
 </div><br/>
 
 
-## This means "infinity optics"
+## Esto significa "óptica al infinito"
 
-
-What is the magnification of the image?
+¿Cuál es el aumento de la imagen?
 
 ![](../IMAGES/MINIBOXNEW/33.png)
 
-Magnification of the image
+Aumento de la imagen
 
 ![](../IMAGES/MINIBOX/UC2_minibox_31.png)
 
 <div class="alert-success">
-The lenses of the Kepler telescope can also be used for a microscope, but in a different order.
-As long as the object is in the focal plane of the lens and the screen is in the focal plane of the tube lens, the distance between the lens and tube lens does not matter because the light rays are parallel.
+Las lentes del telescopio de Kepler también pueden utilizarse para un microscopio, pero en un orden diferente.
+Mientras el objeto esté en el plano focal de la lente y la pantalla en el plano focal de la lente del tubo, la distancia entre ambas lentes no importa, ya que los rayos de luz son paralelos.
 </div><br/>
 
 
+## Tutorial: Microscopio óptico con óptica al infinito
 
-## Tutorial: Light Microscope with Infinity Optics
+### Materiales necesarios:
 
-### Materials needed:
-
-- Kepler's telescope
-- Torch lamp
-- Sample holder (in cube) with sample
+- Telescopio de Kepler
+- Lámpara de mano
+- Soporte para muestras (en cubo) con muestra
 
 ![](../IMAGES/MINIBOXTUTORIAL/image120.png)
 
-### Diagram (side view):
+### Diagrama (vista lateral):
 ![](../IMAGES/MINIBOXTUTORIAL/image20.png)
 
-### Instructions for assembling the Light Microscope with Infinity Optics:
+### Instrucciones para montar el microscopio óptico con óptica al infinito:
 
-**Step 1: Add the sample**
+**Paso 1: Añadir la muestra**
 
-Add the sample cube behind to the 50 mm positive lens. Don’t forget to add the base plates.
+Coloca el cubo de la muestra detrás de la lente positiva de 50 mm. No olvides añadir las placas base.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image24.png)
 
-**Step 2: Fix the cubes with base plates**
+**Paso 2: Fijar los cubos con las placas base**
 
-Use the torch to illuminate the sample. Look for a screen (notebook, piece of paper) to project the image onto.
+Utiliza la lámpara para iluminar la muestra. Busca una pantalla (cuaderno, hoja de papel) para proyectar la imagen.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image6.png)
 ![](../IMAGES/MINIBOXTUTORIAL/image7.png)
 
-**Step 3: Adjust the distance**
+**Paso 3: Ajustar la distancia**
 
-Turn off ambient light to see the image on the screen clearly. Adjust the distance between the microscope and the screen until you see a sharp focused image (check the diagram).
+Apaga la luz ambiente para ver claramente la imagen en la pantalla. Ajusta la distancia entre el microscopio y la pantalla hasta que veas una imagen enfocada (consulta el diagrama).
 
 ![](../IMAGES/MINIBOXTUTORIAL/image87.png)
 ![](../IMAGES/MINIBOXTUTORIAL/image33.png)
 ![](../IMAGES/MINIBOXTUTORIAL/Microscope_infinity_optics.gif)
 
-## "Infinity optics" microscope with eyepiece
+## Microscopio con "óptica al infinito" y ocular
 
 ![](../IMAGES/MINIBOXNEW/34.png)
 
-
 <div class="alert info">
-Can you see the microscopic image through the eyepiece lens with your eyes? What effect does the mirror have? Set up the microscope without the mirror. Make sure you still have two empty spaces between the tube lens and the eyepiece. Then what are you observing?
+¿Puedes ver la imagen microscópica a través del ocular con tus ojos? ¿Qué efecto tiene el espejo? Monta el microscopio sin el espejo. Asegúrate de dejar dos espacios vacíos entre la lente del tubo y el ocular. ¿Qué observas?
 </div><br/>
 
-A quick intro into mirrors and its applications can be found here:
+Una introducción rápida a los espejos y sus aplicaciones se encuentra aquí:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/azxLqej7yqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## What is the eyepiece good for?
+## ¿Para qué sirve el ocular?
 
-
-Newer microscopes are equipped with so-called "infinity optics". In this case, the lens does not produce a real intermediate image. The light exits the lens as infinite parallel rays. At the end of the "infinite" tube is a tube lens. This creates an intermediate image, which is then enlarged again through the eyepiece.
+Los microscopios modernos están equipados con la llamada "óptica al infinito". En este caso, la lente no produce una imagen intermedia real. La luz sale de la lente como rayos paralelos infinitos. Al final del tubo "infinito" hay una lente de tubo. Esta crea una imagen intermedia, que luego se amplía nuevamente a través del ocular.
 
 ![](../IMAGES/MINIBOXNEW/35.png)
 
+La imagen detrás del ocular está invertida, volteada, ampliada y es virtual. La imagen virtual puede verse con el ojo.
 
-The image behind the eyepiece is reversed, reversed, enlarged and virtual. The virtual image can be seen with the eye.
+Esta configuración es muy útil en los microscopios modernos, ya que permite colocar componentes adicionales como filtros entre el objetivo y la lente del tubo sin afectar el trayecto óptico.
 
-This configuration is very useful in modern microscopes as it allows additional components such as filters to be placed between the objective and tube lens without affecting the optical path.
-
-A filter can be used to change the brightness and color of the image.
+Un filtro puede usarse para cambiar el brillo y el color de la imagen.
 
 <div class="alert info">
 </div><br/>
 
 
-## The eyepiece is good for that
+## Para eso sirve el ocular
 
-
-What is the magnification after the eyepiece?
+¿Cuál es el aumento después del ocular?
 
 ![](../IMAGES/MINIBOXNEW/36.png)
 
-
-overall magnification
-
+Aumento total
 
 ![](../IMAGES/MINIBOX/UC2_minibox_37.png)
 
 <div class="alert-success">
-An eyepiece is actually just a lens that enlarges the intermediate image. It maps the virtual image in such a way that you can see it with your eyes.
+Un ocular es, en realidad, solo una lente que amplía la imagen intermedia. Forma la imagen virtual de tal manera que puedes verla con los ojos.
 </div><br/>
 
 ![](../IMAGES/MINIBOX/UC2_minibox_38.png)
 
 <div class="alert-success">
-With the mirror you can not only see yourself, but also reflect the incoming light in any direction. So you can fold the optical path and make it more comfortable to work with. The mirror doesn't affect the magnification, but it does rotate the image in one direction.
+Con el espejo no solo puedes verte a ti mismo, sino también reflejar la luz entrante en cualquier dirección. Así puedes plegar el camino óptico y hacerlo más cómodo para trabajar. El espejo no afecta el aumento, pero sí rota la imagen en una dirección.
 </div><br/>
 
-## Tutorial: Light Microscope with Infinity Optics and Eyepiece
+## Tutorial: Microscopio óptico con óptica al infinito y ocular
 
-### Materials needed:
+### Materiales necesarios:
 
-- Kepler's telescope
-- Torch lamp
-- Eight base plates
-- Sample holder (in cube) with sample
-- Mirror (in cube)
-- Empty cube
-- Eyepiece (in cube)
+- Telescopio de Kepler
+- Lámpara de mano
+- Ocho placas base
+- Soporte para muestras (en cubo) con muestra
+- Espejo (en cubo)
+- Cubo vacío
+- Ocular (en cubo)
 
 ![](../IMAGES/MINIBOXTUTORIAL/image126.png)
 
-### Diagram (side view):
+### Diagrama (vista lateral):
 
 ![](../IMAGES/MINIBOXTUTORIAL/image64.png)
 
+### Instrucciones para montar el microscopio óptico con óptica al infinito y ocular:
 
-### Instructions for assembling the Light Microscope with Infinity Optics and Eyepiece:
+**Paso 1: Añadir el cubo de muestra**
 
-**Step 1: Add the sample-holder cube**
-
-Add the sample-holder cube in the Kepler's telescope next to the 50 mm converging lens.
+Coloca el cubo de la muestra en el telescopio de Kepler junto a la lente convergente de 50 mm.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image12.png)
 
-**Step 2: Assemble next to the 100 mm lens**
+**Paso 2: Montar junto a la lente de 100 mm**
 
-Next to the 100 mm converging lens, assemble one empty cube and the mirror cube next to it.
+Junto a la lente convergente de 100 mm, monta un cubo vacío y luego el cubo con el espejo.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image45.png)
 
-**Step 3: Place the eyepiece**
+**Paso 3: Colocar el ocular**
 
-Place the eyepiece on top of the mirror cube with the right orientation. Illuminate the sample from a considerable distance.
+Coloca el ocular sobre el cubo con el espejo con la orientación correcta. Ilumina la muestra desde una distancia considerable.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image70.png)
 
-**Step 5: Adjust for a sharp image**
+**Paso 5: Ajustar para una imagen nítida**
 
-Look through the eyepiece. Adjust the lenses distance until you see a focused sharp image. Note: If you don’t see the specimen try to adjust the slide’s position carefully until you see the specimen.
+Mira a través del ocular. Ajusta la distancia de las lentes hasta que veas una imagen nítida. Nota: Si no ves la muestra, intenta ajustar cuidadosamente la posición del portaobjetos hasta que la veas.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image81.png)
 ![](../IMAGES/MINIBOXTUTORIAL/image31.png)
 
 
-## Light microscope with "finite optics"
+## Microscopio óptico con "óptica finita"
 
-Place the dice in the positions shown in the diagram below and look through the eyepiece.
+Coloca los cubos en las posiciones mostradas en el diagrama a continuación y mira a través del ocular.
 
 <div class="alert-success">
-Build the microscope like a sandwich by adding a second layer using a base plate. Look through the eyepiece from above.
+Construye el microscopio como un sándwich añadiendo una segunda capa usando una placa base. Mira por el ocular desde arriba.
 </div><br/>
 
 ![](../IMAGES/MINIBOXNEW/37.png)
 
 <div class="alert info">
-Do you see the image through the eyepiece as before? Can you find the real intermediate image with a piece of paper?
+¿Ves la imagen a través del ocular como antes? ¿Puedes encontrar la imagen intermedia real con un pedazo de papel?
 </div><br/>
 
 <div class="alert-success">
-Turn the small gear on the lens holder. This is how you move or focus the lens. If you can't go any further, you can also move the lens in the holder.
+Gira el engranaje pequeño en el soporte de la lente. Así se mueve o se enfoca la lente. Si ya no puedes girarlo más, también puedes mover la lente dentro del soporte.
 </div><br/>
 
 
-## Tutorial: Light Microscope with Finite Optics and Eyepiece
+## Tutorial: Microscopio óptico con óptica finita y ocular
 
 ![](../IMAGES/MINIBOXTUTORIAL/image48.gif)
 
-### Materials needed:
+### Materiales necesarios:
 
-- Microscope objective (4x) with gear mount (linear stage)
-- Torch lamp with lamp base
-- Twelve base plates
-- Sample holder (in cube) with sample
-- Mirror (in cube)
-- Three empty cubes
-- Eyepiece (in cube)
+- Objetivo de microscopio (4x) con montaje de engranaje (etapa lineal)
+- Lámpara con base
+- Doce placas base
+- Soporte de muestra (en cubo) con muestra
+- Espejo (en cubo)
+- Tres cubos vacíos
+- Ocular (en cubo)
 
 ![](../IMAGES/MINIBOXTUTORIAL/image139.jpg)
 
-### Diagram (side view):
+### Diagrama (vista lateral):
 
 ![](../IMAGES/MINIBOXTUTORIAL/image2.png)
 
-## Instructions for assembling the Light Microscope with Finite Optics:
+## Instrucciones para montar el microscopio óptico con óptica finita:
 
-**Step 1: Connect the base plates**
+**Paso 1: Conecta las placas base**
 
-Connect the base plates in the following way.
+Conecta las placas base de la siguiente manera.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image139.jpg)
 
-**Step 2: Place the sample**
+**Paso 2: Coloca la muestra**
 
-Place the sample on the leftmost plate.
+Coloca la muestra en la placa base más a la izquierda.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image105.jpg)
 
-**Step 3: Build and place the cubes**
+**Paso 3: Construye y coloca los cubos**
 
-Build a cube with the microscope objective inside and place both microscope objective and gear cubes in the next two base plates. Include all additional images as shown.
+Construye un cubo con el objetivo del microscopio en su interior y coloca tanto el objetivo como los cubos con engranaje en las siguientes dos placas base. Incluye todas las imágenes adicionales como se muestra.
 
-**Sub Step 1:**
+**Subpaso 1:**
 ![](../IMAGES/MINIBOXTUTORIAL/image58.jpg)
 
-**Sub Step 2:**
+**Subpaso 2:**
 ![](../IMAGES/MINIBOXTUTORIAL/image63.jpg)
 
-**Sub Step 3:**
+**Subpaso 3:**
 ![](../IMAGES/MINIBOXTUTORIAL/image86.jpg)
 
-**Step 4: Reflect the light**
+**Paso 4: Refleja la luz**
 
-Place two empty cubes and the cube with the mirror at the last base plate such that it reflects the light coming from the sample upwards.
+Coloca dos cubos vacíos y el cubo con el espejo en la última placa base de manera que refleje la luz proveniente de la muestra hacia arriba.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image128.jpg)
 
-**Step 5: Secure the cubes**
+**Paso 5: Fija los cubos**
 
-Place the base plates on top of the cubes to fix them tightly.
+Coloca placas base encima de los cubos para fijarlos firmemente.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image62.jpg)
 
-**Step 6: Attach the eyepiece**
+**Paso 6: Coloca el ocular**
 
-Place the eyepiece on top of the mirror cube. Mind the right orientation of the eyepiece.
+Coloca el ocular encima del cubo con espejo. Asegúrate de la orientación correcta del ocular.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image69.jpg)
 
-**Step 7: Illuminate the sample**
+**Paso 7: Ilumina la muestra**
 
-Fix the lamp with a base and illuminate the sample from a considerable distance. Look through the eyepiece and adjust the microscope distance using the gear until you see a focused image of the specimen.
+Fija la lámpara con una base e ilumina la muestra desde cierta distancia. Mira por el ocular y ajusta la distancia del microscopio usando el engranaje hasta ver una imagen nítida de la muestra.
 
 ![](../IMAGES/MINIBOXTUTORIAL/Finite_Optics_result.png)
 
 
-## "Finite optics" versus "Infinite optics"
+## "Óptica finita" versus "óptica infinita"
 
 ![](../IMAGES/MINIBOXNEW/38.png)
 
-The lenses of older or smaller microscopes are often so-called finite lenses. They behave like a lens with an extremely short focal length and create an intermediate image behind the lens with an image distance that is defined by the tube length. The tube length is printed and corresponds to 160mm for our lens. The real intermediate image is created there and is enlarged by the eyepiece optics.
+Las lentes de microscopios antiguos o más pequeños suelen ser lentes denominadas finitas. Se comportan como una lente con una distancia focal extremadamente corta y crean una imagen intermedia detrás de la lente a una distancia definida por la longitud del tubo. Esta longitud está impresa y corresponde a 160 mm en nuestra lente. Allí se crea una imagen intermedia real que luego es ampliada por el ocular.
 
-
-Microscopes have the ability to focus or sharpen the object either by moving the object or the lens. Here we move the lens through a simple mechanism. The rotation of the gear is translated into a displacement of the objective lens. For larger movements, you can also move the lens in the rail.
+Los microscopios pueden enfocar el objeto moviendo el objeto o la lente. Aquí movemos la lente mediante un mecanismo simple. La rotación del engranaje se traduce en un desplazamiento del objetivo. Para movimientos mayores, también puedes mover la lente sobre el riel.
 
 ![](../IMAGES/MINIBOXNEW/38.png)
 <p align="center">
@@ -304,36 +291,34 @@ Microscopes have the ability to focus or sharpen the object either by moving the
 
 
 
-## "Finite optics" versus "Infinite optics"
+## "Óptica finita" versus "óptica infinita"
 
+¿Cuál es el aumento de la imagen intermedia? ¿Y cuál es el aumento después del ocular?
 
-What is the magnification of the intermediate image? And what is the magnification after the eyepiece?
-
-lens magnification
+aumento del objetivo
 
 ![](../IMAGES/MINIBOX/UC2_minibox_44.png)
-as written on it
+como está impreso
 
-eyepiece magnification
+aumento del ocular  
 ![](../IMAGES/MINIBOX/UC2_minibox_45.png)
 
-overall magnification
+aumento total  
 ![](../IMAGES/MINIBOX/UC2_minibox_46.png)
 
 <div class="alert-success">
-The image is larger than with the infinity microscope. The magnification of the lens here is 4×. If you calculated the magnification with the previous microscope, this certainly doesn't surprise you.
+La imagen es más grande que con el microscopio de óptica infinita. El aumento del objetivo aquí es de 4×. Si calculaste el aumento con el microscopio anterior, esto seguramente no te sorprende.
 </div><br/>
 
 ![](../IMAGES/MINIBOXNEW/40.png)
 
 <div class="alert-success">
-The intermediate image is now only formed by the lens and is 160 mm behind it. We'll find out why in the next step.
+La imagen intermedia ahora es formada solo por la lente y está a 160 mm detrás de ella. Descubriremos por qué en el siguiente paso.
 </div><br/>
 
 
 
-
-## Objective and eyepiece
+## Objetivo y ocular
 
 ![](../IMAGES/MINIBOXNEW/41.png)
 
@@ -341,166 +326,150 @@ The intermediate image is now only formed by the lens and is 160 mm behind it. W
 </div><br/>
 
 
-## This is the lens
+## Esta es la lente
 
-
-A lens is an optical system that creates a magnified image of an object. The different numbers printed on the lens have different meanings:
+Una lente es un sistema óptico que crea una imagen ampliada de un objeto. Los diferentes números impresos en la lente tienen distintos significados:
 
 ![](../IMAGES/MINIBOXNEW/42.png)
 
-
-The 4× lens has only one lens in it. The lenses with higher magnification are complete lens systems.
+La lente de 4× tiene solo una lente en su interior. Las lentes con mayor aumento son sistemas completos de lentes.
 
 ![](../IMAGES/MINIBOXNEW/43.png)
 
-
 <div class="alert-success">
-The lens is also a converging lens with a short focal length. The 4x lens has a focal length of f=32 mm. When used as a magnifying glass, it has a higher magnification than the 40mm lens. The field of view is sharp but small.
+La lente también es una lente convergente con una distancia focal corta. La lente 4x tiene una distancia focal de f = 32 mm. Cuando se utiliza como lupa, tiene un mayor aumento que la lente de 40 mm. El campo de visión es nítido pero pequeño.
 </div><br/>
 
 
 
-## The eyepiece
+## El ocular
 
+Un ocular es en realidad una lupa porque amplía la imagen intermedia. El ocular que usamos aquí es un ocular tipo Ramsden.  
+Una sola lente también puede usarse como ocular. Sin embargo, con un ocular Ramsden compuesto por un sistema de lentes, el campo de visión es mejor porque produce menos errores en los bordes del campo. El ocular Ramsden consta de dos lentes con la misma distancia focal. Su distancia focal es f del ocular Ramsden = 3/4 f de la lente
 
-An eyepiece is actually a magnifying glass because it enlarges the intermediate image. The eyepiece we use here is a so-called Ramsden eyepiece.
-A single lens can also be used as an eyepiece. However, with a Ramsden eyepiece consisting of a lens system, the field of view is better because it creates fewer errors at the edge of the field of view. The Ramsden eyepiece consists of two lenses with the same focal length. Its focal length is f Ramsden eyepiece = 3/4 f lens
-
-What is the magnification of the Ramsden eyepiece?
+¿Cuál es el aumento del ocular Ramsden?
 
 ![](../IMAGES/MINIBOXNEW/45.png)
 
-
 <div class="alert-success">
-Each eyepiece has a so-called Ramsden disk, which is the smallest diameter of the light beam that exits the microscope through the eyepiece.
+Cada ocular tiene un llamado disco de Ramsden, que es el diámetro más pequeño del haz de luz que sale del microscopio a través del ocular.
 </div><br/>
 
 <div class="alert-success">
-The field of view is larger and the image looks clearer with the Ramsden eyepiece.
-Each eyepiece has a so-called Ramsden disc, which is the smallest diameter
+El campo de visión es más grande y la imagen se ve más clara con el ocular Ramsden.  
+Cada ocular tiene un llamado disco de Ramsden, que es el diámetro más pequeño
 </div><br/>
-
 
 ![](../IMAGES/MINIBOX/UC2_minibox_51.png)
 
-## Smartphone microscope
+## Microscopio con smartphone
 
-Build the smartphone microscope as shown. Use any two cubes here to safely place the smartphone.
+Construye el microscopio con smartphone como se muestra. Usa cualquier par de cubos para colocar el smartphone de forma segura.
 
 ![](../IMAGES/MINIBOXNEW/46.png)
-
 
 <div class="alert info">
 </div><br/>
 
 <div class="alert-success">
-Build the microscope like a sandwich by adding a second layer using a base plate. Look through the eyepiece from above.
+Construye el microscopio como un sándwich añadiendo una segunda capa usando una placa base. Mira por el ocular desde arriba.
 </div><br/>
 
 <div class="alert info">
-Replace the Ramsden eyepiece with the 40mm lens. What is better for the eye and what for the smartphone?
+Reemplaza el ocular Ramsden con la lente de 40 mm. ¿Qué es mejor para el ojo y qué para el smartphone?
 </div><br/>
 
-## Tutorial: Smartphone Microscope
+## Tutorial: Microscopio con smartphone
 
-![](../IMAGES/MINIBOXTUTORIAL/image1.png)
+![](../IMAGES/MINIBOXTUTORIAL/image1.png)  
 ![](../IMAGES/MINIBOXTUTORIAL/image28.gif)
 
-### Materials needed:
+### Materiales necesarios:
 
-- Microscope objective 4x
-- Microscope objective long mount with gear
-- Ramsden-Eyepiece (in cube)
-- Two non-kinematic mirrors (in cubes)
-- Sample holder (in cube)
-- Three empty cubes
-- 11 base plates
-- Smartphone base plate
-- Torch lamp
-- 50 mm lens (in cube)
+- Objetivo de microscopio 4x  
+- Objetivo con soporte largo y engranaje  
+- Ocular Ramsden (en cubo)  
+- Dos espejos no cinemáticos (en cubos)  
+- Soporte de muestra (en cubo)  
+- Tres cubos vacíos  
+- 11 placas base  
+- Placa base para smartphone  
+- Lámpara de mano  
+- Lente de 50 mm (en cubo)
 
 ![](../IMAGES/MINIBOXTUTORIAL/image38.jpg)
 
-### Diagram (Side view):
+### Diagrama (vista lateral):
 
 ![](../IMAGES/MINIBOXTUTORIAL/image98.png)
 
-## Instructions for assembling the Smartphone Microscope:
+## Instrucciones para montar el microscopio con smartphone:
 
-**Step 1: Build a four-base plate line**
+**Paso 1: Construye una línea de cuatro placas base**
 
 ![](../IMAGES/MINIBOXTUTORIAL/image49.jpg)
 
-**Step 2: Assemble the components**
+**Paso 2: Ensambla los componentes**
 
-Place the Microscope objective mount on one extreme followed by the two mirrors facing each other and one empty cube in the other extreme. Fix them with base plates.
+Coloca el soporte del objetivo del microscopio en un extremo, seguido de los dos espejos enfrentados entre sí y un cubo vacío en el otro extremo. Fíjalos con placas base.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image103.jpg)
 
-**Step 3: Adjust the objective**
+**Paso 3: Ajusta el objetivo**
 
-Build one cube with the microscope objective inside. Adjust the objective's height if necessary by using the gear.
+Construye un cubo con el objetivo del microscopio dentro. Ajusta la altura del objetivo si es necesario usando el engranaje.
 
-![](../IMAGES/MINIBOXTUTORIAL/image68.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image100.jpg)
+![](../IMAGES/MINIBOXTUTORIAL/image68.jpg)  
+![](../IMAGES/MINIBOXTUTORIAL/image100.jpg)  
 ![](../IMAGES/MINIBOXTUTORIAL/image34.jpg)
 
-**Step 4: Place the eyepiece**
+**Paso 4: Coloca el ocular**
 
-Place the eyepiece next to the microscope objective and one empty cube next to it. Mind the right orientation of the eyepiece.
+Coloca el ocular junto al objetivo del microscopio y un cubo vacío junto a él. Asegúrate de la orientación correcta del ocular.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image90.png)
 
-**Step 5: Align the smartphone base**
+**Paso 5: Alinea la base del smartphone**
 
-Place the smartphone base with the hole aligned with the eyepiece. Note: You can adjust the orientation of the smartphone base to adapt your smartphone's size.
+Coloca la base del smartphone con el orificio alineado con el ocular. Nota: Puedes ajustar la orientación de la base del smartphone para adaptarse al tamaño de tu dispositivo.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image95.png)
 
-**Step 6: Set up the sample holder**
+**Paso 6: Configura el soporte de muestra**
 
-Place the sample holder cube on top of the microscope objective. Mind the distance between them. You can adjust the coarse distance by sliding the sample holder inside the cube and the finer distance by using the gear.
+Coloca el cubo con el soporte de muestra encima del objetivo. Asegúrate de la distancia entre ellos. Puedes ajustar la distancia gruesa deslizando el soporte dentro del cubo y la fina con el engranaje.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image46.jpg)
 
-**Step 7: Add the converging lens and lamp**
+**Paso 7: Añade la lente convergente y la lámpara**
 
-Place a converging lens cube on top of the sample holder cube and place the torch lamp on top. Place the smartphone aligned to the eyepiece.
+Coloca un cubo con lente convergente sobre el cubo con la muestra y coloca la lámpara encima. Alinea el smartphone con el ocular.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image1.png)
 
-**Step 8: Adjust for clarity**
+**Paso 8: Ajusta para obtener claridad**
 
-Try to move the smartphone such that the whole eyepiece circle appears illuminated. Then, turn the gear to focus and get a sharp image of the specimen.
+Mueve el smartphone de manera que todo el círculo del ocular esté iluminado. Luego, gira el engranaje para enfocar y obtener una imagen nítida de la muestra.
 
 ![](../IMAGES/MINIBOXTUTORIAL/image83.gif)
 
+## ¿Mejor con smartphone o con el ojo?
 
+La cámara del smartphone tiene una lente con una distancia focal muy corta porque debe caber en el cuerpo delgado del teléfono. Esta lente crea una imagen en el sensor de la cámara con propiedades similares a las del ojo humano.
 
-
-
-## Better with smartphone or eye?
-
-
-The smartphone camera has a lens with a very short focal length because it has to fit into the thin smartphone. The lens then creates an image on the camera sensor whose properties are similar to those of the human eye.
-
-The eye can see objects from both a distance and near. This property is called accommodation.
+El ojo puede ver objetos tanto de cerca como de lejos. Esta propiedad se llama acomodación.
 
 ![](../IMAGES/MINIBOXNEW/47.png)
 
-
-The smartphone camera can also do this, but it is called autofocus. It describes the ability to sharply image objects at different distances on the sensor.
+La cámara del smartphone también puede hacerlo, pero se llama autofoco. Describe la capacidad de enfocar objetos a diferentes distancias sobre el sensor.
 
 ![](../IMAGES/MINIBOXNEW/48.png)
 
-The image from the eyepiece comes in parallel rays, as if coming from infinity. You observed with a relaxed eye (looking into the distance) or with a camera focused at infinity.
-
+La imagen del ocular entra en rayos paralelos, como si viniera del infinito. Observaste con un ojo relajado (mirando a lo lejos) o con una cámara enfocada al infinito.
 
 <div class="alert info">
 </div><br/>
 
-
-
-## Calculation results
+## Resultados del cálculo
 
 ![](../IMAGES/MINIBOX/UC2_minibox_55.png)

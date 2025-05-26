@@ -104,14 +104,10 @@ When you search through the repository, you find that not all the images show th
 *March 2025*
 **This is the current version.**
 There are still tweo fully compatible versions, now with Riffles for better alligment and anti-kippen, as well as rounded edges.
-<p style={{ textAlign: "center" }}>
-<img src="./IMAGES/Assembly_Cube_empty_IM_withBase_v3_04.png" width=200>
-</p>
+![](./IMAGES/Assembly_Cube_empty_IM_withBase_v3_04.png)
 
 Additionaly in the printing version you connect the cubes not via screws or magnets but with technical LEGO Pins 2760.
-<p style={{ textAlign: "center" }}>
-<img src="./IMAGES/Assembly_Cube_empty_IM_withBase_v3_04.png" width=200>
-</p>
+![](./IMAGES/Assembly_Cube_empty_IM_withBase_v3_04.png)
 
 It is important to pay attention to calibration of your printer according to the guide in the [baseplate CAD page](../CAD/ASSEMBLY_Baseplate).
 If you are still working with the v3 version of the cube, you find the documentation in the [UC2-V3 Module Developer Kit](https://github.com/openUC2/UC2-GIT/tree/master/MDK).
@@ -121,14 +117,12 @@ If you are still working with the v3 version of the cube, you find the documenta
 The cube comes in two versions that are fully compatible with each other. You can either print all the baseplates and cubes and assemble and connect them using screws and magnets, or you can use the IM cubes and baseplate puzzles that connect via the lego-like pins.
 
 The IM cube is shown in the first picture. The two identical halves fit perfectly together and each of the two pinned sides of the cube fits to the baseplate.
-<p style={{ textAlign: "center" }}>
-<img src="./IMAGES/Assembly_Cube_empty_IM_withBase_v3_04.png" width=200>
-</p>
+![](./IMAGES/Assembly_Cube_empty_IM_withBase_v3_04.png)
 
 The 3D-printed cube is in the next picture. The body and the lid are held together by the M3 screws that attach to the magnets of the baseplate. Additionally, M5 screws are added to the position of the pins for better alignment precision.
-<p style={{ textAlign: "center" }}>
-<img src="./IMAGES/Assembly_Cube_empty_1x1_withBase_v3_04.png" width=200>
-</p>
+
+![](./IMAGES/Assembly_Cube_empty_1x1_withBase_v3_04.png)
+
 
 The 3D-printed baseplate puzzles are fully compatible with both types of cubes and with the IM puzzles. It is important to pay attention to calibration of your printer according to the guide in the [baseplate CAD page](../CAD/ASSEMBLY_Baseplate).
 
@@ -136,9 +130,7 @@ The 3D-printed baseplate puzzles are fully compatible with both types of cubes a
 *July 2019*  
 The v2 version looks pretty much like v3 without pins. The cube is point symmetric, therefore the insert can be used in various orientations. The baseplates have to be assembled in Inventor and printed in the desired size - mostly 4×1, 4×2, 4×4. The cube is also made of the Body and the Lid and can vary in size (e.g. 1×1, 2×1, etc.).  
 They seem to be the same as the IM cubes - but not completely. The dimensions are slightly different. It isn't anything you couldn't fix with a file and sticky tape but it's advisable to use the matching cubes and inserts.
-<p style={{ textAlign: "center" }}>
-<img src="./IMAGES/BASE_CUBE_v2_2.png" width=200>
-</p>
+![](./IMAGES/BASE_CUBE_v2_2.png)
 
 You can still find a lot of pictures with v2 cubes in the GitHub - many of the applications we tested are simply shown in the version, which we first build them with.   
 Knowing that it’s mechanically overdefined, the 4-point interface with screws and magnets gives the degree of freedom to level out mechanical imprecisions e.g. due to 3D printing etc. by adjusting the positions of the screws.
@@ -148,20 +140,15 @@ Knowing that it’s mechanically overdefined, the 4-point interface with screws 
 #### v0 = the early cube
 *2017*  
 Why is there no v1? Because all the slow and steady development from the very beginning until the real modular microscopes is covered in this one. The v0 cube had a rail system similar to the cage system used by e.g. Thorlabs or Newport. The baseplate wasn't very different from v2.
-<p style={{ textAlign: "center" }}>
-<img src="./IMAGES/BASE_CUBE_v0_2.png" width=200>
-</p>
+![](./IMAGES/BASE_CUBE_v0_2.png)
+
 The old cube is not compatible with the current design and currently isn't shown anywhere in the repository.
 
 #### Other versions
 Have we tried other designs? Sure, we have. The cubes are nice to play with and nice for planning a setup but the design is mechanically over-determined. We tried to put the cube on [3-point connection](./CAD/ALTERNATIVE_DESIGN/UC2_with_3-holes-cubes) and use the [hexagonal building blocks](./CAD/ALTERNATIVE_DESIGN/UC2_with_Hexagonal_Block). Have a look at the attempts and issues to see why we stick with the cubes as they are.
 
-<p style={{ textAlign: "center" }}>
-<img src="./IMAGES/3-holes-cube.png" height=200>
-<img src="./IMAGES/Hexagon blocks 1 and 2.png" height=200>
-</p>
 
-
+![](./IMAGES/Hexagon_blocks_1_and_2.png)
 
 ---
 # Get Involved

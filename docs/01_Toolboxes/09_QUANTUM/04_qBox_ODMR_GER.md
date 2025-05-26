@@ -1,3 +1,9 @@
+---
+id: odmr_experiment_ger
+title: ODMR – Optically Detected Magnetic Resonance (Deutsch)
+---
+
+
 ## ODMR – Optically Detected Magnetic Resonance (Deutsch)
 
 ![](./IMAGES/image1.png)

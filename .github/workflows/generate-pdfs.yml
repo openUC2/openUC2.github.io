@@ -24,17 +24,22 @@ jobs:
       - name: Install Chrome for Puppeteer
         run: |
           sudo apt-get update
-          sudo apt-get install -y chromium-browser
-          export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-          export PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
+          sudo apt-get install -y chromium-browser xvfb
+          
+      - name: Configure Chrome for headless mode
+        run: |
+          echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser" >> $GITHUB_ENV
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+
+      - name: Start virtual display
+        run: |
+          Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
 
       - name: Enable PDF generation in config
         run: |
           sed -i 's/autoBuildPdfs: false/autoBuildPdfs: true/' docusaurus.config.js
 
       - name: Build documentation with PDFs
-        env:
-          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
         run: npm run build
 
       - name: Create PDF artifacts directory structure
@@ -60,18 +65,29 @@ jobs:
             find build/pdfs -name "*CoreBox*FR*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
             find build/pdfs -name "*CoreBox*ES*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
             find build/pdfs -name "*CoreBox*AR*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*core*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
             
             # Other toolbox PDFs
             find build/pdfs -name "*Electronics*" -exec cp {} pdf-artifacts/ElectronicsBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*electronics*" -exec cp {} pdf-artifacts/ElectronicsBox/ \; 2>/dev/null || true
             find build/pdfs -name "*Infinity*" -exec cp {} pdf-artifacts/InfinityBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*infinity*" -exec cp {} pdf-artifacts/InfinityBox/ \; 2>/dev/null || true
             find build/pdfs -name "*Fluorescence*" -exec cp {} pdf-artifacts/DiscoveryFluorescence/ \; 2>/dev/null || true
+            find build/pdfs -name "*fluorescence*" -exec cp {} pdf-artifacts/DiscoveryFluorescence/ \; 2>/dev/null || true
             find build/pdfs -name "*Lightsheet*" -exec cp {} pdf-artifacts/LightsheetBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*lightsheet*" -exec cp {} pdf-artifacts/LightsheetBox/ \; 2>/dev/null || true
             find build/pdfs -name "*QBox*" -exec cp {} pdf-artifacts/QBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*qbox*" -exec cp {} pdf-artifacts/QBox/ \; 2>/dev/null || true
             find build/pdfs -name "*Seeed*" -exec cp {} pdf-artifacts/SeeedMicroscope/ \; 2>/dev/null || true
+            find build/pdfs -name "*seeed*" -exec cp {} pdf-artifacts/SeeedMicroscope/ \; 2>/dev/null || true
             
             # List what was found
             echo "Generated PDFs:"
             find pdf-artifacts -name "*.pdf" -type f | sort
+            
+            # Count PDFs
+            PDF_COUNT=$(find pdf-artifacts -name "*.pdf" -type f | wc -l)
+            echo "Total PDFs generated: $PDF_COUNT"
           else
             echo "No PDFs directory found in build output"
             echo "Checking build structure:"
@@ -81,7 +97,7 @@ jobs:
       - name: Upload PDFs as artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: documentation-pdfs
+          name: documentation-pdfs-${{ github.run_number }}
           path: pdf-artifacts/
           if-no-files-found: warn
 

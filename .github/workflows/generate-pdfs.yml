@@ -1,0 +1,94 @@
+name: Generate Documentation PDFs
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  generate-pdfs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '19'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chrome for Puppeteer
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+          export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+          export PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
+
+      - name: Enable PDF generation in config
+        run: |
+          sed -i 's/autoBuildPdfs: false/autoBuildPdfs: true/' docusaurus.config.js
+
+      - name: Build documentation with PDFs
+        env:
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
+        run: npm run build
+
+      - name: Create PDF artifacts directory structure
+        run: |
+          mkdir -p pdf-artifacts/CoreBox
+          mkdir -p pdf-artifacts/ElectronicsBox
+          mkdir -p pdf-artifacts/InfinityBox
+          mkdir -p pdf-artifacts/DiscoveryFluorescence
+          mkdir -p pdf-artifacts/LightsheetBox
+          mkdir -p pdf-artifacts/QBox
+          mkdir -p pdf-artifacts/SeeedMicroscope
+
+      - name: Copy generated PDFs
+        run: |
+          if [ -d "build/pdfs" ]; then
+            # Copy all PDFs to main artifacts directory
+            cp -r build/pdfs/* pdf-artifacts/ 2>/dev/null || true
+            
+            # Organize PDFs by toolbox if they exist
+            # CoreBox PDFs for different languages
+            find build/pdfs -name "*CoreBox*EN*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*CoreBox*DE*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*CoreBox*FR*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*CoreBox*ES*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*CoreBox*AR*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
+            
+            # Other toolbox PDFs
+            find build/pdfs -name "*Electronics*" -exec cp {} pdf-artifacts/ElectronicsBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*Infinity*" -exec cp {} pdf-artifacts/InfinityBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*Fluorescence*" -exec cp {} pdf-artifacts/DiscoveryFluorescence/ \; 2>/dev/null || true
+            find build/pdfs -name "*Lightsheet*" -exec cp {} pdf-artifacts/LightsheetBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*QBox*" -exec cp {} pdf-artifacts/QBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*Seeed*" -exec cp {} pdf-artifacts/SeeedMicroscope/ \; 2>/dev/null || true
+            
+            # List what was found
+            echo "Generated PDFs:"
+            find pdf-artifacts -name "*.pdf" -type f | sort
+          else
+            echo "No PDFs directory found in build output"
+            echo "Checking build structure:"
+            ls -la build/ 2>/dev/null || echo "No build directory found"
+          fi
+
+      - name: Upload PDFs as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation-pdfs
+          path: pdf-artifacts/
+          if-no-files-found: warn
+
+      - name: Attach PDFs to release
+        if: github.event_name == 'release' && hashFiles('pdf-artifacts/**/*.pdf') != ''
+        uses: softprops/action-gh-release@v1
+        with:
+          files: pdf-artifacts/**/*.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

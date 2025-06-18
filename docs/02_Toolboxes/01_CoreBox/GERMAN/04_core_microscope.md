@@ -180,3 +180,184 @@ Schaue durch das Okular. Justiere den Linsenabstand, bis du ein fokussiertes sch
 
 ![](../IMAGES/MINIBOXTUTORIAL/image81.png)
 ![](../IMAGES/MINIBOXTUTORIAL/image31.png)
+
+## Lichtmikroskop mit „endlicher Optik“
+
+Platziere die Würfel in den im Diagramm unten gezeigten Positionen und schau durch das Okular.
+
+<div class="alert-success">
+Baue das Mikroskop wie ein Sandwich, indem du eine zweite Ebene mit einer Bodenplatte hinzufügst. Schaue von oben durch das Okular.
+</div><br/>
+
+![](../IMAGES/MINIBOXNEW/37.png)
+
+<div class="alert info">
+Siehst du das Bild durch das Okular wie zuvor? Kannst du das reale Zwischenbild mit einem Blatt Papier finden?
+</div><br/>
+
+<div class="alert-success">
+Drehe das kleine Zahnrad am Linsenhalter. So bewegst oder fokussierst du die Linse. Wenn es nicht weitergeht, kannst du die Linse auch im Halter verschieben.
+</div><br/>
+
+## Anleitung: Lichtmikroskop mit endlicher Optik und Okular
+
+![](../IMAGES/MINIBOXTUTORIAL/image48.gif)
+
+### Benötigtes Material:
+
+- Mikroskopobjektiv (4x) mit Zahnradhalterung (Linearführung)
+- Taschenlampenleuchte mit Lampenfuß
+- Zwölf Bodenplatten
+- Probenhalter (im Würfel) mit Probe
+- Spiegel (im Würfel)
+- Drei leere Würfel
+- Okular (im Würfel)
+
+![](../IMAGES/MINIBOXTUTORIAL/image139.jpg)
+
+### Aufbau (Seitenansicht):
+
+![](../IMAGES/MINIBOXTUTORIAL/image2.png)
+
+## Anleitung zum Aufbau des Lichtmikroskops mit endlicher Optik:
+
+**Schritt 1: Bodenplatten verbinden**
+
+Verbinde die Bodenplatten wie folgt.
+
+![](../IMAGES/MINIBOXTUTORIAL/image139.jpg)
+
+**Schritt 2: Probe platzieren**
+
+Lege die Probe auf die linkeste Bodenplatte.
+
+![](../IMAGES/MINIBOXTUTORIAL/image105.jpg)
+
+**Schritt 3: Würfel aufbauen und platzieren**
+
+Baue einen Würfel mit dem Mikroskopobjektiv im Inneren und platziere sowohl das Objektiv als auch den Zahnrad-Würfel auf den nächsten beiden Bodenplatten. Füge alle weiteren Bilder wie gezeigt hinzu.
+
+**Unterschritt 1:**
+![](../IMAGES/MINIBOXTUTORIAL/image58.jpg)
+
+**Unterschritt 2:**
+![](../IMAGES/MINIBOXTUTORIAL/image63.jpg)
+
+**Unterschritt 3:**
+![](../IMAGES/MINIBOXTUTORIAL/image86.jpg)
+
+**Schritt 4: Licht reflektieren**
+
+Platziere zwei leere Würfel und den Würfel mit Spiegel auf der letzten Bodenplatte so, dass das von der Probe kommende Licht nach oben reflektiert wird.
+
+![](../IMAGES/MINIBOXTUTORIAL/image128.jpg)
+
+**Schritt 5: Würfel fixieren**
+
+Lege Bodenplatten auf die Würfel, um sie fest zu fixieren.
+
+![](../IMAGES/MINIBOXTUTORIAL/image62.jpg)
+
+**Schritt 6: Okular anbringen**
+
+Platziere das Okular auf dem Spiegel-Würfel. Achte auf die richtige Ausrichtung des Okulars.
+
+![](../IMAGES/MINIBOXTUTORIAL/image69.jpg)
+
+**Schritt 7: Probe beleuchten**
+
+Befestige die Lampe mit einem Fuß und beleuchte die Probe aus einiger Entfernung. Schaue durch das Okular und justiere die Mikroskop-Distanz mit dem Zahnrad, bis du ein scharfes Bild des Präparats siehst.
+
+![](../IMAGES/MINIBOXTUTORIAL/Finite_Optics_result.png)
+
+## "Endliche Optik" versus "Unendliche Optik"
+
+![](../IMAGES/MINIBOXNEW/38.png)
+
+Linsen aus älteren oder kleineren Mikroskopen sind meist sogenannte *endliche* Linsen. Sie verhalten sich wie eine Linse mit extrem kurzer Brennweite und erzeugen ein Zwischenbild hinter der Linse in einem Abstand, der durch die Tubuslänge definiert ist. Diese Länge ist auf der Linse aufgedruckt und beträgt bei unserer Linse 160 mm. Dort entsteht ein reelles Zwischenbild, das anschließend durch das Okular vergrößert wird.
+
+Mikroskope können fokussieren, indem entweder das Objekt oder die Linse bewegt wird. Hier bewegen wir die Linse über einen einfachen Mechanismus. Die Drehung des Zahnrads führt zur Verschiebung des Objektivs. Für größere Bewegungen kann die Linse auch auf der Schiene verschoben werden.
+
+![](../IMAGES/MINIBOXNEW/38.png)
+<p align="center">
+<img src="/MINIBOX/UC2_minibox_41.png" width="450"/>
+</p>
+
+<div class="alert info">
+</div><br/>
+
+
+## "Endliche Optik" versus "Unendliche Optik"
+
+Wie groß ist die Vergrößerung des Zwischenbildes?  
+Und wie groß ist die Vergrößerung nach dem Okular?
+
+**Vergrößerung des Objektivs**
+
+![](../IMAGES/MINIBOX/UC2_minibox_44.png)  
+wie aufgedruckt
+
+**Vergrößerung des Okulars**  
+![](../IMAGES/MINIBOX/UC2_minibox_45.png)
+
+**Gesamtvergrößerung**  
+![](../IMAGES/MINIBOX/UC2_minibox_46.png)
+
+<div class="alert-success">
+Das Bild ist größer als beim Mikroskop mit unendlicher Optik. Die Objektivvergrößerung beträgt hier 4×. Wenn du die Vergrößerung beim vorherigen Mikroskop berechnet hast, überrascht dich das sicher nicht.
+</div><br/>
+
+![](../IMAGES/MINIBOXNEW/40.png)
+
+<div class="alert-success">
+Das Zwischenbild wird jetzt nur durch die Linse erzeugt und befindet sich 160 mm hinter ihr. Warum das so ist, klären wir im nächsten Schritt.
+</div><br/>
+
+
+## Objektiv und Okular
+
+![](../IMAGES/MINIBOXNEW/41.png)
+
+<div class="alert info">
+</div><br/>
+
+
+## Das ist die Linse
+
+Eine Linse ist ein optisches System, das ein vergrößertes Bild eines Objekts erzeugt.  
+Die verschiedenen Zahlen auf der Linse haben unterschiedliche Bedeutungen:
+
+![](../IMAGES/MINIBOXNEW/42.png)
+
+Die 4×-Linse enthält nur ein einziges Linsenelement. Linsen mit höherer Vergrößerung sind komplette Linsensysteme.
+
+![](../IMAGES/MINIBOXNEW/43.png)
+
+<div class="alert-success">
+Die Linse ist außerdem eine Sammellinse mit kurzer Brennweite. Die 4×-Linse hat eine Brennweite von f = 32 mm. Als Lupe verwendet, hat sie eine höhere Vergrößerung als die 40-mm-Linse. Das Sichtfeld ist scharf, aber klein.
+</div><br/>
+
+
+## Das Okular
+
+Ein Okular ist im Grunde eine Lupe, da es das Zwischenbild vergrößert.  
+Das hier verwendete Okular ist ein **Ramsden-Okular**.  
+Auch eine einzelne Linse kann als Okular verwendet werden.  
+Mit einem Ramsden-Okular, das aus einem Linsensystem besteht, ist das Sichtfeld jedoch besser, da weniger Fehler an den Bildrändern entstehen. Das Ramsden-Okular besteht aus zwei Linsen mit gleicher Brennweite.  
+Seine Brennweite ist:  
+**f (Ramsden-Okular) = 3/4 f (der Linse)**
+
+**Wie groß ist die Vergrößerung des Ramsden-Okulars?**
+
+![](../IMAGES/MINIBOXNEW/45.png)
+
+<div class="alert-success">
+Jedes Okular besitzt eine sogenannte Ramsden-Scheibe – das ist der kleinste Durchmesser des Lichtbündels, das durch das Okular aus dem Mikroskop austritt.
+</div><br/>
+
+<div class="alert-success">
+Das Sichtfeld ist größer und das Bild erscheint klarer mit dem Ramsden-Okular.  
+Jedes Okular besitzt eine sogenannte Ramsden-Scheibe – das ist der kleinste Durchmesser des austretenden Lichtbündels.
+</div><br/>
+
+![](../IMAGES/MINIBOX/UC2_minibox_51.png)

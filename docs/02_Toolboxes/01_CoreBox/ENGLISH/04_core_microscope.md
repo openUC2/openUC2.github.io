@@ -3,7 +3,7 @@ id: coreMicroscope
 title: Microscope
 ---
 
-## Light microscope with "infinity optics"
+# Light microscope with "infinity optics"
 
 <div class="alert info">
 What happens when you turn the Kepler telescope upside down?
@@ -285,14 +285,13 @@ Fix the lamp with a base and illuminate the sample from a considerable distance.
 ![](../IMAGES/MINIBOXTUTORIAL/Finite_Optics_result.png)
 
 
-## "Finite optics" versus "Infinite optics"
+## "Finite optics" versus "infinite optics"
 
 ![](../IMAGES/MINIBOXNEW/38.png)
 
-The lenses of older or smaller microscopes are often so-called finite lenses. They behave like a lens with an extremely short focal length and create an intermediate image behind the lens with an image distance that is defined by the tube length. The tube length is printed and corresponds to 160mm for our lens. The real intermediate image is created there and is enlarged by the eyepiece optics.
+Lenses from older or smaller microscopes are usually what's called *finite* lenses. They behave like a lens with an extremely short focal length and create an intermediate image behind the lens at a distance defined by the tube length. This length is printed on the lens and corresponds to 160 mm in our case. A real intermediate image is formed there, which is then magnified by the eyepiece.
 
-
-Microscopes have the ability to focus or sharpen the object either by moving the object or the lens. Here we move the lens through a simple mechanism. The rotation of the gear is translated into a displacement of the objective lens. For larger movements, you can also move the lens in the rail.
+Microscopes can focus on the object by moving either the object or the lens. Here, we move the lens using a simple mechanism. The rotation of the gear results in displacement of the objective lens. For larger adjustments, you can also move the lens along the rail.
 
 ![](../IMAGES/MINIBOXNEW/38.png)
 <p align="center">
@@ -303,34 +302,31 @@ Microscopes have the ability to focus or sharpen the object either by moving the
 </div><br/>
 
 
+## "Finite optics" versus "infinite optics"
 
-## "Finite optics" versus "Infinite optics"
+What is the magnification of the intermediate image?  
+And what is the magnification after the eyepiece?
 
+**Objective magnification**
 
-What is the magnification of the intermediate image? And what is the magnification after the eyepiece?
+![](../IMAGES/MINIBOX/UC2_minibox_44.png)  
+As printed
 
-lens magnification
-
-![](../IMAGES/MINIBOX/UC2_minibox_44.png)
-as written on it
-
-eyepiece magnification
+**Eyepiece magnification**  
 ![](../IMAGES/MINIBOX/UC2_minibox_45.png)
 
-overall magnification
+**Total magnification**  
 ![](../IMAGES/MINIBOX/UC2_minibox_46.png)
 
 <div class="alert-success">
-The image is larger than with the infinity microscope. The magnification of the lens here is 4×. If you calculated the magnification with the previous microscope, this certainly doesn't surprise you.
+The image is larger than with the infinite optics microscope. The objective magnification here is 4×. If you calculated the magnification with the previous microscope, this won’t surprise you.
 </div><br/>
 
 ![](../IMAGES/MINIBOXNEW/40.png)
 
 <div class="alert-success">
-The intermediate image is now only formed by the lens and is 160 mm behind it. We'll find out why in the next step.
+The intermediate image is now formed solely by the objective lens and is located 160 mm behind it. We’ll find out why in the next step.
 </div><br/>
-
-
 
 
 ## Objective and eyepiece
@@ -343,164 +339,39 @@ The intermediate image is now only formed by the lens and is 160 mm behind it. W
 
 ## This is the lens
 
-
-A lens is an optical system that creates a magnified image of an object. The different numbers printed on the lens have different meanings:
+A lens is an optical system that creates an enlarged image of an object.  
+The different numbers printed on the lens have different meanings:
 
 ![](../IMAGES/MINIBOXNEW/42.png)
 
-
-The 4× lens has only one lens in it. The lenses with higher magnification are complete lens systems.
+The 4× lens contains just a single lens element. Lenses with higher magnification are full lens systems.
 
 ![](../IMAGES/MINIBOXNEW/43.png)
 
-
 <div class="alert-success">
-The lens is also a converging lens with a short focal length. The 4x lens has a focal length of f=32 mm. When used as a magnifying glass, it has a higher magnification than the 40mm lens. The field of view is sharp but small.
+The lens is also a converging lens with a short focal length. The 4× lens has a focal length of f = 32 mm. When used as a magnifying glass, it provides higher magnification than the 40 mm lens. The field of view is sharp but small.
 </div><br/>
-
 
 
 ## The eyepiece
 
+An eyepiece is actually a magnifying lens, because it enlarges the intermediate image.  
+The eyepiece we’re using here is a **Ramsden-type eyepiece**.  
+A single lens can also be used as an eyepiece. However, with a Ramsden eyepiece—composed of a two-lens system—the field of view is better because it introduces fewer errors at the edges. The Ramsden eyepiece consists of two lenses with the same focal length.  
+Its focal length is:  
+**f (Ramsden eyepiece) = 3/4 f (objective lens)**
 
-An eyepiece is actually a magnifying glass because it enlarges the intermediate image. The eyepiece we use here is a so-called Ramsden eyepiece.
-A single lens can also be used as an eyepiece. However, with a Ramsden eyepiece consisting of a lens system, the field of view is better because it creates fewer errors at the edge of the field of view. The Ramsden eyepiece consists of two lenses with the same focal length. Its focal length is f Ramsden eyepiece = 3/4 f lens
-
-What is the magnification of the Ramsden eyepiece?
+**What is the magnification of the Ramsden eyepiece?**
 
 ![](../IMAGES/MINIBOXNEW/45.png)
 
-
 <div class="alert-success">
-Each eyepiece has a so-called Ramsden disk, which is the smallest diameter of the light beam that exits the microscope through the eyepiece.
+Every eyepiece has what’s called a Ramsden disk, which is the smallest diameter of the light beam exiting the microscope through the eyepiece.
 </div><br/>
 
 <div class="alert-success">
-The field of view is larger and the image looks clearer with the Ramsden eyepiece.
-Each eyepiece has a so-called Ramsden disc, which is the smallest diameter
+The field of view is wider, and the image appears clearer with the Ramsden eyepiece.  
+Every eyepiece has a so-called Ramsden disk, which is the smallest diameter of the exiting light beam.
 </div><br/>
-
 
 ![](../IMAGES/MINIBOX/UC2_minibox_51.png)
-
-## Smartphone microscope
-
-Build the smartphone microscope as shown. Use any two cubes here to safely place the smartphone.
-
-![](../IMAGES/MINIBOXNEW/46.png)
-
-
-<div class="alert info">
-</div><br/>
-
-<div class="alert-success">
-Build the microscope like a sandwich by adding a second layer using a base plate. Look through the eyepiece from above.
-</div><br/>
-
-<div class="alert info">
-Replace the Ramsden eyepiece with the 40mm lens. What is better for the eye and what for the smartphone?
-</div><br/>
-
-## Tutorial: Smartphone Microscope
-
-![](../IMAGES/MINIBOXTUTORIAL/image1.png)
-![](../IMAGES/MINIBOXTUTORIAL/image28.gif)
-
-### Materials needed:
-
-- Microscope objective 4x
-- Microscope objective long mount with gear
-- Ramsden-Eyepiece (in cube)
-- Two non-kinematic mirrors (in cubes)
-- Sample holder (in cube)
-- Three empty cubes
-- 11 base plates
-- Smartphone base plate
-- Torch lamp
-- 50 mm lens (in cube)
-
-![](../IMAGES/MINIBOXTUTORIAL/image38.jpg)
-
-### Diagram (Side view):
-
-![](../IMAGES/MINIBOXTUTORIAL/image98.png)
-
-## Instructions for assembling the Smartphone Microscope:
-
-**Step 1: Build a four-base plate line**
-
-![](../IMAGES/MINIBOXTUTORIAL/image49.jpg)
-
-**Step 2: Assemble the components**
-
-Place the Microscope objective mount on one extreme followed by the two mirrors facing each other and one empty cube in the other extreme. Fix them with base plates.
-
-![](../IMAGES/MINIBOXTUTORIAL/image103.jpg)
-
-**Step 3: Adjust the objective**
-
-Build one cube with the microscope objective inside. Adjust the objective's height if necessary by using the gear.
-
-![](../IMAGES/MINIBOXTUTORIAL/image68.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image100.jpg)
-![](../IMAGES/MINIBOXTUTORIAL/image34.jpg)
-
-**Step 4: Place the eyepiece**
-
-Place the eyepiece next to the microscope objective and one empty cube next to it. Mind the right orientation of the eyepiece.
-
-![](../IMAGES/MINIBOXTUTORIAL/image90.png)
-
-**Step 5: Align the smartphone base**
-
-Place the smartphone base with the hole aligned with the eyepiece. Note: You can adjust the orientation of the smartphone base to adapt your smartphone's size.
-
-![](../IMAGES/MINIBOXTUTORIAL/image95.png)
-
-**Step 6: Set up the sample holder**
-
-Place the sample holder cube on top of the microscope objective. Mind the distance between them. You can adjust the coarse distance by sliding the sample holder inside the cube and the finer distance by using the gear.
-
-![](../IMAGES/MINIBOXTUTORIAL/image46.jpg)
-
-**Step 7: Add the converging lens and lamp**
-
-Place a converging lens cube on top of the sample holder cube and place the torch lamp on top. Place the smartphone aligned to the eyepiece.
-
-![](../IMAGES/MINIBOXTUTORIAL/image1.png)
-
-**Step 8: Adjust for clarity**
-
-Try to move the smartphone such that the whole eyepiece circle appears illuminated. Then, turn the gear to focus and get a sharp image of the specimen.
-
-![](../IMAGES/MINIBOXTUTORIAL/image83.gif)
-
-
-
-
-
-## Better with smartphone or eye?
-
-
-The smartphone camera has a lens with a very short focal length because it has to fit into the thin smartphone. The lens then creates an image on the camera sensor whose properties are similar to those of the human eye.
-
-The eye can see objects from both a distance and near. This property is called accommodation.
-
-![](../IMAGES/MINIBOXNEW/47.png)
-
-
-The smartphone camera can also do this, but it is called autofocus. It describes the ability to sharply image objects at different distances on the sensor.
-
-![](../IMAGES/MINIBOXNEW/48.png)
-
-The image from the eyepiece comes in parallel rays, as if coming from infinity. You observed with a relaxed eye (looking into the distance) or with a camera focused at infinity.
-
-
-<div class="alert info">
-</div><br/>
-
-
-
-## Calculation results
-
-![](../IMAGES/MINIBOX/UC2_minibox_55.png)

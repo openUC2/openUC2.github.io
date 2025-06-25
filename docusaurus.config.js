@@ -38,7 +38,8 @@ const config = {
         addDownloadButton: true,
         autoBuildPdfs: false,
         ignoreDocs: ['licenses'],
-        author: 'Benedict Diederich'
+        author: 'Benedict Diederich',
+       puppeteerTimeout: 300000  // 5 minutes timeout for PDF generation
       },
     ],
   ],

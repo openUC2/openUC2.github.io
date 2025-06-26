@@ -2,10 +2,18 @@
 
 The ImSwitch ImSwitch OS is a complete, pre-configured operating system image designed specifically for UC2 microscopy systems. It provides a ready-to-use environment with all software, drivers, and configurations pre-installed.
 
-TODO: 
--  Incorporate the images again that were there previouslyy 
--  reuse previously set information about forklifted imswitch-os
--  recover images and information from this branch https://openuc2.github.io/docs/ImSwitch/Quickstart/
+## Images and Screenshots
+
+The ImSwitch OS comes with a visual installer and desktop environment:
+
+![ImSwitch OS Desktop](../IMAGES/ImSwitch-OS-1.png)
+*ImSwitch OS desktop environment with pre-installed applications*
+
+![ImSwitch Configuration](../IMAGES/ImSwitch-OS-2.png) 
+*ImSwitch configuration interface for hardware setup*
+
+![ImSwitch Docker Interface](../IMAGES/ImSwitch-OS-3.png)
+*Docker containers running ImSwitch services*
 
 ## Overview
 
@@ -110,7 +118,7 @@ sudo raspi-config
 
 ### ImSwitch Configuration
 
-TODO: Link to ImSwitchConfig explanition document 
+For detailed information about ImSwitch configuration files, see the [Configuration Guide](../03_Configuration/README.md). 
 
 **Quick Start Configuration:**
 ```bash
@@ -118,7 +126,7 @@ TODO: Link to ImSwitchConfig explanition document
 cd /home/pi/ImSwitchConfig
 
 # Copy a template configuration
-TODO: update paths 
+Configuration files are stored in `/home/pi/Documents/ImSwitchConfig/config/` and can be edited using the desktop interface or via SSH. 
 
 # Edit configuration for your hardware
 nano config/imcontrol_options.json #=> enter the name you want to use
@@ -132,7 +140,13 @@ The Forklift OS includes a web-based control interface accessible at:
 - **Local**: `http://localhost:8001`
 - **Network**: `http://opencu2-XXX-xxx-xxx.local:8001`
 
-TODO: Add cockpit path for port 9090, socket on 8002, 
+### Web Interfaces
+
+The ImSwitch OS provides several web interfaces for remote access:
+
+- **Cockpit Web Console**: Available at `http://[raspberry-pi-ip]:9090` for system administration
+- **ImSwitch React Interface**: Available at `http://[raspberry-pi-ip]:8001/imswitch/index.html` for microscope control  
+- **WebSocket Control**: Available at `http://[raspberry-pi-ip]:8002` for real-time data streams 
 actually it's https by default to connect to it via a statically hosted website e.g. https://youseetoo.github.io/imswitch/index.html 
 
 **Features:**
@@ -181,7 +195,47 @@ cp my_script.py /home/pi/ImSwitchConfig/scripts/
 docker ps
 ```
 
-TODO: recover previous information about docker compose 
+### Docker Compose Services
+
+The ImSwitch OS includes a pre-configured docker-compose setup with the following services:
+
+```yaml
+version: '3.8'
+services:
+  imswitch:
+    image: ghcr.io/openuc2/imswitch-noqt-x64:latest
+    ports:
+      - "8001:8001"
+      - "2222:22"
+    environment:
+      - HEADLESS=1
+      - HTTP_PORT=8001
+      - CONFIG_FILE=example_uc2_hik_flowstop.json
+      - UPDATE_GIT=0
+      - UPDATE_CONFIG=0
+    volumes:
+      - /home/pi/Documents/ImSwitchConfig:/config
+      - /home/pi/Documents/ImSwitchData:/data
+    privileged: true
+    restart: unless-stopped
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    ports:
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    restart: unless-stopped
+
+volumes:
+  portainer_data:
+```
+
+This setup provides:
+- **ImSwitch**: Main microscopy control application
+- **Portainer**: Docker container management interface
+- **Persistent Data**: Configuration and data volumes for data retention 
 
 **Hardware not detected:**
 ```bash
@@ -225,12 +279,31 @@ rm -rf /home/pi/ImSwitchConfig/config/*
 
 ### Manual Updates
 
-load the latest version from github packages 
-```
+For manual updates, use the provided update script:
+```bash
+# Update ImSwitch Docker containers
 bash ~/Desktop/update_docker_container.sh
+
+# Or manually pull latest images
+sudo docker-compose down
+sudo docker pull ghcr.io/openuc2/imswitch-noqt-x64:latest
+sudo docker-compose up -d
 ```
 
-TODO: Update below 
+### Update Components
+
+```bash
+# Update ImSwitch configuration files
+cd /home/pi/Documents/ImSwitchConfig
+git pull origin master
+
+# Update UC2-REST library
+pip install --upgrade UC2-REST
+
+# Update ESP32 firmware tools
+cd /home/pi/uc2-esp32
+git pull origin main
+``` 
 ## Support and Resources
 
 ### Getting Help

@@ -21,11 +21,18 @@ UC2-ESP32 firmware features:
 - **Input Controllers**: Joysticks, PS4 controllers, buttons
 
 
-TODO: Reference to the links: 
-- https://youseetoo.github.io/ firmware flashing
-- https://youseetoo.github.io/indexWebSerialTest.html firmware testing 
-- reuse former images 
-- https://github.com/youseetoo/uc2-esp32 firmware repo
+## Firmware Resources and Tools
+
+### Official Firmware Repository
+- **Main Repository**: [UC2-ESP32 Firmware](https://github.com/youseetoo/uc2-esp32) - Complete firmware source code and documentation
+- **Rework Branch**: [uc2-esp32/reworkBD](https://github.com/youseetoo/uc2-esp32/tree/reworkBD) - Latest development version with enhanced features
+
+### Firmware Flashing Tools
+- **Web-based Flashing**: [youseetoo.github.io](https://youseetoo.github.io/) - Browser-based firmware flashing tool
+- **Firmware Testing Interface**: [WebSerial Test Tool](https://youseetoo.github.io/indexWebSerialTest.html) - Browser-based testing and configuration
+
+### Supported Images and Documentation
+The UC2-ESP32 firmware supports various hardware configurations with corresponding images and setup guides available in the repository.
 
 ## Firmware Architecture
 
@@ -171,88 +178,148 @@ Set WiFi via serial commands:
 
 ### Module Configuration
 
-Enable/disable modules in `config.h` and platform.ini via build flags (see examples).
-
-
 ## Hardware Control Examples
 
 ### Motor Control
 
-TODO: update commands based on this file - and restore the old information which was valid: (Code formatting https://github.com/youseetoo/uc2-esp32/blob/main/main/json_api_BD.txt)
+Based on the [JSON API specification](https://github.com/youseetoo/uc2-esp32/blob/main/main/json_api_BD.txt), here are the correct motor control commands:
+
+**Move Stepper Motor:**
 ```json
-// Move motor X by 1000 steps
 {
     "task": "/motor_act",
-    "motor": 0,
-    "direction": 1,
-    "steps": 1000
+    "motor": {
+        "steppers": [
+            {
+                "stepperid": 1,
+                "position": 1000,
+                "speed": 15000,
+                "isabs": true,
+                "isblocking": false
+            }
+        ]
+    }
 }
+```
 
-// Home motor X
+**Home Stepper Motor:**
+```json
 {
-    "task": "/home_act", 
-    "motor": 0,
-    "task": "home"
+    "task": "/home_act",
+    "home": {
+        "steppers": [
+            {
+                "stepperid": 1,
+                "timeout": 20000,
+                "speed": 15000,
+                "direction": 1,
+                "endposrelease": 3000
+            }
+        ]
+    }
 }
+```
 
-// Set motor speed (only useful if you actually move)
-{
-    "task": "/motor_act",
-    "motor": 0,
-    "speed": 1000
-}
-
-// Get motor status
+**Get Motor Position:**
+```json
 {
     "task": "/motor_get",
-    "motor": 0
+    "motor": {
+        "steppers": [
+            {
+                "stepperid": 1
+            }
+        ]
+    }
+}
+```
+
+**Set Motor Position (Calibration):**
+```json
+{
+    "task": "/motor_set",
+    "motor": {
+        "steppers": [
+            {
+                "stepperid": 1,
+                "position": 0
+            }
+        ]
+    }
 }
 ```
 
 ### LED Control
 
+**Set Individual LED:**
 ```json
-// Set LED intensity
 {
     "task": "/led_act",
-    "led": 0,
-    "intensity": 100
+    "led": {
+        "LEDArrMode": 1,
+        "led_array": [
+            {
+                "id": 1,
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        ]
+    }
 }
+```
 
-// Set LED array pattern
+**Set LED Array Pattern:**
+```json
 {
-    "task": "/ledarray_act",
-    "pattern": [100, 50, 75, 0, 25, 100, 50, 75]
+    "task": "/led_act",
+    "led": {
+        "LEDArrMode": 1,
+        "led_array": [
+            {"id": 1, "r": 255, "g": 0, "b": 0},
+            {"id": 2, "r": 0, "g": 255, "b": 0},
+            {"id": 3, "r": 0, "g": 0, "b": 255},
+            {"id": 4, "r": 255, "g": 255, "b": 255}
+        ]
+    }
 }
+```
 
-// Get LED status
+**Get LED Status:**
+```json
 {
-    "task": "/led_get",
-    "led": 0
+    "task": "/led_get"
 }
 ```
 
 ### Laser Control
 
+**Turn on Laser:**
 ```json
-// Turn on laser
 {
     "task": "/laser_act",
-    "laser": 0,
-    "intensity": 50
+    "laser": {
+        "LASERid": 1,
+        "LASERval": 100
+    }
 }
+```
 
-// Turn off laser (safety)
+**Turn off Laser (Safety):**
+```json
 {
     "task": "/laser_act",
-    "laser": 0,
-    "intensity": 0
+    "laser": {
+        "LASERid": 1,
+        "LASERval": 0
+    }
 }
+```
 
-// Get laser status
+**Get Laser Status:**
+```json
 {
-    "task": "/laser_get",
-    "laser": 0
+    "task": "/laser_get"
 }
 ```
 

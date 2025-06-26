@@ -17,20 +17,38 @@ A Docker container is available for ImSwitch, providing a convenient way to depl
 
 ### Docker Container Details
 
-TODO: This has to be merged with other Docker-related tutorials. The links are 
-https://github.com/openUC2/ImSwitch/pkgs/container/imswitch-noqt-arm64 - for arm64 like mac and raspberry pi in particular 
-https://github.com/openUC2/ImSwitch/pkgs/container/imswitch-noqt-amd64 - for x64 
+**⚠️ Note**: This experimental headless mode documentation has been superseded by the comprehensive Docker installation guide. For complete Docker setup instructions, please see:
 
+👉 **[Docker Installation Guide](../01_Installation/Docker.md)** - Complete Docker setup with examples and troubleshooting
 
-- **Container Registry:** [ImSwitch Container Registry](https://github.com/openUC2/ImSwitch/pkgs/container/imswitch)
-- **Docker Pull Command:**
-    ```sh
-    docker pull ghcr.io/openuc2/imswitchXXXX
-    ```
+#### Container Registry Links
 
-- **Dockerfile:** [ImSwitch Dockerfile](https://github.com/openUC2/ImSwitch/blob/master/docker/dockerfileImSwitch)
+For reference, the ImSwitch Docker containers are available at:
 
-incorporate the following information 
+- **ARM64 (Mac M1/M2, Raspberry Pi)**: [imswitch-noqt-arm64](https://github.com/openUC2/ImSwitch/pkgs/container/imswitch-noqt-arm64)
+- **AMD64 (x86_64 systems)**: [imswitch-noqt-amd64](https://github.com/openUC2/ImSwitch/pkgs/container/imswitch-noqt-amd64)
+
+#### Quick Start
+
+For the latest installation instructions and examples, refer to the main Docker documentation:
+
+```bash
+# Pull appropriate container for your architecture
+docker pull ghcr.io/openuc2/imswitch-noqt-amd64:latest   # x86_64
+# OR
+docker pull ghcr.io/openuc2/imswitch-noqt-arm64:latest   # ARM64
+
+# Run container (see Docker guide for complete examples)
+docker run -it --rm -p 8001:8001 \
+  -e HEADLESS=1 \
+  -e HTTP_PORT=8001 \
+  --privileged \
+  ghcr.io/openuc2/imswitch-noqt-amd64:latest
+```
+
+#### Migration Notice
+
+This experimental documentation is being consolidated into the main Docker installation guide for better organization and completeness. All current information has been migrated to provide: 
 
 ```dockerfile
 # Use an appropriate base image for Jetson Nano

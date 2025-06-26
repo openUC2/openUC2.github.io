@@ -1,14 +1,52 @@
 # ImSwitch Native Python Installation
 
-
 This guide covers installing ImSwitch directly on your system using Python, suitable for development and advanced users who need full control over the installation.
 
-TODO: Update based on the below code, differentiate between headless and qt gui version 
+## Installation Options
 
-We provide a script that installs all the dependencies. This is mostly for headless version that runs without QT. 
-https://github.com/openUC2/ImSwitchDockerInstall/blob/master/install_native.sh
+ImSwitch can be installed in two modes:
 
+### 1. **GUI Version (with Qt)** - Full Desktop Experience
+- Complete graphical user interface
+- All visualization and control widgets
+- Requires display/desktop environment
+- Best for interactive microscopy work
+
+### 2. **Headless Version (no Qt)** - Server/Remote Mode  
+- No graphical interface dependencies
+- REST API and web interface only
+- Ideal for automated systems and remote control
+- Lower resource requirements
+
+## Automated Installation
+
+For most users, we provide automated installation scripts:
+
+### Headless Installation Script
+
+The automated headless installation script handles all dependencies:
+
+**Repository**: [openUC2/ImSwitchDockerInstall](https://github.com/openUC2/ImSwitchDockerInstall/blob/master/install_native.sh)
+
+```bash
+# Download and run the automated installer
+wget https://raw.githubusercontent.com/openUC2/ImSwitchDockerInstall/master/install_native.sh
+chmod +x install_native.sh
+sudo ./install_native.sh
 ```
+
+This script performs the following steps:
+
+1. **System Updates**: Updates package manager and installs dependencies
+2. **Miniforge Installation**: Installs conda package manager (ARM64/x86_64)
+3. **Environment Creation**: Creates isolated Python 3.11 environment
+4. **ImSwitch Installation**: Clones and installs ImSwitch from GitHub
+5. **UC2-REST Installation**: Installs Python interface for ESP32 control
+6. **Dependency Resolution**: Handles package conflicts and version compatibility
+
+### Script Details
+
+```bash
 #!/bin/bash -eu
 sudo apt-get update
 sudo apt-get install -y git curl
@@ -103,6 +141,187 @@ echo "Installation complete. To run the application, use the following command:"
 echo "source /opt/conda/bin/activate imswitch311 && python3 ~/ImSwitch/main.py --headless --http-port 8001"
 
 echo "source /opt/conda/bin/activate imswitch311" >>~/.bashrc
+```
+
+## Manual Installation
+
+For advanced users who want full control over the installation process, here are manual instructions for both GUI and headless versions.
+
+### GUI Installation (with Qt)
+
+**Prerequisites for GUI Version:**
+- Desktop environment (X11/Wayland)
+- Qt5/Qt6 development libraries
+- OpenGL support
+
+#### Ubuntu/Debian (GUI)
+
+```bash
+# Install system dependencies
+sudo apt-get update
+sudo apt-get install -y \
+    python3 python3-pip python3-venv \
+    git build-essential \
+    qt5-default python3-pyqt5 \
+    libgl1-mesa-glx libglib2.0-0 \
+    libhdf5-dev libopencv-dev
+
+# Create virtual environment
+python3 -m venv ~/imswitch-env
+source ~/imswitch-env/bin/activate
+
+# Install ImSwitch
+git clone https://github.com/openUC2/imSwitch ~/ImSwitch
+cd ~/ImSwitch
+pip install -e .
+
+# Install UC2-REST
+git clone https://github.com/openUC2/UC2-REST ~/UC2-REST
+cd ~/UC2-REST  
+pip install -e .
+```
+
+#### Windows (GUI)
+
+```powershell
+# Install Python 3.11 from python.org
+# Install Git from git-scm.com
+# Install Visual Studio Code (optional)
+
+# Create virtual environment
+python -m venv imswitch-env
+imswitch-env\Scripts\activate
+
+# Clone and install
+git clone https://github.com/openUC2/imSwitch 
+cd imSwitch
+pip install -e .
+
+# Install UC2-REST
+git clone https://github.com/openUC2/UC2-REST
+cd UC2-REST
+pip install -e .
+```
+
+#### macOS (GUI)
+
+```bash
+# Install Homebrew (if not already installed)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install dependencies
+brew install python@3.11 git qt5
+export PATH="/usr/local/opt/qt5/bin:$PATH"
+
+# Create virtual environment
+python3 -m venv ~/imswitch-env
+source ~/imswitch-env/bin/activate
+
+# Install ImSwitch
+git clone https://github.com/openUC2/imSwitch ~/ImSwitch
+cd ~/ImSwitch
+pip install -e .
+
+# Install UC2-REST
+git clone https://github.com/openUC2/UC2-REST ~/UC2-REST
+cd ~/UC2-REST
+pip install -e .
+```
+
+### Headless Installation (no Qt)
+
+**Prerequisites for Headless Version:**
+- Python 3.10+ 
+- No desktop environment required
+- Minimal system dependencies
+
+#### Ubuntu/Debian (Headless)
+
+```bash
+# Install minimal dependencies
+sudo apt-get update
+sudo apt-get install -y \
+    python3 python3-pip python3-venv \
+    git build-essential \
+    libhdf5-dev
+
+# Create virtual environment
+python3 -m venv ~/imswitch-headless
+source ~/imswitch-headless/bin/activate
+
+# Install headless version
+git clone https://github.com/openUC2/imSwitch ~/ImSwitch
+cd ~/ImSwitch
+pip install -e .[headless]
+
+# Install UC2-REST
+git clone https://github.com/openUC2/UC2-REST ~/UC2-REST
+cd ~/UC2-REST
+pip install -e .
+```
+
+## Running ImSwitch
+
+### GUI Mode
+
+```bash
+# Activate environment
+source ~/imswitch-env/bin/activate  # Linux/Mac
+# OR
+imswitch-env\Scripts\activate  # Windows
+
+# Run with GUI
+cd ~/ImSwitch
+python main.py
+```
+
+### Headless Mode
+
+```bash
+# Activate environment
+source ~/imswitch-headless/bin/activate
+
+# Run headless with web interface
+cd ~/ImSwitch
+python main.py --headless --http-port 8001
+
+# Access web interface at: http://localhost:8001/imswitch/index.html
+```
+
+## Configuration
+
+After installation, configure ImSwitch by creating or editing configuration files:
+
+```bash
+# Clone configuration repository
+git clone https://github.com/openUC2/ImSwitchConfig ~/ImSwitchConfig
+
+# Configuration files location:
+# Linux/Mac: ~/Documents/ImSwitchConfig/config/
+# Windows: %USERPROFILE%\Documents\ImSwitchConfig\config\
+```
+
+## Troubleshooting
+
+### Common Issues
+
+**Qt/GUI Issues:**
+```bash
+# Install additional Qt packages
+sudo apt-get install python3-pyqt5.qtsvg python3-pyqt5.qtwebengine
+```
+
+**Camera Driver Issues:**
+```bash
+# Install camera drivers
+sudo apt-get install libhik-camera-dev libdaheng-camera-dev
+```
+
+**Permission Issues:**
+```bash
+# Add user to dialout group for serial port access
+sudo usermod -a -G dialout $USER
+# Log out and log back in
 ```
 
 

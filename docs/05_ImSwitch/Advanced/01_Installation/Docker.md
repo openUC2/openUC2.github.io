@@ -2,20 +2,57 @@
 
 Docker installation is the recommended method for most users as it provides a complete, pre-configured environment with all dependencies included.
 
-
-TODO: Merge with all docker-related ttutorials 
-
 ## Overview
 
-ImSwitch runs as a Python application inside a Docker container with:
-- Ubuntu base image with all required libraries
-- UC2-REST library for ESP32 control
-- FastAPI REST API server for remote control
-- React web interface for browser-based control
-- Napari integration for image processing
-- All necessary camera drivers inside the docker image
+ImSwitch is deployed as a Python application inside a Docker container with:
+- **Ubuntu base image** with all required libraries and dependencies
+- **UC2-REST library** for ESP32 control and hardware communication
+- **FastAPI REST API server** for remote control and automation
+- **React web interface** for browser-based microscopy control
+- **Napari integration** for advanced image processing and analysis
+- **Pre-installed camera drivers** for supported hardware (HIK, Daheng, USB cameras)
+
+### Architecture Diagram
 
 ![ImSwitch Docker Architecture](../IMAGES/ImSwitchDocker.png)
+
+The system architecture includes:
+- **Central component**: Python-based microscopy software *ImSwitch*
+- **Function**: Connects hardware elements, device drivers, and controllers
+- **Application**: Enables time-lapse recordings and complex scanning patterns
+- **Abstraction**: Software acts as an independent server with generic interfaces
+- **Docker integration**: ImSwitch packaged as a container with cloud-based compilation
+- **Easy updates**: Automated script downloads and integrates changes
+- **Hardware workflow**: Hardware integrated via JSON configuration files
+- **USB integration**: Direct device interaction with Docker container
+- **Cross-platform**: Runs on Raspberry Pi, desktop computers, and cloud systems
+- **Web-based interface**: Browser access to REST API and control interface
+- **Image processing**: Integration with *Napari* and open-source image processing tools
+
+### ImSwitch Docker Features
+
+**What you can expect:**
+- **Headless Operation**: NO-QT (no PyQt/Qt dependency) version for server deployments
+- **Web Access**: Application exposed on port 8001 with browser-based control
+- **API Documentation**: Swagger GUI available at `https://localhost:8001/docs`
+- **React Interface**: Full-featured web app at `https://localhost:8001/imswitch/index.html`
+- **Configurable Setup**: Customize behavior using environment variables
+- **Camera Support**: Pre-built drivers for HIK cameras (tested on ARM devices)
+- **Multi-Architecture**: Support for ARM64 and X86 systems
+
+**Screenshots:**
+
+![Swagger UI Interface](../IMAGES/Docker_ImSwitch_1.png)
+*Swagger UI Interface of the ImSwitch Server*
+
+![React Web App](../IMAGES/Docker_ImSwitch_2.png)
+*The React APP hosted via FastAPI endpoint (**ENSURE YOU HAVE ACCEPTED THE CERTIFICATE**)*
+
+![CI/CD Pipeline](../IMAGES/Docker_ImSwitch_3.png)
+*Images built using CI with [GitHub Actions](https://github.com/openUC2/ImSwitch/blob/master/.github/workflows/imswitch-docker-multiarch-noqt.yaml)*
+
+![Container Registry](../IMAGES/Docker_ImSwitch_4.png)
+*Docker Images hosted on [GitHub Container Registry](https://github.com/orgs/openUC2/packages?repo_name=ImSwitch)*
 
 ## Quick Start
 
@@ -25,23 +62,23 @@ ImSwitch runs as a Python application inside a Docker container with:
 
 ### One-Step Installation (Raspberry Pi/Debian)
 
-For Debian-based systems, use the automated installation script:
+For Debian-based systems including Raspberry Pi, use the automated installation script that installs Docker, camera drivers, and pulls the ImSwitch container:
 
 ```bash
-# Clone the installation repository
-git clone https://github.com/openUC2/ImSwitchDockerInstall
-cd ImSwitchDockerInstall
-
-# Run the installation script (installs Docker, drivers, docker and ImSwitch docker container)
+# Download and run the one-step installer
+wget https://raw.githubusercontent.com/openUC2/ImSwitchDockerInstall/master/install_all.sh
 chmod +x install_all.sh
 sudo ./install_all.sh
 ```
 
-This script installs:
-- Docker and required drivers
-- Camera drivers (HIK and others)
-- ImSwitch Docker container
-- All necessary dependencies
+This installer provides:
+- **Docker installation** and configuration
+- **Camera drivers** for HIK, Daheng, and USB cameras  
+- **ImSwitch container** download and setup
+- **System configuration** for optimal performance
+- **Automatic startup** configuration
+
+Repository: [openUC2/ImSwitchDockerInstall](https://github.com/openUC2/ImSwitchDockerInstall)
 
 ### Manual Installation
 

@@ -41,21 +41,144 @@ pip install UC2-REST==X.X.X
 
 ### Basic Connection
 
-TODO: We need to create a useful ttutorial of the below commands 
+### Step-by-Step Tutorial
+
+#### 1. Installation and Setup
+
+First, ensure UC2-REST is installed:
+
+```bash
+# Install from GitHub
+pip install git+https://github.com/openUC2/UC2-REST.git
+
+# Or install in development mode
+git clone https://github.com/openUC2/UC2-REST
+cd UC2-REST
+pip install -e .
+```
+
+#### 2. Basic Connection Examples
+
+**USB Serial Connection (Recommended):**
 ```python
 from UC2REST import UC2Client
+import time
 
-# USB Serial connection
-client = UC2Client(serialport="/dev/ttyUSB0", baudrate=115200)
+# Connect via USB
+port = "/dev/ttyUSB0"  # Linux
+# port = "COM3"        # Windows  
+# port = "/dev/cu.usbmodem101"  # macOS
 
-# WiFi connection (experimental)
-client = UC2Client(host="192.168.1.100", port=31950)
+client = UC2Client(serialport=port, baudrate=115200, DEBUG=True)
 
-# Check connection
+# Check connection status
 if client.is_connected:
-    print("Connected to UC2-ESP32")
+    print("✓ Connected to UC2-ESP32")
+    print(f"Firmware version: {client.get_firmware_version()}")
 else:
-    print("Connection failed")
+    print("✗ Connection failed - check port and cable")
+```
+
+**WiFi Connection (Experimental):**
+```python
+# Connect via WiFi (requires ESP32 in WiFi mode)
+client = UC2Client(host="192.168.1.100", port=31950, DEBUG=True)
+
+if client.is_connected:
+    print("✓ Connected via WiFi")
+else:
+    print("✗ WiFi connection failed")
+```
+
+#### 3. Basic Hardware Control
+
+**LED Control:**
+```python
+# Turn on LED
+client.led.set_led(channel=1, value=100)  # Channel 1, 100% brightness
+time.sleep(2)
+
+# Turn off LED
+client.led.set_led(channel=1, value=0)
+
+# Control multiple LEDs
+client.led.set_led_array([100, 50, 25, 0])  # Array of brightness values
+```
+
+**Motor Control:**
+```python
+# Move stepper motor
+client.motor.move_stepper(
+    stepperid=1,
+    position=1000,  # Steps
+    speed=15000,    # Steps/second
+    is_absolute=True
+)
+
+# Check motor status
+status = client.motor.get_position(stepperid=1)
+print(f"Motor position: {status['position']}")
+
+# Home motor
+client.motor.home_stepper(stepperid=1, timeout=20000)
+```
+
+**Laser Control:**
+```python
+# Turn on laser
+client.laser.set_laser(channel=1, value=50)  # 50% power
+time.sleep(1)
+
+# Turn off laser
+client.laser.set_laser(channel=1, value=0)
+
+# Pulse laser
+client.laser.pulse_laser(channel=1, value=100, duration=500)  # 500ms pulse
+```
+
+#### 4. Advanced Control Examples
+
+**Multi-Device Coordination:**
+```python
+# Coordinate movement and illumination
+def take_z_stack(client, z_positions, led_intensity=100):
+    images = []
+    
+    for z_pos in z_positions:
+        # Move to position
+        client.motor.move_stepper(stepperid=3, position=z_pos, speed=5000)
+        time.sleep(0.5)  # Wait for settling
+        
+        # Set illumination
+        client.led.set_led(channel=1, value=led_intensity)
+        time.sleep(0.1)  # Exposure time
+        
+        # Trigger camera (if connected)
+        # images.append(capture_image())
+        
+        # Turn off LED
+        client.led.set_led(channel=1, value=0)
+    
+    return images
+
+# Execute Z-stack
+z_positions = [0, 100, 200, 300, 400]  # Z positions in steps
+take_z_stack(client, z_positions)
+```
+
+**Error Handling:**
+```python
+try:
+    # Attempt motor movement
+    client.motor.move_stepper(stepperid=1, position=5000, speed=10000)
+    
+except Exception as e:
+    print(f"Motor movement failed: {e}")
+    
+    # Check if motor is still connected
+    if not client.is_connected:
+        print("Connection lost - attempting to reconnect...")
+        client.reconnect()
 ```
 
 ### Basic Commands
@@ -546,13 +669,195 @@ except Exception as e:
 }
 ```
 
-### In ImSwitch Custom Device Managers
+### ImSwitch Integration Examples
 
-TODO: Have a look here:  https://github.com/openUC2/ImSwitch/blob/master/imswitch/imcontrol/model/managers/UC2ConfigManager.py and here https://github.com/openUC2/ImSwitch/blob/master/imswitch/imcontrol/model/managers/rs232/ESP32Manager.py 
-and then the stage, led and laser 
-https://github.com/openUC2/ImSwitch/blob/master/imswitch/imcontrol/model/managers/positioners/ESP32StageManager.py
-https://github.com/openUC2/ImSwitch/blob/master/imswitch/imcontrol/model/managers/LEDMatrixs/ESP32LEDMatrixManager.py
-https://github.com/openUC2/ImSwitch/blob/master/imswitch/imcontrol/model/managers/lasers/ESP32LEDLaserManager.py
+UC2-REST is integrated into ImSwitch through device managers. Here are examples based on the ImSwitch codebase:
+
+#### ESP32 Configuration Manager
+
+Based on [UC2ConfigManager.py](https://github.com/openUC2/ImSwitch/blob/master/imswitch/imcontrol/model/managers/UC2ConfigManager.py) and [ESP32Manager.py](https://github.com/openUC2/ImSwitch/blob/master/imswitch/imcontrol/model/managers/rs232/ESP32Manager.py):
+
+```python
+from UC2REST import UC2Client
+from imswitch.imcontrol.model.interfaces import DeviceManager
+
+class ESP32Manager(DeviceManager):
+    def __init__(self, deviceInfo, name, **kwargs):
+        super().__init__(deviceInfo, name, **kwargs)
+        
+        # Initialize UC2-REST client from device configuration
+        port = deviceInfo.managerProperties.get('port', '/dev/ttyUSB0')
+        baudrate = deviceInfo.managerProperties.get('baudrate', 115200)
+        
+        self.client = UC2Client(
+            serialport=port, 
+            baudrate=baudrate,
+            DEBUG=False
+        )
+        
+        if not self.client.is_connected:
+            raise Exception(f"Failed to connect to ESP32 on {port}")
+    
+    def send_command(self, command_dict):
+        """Send JSON command to ESP32"""
+        return self.client.send_command(command_dict)
+    
+    def cleanup(self):
+        """Cleanup when shutting down"""
+        if hasattr(self, 'client'):
+            self.client.close()
+```
+
+#### Stage Manager Integration
+
+Based on [ESP32StageManager.py](https://github.com/openUC2/ImSwitch/blob/master/imswitch/imcontrol/model/managers/positioners/ESP32StageManager.py):
+
+```python
+from imswitch.imcontrol.model.interfaces import PositionerManager
+
+class ESP32StageManager(PositionerManager):
+    def __init__(self, deviceInfo, name, **kwargs):
+        super().__init__(deviceInfo, name, **kwargs)
+        
+        # Get ESP32 manager instance
+        self._esp32 = kwargs['esp32Manager']
+        
+        # Configure axes
+        self._axes = deviceInfo.axes
+        self._steppers = {axis: info.get('stepperid', 1) 
+                         for axis, info in self._axes.items()}
+    
+    def move(self, axis, position, absolute=True, blocking=True):
+        """Move stage axis to position"""
+        stepper_id = self._steppers[axis]
+        
+        command = {
+            "task": "/motor_act",
+            "motor": {
+                "steppers": [{
+                    "stepperid": stepper_id,
+                    "position": int(position),
+                    "speed": 15000,
+                    "isabs": absolute,
+                    "isblocking": blocking
+                }]
+            }
+        }
+        
+        return self._esp32.send_command(command)
+    
+    def setPosition(self, axis, position):
+        """Set current position (for calibration)"""
+        stepper_id = self._steppers[axis]
+        
+        command = {
+            "task": "/motor_set",
+            "motor": {
+                "steppers": [{
+                    "stepperid": stepper_id,
+                    "position": int(position)
+                }]
+            }
+        }
+        
+        return self._esp32.send_command(command)
+```
+
+#### LED Manager Integration
+
+Based on [ESP32LEDMatrixManager.py](https://github.com/openUC2/ImSwitch/blob/master/imswitch/imcontrol/model/managers/LEDMatrixs/ESP32LEDMatrixManager.py):
+
+```python
+from imswitch.imcontrol.model.interfaces import LEDMatrixManager
+
+class ESP32LEDManager(LEDMatrixManager):
+    def __init__(self, deviceInfo, name, **kwargs):
+        super().__init__(deviceInfo, name, **kwargs)
+        
+        self._esp32 = kwargs['esp32Manager']
+        self._channels = deviceInfo.managerProperties.get('channels', [1, 2, 3])
+    
+    def setLED(self, channel, intensity):
+        """Set LED intensity (0-255)"""
+        command = {
+            "task": "/led_act",
+            "led": {
+                "LEDArrMode": 1,
+                "led_array": [
+                    {
+                        "id": channel,
+                        "r": int(intensity),
+                        "g": int(intensity), 
+                        "b": int(intensity)
+                    }
+                ]
+            }
+        }
+        
+        return self._esp32.send_command(command)
+    
+    def setPattern(self, pattern_array):
+        """Set LED pattern for matrix"""
+        led_commands = []
+        for i, intensity in enumerate(pattern_array):
+            led_commands.append({
+                "id": i + 1,
+                "r": int(intensity),
+                "g": int(intensity),
+                "b": int(intensity)
+            })
+        
+        command = {
+            "task": "/led_act",
+            "led": {
+                "LEDArrMode": 1,
+                "led_array": led_commands
+            }
+        }
+        
+        return self._esp32.send_command(command)
+```
+
+#### Laser Manager Integration  
+
+Based on [ESP32LEDLaserManager.py](https://github.com/openUC2/ImSwitch/blob/master/imswitch/imcontrol/model/managers/lasers/ESP32LEDLaserManager.py):
+
+```python
+from imswitch.imcontrol.model.interfaces import LaserManager
+
+class ESP32LaserManager(LaserManager):
+    def __init__(self, deviceInfo, name, **kwargs):
+        super().__init__(deviceInfo, name, **kwargs)
+        
+        self._esp32 = kwargs['esp32Manager']
+        self._channel = deviceInfo.managerProperties.get('channel', 1)
+        self._maxPower = deviceInfo.managerProperties.get('maxPower', 255)
+    
+    def setValue(self, power):
+        """Set laser power (0-100%)"""
+        intensity = int((power / 100.0) * self._maxPower)
+        
+        command = {
+            "task": "/laser_act",
+            "laser": {
+                "LASERid": self._channel,
+                "LASERval": intensity
+            }
+        }
+        
+        return self._esp32.send_command(command)
+    
+    def setEnabled(self, enabled):
+        """Enable/disable laser"""
+        if enabled:
+            self.setValue(self._lastPower if hasattr(self, '_lastPower') else 50)
+        else:
+            self._lastPower = self.getValue()
+            self.setValue(0)
+```
+
+#### Custom Device Manager Template
+
 ```python
 from UC2REST import UC2Client
 from imswitch.imcontrol.model.interfaces import DeviceManager

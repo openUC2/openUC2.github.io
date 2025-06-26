@@ -5,48 +5,372 @@ ImSwitch can be used to connect image processing and hardware control. There are
 For this we take an exemplary Controller, the Autofocus Controller, that takes frames and processes them to compute the sharpest plane :
 
 
-TODO: This has to be updated:
-- create a tutorial that relates to the autofocuscontroller here https://github.com/openUC2/ImSwitch/blob/master/imswitch/imcontrol/controller/controllers/AufofocusController.py
-- have exemplary examples how to have access to the hardware 
-- remove unneccsary code exmaples 
-- Give general idea of structure how we can access the detector, the stage and the laser, etc. 
+# Image Processing with ImSwitch
 
+ImSwitch provides powerful integration between image processing and hardware control. This tutorial shows you how to create custom controllers that process live camera feeds and control hardware in real-time.
 
-```py
+## Overview
+
+ImSwitch offers multiple ways to integrate image processing:
+
+1. **Controller-based Processing**: Native ImSwitch controllers with direct hardware access
+2. **Plugin-based Processing**: Modular processing plugins  
+3. **External Integration**: Using ImSwitch API from external processing tools
+4. **Napari Integration**: Advanced image analysis workflows
+
+## Autofocus Controller Tutorial
+
+Based on the [AutofocusController](https://github.com/openUC2/ImSwitch/blob/master/imswitch/imcontrol/controller/controllers/AutofocusController.py), here's how to create image processing controllers:
+
+### Basic Controller Structure
+
+```python
 from imswitch import IS_HEADLESS
 import time
 import numpy as np
-import scipy.ndimage as ndi
 import threading
 from imswitch.imcommon.model import initLogger, APIExport
 from ..basecontrollers import ImConWidgetController
 from skimage.filters import gaussian
 from imswitch.imcommon.framework import Signal
 import cv2
-import queue
-
-# Global axis for Z-positioning - should be Z
-gAxis = "Z"
 
 class AutofocusController(ImConWidgetController):
-    """Linked to AutofocusWidget."""
+    """Custom controller for autofocus functionality."""
+    
+    # Signals for updating GUI
     sigUpdateFocusPlot = Signal(object, object)
     sigUpdateFocusValue = Signal(object)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.__logger = initLogger(self)
-        self.isAutofusRunning = False
-
+        self.isAutofocusRunning = False
+        
+        # Get hardware managers
+        self.setupHardware()
+        
+    def setupHardware(self):
+        """Initialize hardware connections"""
+        # Get camera (detector)
         if self._setupInfo.autofocus is not None:
             self.cameraName = self._setupInfo.autofocus.camera
             self.stageName = self._setupInfo.autofocus.positioner
         else:
+            # Use first available devices
             self.cameraName = self._master.detectorsManager.getAllDeviceNames()[0]
             self.stageName = self._master.positionersManager.getAllDeviceNames()[0]
-
+        
+        # Get hardware managers
         self.camera = self._master.detectorsManager[self.cameraName]
-        self.stages = self._master.positionersManager[self.stageName]
+        self.stage = self._master.positionersManager[self.stageName]
+        
+        # Get laser manager (optional)
+        if self._master.lasersManager.getAllDeviceNames():
+            self.laserName = self._master.lasersManager.getAllDeviceNames()[0]
+            self.laser = self._master.lasersManager[self.laserName]
+        else:
+            self.laser = None
+```
+
+### Hardware Access Examples
+
+#### Camera Control
+
+```python
+def captureImage(self):
+    """Capture single image from camera"""
+    # Start acquisition if not running
+    if not self.camera.acquisition:
+        self.camera.startAcquisition()
+    
+    # Capture frame
+    frame = self.camera.getLatestFrame()
+    
+    # Convert to numpy array if needed
+    if hasattr(frame, 'getData'):
+        image = np.array(frame.getData())
+    else:
+        image = np.array(frame)
+    
+    return image
+
+def setCameraParameters(self, exposure_time=100, gain=1.0):
+    """Set camera parameters"""
+    if hasattr(self.camera, 'setParameter'):
+        self.camera.setParameter('ExposureTime', exposure_time)
+        self.camera.setParameter('Gain', gain)
+```
+
+#### Stage Control
+
+```python
+def moveStage(self, axis, position, relative=False):
+    """Move stage to position"""
+    if relative:
+        current_pos = self.stage.position[axis]
+        target_pos = current_pos + position
+    else:
+        target_pos = position
+    
+    # Move stage
+    self.stage.move(axis, target_pos, absolute=not relative)
+    
+    # Wait for movement to complete
+    time.sleep(0.1)
+    while self.stage.isMoving(axis):
+        time.sleep(0.01)
+
+def getStagePosition(self, axis):
+    """Get current stage position"""
+    return self.stage.position[axis]
+```
+
+#### Laser/LED Control
+
+```python
+def setIllumination(self, enabled, power=50):
+    """Control illumination"""
+    if self.laser is not None:
+        if enabled:
+            self.laser.setValue(power)  # Set power (0-100%)
+        else:
+            self.laser.setValue(0)      # Turn off
+    
+    # Or control via LED manager
+    if hasattr(self._master, 'ledsManager'):
+        led_manager = self._master.ledsManager
+        if led_manager.getAllDeviceNames():
+            led = led_manager[led_manager.getAllDeviceNames()[0]]
+            led.setValue(power if enabled else 0)
+```
+
+### Autofocus Algorithm Implementation
+
+```python
+def calculateFocusMetric(self, image):
+    """Calculate focus metric from image"""
+    # Convert to grayscale if needed
+    if len(image.shape) == 3:
+        gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+    else:
+        gray = image
+    
+    # Apply Gaussian blur to reduce noise
+    blurred = gaussian(gray, sigma=1)
+    
+    # Calculate focus metrics
+    # Method 1: Variance of Laplacian
+    laplacian = cv2.Laplacian(blurred, cv2.CV_64F)
+    focus_score = laplacian.var()
+    
+    # Method 2: Sobel gradient magnitude
+    # sobelx = cv2.Sobel(blurred, cv2.CV_64F, 1, 0, ksize=3)
+    # sobely = cv2.Sobel(blurred, cv2.CV_64F, 0, 1, ksize=3)
+    # focus_score = np.mean(sobelx**2 + sobely**2)
+    
+    return focus_score
+
+def runAutofocus(self, z_start, z_end, z_step=10, axis='Z'):
+    """Run autofocus scan"""
+    if self.isAutofocusRunning:
+        return
+    
+    self.isAutofocusRunning = True
+    
+    try:
+        # Generate Z positions
+        z_positions = np.arange(z_start, z_end + z_step, z_step)
+        focus_scores = []
+        
+        # Turn on illumination
+        self.setIllumination(True, power=50)
+        time.sleep(0.1)  # Wait for illumination to stabilize
+        
+        for z_pos in z_positions:
+            # Move to Z position
+            self.moveStage(axis, z_pos, relative=False)
+            
+            # Wait for settling
+            time.sleep(0.1)
+            
+            # Capture image
+            image = self.captureImage()
+            
+            # Calculate focus score
+            score = self.calculateFocusMetric(image)
+            focus_scores.append(score)
+            
+            # Update GUI (if available)
+            self.sigUpdateFocusValue.emit(score)
+            
+            # Log progress
+            self.__logger.info(f"Z={z_pos:.1f}, Focus Score={score:.2f}")
+        
+        # Find best focus position
+        best_idx = np.argmax(focus_scores)
+        best_z = z_positions[best_idx]
+        best_score = focus_scores[best_idx]
+        
+        # Move to best position
+        self.moveStage(axis, best_z, relative=False)
+        
+        # Turn off illumination
+        self.setIllumination(False)
+        
+        # Update plot
+        self.sigUpdateFocusPlot.emit(z_positions, focus_scores)
+        
+        self.__logger.info(f"Autofocus complete. Best Z: {best_z:.1f}, Score: {best_score:.2f}")
+        
+        return best_z, best_score
+        
+    finally:
+        self.isAutofocusRunning = False
+```
+
+### Real-time Processing Example
+
+```python
+def startLiveProcessing(self):
+    """Start live image processing"""
+    def processing_loop():
+        while self.isProcessingActive:
+            try:
+                # Capture frame
+                image = self.captureImage()
+                
+                # Process image
+                processed = self.processImage(image)
+                
+                # Make control decisions
+                self.makeControlDecisions(processed)
+                
+                # Small delay to prevent overwhelming the system
+                time.sleep(0.01)
+                
+            except Exception as e:
+                self.__logger.error(f"Processing error: {e}")
+    
+    self.isProcessingActive = True
+    self.processing_thread = threading.Thread(target=processing_loop)
+    self.processing_thread.daemon = True
+    self.processing_thread.start()
+
+def processImage(self, image):
+    """Custom image processing pipeline"""
+    # Example: Edge detection and analysis
+    gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+    edges = cv2.Canny(gray, 50, 150)
+    
+    # Find contours
+    contours, _ = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    
+    return {
+        'original': image,
+        'edges': edges,
+        'contours': contours,
+        'num_objects': len(contours)
+    }
+
+def makeControlDecisions(self, processed_data):
+    """Make hardware control decisions based on image analysis"""
+    num_objects = processed_data['num_objects']
+    
+    # Example: Adjust illumination based on object count
+    if num_objects < 5:
+        # Too few objects - increase illumination
+        self.setIllumination(True, power=min(100, self.current_power + 10))
+    elif num_objects > 20:
+        # Too many objects - decrease illumination  
+        self.setIllumination(True, power=max(10, self.current_power - 10))
+```
+
+### Integration with ImSwitch API
+
+```python
+@APIExport
+def runAutofocusAPI(self, z_start: float, z_end: float, z_step: float = 10):
+    """API endpoint for autofocus"""
+    try:
+        best_z, score = self.runAutofocus(z_start, z_end, z_step)
+        return {
+            'success': True,
+            'best_z_position': best_z,
+            'focus_score': score
+        }
+    except Exception as e:
+        return {
+            'success': False,
+            'error': str(e)
+        }
+
+@APIExport  
+def getFocusScore(self):
+    """API endpoint to get current focus score"""
+    try:
+        image = self.captureImage()
+        score = self.calculateFocusMetric(image)
+        return {
+            'success': True,
+            'focus_score': score
+        }
+    except Exception as e:
+        return {
+            'success': False,
+            'error': str(e)
+        }
+```
+
+## General Hardware Access Patterns
+
+### Detector (Camera) Access
+```python
+# Get all available cameras
+camera_names = self._master.detectorsManager.getAllDeviceNames()
+
+# Access specific camera
+camera = self._master.detectorsManager[camera_name]
+
+# Start/stop acquisition
+camera.startAcquisition()
+camera.stopAcquisition()
+
+# Get latest frame
+frame = camera.getLatestFrame()
+```
+
+### Positioner (Stage) Access
+```python
+# Get all available stages
+stage_names = self._master.positionersManager.getAllDeviceNames()
+
+# Access specific stage
+stage = self._master.positionersManager[stage_name]
+
+# Move stage
+stage.move(axis='X', dist=100, absolute=True)
+
+# Get position
+position = stage.position['X']
+```
+
+### Laser/LED Access
+```python
+# Get all available lasers
+laser_names = self._master.lasersManager.getAllDeviceNames()
+
+# Access specific laser
+laser = self._master.lasersManager[laser_name]
+
+# Set power (0-100%)
+laser.setValue(50)
+
+# Enable/disable
+laser.setEnabled(True)
+```
+
+This tutorial provides the foundation for creating sophisticated image processing controllers in ImSwitch with full hardware integration.
 
         self._commChannel.sigAutoFocus.connect(self.autoFocus)
         if not IS_HEADLESS:

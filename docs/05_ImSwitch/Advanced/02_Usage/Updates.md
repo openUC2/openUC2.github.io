@@ -34,15 +34,7 @@ For Forklift OS installations:
 
 ```bash
 # Run system update script
-sudo /home/pi/scripts/update-imswitch-os.sh
-
-# Or update components individually
-cd /home/pi/ImSwitch
-git pull origin master
-pip install -e .
-
-# Restart ImSwitch service
-sudo systemctl restart imswitch-docker
+forklift pallet upgrade --force @main
 ```
 
 ## Native Python Installation Updates

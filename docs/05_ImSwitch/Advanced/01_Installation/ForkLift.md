@@ -1,10 +1,15 @@
-# ImSwitch Forklift OS
+# ImSwitch OS (based on Forklift)
 
-The ImSwitch Forklift OS is a complete, pre-configured operating system image designed specifically for UC2 microscopy systems. It provides a ready-to-use environment with all software, drivers, and configurations pre-installed.
+The ImSwitch ImSwitch OS is a complete, pre-configured operating system image designed specifically for UC2 microscopy systems. It provides a ready-to-use environment with all software, drivers, and configurations pre-installed.
+
+TODO: 
+-  Incorporate the images again that were there previouslyy 
+-  reuse previously set information about forklifted imswitch-os
+-  recover images and information from this branch https://openuc2.github.io/docs/ImSwitch/Quickstart/
 
 ## Overview
 
-The Forklift OS is a specialized Raspberry Pi OS image that includes:
+The ImSwitch OS is a specialized Raspberry Pi OS image that includes:
 - **ImSwitch** with all dependencies pre-installed
 - **UC2-REST** Python interface for ESP32 communication
 - **UC2-ESP32 firmware** flashing tools
@@ -20,8 +25,7 @@ The Forklift OS is a specialized Raspberry Pi OS image that includes:
 - **Docker Environment**: Pre-built containers ready to run
 - **UC2-REST Library**: Python interface for hardware control
 - **Firmware Tools**: ESP32 flashing utilities and firmware
-- **Image Processing**: Napari, OpenCV, and other tools
-- **Development Tools**: Python, Git, VS Code Server
+- **Development Tools**: Python, Git, VS Code Server (optional)
 
 ### Hardware Support
 - **Cameras**: HIK, Daheng, Raspberry Pi, USB cameras
@@ -31,7 +35,7 @@ The Forklift OS is a specialized Raspberry Pi OS image that includes:
 
 ### Network Features
 - **WiFi Hotspot**: Create isolated network for microscope control
-- **Web Interface**: Browser-based control panel
+- **Web Interface**: Browser-based control panel (Cockpit)
 - **SSH Access**: Remote terminal access
 - **VNC Server**: Remote desktop access
 
@@ -45,12 +49,8 @@ The Forklift OS is a specialized Raspberry Pi OS image that includes:
 ### Step 1: Download Image
 
 ```bash
-# Download the latest Forklift OS image
-wget https://github.com/openUC2/imswitch-os/releases/latest/download/imswitch-forklift-os.img.xz
-
-# Verify checksum (recommended)
-wget https://github.com/openUC2/imswitch-os/releases/latest/download/SHA256SUMS
-sha256sum -c SHA256SUMS
+# Download the latest Forklift OS image or go to Zenodo and download it here https://zenodo.org/records/14988987
+wget https://zenodo.org/records/14988987/files/rpi-uc2-27f9a21.zip?download=1
 ```
 
 ### Step 2: Flash to SD Card
@@ -74,26 +74,20 @@ sync
 ### Step 3: First Boot
 
 1. Insert SD card into Raspberry Pi
-2. Connect keyboard, mouse, and display (for initial setup)
-3. Power on the Raspberry Pi
-4. Follow the setup wizard:
-   - Set locale and timezone
-   - Configure WiFi (optional)
-   - Enable SSH (recommended)
-   - Set up user account
+2. Power on the Raspberry Pi
+3. Observe for an SSID with name `openuc2-XXX-XXX-XXX`
 
 ## Configuration
 
 ### Initial Setup
 
 **Access Methods:**
-- **Direct**: Connect keyboard/mouse/display
-- **SSH**: `ssh pi@imswitch-pi.local` (default password: see setup wizard)
+- **SSH**: `ssh pi@openuc2-xxxx-xxxx-xxx.local` (default password: `youseetoo`, default login: `pi` )
 - **Web Interface**: `http://imswitch-pi.local:8001`
 
 **Default Credentials:**
 - Username: `pi`
-- Password: Set during first boot
+- Password: `youseetoo`
 - SSH: Enabled by default
 
 ### Network Configuration
@@ -116,54 +110,30 @@ sudo raspi-config
 
 ### ImSwitch Configuration
 
+TODO: Link to ImSwitchConfig explanition document 
+
 **Quick Start Configuration:**
 ```bash
 # Navigate to configuration directory
 cd /home/pi/ImSwitchConfig
 
 # Copy a template configuration
-cp templates/uc2_basic.json config/imcontrol_options.json
+TODO: update paths 
 
 # Edit configuration for your hardware
-nano config/imcontrol_options.json
+nano config/imcontrol_options.json #=> enter the name you want to use
 ```
-
-**Available Templates:**
-- `uc2_basic.json` - Basic UC2 setup with stage and LED
-- `uc2_camera.json` - UC2 with camera support
-- `uc2_multicolor.json` - Multi-color LED and laser setup
-- `uc2_advanced.json` - Full featured configuration
 
 ## Usage
-
-### Starting ImSwitch
-
-**Method 1: Desktop GUI**
-- Double-click "ImSwitch" desktop icon
-- GUI will launch automatically
-
-**Method 2: Command Line**
-```bash
-# Activate ImSwitch environment
-source /home/pi/imswitch-env/bin/activate
-
-# Launch ImSwitch
-python -m imswitch
-```
-
-**Method 3: Docker (Headless)**
-```bash
-# Start ImSwitch in Docker (web interface only)
-sudo systemctl start imswitch-docker
-
-# Access via web browser: http://localhost:8001
-```
 
 ### Web Interface
 
 The Forklift OS includes a web-based control interface accessible at:
 - **Local**: `http://localhost:8001`
-- **Network**: `http://imswitch-pi.local:8001`
+- **Network**: `http://opencu2-XXX-xxx-xxx.local:8001`
+
+TODO: Add cockpit path for port 9090, socket on 8002, 
+actually it's https by default to connect to it via a statically hosted website e.g. https://youseetoo.github.io/imswitch/index.html 
 
 **Features:**
 - Live camera feed
@@ -175,23 +145,9 @@ The Forklift OS includes a web-based control interface accessible at:
 ### System Management
 
 **Update ImSwitch:**
-```bash
-# Update to latest version
-cd /home/pi/ImSwitch
-git pull origin master
-pip install -e .
 
-# Restart services
-sudo systemctl restart imswitch-docker
 ```
-
-**System Updates:**
-```bash
-# Update OS packages
-sudo apt update && sudo apt upgrade
-
-# Update ImSwitch OS components
-sudo /home/pi/scripts/update-imswitch-os.sh
+forklift pallet upgrade --force @main
 ```
 
 ## Advanced Features
@@ -216,41 +172,16 @@ ls /home/pi/ImSwitchConfig/scripts/
 cp my_script.py /home/pi/ImSwitchConfig/scripts/
 ```
 
-### Development Mode
-
-**Enable Development Tools:**
-```bash
-# Start VS Code Server for remote development
-code-server --bind-addr 0.0.0.0:8080 /home/pi/ImSwitch
-
-# Access via browser: http://imswitch-pi.local:8080
-```
-
-**Git Configuration:**
-```bash
-# Configure Git for development
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
-
-# Add SSH key for GitHub (optional)
-ssh-keygen -t rsa -b 4096 -C "your.email@example.com"
-```
-
 ## Troubleshooting
 
 ### Common Issues
 
-**ImSwitch won't start:**
-```bash
-# Check system logs
-journalctl -u imswitch-docker -f
-
-# Restart services
-sudo systemctl restart imswitch-docker
-
-# Check configuration
-python -c "import json; json.load(open('/home/pi/ImSwitchConfig/config/imcontrol_options.json'))"
+**Check docker compose is running:**
 ```
+docker ps
+```
+
+TODO: recover previous information about docker compose 
 
 **Hardware not detected:**
 ```bash
@@ -287,53 +218,19 @@ sudo systemctl restart hostapd
 ```bash
 # Reset ImSwitch configuration
 rm -rf /home/pi/ImSwitchConfig/config/*
-cp /home/pi/ImSwitchConfig/templates/uc2_basic.json /home/pi/ImSwitchConfig/config/imcontrol_options.json
-
-# Reset network settings
-sudo raspi-config  # Use networking options
-```
-
-**System recovery:**
-```bash
-# Run system repair script
-sudo /home/pi/scripts/repair-system.sh
-
-# Or re-flash SD card with latest image
+# then restart imswitch 
 ```
 
 ## Updates and Maintenance
 
-### Regular Updates
+### Manual Updates
 
-**Monthly maintenance:**
-```bash
-# Run maintenance script
-sudo /home/pi/scripts/monthly-maintenance.sh
+load the latest version from github packages 
+```
+bash ~/Desktop/update_docker_container.sh
 ```
 
-**Manual updates:**
-```bash
-# Update OS
-sudo apt update && sudo apt upgrade
-
-# Update ImSwitch
-cd /home/pi/ImSwitch && git pull && pip install -e .
-
-# Update UC2-REST
-cd /home/pi/UC2-REST && git pull && pip install -e .
-```
-
-### Backup and Restore
-
-**Backup configuration:**
-```bash
-# Backup to USB drive
-sudo /home/pi/scripts/backup-config.sh /media/pi/USB_DRIVE/
-
-# Backup entire system (advanced)
-sudo dd if=/dev/mmcblk0 of=/media/pi/USB_DRIVE/system-backup.img
-```
-
+TODO: Update below 
 ## Support and Resources
 
 ### Getting Help

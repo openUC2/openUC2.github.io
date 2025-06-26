@@ -3,7 +3,8 @@
 
 ## Windows
 
-Have a look here: https://www.get-cameras.com/requestdownload and install the drivers. / SDK (newer version of ImSwitch ships drivers.)
+Have a look here: https://www.get-cameras.com/requestdownload and install the drivers. / SDK 
+
 ## Linux
 
 ### ARM

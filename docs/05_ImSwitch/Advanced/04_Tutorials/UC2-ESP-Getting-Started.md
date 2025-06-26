@@ -20,6 +20,13 @@ UC2-ESP32 firmware features:
 - **Communication**: WiFi, Bluetooth, Serial interfaces
 - **Input Controllers**: Joysticks, PS4 controllers, buttons
 
+
+TODO: Reference to the links: 
+- https://youseetoo.github.io/ firmware flashing
+- https://youseetoo.github.io/indexWebSerialTest.html firmware testing 
+- reuse former images 
+- https://github.com/youseetoo/uc2-esp32 firmware repo
+
 ## Firmware Architecture
 
 ### Module Structure
@@ -106,7 +113,7 @@ For development and customization:
    cd uc2-esp32
    
    # Switch to development branch for latest features
-   git checkout reworkBD
+   git checkout main
    ```
 
 3. **Configure Build**:
@@ -127,23 +134,6 @@ For development and customization:
    pio device monitor
    ```
 
-### Method 3: Arduino IDE
-
-Alternative for Arduino users:
-
-1. **Install ESP32 Board Package**:
-   - Add ESP32 board URL to Arduino IDE
-   - Install ESP32 board package
-
-2. **Configure Libraries**:
-   - Install required libraries (see firmware README)
-   - Configure board settings
-
-3. **Compile and Upload**:
-   - Open firmware project in Arduino IDE
-   - Select correct board and COM port
-   - Compile and upload
-
 ## Basic Configuration
 
 ### Serial Communication Setup
@@ -157,7 +147,7 @@ Default serial parameters:
 
 ### WiFi Configuration
 
-Configure WiFi for network communication:
+Configure WiFi for network communication (right now this is untested and barely documented ):
 
 ```cpp
 // WiFi credentials (set in firmware or via serial)
@@ -181,32 +171,14 @@ Set WiFi via serial commands:
 
 ### Module Configuration
 
-Enable/disable modules in `config.h`:
+Enable/disable modules in `config.h` and platform.ini via build flags (see examples).
 
-```cpp
-// Motor control
-#define MODULE_MOTOR 1
-
-// LED control
-#define MODULE_LED 1
-
-// Laser control
-#define MODULE_LASER 1
-
-// WiFi communication
-#define MODULE_WIFI 1
-
-// Bluetooth support
-#define MODULE_BLUETOOTH 0
-
-// Sensor reading
-#define MODULE_SENSOR 1
-```
 
 ## Hardware Control Examples
 
 ### Motor Control
 
+TODO: update commands based on this file - and restore the old information which was valid: (Code formatting https://github.com/youseetoo/uc2-esp32/blob/main/main/json_api_BD.txt)
 ```json
 // Move motor X by 1000 steps
 {
@@ -218,12 +190,12 @@ Enable/disable modules in `config.h`:
 
 // Home motor X
 {
-    "task": "/motor_act", 
+    "task": "/home_act", 
     "motor": 0,
     "task": "home"
 }
 
-// Set motor speed
+// Set motor speed (only useful if you actually move)
 {
     "task": "/motor_act",
     "motor": 0,
@@ -284,44 +256,7 @@ Enable/disable modules in `config.h`:
 }
 ```
 
-### Sensor Reading
 
-```json
-// Read all sensors
-{
-    "task": "/sensor_get"
-}
-
-// Read specific sensor
-{
-    "task": "/sensor_get",
-    "sensor": "temperature"
-}
-```
-
-## Testing and Validation
-
-### Serial Communication Test
-
-Use a serial terminal to test basic communication:
-
-```bash
-# Linux/macOS
-screen /dev/ttyUSB0 115200
-
-# Windows
-# Use PuTTY or similar serial terminal
-```
-
-Send test command:
-```json
-{"task": "/state_get"}
-```
-
-Expected response:
-```json
-{"return": 1, "task": "/state_get", "state": "ready"}
-```
 
 ### Web Interface Test
 
@@ -450,7 +385,7 @@ void CustomModule::get(JsonObject& json_in, JsonObject& json_out) {
 
 ### Network Configuration
 
-Configure advanced networking:
+Configure advanced networking (This is right now largely untested/undocumented):
 
 ```cpp
 // Static IP configuration
@@ -508,19 +443,13 @@ void setupTaskPriorities() {
 1. Check USB cable and connection
 2. Verify correct COM port
 3. Press RESET button
-4. Try different baud rates
+4. Try different baud rates (used to be higher, now it's 115200 BAUD)
 
 **Firmware upload fails**:
 1. Hold BOOT button during upload
 2. Check board selection in IDE
 3. Verify USB drivers installed
 4. Try different upload speed
-
-**WiFi connection problems**:
-1. Check SSID and password
-2. Verify network compatibility (2.4GHz)
-3. Check signal strength
-4. Reset network settings
 
 **Motor not moving**:
 1. Check power supply voltage
@@ -544,17 +473,6 @@ void debugPrint(String message) {
 }
 ```
 
-### Log Analysis
-
-Monitor serial output for debugging:
-
-```bash
-# Continuous monitoring with timestamps
-pio device monitor | ts '[%Y-%m-%d %H:%M:%S]'
-
-# Save log to file
-pio device monitor > debug_log.txt
-```
 
 ## Integration with ImSwitch
 
@@ -604,6 +522,6 @@ Configure ESP32 device in ImSwitch:
 ## Resources
 
 - **[UC2-ESP32 Repository](https://github.com/youseetoo/uc2-esp32)**
-- **[Firmware Documentation](https://github.com/youseetoo/uc2-esp32/tree/reworkBD/docs)**
+- **[Firmware Documentation](https://github.com/youseetoo/uc2-esp32/tree/main/docs)**
 - **[Web Flasher](https://youseetoo.github.io/)**
 - **[Community Forum](https://openuc2.com)**

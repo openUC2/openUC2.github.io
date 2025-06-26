@@ -2,6 +2,9 @@
 
 Docker installation is the recommended method for most users as it provides a complete, pre-configured environment with all dependencies included.
 
+
+TODO: Merge with all docker-related ttutorials 
+
 ## Overview
 
 ImSwitch runs as a Python application inside a Docker container with:
@@ -10,6 +13,7 @@ ImSwitch runs as a Python application inside a Docker container with:
 - FastAPI REST API server for remote control
 - React web interface for browser-based control
 - Napari integration for image processing
+- All necessary camera drivers inside the docker image
 
 ![ImSwitch Docker Architecture](../IMAGES/ImSwitchDocker.png)
 
@@ -28,7 +32,7 @@ For Debian-based systems, use the automated installation script:
 git clone https://github.com/openUC2/ImSwitchDockerInstall
 cd ImSwitchDockerInstall
 
-# Run the installation script (installs Docker, drivers, and ImSwitch)
+# Run the installation script (installs Docker, drivers, docker and ImSwitch docker container)
 chmod +x install_all.sh
 sudo ./install_all.sh
 ```
@@ -45,7 +49,7 @@ This script installs:
 
 ```bash
 # For ARM64 and X86 systems
-sudo docker pull ghcr.io/openuc2/imswitch-noqt-x64:latest
+sudo docker pull ghcr.io/openuc2/imswitch-noqt-amd64:latest
 ```
 
 #### Step 2: Run ImSwitch Container
@@ -57,7 +61,7 @@ sudo docker run -it --rm -p 8001:8001 -p 2222:22 \
   -e HTTP_PORT=8001 \
   -e CONFIG_FILE=example_uc2_hik_flowstop.json \
   --privileged \
-  ghcr.io/openuc2/imswitch-noqt-x64:latest
+  ghcr.io/openuc2/imswitch-noqt-amd64:latest
 ```
 
 **Advanced setup with persistent data:**
@@ -142,7 +146,12 @@ sudo docker run --device=/dev/video0 [other options]
 
 # Or use privileged mode (recommended)
 sudo docker run --privileged [other options]
+
+# check if camera is actually connected 
+lsusb
 ```
+
+
 
 **Permission denied errors:**
 ```bash
@@ -153,7 +162,7 @@ sudo usermod -aG docker $USER
 
 ### Container Logs
 ```bash
-# View container logs
+# View container logs (retreive container id with docker ps)
 sudo docker logs [container_id]
 
 # Follow logs in real-time

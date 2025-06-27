@@ -82,7 +82,7 @@ There are two ways to set up the Raspberry Pi for ImSwitch:
 ### **Option 1: Manual Installation**
 
 :::warning
-We provide the easier installation with the prebuild OS image from the forklifted ImSwitch-OS; Please scroll down to use this if you want to have a real quick start (TODO: Add link to Option2)
+We provide the easier installation with the prebuild OS image from the forklifted ImSwitch-OS; Please scroll down to use this if you want to have a real quick start. See [**Option 2: Using the Pre-Built Forklift Image**](#option-2-using-the-pre-built-forklift-image).
 :::
 
 #### **Step 1: Install Raspberry Pi OS**
@@ -423,9 +423,29 @@ If you haven't provided the token, you can simply follow the link and add this t
 
 #### Connect to Wifi
 
-TODO: This needs a revision to make sure we have a direct way of connecting to a local network. Explain how we can use the cellphone's hotspot to get starting. Also: in case we lock ourselves out: We can use a LAN adapter and connect that to our network to access the pi via LAN on 192.168.5.1. 
+By default, the forklift configuration provides an access point and maps internet from the LAN to the AP conveniently. If you have an existing access point and you want to connect to that one using the raspberry pi, you can do that by following the steps below.
 
-By default, the forklift configuration provides an access point and maps internet from the LAN to the AP conveniently. If you have an existing access point and you want to connect to that one using the raspberry pi can you can do that by following the follwoing steps.
+##### Connection Options:
+
+**Option A: Connect to your home WiFi network**
+1. SSH into the Raspberry Pi: `ssh UC2@192.168.4.1` (password: `youseetoo`)
+2. Use NetworkManager CLI to connect:
+   ```bash
+   sudo nmcli dev wifi connect "YOUR_WIFI_NAME" password "YOUR_WIFI_PASSWORD" ifname wlan0
+   ```
+3. Verify connection: `ip a show wlan0` - you should see an inet address
+
+**Option B: Use your cellphone's hotspot**
+1. Enable hotspot on your phone with a simple name (avoid special characters)
+2. Connect the Raspberry Pi following Option A steps above
+3. This is useful for initial setup when you don't have access to a local network
+
+**Recovery: If you get locked out**
+- Use a LAN/Ethernet adapter connected to your router
+- Access the Pi via LAN on `192.168.5.1` using SSH
+- Then reconfigure WiFi using the methods above
+
+If you have an existing WiFi network you want to connect to, follow the troubleshooting steps below if the connection fails.
 
 **Problem (one‑sentence)**
 Saved profile contains a malformed `ssid=` (often a trailing space added by *nmtui*). NetworkManager then scans for a name that does not exist and returns *WLAN konnte nicht gefunden werden*.

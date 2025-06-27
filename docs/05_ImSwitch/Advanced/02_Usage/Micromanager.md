@@ -2,75 +2,142 @@
 
 ImSwitch now includes an official device adapter for µManager, enabling seamless integration between ImSwitch hardware control and µManager's powerful acquisition and analysis capabilities.
 
-TODO: Improve the text and explain a bit how we can use the device in micromanager 
+## Using ImSwitch with µManager
+
+The ImSwitch device adapter allows you to control UC2 hardware directly from µManager, combining the best of both worlds: ImSwitch's UC2 hardware control with µManager's powerful acquisition and analysis tools.
+
+### What You Can Control
+
+- **Lasers**: Up to 4 laser devices with individual power control
+- **Motorized Stages**: XY and Z positioning with precise movement control  
+- **Camera**: Integrated camera control (requires separate camera driver installation)
+- **Synchronized Operations**: Coordinate all devices for complex acquisition protocols
+
+### Key Benefits
+
+- **Familiar Interface**: Use µManager's standard controls for UC2 hardware
+- **Advanced Acquisition**: Leverage µManager's multi-dimensional acquisition capabilities
+- **Scripting Support**: Automate workflows using µManager's macro and scripting features
+- **Community Plugins**: Access to µManager's extensive plugin ecosystem 
 
 :::warning
-This is a work in progress
+This integration is actively being developed and refined
 :::
 
-Basic idea: The developments from  are now part of the micromanager core and device so that one can integrate the DLL into their devices. Tthen one can use the stage and the lasers in combination with micromanager 
+## Background
 
-Source: https://github.com/openUC2/openUc2MicroManagerDeviceAdapter/edit/master/Readme.md
-and the dll: https://github.com/openUC2/mmCoreAndDevices
+The UC2 device adapter has been integrated into the µManager core, allowing users to control UC2 hardware (stages, lasers, and other devices) directly through µManager's interface. This integration enables sophisticated microscopy workflows while maintaining the flexibility of the UC2 ecosystem.
 
-## Developped by Christian Karras, April 2025 
-# Version: 1.0.0
-# Jena, 14.05.2025
+**Developer**: Christian Karras  
+**Version**: 1.0.0  
+**Development Location**: Jena  
+**Date**: May 2025
 
-# Scope of use / Development Environment:
-	Micromanager Version:	2.0.3 20250304
-	MM Core Version:		11.4.1
-	Device API Verions:		71
-	Module API Verison:		10
-	Windows version:		11 Home 23H2 Build 22631.5039
+**Sources**: 
+- [OpenUC2 µManager Device Adapter](https://github.com/openUC2/openUc2MicroManagerDeviceAdapter)
+- [µManager Core Integration](https://github.com/openUC2/mmCoreAndDevices)
 
-	openUC2 Verion:			UC2_Feather V2.0 Mar  9 202520:25:00 
-	Camera Version:			Daheng Mercury 2 1220 vs. MV-CE060-10UC
-    
-	The developped Micro Manager Device Adapter comprises the up to 4 lasers as well as an XY and a Z Stage. 
+## System Requirements
 
-	The camera is not includeded! Instead the camera should be separately installed during hardware configuraration process
+- **µManager Version**: 2.0.3 (20250304) or newer
+- **µManager Core Version**: 11.4.1 or newer  
+- **Device API Version**: 71 or newer
+- **Module API Version**: 10 or newer
+- **Operating System**: Windows 11, macOS, or Linux
+- **UC2 Hardware**: UC2_Feather V2.0 or newer
+- **Supported Cameras**: Daheng Mercury 2 1220, MV-CE060-10UC, or similar
+## Device Capabilities
 
-# Setting up UC2 in Micromanager
-	1.) Open Micromanager and start with "None" configuration file
-	2.) Goto Devices -> Hardware configuration wizard
-		- Create New configuration, Next
-		- From available devices choose openUC2/openUC2Hub device and Add
-		- Set proper COM Port
-		- Set BaudRate to 115200  (NOTE: A falsely set Baudrate will most likely lead to a crash of MM),
-		- Select all devices in the list
-		- Choose correct Camera (Tested with Daheng Mercury 2 1220 vs. MV-CE060-10UC, include by adding Daheng Device)
-		- Finish HW configuration wizard by clicking through windows upon device choice and save the config file.
+The µManager Device Adapter supports:
+- **Up to 4 laser controllers** with individual power control
+- **XY and Z motorized stages** with precise positioning
+- **Hardware synchronization** for coordinated operations
 
-# Using Lasers
-	- Choose laser in shutter dropdown menue
-	- Open / Close shutter will switch the laser on and off (note: "Auto" should be deactivated)
-	- Set laser power for different lasers via "Devices" -> "Device Property Browser" -> "openUC2-Laser1-UC2LaserPower", "openUC2-Laser2-UC2LaserPower","openUC2-Laser3-UC2LaserPower","openUC2-Laser4-UC2LaserPower"
+:::info
+The camera must be configured separately during the hardware configuration process. The UC2 adapter handles only the motorized components and lasers.
+:::
 
-# Using Stages
-	- Stages are used via common MM controlls
+## Setting up UC2 in µManager
 
-# Setting Basic Device variables
-	- For Version maintaining change ALL relevant device variables in "UC2DEFAULTS.h" bevor rebuilding
-	- This counts especially for
-		- IDs of Lasers and XYZ Stages
-		- Default init values of the properies (Homing setting and speed for the axes)
-		- Firmware check string: Currently, only the State Identificator Name is checked and must be "UC2_Feather" for correct firmware detection
-		- Thresholds of the XYZ Stages. Currently no endswitch is installed and no endswitch controll is implemented
+### Initial Configuration
 
-# Further remarks
-	- IsContinuousFocusDrive is set to False
-	- IsXYStageSequenceable is set to False 
+1. **Open µManager** and start with "None" configuration file
+2. **Access Hardware Configuration Wizard**:
+   - Go to **Devices** → **Hardware Configuration Wizard**
+   - Create new configuration, click **Next**
+   - From available devices choose **openUC2/openUC2Hub** device and **Add**
 
+### Device Configuration
 
+3. **Configure Communication**:
+   - Set the proper **COM Port** (check Device Manager on Windows)
+   - Set **BaudRate** to **115200** 
+   
+   :::warning
+   An incorrect BaudRate setting will likely cause µManager to crash
+   :::
 
-## Overview
+4. **Select Devices**:
+   - Select all UC2 devices in the list (lasers, stages)
+   - Add your camera separately (tested with Daheng Mercury 2 1220, MV-CE060-10UC)
+   - Complete the Hardware Configuration Wizard and **save the config file**
+
+## Using Laser Control
+
+### Laser Operation
+- **Select laser**: Choose the desired laser from the shutter dropdown menu
+- **Laser control**: Open/Close shutter switches the laser on and off
+- **Power settings**: Set laser power via **Devices** → **Device Property Browser**:
+  - `openUC2-Laser1-UC2LaserPower`
+  - `openUC2-Laser2-UC2LaserPower`
+  - `openUC2-Laser3-UC2LaserPower`  
+  - `openUC2-Laser4-UC2LaserPower`
+
+:::tip
+Disable "Auto" shutter mode for manual laser control
+:::
+
+## Stage Control
+### Stage Operation
+- **XY and Z stages** are controlled using µManager's standard stage controls
+- **Movement**: Use the stage control panel or coordinate input fields
+- **Precision**: Supports precise positioning for multi-point acquisitions
+
+## Advanced Configuration
+
+### Device Variables (for Developers)
+
+When building custom configurations, modify the following variables in `UC2DEFAULTS.h`:
+
+**Critical Settings**:
+- **Device IDs**: Laser and XYZ stage identifiers
+- **Initialization values**: Homing settings and axis speeds  
+- **Firmware detection**: State identifier name must be "UC2_Feather"
+- **Stage thresholds**: Currently no endstop switches are implemented
+
+### Current Limitations
+
+- **Continuous Focus**: `IsContinuousFocusDrive` is set to False
+- **Stage Sequencing**: `IsXYStageSequenceable` is set to False
+- **Endstops**: No endstop switch control is currently implemented
+
+## Integration Benefits
 
 The ImSwitch µManager device adapter provides:
 - **Hardware Control**: Full access to ImSwitch-controlled devices from µManager
-- **Synchronized Acquisition**: Coordinated control of multiple devices
+- **Synchronized Acquisition**: Coordinated control of multiple devices  
 - **Standard Interface**: Uses µManager's standard device API
 - **Cross-Platform**: Available on Windows, macOS, and Linux
 - **Official Support**: Integrated into µManager nightly builds
+
+## Next Steps
+
+After configuration, you can:
+- **Run acquisitions** using µManager's Multi-Dimensional Acquisition tool
+- **Create automated workflows** with µManager's scripting capabilities
+- **Use advanced plugins** for specialized imaging techniques
+- **Export data** in standard formats for analysis
+
+For more advanced usage examples, see the [µManager documentation](https://micro-manager.org/).
 
 

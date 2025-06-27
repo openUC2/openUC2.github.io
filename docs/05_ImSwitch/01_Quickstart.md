@@ -3,8 +3,9 @@
 The Raspberry Pi serves as a bridge between the UC2-ESP board and a USB3 camera, running the ImSwitch software inside a Docker container. The system allows you to control the microscope through a web interface accessible from a phone or laptop.
 
 > **Note:** This setup is experimental! You can try a demo version of the latest ImSwitch here:
-> - [Live Demo](https://imswitch.openuc2.com/imswitch/index.html)
-> - [ImSwitch API](https://imswitch.openuc2.com/docs)
+> - [Live Demo](https://imswitch.openuc2.com/imswitch/index.html) (currently not active)
+> - [React Demo](https://youseetoo.github.io/imswitch) 
+> - [ImSwitch API](https://youseetoo.github.io/api/api.html) (may be outdated)
 
 ---
 
@@ -23,20 +24,20 @@ The system runs Raspberry Pi OS Lite and includes a Docker integration for ImSwi
 - **Password:** `youseetoo`
 
 To configure the hotspot using RaspAP:
-1. Open a browser and go to [http://10.3.141.1/](http://10.3.141.1/)
+1. Open a browser and go to [http://192.168.4.1/](http://192.168.4.1/)
 2. Login with:
    - **Username:** `admin`
    - **Password:** `secret`
 
 ### Accessing ImSwitch
 If the Docker container starts automatically, access ImSwitch at:
-- [https://10.3.141.1:8001/imswitch/index.html](https://10.3.141.1:8001/imswitch/index.html)
+- [https://192.168.4.1:8001/imswitch/index.html](https://192.168.4.1:8001/imswitch/index.html)
 - Ignore self-signed certificate warnings (this will be fixed later).
 
 ### Connecting via SSH
 To manually start ImSwitch:
 ```sh
-ssh uc2@10.3.141.1  # Password: youseetoo
+ssh pi@192.168.4.1  # Password: youseetoo
 cd ~/Desktop
 ./launch_docker_container.sh
 ```
@@ -66,7 +67,7 @@ More details: [ImSwitchConfig GitHub](https://github.com/openUC2/imswitchconfig)
 - Connect **USB3 Camera** to Raspberry Pi
 
 To access ImSwitch via a browser:
-- Open: [https://10.3.141.1:8001/imswitch/index.html](https://10.3.141.1:8001/imswitch/index.html)
+- Open: [https://192.168.4.1:8001/imswitch/index.html](https://192.168.4.1:8001/imswitch/index.html)
 
 ![](./IMAGES/imswitchraspi/ImSwitchInTheWeb.png)
 
@@ -79,6 +80,10 @@ There are two ways to set up the Raspberry Pi for ImSwitch:
 2. **Pre-built Image** (faster setup using a ready-made Raspberry Pi image)
 
 ### **Option 1: Manual Installation**
+
+:::warning
+We provide the easier installation with the prebuild OS image from the forklifted ImSwitch-OS; Please scroll down to use this if you want to have a real quick start. See [**Option 2: Using the Pre-Built Forklift Image**](#option-2-using-the-pre-built-forklift-image).
+:::
 
 #### **Step 1: Install Raspberry Pi OS**
 1. Download and install the Raspberry Pi Imager: [Download Here](https://www.raspberrypi.com/software/)
@@ -158,7 +163,7 @@ The image is built from the following workflow:
 
 #### **Requirements**
 - microSD Card with >32GB
-- Raspberry Pi 4 or preferably Pi 5 (8GB RAM recommended)
+- Raspberry Pi 4 (*not recommended anymore as we need more RAM*) or preferably Pi 5 (8GB RAM recommended)
 - microSD Card reader
 
 If you prefer a faster setup, you can use this **pre-built image** that includes all necessary software and drivers. This image was created with the [Forklift Project](https://github.com/forklift-run) and automates all setup steps.
@@ -179,24 +184,32 @@ Use the Raspberry Pi Imager to flash the image onto an SD card, then insert the 
 4. Do **not** specify additional user-specific settings.
 
 ##### **Default Credentials**
-- **SSID:** `openUC2-unknown`
-- **WiFi Password:** `copepode`
+- **SSID:** `openUC2-XXXX` (`XXX` corresponds to a random number bsed on the MAC address)
+- **WiFi Password:** `copepode` (now: `youseetoo`)
 - **Username:** `pi`
 - **User Password:** `youseetoo`
 
 > **Note:** The Forklift image is updated automatically and ensures all software is correctly configured.
 
 :::warning
-If you want to have Internet on the Raspberry Pi, you can either plug the LAN port into a router with internet - then the wifi that is shared by the access point is automatically briding that connection. Alternatively, you can use an Android phone in USB access point mode and share the internet connection by that mean.
+**INTERNET ACCESS:** If you want to have Internet on the Raspberry Pi, you can either plug the LAN port into a router with internet - then the wifi that is shared by the access point is automatically briding that connection. Alternatively, you can use an Android phone in USB access point mode and share the internet connection by that mean.
 :::
 
-:::error
-In case the GUI hangs - this might be due to an older version that expected internet to load javascript libraries/fonts. It times out after 60s and renders the ImSwitch webapp - please update the software.
+:::warning
+**GUI HANGS:** In case the GUI hangs - this might be due to an older version that expected internet to load javascript libraries/fonts. It times out after 60s and renders the ImSwitch webapp - please update the software.
 :::
-
 
 For a detailed breakdown of the image creation process, see:
 [ImSwitch OS GitHub Setup Script](https://github.com/beniroquai/imswitch-os/blob/main/setup.sh#L60)
+
+#### **Updating Forklift configuration**
+
+This will pull the latest pallet and forklift configuration. Be aware, that system rleated conifgurations may be overwritte. The command is the following:
+
+```
+forklift pallet upgrade --force @main
+```
+
 
 #### **Connecting to the Raspberry Pi**
 1. Wait until the Raspberry Pi boots and you see the SSID `openUC2-unknown`.
@@ -399,13 +412,45 @@ If you are facing a problem with a wrong docker configuration (i.e. Docker Compo
 
 The filename of the file containing the tailscale auth token should be tailscale-auth-key. The file will need to exist on the boot partition in a new run subdirectory of the init-root directory.
 
+You can start tailscale by entering the following in the command:
+
+```
+sudo tailscale up # down for stopping
+```
+
+If you haven't provided the token, you can simply follow the link and add this to your local tailscale network. 
+
+
 #### Connect to Wifi
 
+By default, the forklift configuration provides an access point and maps internet from the LAN to the AP conveniently. If you have an existing access point and you want to connect to that one using the raspberry pi, you can do that by following the steps below.
 
-By default, the forklift configuration provides an access point and maps internet from the LAN to the AP conveniently. If you have an existing access point and you want to connect to that one using the raspberry pi can you can do that by following the follwoing steps.
+##### Connection Options:
+
+**Option A: Connect to your home WiFi network**
+1. SSH into the Raspberry Pi: `ssh UC2@192.168.4.1` (password: `youseetoo`)
+2. Use NetworkManager CLI to connect:
+   ```bash
+   sudo nmcli dev wifi connect "YOUR_WIFI_NAME" password "YOUR_WIFI_PASSWORD" ifname wlan0
+   ```
+3. Verify connection: `ip a show wlan0` - you should see an inet address
+
+**Option B: Use your cellphone's hotspot**
+1. Enable hotspot on your phone with a simple name (avoid special characters)
+2. Connect the Raspberry Pi following Option A steps above
+3. This is useful for initial setup when you don't have access to a local network
+
+**Recovery: If you get locked out**
+- Use a LAN/Ethernet adapter connected to your router
+- Access the Pi via LAN on `192.168.5.1` using SSH
+- Then reconfigure WiFi using the methods above
+
+If you have an existing WiFi network you want to connect to, follow the troubleshooting steps below if the connection fails.
 
 **Problem (one‑sentence)**
 Saved profile contains a malformed `ssid=` (often a trailing space added by *nmtui*). NetworkManager then scans for a name that does not exist and returns *WLAN konnte nicht gefunden werden*.
+
+
 
 
 ##### Quick‑fix workflow
@@ -420,6 +465,8 @@ Saved profile contains a malformed `ssid=` (often a trailing space added by *nmt
 
 
 ##### Using *nmtui* instead of CLI
+
+
 
 1. `sudo nmtui` → *Activate a connection* → highlight your network → **Add** (or **Edit**)
 2. Enter **SSID** exactly (`openUC2`), security = *WPA & WPA2 Personal*, fill password.

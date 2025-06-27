@@ -2,6 +2,8 @@
 
 ImSwitch now includes an official device adapter for µManager, enabling seamless integration between ImSwitch hardware control and µManager's powerful acquisition and analysis capabilities.
 
+TODO: Improve the text and explain a bit how we can use the device in micromanager 
+
 :::warning
 This is a work in progress
 :::

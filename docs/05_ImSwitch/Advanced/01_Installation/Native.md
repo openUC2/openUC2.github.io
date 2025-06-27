@@ -1,4 +1,4 @@
-# ImSwitch Native Python Installation
+# ImSwitch Native Python Installation (With QT GUI)
 
 This guide covers installing ImSwitch directly on your system using Python, suitable for development and advanced users who need full control over the installation.
 
@@ -154,6 +154,44 @@ For advanced users who want full control over the installation process, here are
 - Qt5/Qt6 development libraries
 - OpenGL support
 
+
+In all cases, you can start the GUI (in case all the dependencies are properly installed) using the `is_headless=0` flag. For this create a python file (e.g. `main2.py`) and launch this:
+
+```py
+if __name__ == '__main__':
+    from imswitch.__main__ import main
+    '''
+    To start imswitch in headless with a remote config file, you can add additional arguments:
+    main(is_headless=True, default_config="/Users/bene/ImSwitchConfig/imcontrol_setups/example_virtual_microscope.json", http_port=8001, ssl=True, data_folder="/Users/bene/Downloads")
+    - is_headless: True or False
+    - default_config: path to the config file
+    - http_port: port number^ 
+    - ssl: True or False
+    - data_folder: path to the data folder => in docker this could be e.g. Volumes, media in combination with external scanning or any other volume that is direclty mapped as a folder to Imswitch
+    - scan_ext_data_folder: True or False => we will look for any externally connected devices (usb) that is mounted under /Volumes or /media
+    example:
+    main(is_headless=True, data_folder="/Users/bene/Downloads")
+    
+    # kill -9 $(lsof -ti:8001)
+    '''
+    #main(is_headless=False) ## this has to be maintained for DOCKER!
+    #main(default_config="/Users/bene/ImSwitchConfig/imcontrol_setups/FRAME.json", is_headless=True, http_port=8001) ## this has to be maintained for DOCKER!
+    #main(default_config="/Users/bene/ImSwitchConfig/imcontrol_setups/example_uc2_lightsheet_hik.json", is_headless=True, http_port=8001) ## this has to be maintained for DOCKER!
+    main(default_config="/Users/bene/ImSwitchConfig/imcontrol_setups/example_virtual_microscope.json", is_headless=False, http_port=8001, socket_port=8002, scan_ext_data_folder=True, data_folder="~/Downloads", ext_drive_mount="/Volumes") 
+```
+
+With this we will see the qt app load:
+
+![](../IMAGES/gui/qt_load.png)
+
+Below you will find ways how to install the dependencies. In a nutshell: You install imswitch with the `PyQt5` flag which will install napari and its dependencies (e.g. `pip install .[PyQt5]` assuming you are in the same folder as the cloned ImSwitch (openUC2 version) repo). The ImSwitch app in QT looks as follows: 
+
+![](../IMAGES/gui/qt_imswitch.png)
+
+:::warning
+**Discontinued support for QT**: We have stopped supporting the qt framework as we push towards the headless mode - please expect errors and unsupported functions!
+:::
+
 #### Ubuntu/Debian (GUI)
 
 ```bash
@@ -195,7 +233,7 @@ imswitch-env\Scripts\activate
 # Clone and install
 git clone https://github.com/openUC2/imSwitch 
 cd imSwitch
-pip install -e .
+pip install -e .[PyQt5]
 
 # Install UC2-REST
 git clone https://github.com/openUC2/UC2-REST
@@ -220,7 +258,7 @@ source ~/imswitch-env/bin/activate
 # Install ImSwitch
 git clone https://github.com/openUC2/imSwitch ~/ImSwitch
 cd ~/ImSwitch
-pip install -e .
+pip install -e .[PyQt5]
 
 # Install UC2-REST
 git clone https://github.com/openUC2/UC2-REST ~/UC2-REST

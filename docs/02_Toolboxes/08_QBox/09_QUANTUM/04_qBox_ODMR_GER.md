@@ -7,10 +7,13 @@ title: ODMR – Optically Detected Magnetic Resonance (Deutsch)
 ## ODMR – Optically Detected Magnetic Resonance (Deutsch)
 
 ![](./IMAGES/image1.png)
+*Quantum Minilabs Logo*
 
 ![](./IMAGES/image2.png)
+*openUC2 Cube rendering with Lens as quasi logo*
 
 ![](./IMAGES/image3.jpeg)
+*BMBF Logo for financial Support*
 
 # Inhaltsverzeichnis
 
@@ -43,6 +46,7 @@ title: ODMR – Optically Detected Magnetic Resonance (Deutsch)
 * Weiße Bauteile dienen der Einstellung der Funktionsbauteile.
 
 ![](./IMAGES/image4.jpeg)
+*3D rendering of openUC2 ODMR setup*
 
 # Was ist ODMR?
 
@@ -51,6 +55,7 @@ Optisch detektierte magnetische Resonanz ist ein Verfahren, bei dem der Spinzust
 Die Frequenz der Mikrowellenstrahlung, bei der Resonanz auftritt, hängt direkt von der Magnetfeldstärke ab. So kann ein Magnetfeld präzise bestimmt werden.
 
 ![](./IMAGES/image5.png)
+*All components in the kit*
 
 # Teileliste
 
@@ -66,9 +71,9 @@ Die Frequenz der Mikrowellenstrahlung, bei der Resonanz auftritt, hängt direkt 
 10. Farbfilter
 11. Magnet
 
-![](./IMAGES/image6.png)
 
 ![](./IMAGES/image7.png)
+*Red diamond comic*
 
 ## NV-Diamanten
 
@@ -79,8 +84,8 @@ NV steht für Nitrogen-Vacancy, also Stickstoff-Fehlstelle. Es handelt sich um e
 Diamanten bestehen aus Kohlenstoffatomen in einem Gitter. Bei einem NV-Diamanten fehlt ein Kohlenstoffatom, dafür sitzt dort ein Stickstoffatom. Neben diesem entsteht eine Vakanz.
 
 ![](./IMAGES/image8.png)
+*NV Center in a diamond lattice*
 
-![](./IMAGES/image9.jpeg)
 
 ### Was ist das Besondere an NV-Diamanten?
 
@@ -88,8 +93,8 @@ Diamanten bestehen aus Kohlenstoffatomen in einem Gitter. Bei einem NV-Diamanten
 * NV-Zentren sind bei Raumtemperatur stabile Quantensysteme und daher potenziell nutzbar für Quantencomputer.
 
 ![](./IMAGES/image11.png)
+*description of a beamsplitter using openuc2 components on a grid, where the laser is reflected and fluorescence is transmitted*
 
-![](./IMAGES/image12.png)
 
 * Baue den Aufbau wie abgebildet.
 * Justiere den Laser so, dass er die Linse mittig trifft.
@@ -97,21 +102,25 @@ Diamanten bestehen aus Kohlenstoffatomen in einem Gitter. Bei einem NV-Diamanten
 * Der Diamant sollte durch den roten Filter hell leuchten.
 
 ![](./IMAGES/image13.png)
+*zoomed in version of the ODMR setup where we inspect the focus where the focussed laser beam hits the diamond and excites fluorescence*
 
 * Ergänze den Aufbau wie auf der Abbildung.
 * Verbinde dich mit der Benutzeroberfläche des Lichtsensors.
 
 ![](./IMAGES/image14.png)
+*ODMR setup, where we add the detection path with the photodiode so that we can measure the fluorescence signal after the beamsplitter cube*
 
 * Justiere den 45°-Spiegel, sodass möglichst viel Licht in den Lichtsensor fällt.
 
 ![](./IMAGES/image14.png)
+*ODMR setup, where we add the detection path with the photodiode so that we can measure the fluorescence signal after the beamsplitter cube now adjusted mirror*
 
 * Schließe die Mikrowellenantenne an den Steuerkasten an.
 * Baue den Magnetwürfel ein.
 * Überprüfe Veränderungen der Lichtintensität bei Positionsänderung.
 
 ![](./IMAGES/image15.png)
+*ODMR setup, where we add the detection path with the photodiode so that we can measure the fluorescence signal after the beamsplitter cube now adjusted mirror again*
 
 ## Wird die Technologie heute schon eingesetzt?
 
@@ -155,14 +164,162 @@ Highlighte die wichtigsten Aspekte
 
 Ein Open-Source-Ökosystem wird entwickelt, das günstige, skalierbare, modulare und reparierbare Quantentechnologie-Experimente ermöglicht. 100 Lernorte in Deutschland sollen damit ausgestattet werden.
 
+
+# ODMR‑Versuch mit NV‑Zentren – vollständige Anleitung
+
+> Materialien und Bilder stammen aus den Dateien *03\_qBox\_ODMR\_INTRO\_GER.md* und *04\_qBox\_ODMR\_GER.md*.
+
+---
+
+## 1 | Sicher arbeiten
+
+### Laser (532 nm)
+
+* Nur auf der Grundplatte einschalten, Strahl stets parallel zur Tischplatte.
+* Vor jedem Umsetzen ausschalten.
+* Schmuck und reflektierende Gegenstände entfernen.&#x20;
+
+### Magnete
+
+* Personen mit Implantaten informieren.
+* Magnete nie ungesichert lagern; EC‑Karten, USB‑Sticks fernhalten.&#x20;
+
+### Optik‑Würfel
+
+* Goldene Flächen nicht berühren (Optik); Justage ausschließlich an weißen Schrauben.&#x20;
+
+![](./IMAGES/image4.jpeg)
+
+---
+
+## 2 | Prinzip des Experiments
+
+![](./IMAGES/odm_nvc.png)
+*Jablonski diagram of two state system of a diamond with NV center*
+
+Ein NV‑Zentrum (Stickstoff‑Substitution + Vakanz) besitzt einen Triplett‑Grundzustand mit der Nullfeldaufspaltung
+$D_g = 2{,}87\;\text{GHz}$. Ein grüner Laser pumpt das System bevorzugt in $m_s = 0$. Mikrowellenstrahlung nahe 2,87 GHz mischt die Zustände; die Fluoreszenz sinkt an der Resonanzfrequenz. Ein äußeres Magnetfeld spaltet die Resonanz in zwei Linien, deren Abstand direkt das Feld $B$ liefert: $\Delta f \approx 28\;\text{MHz mT}^{-1}\,B$.
+
+
+
+## 3 | Teileübersicht
+
+![](./IMAGES/image5.png)
+
+| Nr. | Teil                               | Zweck                                             |   |
+| --- | ---------------------------------- | ------------------------------------------------- | - |
+|  1  | Grundplatte                        | mechanisches Bezugssystem                         |   |
+|  2  | Laserdiode 532 nm                  | optisches Pumpen                                  |   |
+|  3  | 45°‑Spiegel (2×)                   | Strahlumlenkung                                   |   |
+|  4  | Dichroitischer Strahlteiler        | Laser reflektieren / Fluoreszenz passieren lassen |   |
+|  5  | Sammellinse f ≈ 40 mm              | Fokus auf Diamant                                 |   |
+|  6  | Fotodetektor                       | Fluoreszenz messen                                |   |
+|  7  | Steuerbox (HF + ADC)               | Mikrowellen, Datenerfassung                       |   |
+|  8  | XY‑Stage mit PCB‑Antenne + Diamant | Probe & HF‑Kopplung                               |   |
+|  9  | Schirm / Apertur                   | Umgebungslicht sperren                            |   |
+|  10 | Rotfilter > 600 nm                 | Laserstreulicht filtern                           |   |
+|  11 | Neodym‑Magnet                      | Magnetfeld erzeugen                               |   |
+
+---
+
+## 4 | Aufbau – Schritt für Schritt
+
+> Richtige Reihenfolge ist entscheidend: erst Mechanik, dann Optik, dann Elektrik.
+
+| Nr. | Handlung                                                                             | Bild                      |
+| --- | ------------------------------------------------------------------------------------ | ------------------------- |
+|  0  | Grundplatte waagrecht fixieren.                                                      | ![](./IMAGES/image11.png) |
+|  1  | Laserhalter auf Pos. 2 schrauben, Laser noch AUS.                                    |                           |
+|  2  | Zielkarte 30 cm vor Laser, Laser EIN; Strahl parallel zur Platte ausrichten.         | ![](./IMAGES/image12.png) |
+|  3  | Spiegel 1 setzen: Höhe so, dass Strahl die Mitte des Strahlteilers trifft.           | ![](./IMAGES/image13.png) |
+|  4  | Dichroitischen Strahlteiler ausrichten – Beschriftung zum Laser.                     |                           |
+|  5  | Sammellinse montieren, Fokus auf Mitte XY‑Stage legen.                               |                           |
+|  6  | XY‑Stage mit PCB‑Antenne positionieren, Diamant mittig.                              |                           |
+|  7  | Rotfilter einsetzen; durch Filter muss Diamant rot leuchten.                         |                           |
+|  8  | Spiegel 2 montieren und so justieren, dass maximal Licht in den Fotodetektor fällt.  | ![](./IMAGES/image14.png) |
+|  9  | Fotodetektor scharfstellen: Laser AUS, LED‑Taschenlampe von vorn, Diode fokussieren. |                           |
+|  10 | HF‑Kabel: PCB‑Antenne → Steuerbox; Koax handfest.                                    |                           |
+|  11 | Magnetwürfel in Halterung, Startabstand ≈ 3 cm.                                      | ![](./IMAGES/image15.png) |
+
+---
+
+## 5 | Funktionsprüfung
+
+1. Laser 100 % → Fluoreszenzsignal $I_0$ am PC beobachten.
+2. XY‑Stage langsam verschieben, Maximum suchen.
+3. Linse geringfügig in z verschieben, Peak optimieren.
+4. Spiegel 2 feintunen, bis > 80 % der Fluoreszenz erfasst sind.
+5. Laser AUS, Dunkelstrom (< 1 %) prüfen.&#x20;
+
+---
+
+## 6 | Messprotokoll
+
+| Schritt | Einstellung                                    | Zweck                |   |
+| ------- | ---------------------------------------------- | -------------------- | - |
+|  A      | Laser an, HF aus                               | Referenz $I_0$       |   |
+|  B      | HF‑Sweep 2,80–2,95 GHz, Δf = 1 MHz, P ≈ 20 dBm | ODMR‑Kurve           |   |
+|  C      | Magnet 1 cm näher → Sweep wiederholen          | Zeeman‑Aufspaltung   |   |
+|  D      | Magnet direkt an Diamant (< 1 mm)              | maximale Aufspaltung |   |
+
+Zwischen Sweeps 5 s warten, damit sich die Spinpopulation neu einpendelt.
+
+---
+
+## 7 | Datenauswertung (Fluoreszenzdips → B‑Feld)
+
+1. Plot $I(f)$.
+2. Lorentzfit liefert $f_+$ und $f_-$.
+3. Magnetfeld
+
+$$
+B = \frac{f_+ - f_-}{28\;\text{MHz mT}^{-1}}
+$$
+
+4. Mittelwert $(f_+ + f_-)/2$ ≈ 2,87 GHz kontrolliert Kalibrierung.
+5. Unsicherheit aus Fitfehlern, Schrittweite, Laserd­rift bestimmen.
+
+---
+
+## 8 | Physikalische Zusammenhänge im Aufbau
+
+| Komponente                   | Physikalische Rolle                                                       |
+| ---------------------------- | ------------------------------------------------------------------------- |
+| Laser 532 nm                 | Spin‑Polarisation durch zyklisches Pumpen in $m_s=0$.                     |
+| Dichroitischer Strahlteiler  | Trennt Pump‑ und Fluoreszenzlicht; minimiert Störlicht am Detektor.       |
+| HF‑Antenne                   | Erzeugt ein ac‑Magnetfeld, das $\Delta m_s = \pm1$ Übergänge anregt.      |
+| Neodym‑Magnet                | Zeeman‑Aufspaltung → Messung des lokalen B‑Feldes.                        |
+| Rotfilter                    | Unterdrückt Rest‑Laserlicht → besseres Signal‑Rausch‑Verhältnis.          |
+| Fotodetektor + Vorverstärker | Wandelt Photonenfluss in Spannung; Verstärkung passend zur ADC‑Auflösung. |
+
+![](./IMAGES/image2.png)
+![](./IMAGES/image3.jpeg)
+
+---
+
+## 9 | Vertiefende Experimente
+
+* **Rabi‑Oszillationen** – Laser gepulst, HF‑Pulse variieren → Rabi‑Frequenz messen.
+* **T‑₁‑Relaxation** – Spindepolarisation nach Laser‑Off verfolgen.
+* **Raster‑Magnetometrie** – XY‑Stage scannen, 2‑D‑Feldkarte erstellen.
+* **Temperatur-Kalibrierung** – $D_g(T)$ ab 300–350 K aufnehmen.&#x20;
+
+
+
+
 ## Innovation und Perspektiven
 
 ![](./IMAGES/image16.png)
+*Logo openucUC2*
 ![](./IMAGES/image17.png)
+*Logo Fablab Bottrop*
 
 QuantumMiniLabs bieten erstmals eine kostengünstige DIY-Umgebung für Experimente mit Quantensystemen der zweiten Generation. NV-Diamanten erlauben stabile Experimente bei Raumtemperatur.
 
 Ziel ist eine weitreichende Verbreitung, um eine kritische Masse an Nutzenden zu erreichen und das Projekt nachhaltig weiterzuführen.
 
 ![](./IMAGES/image18.png)
+*Logo HRW University*
+
 ![](./IMAGES/image3.jpeg)
+*Logo BMBF financing*

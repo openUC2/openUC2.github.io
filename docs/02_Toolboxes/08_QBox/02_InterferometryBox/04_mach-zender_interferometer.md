@@ -14,6 +14,10 @@ title: openUC2 Mach-Zender Interferometer
 
 ![](./IMAGES/OffAxisHolo.png)
 
+
+![](./IMAGES/UC2_MachInterferometer.jpg)
+
+
 ### Materials needed:
 - Laser diode
 - Hikrobot Camera (MV-CE060-10UC) with USB cable ([Hikrobot Camera Software installation](Camera_Software_tutorial.md)).

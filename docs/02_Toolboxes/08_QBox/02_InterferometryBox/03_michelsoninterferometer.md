@@ -18,6 +18,10 @@ In this workshop, we will construct a Michelson Interferometer using the UC2 mod
 
 ![](./IMAGES/Michelson_1.png)
 
+![](./IMAGES/UC2_MichelsonInterferomenter.jpg)
+
+
+![](./IMAGES/UC2_MachInterferometer.jpg)
 ### Theory of Operation
 
 A Michelson Interferometer splits a laser beam into two equal parts using a beam splitter. The two beams are then reflected by mirrors and recombined to interfere with each other. When the paths of the two beams are equal, they constructively interfere, resulting in a bright output. However, if one path is shifted by 1/4 of the wavelength, the beams destructively interfere, resulting in a dark output.

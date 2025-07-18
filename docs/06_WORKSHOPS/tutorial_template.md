@@ -58,9 +58,13 @@ This guide will walk you through the assembly step by step. You can follow the p
 1. placement
 
         Image of finished 1. task
+
 2. placement
+
         Image of finished 2. task
+
 3. placement
+
         Image of finished 3. task
 
 
@@ -187,12 +191,16 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
         Most of the Times Alliging the Experiemnt is only possible after the Electronic setup
 
 
-  1. placement
+  1. task
 
           Image of finished 1. task
-  2. placement
+
+  2. task
+
           Image of finished 2. task
-  3. placement
+
+  3. task
+
           Image of finished 3. task
 
 
@@ -222,19 +230,29 @@ This makes use of the default URL hosted publicly on https://imswitch.openuc2.co
 
 ## Experiment 1:
 1. step
-        Image of finished 1. task
+
+        Image of finished 1. step
+        
 2. step
-        Image of finished 2. task
+
+        Image of finished 2. step
+
 3. step
-        Image of finished 3. task
+
+        Image of finished 3. step
 
 
 
 
 ## Experiment 2:
 1. step
-        Image of finished 1. task
+
+        Image of finished 1. step
+
 2. step
-        Image of finished 2. task
+
+        Image of finished 2. step
+
 3. step
-        Image of finished 3. task
+
+        Image of finished 3. step

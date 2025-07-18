@@ -9,7 +9,7 @@ The ImSwitch OS comes with a visual installer and desktop environment:
 ![ImSwitch OS Desktop](../IMAGES/ImSwitch-OS-1.png)
 *ImSwitch OS desktop environment with pre-installed applications*
 
-![ImSwitch Configuration](../IMAGES/ImSwitch-OS-2.png) 
+![ImSwitch Configuration](../IMAGES/ImSwitch-OS-2.png)
 *ImSwitch configuration interface for hardware setup*
 
 ![ImSwitch Docker Interface](../IMAGES/ImSwitch-OS-3.png)
@@ -116,9 +116,20 @@ sudo nano /etc/hostapd/hostapd.conf
 sudo raspi-config
 ```
 
+**FireWall Settings*:**
+
+If you haven't explicitly configured the firewall to allow traffic into a dedicated port (e.g. 8005) from the outside world you have to explicitly open it by doing:
+
+```
+sudo firewall-cmd --zone=public --add-port=8005/tcp; sudo firewall-cmd --zone=nm-shared --add-port=8005/tcp
+```
+in an SSH session on the RPi. Then you can test this is by doing `curl localhost:8005` (e.g. if you run a python server as `python -m http.server 8005`). If you get valid HTML, then it's extremely likely that the firewall is blocking external access to port 8005.
+
+
+
 ### ImSwitch Configuration
 
-For detailed information about ImSwitch configuration files, see the [Configuration Guide](../03_Configuration/README.md). 
+For detailed information about ImSwitch configuration files, see the [Configuration Guide](../03_Configuration/README.md).
 
 **Quick Start Configuration:**
 ```bash
@@ -126,7 +137,7 @@ For detailed information about ImSwitch configuration files, see the [Configurat
 cd /home/pi/ImSwitchConfig
 
 # Copy a template configuration
-Configuration files are stored in `/home/pi/Documents/ImSwitchConfig/config/` and can be edited using the desktop interface or via SSH. 
+Configuration files are stored in `/home/pi/Documents/ImSwitchConfig/config/` and can be edited using the desktop interface or via SSH.
 
 # Edit configuration for your hardware
 nano config/imcontrol_options.json #=> enter the name you want to use
@@ -146,8 +157,8 @@ The ImSwitch OS provides several web interfaces for remote access:
 
 - **Cockpit Web Console**: Available at `http://[raspberry-pi-ip]:9090` for system administration
 - **ImSwitch React Interface**: Available at `http://[raspberry-pi-ip]:8001/imswitch/index.html` for microscope control  
-- **WebSocket Control**: Available at `http://[raspberry-pi-ip]:8002` for real-time data streams 
-actually it's https by default to connect to it via a statically hosted website e.g. https://youseetoo.github.io/imswitch/index.html 
+- **WebSocket Control**: Available at `http://[raspberry-pi-ip]:8002` for real-time data streams
+actually it's https by default to connect to it via a statically hosted website e.g. https://youseetoo.github.io/imswitch/index.html
 
 **Features:**
 - Live camera feed
@@ -235,7 +246,7 @@ volumes:
 This setup provides:
 - **ImSwitch**: Main microscopy control application
 - **Portainer**: Docker container management interface
-- **Persistent Data**: Configuration and data volumes for data retention 
+- **Persistent Data**: Configuration and data volumes for data retention
 
 **Hardware not detected:**
 ```bash
@@ -272,7 +283,7 @@ sudo systemctl restart hostapd
 ```bash
 # Reset ImSwitch configuration
 rm -rf /home/pi/ImSwitchConfig/config/*
-# then restart imswitch 
+# then restart imswitch
 ```
 
 ## Updates and Maintenance
@@ -303,7 +314,7 @@ pip install --upgrade UC2-REST
 # Update ESP32 firmware tools
 cd /home/pi/uc2-esp32
 git pull origin main
-``` 
+```
 ## Support and Resources
 
 ### Getting Help

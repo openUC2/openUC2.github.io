@@ -1,52 +1,18 @@
 ---
 id: odmr_experiment_eng
-title: ODMR – Optically Detected Magnetic Resonance (English)
+title: ODMR – Experiment: Optically Detected Magnetic Resonance (English)
 ---
 
----
-id: odmr_experiment_eng
-title: ODMR – Optically Detected Magnetic Resonance (English)
----
 
 # Tutorial: Building an ODMR (Optically Detected Magnetic Resonance) Setup
 
 In this workshop, we will construct an ODMR (Optically Detected Magnetic Resonance) system using the UC2 modular microscope toolbox and NV (Nitrogen-Vacancy) diamonds. ODMR is a quantum sensing technique that allows us to measure magnetic fields by observing changes in fluorescence from quantum systems. This experiment introduces students to quantum mechanics, spin physics, and modern sensing applications at room temperature.
 
-![](./IMAGES/image4.jpeg)
+![](./IMAGES/image4.png)
 *3D rendering of openUC2 ODMR setup*
 
-![](./IMAGES/image1.png)
-*Quantum Minilabs Logo*
 
-![](./IMAGES/image2.png)
-*openUC2 Cube rendering with Lens as quasi logo*
 
-![](./IMAGES/image3.jpeg)
-*BMBF Logo for financial Support*
-
-### Materials Needed
-
-1. Base plate for mounting components
-2. Green laser diode (532 nm) for NV center excitation
-3. Two 45° mirrors for beam steering
-4. Beam splitter with filter for separating excitation and fluorescence
-5. Converging lens for focusing laser light
-6. Light sensor (photodiode) for fluorescence detection
-7. Electronics control box with microwave generation capability
-8. XY-stage with NV diamond sample
-9. Screen for initial alignment
-10. Color filter (red) for fluorescence isolation
-11. Magnet for applying external magnetic field
-12. Microwave antenna for spin manipulation
-
-![](./IMAGES/image5.png)
-*All components in the kit*
-
-![](./IMAGES/image6.png)
-
-### Diagram
-
-*TODO: Add black and white box diagram showing ODMR setup layout with components labeled for easier understanding*
 
 ### Theory of Operation
 
@@ -74,6 +40,7 @@ The ODMR effect relies on spin-dependent fluorescence:
 4. **Magnetic Sensitivity**: External magnetic fields shift resonance frequencies via the Zeeman effect
 
 ![](./IMAGES/image8.png)
+
 *NV Center in a diamond lattice*
 
 **The Zeeman Effect and Magnetic Field Sensing**
@@ -97,7 +64,7 @@ The optical configuration follows confocal microscopy principles:
 - **Excitation path**: Laser light is focused onto NV centers using a converging lens
 - **Collection path**: Fluorescence is collected through the same lens (confocal configuration)
 - **Spectral separation**: Dichroic beam splitter separates excitation and fluorescence wavelengths
-- **Spatial filtering**: Confocal detection provides high spatial resolution
+- **Optical Detection**: A lens is collecting the emitted light and focusses it on a photodiode (Adafruit) to readout the signal
 
 **Modern Applications and Significance**
 
@@ -107,15 +74,17 @@ ODMR with NV centers represents a leading quantum sensing technology with applic
 - **Fundamental physics**: Testing quantum mechanics and measuring fundamental constants
 - **Quantum information**: Building blocks for quantum computers and networks
 
-![](./IMAGES/image7.png)
-*Red diamond comic*
+### Diagram
 
-**NV Diamond Formation and Properties**
+
+![](./IMAGES/odmr.png)
+*diagram showing ODMR setup layout with components labeled for easier understanding*
+
+### Diamond's are a physicist best friend
 
 NV stands for Nitrogen-Vacancy, referring to a diamond with a specific "impurity," usually visible as a pink coloration.
 
-**How Are NV Diamonds Formed?**
-Diamonds consist of a carbon atom lattice. In an NV diamond, one carbon atom is missing and replaced by a nitrogen atom. A vacancy is left next to the nitrogen, creating the NV center.
+**How Are NV Diamonds Formed?** Diamonds consist of a carbon atom lattice. In an NV diamond, one carbon atom is missing and replaced by a nitrogen atom. A vacancy is left next to the nitrogen, creating the NV center.
 
 **What Makes NV Diamonds Special?**
 - Their spin states can be manipulated and read out via laser light, magnetic fields, and microwaves
@@ -125,7 +94,28 @@ Diamonds consist of a carbon atom lattice. In an NV diamond, one carbon atom is 
 
 ## Tutorial: ODMR Setup
 
-*TODO: Add image of all ODMR components laid out next to each other*
+
+### Materials Needed
+
+1. Base plate for mounting components
+2. Green laser diode (532 nm) for NV center excitation
+3. Two 45° mirrors for beam steering
+4. Beam splitter with filter for separating excitation and fluorescence
+5. Converging lens for focusing laser light
+6. Light sensor (photodiode) for fluorescence detection
+7. Electronics control box with microwave generation capability
+8. XY-stage with NV diamond sample
+9. Screen for initial alignment
+10. Color filter (red) for fluorescence isolation
+11. Magnet for applying external magnetic field
+12. Microwave antenna for spin manipulation
+
+![](./IMAGES/image5.png)
+
+![](./IMAGES/odmr_components.jpg)
+
+*All components in the kit*
+
 
 ## Step 1: Assemble the Optical Components
 
@@ -151,14 +141,15 @@ This guide will walk you through the assembly step by step. You can follow the p
 * Loose magnets must never be swallowed. Inform the instructor immediately if a magnet comes loose.
 
 **Optics Cubes:**
-* All gold-colored parts are functional components.
-* White components are used to adjust the functional parts.
+* All gold-colored parts are functional components. (**ATTENTION:** The Colour may change. Typically, our inserts and cubes are black for laser-safety reasons!)
+
 
 ### 1.1: Build the Basic Optical Setup
 
-Build the setup as shown in the diagrams. This creates a confocal microscopy configuration optimized for ODMR measurements.
+Build the setup as shown in the diagrams. This creates a confocal microscopy configuration optimized for ODMR measurements. This is the basic configuration where the laser is focussed on the diamond and then the fluorescence signal is going back through the dichroic mirror mount to a detector. 
 
 ![](./IMAGES/image11.png)
+
 *Description of a beamsplitter using openUC2 components on a grid, where the laser is reflected and fluorescence is transmitted*
 
 ![](./IMAGES/image12.png)
@@ -169,7 +160,7 @@ Align the laser so that it hits the center of the lens. The focused laser beam s
 
 ### 1.3: Diamond Positioning
 
-Adjust the XY-stage to place the diamond in the focus of the lens. The diamond should glow brightly when viewed through the red filter, indicating efficient excitation of the NV centers.
+Adjust the XY-stage to place the diamond in the focus of the lens. The diamond should glow brightly when viewed through the red filter, indicating efficient excitation of the NV centers. The spot on the diamond should be smallest. This is achieved when the distance between the lens and the diamond PCB matches the focal length of the lens (40mm).
 
 ![](./IMAGES/image13.png)
 
@@ -188,53 +179,53 @@ Adjust the 45° mirror so that as much light as possible hits the light sensor f
 **⚠️ Caution!**
 If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!
 
-*TODO: Add complete electronic setup image showing every wire connected correctly for ODMR*
 
-- Connect the laser diode to the Mainboard at designated laser port
-- Connect the photodiode to the analog input port
+![](./IMAGES/odmr_setupreal.jpg)
+
+*Complete electronic setup image showing every wire connected correctly for ODMR: The photodiode connects to the ESP32s3 board via the I2C Stemma cable and the antenna connects to the board via the SMA cable*
+
+- the laser diode has its own battery, so you can use the switch in the rear
+- Connect the photodiode to the I2C input port
 - Connect the microwave antenna to the control box
 - Connect the XY-stage motors if available
+- Plug in the USB-C at your ESP32 and connect to your PC.
+
+
 - *TODO: Add specific ODMR electronics wiring diagram*
 
-- Plug in the micro-USB at your ESP32 and connect to your PC.
-- Plug in the 12V power cable.
+
 
 ### 2.2: Flashing the ESP32 Firmware
 
-1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (most likely **ESP32-DEV-based UC2 standalone board V3 (beta)**), then click on the `connect` button.
+1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (most likely **ESP32C3 ODMR Quantum Mini Labs)**), then click on the `connect` button.
 
-The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
+The source code can be found [here](https://github.com/openUC2/TechnicalDocs-openUC2-QBox/tree/main/Production_Files/Software/ODMR_Server).
 
-2. Connect the ESP32 to your computer using the micro-USB cable.
+2. Connect the ESP32 to your computer using the USB-C cable.
 
-3. In your Chrome browser, a dialog will prompt you to select the COM port for your ESP32, which should be shown as `CP2102 USB to UART Bridge Controller`. Once connected, you can install the latest firmware by simply clicking the "Install" button.
+3. In your Chrome browser, a dialog will prompt you to select the COM port for your ESP32, which should be shown as `CP2102 USB to UART Bridge Controller` or alike. Once connected, you can install the latest firmware by simply clicking the "Install" button.
 
 4. Wait until the firmware has been successfully flashed.
 
 ### 2.3: Connecting to the Web Interface
 
-1. After flashing the firmware, go to the testing section on the same website.
+After flashing the firmware - unplug and replug the ESP and wait for a wifi Hotspot to appear. Something like `ODMR-XXXX`. Connect to that and go to http://192.168.4.1
 
-2. Connect to your ESP32 board using the "Connect" button again, ensuring the correct COM port is selected.
-
-3. Once connected, test the system components:
-   - Test laser control
-   - Test photodiode readout
-   - Test microwave generation (if available)
+Alternatively you can go to https://youseetoo.github.io/odmr and connect to the board via Web-Serial (web serial tab).
 
 ### 2.4: Testing in the Web Interface
 
 1. Control the various components via the web interface:
-   - `Laser 1(on)` and `Laser 1(off)` control the laser diode
+![](./IMAGES/odmr_web.png)
+
    - Monitor photodiode signal levels
    - Test microwave output (frequency sweeps)
-   - Control XY-stage positioning if available
 
-### 2.5: ODMR-Specific Software Setup
+When starting an acquisition, you should see the frequency go through the min/max values by step increments.
 
-*TODO: Add instructions for ODMR measurement software installation and configuration*
+![](./IMAGES/odmr_electronics.png)
 
-Connect to the light sensor user interface for real-time fluorescence monitoring and ODMR signal acquisition.
+*ODMR Electronics and fluorescence response*
 
 ## Step 3: Aligning the ODMR Setup
 
@@ -257,18 +248,7 @@ Optimize the setup for maximum fluorescence signal and best signal-to-noise rati
 - Collection efficiency of fluorescence
 - Microwave coupling to the NV centers
 
-## Step 4: Install ImSwitch (optional)
 
-#### 1. Installation process
-
-For this, please refer to the installation instructions [here](https://openuc2.github.io/docs/ImSwitch/Quickstart).
-
-*TODO: Add ODMR-specific ImSwitch configuration instructions*
-
-**Your Setup is complete, now let's start the Experiments**
-
----
----
 
 ## Experiment 1: Basic ODMR Signal Detection
 
@@ -306,7 +286,7 @@ Observe how the single ODMR line splits into two lines as the magnetic field inc
 
 ## Experiment 3: Advanced ODMR Techniques
 
-### 3.1: Pulsed ODMR Measurements
+### 3.1: Pulsed ODMR Measurements (comming soon as Coherent Control)
 
 *TODO: Add instructions for pulsed measurement techniques if hardware supports it*
 
@@ -348,13 +328,8 @@ The QuantumMiniLabs project is developing an open-source ecosystem that enables 
 
 ![](./IMAGES/image16.png)
 ![](./IMAGES/image17.png)
+![](./IMAGES/image18.png)
 
 QuantumMiniLabs offer the first affordable DIY platform for experimenting with second-generation quantum systems. NV diamonds allow for stable experiments at room temperature.
 
-![](./IMAGES/image18.png)
 
-*TODO: Add detailed troubleshooting guide for ODMR signal optimization*
-
-*TODO: Add assessment questions covering quantum mechanics concepts and ODMR principles*
-
-*TODO: Add advanced experimental extensions for exploring different NV center properties*

@@ -1,69 +1,76 @@
 import React from 'react';
+import Link from '@docusaurus/Link';
 import clsx from 'clsx';
-import styles from './styles.module.css';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-
+import styles from './HomepageFeatures.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: JSX.Element;
+  to: string;
+  image: string;
+  description: string;
 };
 
-const FeatureList = [
+const FEATURES: FeatureItem[] = [
   {
-    title: 'Learning Kits (Explorer/Discovery)',
-    imageUrl: 'img/Application_Discovery_Kit_Base.png',
-    description: (
-      <>
-        Step by step guides to learn everything about optics. 
-      </>
-    ),
+    title: 'Optics Basics',
+    to: '/docs/category/learning-kits',
+    image: require('@site/static/img/Application_Discovery_Kit_Base.png').default,
+    description: 'Explorer & Discovery boxes to master fundamentals.',
   },
   {
-    title: 'Cutting the Edge! (Investigator)',
-    imageUrl: 'img/Application_Discovery_Kit_Base_IncubatorMicroscope.png',
-    description: (
-      <>
-        Get the most of your ready-to-use microscopes.
-      </>
-    ),
+    title: 'Advanced Microscopy',
+    to: '/docs/category/cutting-edge',
+    image: require('@site/static/img/Application_Discovery_Kit_Base.png').default,
+    description: 'Incubator, light-sheet & DPC microscopes.',
   },
   {
-    title: 'Anything else.',
-    imageUrl: 'img/Artboard4@4x.png',
-    description: (
-      <>
-        Anything that is yet missing. 
-      </>
-    ),
+    title: 'Fluorescence & Lightsheet',
+    to: '/docs/category/fluorescence',
+    image: require('@site/static/img/Application_Discovery_Kit_Base.png').default,
+    description: 'LED, laser & light-sheet fluorescence tutorials.',
+  },
+  {
+    title: 'Interferometry & Polarization',
+    to: '/docs/category/polarisation',
+    image: require('@site/static/img/Application_Discovery_Kit_Base.png').default,
+    description: 'Michelson, Mach-Zehnder, Newton’s rings, stress birefringence.',
+  },
+  {
+    title: 'Fourier & Quantum Optics',
+    to: '/docs/category/quantum',
+    image: require('@site/static/img/Application_Discovery_Kit_Base.png').default,
+    description: 'Galvo scanners, Fourier optics & entry-level quantum labs.',
+  },
+  {
+    title: 'Workshops & Pro Line',
+    to: '/docs/category/workshops',
+    image: require('@site/static/img/Application_Discovery_Kit_Base.png').default,
+    description: 'Curriculum-ready workshops and professional modules.',
   },
 ];
 
-function Feature({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl);
+function FeatureCard({title, to, image, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4', styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} height="200" src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
+    <Link to={to} className={clsx('card', styles.card)}>
+      <img src={image} alt={title} className={styles.cardImage} />
+      <div className="card__body">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+    </Link>
   );
 }
 
-
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className={styles.features}>
+    <section className={styles.featuresSection}>
+      <h2 className="text--center margin-bottom--lg">What you’ll learn with openUC2</h2>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {FEATURES.map((item) => (
+            <div key={item.title} className="col col--4 margin-bottom--lg">
+              <FeatureCard {...item} />
+            </div>
           ))}
         </div>
       </div>

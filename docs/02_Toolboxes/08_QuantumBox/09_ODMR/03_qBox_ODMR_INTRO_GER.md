@@ -1,6 +1,6 @@
 ---
 id: odmr_intro_ger
-title: Einführung in NV-Zentren, Elektronenspin und ODMR
+title: ODMR - Einführung in NV-Zentren, Elektronenspin und ODMR
 ---
 
 # Einführung in NV-Zentren, Elektronenspin und ODMR
@@ -123,7 +123,7 @@ Ergebnis: Meiste NV-Zentren landen am Ende im ∣g,0⟩|g,0⟩∣g,0⟩. Das nen
 
 ![](./IMAGES/odm_nvc.png)
 
-### 2. Optische Anregung + Mikrowelle (2.87 GHz)
+### 2. Optische Anregung + Mikrowelle (2.87 GHz)
 
 Eine Mikrowelle mit 2.87 GHz trifft genau die Energieaufspaltung zwischen ∣g,0⟩  und ∣g,±1⟩ (Nullfeldaufspaltung Dg).
 Das bewirkt einen Spin-Flip:

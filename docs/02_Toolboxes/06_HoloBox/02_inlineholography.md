@@ -3,50 +3,525 @@ id: InlineHolography
 title: openUC2 In-line holography
 ---
 
-## Workshop Manual: Building an Inline Holographic Microscope with UC2
+# Tutorial: Building an Inline Holographic Microscope
 
-Welcome to our workshop on building an inline holographic microscope using the UC2 modular microscope toolbox. In this experiment, we will create a lensless microscope that demonstrates temporal and coherence properties. By following the steps below, you will construct a simple yet effective holographic microscope to observe transparent samples.
+In this workshop, we will construct an inline holographic microscope using the UC2 modular microscope toolbox. Inline holography is a lensless imaging technique that uses coherent light interference to capture and reconstruct 3D images of transparent samples. This experiment demonstrates fundamental principles of wave optics, Fresnel diffraction, and digital image reconstruction while providing hands-on experience with modern computational imaging techniques.
 
-This experiment is an introduction into the UC2 toolbox and should give you a chance to get familiar with the core-idea of creating simple, but also complex optical setups using the modular system.
-
-Here you are going to learn:
-
-- assemble the cube
-- add inserts
-- arrange multiple cubes
-- lensless imaging
-
-
-This is what you want to build now:
-
-![](./IMAGES/Inline_diagram.png)
 ![](./IMAGES/Application_Inline_Holographic_Microscopy_v3.png)
 
+### Materials Needed
 
+**Optical Components:**
+- LED light source (preferably white LED for broad spectrum)
+- Gel color filter (green or red) for quasi-monochromatic illumination
+- Aluminum foil or thin metal sheet for pinhole creation
+- Precision pinhole (10-50 μm diameter) or needle for custom pinhole
+- Transparent samples (biological specimens, microstructures, dust particles)
 
-## Resources
+**Detection Equipment:**
+- ESP32 camera module with wide-angle lens
+- Computer with WiFi capability for wireless image capture
+- Optional: Higher resolution camera (HIKrobot or similar) for advanced applications
 
-* **OLD** an earlier (2019) workshop on this matter can be found [here](https://github.com/openUC2/UC2-GIT/tree/master/WORKSHOP/INLINE-HOLOGRAMM)
-* **CAD** the full assembly including the description can be found in the [Assembly](https://github.com/openUC2/UC2-GIT/tree/master/APPLICATIONS/APP_INLINE_HOLOGRAM)-folder
-* **SLIDES** for the introduction into holography can be found in the [PRESENTATION](https://github.com/openUC2/UC2-Workshop/blob/master/PRESENTATION/UC2_Holography.pdf)-folder
+**Mechanical Components:**
+- UC2 modular microscope toolbox (minimum 4 cubes)
+- LED holder insert for UC2 cube
+- Sample holder for transparent specimens
+- Base plates for system stability
+- Puzzle pieces for cube connections
 
+**Software and Analysis:**
+- Jupyter notebook environment
+- Python libraries: NumPy, Matplotlib, SciPy
+- OpenUC2 holographic reconstruction code
+- ImSwitch software (optional for real-time processing)
 
-### Overview
+**Safety and Environment:**
+- Dark or controlled lighting environment
+- Stable surface for vibration isolation
+- Proper sample handling equipment
 
-The inline holographic microscope utilizes the principles of holography and coherent light sources to capture and reconstruct 3D images of transparent samples. Instead of using traditional lenses, we rely on interference patterns between a reference beam and the scattered light from the sample. The resulting hologram is then computationally reconstructed to visualize the sample.
+**TODO**: Add specific LED wavelength recommendations and optimal power levels
+**TODO**: Include computer system requirements for real-time reconstruction
+
+![](./IMAGES/Inline_diagram.png)
+
+### Diagram
 
 ![](./IMAGES/UC2Holo.png)
 
-
-### Materials Needed
-1. UC2 Modular Microscope Toolbox (includes cubes and puzzle pieces).
-2. LED Holder.
-3. Gel Color Filter.
-4. Aluminum Foil with a pinhole.
-5. Transparent Sample (e.g., biological specimen or microstructure).
-6. Camera Sensor (e.g., ESP32 camera module).
+*Schematic diagram showing the inline holographic microscope layout with LED source, pinhole, sample, and detector*
 
 ### Theory of Operation
+
+The inline holographic microscope operates as a lensless imaging system where coherent light from a point source illuminates a transparent sample. The scattered light from the sample interferes with the unscattered reference beam directly on the detector surface, creating a holographic interference pattern. This pattern contains both amplitude and phase information about the sample, which can be computationally reconstructed to visualize the original object.
+
+Unlike conventional microscopy that uses lenses to form images, holographic microscopy relies on digital reconstruction algorithms to focus and refocus images at different distances. This approach offers several advantages: large field of view, no optical aberrations, and the ability to focus on different depth planes post-acquisition.
+
+### Theoretical Background
+
+**Holography Principles**
+
+Holography is based on the recording and reconstruction of light wave interference patterns. In inline holography, three key wave components interact:
+
+1. **Reference Wave**: Unperturbed light passing through empty space
+2. **Object Wave**: Light scattered by the sample
+3. **Interference Pattern**: Superposition of reference and object waves
+
+**Fresnel Diffraction and Propagation**
+
+The propagation of light from the sample to the detector follows Fresnel diffraction theory. The complex amplitude at the detector plane is given by:
+
+U(x,y,z) = -i/(λz) ∬ U(x',y',0) exp[ik/(2z)((x-x')² + (y-y')²)] dx'dy'
+
+Where λ is the wavelength, z is the propagation distance, and k = 2π/λ is the wave number.
+
+**Digital Reconstruction**
+
+The reconstruction process involves numerically propagating the recorded intensity pattern back to the sample plane using the Fresnel-Kirchhoff diffraction integral. This is efficiently implemented using Fast Fourier Transform (FFT) algorithms:
+
+1. **Forward FFT**: Convert intensity pattern to frequency domain
+2. **Phase Correction**: Apply propagation phase factor
+3. **Inverse FFT**: Transform back to spatial domain
+
+The propagation phase factor is: H(fx,fy,z) = exp[ikz√(1 - λ²fx² - λ²fy²)]
+
+**Limitations and Challenges**
+
+Inline holography faces several fundamental limitations:
+
+- **Twin Image Problem**: Loss of phase information creates overlapping virtual images
+- **Limited Resolution**: Bounded by pixel size and numerical aperture
+- **Sparse Sample Requirement**: Dense samples create complex interference patterns
+- **Coherence Requirements**: Spatial and temporal coherence affect image quality
+
+**Modern Applications**
+
+Inline holography has found applications in:
+- **Medical diagnostics**: Blood cell analysis, malaria detection
+- **Environmental monitoring**: Plankton and microorganism studies
+- **Industrial inspection**: Particle size and distribution analysis
+- **Materials science**: Thin film characterization
+- **Astronomical imaging**: Space-based telescopy applications
+
+**TODO**: Add mathematical derivations for advanced students
+**TODO**: Include specific resolution calculations for different system parameters
+
+---
+
+## Tutorial: Inline Holographic Microscope Setup
+
+![](./IMAGES/image82.png)
+
+*Complete assembly showing all components needed for the inline holographic microscope*
+
+## Step 1: Assemble the Optical Components
+
+### SAFETY INSTRUCTIONS
+
+**⚠️ GENERAL SAFETY WARNINGS:**
+
+1. **Handle optical components carefully** to avoid scratches and contamination
+2. **Work in controlled lighting conditions** to minimize background interference
+3. **Use proper sample handling techniques** to prevent contamination
+4. **Ensure stable mounting** to prevent component movement during measurements
+5. **Keep work area clean and organized** to avoid losing small components
+
+### 1.1: Prepare the Illumination Source
+
+Create a quasi-coherent point source by:
+1. Insert LED into the UC2 LED holder
+2. Place gel color filter in front of LED (green or red recommended)
+3. Create a small pinhole (10-50 μm) in aluminum foil using a fine needle
+4. Mount the pinhole-filter assembly in the UC2 cube
+
+**Note**: The pinhole size determines spatial coherence - smaller pinholes provide better coherence but reduced brightness.
+
+### 1.2: Build the Base Configuration
+
+Assemble the system with four UC2 cubes in a linear arrangement:
+1. **Cube 1**: LED source with pinhole
+2. **Cube 2**: Empty spacer cube 
+3. **Cube 3**: Sample holder cube
+4. **Cube 4**: Camera detector cube
+
+Connect all cubes with base plates for mechanical stability.
+
+### 1.3: Position the Sample
+
+Mount your transparent sample as close as possible to the camera sensor:
+1. Use minimal sample thickness (coverslip or thin film)
+2. Ensure sample is sparse (isolated particles work best)
+3. Avoid dense or thick samples that create complex scattering
+
+### 1.4: Optimize Source-Sample-Detector Geometry
+
+The key distances are:
+- **Source-to-sample distance (L1)**: 10-20 cm for good illumination uniformity
+- **Sample-to-detector distance (L2)**: <5 mm for high resolution
+- **Magnification ratio**: M = L1/L2 (typically 20-100x)
+
+**TODO**: Add specific distance calculations for different magnification requirements
+
+## Step 2: Electronics
+
+### 2.1: ESP32 Camera Setup
+
+1. Connect ESP32 camera module to power supply
+2. Configure WiFi connection for wireless image capture
+3. Test camera functionality with basic image acquisition
+4. Adjust exposure and gain settings for optimal signal-to-noise ratio
+
+### 2.2: Camera Software Configuration
+
+1. Connect to ESP32 web interface via WiFi
+2. Set image resolution (typically VGA or higher)
+3. Adjust compression settings (minimize JPEG artifacts)
+4. Test image capture and download functionality
+
+**TODO**: Add specific firmware versions and configuration parameters
+
+## Step 3: Alignment and Optimization
+
+### 3.1: System Alignment
+
+1. Turn on LED source and observe illumination pattern
+2. Check for uniform illumination across the field of view
+3. Ensure pinhole is properly centered and clean
+4. Verify camera is recording the sample area
+
+### 3.2: Environmental Optimization
+
+1. **Eliminate stray light**: Cover system with dark enclosure
+2. **Minimize vibrations**: Use stable surface or isolation table
+3. **Control air currents**: Avoid drafts that can cause intensity fluctuations
+4. **Thermal stability**: Allow system to reach thermal equilibrium
+
+### 3.3: Sample Optimization
+
+Test with different samples to find optimal conditions:
+- Start with sparse dust particles or pollen
+- Progress to biological samples (cells, bacteria)
+- Avoid thick or dense samples initially
+
+## Step 4: Digital Reconstruction (ImSwitch Integration)
+
+### 4.1: Basic Python Reconstruction
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.fft import fft2, ifft2
+
+def reconstruct_inline_hologram(hologram, wavelength, pixel_size, distance):
+    """
+    Reconstruct inline hologram using Fresnel propagation
+    
+    Parameters:
+    hologram: 2D numpy array of intensity values
+    wavelength: light wavelength in meters
+    pixel_size: detector pixel size in meters  
+    distance: reconstruction distance in meters
+    """
+    # Get image dimensions
+    ny, nx = hologram.shape
+    
+    # Create frequency coordinates
+    fx = np.fft.fftfreq(nx, pixel_size)
+    fy = np.fft.fftfreq(ny, pixel_size)
+    FX, FY = np.meshgrid(fx, fy)
+    
+    # Calculate propagation phase factor
+    k = 2 * np.pi / wavelength
+    phase_factor = np.exp(1j * k * distance * np.sqrt(1 - (wavelength * FX)**2 - (wavelength * FY)**2))
+    
+    # Apply Fresnel propagation
+    hologram_fft = fft2(hologram)
+    reconstructed_fft = hologram_fft * phase_factor
+    reconstructed = ifft2(reconstructed_fft)
+    
+    return reconstructed
+
+# Example usage
+wavelength = 532e-9  # Green light wavelength
+pixel_size = 2.4e-6  # Typical camera pixel size
+distance = -0.01     # Reconstruction distance (negative for refocusing)
+
+# Load and process hologram
+img = plt.imread("hologram.png")
+reconstructed = reconstruct_inline_hologram(img, wavelength, pixel_size, distance)
+
+# Display results
+plt.figure(figsize=(12, 4))
+plt.subplot(1, 3, 1)
+plt.imshow(img, cmap='gray')
+plt.title('Original Hologram')
+plt.subplot(1, 3, 2)
+plt.imshow(np.abs(reconstructed), cmap='gray')
+plt.title('Reconstructed Amplitude')
+plt.subplot(1, 3, 3)
+plt.imshow(np.angle(reconstructed), cmap='hsv')
+plt.title('Reconstructed Phase')
+plt.show()
+```
+
+### 4.2: ImSwitch Integration
+
+For real-time reconstruction:
+1. Install ImSwitch software with holography plugins
+2. Configure camera connection in ImSwitch
+3. Set reconstruction parameters (wavelength, distances)
+4. Enable real-time processing for live focusing
+
+### 4.3: Advanced Processing
+
+Implement additional processing steps:
+- **Background subtraction**: Remove illumination variations
+- **Noise filtering**: Apply appropriate image filters
+- **Multi-distance reconstruction**: Focus stacking for extended depth
+- **Phase unwrapping**: Extract quantitative phase information
+
+**TODO**: Add specific ImSwitch configuration files and parameters
+
+---
+
+## Experiment 1: Basic Hologram Recording and Reconstruction
+
+### 1.1: Capture Reference Holograms
+
+1. Start with no sample to establish background
+2. Record intensity pattern from pure illumination
+3. Note any interference fringes or artifacts
+4. Save reference image for background subtraction
+
+### 1.2: Sample Hologram Acquisition
+
+1. Insert sparse sample (dust, pollen, or cells)
+2. Capture hologram showing interference fringes
+3. Verify sufficient contrast and fringe visibility
+4. Record multiple images at different positions
+
+### 1.3: Basic Reconstruction
+
+1. Load hologram image into reconstruction software
+2. Set appropriate wavelength and distance parameters
+3. Perform reconstruction at the sample plane
+4. Compare with direct sample observation
+
+## Experiment 2: Multi-Distance Reconstruction
+
+### 2.1: Focus Stacking
+
+1. Reconstruct at multiple distances around the sample plane
+2. Create focus stack to visualize 3D structure
+3. Identify optimal focus distance for each sample feature
+4. Generate extended depth-of-field image
+
+### 2.2: 3D Visualization
+
+1. Map focused features at different depths
+2. Create 3D representation of sample structure
+3. Measure feature positions and sizes
+4. Compare with theoretical expectations
+
+### 2.3: Resolution Analysis
+
+1. Measure resolution using known test samples
+2. Compare with theoretical resolution limits
+3. Identify factors limiting resolution
+4. Optimize system parameters for best performance
+
+## Experiment 3: Quantitative Analysis
+
+### 3.1: Phase Imaging
+
+1. Extract phase information from complex reconstruction
+2. Unwrap phase data to obtain continuous values
+3. Convert phase to optical path differences
+4. Measure sample thickness or refractive index
+
+### 3.2: Particle Analysis
+
+1. Use automated detection algorithms
+2. Measure particle sizes and positions
+3. Analyze size distributions
+4. Track particle motion (if applicable)
+
+### 3.3: Comparative Studies
+
+1. Compare holographic and conventional microscopy
+2. Analyze advantages and limitations
+3. Determine optimal sample types and conditions
+4. Document measurement accuracy and precision
+
+---
+
+## Safety Guidelines and Best Practices
+
+### General Laboratory Safety
+
+- **Clean optical surfaces carefully** using appropriate lens tissues and solutions
+- **Handle samples properly** to avoid contamination
+- **Store equipment safely** when not in use
+- **Document all experimental parameters** for reproducibility
+
+### Data Management
+
+- **Save raw holograms** in uncompressed formats when possible
+- **Record all experimental parameters** (distances, wavelengths, settings)
+- **Back up important data** regularly
+- **Document reconstruction parameters** for future reference
+
+**TODO**: Add specific safety protocols for biological samples
+
+---
+
+## Troubleshooting Guide
+
+### Common Problems and Solutions
+
+#### Problem: No Interference Fringes Visible
+**Possible Causes:**
+- Insufficient coherence
+- Poor pinhole quality
+- Excessive background light
+- Wrong sample-detector distance
+
+**Solutions:**
+1. Check pinhole size and quality
+2. Improve light source coherence
+3. Better environmental light control
+4. Adjust geometric parameters
+
+#### Problem: Poor Reconstruction Quality
+**Possible Causes:**
+- Incorrect reconstruction parameters
+- JPEG compression artifacts
+- Twin image interference
+- Phase retrieval errors
+
+**Solutions:**
+1. Verify wavelength and distance values
+2. Use uncompressed image formats
+3. Apply twin image suppression algorithms
+4. Improve phase reconstruction methods
+
+#### Problem: Low Image Contrast
+**Possible Causes:**
+- Dense sample scattering
+- Improper illumination
+- Background interference
+- Camera settings
+
+**Solutions:**
+1. Use sparser samples
+2. Optimize illumination uniformity
+3. Implement background subtraction
+4. Adjust camera exposure and gain
+
+#### Problem: Unstable Results
+**Possible Causes:**
+- Environmental vibrations
+- Temperature fluctuations
+- Air current interference
+- Mechanical instability
+
+**Solutions:**
+1. Improve vibration isolation
+2. Control environmental conditions
+3. Enclose optical system
+4. Secure all mechanical connections
+
+**TODO**: Add troubleshooting for specific software issues
+
+---
+
+## Assessment Questions
+
+### Conceptual Understanding
+
+1. **Holography Principles:**
+   - Explain the difference between inline and off-axis holography
+   - Describe how phase information is encoded in interference patterns
+   - Why is coherent illumination essential for holographic imaging?
+
+2. **Digital Reconstruction:**
+   - Describe the role of FFT in holographic reconstruction
+   - Explain the twin image problem and potential solutions
+   - How does reconstruction distance affect image focus?
+
+3. **System Design:**
+   - Compare advantages and disadvantages with conventional microscopy
+   - What factors limit the resolution of inline holography?
+   - How would you optimize the system for different sample types?
+
+### Problem-Solving Exercises
+
+1. **Parameter Optimization:**
+   - Calculate optimal pinhole size for given source-sample distance
+   - Determine reconstruction distance for best focus
+   - Estimate theoretical resolution for your system
+
+2. **Application Design:**
+   - Design modifications for flowing sample analysis
+   - Adapt system for different wavelength operation
+   - Integrate with automated sample handling
+
+### Extension Projects
+
+1. **Advanced Techniques:**
+   - Implement machine learning for artifact removal
+   - Develop real-time processing algorithms
+   - Explore multi-wavelength holography
+
+2. **Research Applications:**
+   - Apply to biological sample analysis
+   - Study dynamic processes in microfluidics
+   - Investigate materials characterization applications
+
+**TODO**: Add specific calculation examples and expected results
+**TODO**: Include links to current research and applications
+
+---
+
+## Resources and References
+
+### Historical Context
+- **Dennis Gabor (1948)**: Invented holography, Nobel Prize 1971
+- **Fresnel and Kirchhoff**: Diffraction theory foundations
+- **Digital holography development**: 1990s computational advances
+
+### Modern Applications
+- **Medical diagnostics**: Point-of-care blood analysis
+- **Environmental monitoring**: Plankton studies and water quality
+- **Industrial inspection**: Quality control and defect detection
+- **Space applications**: Compact imaging systems for satellites
+
+### Further Reading
+- Principles of Optics - Born & Wolf
+- Digital Holography and Digital Image Processing - Schnars & Jüptner
+- Current research papers in Applied Optics and Optics Letters
+
+**TODO**: Add specific links to current research papers and applications
+**TODO**: Include bibliography of recommended textbooks and resources
+
+---
+
+### Known Limitations and Future Improvements
+
+**Current Limitations:**
+- Twin image artifacts in reconstruction
+- Limited resolution compared to conventional microscopy
+- Requirement for sparse samples
+- Sensitivity to environmental disturbances
+
+**Potential Improvements:**
+- Machine learning artifact removal
+- Advanced phase retrieval algorithms
+- Multi-wavelength techniques
+- Improved vibration isolation
+
+**TODO**: Add development roadmap for system improvements
 
 1. **Creating the Light Source**
    The holographic microscope begins with a specially prepared light source. An LED, filtered through a gel color filter and focused through a pinhole in aluminum foil, generates quasi-monochromatic coherent light. This coherent light source is essential for the interference patterns necessary for holography.

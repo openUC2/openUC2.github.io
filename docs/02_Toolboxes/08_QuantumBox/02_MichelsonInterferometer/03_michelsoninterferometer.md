@@ -11,15 +11,38 @@ In this workshop, we will construct a Michelson Interferometer using the UC2 mod
 
 ### Materials Needed
 
-1. Green Laser Pointer with relatively high temporal coherence
-2. Lenses for beam expansion and collimation
-3. Beam splitter plate or cube with partially reflective mirror coating
-4. Three kinematic mirrors for precise alignment
-5. Screen or camera sensor (e.g., ESP32 camera module or HIK camera) with USB cable
-6. UC2 Modular Microscope Toolbox (cubes, puzzle pieces, and holders)
-7. Base plates for mounting and alignment
-8. Pinhole for spatial filtering
-9. Screwdriver for fine alignment adjustments (1.5x60)
+**Optical Components:**
+1. Green Laser Pointer (532 nm, minimum coherence length >10 cm)
+2. Collimating lens (f = 100 mm) for beam conditioning
+3. 50:50 Beam splitter cube with anti-reflection coating
+4. Three kinematic mirrors with precision adjustment screws
+5. Pinhole aperture (10-50 μm diameter) for spatial filtering
+6. Neutral density filters (optional, for power adjustment)
+
+**Detection Equipment:**
+7. HIKrobot Camera (MV-CE060-10UC) with USB cable for quantitative measurements
+8. Screen for visual alignment and pattern observation
+9. Computer with MVS camera software installed
+
+**Mechanical Components:**
+10. UC2 Modular Microscope Toolbox including:
+    - 8+ optical cubes with threaded inserts
+    - Base plates for rigid mounting
+    - Puzzle pieces for component attachment
+11. Precision screwdriver set (1.5mm hex key) for alignment
+12. Optical table or stable surface (vibration isolation recommended)
+
+**Electronic Components (for motorized version):**
+13. ESP32 microcontroller with firmware
+14. Stepper motors for automated mirror positioning
+15. Motor drivers and power supply
+16. Connecting cables and breadboard
+
+**Safety Equipment:**
+17. Laser safety goggles (appropriate for 532 nm wavelength)
+18. Warning signs and barriers for laser area
+
+**TODO**: Specify exact part numbers and suppliers for all optical components, add vibration isolation requirements for optimal performance
 
 ![](./IMAGES/Michelson_1.png)
 
@@ -48,6 +71,39 @@ The Michelson Interferometer operates as a two-beam interference device where co
 Interference is a phenomenon that occurs when two or more waves overlap in space and combine their amplitudes. When waves are in-phase (their crests and troughs align), they constructively interfere, resulting in a larger amplitude. When they are out of phase (their crests and troughs are misaligned), they destructively interfere, resulting in a smaller or zero amplitude. Interference is a fundamental concept in wave physics and plays a crucial role in understanding the behavior of light.
 
 **Wave Superposition and Path Difference**
+
+The fundamental principle underlying interferometry is the superposition of electromagnetic waves. When two coherent light beams recombine, the resulting intensity follows:
+
+I = I₁ + I₂ + 2√(I₁I₂)cos(Δφ)
+
+Where Δφ = (2π/λ)ΔL is the phase difference corresponding to path difference ΔL.
+
+**Coherence Requirements**
+
+For stable interference patterns, the light source must exhibit both spatial and temporal coherence:
+- **Temporal coherence**: The wave trains must maintain phase relationships over time scales relevant to the path difference
+- **Spatial coherence**: The wavefronts must be sufficiently uniform across the beam cross-section
+- **Coherence length**: Lc = λ²/Δλ, where Δλ is the spectral width of the source
+
+**Historical Context and Significance**
+
+The Michelson Interferometer was invented by Albert Michelson in 1881 and played a crucial role in:
+- **Michelson-Morley experiment (1887)**: Disproved the existence of luminiferous aether, paving the way for Einstein's special relativity
+- **Precision measurement of the speed of light**: Earning Michelson the 1907 Nobel Prize in Physics
+- **Definition of the meter**: Originally defined in terms of wavelengths of krypton-86 radiation using interferometric measurements
+
+**Modern Applications and Technology**
+
+Contemporary applications demonstrate the continued relevance of Michelson interferometry:
+- **LIGO gravitational wave detectors**: Use arm lengths of 4 km to detect strain sensitivities of 10⁻²¹
+- **Optical coherence tomography (OCT)**: Medical imaging with micrometer resolution
+- **Fourier transform infrared spectroscopy (FTIR)**: Chemical analysis and identification
+- **Surface profiling**: Nanometer-scale surface topology measurements
+- **Fiber optic sensors**: Distributed sensing in civil engineering and geophysics
+
+**TODO**: Add specific technical specifications for optimal laser coherence length and power requirements for educational setups
+
+**Sensitivity and Measurement Principles**
 
 The key principle behind the Michelson Interferometer is wave superposition. When two coherent light waves with the same frequency but different phases combine, the resulting intensity depends on their phase relationship:
 - Constructive interference (bright fringes): Path difference = nλ (where n is an integer)
@@ -320,8 +376,120 @@ The coherence length is approximately equal to the path difference at which the 
 
 Use the relationship: Coherence length = λ²/Δλ to estimate the spectral width of your laser.
 
-*TODO: Add specific data collection procedures and analysis methods*
+---
 
-*TODO: Add troubleshooting section for common alignment issues*
+## Safety Guidelines and Best Practices
 
-*TODO: Add assessment questions to test student understanding*
+### Laser Safety Protocol
+
+**⚠️ CRITICAL SAFETY WARNINGS:**
+
+1. **NEVER look directly into the laser beam or its reflections**
+2. **Always wear appropriate laser safety goggles (OD 4+ for 532 nm)**
+3. **Ensure all laser beams are terminated properly or contained within the experimental area**
+4. **Post warning signs around the experimental setup**
+5. **Keep laser power at minimum levels necessary for observation**
+
+### General Laboratory Safety
+
+- **Work in a controlled environment** with minimal vibrations
+- **Secure all optical components** to prevent accidental displacement
+- **Maintain clean optical surfaces** using appropriate cleaning materials
+- **Avoid touching optical surfaces** with bare hands
+- **Store components properly** when not in use
+
+**TODO**: Add specific power level recommendations and local safety regulations compliance
+
+---
+
+## Troubleshooting Guide
+
+### Common Problems and Solutions
+
+#### Problem: No Interference Pattern Visible
+**Possible Causes:**
+- Misaligned beam paths
+- Poor beam overlap
+- Insufficient temporal or spatial coherence
+- Laser power too low
+
+**Solutions:**
+1. Check beam alignment using screen at various positions
+2. Ensure both beams are hitting the detector
+3. Adjust mirror orientations for optimal overlap
+4. Verify laser stability and coherence specifications
+
+#### Problem: Low Fringe Visibility
+**Possible Causes:**
+- Unequal beam intensities
+- Poor spatial beam quality
+- Excessive path difference
+- Vibrations affecting setup
+
+**Solutions:**
+1. Balance beam intensities using neutral density filters
+2. Improve spatial filtering with smaller pinhole
+3. Reduce path difference between arms
+4. Isolate setup from vibrations
+
+#### Problem: Unstable Fringe Pattern
+**Possible Causes:**
+- Environmental vibrations
+- Air currents affecting beam paths
+- Temperature fluctuations
+- Loose optical mounts
+
+**Solutions:**
+1. Use vibration isolation table or heavy, stable surface
+2. Enclose optical path to minimize air currents
+3. Allow thermal equilibration time
+4. Secure all mechanical connections
+
+#### Problem: Difficulty in Mirror Alignment
+**Possible Causes:**
+- Incorrect mirror mount orientation
+- Excessive adjustment sensitivity
+- Poor initial beam direction
+
+**Solutions:**
+1. Start with coarse alignment using visible beam spots
+2. Use systematic adjustment procedure (one axis at a time)
+3. Make small, incremental adjustments
+4. Use alignment aids like irises or beam viewers
+
+**TODO**: Add specific troubleshooting procedures for electronic components and automated systems
+
+---
+
+## Assessment Questions
+
+### Understanding Check
+
+1. **Conceptual Understanding:**
+   - Explain why the Michelson Interferometer is more sensitive to path changes than direct distance measurement
+   - Describe the relationship between coherence length and spectral width
+   - How does the visibility of fringes relate to the degree of coherence?
+
+2. **Practical Applications:**
+   - Why is spatial filtering important in interferometry?
+   - How would you modify the setup to measure very small displacements?
+   - What are the advantages and disadvantages compared to the Mach-Zehnder configuration?
+
+3. **Quantitative Analysis:**
+   - Calculate the theoretical sensitivity (minimum detectable path change)
+   - Estimate the maximum useful path difference for your laser
+   - Determine the required mechanical stability for nanometer-scale measurements
+
+### Extension Projects
+
+1. **Advanced Measurements:**
+   - Implement computer-controlled phase stepping
+   - Measure refractive index of transparent materials
+   - Study temperature-dependent optical path changes
+
+2. **Modern Applications:**
+   - Research LIGO gravitational wave detection principles
+   - Investigate optical coherence tomography techniques
+   - Explore applications in precision manufacturing
+
+**TODO**: Add specific calculation examples and expected numerical results for different laser types

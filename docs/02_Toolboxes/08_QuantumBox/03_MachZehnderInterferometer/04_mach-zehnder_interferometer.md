@@ -11,19 +11,40 @@ In this workshop, we will construct a Mach-Zehnder Interferometer using the UC2 
 
 ### Materials Needed
 
-- Laser diode (coherent light source)
-- Hikrobot Camera (MV-CE060-10UC) with USB cable ([Hikrobot Camera Software installation](Camera_Software_tutorial.md))
-- Small stage with gear for sample positioning
-- Two kinematic mirrors (in cubes) for precise beam steering
-- Two beam splitters in cube for beam division and recombination
-- Sample holder (in cube) for specimen mounting
-- Two empty cubes for beam path extension
-- Base plates for mounting and stability
-- Screen for initial alignment
-- Pinhole in cube for spatial filtering
-- Screwdriver to adjust alignment (1.5x60)
-- Two 100 mm converging lenses for beam conditioning
-- Microscope objective for high-resolution imaging
+**Optical Components:**
+- Laser diode (coherent light source, 532 nm wavelength, minimum 10 mW)
+- Two precision kinematic mirrors in UC2 cubes for beam steering
+- Two 50:50 beam splitter cubes with broadband anti-reflection coating
+- Sample holder in UC2 cube with adjustable positioning
+- Pinhole aperture (10-50 μm) in UC2 cube for spatial filtering
+- Two 100 mm focal length converging lenses for beam conditioning
+- Microscope objective (10x or 20x magnification) for high-resolution imaging
+- Neutral density filters (optional) for intensity balancing
+
+**Detection and Imaging:**
+- HIKrobot Camera (MV-CE060-10UC) with USB cable ([Hikrobot Camera Software installation](Camera_Software_tutorial.md))
+- Computer with MVS camera software and data analysis capabilities
+- Screen for initial alignment and pattern visualization
+
+**Mechanical Components:**
+- UC2 modular microscope toolbox with minimum 8 optical cubes
+- Base plates (minimum 4) for mounting and stability
+- Small motorized stage with gear system for precise sample positioning
+- Precision screwdrivers (1.5mm hex key) for fine alignment adjustments
+
+**Electronic Components (for automation):**
+- ESP32 microcontroller with compatible firmware
+- Stepper motors for automated sample scanning
+- Motor drivers and power supply (12V, 2A minimum)
+- Connecting cables and interface boards
+
+**Safety and Environment:**
+- Laser safety goggles (OD 4+ for 532 nm wavelength)
+- Vibration isolation or heavy, stable optical table
+- Environmental enclosure for air current protection
+
+**TODO**: Add specific part numbers, suppliers, and cost estimates for educational institutions
+**TODO**: Specify minimum computer requirements for real-time image processing
 
 ![](./IMAGES/image111.jpg)
 
@@ -53,6 +74,13 @@ The Mach-Zehnder Interferometer operates on the principle of amplitude division,
 2. **Phase Difference**: δ = (2π/λ) × OPD
 3. **Interference Condition**: Constructive interference occurs when δ = 2πm (m = integer)
 
+**Mathematical Description of Interference**
+
+The intensity distribution in the interference pattern is given by:
+I(x,y) = I₁ + I₂ + 2√(I₁I₂)cos[φ(x,y)]
+
+Where φ(x,y) represents the local phase difference caused by sample-induced optical path variations.
+
 **Quantitative Phase Imaging**
 
 One of the most powerful applications of the Mach-Zehnder Interferometer is quantitative phase imaging, which allows measurement of:
@@ -61,6 +89,11 @@ One of the most powerful applications of the Mach-Zehnder Interferometer is quan
 - **Dynamic processes** in living cells and materials
 - **Density fluctuations** in fluids and gases
 
+The phase shift introduced by a transparent object is:
+Δφ = (2π/λ) × t × (n_sample - n_medium)
+
+Where t is the thickness and n represents refractive indices.
+
 **Phase Unwrapping and Data Analysis**
 
 The interference fringes contain phase information that must be extracted through mathematical processing:
@@ -68,14 +101,33 @@ The interference fringes contain phase information that must be extracted throug
 - **Phase unwrapping**: Removes 2π ambiguities to obtain continuous phase maps
 - **Quantitative measurements**: Converts phase data to physical quantities (thickness, refractive index, etc.)
 
-**Applications in Modern Science**
+**Sensitivity and Resolution Considerations**
+
+The system sensitivity depends on:
+- **Phase sensitivity**: Δφ_min ≈ λ/(100 × visibility), typically ~λ/100 for good systems
+- **Spatial resolution**: Limited by numerical aperture of imaging system
+- **Temporal resolution**: Determined by camera frame rate and sample dynamics
+
+**Comparison with Other Interferometric Techniques**
+
+| Technique | Advantages | Disadvantages | Best Applications |
+|-----------|------------|---------------|-------------------|
+| Mach-Zehnder | Separate beam paths, easy sample access | Requires stable environment | Transmission microscopy, flow studies |
+| Michelson | Compact, simple alignment | Reflection-based, limited sample access | Surface profiling, displacement measurement |
+| Shearing | Self-referencing, robust | Complex data analysis | Turbulence studies, wave front sensing |
+
+**Modern Applications and Technology Transfer**
 
 Mach-Zehnder Interferometry has found extensive applications in:
 - **Biomedical imaging**: Cell biology, tissue analysis, drug testing
-- **Materials science**: Thin film characterization, surface analysis
+- **Materials science**: Thin film characterization, surface analysis  
 - **Quality control**: Industrial inspection, defect detection
 - **Fluid dynamics**: Flow visualization, density measurements
 - **Telecommunications**: Fiber optic testing, optical component characterization
+- **Astronomical interferometry**: High-resolution imaging of celestial objects
+
+**TODO**: Add specific examples of phase sensitivity calculations for different sample types
+**TODO**: Include more detailed mathematical derivations for advanced students
 
 ## Tutorial: Mach-Zehnder Interferometer
 
@@ -296,10 +348,133 @@ Convert phase measurements to physical quantities:
 - Refractive index changes
 - Surface roughness parameters
 
-*TODO: Add detailed calibration procedures for quantitative measurements*
+---
 
-*TODO: Add troubleshooting guide for common alignment and stability issues*
+## Safety Guidelines and Best Practices
 
-*TODO: Add assessment questions covering interferometry principles and applications*
+### Laser Safety Protocol
 
-*TODO: Add advanced experimental extensions for exploring different samples and measurement techniques*
+**⚠️ CRITICAL SAFETY WARNINGS:**
+
+1. **NEVER look directly into the laser beam or its reflections**
+2. **Always wear appropriate laser safety goggles (OD 4+ for 532 nm)**
+3. **Ensure all laser beams are properly terminated or contained**
+4. **Post warning signs in the experimental area**
+5. **Maintain minimum necessary laser power for observations**
+
+### Experimental Safety Considerations
+
+- **Secure all optical components** to prevent movement during measurements
+- **Use proper sample handling techniques** to avoid contamination
+- **Ensure electrical safety** with all electronic components
+- **Maintain clean, organized workspace** to prevent accidents
+
+**TODO**: Add institution-specific safety protocols and emergency procedures
+
+---
+
+## Troubleshooting Guide
+
+### Common Problems and Solutions
+
+#### Problem: Poor Fringe Visibility
+**Possible Causes:**
+- Misaligned beam paths
+- Unequal beam intensities
+- Poor coherence or spatial quality
+- Environmental vibrations
+
+**Solutions:**
+1. Check beam alignment using screen at multiple positions
+2. Balance beam intensities with neutral density filters
+3. Improve spatial filtering and beam quality
+4. Isolate setup from vibrations
+
+#### Problem: No Interference Pattern
+**Possible Causes:**
+- Complete beam misalignment
+- Blocked beam paths
+- Insufficient beam overlap
+- Wrong beam splitter orientation
+
+**Solutions:**
+1. Verify both beams reach the detector
+2. Check for obstructions in beam paths
+3. Systematically realign all optical components
+4. Ensure proper beam splitter orientation and coating
+
+#### Problem: Unstable Fringes
+**Possible Causes:**
+- Mechanical vibrations
+- Air currents
+- Temperature fluctuations
+- Loose optical mounts
+
+**Solutions:**
+1. Use vibration isolation or heavy table
+2. Enclose optical paths to minimize air currents
+3. Allow thermal equilibration time
+4. Secure all mechanical connections
+
+#### Problem: Poor Phase Measurement Accuracy
+**Possible Causes:**
+- Insufficient fringe sampling
+- Nonlinear camera response
+- Phase unwrapping errors
+- Calibration issues
+
+**Solutions:**
+1. Increase spatial sampling of fringes
+2. Linearize camera response or use appropriate corrections
+3. Improve phase unwrapping algorithms
+4. Perform careful system calibration
+
+**TODO**: Add specific troubleshooting for electronic components and automation systems
+
+---
+
+## Assessment Questions
+
+### Conceptual Understanding
+
+1. **Fundamental Principles:**
+   - Compare and contrast Mach-Zehnder and Michelson interferometer configurations
+   - Explain the advantages of separate beam paths in the Mach-Zehnder design
+   - Describe how phase information is encoded in interference patterns
+
+2. **Quantitative Phase Imaging:**
+   - Derive the relationship between phase shift and sample properties
+   - Explain the physical meaning of phase unwrapping
+   - Calculate theoretical sensitivity limits for different sample types
+
+3. **Practical Applications:**
+   - Describe how the technique could be used for biological cell analysis
+   - Explain the role of spatial and temporal coherence in measurement quality
+   - Discuss limitations and potential improvements to the basic setup
+
+### Problem-Solving Exercises
+
+1. **System Design:**
+   - Design modifications for measuring flowing liquids
+   - Calculate required stability for nanometer-scale measurements
+   - Determine optimal beam intensity ratios for different samples
+
+2. **Data Analysis:**
+   - Process experimental interference patterns to extract phase information
+   - Estimate measurement uncertainties and error sources
+   - Compare results with theoretical predictions
+
+### Extension Projects
+
+1. **Advanced Techniques:**
+   - Implement real-time phase imaging
+   - Study dynamic processes in biological samples
+   - Explore applications in materials characterization
+
+2. **Research Connections:**
+   - Investigate modern applications in biomedical imaging
+   - Study interferometric techniques in astronomical observations
+   - Explore industrial applications in quality control
+
+**TODO**: Add specific calculation examples and expected results for different experimental conditions
+**TODO**: Include links to current research papers and applications

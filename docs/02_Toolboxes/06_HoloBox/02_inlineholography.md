@@ -111,8 +111,6 @@ Inline holography has found applications in:
 
 ## Tutorial: Inline Holographic Microscope Setup
 
-![](./IMAGES/image82.png)
-
 *Complete assembly showing all components needed for the inline holographic microscope*
 
 ## Step 1: Assemble the Optical Components

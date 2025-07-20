@@ -1,6 +1,6 @@
 ---
 id: odmr_experiment_eng
-title: ODMR – Experiment: Optically Detected Magnetic Resonance (English)
+title: "ODMR – Experiment: Optically Detected Magnetic Resonance (English)"
 ---
 
 

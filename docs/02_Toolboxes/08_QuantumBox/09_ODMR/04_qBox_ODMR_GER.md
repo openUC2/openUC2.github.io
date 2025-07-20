@@ -1,8 +1,7 @@
 ---
-
-id: odmr\_experiment\_ger
-title: ODMR – Experiment: Optisch Detektierte Magnetresonanz (Deutsch)
-----------------------------------------------------------------------
+id: odmr_experiment_ger
+title: "ODMR – Experiment: Optisch Detektierte Magnetresonanz (Deutsch)"
+---
 
 # Anleitung: Aufbau eines ODMR‑Setups (Optisch Detektierte Magnetresonanz)
 

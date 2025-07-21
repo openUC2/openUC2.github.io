@@ -13,39 +13,40 @@ type FeatureItem = {
 const FEATURES: FeatureItem[] = [
   {
     title: 'Optics Basics',
-    to: '/docs/category/learning-kits',
+    to: '/docs/Toolboxes',
     image: require('@site/static/img/Application_Discovery_Kit_Base.png').default,
     description: 'Explorer & Discovery boxes to master fundamentals.',
   },
   {
     title: 'Advanced Microscopy',
-    to: '/docs/category/cutting-edge',
-    image: require('@site/static/img/Application_Discovery_Kit_Base.png').default,
-    description: 'Incubator, light-sheet & DPC microscopes.',
+    to: '/docs/Investigator/',
+    image: require('@site/static/img/M274_AC_0100_30_FiveD1-768x766.png').default,
+    description: 'FRAME - fast rigid automated microscope engine',
   },
   {
     title: 'Fluorescence & Lightsheet',
-    to: '/docs/category/fluorescence',
-    image: require('@site/static/img/Application_Discovery_Kit_Base.png').default,
+    to: '/docs/Toolboxes/LightsheetBox/Light_sheet_Fluoresence_microscope',
+    image: require('@site/static/img/ZebraFish-1-1536x864.gif').default,
+ 
     description: 'LED, laser & light-sheet fluorescence tutorials.',
   },
   {
     title: 'Interferometry & Polarization',
-    to: '/docs/category/polarisation',
-    image: require('@site/static/img/Application_Discovery_Kit_Base.png').default,
+    to: '/docs/Toolboxes/QuantumBox/MichelsonInterferometer/MichelsonInterferometer',
+    image: require('@site/static/img/429833192-806c55e3-47cf-45a0-b216-883e5747821a.jpg').default,
     description: 'Michelson, Mach-Zehnder, Newton’s rings, stress birefringence.',
   },
   {
-    title: 'Fourier & Quantum Optics',
-    to: '/docs/category/quantum',
-    image: require('@site/static/img/Application_Discovery_Kit_Base.png').default,
-    description: 'Galvo scanners, Fourier optics & entry-level quantum labs.',
+    title: 'ImSwitch and Firmware',
+    to: '/docs/docs/ImSwitch/Quickstart',
+    image: require('@site/static/img/FRAME6.png').default,
+    description: 'Everything that drives your microscopy hardware.',
   },
   {
-    title: 'Workshops & Pro Line',
-    to: '/docs/category/workshops',
-    image: require('@site/static/img/Application_Discovery_Kit_Base.png').default,
-    description: 'Curriculum-ready workshops and professional modules.',
+    title: 'Seeed Studio x openUC2',
+    to: '/docs/Toolboxes/SeeedMicroscope/04_1_seeedmicroscope',
+    image: require('@site/static/img/Application_SEEEDxOpenUC2_v2.png').default,
+    description: 'The standalone microscope for the IoT.',
   },
 ];
 

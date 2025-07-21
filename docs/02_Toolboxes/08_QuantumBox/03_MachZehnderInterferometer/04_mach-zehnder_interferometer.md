@@ -70,16 +70,18 @@ Unlike the Michelson Interferometer, the Mach-Zehnder design provides separate, 
 
 The Mach-Zehnder Interferometer operates on the principle of amplitude division, where the incident beam is split into two components of approximately equal intensity. Each beam travels through different optical paths before being recombined. The resulting interference pattern depends on:
 
-1. **Optical Path Difference (OPD)**: Δ = n₁L₁ - n₂L₂, where n is the refractive index and L is the path length
-2. **Phase Difference**: δ = (2π/λ) × OPD
-3. **Interference Condition**: Constructive interference occurs when δ = 2πm (m = integer)
+1. **Optical Path Difference (OPD)**: $$\Delta = n_1 L_1 - n_2 L_2$$, where n is the refractive index and L is the path length
+2. **Phase Difference**: $$\delta = \frac{2\pi}{\lambda} \times \text{OPD}$$
+3. **Interference Condition**: Constructive interference occurs when $$\delta = 2\pi m$$ (m = integer)
 
 **Mathematical Description of Interference**
 
 The intensity distribution in the interference pattern is given by:
-I(x,y) = I₁ + I₂ + 2√(I₁I₂)cos[φ(x,y)]
+$$
+I(x,y) = I_1 + I_2 + 2\sqrt{I_1 I_2}\cos[\varphi(x,y)]
+$$
 
-Where φ(x,y) represents the local phase difference caused by sample-induced optical path variations.
+Where $$\varphi(x,y)$$ represents the local phase difference caused by sample-induced optical path variations.
 
 **Quantitative Phase Imaging**
 
@@ -90,7 +92,9 @@ One of the most powerful applications of the Mach-Zehnder Interferometer is quan
 - **Density fluctuations** in fluids and gases
 
 The phase shift introduced by a transparent object is:
-Δφ = (2π/λ) × t × (n_sample - n_medium)
+$$
+\Delta\varphi = \frac{2\pi}{\lambda} \times t \times (n_{\text{sample}} - n_{\text{medium}})
+$$
 
 Where t is the thickness and n represents refractive indices.
 
@@ -104,7 +108,7 @@ The interference fringes contain phase information that must be extracted throug
 **Sensitivity and Resolution Considerations**
 
 The system sensitivity depends on:
-- **Phase sensitivity**: Δφ_min ≈ λ/(100 × visibility), typically ~λ/100 for good systems
+- **Phase sensitivity**: $$\Delta\varphi_{\text{min}} \approx \frac{\lambda}{100 \times \text{visibility}}$$, typically $$\sim \frac{\lambda}{100}$$ for good systems
 - **Spatial resolution**: Limited by numerical aperture of imaging system
 - **Temporal resolution**: Determined by camera frame rate and sample dynamics
 
@@ -187,65 +191,7 @@ Turn the laser on and use the screen to align both beams using the screws on the
 ![](./IMAGES/image85.jpg)
 ![](./IMAGES/image116.jpg)
 
-## Step 2: Electronics
-
-### 2.1: Plug in the Electronics as Shown Below
-
-**⚠️ Caution!**
-If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!
-
-*TODO: Add complete electronic setup image showing every wire connected correctly*
-
-- Connect the laser diode to the Mainboard at designated port
-- Connect the camera to your PC via USB
-- Connect motorized stage components if available
-- *TODO: Add specific wiring diagram for Mach-Zehnder setup*
-
-- Plug in the micro-USB at your ESP32 and connect to your PC.
-- Plug in the 12V power cable.
-
-### 2.2: Flashing the ESP32 Firmware
-
-1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (most likely **ESP32-DEV-based UC2 standalone board V3 (beta)**), then click on the `connect` button.
-
-The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
-
-2. Connect the ESP32 to your computer using the micro-USB cable.
-
-3. In your Chrome browser, a dialog will prompt you to select the COM port for your ESP32, which should be shown as `CP2102 USB to UART Bridge Controller`. Once connected, you can install the latest firmware by simply clicking the "Install" button.
-
-4. Wait until the firmware has been successfully flashed.
-
-### 2.3: Connecting to the Web Interface
-
-1. After flashing the firmware, go to the testing section on the same website.
-
-2. Connect to your ESP32 board using the "Connect" button again, ensuring the correct COM port is selected.
-
-3. Once connected, test the system by sending a simple command:
-
-```json
-{"task":"/motor_act", "motor": { "steppers": [ { "stepperid": 3, "position": -1000, "speed": 1000, "isabs": 0, "isaccel": 0} ] } }
-```
-
-This command will move the Z-axis motor by -1000 steps (1 full rotation) at a speed of 1000 steps per second.
-
-**Note:** Ensure that the command string has no line breaks.
-
-### 2.4: Testing in the Web Interface
-
-1. After completing the test, go back to the first tab to control the other components via buttons:
-   - `Laser 1(on)` and `Laser 1(off)` control the laser diode.
-   - `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
-   - `Motor X(+)/Y(+)/A(+)` and `Motor X(-)/Y(-)/A(-)` control the XYZ-stage.
-
-### 2.5: Setup and Use the Camera Software
-
-1. Connect the camera via cable to your PC.
-
-2. For the installation process and usage of the software, follow these instructions: [Install MVS App for Camera Utilization](https://openuc2.github.io/docs/Electronics/HIKCamera/SoftwareTutorial)
-
-## Step 3: Aligning the Mach-Zehnder Interferometer
+## Step 2: Aligning the Mach-Zehnder Interferometer
 
 ### 3.1: Connect and Adjust in the MVS App
 
@@ -333,7 +279,7 @@ Set up continuous recording to observe dynamic processes in samples:
 - Fluid flow (if applicable)
 - Material changes over time
 
-### 3.2: Analysis of Results
+### 2.2: Analysis of Results
 
 The final goal is to move the position of the first order interference to use Lei's algorithm (or some Phase unwrapping algorithm) to retrieve the phase. To achieve this, two images need to be acquired: a sample image and a background image (without a cover slide or a slide region with no specimen).
 
@@ -341,7 +287,7 @@ The final goal is to move the position of the first order interference to use Le
 
 *Result of Phase Unwrapping showing quantitative phase map*
 
-### 3.3: Quantitative Analysis
+### 2.3: Quantitative Analysis
 
 Convert phase measurements to physical quantities:
 - Thickness variations
@@ -413,68 +359,4 @@ Convert phase measurements to physical quantities:
 **Solutions:**
 1. Use vibration isolation or heavy table
 2. Enclose optical paths to minimize air currents
-3. Allow thermal equilibration time
-4. Secure all mechanical connections
-
-#### Problem: Poor Phase Measurement Accuracy
-**Possible Causes:**
-- Insufficient fringe sampling
-- Nonlinear camera response
-- Phase unwrapping errors
-- Calibration issues
-
-**Solutions:**
-1. Increase spatial sampling of fringes
-2. Linearize camera response or use appropriate corrections
-3. Improve phase unwrapping algorithms
-4. Perform careful system calibration
-
-**TODO**: Add specific troubleshooting for electronic components and automation systems
-
----
-
-## Assessment Questions
-
-### Conceptual Understanding
-
-1. **Fundamental Principles:**
-   - Compare and contrast Mach-Zehnder and Michelson interferometer configurations
-   - Explain the advantages of separate beam paths in the Mach-Zehnder design
-   - Describe how phase information is encoded in interference patterns
-
-2. **Quantitative Phase Imaging:**
-   - Derive the relationship between phase shift and sample properties
-   - Explain the physical meaning of phase unwrapping
-   - Calculate theoretical sensitivity limits for different sample types
-
-3. **Practical Applications:**
-   - Describe how the technique could be used for biological cell analysis
-   - Explain the role of spatial and temporal coherence in measurement quality
-   - Discuss limitations and potential improvements to the basic setup
-
-### Problem-Solving Exercises
-
-1. **System Design:**
-   - Design modifications for measuring flowing liquids
-   - Calculate required stability for nanometer-scale measurements
-   - Determine optimal beam intensity ratios for different samples
-
-2. **Data Analysis:**
-   - Process experimental interference patterns to extract phase information
-   - Estimate measurement uncertainties and error sources
-   - Compare results with theoretical predictions
-
-### Extension Projects
-
-1. **Advanced Techniques:**
-   - Implement real-time phase imaging
-   - Study dynamic processes in biological samples
-   - Explore applications in materials characterization
-
-2. **Research Connections:**
-   - Investigate modern applications in biomedical imaging
-   - Study interferometric techniques in astronomical observations
-   - Explore industrial applications in quality control
-
-**TODO**: Add specific calculation examples and expected results for different experimental conditions
-**TODO**: Include links to current research papers and applications
+3. Allow thermal equilibration to

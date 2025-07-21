@@ -12,6 +12,7 @@ In this workshop, we will construct a Michelson Interferometer using the UC2 mod
 ### Materials Needed
 
 **Optical Components:**
+
 1. Green Laser Pointer (532 nm, minimum coherence length >10 cm)
 2. Collimating lens (f = 100 mm) for beam conditioning
 3. 50:50 Beam splitter cube with anti-reflection coating
@@ -19,12 +20,14 @@ In this workshop, we will construct a Michelson Interferometer using the UC2 mod
 5. Pinhole aperture (10-50 μm diameter) for spatial filtering
 6. Neutral density filters (optional, for power adjustment)
 
-**Detection Equipment:**
+**Detection Equipment: (optional)**
+
 7. HIKrobot Camera (MV-CE060-10UC) with USB cable for quantitative measurements
 8. Screen for visual alignment and pattern observation
 9. Computer with MVS camera software installed
 
-**Mechanical Components:**
+**Mechanical Components: (optional)**
+
 10. UC2 Modular Microscope Toolbox including:
     - 8+ optical cubes with threaded inserts
     - Base plates for rigid mounting
@@ -32,15 +35,6 @@ In this workshop, we will construct a Michelson Interferometer using the UC2 mod
 11. Precision screwdriver set (1.5mm hex key) for alignment
 12. Optical table or stable surface (vibration isolation recommended)
 
-**Electronic Components (for motorized version):**
-13. ESP32 microcontroller with firmware
-14. Stepper motors for automated mirror positioning
-15. Motor drivers and power supply
-16. Connecting cables and breadboard
-
-**Safety Equipment:**
-17. Laser safety goggles (appropriate for 532 nm wavelength)
-18. Warning signs and barriers for laser area
 
 **TODO**: Specify exact part numbers and suppliers for all optical components, add vibration isolation requirements for optimal performance
 
@@ -48,7 +42,7 @@ In this workshop, we will construct a Michelson Interferometer using the UC2 mod
 
 ### Diagram
 
-![](./IMAGES/image36.png)
+![](./IMAGES/uc2_michelson.png)
 
 *Black and white box diagram showing the Michelson Interferometer layout with components labeled for easier understanding*
 
@@ -74,9 +68,11 @@ Interference is a phenomenon that occurs when two or more waves overlap in space
 
 The fundamental principle underlying interferometry is the superposition of electromagnetic waves. When two coherent light beams recombine, the resulting intensity follows:
 
-I = I₁ + I₂ + 2√(I₁I₂)cos(Δφ)
+$$
+I = I_1 + I_2 + 2\sqrt{I_1 I_2}\cos(\Delta\varphi)
+$$
 
-Where Δφ = (2π/λ)ΔL is the phase difference corresponding to path difference ΔL.
+Where $$\Delta\varphi = \frac{2\pi}{\lambda}\Delta L$$ is the phase difference corresponding to path difference $$\Delta L$$.
 
 **Coherence Requirements**
 
@@ -106,8 +102,8 @@ Contemporary applications demonstrate the continued relevance of Michelson inter
 **Sensitivity and Measurement Principles**
 
 The key principle behind the Michelson Interferometer is wave superposition. When two coherent light waves with the same frequency but different phases combine, the resulting intensity depends on their phase relationship:
-- Constructive interference (bright fringes): Path difference = nλ (where n is an integer)
-- Destructive interference (dark fringes): Path difference = (n + 1/2)λ
+- Constructive interference (bright fringes): Path difference $$= n\lambda$$ (where n is an integer)
+- Destructive interference (dark fringes): Path difference $$= (n + 1/2)\lambda$$
 
 **Historical Significance - Michelson-Morley Experiment**
 
@@ -208,66 +204,10 @@ Remove the pinhole and set other base plates as shown. These are the variable an
 ![](./IMAGES/image29.jpg)
 ![](./IMAGES/image16.jpg)
 
-## Step 2: Electronics
 
-### 2.1: Plug in the Electronics as Shown Below
+## Step 2: Aligning the Michelson Interferometer
 
-**⚠️ Caution!**
-If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!
-
-*TODO: Add complete electronic setup image showing every wire connected correctly*
-
-- Connect the laser diode to the Mainboard at designated port
-- Connect the camera to your PC via USB
-- *TODO: Add specific connection instructions for motorized components if available*
-
-- Plug in the micro-USB at your ESP32 and connect to your PC.
-- Plug in the 12V power cable.
-
-### 2.2: Flashing the ESP32 Firmware
-
-1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (most likely **ESP32-DEV-based UC2 standalone board V3 (beta)**), then click on the `connect` button.
-
-The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
-
-2. Connect the ESP32 to your computer using the micro-USB cable.
-
-3. In your Chrome browser, a dialog will prompt you to select the COM port for your ESP32, which should be shown as `CP2102 USB to UART Bridge Controller`. Once connected, you can install the latest firmware by simply clicking the "Install" button.
-
-4. Wait until the firmware has been successfully flashed.
-
-### 2.3: Connecting to the Web Interface
-
-1. After flashing the firmware, go to the testing section on the same website.
-
-2. Connect to your ESP32 board using the "Connect" button again, ensuring the correct COM port is selected.
-
-3. Once connected, test the system by sending a simple command:
-
-```json
-{"task":"/motor_act", "motor": { "steppers": [ { "stepperid": 3, "position": -1000, "speed": 1000, "isabs": 0, "isaccel": 0} ] } }
-```
-
-This command will move the Z-axis motor by -1000 steps (1 full rotation) at a speed of 1000 steps per second. Each step corresponds to a movement of 300nm when using microstepping.
-
-**Note:** Ensure that the command string has no line breaks.
-
-### 2.4: Testing in the Web Interface
-
-1. After completing the test, go back to the first tab to control the other components via buttons:
-   - `Laser 1(on)` and `Laser 1(off)` control the laser diode.
-   - `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
-   - `Motor X(+)/Y(+)/A(+)` and `Motor X(-)/Y(-)/A(-)` control the XYZ-stage.
-
-### 2.5: Setup and Use the Camera Software
-
-1. Connect the camera via cable to your PC.
-
-2. For the installation process and usage of the software, follow these instructions: [Install MVS App for Camera Utilization](https://openuc2.github.io/docs/Electronics/HIKCamera/SoftwareTutorial)
-
-## Step 3: Aligning the Michelson Interferometer
-
-### 3.1: Align and Observe the Interference
+### 2.1: Align and Observe the Interference
 
 Place the screen after the pinhole, turn the laser on. You will see two beam spots, one from each mirror. Adjust the movable mirror angles with the screwdriver so that you can see an improvement in brightness of one of the spots and look for the maximum.
 
@@ -276,22 +216,22 @@ Place the screen after the pinhole, turn the laser on. You will see two beam spo
 ![](./IMAGES/image47.jpg)
 ![](./IMAGES/image115.jpg)
 
-### 3.2: Adjust the Reference Mirror
+### 2.2: Adjust the Reference Mirror
 
 Adjust the screws of the reference mirror so that the two beams overlap as much as possible.
 
 ![](./IMAGES/image91.jpg)
 ![](./IMAGES/image88.jpg)
 
-### 3.3: Observe the Interference Pattern
+### 2.3: Observe the Interference Pattern
 
 Remove the pinhole and place the screen only. You will see two extended beams. Adjust the reference mirror screws to overlap the beams perfectly. You will see the interference pattern emerging. Then try to center the pattern on the screen. Turn the laser off.
 
 ![](./IMAGES/image66.jpg)
-![](./IMAGES/image43.jpg)
+![](./IMAGES/image42.jpg)
 ![](./IMAGES/image122.jpg)
 
-### 3.4: Set up the Camera
+### 2.4: Set up the Camera
 
 Place the camera and fix it with the base plates. Connect it to the computer and open the MV Software. To check the MVS tutorial click [here](Camera_Software_tutorial.md).
 
@@ -299,31 +239,12 @@ Place the camera and fix it with the base plates. Connect it to the computer and
 ![](./IMAGES/image42.jpg)
 ![](./IMAGES/image14.jpg)
 
-### 3.5: Adjust the Camera Exposure
+### 2.5: Adjust the Camera Exposure
 
 Adjust the exposure time of the camera. You should see a fringe pattern. Try to adjust the reference mirror screws finely to bring the center of the interference pattern to the center of the camera.
 
 ![](./IMAGES/image113.png)
 ![](./IMAGES/image80.png)
-
-## Step 4: Install ImSwitch (optional)
-
-#### 1. Installation process
-
-For this, please refer to the installation instructions [here](https://openuc2.github.io/docs/ImSwitch/Quickstart).
-
-On top of this, you can use the following `ImSwitchClient` template to remote control your microscopy using google colab or jupyter notebook. This gives some hints on the use of the API:
-
-<a target="_blank" href="https://colab.research.google.com/drive/1W3Jcw4gFn0jtQXa3_2aCtJYJglMNGkXr?usp=sharing">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
-
-This makes use of the default URL hosted publicly on https://imswitch.openuc2.com/imswitch/index.html, but you can change this to the `PORT` (i.e. 8001) and `URL` (e.g. the Raspberry Pi's IP address that runs ImSwitch in docker and is in the same network as your computer).
-
-**Your Setup is complete, now let's start the Experiments**
-
----
----
 
 ## Experiment 1: Basic Interference Pattern Observation
 
@@ -359,7 +280,10 @@ Count the number of bright fringes that pass a fixed point as you move the mirro
 
 ### 2.3: Calculate Distance Moved
 
-Use the relationship: Distance moved = (Number of fringes × λ) / 2
+Use the relationship: 
+$$
+\text{Distance moved} = \frac{\text{Number of fringes} \times \lambda}{2}
+$$
 The factor of 2 accounts for the double pass through the moving arm.
 
 ## Experiment 3: Coherence Length Measurement
@@ -374,7 +298,11 @@ The coherence length is approximately equal to the path difference at which the 
 
 ### 3.3: Calculate Spectral Width
 
-Use the relationship: Coherence length = λ²/Δλ to estimate the spectral width of your laser.
+Use the relationship: 
+$$
+\text{Coherence length} = \frac{\lambda^2}{\Delta\lambda}
+$$
+to estimate the spectral width of your laser.
 
 ---
 

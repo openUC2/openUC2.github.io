@@ -5,9 +5,9 @@ title: UC2 miniBOX (deutsch)
 
 ## Was ist in der MiniBOX enthalten?
 
-::: tip
-Wir haben dieses Dokument in eine ***PDF***-Datei kompiliert, die <a href="/MINIBOX/Manual_Corebox_DE.pdf" target="_blank" >hier</a> heruntergeladen werden kann.
-:::
+<div style="border-left: 4px solid red; background: #ffe6e6; padding: 1em; margin: 1em 0;">
+  <strong>🔥 TIPP:</strong> Wir haben dieses Dokument in eine <em>PDF</em>-Datei kompiliert, die <a href="/MINIBOX/Manual_Corebox_DE.pdf" target="_blank">hier</a> heruntergeladen werden kann.
+</div>
 
 **Probenhalter:** hält ein Objekt in einem Würfel\
 **Linse:** beeinflusst die Art und Weise, wie Licht verbreitet wird\

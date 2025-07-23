@@ -5,7 +5,7 @@ title: UC2 miniBOX (deutsch)
 
 ## Was ist in der MiniBOX enthalten?
 
-:::warning
+::: tip
 Wir haben dieses Dokument in eine ***PDF***-Datei kompiliert, die <a href="/MINIBOX/Manual_Corebox_DE.pdf" target="_blank" >hier</a> heruntergeladen werden kann.
 :::
 

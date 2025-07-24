@@ -1,3 +1,113 @@
+name: Generate Documentation PDFs
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag name for the release (e.g., v1.2.3)'
+        required: true
+      release_name:
+        description: 'Release title'
+        required: false
+      body:
+        description: 'Release notes/body'
+        required: false
+      prerelease:
+        description: 'Mark as prerelease'
+        type: boolean
+        required: false
+        default: false
+
+jobs:
+  generate-pdfs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '19'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chrome for Puppeteer
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser xvfb
+          
+      - name: Configure Chrome for headless mode
+        run: |
+          echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser" >> $GITHUB_ENV
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+
+      - name: Start virtual display
+        run: |
+          Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+
+      - name: Enable PDF generation in config
+        run: |
+          sed -i 's/autoBuildPdfs: false/autoBuildPdfs: true/' docusaurus.config.js
+
+      - name: Build documentation with PDFs
+        run: npm run build
+
+      - name: Create PDF artifacts directory structure
+        run: |
+          mkdir -p pdf-artifacts/CoreBox
+          mkdir -p pdf-artifacts/ElectronicsBox
+          mkdir -p pdf-artifacts/InfinityBox
+          mkdir -p pdf-artifacts/DiscoveryFluorescence
+          mkdir -p pdf-artifacts/LightsheetBox
+          mkdir -p pdf-artifacts/QBox
+          mkdir -p pdf-artifacts/SeeedMicroscope
+
+      - name: Copy generated PDFs
+        run: |
+          if [ -d "build/pdfs" ]; then
+            cp -r build/pdfs/* pdf-artifacts/ 2>/dev/null || true
+            
+            find build/pdfs -name "*CoreBox*EN*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*CoreBox*DE*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*CoreBox*FR*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*CoreBox*ES*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*CoreBox*AR*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*core*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
+            
+            find build/pdfs -name "*Electronics*" -exec cp {} pdf-artifacts/ElectronicsBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*electronics*" -exec cp {} pdf-artifacts/ElectronicsBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*Infinity*" -exec cp {} pdf-artifacts/InfinityBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*infinity*" -exec cp {} pdf-artifacts/InfinityBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*Fluorescence*" -exec cp {} pdf-artifacts/DiscoveryFluorescence/ \; 2>/dev/null || true
+            find build/pdfs -name "*fluorescence*" -exec cp {} pdf-artifacts/DiscoveryFluorescence/ \; 2>/dev/null || true
+            find build/pdfs -name "*Lightsheet*" -exec cp {} pdf-artifacts/LightsheetBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*lightsheet*" -exec cp {} pdf-artifacts/LightsheetBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*QBox*" -exec cp {} pdf-artifacts/QBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*qbox*" -exec cp {} pdf-artifacts/QBox/ \; 2>/dev/null || true
+            find build/pdfs -name "*Seeed*" -exec cp {} pdf-artifacts/SeeedMicroscope/ \; 2>/dev/null || true
+            find build/pdfs -name "*seeed*" -exec cp {} pdf-artifacts/SeeedMicroscope/ \; 2>/dev/null || true
+            
+            echo "Generated PDFs:"
+            find pdf-artifacts -name "*.pdf" -type f | sort
+            PDF_COUNT=$(find pdf-artifacts -name "*.pdf" -type f | wc -l)
+            echo "Total PDFs generated: $PDF_COUNT"
+          else
+            echo "No PDFs directory found in build output"
+            echo "Checking build structure:"
+            ls -la build/ 2>/dev/null || echo "No build directory found"
+          fi
+
+      - name: Upload PDFs as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation-pdfs-${{ github.run_number }}
+          path: pdf-artifacts/
+          if-no-files-found: warn
       - name: Prepare release variables
         id: relvars
         run: |

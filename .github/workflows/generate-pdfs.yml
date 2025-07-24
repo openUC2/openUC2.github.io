@@ -3,7 +3,22 @@ name: Generate Documentation PDFs
 on:
   release:
     types: [published]
-  workflow_dispatch:  # Allow manual triggering
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag name for the release (e.g., v1.2.3)'
+        required: true
+      release_name:
+        description: 'Release title'
+        required: false
+      body:
+        description: 'Release notes/body'
+        required: false
+      prerelease:
+        description: 'Mark as prerelease'
+        type: boolean
+        required: false
+        default: false
 
 jobs:
   generate-pdfs:
@@ -55,11 +70,8 @@ jobs:
       - name: Copy generated PDFs
         run: |
           if [ -d "build/pdfs" ]; then
-            # Copy all PDFs to main artifacts directory
             cp -r build/pdfs/* pdf-artifacts/ 2>/dev/null || true
             
-            # Organize PDFs by toolbox if they exist
-            # CoreBox PDFs for different languages
             find build/pdfs -name "*CoreBox*EN*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
             find build/pdfs -name "*CoreBox*DE*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
             find build/pdfs -name "*CoreBox*FR*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
@@ -67,7 +79,6 @@ jobs:
             find build/pdfs -name "*CoreBox*AR*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
             find build/pdfs -name "*core*" -exec cp {} pdf-artifacts/CoreBox/ \; 2>/dev/null || true
             
-            # Other toolbox PDFs
             find build/pdfs -name "*Electronics*" -exec cp {} pdf-artifacts/ElectronicsBox/ \; 2>/dev/null || true
             find build/pdfs -name "*electronics*" -exec cp {} pdf-artifacts/ElectronicsBox/ \; 2>/dev/null || true
             find build/pdfs -name "*Infinity*" -exec cp {} pdf-artifacts/InfinityBox/ \; 2>/dev/null || true
@@ -81,11 +92,8 @@ jobs:
             find build/pdfs -name "*Seeed*" -exec cp {} pdf-artifacts/SeeedMicroscope/ \; 2>/dev/null || true
             find build/pdfs -name "*seeed*" -exec cp {} pdf-artifacts/SeeedMicroscope/ \; 2>/dev/null || true
             
-            # List what was found
             echo "Generated PDFs:"
             find pdf-artifacts -name "*.pdf" -type f | sort
-            
-            # Count PDFs
             PDF_COUNT=$(find pdf-artifacts -name "*.pdf" -type f | wc -l)
             echo "Total PDFs generated: $PDF_COUNT"
           else
@@ -101,10 +109,14 @@ jobs:
           path: pdf-artifacts/
           if-no-files-found: warn
 
-      - name: Attach PDFs to release
-        if: github.event_name == 'release' && hashFiles('pdf-artifacts/**/*.pdf') != ''
+      - name: Create or update release with PDFs
+        if: hashFiles('pdf-artifacts/**/*.pdf') != ''
         uses: softprops/action-gh-release@v1
         with:
           files: pdf-artifacts/**/*.pdf
+          tag_name: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.event.release.tag_name }}
+          name: ${{ github.event_name == 'workflow_dispatch' && (inputs.release_name != '' && inputs.release_name || inputs.tag) || github.event.release.name }}
+          body: ${{ github.event_name == 'workflow_dispatch' && inputs.body || github.event.release.body }}
+          prerelease: ${{ github.event_name == 'workflow_dispatch' && inputs.prerelease || github.event.release.prerelease }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

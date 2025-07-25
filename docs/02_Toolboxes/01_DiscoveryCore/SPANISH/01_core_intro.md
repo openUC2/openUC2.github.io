@@ -4,7 +4,7 @@ title: UC2 miniBOX
 ---
 ## ¿Qué hay en la MiniBOX?
 
-:::warning
+:::tip
 Hemos compilado este documento en un ***PDF*** que se puede descargar <a href="/MINIBOX/Manual_Corebox_EM.pdf" target="_blank" >aquí</a>
 :::
 

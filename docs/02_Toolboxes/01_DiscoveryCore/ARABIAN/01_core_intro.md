@@ -5,7 +5,7 @@ title: UC2 miniBOX (العربية)
 
 ## ماذا يوجد في MiniBOX؟
 
-:::تحذير
+:::tip
 لقد قمنا بتجميع هذا المستند في ***ملف PDF*** يمكن تنزيله <a href="/MINIBOX/Manual_Corebox_EM.pdf" target="_blank" >هنا</a>
 :::
 

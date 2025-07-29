@@ -133,13 +133,46 @@ The Michelson Interferometer remains an essential tool in modern optics and has 
 - **Optical coherence tomography (OCT)**: Medical imaging applications
 
 
-## Tutorial: Michelson Interferometer
 
+## Tutorial: Michelson Interferometer (**UPDATED**)
+
+
+![](./IMAGES/MichelsonStepByStep/Michelson_Interferometer_1.jpg)
+*This is the content of the Quantum Box*
+
+![](./IMAGES/MichelsonStepByStep/Michelson_Interferometer_2.jpg)
+*Take out the necessary components for the interferometer*
+
+![](./IMAGES/MichelsonStepByStep/Michelson_Interferometer_3.jpg)
+*Start with the laser and place it on the plate at this very location (don't turn it on yet)*
+
+![](./IMAGES/MichelsonStepByStep/Michelson_Interferometer_4.jpg)
+*We will expand the beam with the lens by focussing the beam and then letting it converge towards the beamsplitter. (actually the orientation in the image is wrong by 90° :D)*
+
+![](./IMAGES/MichelsonStepByStep/Michelson_Interferometer_5.jpg)
+*Ensure the kinematic beamsplitter is oriented such that it's in the 0/90° position*
+
+![](./IMAGES/MichelsonStepByStep/Michelson_Interferometer_6.jpg)
+*Place the static and kinematic beamsplitters next to the cube. this is already forming the interferomter*
+
+![](./IMAGES/MichelsonStepByStep/Michelson_Interferometer_8.jpg)
+*Add the screen*
+
+![](./IMAGES/MichelsonStepByStep/Michelson_Interferometer_9.jpg)
+*Turn on the laser and align the screws of the kinamtic mirrors such that the two beams are exactly on top of each other*
+
+![](./IMAGES/MichelsonStepByStep/Michelson_Interferometer_10.jpg)
+*Once you are very close to the interfernce pattern, you will start seeing the fringes and then rings*
+
+
+## Tutorial: Michelson Interferometer (**OLD VERSION**)
+
+There is a newer version of the alignment procedure after this one.
 ![](./IMAGES/image82.png)
 
 *Image of all the components needed for the Michelson Interferometer setup*
 
-## Step 1: Assemble the Optical Components
+### Step 1: Assemble the Optical Components
 
 This guide will walk you through the assembly step by step. You can follow the process according to the functional modules or refer to the diagram above for orientation.
 
@@ -151,7 +184,7 @@ NEVER SWITCH ON THE LASER WITHOUT INTENDED USE
 
 BEAM HAS TO GO AWAY FROM ONESELF - ALWAYS!
 
-### 1.1: Build a Four Base Plate Configuration
+#### 1.1: Build a Four Base Plate Configuration
 
 Build a four base plate as shown. This will be used to connect the laser diode, pinhole, the beamsplitter, and an empty cube. Add the base plates to fix them.
 
@@ -160,19 +193,19 @@ Build a four base plate as shown. This will be used to connect the laser diode, 
 ![](./IMAGES/image65.png)
 ![](./IMAGES/image41.png)
 
-### 1.2: Place the Pinhole
+#### 1.2: Place the Pinhole
 
 Place the pinhole such that it is as far as possible from the laser diode.
 
 ![](./IMAGES/image37.png)
 
-### 1.3: Close the Diaphragm
+#### 1.3: Close the Diaphragm
 
 Close the diaphragm as much as possible to end up with a small hole for spatial filtering.
 
 ![](./IMAGES/image102.jpg)
 
-### 1.4: Place the Screen and Align the Laser
+#### 1.4: Place the Screen and Align the Laser
 
 Place the screen after the pinhole and turn the laser on. The alignment is most likely off. To align the laser you should use the screwdriver and adjust the laser mount screws so that the beam is centered on the pinhole. Turn the laser off.
 
@@ -180,7 +213,7 @@ Place the screen after the pinhole and turn the laser on. The alignment is most 
 ![](./IMAGES/image108.jpg)
 ![](./IMAGES/image94.jpg)
 
-### 1.5: Replace the Pinhole with a Kinematic Mirror
+#### 1.5: Replace the Pinhole with a Kinematic Mirror
 
 Without touching the screws of the laser, remove the pinhole from the group of cubes and add a kinematic mirror instead.
 
@@ -188,7 +221,7 @@ Without touching the screws of the laser, remove the pinhole from the group of c
 ![](./IMAGES/image51.jpg)
 ![](./IMAGES/image23.jpg)
 
-### 1.6: Align the Beam with the Pinhole
+#### 1.6: Align the Beam with the Pinhole
 
 Using the top and bottom base plates, place the pinhole after the beamsplitter connecting the pinhole and the kinematic mirror in a straight line. Place the screen after the pinhole, turn the laser on and align the beam to the center of the pinhole as shown. Turn the laser off.
 
@@ -196,7 +229,7 @@ Using the top and bottom base plates, place the pinhole after the beamsplitter c
 ![](./IMAGES/image35.jpg)
 ![](./IMAGES/image73.jpg)
 
-### 1.7: Set the Michelson Interferometer Arms
+#### 1.7: Set the Michelson Interferometer Arms
 
 Remove the pinhole and set other base plates as shown. These are the variable and reference arms of the Michelson interferometer. Place the reference and movable mirrors as shown. Place the pinhole in the detection spot. Fix everything with base plates.
 
@@ -205,9 +238,9 @@ Remove the pinhole and set other base plates as shown. These are the variable an
 ![](./IMAGES/image16.jpg)
 
 
-## Step 2: Aligning the Michelson Interferometer
+### Step 2: Aligning the Michelson Interferometer
 
-### 2.1: Align and Observe the Interference
+#### 2.1: Align and Observe the Interference
 
 Place the screen after the pinhole, turn the laser on. You will see two beam spots, one from each mirror. Adjust the movable mirror angles with the screwdriver so that you can see an improvement in brightness of one of the spots and look for the maximum.
 
@@ -216,14 +249,14 @@ Place the screen after the pinhole, turn the laser on. You will see two beam spo
 ![](./IMAGES/image47.jpg)
 ![](./IMAGES/image115.jpg)
 
-### 2.2: Adjust the Reference Mirror
+#### 2.2: Adjust the Reference Mirror
 
 Adjust the screws of the reference mirror so that the two beams overlap as much as possible.
 
 ![](./IMAGES/image91.jpg)
 ![](./IMAGES/image88.jpg)
 
-### 2.3: Observe the Interference Pattern
+#### 2.3: Observe the Interference Pattern
 
 Remove the pinhole and place the screen only. You will see two extended beams. Adjust the reference mirror screws to overlap the beams perfectly. You will see the interference pattern emerging. Then try to center the pattern on the screen. Turn the laser off.
 
@@ -231,7 +264,7 @@ Remove the pinhole and place the screen only. You will see two extended beams. A
 ![](./IMAGES/image42.jpg)
 ![](./IMAGES/image122.jpg)
 
-### 2.4: Set up the Camera
+#### 2.4: Set up the Camera
 
 Place the camera and fix it with the base plates. Connect it to the computer and open the MV Software. To check the MVS tutorial click [here](Camera_Software_tutorial.md).
 
@@ -239,7 +272,7 @@ Place the camera and fix it with the base plates. Connect it to the computer and
 ![](./IMAGES/image42.jpg)
 ![](./IMAGES/image14.jpg)
 
-### 2.5: Adjust the Camera Exposure
+#### 2.5: Adjust the Camera Exposure
 
 Adjust the exposure time of the camera. You should see a fringe pattern. Try to adjust the reference mirror screws finely to bring the center of the interference pattern to the center of the camera.
 
@@ -280,7 +313,7 @@ Count the number of bright fringes that pass a fixed point as you move the mirro
 
 ### 2.3: Calculate Distance Moved
 
-Use the relationship: 
+Use the relationship:
 $$
 \text{Distance moved} = \frac{\text{Number of fringes} \times \lambda}{2}
 $$
@@ -298,7 +331,7 @@ The coherence length is approximately equal to the path difference at which the 
 
 ### 3.3: Calculate Spectral Width
 
-Use the relationship: 
+Use the relationship:
 $$
 \text{Coherence length} = \frac{\lambda^2}{\Delta\lambda}
 $$

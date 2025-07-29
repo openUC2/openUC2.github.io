@@ -19,6 +19,11 @@ This section contains comprehensive installation guides for ImSwitch, covering d
    - All dependencies included
    - Ready-to-use microscope system
 
+4. **[ImSwitch Installer](./Installer.md)** - Standalone Application
+    - Installs MiniConda
+    - Installs latest ImSwitch Pip Package
+    - Runs in an Electron APP
+    
 ## Quick Start
 
 For most users, we recommend starting with the **Docker installation** as it provides the easiest setup experience with all dependencies pre-configured.

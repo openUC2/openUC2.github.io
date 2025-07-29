@@ -8,9 +8,9 @@ The ImSwitch Installer is an Electron-based application designed to streamline t
 
 **NEW:** ImSwitch now runs as a web-based application embedded within the installer window. No external browser required.
 
----
 
-## 📦 Installation Process
+
+## Installation Process
 
 ### 1. Download the Installer
 
@@ -81,12 +81,12 @@ Go to the [ImSwitch Installer releases](https://github.com/openUC2/ImSwitchInsta
 ![](../IMAGES/Installer/Installer_18.png)
 *Explore the API documentation at [http://localhost:8001/docs](http://localhost:8001/docs) via Swagger UI.*
 
-Watch the full installation process here:
+Watch the full installation process here (**OUTDATED**):
 [![Installation Video](https://i3.ytimg.com/vi/N4P1sH2E9RU/maxresdefault.jpg)](https://www.youtube.com/watch?v=N4P1sH2E9RU?si=jyhAzLshAbg26YHu)
 
----
 
-## 🔧 Features
+
+## Features
 
 * **One-Click Installation** with auto dependency resolution
 * **Cross-platform:** macOS, Windows, Linux
@@ -95,9 +95,9 @@ Watch the full installation process here:
 * **Configurable Git/PIP Update System**
 * **Easy Uninstallation:** Just delete the ImSwitch folder
 
----
 
-## 🔄 Updating ImSwitch
+
+## Updating ImSwitch
 
 * Update source code via Git (ImSwitch, UC2-REST)
 * Update Python packages via pip (from GitHub archives or local path)
@@ -105,9 +105,9 @@ Watch the full installation process here:
 
 Just click **Update** in the installer to trigger this.
 
----
 
-## 📸 Driver Installation
+
+## Driver Installation
 
 Use the "Driver Installation" button in the menu to install:
 
@@ -116,16 +116,16 @@ Use the "Driver Installation" button in the menu to install:
 
 Make sure drivers are installed **before** starting ImSwitch.
 
----
+
 
 ## 💡 Upcoming Features
 
 * Flash UC2 firmware directly from the installer
 * Drag-and-drop GUI builder for hardware configurations
 
----
 
-## 🛠️ Install from Source
+
+## Install from Source
 
 ```bash
 # Clone repository
@@ -142,9 +142,9 @@ npm start
 npm run dist
 ```
 
----
 
-## 🤖 Automated Builds
+
+## Automated Builds
 
 GitHub Actions build the app for all platforms:
 
@@ -154,9 +154,9 @@ GitHub Actions build the app for all platforms:
 
 Releases are created automatically for new commits on `main`. Pre-releases are available for testing pull requests.
 
----
 
-## 🐍 Debugging
+
+## Debugging
 
 ### Python Environment Paths
 
@@ -165,20 +165,20 @@ Releases are created automatically for new commits on `main`. Pre-releases are a
 * **Package folder:** `.../site-packages/imswitch`
 * **Conda usage:** `mamba install devbio-napari -c conda-forge`
 
----
 
-## 📜 License and Attribution
+
+## License and Attribution
 
 This installer builds on [BellJar](https://github.com/danmarshall/belljar). Big thanks to the original authors for their open-source contribution!
 
----
 
-## 💬 Feedback & Support
+
+## Feedback & Support
 
 * Post issues on [GitHub](https://github.com/openUC2/ImSwitchInstaller/issues)
 * Join the discussion at [openuc2.discourse.group](https://openuc2.discourse.group)
 * Check the main website: [openUC2.com](https://openUC2.com)
 
----
+
 
 Continue with [Configuration](../03_Configuration/README.md) to set up your specific hardware.

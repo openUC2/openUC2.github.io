@@ -84,7 +84,23 @@ Go to the [ImSwitch Installer releases](https://github.com/openUC2/ImSwitchInsta
 Watch the full installation process here (**OUTDATED**):
 [![Installation Video](https://i3.ytimg.com/vi/N4P1sH2E9RU/maxresdefault.jpg)](https://www.youtube.com/watch?v=N4P1sH2E9RU?si=jyhAzLshAbg26YHu)
 
+## Installer on Mac
 
+
+
+![](../IMAGES/Installer/SETUP1.png)
+
+![](../IMAGES/Installer/SETUP2.png)
+
+![](../IMAGES/Installer/SETUP3.png)
+
+![](../IMAGES/Installer/SETUP4.png)
+
+![](../IMAGES/Installer/SETUP5.png)
+
+![](../IMAGES/Installer/SETUP6.png)
+
+![](../IMAGES/Installer/SETUP7.png)
 
 ## Features
 

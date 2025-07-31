@@ -8,6 +8,7 @@ The FRAME Microscopes have been designed, produced and tested in compliance with
 - **EC Directive IVDD 98/79/EC** - In Vitro Diagnostic Medical Devices
 
 The instruments meet the requirements and are marked with the **CE** mark.
+ToDo Armin 250731: CE mark not yet on the FRAME, correct?
 
 ## Important Safety Information
 

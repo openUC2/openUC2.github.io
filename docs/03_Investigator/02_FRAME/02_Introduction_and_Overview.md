@@ -101,7 +101,7 @@ The modular approach contributes to sustainability on multiple levels:
 ### Open Source Benefits
 
 - **Global Accessibility**: Electronic platforms can be replicated worldwide, including in resource-limited regions
-- **Knowledge Sharing**: Open documentation promotes global access to high technology
+- **Knowledge Sharing**: Open documentation promotes global access to high-end technology
 - **Community Development**: Active community ensures continuous improvement and support
 - **Local Repairs**: Using 3D printing and digital fabrication, broken parts can be repaired on site
 

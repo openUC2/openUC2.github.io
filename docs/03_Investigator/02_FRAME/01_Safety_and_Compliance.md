@@ -83,10 +83,14 @@ ToDo Armin 250731: Was hat #5 mit Mechanical Safety zu tun?
 - **Altitude**: Up to 2000m above sea level
 - **Pollution Degree**: 2 (normal laboratory environment)
 
+ToDo Armin 250731: Haben wir dazu irgendwelche Tests gemacht?
+
 ### Storage Environment
 
 - **Temperature**: -10°C to 60°C (14°F to 140°F)
 - **Humidity**: 10% to 95% relative humidity, non-condensing
+
+ToDo Armin 250731: Haben wir dazu irgendwelche Tests gemacht?
 
 ## Intended Use
 

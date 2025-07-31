@@ -42,7 +42,7 @@ This product complies with the following European Directives and Standards:
 - **EN 55011** (Electromagnetic compatibility)
 
 The CE marking indicates conformity with applicable regulations.
-
+ToDo Armin 250731: Have we checked and tested this all
 ---
 
 ## Important Safety Notice

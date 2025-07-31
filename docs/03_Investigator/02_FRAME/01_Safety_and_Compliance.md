@@ -66,6 +66,8 @@ This symbol warns of electrical hazards. Ensure proper grounding and follow elec
 4. **Sharp Edges**: Be aware of sharp edges on optical components and mounts
 5. **Rapid Prototyping**: Customize optical systems
 
+ToDo Armin 250731: Was hat #5 mit Mechanical Safety zu tun?
+
 ### Chemical Safety
 
 1. **Sample Preparation**: Follow appropriate chemical safety procedures when preparing samples

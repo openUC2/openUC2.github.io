@@ -41,7 +41,7 @@ This product complies with the following European Directives and Standards:
 - **IEC 61010-1** (Safety requirements for electrical equipment)
 - **EN 55011** (Electromagnetic compatibility)
 
-The CE marking indicates conformity with applicable regulations.
+**The CE marking indicates conformity with applicable regulations.**
 ToDo Armin 250731: Have we checked and tested this all?
 ---
 

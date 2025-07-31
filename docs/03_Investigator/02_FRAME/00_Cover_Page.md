@@ -81,7 +81,7 @@ Hans-Knöll-Str. 6
 
 **Technical Support**: hello@openuc2.com  (openuc2.discourse.group)
 
-ToDo Armin 250731: Unter 01 haben wir support@openuc2.com für technisches Support, würde ich hier auch angeben.
+ToDo Armin 250731: Unter 01 haben wir support@openuc2.com für technischen Support, würde ich hier auch angeben.
 
 **Sales Information**: sales@openuc2.com  
 **General Information**: hello@openuc2.com  

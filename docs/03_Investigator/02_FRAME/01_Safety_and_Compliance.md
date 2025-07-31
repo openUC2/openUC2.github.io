@@ -62,7 +62,7 @@ This symbol warns of electrical hazards. Ensure proper grounding and follow elec
 
 1. **Moving Parts**: Keep hands and loose clothing away from moving parts
 2. **Sample Handling**: Use appropriate tools when handling samples
-3. **Weight**: Use proper lifting techniques when moving the microscope (~20Kg)
+3. **Weight**: Use proper lifting techniques when moving the microscope (~20kg)
 4. **Sharp Edges**: Be aware of sharp edges on optical components and mounts
 5. **Rapid Prototyping**: Customize optical systems
 

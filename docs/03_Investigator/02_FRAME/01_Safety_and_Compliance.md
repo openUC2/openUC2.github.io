@@ -133,6 +133,8 @@ Certain components of the FRAME system may be covered by patents. For current pa
 2. Do not touch exposed electrical components
 3. Contact qualified service personnel
 
+ToDo Armin 250731: Haben wir nicht generell einen Not-Aus oder nur im FLurosenzmodul mit Laser? Not AUs hier dann erwähnen.
+
 ### Fire Emergency
 1. Disconnect power immediately
 2. Use appropriate fire extinguisher 

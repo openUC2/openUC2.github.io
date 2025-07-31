@@ -11,7 +11,7 @@ The **FRAME** (Fast Rigid Automated Microscope Engine) represents a new approach
 The FRAME system is built on complete modularization of all components regarding mechanics, electronics, and software:
 
 - **Interchangeable Modules**: Cube modules can be freely exchanged to switch between brightfield, fluorescence, or interference microscopy
-- **Flexible Mechanics**: Allows both classical objective setups and free arrangement for special geometries
+- **Flexible Mechanics**: Allows both, classical objective setups and free arrangements for special geometries
 - **Smart Electronics**: Each cube can optionally have its own control unit for motors, galvo mirrors, or LEDs. All components share the same CAN BUS via 12V supply voltage.
 - **Open Interface**: System control via user-friendly graphical interface or programming interface (Python, REST, CAN BUS, USB)
 

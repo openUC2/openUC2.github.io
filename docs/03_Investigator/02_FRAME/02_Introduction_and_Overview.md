@@ -2,7 +2,7 @@
 
 ## What is the FRAME Microscope?
 
-The **FRAME** (Fast Rigid Automated Microscope Engine) represents a new approach to microscopy: an open, modular, automated, and flexibly adaptable microscope system. Based on the modular optics construction kit UC2 (You.See.Too.), the FRAME system lowers barriers to access complex optical and microscopy technology.
+The **FRAME** (Fast Rigid Automated Microscope Engine) represents a new approach to microscopy: an open, modular, automated, and flexibly adaptable microscope system. Based on UC2's (You.See.Too.) modular optics kit, the FRAME system lowers barriers to access complex optical and microscopy technology.
 
 ## System Philosophy
 

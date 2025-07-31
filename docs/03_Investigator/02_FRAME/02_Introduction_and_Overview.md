@@ -31,7 +31,7 @@ The FRAME system is built on complete modularization of all components regarding
 - **Precision XYZ System**: High-accuracy positioning and focusing mechanisms
 - **Removable Optics Unit**: Modular design allows easy reconfiguration
 - **Slide-In System**: Standardized 50mm cubes with quick-exchange capability
-- **Linear Objective Revolver**: Decide between two different magnifications/resolutions
+- **Linear Objective Revolver**: Switch between two different magnifications/resolutions
 
 ### Electronic Architecture
 

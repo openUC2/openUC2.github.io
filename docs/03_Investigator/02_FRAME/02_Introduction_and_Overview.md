@@ -62,6 +62,7 @@ The FRAME system integrates with several software platforms:
 
 1. **Quality Control**: Materials inspection and defect analysis
 2. **Semiconductor Industry**: Wafer inspection and process control
+ToDo Armin 250731: Würde ich rauslassen, Wafer auf unserem Mikroskop zu handeln, geht aktuell nicht und dafür müssten wir einige gavierende Änderungen machen. Ist nicht unsere Zielgruppe.
 3. **Biotechnology**: Process monitoring and product validation
 4. **Education**: Modern imaging technique visualization in teaching and training
 

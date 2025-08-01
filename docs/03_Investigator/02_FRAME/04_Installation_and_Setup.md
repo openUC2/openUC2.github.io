@@ -93,6 +93,7 @@ ToDo Armin 250801: Was ist damit gemeint? Haben wir das?
    - Temperature: 15°C to 35°C
    - Humidity: 30% to 80% RH, non-condensing
    - Clean environment, minimal dust
+
 ToDo Armin 250801: Specs aus Safety und compliance/enironmental conditions übernehmen? Pollution Degree: 2 (normal laboratory environment)
 
 ## Component Installation

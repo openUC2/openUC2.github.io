@@ -143,12 +143,17 @@ Frontend-only:
 - **Atmospheric Pressure**: 86 kPa to 106 kPa
 - **Altitude**: Up to 2000 m above sea level
 
+ToDo Armin 250801: Unter 01 haben wir auch Angaben zu operating conditions und dort temperature 15-35°C, hier 5-38° => inkonsistent => welche haben wir? Und auch jeweils andere Angaben
+
 #### Storage Conditions
 - **Temperature**: -10°C to 60°C (14°F to 140°F)
 - **Humidity**: 10% to 95% relative humidity, non-condensing
 
 #### Installation Requirements
 - **Vibration**: Isolated surface recommended for best performance
+
+ToDo Armin 250801: Was heißt isolated surface, kann man das anders/genauer spezifizieren?
+
 - **Space**: 1 m × 1.5 m minimum work area
 - **Power**: 230V AC, 50/60 Hz (or 115V AC with adapter)
 - **Ventilation**: Natural convection (no forced ventilation required)
@@ -165,11 +170,16 @@ Frontend-only:
 - **Positioning Accuracy**: ±0.05mm repeatability
 - **Locking Mechanism**: Spring-loaded detent system
 
+ToDo 250801: Einige der Angaben verstehe ich nicht, bitte mir kurz erklären, dann kann ich einschätzen, ob die Beschreibung für Kunden verständlich genug ist.
+
 #### Cube Modules (Standard 50mm)
 
 #### Mechanical Specifications
 - **Dimensions**: 50 × 50 × 50 mm
 - **Material**: Anodized aluminum or 3D-printed PLA/PETG
+
+ToDo Armin 250801: Wird es wirklich Aluminiumwürfel geben? Oder auf was bezieht sich die Angabe?
+
 - **Precision**: ±0.1 mm dimensional accuracy
 - **Interface**: Dovetail connection system
 - **Mounting**: Threaded inserts M3 and M4 compatible
@@ -197,6 +207,8 @@ Frontend-only:
 - **Acceleration**: Programmable, up to 100 mm/s²
 - **Load Capacity**: 2 kg maximum
 
+ToDo Armin 250801: Angaben sind nicht konistent zu Angaben weiter oben unter XYZ Positioning System => konsistent machen
+
 ### Focus System
 
 #### Motorized Focus
@@ -205,6 +217,8 @@ Frontend-only:
 - **Speed**: 0.1 μm/s to 5 mm/s
 - **Repeatability**: ±0.1 μm
 - **Autofocus**: Laser-based or image-based
+
+ToDo Armin 250801: Autofocus is optional => hier erwähnen
 
 ## Compatibility and Standards
 

@@ -23,6 +23,8 @@ ToDo Armin 250801: Noch alle elektrischen und optischen Schnittstellen beschrift
 | Height | 250 mm  |
 | Weight | 20 kg |
 
+Armin ToDo 250801: Die Dimensionen stimmen nicht, Grundplatte ist ca. 300x300, noch mal im Büro nachmessen
+
 ### Mechanical Specifications
 
 #### Frame Construction

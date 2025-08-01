@@ -68,9 +68,11 @@ Todo Armin 250801: Absatz ergänzt
    - Place frame on designated work surface
    - Ensure all adjustment feet make contact with surface
    - Do not overtighten adjustment feet
+ToDo Armin 250801: Was ist damit gemeint?
 
 2. **Level the System**:
    - Use built-in bubble level or digital level
+ToDo Armin 250801: Was ist damit gemeint? Haben wir das?
    - Adjust feet until level in both X and Y directions
    - Verify stability by gently pressing corners
    - Re-check level after 30 minutes
@@ -78,7 +80,7 @@ Todo Armin 250801: Absatz ergänzt
 3. **Surface Requirements**:
    - Stable, level surface capable of supporting 50 kg
    - Minimal vibration environment
-   - Away from air conditioning vents and heat sources
+   - Place away from air conditioning vents and heat sources
    - Good lighting for assembly work
 
 4. **Power Requirements**:
@@ -91,6 +93,7 @@ Todo Armin 250801: Absatz ergänzt
    - Temperature: 15°C to 35°C
    - Humidity: 30% to 80% RH, non-condensing
    - Clean environment, minimal dust
+ToDo Armin 250801: Specs aus Safety und compliance/enironmental conditions übernehmen? Pollution Degree: 2 (normal laboratory environment)
 
 ![](./IMAGES/04/FRAME_Manual_3.jpeg)
 *Package contents: The FRAME, emergency stop, power supply, USB cables (camera, ESP32) and illumination arm*

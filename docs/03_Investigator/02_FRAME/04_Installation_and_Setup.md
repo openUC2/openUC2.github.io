@@ -10,7 +10,56 @@ Before beginning installation, ensure you have:
 - [ ] Organized necessary tools (see Tool Requirements below)
 - [ ] Verified power supply compatibility in [Technical Specifications](./03_Technical_Specifications.md)
 
+### Package Inspection
 
+1. **Upon Delivery**:
+   - Inspect packaging for damage during shipment
+   - Document any visible damage with photographs
+   - Check that all packages are received according to packing list
+
+2. **Unpacking Procedure**:
+   - Use proper lifting techniques (system weight: 25-35 kg)
+   - Remove packaging materials carefully to avoid damage
+   - Keep packaging materials until installation is complete
+   - Verify all components against the packing list
+
+### Standard Package Contents
+
+#### Main System Components
+- [ ] FRAME main unit (frame and base assembly)
+- [ ] XYZ positioning system
+- [ ] Control electronics unit
+- [ ] Power supply and cables
+- [ ] USB/CAN interface cables
+
+#### Optical Components (inside the optics cube)
+- [ ] Basic cube module set
+- [ ] Tube lens assembly
+- [ ] Condenser system
+- [ ] LED illumination module
+- [ ] Camera interface adapter
+
+#### Accessories
+- [ ] Sample holders and clips
+- [ ] Calibration slides
+- [ ] Tool kit
+- [ ] Documentation package
+- [ ] Software installation media/download links
+
+### Tool Requirements
+
+#### Essential Tools
+- Allen key set (2, 3, 4, 5, 6 mm)
+- Phillips head screwdriver
+- Flathead screwdriver
+- Adjustable wrench
+- Digital multimeter (for electrical verification)
+
+#### Optional Tools
+- Optical cleaning supplies
+- Antistatic wrist strap
+- Digital level
+- Vibration measurement device
 
 
 
@@ -344,57 +393,6 @@ ToDo Armin 250801: Wie ist während der ganzen Montage sicher gestellt, dass der
 **Dealing with the Sample calibration target**
 
 For information about using the sample calibration target, see the [Operation Manual](./05_Operation_Manual.md) section on calibration procedures.
-
-### Package Inspection
-
-1. **Upon Delivery**:
-   - Inspect packaging for damage during shipment
-   - Document any visible damage with photographs
-   - Check that all packages are received according to packing list
-
-2. **Unpacking Procedure**:
-   - Use proper lifting techniques (system weight: 25-35 kg)
-   - Remove packaging materials carefully to avoid damage
-   - Keep packaging materials until installation is complete
-   - Verify all components against the packing list
-
-### Standard Package Contents
-
-#### Main System Components
-- [ ] FRAME main unit (frame and base assembly)
-- [ ] XYZ positioning system
-- [ ] Control electronics unit
-- [ ] Power supply and cables
-- [ ] USB/CAN interface cables
-
-#### Optical Components (inside the optics cube)
-- [ ] Basic cube module set
-- [ ] Tube lens assembly
-- [ ] Condenser system
-- [ ] LED illumination module
-- [ ] Camera interface adapter
-
-#### Accessories
-- [ ] Sample holders and clips
-- [ ] Calibration slides
-- [ ] Tool kit
-- [ ] Documentation package
-- [ ] Software installation media/download links
-
-### Tool Requirements
-
-#### Essential Tools
-- Allen key set (2, 3, 4, 5, 6 mm)
-- Phillips head screwdriver
-- Flathead screwdriver
-- Adjustable wrench
-- Digital multimeter (for electrical verification)
-
-#### Optional Tools
-- Optical cleaning supplies
-- Antistatic wrist strap
-- Digital level
-- Vibration measurement device
 
 ## Software Installation and Configuration
 

@@ -95,12 +95,11 @@ ToDo Armin 250801: Was ist damit gemeint? Haben wir das?
    - Clean environment, minimal dust
 ToDo Armin 250801: Specs aus Safety und compliance/enironmental conditions übernehmen? Pollution Degree: 2 (normal laboratory environment)
 
-![](./IMAGES/04/FRAME_Manual_3.jpeg)
-*Package contents: The FRAME, emergency stop, power supply, USB cables (camera, ESP32) and illumination arm*
-
 ## Component Installation
 
 ### Mounting the Illumination Arm
+![](./IMAGES/04/FRAME_Manual_3.jpeg)
+*Package contents: The FRAME, emergency stop, power supply, USB cables (camera, ESP32) and illumination arm*
 
 ![](./IMAGES/04/FRAME_Manual_4.jpeg)
 *We start by mounting the illumination arm with the two M5 screws. For this get an appropriate 4mm allen key and secure the two screws that are sitting in the back of the frame and then attaching the illumination arm on the back. It's easiest if you have a second person holding the illumination arm and the second person is tighenting the screws. You can use a cube to have a spacer between the stage and illumination arm.*

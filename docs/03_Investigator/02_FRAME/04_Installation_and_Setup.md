@@ -5,7 +5,7 @@
 Before beginning installation, ensure you have:
 
 - [ ] Read all safety information in [Safety and Compliance](./01_Safety_and_Compliance.md)
-- [ ] Verified environmental conditions meet specifications
+- [ ] Verified environmental conditions meet specifications [Technical Specifications](./03_Technical_Specifications.md)
 - [ ] Prepared adequate workspace (minimum 1 m × 1.5 m)
 - [ ] Organized necessary tools (see Tool Requirements below)
 - [ ] Verified power supply compatibility

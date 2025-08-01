@@ -162,7 +162,7 @@ The PS4 controller and web interface operations are covered in detail in the [Op
 ### Mounting Optics
 
 ![](./IMAGES/04/FRAME_Manual_22.jpeg)
-*Unbox the objective lenses and insert them in the dedicated slots by screwing them into the RMS Threads. Be careful not to touch the surfaces*
+*Unbox the objective lenses and insert them in the dedicated slots by screwing them into the RMS Threads. Remove the stickers from the objective mounts before. Be careful not to touch the surfaces*
 
 ![](./IMAGES/04/FRAME_Manual_23.jpeg)
 *Do the same for objective #2. The order depends on the configuration you have and must be mirrored in the configuration file.*

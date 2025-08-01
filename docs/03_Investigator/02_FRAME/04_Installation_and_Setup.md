@@ -437,6 +437,9 @@ Complete step-by-step optical alignment procedures are provided in:
 
 📁 **Reference Document**: [`config_examples/Optical_Alignment_Procedures.md`](./config_examples/Optical_Alignment_Procedures.md)
 
+ToDo Armin 250801: habe mir das Dokument angeschaut. Für wen ist es gedacht? Für uns oder für den Kunden?
+Wenn für Kunden, meine ANnahme, nicht verständlich genug bzw. zu viel selbst noch zu organisieren und zu machen...
+
 This document covers:
 - Internal optics cube preparation and Köhler illumination setup
 - Mechanical alignment using adjustment screws

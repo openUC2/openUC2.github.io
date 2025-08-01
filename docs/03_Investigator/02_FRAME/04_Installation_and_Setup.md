@@ -34,9 +34,6 @@ Todo Armin 250801: ganzen Absatz geupdatet
 ![](./IMAGES/04/FRAME-in-open-case+parts.jpeg)
 *The FRAME is covered with packaging material, foam and bubble foil, unwrap the parts and take out the components, starting with the smaller parts, including the illumination arm. The FRAME body itself is very heavy, so please make sure you get additional support and move the box out of the suitcase carefully. Hold it from the lower end* **don't lift it holding the Z-stage!**, *put this on a surface that is decently stable!*
 
-![](./IMAGES/04/FRAME_Manual_3.jpeg)
-*Some of the components after unboxing: the FRAME, emergency stop, power supply, USB cables (camera, ESP32) and illumination arm*
-
 ![](./IMAGES/04/Transport-protection-within-stage.jpeg)
 **Don't forget to remove all foam parts inside the stage.** 
 

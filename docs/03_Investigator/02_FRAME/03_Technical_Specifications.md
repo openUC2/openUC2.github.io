@@ -85,7 +85,7 @@ ToDo Armin 250801: Diameter bezieht sich auf Objektiv? Dann klarer reinschreiben
 #### Camera Interface
 - **Mount Type**: C-mount
 - **Sensor Compatibility**: CMOS
-- **Available Cameras:** HIK IMX 179, IMX275
+- **Available Cameras:** HIK IMX179, IMX275
 - **Connection**: USB 3.0
 - **Trigger**: Hardware and software trigger support
 

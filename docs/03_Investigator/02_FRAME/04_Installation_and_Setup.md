@@ -23,25 +23,38 @@ Before beginning installation, ensure you have:
    - Keep packaging materials until installation is complete
    - Verify all components against the packing list
 
-### Standard Package Contents
+### Standard Package Contents - Packing List 
 
 #### Main System Components
 - [ ] FRAME main unit (frame and base assembly)
 - [ ] XYZ positioning system
+- [ ] Illumination arm incl. light source (2x1 cubes)
 - [ ] Control electronics unit
-- [ ] Power supply and cables
+- [ ] camera
+- [ ] Power supply for FRAME
 - [ ] USB/CAN interface cables
+- [ ] Camera cable
+- [ ] USB-A to USB-C Cable
+- [ ] Emergency Stop
 
-#### Optical Components (inside the optics cube)
-- [ ] Basic cube module set
-- [ ] Tube lens assembly
-- [ ] Condenser system
-- [ ] LED illumination module
+#### Optical Components 
+- [ ] Optical Module preconfigured (3x3x2 Cubes) 
+- [ ] Objectives as ordered
 - [ ] Camera interface adapter
+
+#### Laser Module
+- [ ] separate Laser module (3x2x1 cubes)
+- [ ] Laser safety cover
+- [ ] separate Laser (if applicable)
+- [ ] separate Power supply for Laser (if applicable)
+- [ ] Separate key
 
 #### Accessories
 - [ ] Sample holders and clips
-- [ ] Calibration slides
+- [ ] Biological test specimen
+- [ ] Calibration target
+- [ ] Ruler Target
+- [ ] PS4-Controller
 - [ ] Tool kit
 - [ ] Documentation package
 - [ ] Software installation media/download links
@@ -60,9 +73,6 @@ Before beginning installation, ensure you have:
 - Antistatic wrist strap
 - Digital level
 - Vibration measurement device
-
-
-
 
 ## Package Contents and Unpacking
 Todo Armin 250801: ganzen Absatz geupdatet
@@ -85,26 +95,6 @@ Todo Armin 250801: ganzen Absatz geupdatet
 
 ![](./IMAGES/04/Transport-protection-within-stage.jpeg)
 **Don't forget to remove all foam parts inside the stage.** 
-
-## Part List
-Todo Armin 250801: Absatz ergänzt
-- 1x Stage
-- 1x Illumination Arm
-- 1x Laser module
-- 1x Laser safety cover 
-- 1x Optical module
-- 1x Separate key 
-- 1x Calibration target
-- 1x Ruler Target
-- 2x Objektives
-- 1x camera
-- 1x PS4-Controller
-- 1x Emergency Stop
-- 1x USB-A to USB-C Cable
-- 1x Camera cable
-- 1x Power supply for FRAME
-- 1x Power supply for Laser (if applicable)
-- 1x Biological test specimen
 
 ## Frame Positioning and Setup
 

@@ -74,7 +74,7 @@ Before beginning installation, ensure you have:
 - Digital level
 - Vibration measurement device
 
-## Package Contents and Unpacking
+## Unpacking
 Todo Armin 250801: ganzen Absatz geupdatet
 
 ![](./IMAGES/04/Case-in-bubble-foil.jpeg)

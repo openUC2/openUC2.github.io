@@ -275,6 +275,8 @@ Laser safety is paramount when working with the FRAME system. The device incorpo
 ![](./IMAGES/04/FRAME_Manual_26.jpeg)
 *Secure the laser cover by snapping it in place*
 
+ToDo Armin 250801: Für den Proto 4 hat Haoran das Optikmodul umklebt. 
+
 ### Safety Mechanisms
 
 The FRAME incorporates three primary safety systems:

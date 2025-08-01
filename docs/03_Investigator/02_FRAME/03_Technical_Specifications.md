@@ -14,16 +14,16 @@
 
 ToDo Armin 250801: Noch alle elektrischen und optischen Schnittstellen beschriften (USB Ports für Motoren, Kamera Anschlüsse, Faser, Laser ...)
 
-### Overall System Dimensions
+### Overall System Dimensions (including illumination arm)
 
 | Parameter |  Motorized Version |
 |-----------|-------------------|
-| Width | 250 mm  |
-| Depth | 250 mm  |
-| Height | 250 mm  |
+| Width | 300 mm  |
+| Depth | 400 mm  |
+| Height | 400 mm  |
 | Weight | 20 kg |
 
-Armin ToDo 250801: Die Dimensionen stimmen nicht, Grundplatte ist ca. 300x300, noch mal im Büro nachmessen
+Armin ToDo 250801: Die Dimensionen ursprünglichen Dimensionen stimmten nicht, habe nachgemessen und neue angegeben
 
 ### Mechanical Specifications
 

@@ -109,9 +109,6 @@ ToDo Armin 250801: Specs aus Safety und compliance/enironmental conditions über
 ![](./IMAGES/04/FRAME_Manual_5.jpeg)
 *Attach the CAN bus cables from the illumination arm to the electronics board by plugging them into the junction board*
 
-![](./IMAGES/04/FRAME_Manual_8.jpeg)
-*Ensure the illumination cubes in the upper cube slot are optically aligned. Note: The cable must be plugged in with the CAN bus connector reversed (manufacturing note for first version - ensure the "nose" points in the same direction as the LEDs)*
-
 ![](./IMAGES/04/FRAME_Manual_9.jpeg)
 *Secure the cable and optionally add the protective lid*
 

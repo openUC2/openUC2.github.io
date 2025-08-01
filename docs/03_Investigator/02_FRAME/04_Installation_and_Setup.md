@@ -17,8 +17,14 @@ Before beginning installation, ensure you have:
 
 ## Package Contents and Unpacking
 
+![](./IMAGES/04/Case-in-bubble-foil.jpeg)
+*Take Case wrapped in bubble foil out of cardboard box.*
+
+![](./IMAGES/04/case-closed.jpg)
+*Case that holds the Frame inside with bubble foil removed.*
+
 ![](./IMAGES/04/FRAME-in-open-case.jpeg)
-*Case that holds the Frame, carefully open it and ensure that there is no outer damage to the package. Store this box carefully and reuse it if necessary - it's a great suit case :)*
+*Carefully open the case and ensure that there is no outer damage to the package. Store this case carefully and reuse it if necessary - it's a great suit case :)*
 
 
 ![](./IMAGES/04/FRAME_Manual_2.jpeg)

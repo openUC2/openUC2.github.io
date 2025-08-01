@@ -184,12 +184,6 @@ You can also reference the online configuration repository:
 🔗 https://github.com/openUC2/ImSwitchConfig/blob/master/imcontrol_setups/FRAME2.json
 
 
-![](./IMAGES/04/FRAME_Manual_25.jpeg)
-*add the laser cover at the side*
-
-![](./IMAGES/04/FRAME_Manual_26.jpeg)
-*Secure the laser cover by snapping it in place*
-
 ## Software Installation and Configuration
 
 ### Prerequisites
@@ -235,6 +229,12 @@ If you need to install ImSwitch locally on your computer:
 ⚠️ **CRITICAL SAFETY INFORMATION**
 
 Laser safety is paramount when working with the FRAME system. The device incorporates multiple safety mechanisms to ensure Class 1 laser operation, meaning no dangerous radiation can escape the device enclosure when properly assembled.
+
+![](./IMAGES/04/FRAME_Manual_25.jpeg)
+*add the laser cover at the side*
+
+![](./IMAGES/04/FRAME_Manual_26.jpeg)
+*Secure the laser cover by snapping it in place*
 
 ### Safety Mechanisms
 

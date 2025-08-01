@@ -12,6 +12,8 @@
 ![](./IMAGES/02/FRAME_Overview_2.png)
 
 
+ToDo Armin 250801: Noch alle elektrischen und optischen Schnittstellen beschriften (USB Ports für Motoren, Kamera Anschlüsse, Faser, Laser ...)
+
 ### Overall System Dimensions
 
 | Parameter |  Motorized Version |

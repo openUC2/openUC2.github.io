@@ -34,6 +34,9 @@ Todo Armin 250801: ganzen Absatz geupdatet
 ![](./IMAGES/04/FRAME-in-open-case+parts.jpeg)
 *The FRAME is covered with packaging material, foam and bubble foil, unwrap the parts and take out the components, starting with the smaller parts, including the illumination arm. The FRAME body itself is very heavy, so please make sure you get additional support and move the box out of the suitcase carefully. Hold it from the lower end* **don't lift it holding the Z-stage!**, *put this on a surface that is decently stable!*
 
+![](./IMAGES/04/FRAME_Manual_3.jpeg)
+*Some of the components after unboxing: the FRAME, emergency stop, power supply, USB cables (camera, ESP32) and illumination arm*
+
 ![](./IMAGES/04/Transport-protection-within-stage.jpeg)
 **Don't forget to remove all foam parts inside the stage.** 
 
@@ -98,8 +101,6 @@ ToDo Armin 250801: Specs aus Safety und compliance/enironmental conditions über
 ## Component Installation
 
 ### Mounting the Illumination Arm
-![](./IMAGES/04/FRAME_Manual_3.jpeg)
-*Package contents: The FRAME, emergency stop, power supply, USB cables (camera, ESP32) and illumination arm*
 
 ![](./IMAGES/04/FRAME_Manual_4.jpeg)
 *We start by mounting the illumination arm with the two M5 screws. For this get an appropriate 4mm allen key and secure the two screws that are sitting in the back of the frame and then attaching the illumination arm on the back. It's easiest if you have a second person holding the illumination arm and the second person is tighenting the screws. You can use a cube to have a spacer between the stage and illumination arm.*

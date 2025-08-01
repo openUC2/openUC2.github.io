@@ -448,7 +448,10 @@ This document covers:
 ### Quick Alignment Summary
 
 1. **Prepare Internal Cube**:
-   - Remove cube from FRAME
+   - Remove optical module from FRAME
+
+ToDo 250801: haben wir hier Bilder oder eine Anleitung, gleifert wird es ja mit dem Modul im FRAME fixiert.
+
    - Set up external alignment fixture
    - Align fluorescence path for Köhler illumination
    - Center laser beam exit from objective

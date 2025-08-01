@@ -17,7 +17,7 @@ Before beginning installation, ensure you have:
 
 ## Package Contents and Unpacking
 
-![](./IMAGES/04/FRAME_Manual_1.jpeg)
+![](./IMAGES/04/FRAME-in-open-case.jpeg)
 *Case that holds the Frame, carefully open it and ensure that there is no outer damage to the package. Store this box carefully and reuse it if necessary - it's a great suit case :)*
 
 

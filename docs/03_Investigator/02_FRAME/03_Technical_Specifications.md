@@ -33,6 +33,8 @@ Armin ToDo 250801: Die Dimensionen stimmen nicht, Grundplatte ist ca. 300x300, n
 - **Stage**: Integrated XYZ Stage in one mechanical design
 - **Objective Revolver**: 2 Slots for multiple magnifications/resolutions (max diameter <28mm)
 
+ToDo Armin 250801: Diameter bezieht sich auf Objektiv? Dann klarer reinschreiben
+
 #### XYZ Positioning System
 - **X-Y Travel Range**: up to 120 × 90 mm (Well plate format), stepsize: ~300nm
 - **Z-Travel Range**: 8 mm, stepsize: ~300nm

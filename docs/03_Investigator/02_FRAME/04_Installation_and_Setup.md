@@ -16,6 +16,7 @@ Before beginning installation, ensure you have:
 
 
 ## Package Contents and Unpacking
+Todo Armin 250801: ganzen Absatz geupdatet
 
 ![](./IMAGES/04/Case-in-bubble-foil.jpeg)
 *Take Case wrapped in bubble foil out of cardboard box.*
@@ -35,6 +36,26 @@ Before beginning installation, ensure you have:
 
 ![](./IMAGES/04/Transport-protection-within-stage.jpeg)
 **Don't forget to remove all foam parts inside the stage.** 
+
+## Part List
+Todo Armin 250801: Absatz ergänzt
+- 1x Stage
+- 1x Illumination Arm
+- 1x Laser module
+- 1x Laser safety cover 
+- 1x Optical module
+- 1x Separate key 
+- 1x Calibration target
+- 1x Ruler Target
+- 2x Objektives
+- 1x camera
+- 1x PS4-Controller
+- 1x Emergency Stop
+- 1x USB-A to USB-C Cable
+- 1x Camera cable
+- 1x Power supply for FRAME
+- 1x Power supply for Laser (if applicable)
+- 1x Biological test specimen
 
 ## Frame Positioning and Setup
 

@@ -1,3 +1,6 @@
 # Tile Scanning with ImSwitch
 
-![](../IMAGES/operation_experimentcontroller.mp4)
+
+<video controls width="90%">
+  <source src="video/operation_experimentcontroller.mp4"/>
+</video>

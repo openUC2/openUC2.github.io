@@ -117,7 +117,7 @@ You can scan for available microscopes in your network using the new installer.
 
 ![](../IMAGES/installer_autodiscovery.mp4)
 
-
+/Users/bene/Documents/UC2-DOCS/docs/05_ImSwitch/IMAGES/installer_autodiscovery.mp4
 ## Updating ImSwitch
 
 * Update source code via Git (ImSwitch, UC2-REST)

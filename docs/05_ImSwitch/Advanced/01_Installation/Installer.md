@@ -111,6 +111,11 @@ Watch the full installation process here (**OUTDATED**):
 * **Configurable Git/PIP Update System**
 * **Easy Uninstallation:** Just delete the ImSwitch folder
 
+## Auto-Discovery Mode 
+
+You can scan for available microscopes in your network using the new installer. 
+
+![](../IMAGES/installer_autodiscovery.mp4)
 
 
 ## Updating ImSwitch

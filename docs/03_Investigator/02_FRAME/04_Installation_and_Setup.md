@@ -567,30 +567,30 @@ The FRAME system supports custom objective holders for specialized applications.
 
 The modular cube system allows for custom optical configurations. Detailed procedures for creating custom optical layers will be provided in future documentation updates.
 
-In a nutshell: the different layers of the FRAME can be constructed freely upon users needs. The current version has a 3x3x2 inner cube, but it can be adjusted to be longer in the Y direction (e.g. 3x5xN) and in the Z-direction by stacking additional layers and increasing outer pillars' height. The below layers demonstrate how a brightfield imaging setup with a simple folding mirror, a tube lens and a camera can be constructed. Additionally we have a fluorescence layer with a fiber holder, the optics to shape the beam and the kinematic dichroic to focus it in the back focal plane from the imaging objective.
+In a nutshell: the different layers of the FRAME can be constructed freely upon users needs. The current version has a 3x3x2 inner cube-array, but it can be adjusted to be longer in the Y direction (e.g. 3x5xN) and in the Z-direction by stacking additional layers and increasing outer pillars' height. The below layers demonstrate how a brightfield imaging setup with a simple folding mirror, a tube lens and a camera can be constructed. Additionally we have a fluorescence layer with a fiber holder, the optics to shape the beam and the kinematic dichroic to focus it in the back focal plane from the imaging objective.
 
 ![](./IMAGES/04/FRAME_LAYER_7.jpg)
 *All necessary components - except mirror dicroic mirror of fluroescence layer*
 
-ToDo Armin 250804: ergänzt, das Spiegel Fluorszenz Layer fehlt
+ToDo Armin 250804: ergänzt, das Spiegel Fluoreszenz Layer fehlt
 
 ![](./IMAGES/04/FRAME_LAYER_6.jpg)
-*Constructing the Fluorescence Layer on top of the Brightfield layer to build a 3x3x2 cube array*
+*Constructing the Fluorescence Layer on top of the Brightfield layer to build a 3x3x2 cube-array*
 
 ![](./IMAGES/04/FRAME_LAYER_5.jpg)
-*Adding Fluorescence Layer to Imaging Layer*
+*Adding Top Plate on top of the cube-array*
 
 ![](./IMAGES/04/FRAME_LAYER_4.jpg)
-*Locking Layers with extended screws*
+*Locking the whole cube-array with extended screws*
 
 ![](./IMAGES/04/FRAME_LAYER_3.jpg)
 *Ensuring the screws have a tight fit across all layers*
 
 ![](./IMAGES/04/FRAME_LAYER_2.jpg)
-*Ready to use cube that can be pre-alligned with optics on top*
+*Ready to use cube-array that can be pre-alligned with optics on top*
 
 ![](./IMAGES/04/FRAME_LAYER_1.jpg)
-*Insert pre-alligned cube into the FRAME*
+*Insert pre-alligned 3x3x2 cube-array into the FRAME*
 
 
 

@@ -52,6 +52,8 @@ Auf dem Joystick ist zwei mal Y? Soll der rechte Button Z anstatt Y sein?
 3. **Record Offset**: Note the difference between displayed and actual positions
 4. **Update Configuration**: Enter the offset values in the ImSwitch configuration
 
+ToDo Armin 250804: Hier detaillierter beschreiben?
+
 ### Optical Alignment
 
 For detailed optical alignment procedures, see:

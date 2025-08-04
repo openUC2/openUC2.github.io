@@ -52,7 +52,7 @@ Auf dem Joystick ist zwei mal Y? Soll der rechte Button Z anstatt Y sein?
 3. **Record Offset**: Note the difference between displayed and actual positions
 4. **Update Configuration**: Enter the offset values in the ImSwitch configuration
 
-ToDo Armin 250804: Hier detaillierter beschreiben?
+ToDo Armin 250804: Hier detaillierter beschreiben? Halte ich für notwendig, wenn der Kunde anhand dieser Anleitung in der Lage sein soll, eigenständig zu kalibrieren.
 
 ### Optical Alignment
 
@@ -67,3 +67,5 @@ For detailed optical alignment procedures, see:
 - **Maximum Travel**: 127 x 86 mm
 - **Resolution**: 0.3125 μm per step (configurable)
 - **Repeatability**: ±2 μm (typical)
+
+ToDo Armin 250804: Angaben nicht vollständig konsistent zu 03_Technical_Specifications.md. Z.B. Repeatbility unterschiedlich und auch Travel range. 

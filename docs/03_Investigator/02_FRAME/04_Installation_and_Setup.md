@@ -453,7 +453,7 @@ This document covers:
 1. **Prepare Internal Cube**:
    - Remove optical module from FRAME
 
-ToDo 250801: haben wir hier Bilder oder eine Anleitung, gleifert wird es ja mit dem Modul im FRAME fixiert.
+ToDo 250801: haben wir hier Bilder oder eine Anleitung, geliwfert wird es ja mit dem Modul im FRAME fixiert.
 
    - Set up external alignment fixture
    - Align fluorescence path for Köhler illumination
@@ -476,6 +476,8 @@ ToDo 250801: haben wir hier Bilder oder eine Anleitung, gleifert wird es ja mit 
 The FRAME uses a well-defined coordinate system for precise positioning. Complete details about the coordinate system, calibration procedures, and reference points are provided in:
 
 📁 **Reference Document**: [`config_examples/Coordinate_System_Reference.md`](./config_examples/Coordinate_System_Reference.md)
+
+ToDo Armin 250804: bis Step identische zu Coordinate_System_Reference.md => siehe meine Kommentare dort
 
 ### Key Points:
 

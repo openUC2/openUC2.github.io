@@ -356,6 +356,9 @@ ToDo Armin 250804: Video does not show up in the doc
 The experiment controller has a built-in sample overview map where you can select an area using the max dome selector. This area is then scanned sequentially in XY to produce a stitched imaging result. The procedure is explained in the video:
 ![](./IMAGES/04/creatingtiledimage.mp4)
 
+ToDo Armin 250804: Video does not show up in the doc
+
+
 #### PS4 Controller Operation
 
 ```

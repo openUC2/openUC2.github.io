@@ -13,6 +13,7 @@
 
 
 ToDo Armin 250801: Noch alle elektrischen und optischen Schnittstellen beschriften (USB Ports für Motoren, Kamera Anschlüsse, Faser, Laser ...)
+ToDo Armin 250804: generell alle Teile beschriften und sichtbar machen (mehr Zeichnungen), auf die wir uns in der Anleitung beziehen und Nummern oder Kürzel verwenden
 
 ### Overall System Dimensions (including illumination arm)
 

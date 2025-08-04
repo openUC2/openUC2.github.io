@@ -571,10 +571,11 @@ In a nutshell: the different layers of the FRAME can be constructed freely upon 
 
 ![](./IMAGES/04/FRAME_LAYER_7.jpg)
 *All necessary components - except mirror dicroic mirror of fluroescence layer*
+
 ToDo Armin 250804: ergänzt, das Spiegel Fluorszenz Layer fehlt
 
 ![](./IMAGES/04/FRAME_LAYER_6.jpg)
-*Constructing the Fluorescence Layer*
+*Constructing the Fluorescence Layer on top of the Brightfield layer to build a 3x3x2 cube array*
 
 ![](./IMAGES/04/FRAME_LAYER_5.jpg)
 *Adding Fluorescence Layer to Imaging Layer*

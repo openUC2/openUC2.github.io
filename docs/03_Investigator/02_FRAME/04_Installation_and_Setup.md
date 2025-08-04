@@ -567,7 +567,7 @@ The FRAME system supports custom objective holders for specialized applications.
 
 The modular cube system allows for custom optical configurations. Detailed procedures for creating custom optical layers will be provided in future documentation updates.
 
-In a nutshell: the different layers of the FRAME can be constructed freely upon users needs. The current version has a 3x3x3 inner cube, but it can be adjusted to be longer in the Y direction (e.g. 3x5xN) and in the Z-direction by stacking additional layers and increasing outer pillars' height. The below layers demonstrate how a brightfield imaging setup with a simple folding mirror, a tube lens and a camera can be constructed. Additionally we have a fluorescence layer with a fiber holder, the optics to shape the beam and the kinematic dichroic to focus it in the back focal plane from the imaging objective.
+In a nutshell: the different layers of the FRAME can be constructed freely upon users needs. The current version has a 3x3x2 inner cube, but it can be adjusted to be longer in the Y direction (e.g. 3x5xN) and in the Z-direction by stacking additional layers and increasing outer pillars' height. The below layers demonstrate how a brightfield imaging setup with a simple folding mirror, a tube lens and a camera can be constructed. Additionally we have a fluorescence layer with a fiber holder, the optics to shape the beam and the kinematic dichroic to focus it in the back focal plane from the imaging objective.
 
 ![](./IMAGES/04/FRAME_LAYER_7.jpg)
 *All necessary components*

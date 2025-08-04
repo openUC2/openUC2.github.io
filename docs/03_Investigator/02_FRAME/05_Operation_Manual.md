@@ -1,5 +1,7 @@
 # Operation Manual
 
+ToDo Armin 250804: Ob all das, was hier steht passt, kann man nur sinnvoll bewerten, indem man es nach Anleitung wie ein Kunde versucht zu tun, schaut ob man damit klar kommt und ob es funktioniert. 
+
 ## System Startup and Shutdown
 
 ### Daily Startup Procedure

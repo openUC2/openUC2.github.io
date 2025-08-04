@@ -503,6 +503,8 @@ ToDo Armin 250804: bis Step identische zu Coordinate_System_Reference.md => sieh
 
 **Note: This section is under development. Complete procedures will be provided in future updates.**
 
+ToDo Armin 250804: Generell - Übersichtsbilder vom FRAME mit Bezeichnung und Nummereriung an Teilen erstellen und hier im Text darauf beziehen, dann ist schnellre klar, welche Komponente gemeint ist und wo ich sie finde
+
 **Transmitted Light Setup**:
    - Center LED illumination for uniform field coverage
    - Adjust condenser position for optimal focus (currently only one position - move the LED double cube module along the optical axis so that the brightfield LED is collimated)

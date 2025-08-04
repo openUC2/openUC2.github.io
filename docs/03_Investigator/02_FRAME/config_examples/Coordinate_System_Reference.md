@@ -39,6 +39,10 @@ The coordinate system directions and orientations are defined as follows:
 
 *Detailed coordinate system showing axis directions and orientations*
 
+ToDo Armin 250804: Was sagt das a ... 0 im rechten oberen Bild aus?
+Auf dem Joystick ist zwei mal Y? Soll der rechte Button Z anstatt Y sein?
+
+
 ## Calibration Procedures
 
 ### Stage Position Calibration

@@ -286,7 +286,7 @@ ToDo Armin 250804: ebenfalls nicht klar für mich, was hier beschrieben ist
 2. Inspect locking interface for damage  
 3. Contact technical support if mechanism repair is required (see our forum) 
 
-### Safety Considerations for Inner Cube System
+### Safety Considerations for working on Inner Cube System 
 
 ```
 ⚠️ WARNING: Always power down system before cube manipulation
@@ -348,6 +348,8 @@ When objective magnification changes, the effective pixel size changes and requi
 
 The procedure is explained in the video:
 ![](./IMAGES/04/calibratingpixelsize.mp4)
+
+ToDo Armin 250804: Video does not show up in the doc
 
 **Capturing a Large Panorama Using Multiple Tiles and Opening in Fiji**
 

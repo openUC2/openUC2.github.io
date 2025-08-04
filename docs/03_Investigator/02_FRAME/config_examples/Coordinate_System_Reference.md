@@ -28,6 +28,9 @@ The maximum travel range is 127 x 86 mm, suitable for multiwell plates:
 
 *Stage coordinate system showing maximum travel range*
 
+ToDo Armin 250804: Das linke untere Bild ist für mich schwer verständlich und ergibt auch keinen Sinn (die Objektive sind verschoben zum Strahlengang/beleuchtung)
+Was soll die Aussage des Bildes sein? 
+
 ### Axis Directions
 
 The coordinate system directions and orientations are defined as follows:

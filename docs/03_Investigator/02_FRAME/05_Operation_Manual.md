@@ -210,17 +210,24 @@ Before installing any cube modules:
 - **Position 3**: Objective cube
 - **Position 4**: Camera/detector cube
 
+ToDo Armin 250804: Was wird hier beschrieben? Der Aufbau des Brightfield layers? Dann bin ich verwirrt. Wir haben doch keinen Sample Holder im Brightfield? Und LED Cube ist auch extra? 
+
+
 ##### Fluorescence Configuration  
 - **Position 1**: Excitation filter cube
 - **Position 2**: Dichroic mirror cube
 - **Position 3**: Emission filter cube
 - **Position 4**: Detection cube
 
+ToDo Armin 250804: ebenfalls nicht klar für mich, was hier beschrieben ist
+
 ##### Phase Contrast Configuration
 - **Position 1**: Phase condenser cube
 - **Position 2**: Sample cube with phase rings
 - **Position 3**: Phase objective cube
 - **Position 4**: Camera cube
+
+ToDo Armin 250804: ebenfalls nicht klar für mich, was hier beschrieben ist
 
 ### Cube System Maintenance
 

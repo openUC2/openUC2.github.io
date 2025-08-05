@@ -1,6 +1,6 @@
 # Operation Manual
 
-ToDo Armin 250804: Ob all das, was hier steht passt, kann man nur sinnvoll bewerten, indem man es nach Anleitung wie ein Kunde versucht zu tun, schaut ob man damit klar kommt und ob es funktioniert. 
+ToDo Armin 250804: Ob all das, was hier steht passt, kann man nur sinnvoll bewerten, indem man es nach Anleitung wie ein Kunde versucht zu tun, schaut ob man damit klar kommt und ob es funktioniert. DAs würde ich dann tun :-) 
 
 ## System Startup and Shutdown
 
@@ -324,6 +324,9 @@ The FRAME system integrates with ImSwitch software for comprehensive control:
    - **Acquisition Settings**: Camera and recording parameters
 
 **Additional Controllers**: The system includes various controllers that merge different functionalities between hardware, image processing, and software:
+
+ToDo Armin 250805: Some software features like Autofocus controllers can only be used, if the appropriate hardware has been acquired, correct? Make a note on that ...
+
 - **Autofocus Controller**: Takes a series of images while moving the stage and moves to the position with highest contrast
 - **Experiment Controller**: Enables area scanning and stitching
 - **Backend Controllers**: Provide functionality through the React-based web application
@@ -606,6 +609,8 @@ we plan to have led based exhortation to so please feel free to reach out to us 
 ### Performance Monitoring
 
 #### System Health Checks
+
+ToDo Armin 250805: Here the specific procedures should be added at some point (now it is to general)
 
 1. **Daily Checks**:
    - Verify stage positioning accuracy

@@ -2,6 +2,8 @@
 
 ## Preventive Maintenance Schedule
 
+ToDo Armin 250805: also needs more specific procedures to be added or linked here over time
+
 ### Daily Maintenance Tasks
 
 #### System Inspection (5 minutes)
@@ -607,6 +609,8 @@ Warranty void if:
 ### Technical Support
 
 #### Contact Information
+
+ToDo 250805: How do we want to handle support for the time being (let's say until mid 26, realistically)?
 
 **Technical Support**:
 - Email: support@openuc2.com

@@ -35,6 +35,7 @@ Armin ToDo 250801: Die Dimensionen ursprünglichen Dimensionen stimmten nicht, h
 - **Objective Revolver**: 2 Slots for multiple magnifications/resolutions (max diameter <28mm)
 
 ToDo Armin 250801: Diameter bezieht sich auf Objektiv? Dann klarer reinschreiben
+250806: Durchmesser Objektiv als Angabe für Customization durch Kunden (eigene Objektive) => seperate customization section?
 
 #### XYZ Positioning System
 - **X-Y Travel Range**: up to 120 × 90 mm (Well plate format), stepsize: ~300nm

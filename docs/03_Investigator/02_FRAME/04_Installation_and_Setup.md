@@ -341,6 +341,7 @@ The FRAME incorporates three primary safety systems:
 #### Step 4: Connect Laser Module
 
 ToDo Armin 250801: Wie ist während der ganzen Montage sicher gestellt, dass der Laser noch aus ist?
+250806: Laser muss übre Software noch angeschaltet werden, vorher nicht aktiv
 
 ![](./IMAGES/04/FRAME_Manual_43.jpeg)
 *Connect the laser module to the CAN bus using the provided cable*

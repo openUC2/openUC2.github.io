@@ -43,6 +43,7 @@ This product complies with the following European Directives and Standards:
 
 **The CE marking indicates conformity with applicable regulations.**
 ToDo Armin 250731: Have we checked and tested this all?
+250806: to be done
 ---
 
 ## Important Safety Notice

@@ -10,6 +10,7 @@ The FRAME Microscopes have been designed, produced and tested in compliance with
 The instruments meet the requirements and are marked with the **CE** mark.
 
 ToDo Armin 250731: CE mark not yet on the FRAME, correct?
+250806: mit Chrissi klären
 
 ## Important Safety Information
 
@@ -91,6 +92,7 @@ ToDo Armin 250731: Haben wir dazu irgendwelche Tests gemacht?
 - **Humidity**: 10% to 95% relative humidity, non-condensing
 
 ToDo Armin 250731: Haben wir dazu irgendwelche Tests gemacht?
+250806: on default no => theoretcial or derived or only sporidaclly tested values
 
 ## Intended Use
 

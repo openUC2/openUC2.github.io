@@ -146,6 +146,7 @@ Frontend-only:
 - **Altitude**: Up to 2000 m above sea level
 
 ToDo Armin 250801: Unter 01 haben wir auch Angaben zu operating conditions und dort temperature 15-35°C, hier 5-38° => inkonsistent => welche haben wir? Und auch jeweils andere Angaben
+250806: Hostenträgre anziehen und einschränken und konsistent machen
 
 #### Storage Conditions
 - **Temperature**: -10°C to 60°C (14°F to 140°F)
@@ -155,6 +156,7 @@ ToDo Armin 250801: Unter 01 haben wir auch Angaben zu operating conditions und d
 - **Vibration**: Isolated surface recommended for best performance
 
 ToDo Armin 250801: Was heißt isolated surface, kann man das anders/genauer spezifizieren?
+250806: optischeer Tisch gedämpft
 
 - **Space**: 1 m × 1.5 m minimum work area
 - **Power**: 230V AC, 50/60 Hz (or 115V AC with adapter)
@@ -173,6 +175,7 @@ ToDo Armin 250801: Was heißt isolated surface, kann man das anders/genauer spez
 - **Locking Mechanism**: Spring-loaded detent system
 
 ToDo 250801: Einige der Angaben verstehe ich nicht, bitte mir kurz erklären, dann kann ich einschätzen, ob die Beschreibung für Kunden verständlich genug ist.
+250806: cartridge als Bezeichnung (kann auch ein nicht-optisches Module sein ... Number of positions => 4 Würfel Cartridges in FRAME 
 
 #### Cube Modules (Standard 50mm)
 
@@ -181,11 +184,13 @@ ToDo 250801: Einige der Angaben verstehe ich nicht, bitte mir kurz erklären, da
 - **Material**: Anodized aluminum or 3D-printed PLA/PETG
 
 ToDo Armin 250801: Wird es wirklich Aluminiumwürfel geben? Oder auf was bezieht sich die Angabe?
+Spritzgegossen ABS
 
 - **Precision**: ±0.1 mm dimensional accuracy
 - **Interface**: Dovetail connection system
 - **Mounting**: Threaded inserts M3 and M4 compatible
 - **Optical Aperture**: 25mm clear aperture (configurable)
+250806: Öffnung des Würfels 25 mm Clear Aperture
 
 #### Electronic Components
 - **Microcontrollers**: ESP32, Arduino-compatible (see https://github.com/youseetoo/uc2-esp32/)

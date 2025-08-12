@@ -120,8 +120,10 @@ sudo raspi-config
 
 If you haven't explicitly configured the firewall to allow traffic into a dedicated port (e.g. 8005) from the outside world you have to explicitly open it by doing:
 
+ImSwitch runs on 8001 (REST),  8002 (SOCKET) per default:
 ```
-sudo firewall-cmd --zone=public --add-port=8005/tcp; sudo firewall-cmd --zone=nm-shared --add-port=8005/tcp
+sudo firewall-cmd --zone=public --add-port=8001/tcp; sudo firewall-cmd --zone=nm-shared --add-port=8001/tcp
+sudo firewall-cmd --zone=public --add-port=8002/tcp; sudo firewall-cmd --zone=nm-shared --add-port=8002/tcp
 ```
 in an SSH session on the RPi. Then you can test this is by doing `curl localhost:8005` (e.g. if you run a python server as `python -m http.server 8005`). If you get valid HTML, then it's extremely likely that the firewall is blocking external access to port 8005.
 

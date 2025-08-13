@@ -185,6 +185,8 @@ ToDo Armin 250813: Es gibt blaue USB-A = USB 3.X und weiße USB-A am Raspi => Ka
 ![](./IMAGES/04/FRAME_Manual_19.jpeg)
 *The power indicators on the relay boards should show 12V by letting the green LED light up*
 
+ToDo Armin 250813: rote separate zeigt an, dass überhaupt Spannung anliegt, grün zeigt stabile Spannung an (über Zeitraum von min 140ms).
+
 **Initial System Testing**
 
 The PS4 controller and web interface operations are covered in detail in the [Operation Manual](./05_Operation_Manual.md).

@@ -18,6 +18,14 @@ ToDo Armin 250804: Ob all das, was hier steht passt, kann man nur sinnvoll bewer
    ```
    - Connect 12V power supply
    - Wait for system self-test to complete (LED indicators and homing on startup)
+
+ToDo Armin 250813: LED Indicators beschreiben, nur sichtbare für den Kunden, woran erkennt der Kunde, dass der Selftest vorbei ist und okay ist?
+Was sagen die LEDs aus
+LEDs Laser Modul
+LEDs connector Board
+LED ESP32 grün blinkend
+Rote LED am Netzteil => Netzteil angeschlossen
+LAN Kabel LED
    - XY axes will home and move to 0,0 position (disable by setting `homeOnStartX:0` in configuration file)
    - Start computer and control software
    - Allow 15-minute warm-up period for thermal stability if placed in an incubator

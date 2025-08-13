@@ -27,12 +27,20 @@ LED ESP32 grün blinkend
 Rote LED am Netzteil => Netzteil angeschlossen
 LAN Kabel LED
    - XY axes will home and move to 0,0 position (disable by setting `homeOnStartX:0` in configuration file)
+ToDo Armin 250813: Erfolgt das Homing wirklich?
    - Start computer and control software
+
+ToDo Armin 250813: welche Contol software?
    - Allow 15-minute warm-up period for thermal stability if placed in an incubator
 
 3. **System Initialization**:
    - Access ImSwitch from your laptop/tablet browser using the microscope's IP address or hostname with port 8001
+
+ToDo Armin 250813: wie komme ich auf die Imswitch website und dort an die richtige Stelle? Wo gebe ich die IP Adresse ein? Wie komme ich an die IP Adresse?
+
    - Verify communication with all modules
+
+ToDo Armin 250813: wie?
    - Turn on live stream
    - Move to an XY position
    - Check illumination systems
@@ -56,6 +64,11 @@ LAN Kabel LED
 The FRAME system is fully motorized and operated through software interfaces. All system control is achieved through:
 - **ImSwitch Web Interface**: Primary graphical user interface accessible via web browser
 - **PS4 Controller**: Alternative hardware interface for manual positioning and control
+
+ToDo Armin 250813: wie verbinde ich den PS4 Controller und woran erkenne ich Verbindung? 
+Home button drücken (Dreieck Knopf zwischen Joysticks), weiße Lampenfläche binkt kurz und leuchtet dann dauerhaftam PS4, ausschalten Home button 30s drücken)
+Wenn sich PS$ nicht vebindet, blinkt Knopf für 15s dann aus, geht Verbindung verloren, hört Lampe am PS4 nach ca. 5s auf zu leuchten
+
 
 ### Basic Microscopy Setup
 

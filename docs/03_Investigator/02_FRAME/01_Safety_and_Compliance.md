@@ -131,16 +131,18 @@ Certain components of the FRAME system may be covered by patents. For current pa
 ## Emergency Procedures
 
 ### Electrical Emergency
-1. Immediately disconnect power at the main switch
-2. Do not touch exposed electrical components
-3. Contact qualified service personnel
+1. ToDo Armin 250813: Immediately press emergency stop button 
+2. Immediately disconnect power at the main switch
+3. Do not touch exposed electrical components
+4. Contact qualified service personnel
 
 ToDo Armin 250731: Haben wir nicht generell einen Not-Aus oder nur im FLurosenzmodul mit Laser? Not AUs hier dann erwähnen.
 
 ### Fire Emergency
-1. Disconnect power immediately
-2. Use appropriate fire extinguisher 
-3. Evacuate area if necessary
+1. ToDo Armin 250813: Immediately press emergency stop button
+2. Disconnect power immediately
+3. Use appropriate fire extinguisher 
+4. Evacuate area if necessary
 
 ### Chemical Spill
 1. Follow laboratory chemical spill procedures

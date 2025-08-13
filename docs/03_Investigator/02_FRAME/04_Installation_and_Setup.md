@@ -164,7 +164,9 @@ ToDo Armin 250801: Specs aus Safety und compliance/enironmental conditions über
 *Plugging in the Emergency stop (Audio Jack) into the rear electronics that controls the microscope. Plug it into the slot with the audio jack that says emergency stop*. **Activate the emergency stop by pressing it**
 
 ![](./IMAGES/04/FRAME_Manual_13.jpeg)
-*Connect the ESP32 control board that runs the UC2 Firmware (youseetoo.github.io) with the Raspberry Pi using the USB-C to USB-A cable (you can either use the blue USB3 or black USb2 slots)*
+*Connect the ESP32 control board that runs the UC2 Firmware (youseetoo.github.io) with the Raspberry Pi using the USB-C to USB-A cable (you can either use the blue USB3 or black USb2 slots)* ToDo Armin 250813: Wir haben keine einstellbaren Füße, korrekt? Dann Kommentar löschen.
+
+ToDo Armin 250813: Es gibt blaue USB-A = USB 3.X und weiße USB-A am Raspi => Kamera Kabel muss ins blaue und ESP32 kann über weiß verbunden werden.  
 
 
 

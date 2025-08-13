@@ -111,8 +111,10 @@ ToDo Armin 250813: Wir haben keine einstellbaren Füße, korrekt? Dann Kommentar
 
 2. **Level the System**:
    - Use built-in bubble level or digital level
+
 ToDo Armin 250801: Was ist mit Built-in bubble level gemeint? Haben wir das?
    - Adjust feet until level in both X and Y directions
+
 ToDo Armin 250813: Wir haben keine einstellbaren Füße, korrekt? Dann Kommentar löschen.
    - Verify stability by gently pressing corners
    - Re-check level after 30 minutes

@@ -236,6 +236,8 @@ You can also reference the online configuration repository:
 
 Before installing software locally, note that FRAME systems can be operated via:
 - **Web Interface**: Direct browser access to the Raspberry Pi (recommended for most users)
+
+ToDo Armin 250813: den Weg gehe ich
 - **Local Installation**: Install ImSwitch locally for advanced users or development
 
 ### Local Software Installation (Advanced Users)

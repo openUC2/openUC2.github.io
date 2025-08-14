@@ -64,7 +64,14 @@ ToDo Armin 250813: wie?
 The FRAME system is fully motorized and operated through software interfaces. All system control is achieved through:
 - **ImSwitch Web Interface**: Primary graphical user interface accessible via web browser
 - **PS4 Controller**: Alternative hardware interface for manual positioning and control
+ToDo Armin 250814: PS4 Controller Beschreibung auf GitHub ist nicht zutreffend und zu komplex für FRAME, auch noch mit Fotos von altm Controller
 https://openuc2.github.io/docs/Electronics/PS4-Controller/PS4-Controller/ 
+Armin's short version
+- FRAME powered on, Self Tests and homing done, ESP32 ready
+![WhatsApp Bild 2025-08-14 um 11 05 17_498f94de](https://github.com/user-attachments/assets/a0b7e141-a334-4607-95d2-2729d8efb479)
+![WhatsApp Bild 2025-08-14 um 11 05 17_d300ffc5](https://github.com/user-attachments/assets/069ecc4b-a7b7-4256-9b9e-94d18f680e71)
+
+
 
 ToDo Armin 250813: wie verbinde ich den PS4 Controller und woran erkenne ich Verbindung? 
 Home button drücken (Dreieck Knopf zwischen Joysticks), weiße Lampenfläche binkt kurz und leuchtet dann dauerhaftam PS4, ausschalten Home button 30s drücken)

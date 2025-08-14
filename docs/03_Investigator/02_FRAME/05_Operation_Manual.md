@@ -85,14 +85,11 @@ Test X/Y/Z movement and lamp on/off according to
 
 (X/Y and Z Joystick testet, A not implemented, Lamp on/off tested, Z buttons not tested (needs imaging))  
 
+Turning off PS4 => press home button for roughly 30s 
+If PS4 cannot connect light bar blinks for around 15s,then turns off
+If connection gets lost, light bar tunrs off after around 5s.
 
-
-ToDo Armin 250813: wie verbinde ich den PS4 Controller und woran erkenne ich Verbindung? 
-Home button drücken (Dreieck Knopf zwischen Joysticks), weiße Lampenfläche binkt kurz und leuchtet dann dauerhaftam PS4, ausschalten Home button 30s drücken)
-Wenn sich PS$ nicht vebindet, blinkt Knopf für 15s dann aus, geht Verbindung verloren, hört Lampe am PS4 nach ca. 5s auf zu leuchten
-
-
-### Basic Microscopy Setup
+**Basic Microscopy Setup**
 
 #### Sample Preparation and Loading
 

@@ -64,17 +64,25 @@ ToDo Armin 250813: wie?
 The FRAME system is fully motorized and operated through software interfaces. All system control is achieved through:
 - **ImSwitch Web Interface**: Primary graphical user interface accessible via web browser
 - **PS4 Controller**: Alternative hardware interface for manual positioning and control
-ToDo Armin 250814: PS4 Controller Beschreibung auf GitHub ist nicht zutreffend und zu komplex für FRAME, auch noch mit Fotos von altm Controller
-https://openuc2.github.io/docs/Electronics/PS4-Controller/PS4-Controller/ 
-Armin's short version
+
+ToDo Armin 250814: PS4 Controller Beschreibung auf GitHub ist nicht zutreffend und zu komplex für FRAME, auch noch mit Fotos von altem Controller
+https://openuc2.github.io/docs/Electronics/PS4-Controller/PS4-Controller/
+
+Und das passt auch nicht mehr 
+https://openuc2.github.io/docs/Toolboxes/ElectronicsBox/automation_intro
+
+**Armin's short version**
 - FRAME powered on, Self Tests and homing done, ESP32 ready
 - PS4 Controller connects via bluetooth
 - PS4 Controller - not connected
 ![WhatsApp Bild 2025-08-14 um 11 05 17_498f94de](https://github.com/user-attachments/assets/a0b7e141-a334-4607-95d2-2729d8efb479)
 PS4-Controller 
 ![WhatsApp Bild 2025-08-14 um 11 05 17_d300ffc5](https://github.com/user-attachments/assets/069ecc4b-a7b7-4256-9b9e-94d18f680e71)
-Indicator Lamp 
-- Press Home button for a couple of seconds (triangular button between joysticks), indicator lamp shrotly blinks and then shows steady light = succesful connection 
+Light Bar 
+- Press Home button for a couple of seconds (triangular button between joysticks), light bar shortly blinks and then shows steady light = succesful connection
+Test X/Y/Z movement and lamp on/off according to 
+<img width="829" height="608" alt="grafik" src="https://github.com/user-attachments/assets/1a861c51-b142-40a9-88b8-a3f59120abf9" />
+  (X/Y and Z Joystick testet, A not implemented, Lamp on/off tested, Z buttons not tested (needs imaging))  
 
 
 

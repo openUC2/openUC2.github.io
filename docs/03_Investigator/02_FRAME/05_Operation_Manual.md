@@ -82,7 +82,8 @@ Light Bar
 - Press Home button for a couple of seconds (triangular button between joysticks), light bar shortly blinks and then shows steady light = succesful connection
 Test X/Y/Z movement and lamp on/off according to 
 <img width="829" height="608" alt="grafik" src="https://github.com/user-attachments/assets/1a861c51-b142-40a9-88b8-a3f59120abf9" />
-  (X/Y and Z Joystick testet, A not implemented, Lamp on/off tested, Z buttons not tested (needs imaging))  
+
+(X/Y and Z Joystick testet, A not implemented, Lamp on/off tested, Z buttons not tested (needs imaging))  
 
 
 

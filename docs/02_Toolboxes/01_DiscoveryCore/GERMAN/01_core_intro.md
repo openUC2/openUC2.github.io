@@ -18,7 +18,16 @@ Wir haben dieses Dokument in eine ***PDF***-Datei kompiliert, die <a href="/MINI
 
 Eine schnelle Tour durch eine beispielhafte Box und wie die Würfel aussehen (Stand Oktober 2022) finden Sie hier:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NZZ6n620eV0" title="YouTube-Video-Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/NZZ6n620eV0" 
+    title="YouTube-Video-Player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
 
 
 ## Was ist UC2?
@@ -73,7 +82,16 @@ Wenn Sie kein scharfes Bild sehen, bewegen Sie die Einsätze (z.B. Linse), bis S
 
 Hier finden Sie ein kleines Video, das das Kernkonzept des Würfels erklärt
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yl0lgNJu_AQ" title="YouTube-Video-Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/Yl0lgNJu_AQ" 
+    title="YouTube-Video-Player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
 
 
 ## Was bedeuten die Symbole?

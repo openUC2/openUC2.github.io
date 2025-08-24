@@ -19,7 +19,7 @@ const FEATURES: FeatureItem[] = [
   },
   {
     title: 'Advanced Microscopy',
-    to: '/docs/Investigator/',
+    to: 'docs/Investigator/FRAME/',
     image: require('@site/static/img/M274_AC_0100_30_FiveD1-768x766.png').default,
     description: 'FRAME - fast rigid automated microscope engine',
   },
@@ -38,7 +38,7 @@ const FEATURES: FeatureItem[] = [
   },
   {
     title: 'ImSwitch and Firmware',
-    to: '/docs/docs/ImSwitch/Quickstart',
+    to: '/docs/ImSwitch/Quickstart',
     image: require('@site/static/img/FRAME6.png').default,
     description: 'Everything that drives your microscopy hardware.',
   },

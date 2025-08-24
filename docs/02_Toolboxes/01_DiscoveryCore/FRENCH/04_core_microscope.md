@@ -96,7 +96,16 @@ Pouvez-vous voir l'image microscopique à travers la lentille de l'oculaire avec
 
 Une introduction rapide aux miroirs et à leurs applications peut être trouvée ici :
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/azxLqej7yqU" title="Lecteur vidéo YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/azxLqej7yqU" 
+    title="Lecteur vidéo YouTube" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
 
 ## À quoi sert l'oculaire ?
 

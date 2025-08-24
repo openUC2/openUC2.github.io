@@ -37,7 +37,16 @@ To assist users in setting up and integrating the XYZ stage into their experimen
 For further information or inquiries regarding the openUC2 XYZ Micrometer Stage, interested parties can refer to the official openOCT project page at `https://github.com/openUC2/openUC2-Hackathon-openOCTRemote`. The project page contains additional details, resources, and support for utilizing the XYZ stage effectively in diverse research settings.
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E_hhclFqx5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/E_hhclFqx5g" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
 
 
 ## General Assembly for an inverted Microscope using the XYZ stage

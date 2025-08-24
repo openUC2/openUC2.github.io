@@ -49,7 +49,16 @@ Remplacez l'oculaire de Ramsden par la lentille de 40 mm. Qu'est-ce qui est mieu
 Cette vidéo vous montre comment assembler le microscope pour smartphone UC2, comme indiqué dans le manuel PDF. Elle présente quelques astuces pour le stabiliser et l'utilisation de la platine Z.
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q3-XW8Bfuww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/q3-XW8Bfuww" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
 
 
 **Étape 1 : Construire une ligne de quatre plaques de base**

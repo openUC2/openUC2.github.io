@@ -48,7 +48,16 @@ title: "العنوان: مجهر  للهواتف الذكية مع عدسة شي
 
 يعرض هذا الفيديو كيفية بناء مجهر UC2 للهاتف الذكي كما هو موضح أيضًا في دليل PDF. ويوضح بعض الحيل لجعله أكثر استقرارًا وكيفية تشغيل المرحلة Z.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q3-XW8Bfuww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/q3-XW8Bfuww" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
 
 **الخطوة 1: بناء خط مكون من أربع لوحات قاعدة**
 

@@ -157,8 +157,9 @@ The Forklift OS includes a web-based control interface accessible at:
 
 The ImSwitch OS provides several web interfaces for remote access:
 
-- **Cockpit Web Console**: Available at `http://[raspberry-pi-ip]:9090` for system administration
+- **Cockpit Web Console**: Available at `http://[raspberry-pi-ip]:9090/admin/cockpit/` for system administration
 - **ImSwitch React Interface**: Available at `http://[raspberry-pi-ip]:8001/imswitch/index.html` for microscope control  
+- **Swagger API UI**: Available at `http://[raspberry-pi-ip]:8001/docs` 
 - **WebSocket Control**: Available at `http://[raspberry-pi-ip]:8002` for real-time data streams
 actually it's https by default to connect to it via a statically hosted website e.g. https://youseetoo.github.io/imswitch/index.html
 

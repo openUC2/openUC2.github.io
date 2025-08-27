@@ -24,6 +24,12 @@ const FEATURES: FeatureItem[] = [
     description: 'FRAME - fast rigid automated microscope engine',
   },
   {
+    title: 'openUC2 Optics Configurator 🅱️Ε⏉⏃ ',
+    to: 'https://youseetoo.github.io/configurator',
+    image: require('@site/static/img/configurator.png').default,
+    description: 'Build any optical system virtually using our configurator. This is a proof of concept - prices may be off a lot!',
+  },
+  {
     title: 'Fluorescence & Lightsheet',
     to: '/docs/Toolboxes/LightsheetBox/Light_sheet_Fluoresence_microscope',
     image: require('@site/static/img/ZebraFish-1-1536x864.gif').default,

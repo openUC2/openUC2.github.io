@@ -1,15 +1,15 @@
 ---
 id: MachZenderInterferometer
-title: openUC2 Mach-Zehnder Interferometer
+title: Mach-Zehnder Expansion - Off Axis Holography
 ---
 
-# Tutorial: Building a Mach-Zehnder Interferometer
+# Tutorial: Expand your Mach-Zehnder Interferometer for off axis holography
 
-In this workshop, we will construct a Mach-Zehnder Interferometer using the UC2 modular microscope toolbox. The Mach-Zehnder Interferometer is a powerful optical device that enables quantitative phase imaging and split-beam interferometry, making it invaluable for microscopy applications, materials science, and precision measurements.
+In this workshop, we will construct a Mach-Zehnder Interferometer into a powerful optical device that enables quantitative phase imaging and split-beam interferometry, making it invaluable for microscopy applications, materials science, and precision measurements.
 
-![](./IMAGES/UC2_MachInterferometer.jpg)
 
 ### Materials Needed
+as of September 29, 2025 you need the QBox or HoloBox + the Electronics Add on + the Infinity Add on for this build. If you use the QBox you'll need a suitable transparent probe as well.
 
 **Optical Components:**
 - Laser diode (coherent light source, 532 nm wavelength, minimum 10 mW)
@@ -20,6 +20,7 @@ In this workshop, we will construct a Mach-Zehnder Interferometer using the UC2 
 - Two 100 mm focal length converging lenses for beam conditioning
 - Microscope objective (10x or 20x magnification) for high-resolution imaging
 - Neutral density filters (optional) for intensity balancing
+- Probe
 
 **Detection and Imaging:**
 - HIKrobot Camera (MV-CE060-10UC) with USB cable ([Hikrobot Camera Software installation](Camera_Software_tutorial.md))
@@ -43,26 +44,23 @@ In this workshop, we will construct a Mach-Zehnder Interferometer using the UC2 
 - Vibration isolation or heavy, stable optical table
 - Environmental enclosure for air current protection
 
-**TODO**: Add specific part numbers, suppliers, and cost estimates for educational institutions
-**TODO**: Specify minimum computer requirements for real-time image processing
-
-![](./IMAGES/image111.jpg)
 
 ### Diagram
 
-![](./IMAGES/MachZhender.png)
+![](./IMAGES/OffAxisHolo.png)
+*Setup using an objective lens for microscopic imaging showing off-axis holography configuration*
 
-*Black and white box diagram showing the Mach-Zehnder Interferometer layout with components labeled for easier understanding*
+
 
 ### Theory of Operation
 
 The Mach-Zehnder Interferometer splits coherent light into two separate paths (reference and sample arms) using the first beam splitter. The reference beam travels through air or a known medium, while the sample beam passes through or reflects from the specimen being studied. Both beams are then recombined at a second beam splitter, creating an interference pattern that contains information about the optical path differences introduced by the sample.
 
+
 Unlike the Michelson Interferometer, the Mach-Zehnder design provides separate, independent paths for reference and sample beams, offering greater flexibility for sample insertion and manipulation. This configuration is particularly advantageous for transmission microscopy and quantitative phase imaging applications.
 
-![](./IMAGES/OffAxisHolo.png)
 
-*Setup using an objective lens for microscopic imaging showing off-axis holography configuration*
+
 
 ### Theoretical Background
 
@@ -130,12 +128,10 @@ Mach-Zehnder Interferometry has found extensive applications in:
 - **Telecommunications**: Fiber optic testing, optical component characterization
 - **Astronomical interferometry**: High-resolution imaging of celestial objects
 
-**TODO**: Add specific examples of phase sensitivity calculations for different sample types
-**TODO**: Include more detailed mathematical derivations for advanced students
 
-## Tutorial: Mach-Zehnder Interferometer
+## Tutorial: Mach-Zehnder Interferometer as off-axis holography microscope
 
-*TODO: Add image of all components laid out next to each other*
+![](./IMAGES/image111.jpg)
 
 ## Step 1: Assemble the Optical Components
 

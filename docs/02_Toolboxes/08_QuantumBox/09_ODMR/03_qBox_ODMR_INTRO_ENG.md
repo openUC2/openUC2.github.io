@@ -6,6 +6,14 @@ title: ODMR - Introduction to NV Centers, Electron Spin, and ODMR
 
 # Introduction to NV Centers, Electron Spin, and ODMR
 
+:::tip
+You can find additional information from our colleagues over at the University / FH Münster. They have educator's friendly documentation for the different types of **Inteferometers**, **ODMR**, etc.
+
+![](./IMAGES/o3q.png)
+
+You can find them here: https://o3q.de/ -> *Mögliche Experimente*
+:::
+
 ## 1. What is an NV Center?
 
 An **NV center** (“Nitrogen-Vacancy”) is a **point defect** in the crystal lattice of **diamond**, consisting of:

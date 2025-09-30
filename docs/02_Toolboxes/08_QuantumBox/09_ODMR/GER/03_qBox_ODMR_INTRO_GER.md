@@ -8,7 +8,7 @@ title: ODMR - Einführung in NV-Zentren, Elektronenspin und ODMR
 :::tip
 You can find additional information from our colleagues over at the University / FH Münster. They have educator's friendly documentation for the different types of **Inteferometers**, **ODMR**, etc.
 
-![](./IMAGES/o3q.png)
+![](../IMAGES/o3q.png)
 
 You can find them here: https://o3q.de/ -> *Mögliche Experimente*
 :::

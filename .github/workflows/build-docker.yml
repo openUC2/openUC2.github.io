@@ -61,7 +61,16 @@ jobs:
         run: npm run make-${{ matrix.variant }}
 
       - name: Build documentation
-        run: npm run build
+        run: |
+          npm run build
+          echo "build:"
+          ls build
+          echo
+          echo "assets:"
+          ls build/assets
+          echo
+          echo "images:"
+          ls build/assets/images
 
       # Work around a bug where capital letters in the GitHub username (e.g. "PlanktoScope") make it
       # impossible to push to GHCR. See https://github.com/macbre/push-to-ghcr/issues/12
@@ -115,6 +124,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
+          context: .
           pull: true
           platforms: linux/amd64,linux/arm64
           tags: ${{ steps.meta.outputs.tags }}

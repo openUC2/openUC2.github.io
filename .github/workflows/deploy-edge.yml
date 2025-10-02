@@ -1,12 +1,11 @@
-
-name: deploy-docusaurus
+name: deploy
 
 on:
   push:
-  pull_request:
+    branches:
+      - 'master'
+      - 'main'
   workflow_dispatch:
-
-
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -18,17 +17,24 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Check out repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+        with:
+          # Only fetch files we actually need:
+          fetch-depth: 0
+          filter: 'blob:none'
+
       # Node is required for npm
       - name: Set up Node
         uses: actions/setup-node@v2
         with:
-          node-version: "19"
+          node-version: "19" # FIXME: this is very old and out-of-date. Bump the version!
+
       # Install and build Docusaurus website
       - name: Build Docusaurus website
         run: |
           npm install
           npm run build
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:

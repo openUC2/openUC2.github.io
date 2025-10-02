@@ -4,6 +4,9 @@
 
 FROM caddy:2.10.2
 
+RUN ls .
+RUN ls build
+RUN ls build/assets
 COPY build/assets/images /srv/assets/images
 COPY --exclude=build/assets/images build /srv
 

@@ -6,12 +6,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const math = require('remark-math');
 const katex = require('rehype-katex');
 
+const baseURL = process.env.BASE_URL || '/'
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'openUC2 Documentation',
   tagline: 'Seeing is believing. But better with the docs!',
   url: 'https://openuc2.github.io/',
-  baseUrl: process.env.BASE_URL || '/',
+  baseUrl: baseURL,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -134,7 +136,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: `${baseURL}docs/intro`,
               },
             ],
           },
@@ -156,7 +158,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                to: 'https://openuc2.com/blog',
               },
               {
                 label: 'GitHub',

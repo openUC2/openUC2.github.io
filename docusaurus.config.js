@@ -10,7 +10,7 @@ const katex = require('rehype-katex');
 const config = {
   title: 'openUC2 Documentation',
   tagline: 'Seeing is believing. But better with the docs!',
-  url: 'https://openuc2.github.io',
+  url: 'https://openuc2.github.io/',
   baseUrl: process.env.BASE_URL || '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',

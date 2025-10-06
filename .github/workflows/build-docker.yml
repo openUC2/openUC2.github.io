@@ -67,9 +67,6 @@ jobs:
         run: npm run make-${{ matrix.variant }}
 
       - name: Build documentation
-        env:
-          # Container image should be built with `/docs` as the base URL instead of `/`:
-          BASE_URL: '/docs/'
         run: |
           npm run build
 

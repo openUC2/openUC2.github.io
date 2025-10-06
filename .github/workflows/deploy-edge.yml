@@ -18,10 +18,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Check out repo
         uses: actions/checkout@v4
-        with:
-          # Only fetch files we actually need:
-          fetch-depth: 0
-          filter: 'blob:none'
 
       # Node is required for npm
       - name: Set up Node

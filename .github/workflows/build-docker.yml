@@ -67,16 +67,11 @@ jobs:
         run: npm run make-${{ matrix.variant }}
 
       - name: Build documentation
+        env:
+          # Container image should be built with `/docs` as the base URL instead of `/`:
+          BASE_URL: '/docs/'
         run: |
           npm run build
-          echo "build:"
-          ls build
-          echo
-          echo "assets:"
-          ls build/assets
-          echo
-          echo "images:"
-          ls build/assets/images
 
       # Work around a bug where capital letters in the GitHub username (e.g. "PlanktoScope") make it
       # impossible to push to GHCR. See https://github.com/macbre/push-to-ghcr/issues/12

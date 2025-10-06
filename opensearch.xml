@@ -4,8 +4,8 @@
   <ShortName>openUC2 Documentation</ShortName>
   <Description>Search openUC2 Documentation</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://docs.youseetoo.org/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://docs.youseetoo.org/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://docs.youseetoo.org/opensearch.xml" />
-  <moz:SearchForm>https://docs.youseetoo.org/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://openuc2.github.io/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://openuc2.github.io/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://openuc2.github.io/opensearch.xml" />
+  <moz:SearchForm>https://openuc2.github.io/</moz:SearchForm>
 </OpenSearchDescription>

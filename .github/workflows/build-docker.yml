@@ -65,8 +65,7 @@ jobs:
           restore-keys: ${{ runner.os }}-node
 
       - name: Install build dependencies
-        run: |
-          npm install
+        run: npm install
 
       - name: Cache Docusaurus build
         uses: docuactions/cache@v1
@@ -82,8 +81,7 @@ jobs:
           # self-contained root of the site. We use `/openUC2/` instead of `/docs/` as the root so
           # that we don't have pages in `/docs/docs/`, but instead we have them in `/openUC2/docs/`.
           BASE_URL: '/openUC2/'
-        run: |
-          npm run build
+        run: npm run build
 
       # Work around a bug where capital letters in the GitHub username (e.g. "PlanktoScope") make it
       # impossible to push to GHCR. See https://github.com/macbre/push-to-ghcr/issues/12

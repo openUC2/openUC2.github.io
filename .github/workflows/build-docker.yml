@@ -57,9 +57,19 @@ jobs:
         with:
           node-version: "19" # FIXME: this is very old and out-of-date. Bump the version!
 
+      - name: Cache ~/.npm
+        uses: actions/cache@v4
+        with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ matrix.variant }}-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: ${{ runner.os }}-node
+
       - name: Install build dependencies
         run: |
           npm install
+
+      - name: Cache Docusaurus build
+        uses: docuactions/cache@v1
 
       - name: Make documentation ${{ matrix.variant }}
         if: matrix.variant != 'default'

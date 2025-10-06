@@ -1,0 +1,10 @@
+{
+  auto_https off
+}
+
+:80 {
+  handle_path /openUC2/* {
+    root * /srv
+    file_server
+  }
+}

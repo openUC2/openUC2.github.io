@@ -42,8 +42,6 @@ This product complies with the following European Directives and Standards:
 - **EN 55011** (Electromagnetic compatibility)
 
 **The CE marking indicates conformity with applicable regulations.**
-ToDo Armin 250731: Have we checked and tested this all?
-250806: to be done
 ---
 
 ## Important Safety Notice
@@ -80,10 +78,7 @@ This manual is provided for the operation of the FRAME Microscope system. No par
 Hans-Knöll-Str. 6
 07745 Jena, Germany
 
-**Technical Support**: hello@openuc2.com  (openuc2.discourse.group)
-
-ToDo Armin 250731: Unter 01 haben wir support@openuc2.com für technischen Support, würde ich hier auch angeben.
-
+**Technical Support**: support@openuc2.com  (openuc2.discourse.group)
 **Sales Information**: sales@openuc2.com  
 **General Information**: hello@openuc2.com  
 **Wiki**: https://openuc2.github.io

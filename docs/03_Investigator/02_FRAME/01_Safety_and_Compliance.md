@@ -9,9 +9,6 @@ The FRAME Microscopes have been designed, produced and tested in compliance with
 
 The instruments meet the requirements and are marked with the **CE** mark.
 
-ToDo Armin 250731: CE mark not yet on the FRAME, correct?
-250806: mit Chrissi klären
-
 ## Important Safety Information
 
 **Knowledge of this manual is required for the operation of the instrument.** Please make yourself familiar with the contents of this manual and pay special attention to hints concerning safe operation of the instrument.
@@ -65,9 +62,6 @@ This symbol warns of electrical hazards. Ensure proper grounding and follow elec
 2. **Sample Handling**: Use appropriate tools when handling samples
 3. **Weight**: Use proper lifting techniques when moving the microscope (~20kg)
 4. **Sharp Edges**: Be aware of sharp edges on optical components and mounts
-5. **Rapid Prototyping**: Customize optical systems
-
-ToDo Armin 250731: Was hat #5 mit Mechanical Safety zu tun?
 
 ### Chemical Safety
 
@@ -84,15 +78,10 @@ ToDo Armin 250731: Was hat #5 mit Mechanical Safety zu tun?
 - **Altitude**: Up to 2000m above sea level
 - **Pollution Degree**: 2 (normal laboratory environment)
 
-ToDo Armin 250731: Haben wir dazu irgendwelche Tests gemacht?
-
 ### Storage Environment
 
 - **Temperature**: -10°C to 60°C (14°F to 140°F)
 - **Humidity**: 10% to 95% relative humidity, non-condensing
-
-ToDo Armin 250731: Haben wir dazu irgendwelche Tests gemacht?
-250806: on default no => theoretcial or derived or only sporidaclly tested values
 
 ## Intended Use
 
@@ -131,15 +120,13 @@ Certain components of the FRAME system may be covered by patents. For current pa
 ## Emergency Procedures
 
 ### Electrical Emergency
-1. ToDo Armin 250813: Immediately press emergency stop button 
+1. Immediately press emergency stop button 
 2. Immediately disconnect power at the main switch
 3. Do not touch exposed electrical components
 4. Contact qualified service personnel
 
-ToDo Armin 250731: Haben wir nicht generell einen Not-Aus oder nur im FLurosenzmodul mit Laser? Not AUs hier dann erwähnen.
-
 ### Fire Emergency
-1. ToDo Armin 250813: Immediately press emergency stop button
+1. Immediately press emergency stop button
 2. Disconnect power immediately
 3. Use appropriate fire extinguisher 
 4. Evacuate area if necessary

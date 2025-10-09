@@ -16,12 +16,11 @@
 
 | Parameter |  Motorized Version |
 |-----------|-------------------|
-| Width | 300 mm  |
-| Depth | 400 mm  |
+| Width | 310 mm  |
+| Depth | 410 mm  |
 | Height | 400 mm  |
-| Weight | 20 kg |
+| Weight | 25 kg |
 
-Armin ToDo 250801: Die Dimensionen ursprünglichen Dimensionen stimmten nicht, habe nachgemessen und neue angegeben
 
 ### Mechanical Specifications
 
@@ -29,17 +28,7 @@ Armin ToDo 250801: Die Dimensionen ursprünglichen Dimensionen stimmten nicht, h
 - **Material**: Anodized aluminum profiles and plates
 - **Vibration Damping**: Integrated damping system (bumper feed)
 - **Stage**: Integrated XYZ Stage in one mechanical design
-- **Objective Revolver**: 2 Slots for multiple magnifications/resolutions (max diameter <28mm)
-
-ToDo Armin 250801: Diameter bezieht sich auf Objektiv? Dann klarer reinschreiben
-250806: Durchmesser Objektiv als Angabe für Customization durch Kunden (eigene Objektive) => seperate customization section?
-
-#### XYZ Positioning System
-- **X-Y Travel Range**: up to 120 × 90 mm (Well plate format), stepsize: ~300nm
-- **Z-Travel Range**: 8 mm, stepsize: ~300nm
-- **Resolution**: 0.3 μm (motorized)
-- **Accuracy**: ±XXXX μm
-- **Repeatability**: ±0.5 μm
+- **Objective Revolver**: 2 Slots for multiple magnifications/resolutions 
 
 ### Optical Specifications
 
@@ -137,24 +126,17 @@ Frontend-only:
 ### Environmental Requirements
 
 #### Operating Conditions
-- **Temperature**: 5°C to 38°C (59°F to 95°F)
+- **Temperature**: 15°C to 35°C
 - **Humidity**: 30% to 80% relative humidity, non-condensing
 - **Atmospheric Pressure**: 86 kPa to 106 kPa
 - **Altitude**: Up to 2000 m above sea level
-
-ToDo Armin 250801: Unter 01 haben wir auch Angaben zu operating conditions und dort temperature 15-35°C, hier 5-38° => inkonsistent => welche haben wir? Und auch jeweils andere Angaben
-250806: Hostenträgre anziehen und einschränken und konsistent machen
 
 #### Storage Conditions
 - **Temperature**: -10°C to 60°C (14°F to 140°F)
 - **Humidity**: 10% to 95% relative humidity, non-condensing
 
 #### Installation Requirements
-- **Vibration**: Isolated surface recommended for best performance
-
-ToDo Armin 250801: Was heißt isolated surface, kann man das anders/genauer spezifizieren?
-250806: optischeer Tisch gedämpft
-
+- **Vibration**: optical table with vibration damping recommended for best performance
 - **Space**: 1 m × 1.5 m minimum work area
 - **Power**: 230V AC, 50/60 Hz (or 115V AC with adapter)
 - **Ventilation**: Natural convection (no forced ventilation required)
@@ -163,31 +145,15 @@ ToDo Armin 250801: Was heißt isolated surface, kann man das anders/genauer spez
 
 ### Inner Cube System
 
-#### Cube Drawer Mechanism
-- **Number of Positions**: 4 cube positions (configurable)
-- **Drawer Travel**: 150mm sliding range per position
-- **Drawer Rails**: Precision linear ball bearing guides
-- **Load Capacity**: 500g per cube position
-- **Positioning Accuracy**: ±0.05mm repeatability
-- **Locking Mechanism**: Spring-loaded detent system
-
-ToDo 250801: Einige der Angaben verstehe ich nicht, bitte mir kurz erklären, dann kann ich einschätzen, ob die Beschreibung für Kunden verständlich genug ist.
-250806: cartridge als Bezeichnung (kann auch ein nicht-optisches Module sein ... Number of positions => 4 Würfel Cartridges in FRAME 
-
 #### Cube Modules (Standard 50mm)
 
 #### Mechanical Specifications
 - **Dimensions**: 50 × 50 × 50 mm
-- **Material**: Anodized aluminum or 3D-printed PLA/PETG
-
-ToDo Armin 250801: Wird es wirklich Aluminiumwürfel geben? Oder auf was bezieht sich die Angabe?
-Spritzgegossen ABS
-
+- **Material**: ABS / injection molded
 - **Precision**: ±0.1 mm dimensional accuracy
 - **Interface**: Dovetail connection system
 - **Mounting**: Threaded inserts M3 and M4 compatible
 - **Optical Aperture**: 25mm clear aperture (configurable)
-250806: Öffnung des Würfels 25 mm Clear Aperture
 
 #### Electronic Components
 - **Microcontrollers**: ESP32, Arduino-compatible (see https://github.com/youseetoo/uc2-esp32/)
@@ -204,14 +170,15 @@ Spritzgegossen ABS
 
 ### Stage System
 
-#### Motorized Stage
-- **Travel Range**: 75 × 50 mm (standard), 150 × 100 mm (extended)
-- **Resolution**: 0.1 μm
+#### XYZ Positioning System (Motorized Stage)
+- **X-Y Travel Range**: 75 × 50 mm (standard), up to 120 × 90 mm (extended), stepsize: ~300nm
+- **Z-Travel Range**: 8 mm, stepsize: ~300nm
+- **Resolution**: 0.3 μm (motorized)
+- **Accuracy**: ±XXXX μm
+- **Repeatability**: ±0.5 μm
 - **Speed**: 0.1 μm/s to 10 mm/s
 - **Acceleration**: Programmable, up to 100 mm/s²
 - **Load Capacity**: 2 kg maximum
-
-ToDo Armin 250801: Angaben sind nicht konistent zu Angaben weiter oben unter XYZ Positioning System => konsistent machen
 
 ### Focus System
 
@@ -220,9 +187,7 @@ ToDo Armin 250801: Angaben sind nicht konistent zu Angaben weiter oben unter XYZ
 - **Resolution**: 0.05 μm
 - **Speed**: 0.1 μm/s to 5 mm/s
 - **Repeatability**: ±0.1 μm
-- **Autofocus**: Laser-based or image-based
-
-ToDo Armin 250801: Autofocus is optional => hier erwähnen
+- **Autofocus**: Laser-based or image-based (optional)
 
 ## Compatibility and Standards
 

@@ -104,6 +104,7 @@ Diamanten bestehen aus einem Kohlenstoffgitter. In einem NV‑Diamanten fehlt ei
 
 ![](./IMAGES/image5.png)
 ![](./IMAGES/odmr_components.jpg)
+
 *Alle Komponenten im Kit*
 
 ## Schritt 1: Optik montieren
@@ -140,6 +141,7 @@ Anleitung zum schrittweisen Aufbau. Folgen Sie dem Funktionsmodul oder nutzen Si
 Montieren Sie die Komponenten wie im Diagramm gezeigt. Dies ergibt eine konfokale Konfiguration für ODMR‑Messungen: Laser fokussiert auf den Diamanten, Fluoreszenz zurück zur Photodiode über den dichroitischen Strahlteiler.
 
 ![](./IMAGES/image11.png)
+
 *Beamsplitter‑Aufbau mit openUC2‑Komponenten auf Rasterplatte*
 
 ![](./IMAGES/image12.png)
@@ -220,6 +222,22 @@ Optimieren Sie:
 * Laserfokus auf Diamant
 * Fluoreszenz‑Sammlung
 * Mikrowellenkopplung an NV‑Zentren
+
+### 3.4: Laser ausrichten
+
+Stellen Sie sicher, dass der Laserstrahl auf die optische Achse des "Konfokal"-mikroskops ausgerichtet ist. Der Laser sollte auf die Diamantoberfläche fokussiert sein und einen kleinen, hellen Punkt erzeugen. **Nutze für die korrekte Fokussierung den Smartphone Trick der im folgenden Video beschrieben wird**
+
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/8tJhlHfuvL0?si=ohXf12IAvCqg6zOh"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  />
+</div>
+
 
 ## Experiment 1: Grundlegende ODMR‑Signal‑Detektion
 

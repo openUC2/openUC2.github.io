@@ -146,7 +146,7 @@ This guide will walk you through the assembly step by step. You can follow the p
 
 ### 1.1: Build the Basic Optical Setup
 
-Build the setup as shown in the diagrams. This creates a confocal microscopy configuration optimized for ODMR measurements. This is the basic configuration where the laser is focussed on the diamond and then the fluorescence signal is going back through the dichroic mirror mount to a detector. 
+Build the setup as shown in the diagrams. This creates a confocal microscopy configuration optimized for ODMR measurements. This is the basic configuration where the laser is focussed on the diamond and then the fluorescence signal is going back through the dichroic mirror mount to a detector.
 
 ![](./IMAGES/image11.png)
 
@@ -191,10 +191,6 @@ If you need to change any of the cables or their position, always unplug the 12V
 - Plug in the USB-C at your ESP32 and connect to your PC.
 
 
-- *TODO: Add specific ODMR electronics wiring diagram*
-
-
-
 ### 2.2: Flashing the ESP32 Firmware
 
 1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (most likely **ESP32C3 ODMR Quantum Mini Labs)**), then click on the `connect` button.
@@ -208,12 +204,12 @@ The source code can be found [here](https://github.com/openUC2/TechnicalDocs-ope
 4. Wait until the firmware has been successfully flashed.
 
 <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
-  <iframe 
+  <iframe
     style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-    src="https://www.youtube.com/embed/rGLcOb0IWbg?si=rmYORgaFhbwyFtMG" 
-    title="YouTube video player" 
-    frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    src="https://www.youtube.com/embed/rGLcOb0IWbg?si=rmYORgaFhbwyFtMG"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   />
 </div>
@@ -261,20 +257,21 @@ Optimize the setup for maximum fluorescence signal and best signal-to-noise rati
 
 ### 3.4: Aligning the Laser
 
-Ensure the laser beam is aligned with the optical axis of the "Confocal" microscope. The laser should be focused on the diamond surface, creating a small, bright spot.
+Ensure the laser beam is aligned with the optical axis of the "Confocal" microscope. The laser should be focused on the diamond surface, creating a small, bright spot. **Use the smartphone trick described in the video below.**
+
 <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
-  <iframe 
+  <iframe
     style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-    src="https://www.youtube.com/embed/8tJhlHfuvL0?si=ohXf12IAvCqg6zOh" 
-    title="YouTube video player" 
-    frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    src="https://www.youtube.com/embed/8tJhlHfuvL0?si=ohXf12IAvCqg6zOh"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   />
 </div>
 
 
-## Setting up the ODMR setup with images 
+## Setting up the ODMR setup with images
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_1.jpg)
 
@@ -408,5 +405,3 @@ The QuantumMiniLabs project is developing an open-source ecosystem that enables 
 ![](./IMAGES/image18.png)
 
 QuantumMiniLabs offer the first affordable DIY platform for experimenting with second-generation quantum systems. NV diamonds allow for stable experiments at room temperature.
-
-

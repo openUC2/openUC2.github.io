@@ -373,18 +373,9 @@ When objective magnification changes, the effective pixel size changes and requi
 3. Open the file in Fiji to measure the number of pixels for a given unit on the calibration slide
 4. Calculate pixel size: divide the known distance (e.g., 1 millimeter) by the number of pixels (e.g., 1000 pixels) to get pixel size (1 micrometer in this example)
 
-The procedure is explained in the video:
-![](./IMAGES/04/calibratingpixelsize.mp4)
-
-ToDo Armin 250804: Video does not show up in the doc
-
 **Capturing a Large Panorama Using Multiple Tiles and Opening in Fiji**
 
-The experiment controller has a built-in sample overview map where you can select an area using the max dome selector. This area is then scanned sequentially in XY to produce a stitched imaging result. The procedure is explained in the video:
-![](./IMAGES/04/creatingtiledimage.mp4)
-
-ToDo Armin 250804: Video does not show up in the doc
-
+The experiment controller has a built-in sample overview map where you can select an area using the max dome selector. This area is then scanned sequentially in XY to produce a stitched imaging result. 
 
 #### PS4 Controller Operation
 

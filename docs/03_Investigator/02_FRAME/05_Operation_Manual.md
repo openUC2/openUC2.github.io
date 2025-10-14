@@ -59,16 +59,19 @@ The FRAME system is fully motorized and operated through software interfaces. Al
 - FRAME powered on, Self Tests and homing done, ESP32 ready
 - PS4 Controller connects via bluetooth
 - PS4 Controller - not connected
+
 ![WhatsApp Bild 2025-08-14 um 11 05 17_498f94de](https://github.com/user-attachments/assets/a0b7e141-a334-4607-95d2-2729d8efb479)
 PS4-Controller 
+
 ![WhatsApp Bild 2025-08-14 um 11 05 17_d300ffc5](https://github.com/user-attachments/assets/069ecc4b-a7b7-4256-9b9e-94d18f680e71)
 Light Bar (PS4 turned off)
+
 ![WhatsApp Bild 2025-08-14 um 14 08 59_3c7d1f66](https://github.com/user-attachments/assets/003850d0-cb88-4d72-8557-a0642de52a87)
-
 Light Bar PS4 Connected (red)
-![WhatsApp Bild 2025-08-14 um 14 04 31_b3826f29](https://github.com/user-attachments/assets/15081a01-7b6e-4a5b-b9b1-5adbf17462ed)
 
+![WhatsApp Bild 2025-08-14 um 14 04 31_b3826f29](https://github.com/user-attachments/assets/15081a01-7b6e-4a5b-b9b1-5adbf17462ed)
 Light Bar PS4 charging and NOT connected (yellow)
+
 - Press Home button for a couple of seconds (triangular button between joysticks), light bar shortly blinks and then shows steady light = succesful connection
 Test X/Y/Z movement and lamp on/off according to 
 <img width="829" height="608" alt="grafik" src="https://github.com/user-attachments/assets/1a861c51-b142-40a9-88b8-a3f59120abf9" />

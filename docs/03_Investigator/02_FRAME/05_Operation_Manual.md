@@ -1,7 +1,5 @@
 # Operation Manual
 
-ToDo Armin 250804: Ob all das, was hier steht passt, kann man nur sinnvoll bewerten, indem man es nach Anleitung wie ein Kunde versucht zu tun, schaut ob man damit klar kommt und ob es funktioniert. DAs würde ich dann tun :-) 
-
 ## System Startup and Shutdown
 
 ### Daily Startup Procedure
@@ -27,20 +25,12 @@ LED ESP32 grün blinkend
 Rote LED am Netzteil => Netzteil angeschlossen
 LAN Kabel LED
    - XY axes will home and move to 0,0 position (disable by setting `homeOnStartX:0` in configuration file)
-ToDo Armin 250813: Erfolgt das Homing wirklich?
-   - Start computer and control software
-
-ToDo Armin 250813: welche Contol software?
+   - Start computer and ImSwitch control software
    - Allow 15-minute warm-up period for thermal stability if placed in an incubator
 
 3. **System Initialization**:
    - Access ImSwitch from your laptop/tablet browser using the microscope's IP address or hostname with port 8001
-
-ToDo Armin 250813: wie komme ich auf die Imswitch website und dort an die richtige Stelle? Wo gebe ich die IP Adresse ein? Wie komme ich an die IP Adresse?
-
    - Verify communication with all modules
-
-ToDo Armin 250813: wie?
    - Turn on live stream
    - Move to an XY position
    - Check illumination systems
@@ -65,13 +55,7 @@ The FRAME system is fully motorized and operated through software interfaces. Al
 - **ImSwitch Web Interface**: Primary graphical user interface accessible via web browser
 - **PS4 Controller**: Alternative hardware interface for manual positioning and control
 
-ToDo Armin 250814: PS4 Controller Beschreibung auf GitHub ist nicht zutreffend und zu komplex für FRAME, auch noch mit Fotos von altem Controller
-https://openuc2.github.io/docs/Electronics/PS4-Controller/PS4-Controller/
-
-Und das passt auch nicht mehr 
-https://openuc2.github.io/docs/Toolboxes/ElectronicsBox/automation_intro
-
-**Armin's short version**
+**Short Introduction PS4 Controller operation**
 - FRAME powered on, Self Tests and homing done, ESP32 ready
 - PS4 Controller connects via bluetooth
 - PS4 Controller - not connected
@@ -256,24 +240,17 @@ Before installing any cube modules:
 - **Position 3**: Objective cube
 - **Position 4**: Camera/detector cube
 
-ToDo Armin 250804: Was wird hier beschrieben? Der Aufbau des Brightfield layers? Dann bin ich verwirrt. Wir haben doch keinen Sample Holder im Brightfield? Und LED Cube ist auch extra? 
-
-
 ##### Fluorescence Configuration  
 - **Position 1**: Excitation filter cube
 - **Position 2**: Dichroic mirror cube
 - **Position 3**: Emission filter cube
 - **Position 4**: Detection cube
 
-ToDo Armin 250804: ebenfalls nicht klar für mich, was hier beschrieben ist
-
 ##### Phase Contrast Configuration
 - **Position 1**: Phase condenser cube
 - **Position 2**: Sample cube with phase rings
 - **Position 3**: Phase objective cube
 - **Position 4**: Camera cube
-
-ToDo Armin 250804: ebenfalls nicht klar für mich, was hier beschrieben ist
 
 ### Cube System Maintenance
 
@@ -369,9 +346,7 @@ The FRAME system integrates with ImSwitch software for comprehensive control:
    - **Illumination Control**: Light source intensity and switching
    - **Acquisition Settings**: Camera and recording parameters
 
-**Additional Controllers**: The system includes various controllers that merge different functionalities between hardware, image processing, and software:
-
-ToDo Armin 250805: Some software features like Autofocus controllers can only be used, if the appropriate hardware has been acquired, correct? Make a note on that ...
+**Additional Controllers**: Your custom system configuration can include various other controllers that merge different functionalities between hardware, image processing, and software, such as:
 
 - **Autofocus Controller**: Takes a series of images while moving the stage and moves to the position with highest contrast
 - **Experiment Controller**: Enables area scanning and stitching
@@ -655,8 +630,6 @@ we plan to have led based exhortation to so please feel free to reach out to us 
 ### Performance Monitoring
 
 #### System Health Checks
-
-ToDo Armin 250805: Here the specific procedures should be added at some point (now it is to general)
 
 1. **Daily Checks**:
    - Verify stage positioning accuracy

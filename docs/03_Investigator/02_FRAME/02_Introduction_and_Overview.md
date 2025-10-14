@@ -2,7 +2,7 @@
 
 ## What is the FRAME Microscope?
 
-The **FRAME** (Fast Rigid Automated Microscope Engine) represents a new approach to microscopy: an open, modular, automated, and flexibly adaptable microscope system. Based on the modular optics construction kit UC2 (You.See.Too.), the FRAME system lowers barriers to access complex optical and microscopy technology.
+The **FRAME** (Fast Rigid Automated Microscope Engine) represents a new approach to microscopy: an open, modular, automated, and flexibly adaptable microscope system. Based on UC2's (You.See.Too.) modular optics kit, the FRAME system lowers barriers to access complex optical and microscopy technology.
 
 ## System Philosophy
 
@@ -11,7 +11,7 @@ The **FRAME** (Fast Rigid Automated Microscope Engine) represents a new approach
 The FRAME system is built on complete modularization of all components regarding mechanics, electronics, and software:
 
 - **Interchangeable Modules**: Cube modules can be freely exchanged to switch between brightfield, fluorescence, or interference microscopy
-- **Flexible Mechanics**: Allows both classical objective setups and free arrangement for special geometries
+- **Flexible Mechanics**: Allows both, classical objective setups and free arrangements for special geometries
 - **Smart Electronics**: Each cube can optionally have its own control unit for motors, galvo mirrors, or LEDs. All components share the same CAN BUS via 12V supply voltage.
 - **Open Interface**: System control via user-friendly graphical interface or programming interface (Python, REST, CAN BUS, USB)
 
@@ -31,7 +31,7 @@ The FRAME system is built on complete modularization of all components regarding
 - **Precision XYZ System**: High-accuracy positioning and focusing mechanisms
 - **Removable Optics Unit**: Modular design allows easy reconfiguration
 - **Slide-In System**: Standardized 50mm cubes with quick-exchange capability
-- **Linear Objective Revolver**: Decide between two different magnifications/resolutions
+- **Linear Objective Revolver**: Switch between two different magnifications/resolutions
 
 ### Electronic Architecture
 
@@ -61,9 +61,8 @@ The FRAME system integrates with several software platforms:
 ### Industrial Applications
 
 1. **Quality Control**: Materials inspection and defect analysis
-2. **Semiconductor Industry**: Wafer inspection and process control
-3. **Biotechnology**: Process monitoring and product validation
-4. **Education**: Modern imaging technique visualization in teaching and training
+2. **Biotechnology**: Process monitoring and product validation
+3. **Education**: Modern imaging technique visualization in teaching and training
 
 ### Advantages for Different User Groups
 
@@ -98,7 +97,7 @@ The modular approach contributes to sustainability on multiple levels:
 ### Open Source Benefits
 
 - **Global Accessibility**: Electronic platforms can be replicated worldwide, including in resource-limited regions
-- **Knowledge Sharing**: Open documentation promotes global access to high technology
+- **Knowledge Sharing**: Open documentation promotes global access to high-end technology
 - **Community Development**: Active community ensures continuous improvement and support
 - **Local Repairs**: Using 3D printing and digital fabrication, broken parts can be repaired on site
 

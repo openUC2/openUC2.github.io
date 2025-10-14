@@ -16,6 +16,8 @@ A calibration sample is provided to help locate the central reference point at c
 
 The calibration target features lines that help users navigate to the center position and can also be used with fluorescence illumination.
 
+ToDo Armin 250804: Mehr erklärungen dazu? Was sehe ich hier und warum?
+
 [Video demonstration link](https://private-user-images.githubusercontent.com/4345528/452977251-b087b719-b484-41d8-b0e7-49d4ae4ada15.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTExMTA1MzYsIm5iZiI6MTc1MTExMDIzNiwicGF0aCI6Ii80MzQ1NTI4LzQ1Mjk3NzI1MS1iMDg3YjcxOS1iNDg0LTQxZDgtYjBlNy00OWQ0YWU0YWRhMTUubXA0P1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDYyOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA2MjhUMTEzMDM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YjA3ZDU1NzBkYzc5NThiNDMwZGZhNzkyZmY5MTk1ZDk3N2YxMGViMDZiNWFkOGRjMWJjZDk0NjZmY2FlN2FjZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.wD7zmcY7i3mIm-uPqRfzKZ8akXAnvusnY2rnNYxrlNU)
 
 ### Stage Travel Range
@@ -26,6 +28,9 @@ The maximum travel range is 127 x 86 mm, suitable for multiwell plates:
 
 *Stage coordinate system showing maximum travel range*
 
+ToDo Armin 250804: Das linke untere Bild ist für mich schwer verständlich und ergibt auch keinen Sinn (die Objektive sind verschoben zum Strahlengang/beleuchtung)
+Was soll die Aussage des Bildes sein? 
+
 ### Axis Directions
 
 The coordinate system directions and orientations are defined as follows:
@@ -33,6 +38,10 @@ The coordinate system directions and orientations are defined as follows:
 ![](../IMAGES/04/frame-coordinatesystem-2.png)
 
 *Detailed coordinate system showing axis directions and orientations*
+
+ToDo Armin 250804: Was sagt das a ... 0 im rechten oberen Bild aus?
+Auf dem Joystick ist zwei mal Y? Soll der rechte Button Z anstatt Y sein?
+
 
 ## Calibration Procedures
 
@@ -42,6 +51,8 @@ The coordinate system directions and orientations are defined as follows:
 2. **Navigate to Center**: Use the crosshair lines to navigate to position xy = 63.5/46 mm
 3. **Record Offset**: Note the difference between displayed and actual positions
 4. **Update Configuration**: Enter the offset values in the ImSwitch configuration
+
+ToDo Armin 250804: Hier detaillierter beschreiben? Halte ich für notwendig, wenn der Kunde anhand dieser Anleitung in der Lage sein soll, eigenständig zu kalibrieren.
 
 ### Optical Alignment
 
@@ -56,3 +67,5 @@ For detailed optical alignment procedures, see:
 - **Maximum Travel**: 127 x 86 mm
 - **Resolution**: 0.3125 μm per step (configurable)
 - **Repeatability**: ±2 μm (typical)
+
+ToDo Armin 250804: Angaben nicht vollständig konsistent zu 03_Technical_Specifications.md. Z.B. Repeatbility unterschiedlich und auch Travel range. 

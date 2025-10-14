@@ -2,17 +2,17 @@
 
 ## Overview
 
-The FRAME system requires precise optical alignment to ensure optimal performance. This document provides detailed procedures for aligning the internal optics cube and calibrating the optical path.
+The FRAME system requires precise optical alignment to ensure optimal performance. This document provides detailed procedures for aligning the internal optics module and calibrating the optical path.
 
 ## Internal Optics Cube Preparation
 
 ### Initial Setup Outside the FRAME
 
-Before installing the internal optics cube in the FRAME, it must be properly aligned using a separate alignment setup.
+Before installing the internal optics module in the FRAME, it must be properly aligned using a separate alignment setup.
 
 #### Components to Align
 
-The internal optics cube contains three main optical elements that must be aligned:
+The internal optics module contains three main optical elements that must be aligned:
 1. **Transmitted light module** with camera and folding mirror
 2. **Fluorescence excitation module** 
 3. **Objective mounting system**
@@ -20,13 +20,13 @@ The internal optics cube contains three main optical elements that must be align
 #### Alignment Setup
 
 1. **Create External Test Setup**:
-   - Remove the internal optics cube from the FRAME
-   - Build a test setup on top of the cube that mimics the FRAME's optical distances
+   - Remove the internal optics module from the FRAME
+   - Build a test setup on top of the module that mimics the FRAME's optical distances
    - Mount an objective in the test setup to maintain proper optical spacing
 
 2. **Software Preparation**:
    - Start ImSwitch software to enable camera viewing
-   - Ensure proper communication with the cube's electronics
+   - Ensure proper communication with the module's electronics
 
 ### Fluorescence Module Alignment
 
@@ -48,12 +48,12 @@ The internal optics cube contains three main optical elements that must be align
 #### Mechanical Alignment
 
 1. **Access Adjustment Screws**:
-   - Use a 2.5mm hex key to access the three adjustment screws on the back of the cube
+   - Use a 2.5mm hex key to access the three adjustment screws on the back of the module
    - These screws control the position and angle of the optical elements
 
 2. **Laser Centering**:
    - Ensure the laser focus is exactly centered where the objective will be positioned
-   - The light beam must exit the internal cube parallel to the optical axis
+   - The light beam must exit the internal module parallel to the optical axis
    - This ensures proper Köhler illumination
 
 3. **Objective Installation**:
@@ -70,13 +70,13 @@ The internal optics cube contains three main optical elements that must be align
 
 ### Objective-to-FRAME Alignment
 
-After internal cube alignment, align the optical axis of the FRAME with the internal cube.
+After internal module alignment, align the optical axis of the FRAME with the internal module.
 
 #### Available Adjustments
 
 Two adjustment mechanisms are available:
 1. **X-axis**: Objective can be moved along the X-axis using the slide mechanism
-2. **Y-axis**: Internal cube can be moved relative to the FRAME using adjustment screws
+2. **Y-axis**: Internal module can be moved relative to the FRAME using adjustment screws
 
 #### LED Alignment Tool Setup
 
@@ -97,7 +97,7 @@ Two adjustment mechanisms are available:
    - Observe the point light source projected to the back focal plane
 
 2. **Y-axis Alignment**:
-   - Adjust the internal cube position along Y-axis using the adjustment screw
+   - Adjust the internal module position along Y-axis using the adjustment screw
    - Move the light point to the center of the back focal plane
    - Use a piece of paper with crosshairs to mark the position
 
@@ -133,9 +133,9 @@ Two adjustment mechanisms are available:
 
 Once all optical elements are properly aligned:
 
-1. **Secure Internal Cube**:
-   - Tighten the locking knobs to permanently secure the internal cube in the rail
-   - Ensure the cube cannot move during operation
+1. **Secure Internal Module**:
+   - Tighten the locking knobs to permanently secure the internal module in the rail
+   - Ensure the module cannot move during operation
 
 2. **System Testing**:
    - Perform comprehensive testing of all optical functions

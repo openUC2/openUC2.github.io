@@ -12,14 +12,15 @@
 ![](./IMAGES/02/FRAME_Overview_2.png)
 
 
-### Overall System Dimensions
+### Overall System Dimensions (including illumination arm)
 
 | Parameter |  Motorized Version |
 |-----------|-------------------|
-| Width | 250 mm  |
-| Depth | 250 mm  |
-| Height | 250 mm  |
-| Weight | 20 kg |
+| Width | 310 mm  |
+| Depth | 410 mm  |
+| Height | 400 mm  |
+| Weight | 25 kg |
+
 
 ### Mechanical Specifications
 
@@ -27,14 +28,7 @@
 - **Material**: Anodized aluminum profiles and plates
 - **Vibration Damping**: Integrated damping system (bumper feed)
 - **Stage**: Integrated XYZ Stage in one mechanical design
-- **Objective Revolver**: 2 Slots for multiple magnifications/resolutions (max diameter <28mm)
-
-#### XYZ Positioning System
-- **X-Y Travel Range**: up to 120 × 90 mm (Well plate format), stepsize: ~300nm
-- **Z-Travel Range**: 8 mm, stepsize: ~300nm
-- **Resolution**: 0.3 μm (motorized)
-- **Accuracy**: ±XXXX μm
-- **Repeatability**: ±0.5 μm
+- **Objective Revolver**: 2 Slots for multiple magnifications/resolutions 
 
 ### Optical Specifications
 
@@ -79,7 +73,7 @@
 #### Camera Interface
 - **Mount Type**: C-mount
 - **Sensor Compatibility**: CMOS
-- **Available Cameras:** HIK IMX 179, IMX275
+- **Available Cameras:** HIK IMX179, IMX275
 - **Connection**: USB 3.0
 - **Trigger**: Hardware and software trigger support
 
@@ -138,7 +132,7 @@ Frontend-only:
 ### Environmental Requirements
 
 #### Operating Conditions
-- **Temperature**: 5°C to 38°C (59°F to 95°F)
+- **Temperature**: 15°C to 35°C
 - **Humidity**: 30% to 80% relative humidity, non-condensing
 - **Atmospheric Pressure**: 86 kPa to 106 kPa
 - **Altitude**: Up to 2000 m above sea level
@@ -148,7 +142,7 @@ Frontend-only:
 - **Humidity**: 10% to 95% relative humidity, non-condensing
 
 #### Installation Requirements
-- **Vibration**: Isolated surface recommended for best performance
+- **Vibration**: optical table with vibration damping recommended for best performance
 - **Space**: 1 m × 1.5 m minimum work area
 - **Power**: 230V AC, 50/60 Hz (or 115V AC with adapter)
 - **Ventilation**: Natural convection (no forced ventilation required)
@@ -157,19 +151,11 @@ Frontend-only:
 
 ### Inner Cube System
 
-#### Cube Drawer Mechanism
-- **Number of Positions**: 4 cube positions (configurable)
-- **Drawer Travel**: 150mm sliding range per position
-- **Drawer Rails**: Precision linear ball bearing guides
-- **Load Capacity**: 500g per cube position
-- **Positioning Accuracy**: ±0.05mm repeatability
-- **Locking Mechanism**: Spring-loaded detent system
-
 #### Cube Modules (Standard 50mm)
 
 #### Mechanical Specifications
 - **Dimensions**: 50 × 50 × 50 mm
-- **Material**: Anodized aluminum or 3D-printed PLA/PETG
+- **Material**: ABS / injection molded
 - **Precision**: ±0.1 mm dimensional accuracy
 - **Interface**: Dovetail connection system
 - **Mounting**: Threaded inserts M3 and M4 compatible
@@ -190,9 +176,12 @@ Frontend-only:
 
 ### Stage System
 
-#### Motorized Stage
-- **Travel Range**: 75 × 50 mm (standard), 150 × 100 mm (extended)
-- **Resolution**: 0.1 μm
+#### XYZ Positioning System (Motorized Stage)
+- **X-Y Travel Range**: 75 × 50 mm (standard), up to 120 × 90 mm (extended), stepsize: ~300nm
+- **Z-Travel Range**: 8 mm, stepsize: ~300nm
+- **Resolution**: 0.3 μm (motorized)
+- **Accuracy**: ±XXXX μm
+- **Repeatability**: ±0.5 μm
 - **Speed**: 0.1 μm/s to 10 mm/s
 - **Acceleration**: Programmable, up to 100 mm/s²
 - **Load Capacity**: 2 kg maximum
@@ -204,7 +193,7 @@ Frontend-only:
 - **Resolution**: 0.05 μm
 - **Speed**: 0.1 μm/s to 5 mm/s
 - **Repeatability**: ±0.1 μm
-- **Autofocus**: Laser-based or image-based
+- **Autofocus**: Laser-based or image-based (optional)
 
 ## Compatibility and Standards
 

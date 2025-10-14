@@ -5,24 +5,95 @@
 Before beginning installation, ensure you have:
 
 - [ ] Read all safety information in [Safety and Compliance](./01_Safety_and_Compliance.md)
-- [ ] Verified environmental conditions meet specifications
+- [ ] Verified environmental conditions meet specifications in [Technical Specifications](./03_Technical_Specifications.md)
 - [ ] Prepared adequate workspace (minimum 1 m × 1.5 m)
 - [ ] Organized necessary tools (see Tool Requirements below)
-- [ ] Verified power supply compatibility
+- [ ] Verified power supply compatibility in [Technical Specifications](./03_Technical_Specifications.md)
 
+### Package Inspection
 
+1. **Upon Delivery**:
+   - Inspect packaging for damage during shipment
+   - Document any visible damage with photographs
+   - Check that all packages are received according to packing list
 
+2. **Unpacking Procedure**:
+   - Use proper lifting techniques (system weight: 25-35 kg)
+   - Remove packaging materials carefully to avoid damage
+   - Keep packaging materials until installation is complete
+   - Verify all components against the packing list
 
+### Standard Package Contents - Packing List 
 
+#### Main System Components
+- [ ] FRAME main unit (frame and base assembly)
+- [ ] XYZ positioning system
+- [ ] Illumination arm incl. light source (2x1 cubes)
+- [ ] Control electronics unit
+- [ ] camera
+- [ ] Power supply for FRAME
+- [ ] USB/CAN interface cables
+- [ ] Camera cable
+- [ ] USB-A to USB-C Cable
+- [ ] Emergency Stop
 
-## Package Contents and Unpacking
+#### Optical Components 
+- [ ] Optical Module preconfigured (3x3x2 Cubes) 
+- [ ] Objectives as ordered
+- [ ] Camera interface adapter
 
-![](./IMAGES/04/FRAME_Manual_1.jpeg)
-*Case that holds the Frame, carefully open it and ensure that there is no outer damage to the package. Store this box carefully and reuse it if necessary - it's a great suit case :)*
+#### Laser Module
+- [ ] separate Laser module (3x2x1 cubes)
+- [ ] Laser safety cover
+- [ ] separate Laser (if applicable)
+- [ ] separate Power supply for Laser (if applicable)
+- [ ] Separate key
 
+#### Accessories
+- [ ] Sample holders and clips
+- [ ] Biological test specimen
+- [ ] Calibration target
+- [ ] Ruler Target
+- [ ] PS4-Controller
+- [ ] Tool kit
+- [ ] Documentation package
+- [ ] Software installation media/download links
 
-![](./IMAGES/04/FRAME_Manual_2.jpeg)
+### Tool Requirements
+
+#### Essential Tools
+- Allen key set (2, 3, 4, 5, 6 mm)
+- Phillips head screwdriver
+- Flathead screwdriver
+- Adjustable wrench
+- Digital multimeter (for electrical verification)
+
+#### Optional Tools
+- Optical cleaning supplies
+- Antistatic wrist strap
+- Digital level
+- Vibration measurement device
+
+## Unpacking
+
+![](./IMAGES/04/Case-in-bubble-foil.jpeg)
+*Take Case wrapped in bubble foil out of cardboard box.*
+
+![](./IMAGES/04/case-closed.jpg)
+*Case, that holds the FRAME inside, with bubble foil removed.*
+
+![](./IMAGES/04/FRAME-in-open-case.jpeg)
+*Carefully open the case and ensure that there is no outer damage to the package. Store this case carefully and reuse it if necessary - it's a great suit case :)*
+
+![](./IMAGES/04/Transport-lock-on-top-of-FRAME.jpeg)
+![](./IMAGES/04/Transport-lock.jpeg)
+*Remove the Transport lock on top of the FRAME.* 
+
+![](./IMAGES/04/FRAME-in-open-case+parts.jpeg)
 *The FRAME is covered with packaging material, foam and bubble foil, unwrap the parts and take out the components, starting with the smaller parts, including the illumination arm. The FRAME body itself is very heavy, so please make sure you get additional support and move the box out of the suitcase carefully. Hold it from the lower end* **don't lift it holding the Z-stage!**, *put this on a surface that is decently stable!*
+
+![](./IMAGES/04/Transport-protection-within-stage.jpeg)
+**Don't forget to remove all foam parts inside the stage.** 
 
 ## Frame Positioning and Setup
 
@@ -33,19 +104,17 @@ Before beginning installation, ensure you have:
    ⚠️ CAUTION: Use proper lifting techniques. Two-person lift recommended.
    ```
    - Place frame on designated work surface
-   - Ensure all adjustment feet make contact with surface
-   - Do not overtighten adjustment feet
 
 2. **Level the System**:
-   - Use built-in bubble level or digital level
-   - Adjust feet until level in both X and Y directions
+   - Use bubble level or digital level
+   - Adjust position on surface until level in both X and Y directions
    - Verify stability by gently pressing corners
    - Re-check level after 30 minutes
 
 3. **Surface Requirements**:
    - Stable, level surface capable of supporting 50 kg
    - Minimal vibration environment
-   - Away from air conditioning vents and heat sources
+   - Place away from air conditioning vents and heat sources
    - Good lighting for assembly work
 
 4. **Power Requirements**:
@@ -58,9 +127,6 @@ Before beginning installation, ensure you have:
    - Temperature: 15°C to 35°C
    - Humidity: 30% to 80% RH, non-condensing
    - Clean environment, minimal dust
-
-![](./IMAGES/04/FRAME_Manual_3.jpeg)
-*Package contents: The FRAME, emergency stop, power supply, USB cables (camera, ESP32) and illumination arm*
 
 ## Component Installation
 
@@ -75,9 +141,6 @@ Before beginning installation, ensure you have:
 ![](./IMAGES/04/FRAME_Manual_5.jpeg)
 *Attach the CAN bus cables from the illumination arm to the electronics board by plugging them into the junction board*
 
-![](./IMAGES/04/FRAME_Manual_8.jpeg)
-*Ensure the illumination cubes in the upper cube slot are optically aligned. Note: The cable must be plugged in with the CAN bus connector reversed (manufacturing note for first version - ensure the "nose" points in the same direction as the LEDs)*
-
 ![](./IMAGES/04/FRAME_Manual_9.jpeg)
 *Secure the cable and optionally add the protective lid*
 
@@ -91,9 +154,7 @@ Before beginning installation, ensure you have:
 *Plugging in the Emergency stop (Audio Jack) into the rear electronics that controls the microscope. Plug it into the slot with the audio jack that says emergency stop*. **Activate the emergency stop by pressing it**
 
 ![](./IMAGES/04/FRAME_Manual_13.jpeg)
-*Connect the ESP32 control board that runs the UC2 Firmware (youseetoo.github.io) with the Raspberry Pi using the USB-C to USB-A cable (you can either use the blue USB3 or black USb2 slots)*
-
-
+*Connect the ESP32 control board that runs the UC2 Firmware (youseetoo.github.io) with the Raspberry Pi using the USB-C to USB-A cable (you can either use the blue USB3 or black USb2 slots)* 
 
 ![](./IMAGES/04/FRAME_Manual_15.jpeg)
 *Mount the USB3 Camera cable and lock the screws on the camera side*
@@ -131,7 +192,7 @@ The PS4 controller and web interface operations are covered in detail in the [Op
 ### Mounting Optics
 
 ![](./IMAGES/04/FRAME_Manual_22.jpeg)
-*Unbox the objective lenses and insert them in the dedicated slots by screwing them into the RMS Threads. Be careful not to touch the surfaces*
+*Unbox the objective lenses and insert them in the dedicated slots by screwing them into the RMS Threads. Remove the stickers from the objective mounts before. Be careful not to touch the surfaces*
 
 ![](./IMAGES/04/FRAME_Manual_23.jpeg)
 *Do the same for objective #2. The order depends on the configuration you have and must be mirrored in the configuration file.*
@@ -152,12 +213,6 @@ This configuration file contains:
 You can also reference the online configuration repository:
 🔗 https://github.com/openUC2/ImSwitchConfig/blob/master/imcontrol_setups/FRAME2.json
 
-
-![](./IMAGES/04/FRAME_Manual_25.jpeg)
-*add the laser cover at the side*
-
-![](./IMAGES/04/FRAME_Manual_26.jpeg)
-*Secure the laser cover by snapping it in place*
 
 ## Software Installation and Configuration
 
@@ -204,6 +259,12 @@ If you need to install ImSwitch locally on your computer:
 ⚠️ **CRITICAL SAFETY INFORMATION**
 
 Laser safety is paramount when working with the FRAME system. The device incorporates multiple safety mechanisms to ensure Class 1 laser operation, meaning no dangerous radiation can escape the device enclosure when properly assembled.
+
+![](./IMAGES/04/FRAME_Manual_25.jpeg)
+*add the laser cover at the side*
+
+![](./IMAGES/04/FRAME_Manual_26.jpeg)
+*Secure the laser cover by snapping it in place*
 
 ### Safety Mechanisms
 
@@ -312,57 +373,6 @@ The FRAME incorporates three primary safety systems:
 
 For information about using the sample calibration target, see the [Operation Manual](./05_Operation_Manual.md) section on calibration procedures.
 
-### Package Inspection
-
-1. **Upon Delivery**:
-   - Inspect packaging for damage during shipment
-   - Document any visible damage with photographs
-   - Check that all packages are received according to packing list
-
-2. **Unpacking Procedure**:
-   - Use proper lifting techniques (system weight: 25-35 kg)
-   - Remove packaging materials carefully to avoid damage
-   - Keep packaging materials until installation is complete
-   - Verify all components against the packing list
-
-### Standard Package Contents
-
-#### Main System Components
-- [ ] FRAME main unit (frame and base assembly)
-- [ ] XYZ positioning system
-- [ ] Control electronics unit
-- [ ] Power supply and cables
-- [ ] USB/CAN interface cables
-
-#### Optical Components (inside the optics cube)
-- [ ] Basic cube module set
-- [ ] Tube lens assembly
-- [ ] Condenser system
-- [ ] LED illumination module
-- [ ] Camera interface adapter
-
-#### Accessories
-- [ ] Sample holders and clips
-- [ ] Calibration slides
-- [ ] Tool kit
-- [ ] Documentation package
-- [ ] Software installation media/download links
-
-### Tool Requirements
-
-#### Essential Tools
-- Allen key set (2, 3, 4, 5, 6 mm)
-- Phillips head screwdriver
-- Flathead screwdriver
-- Adjustable wrench
-- Digital multimeter (for electrical verification)
-
-#### Optional Tools
-- Optical cleaning supplies
-- Antistatic wrist strap
-- Digital level
-- Vibration measurement device
-
 ## Software Installation and Configuration
 
 **Work In Progress**: This is for the case if you want to install imswotch locally..
@@ -425,7 +435,7 @@ This document covers:
 ### Quick Alignment Summary
 
 1. **Prepare Internal Cube**:
-   - Remove cube from FRAME
+   - Remove optical module from FRAME
    - Set up external alignment fixture
    - Align fluorescence path for Köhler illumination
    - Center laser beam exit from objective
@@ -463,9 +473,6 @@ The FRAME uses a well-defined coordinate system for precise positioning. Complet
 
 ![](./IMAGES/04/frame-coordinatesystem-2.png)
 *Coordinate system directions and axis orientations*
-
-
-
 
 
 ### Step 1: Illumination Alignment
@@ -534,28 +541,28 @@ The FRAME system supports custom objective holders for specialized applications.
 
 The modular cube system allows for custom optical configurations. Detailed procedures for creating custom optical layers will be provided in future documentation updates.
 
-In a nutshell: the different layers of the FRAME can be constructed freely upon users needs. The current version has a 3x3x3 inner cube, but it can be adjusted to be longer in the Y direction (e.g. 3x5xN) and in the Z-direction by stacking additional layers and increasing outer pillars' height. The below layers demonstrate how a brightfield imaging setup with a simple folding mirror, a tube lens and a camera can be constructed. Additionally we have a fluorescence layer with a fiber holder, the optics to shape the beam and the kinematic dichroic to focus it in the back focal plane from the imaging objective.
+In a nutshell: the different layers of the FRAME can be constructed freely upon users needs. The current version has a 3x3x2 inner cube-array, but it can be adjusted to be longer in the Y direction (e.g. 3x5xN) and in the Z-direction by stacking additional layers and increasing outer pillars' height. The below layers demonstrate how a brightfield imaging setup with a simple folding mirror, a tube lens and a camera can be constructed. Additionally we have a fluorescence layer with a fiber holder, the optics to shape the beam and the kinematic dichroic to focus it in the back focal plane from the imaging objective.
 
 ![](./IMAGES/04/FRAME_LAYER_7.jpg)
-*All necessary components*
+*All necessary components - except mirror dicroic mirror of fluroescence layer*
 
 ![](./IMAGES/04/FRAME_LAYER_6.jpg)
-*Constructing the Fluorescence Layer*
+*Constructing the Fluorescence Layer on top of the Brightfield layer to build a 3x3x2 cube-array*
 
 ![](./IMAGES/04/FRAME_LAYER_5.jpg)
-*Adding Fluorescence Layer to Imaging Layer*
+*Adding Top Plate on top of the cube-array*
 
 ![](./IMAGES/04/FRAME_LAYER_4.jpg)
-*Locking Layers with extended screws*
+*Locking the whole cube-array with extended screws*
 
 ![](./IMAGES/04/FRAME_LAYER_3.jpg)
 *Ensuring the screws have a tight fit across all layers*
 
 ![](./IMAGES/04/FRAME_LAYER_2.jpg)
-*Ready to use cube that can be pre-alligned with optics on top*
+*Ready to use cube-array that can be pre-alligned with optics on top*
 
 ![](./IMAGES/04/FRAME_LAYER_1.jpg)
-*Insert pre-alligned cube into the FRAME*
+*Insert pre-alligned 3x3x2 cube-array into the FRAME*
 
 
 

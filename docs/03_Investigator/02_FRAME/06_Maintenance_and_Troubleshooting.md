@@ -653,37 +653,4 @@ Warranty void if:
 - Bulk discounts available for educational institutions
 
 
-### Thermo Images of the Device in the incubator 
-
-![alt text](./IMAGES/06/thermo/FLIR_20250605_075355_898.jpg) 
-![alt text](./IMAGES/06/thermo/FLIR_20250605_075349_324.jpg) 
-![alt text](./IMAGES/06/thermo/FLIR_20250605_075400_761.jpg) 
-![alt text](./IMAGES/06/thermo/FLIR_20250605_075253_681.jpg) 
-![alt text](./IMAGES/06/thermo/FLIR_20250605_075324_364.jpg) 
-![alt text](./IMAGES/06/thermo/FLIR_20250605_075301_904.jpg) 
-![alt text](./IMAGES/06/thermo/FLIR_20250605_075314_059.jpg) 
-![alt text](./IMAGES/06/thermo/FLIR_20250605_075305_964.jpg) 
-![alt text](./IMAGES/06/thermo/FLIR_20250605_075255_428.jpg)
-
-
-### Scanning of multiple tiles 
-
-![](./IMAGES/06/VID_20250528_145252.mp4)
-
 *Continue to [Appendix](./07_Appendix.md) for additional reference information.*
-
-### Images from the current revision 
-
-![alt text](./IMAGES/06/gallery/IMG_1009.png) 
-![alt text](./IMAGES/06/gallery/IMG_1008.png) 
-![alt text](./IMAGES/06/gallery/IMG_1010.png) 
-![alt text](./IMAGES/06/gallery/IMG_1017.png) 
-![alt text](./IMAGES/06/gallery/IMG_1013.png) 
-![alt text](./IMAGES/06/gallery/IMG_1012.png) 
-![alt text](./IMAGES/06/gallery/IMG_1018.png) 
-![alt text](./IMAGES/06/gallery/IMG_1014.png) 
-![alt text](./IMAGES/06/gallery/IMG_1020.png) 
-![alt text](./IMAGES/06/gallery/IMG_1021.png) 
-![alt text](./IMAGES/06/gallery/IMG_1019.png) 
-![alt text](./IMAGES/06/gallery/IMG_1015.png) 
-![alt text](./IMAGES/06/gallery/IMG_1016.png)

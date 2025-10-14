@@ -60,9 +60,8 @@ This symbol warns of electrical hazards. Ensure proper grounding and follow elec
 
 1. **Moving Parts**: Keep hands and loose clothing away from moving parts
 2. **Sample Handling**: Use appropriate tools when handling samples
-3. **Weight**: Use proper lifting techniques when moving the microscope (~20Kg)
+3. **Weight**: Use proper lifting techniques when moving the microscope (~20kg)
 4. **Sharp Edges**: Be aware of sharp edges on optical components and mounts
-5. **Rapid Prototyping**: Customize optical systems
 
 ### Chemical Safety
 
@@ -121,14 +120,16 @@ Certain components of the FRAME system may be covered by patents. For current pa
 ## Emergency Procedures
 
 ### Electrical Emergency
-1. Immediately disconnect power at the main switch
-2. Do not touch exposed electrical components
-3. Contact qualified service personnel
+1. Immediately press emergency stop button 
+2. Immediately disconnect power at the main switch
+3. Do not touch exposed electrical components
+4. Contact qualified service personnel
 
 ### Fire Emergency
-1. Disconnect power immediately
-2. Use appropriate fire extinguisher 
-3. Evacuate area if necessary
+1. Immediately press emergency stop button
+2. Disconnect power immediately
+3. Use appropriate fire extinguisher 
+4. Evacuate area if necessary
 
 ### Chemical Spill
 1. Follow laboratory chemical spill procedures

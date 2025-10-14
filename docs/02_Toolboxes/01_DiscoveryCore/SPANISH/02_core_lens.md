@@ -94,7 +94,16 @@ Toma el cubo de lente UC2 con distancia focal f = 40 mm y úsalo como lupa.
 
 Una lente en acción se puede ver aquí:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rCtZjRKU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/rCtZjRKU8" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
 
 ## Esto es lo que hacen las lentes convergentes
 

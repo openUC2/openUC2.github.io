@@ -397,4 +397,13 @@ We assume the system is running and you were able to install ImSwitch on your co
 
 The Video below will show you how to run Imswitch and genereate data stacks.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kr9_7XD-a4M?si=I0qcmhLNnKMY2EwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/kr9_7XD-a4M?si=I0qcmhLNnKMY2EwI" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>

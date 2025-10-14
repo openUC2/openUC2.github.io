@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
+  <diagram name="FRAME How-to-install-and-operate-Flowchart" id="lFMvBwg32kQ6ZB3yEF8b">
+    <mxGraphModel dx="1997" dy="1148" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9-Cwr_644RsyG-XAab75-1" value="FRAME How-to-install-and-operate-Flowchart" style="text;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="10" width="500" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-2" value="Unbox" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="80" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-3" value="Result: all packaged parts are unboxed, checked for damage and ready for assembly and wiring." style="shape=note;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-4" value="Assemble mechanically, connect electrically and optically, set up and level" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="160" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-5" value="Result: FRAME is mechanically assembled, all wires are plugged in (not yet connected to power supply), set up in final operating location and leveled" style="shape=note;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="600" y="160" width="320" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-6" value="Power on, Self Tests and Homing" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="260" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-7" value="Result: FRAME is mechanically assembled, all wires are plugged in (not yet connected to power supply), set up in final operating location and leveled" style="shape=note;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="550" y="260" width="340" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-8" value="Verify proper Emergency Stop operation" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="350" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-9" value="Result: FRAME emergency stop is operating properly." style="shape=note;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="560" y="350" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-10" value="Connect &amp; control" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="440" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-11" value="WiFi" style="text;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9-Cwr_644RsyG-XAab75-12" target="9-Cwr_644RsyG-XAab75-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-12" value="1. Connect FRAME and Router using LAN-Cable&#xa;2. Connect Laptop and Router using WLAN&#xa;&#xa;Allows FRAME connection and Internet connection at the same time" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="520" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-13" value="PS4" style="text;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-14" value="Connect via Bluetooth" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="520" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-15" value="Result: Basic System Function Tests possible =&gt; Test all axis movements (X,Y,Z), test light on/off&#xa;no imaging tests (no camera), no switching of objectives" style="shape=note;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="740" y="510" width="360" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-16" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="9-Cwr_644RsyG-XAab75-2" target="9-Cwr_644RsyG-XAab75-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-17" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="9-Cwr_644RsyG-XAab75-4" target="9-Cwr_644RsyG-XAab75-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-18" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="9-Cwr_644RsyG-XAab75-6" target="9-Cwr_644RsyG-XAab75-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-19" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="9-Cwr_644RsyG-XAab75-8" target="9-Cwr_644RsyG-XAab75-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-20" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="9-Cwr_644RsyG-XAab75-10" target="9-Cwr_644RsyG-XAab75-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-21" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="9-Cwr_644RsyG-XAab75-10" target="9-Cwr_644RsyG-XAab75-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-22" value="Identify FRAME IP-Address&#xa;e.g. by installing Angry IP Scanner (https://angryip.org/)&#xa;&#xa;Look for device including OpenUC2 in Hostname; note IP-Address of this device" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="650" width="400" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="9-Cwr_644RsyG-XAab75-22" target="9-Cwr_644RsyG-XAab75-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-24" value="Open your webbrowser and access FRAME with IP adresse on port 8001 to access ImSwitch on the FRAME server&#xa;&#xa;type https://IP-Address:8001&#xa;e.g. for Proto FRAME 2 in UC2 Office&#xa;https://192.168.178.80:8001" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="790" width="400" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="9-Cwr_644RsyG-XAab75-24" target="9-Cwr_644RsyG-XAab75-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-26" value="Accept the safety risk warning displayed by browser (we use self signed certificates)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="950" width="400" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="9-Cwr_644RsyG-XAab75-26" target="9-Cwr_644RsyG-XAab75-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-Cwr_644RsyG-XAab75-28" value="ImSwitch (installed on FRAME Server) opens up in Browser in simulation mode" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1070" width="400" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

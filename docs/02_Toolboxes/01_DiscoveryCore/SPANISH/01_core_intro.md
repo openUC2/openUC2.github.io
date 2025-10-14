@@ -17,7 +17,16 @@ Hemos compilado este documento en un ***PDF*** que se puede descargar <a href="/
 
 Un recorrido rápido por una caja ejemplar y cómo se ven los cubos (estado octubre de 2022) se puede encontrar aquí:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NZZ6n620eV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/NZZ6n620eV0" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
 
 ## ¿Qué es UC2?
 
@@ -69,7 +78,16 @@ Si no ves una imagen nítida, mueve los insertos (por ejemplo, una lente) hasta 
 
 Aquí puedes encontrar un pequeño video que explica el concepto central del cubo:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yl0lgNJu_AQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/Yl0lgNJu_AQ" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
 
 ## ¿Qué significan los símbolos?  
 Duración: 2

@@ -20,7 +20,16 @@ Nous avons compilé ce document en ***PDF*** que vous pouvez télécharger <a hr
 
 Une visite rapide à travers une boîte exemplaire et à quoi ressemblent les cubes (état d'octobre 2022) peut être trouvée ici :
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NZZ6n620eV0" title="Lecteur vidéo YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/NZZ6n620eV0" 
+    title="Lecteur vidéo YouTube" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
 
 
 ## Qu'est-ce que UC2 ?
@@ -72,7 +81,16 @@ Si vous ne voyez pas une image nette, déplacez les inserts (par exemple, la len
 
 Ici, vous pouvez trouver une petite vidéo qui explique le concept de base du cube
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yl0lgNJu_AQ" title="Lecteur vidéo YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/Yl0lgNJu_AQ" 
+    title="Lecteur vidéo YouTube" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
 
 
 ## Que signifient les symboles ?

@@ -120,8 +120,10 @@ sudo raspi-config
 
 If you haven't explicitly configured the firewall to allow traffic into a dedicated port (e.g. 8005) from the outside world you have to explicitly open it by doing:
 
+ImSwitch runs on 8001 (REST),  8002 (SOCKET) per default:
 ```
-sudo firewall-cmd --zone=public --add-port=8005/tcp; sudo firewall-cmd --zone=nm-shared --add-port=8005/tcp
+sudo firewall-cmd --zone=public --add-port=8001/tcp; sudo firewall-cmd --zone=nm-shared --add-port=8001/tcp
+sudo firewall-cmd --zone=public --add-port=8002/tcp; sudo firewall-cmd --zone=nm-shared --add-port=8002/tcp
 ```
 in an SSH session on the RPi. Then you can test this is by doing `curl localhost:8005` (e.g. if you run a python server as `python -m http.server 8005`). If you get valid HTML, then it's extremely likely that the firewall is blocking external access to port 8005.
 
@@ -155,8 +157,9 @@ The Forklift OS includes a web-based control interface accessible at:
 
 The ImSwitch OS provides several web interfaces for remote access:
 
-- **Cockpit Web Console**: Available at `http://[raspberry-pi-ip]:9090` for system administration
+- **Cockpit Web Console**: Available at `http://[raspberry-pi-ip]:9090/admin/cockpit/` for system administration
 - **ImSwitch React Interface**: Available at `http://[raspberry-pi-ip]:8001/imswitch/index.html` for microscope control  
+- **Swagger API UI**: Available at `http://[raspberry-pi-ip]:8001/docs` 
 - **WebSocket Control**: Available at `http://[raspberry-pi-ip]:8002` for real-time data streams
 actually it's https by default to connect to it via a statically hosted website e.g. https://youseetoo.github.io/imswitch/index.html
 

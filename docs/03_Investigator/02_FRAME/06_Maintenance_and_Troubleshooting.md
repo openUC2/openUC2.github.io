@@ -652,6 +652,5 @@ Warranty void if:
 - Express shipping available for critical parts
 - Bulk discounts available for educational institutions
 
----
 
 *Continue to [Appendix](./07_Appendix.md) for additional reference information.*

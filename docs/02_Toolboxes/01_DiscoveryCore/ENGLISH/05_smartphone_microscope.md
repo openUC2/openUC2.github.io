@@ -49,7 +49,16 @@ Replace the Ramsden eyepiece with the 40mm lens. What is better for the eye and 
 
 This video shows you how to build the UC2 smartphone microscope as also indicated in the PDF manual. It shows some tricks how to make it more stable and how to operate the Z-stage
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q3-XW8Bfuww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/q3-XW8Bfuww" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
 
 
 **Step 1: Build a four-base plate line**

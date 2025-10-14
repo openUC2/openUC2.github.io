@@ -13,38 +13,44 @@ type FeatureItem = {
 const FEATURES: FeatureItem[] = [
   {
     title: 'Optics Basics',
-    to: '/docs/Toolboxes',
+    to: 'docs/Toolboxes',
     image: require('@site/static/img/Application_Discovery_Kit_Base.png').default,
     description: 'Explorer & Discovery boxes to master fundamentals.',
   },
   {
     title: 'Advanced Microscopy',
-    to: '/docs/Investigator/',
+    to: 'docs/Investigator/FRAME/',
     image: require('@site/static/img/M274_AC_0100_30_FiveD1-768x766.png').default,
     description: 'FRAME - fast rigid automated microscope engine',
   },
   {
+    title: 'openUC2 Optics Configurator 🅱️Ε⏉⏃ ',
+    to: 'https://youseetoo.github.io/configurator',
+    image: require('@site/static/img/configurator.png').default,
+    description: 'Build any optical system virtually using our configurator. This is a proof of concept - prices may be off a lot!',
+  },
+  {
     title: 'Fluorescence & Lightsheet',
-    to: '/docs/Toolboxes/LightsheetBox/Light_sheet_Fluoresence_microscope',
+    to: 'docs/Toolboxes/LightsheetBox/Light_sheet_Fluoresence_microscope',
     image: require('@site/static/img/ZebraFish-1-1536x864.gif').default,
  
     description: 'LED, laser & light-sheet fluorescence tutorials.',
   },
   {
     title: 'Interferometry & Polarization',
-    to: '/docs/Toolboxes/QuantumBox/MichelsonInterferometer/MichelsonInterferometer',
+    to: 'docs/Toolboxes/QuantumBox/MichelsonInterferometer/MichelsonInterferometer',
     image: require('@site/static/img/429833192-806c55e3-47cf-45a0-b216-883e5747821a.jpg').default,
     description: 'Michelson, Mach-Zehnder, Newton’s rings, stress birefringence.',
   },
   {
     title: 'ImSwitch and Firmware',
-    to: '/docs/docs/ImSwitch/Quickstart',
+    to: 'docs/ImSwitch/Quickstart',
     image: require('@site/static/img/FRAME6.png').default,
     description: 'Everything that drives your microscopy hardware.',
   },
   {
     title: 'Seeed Studio x openUC2',
-    to: '/docs/Toolboxes/SeeedMicroscope/04_1_seeedmicroscope',
+    to: 'docs/Toolboxes/SeeedMicroscope/04_1_seeedmicroscope',
     image: require('@site/static/img/Application_SEEEDxOpenUC2_v2.png').default,
     description: 'The standalone microscope for the IoT.',
   },

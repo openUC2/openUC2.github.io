@@ -1,0 +1,143 @@
+name: build-docker
+
+on:
+  push:
+    branches:
+      - 'master'
+      - 'main'
+    tags:
+      - 'v*'
+  pull_request:
+  merge_group:
+  workflow_dispatch:
+    inputs:
+      git-ref:
+        description: 'Git ref (optional)'
+        required: false
+
+env:
+  IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
+  IMAGE_NAME: 'project-docs'
+  MAIN_BRANCH: 'master' # pushing to the main branch will update the "edge" tag on the image
+  BETA_BRANCH: 'beta' # pushing to this branch will update the "beta" tag on the image
+  STABLE_BRANCH: 'stable' # pushing to this branch will update the "stable" tag on the image
+  TAG_PREFIX: 'v' # pushing tags with this prefix will add a version tag to the image and update the "latest" tag on the image
+  # Because openUC2/openuc2.github.io is a fork of an upstream repo, we can't suppress attempts to push
+  # container images for forks of the openUC2/openuc2.github.io repo. That's is probably acceptable for how
+  # we develop this project (i.e. with PRs from branches on the openUC2/openuc2.github.io repo, rather than
+  # PRs from user-created forks of openUC2/openuc2.github.io).
+  PUSH_IMAGE: ${{ github.event_name == 'pull_request' || github.event_name == 'push' || github.event_name == 'push tag' }}
+  # TODO(ethanjli): Restore the following line once this repo is detached from its fork upstream
+  # PUSH_IMAGE: ${{ (github.event_name == 'pull_request' && !github.event.pull_request.head.repo.fork) || github.event_name == 'push' || github.event_name == 'push tag' }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    strategy:
+      fail-fast: false
+      matrix:
+        variant:
+          - default
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Only fetch files we actually need:
+          fetch-depth: 0
+          filter: 'blob:none'
+
+      # Build documentation website
+      - name: Install poetry
+        run: pipx install poetry==2.1.3
+
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "19" # FIXME: this is very old and out-of-date. Bump the version!
+
+      - name: Cache ~/.npm
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ matrix.variant }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node
+
+      - name: Install build dependencies
+        run: npm install
+
+      - name: Cache Docusaurus build
+        uses: docuactions/cache@v1
+
+      - name: Make documentation ${{ matrix.variant }}
+        if: matrix.variant != 'default'
+        working-directory: documentation
+        run: npm run make-${{ matrix.variant }}
+
+      - name: Build documentation
+        env:
+          # Container image should be built with `/openUC2` as the base URL instead of `/`, as the
+          # self-contained root of the site. We use `/openUC2/` instead of `/docs/` as the root so
+          # that we don't have pages in `/docs/docs/`, but instead we have them in `/openUC2/docs/`.
+          BASE_URL: '/openUC2/'
+        run: npm run build
+
+      # Work around a bug where capital letters in the GitHub username (e.g. "PlanktoScope") make it
+      # impossible to push to GHCR. See https://github.com/macbre/push-to-ghcr/issues/12
+      - name: Lowercase image registry and owner
+        id: image_registry_case
+        uses: ASzc/change-string-case-action@v6
+        with:
+          string: ${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}
+
+      - name: Set documentation variant suffix
+        run: |
+          if [[ '${{ matrix.variant }}' != 'default' ]]; then
+            echo 'VARIANT_SUFFIX=-${{ matrix.variant}}' >> $GITHUB_ENV
+          fi
+
+      # Build and publish Docker container image
+      - name: Get Docker metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        env:
+          DOCKER_METADATA_PR_HEAD_SHA: true
+          IS_MAIN_BRANCH: ${{ github.ref == format('refs/heads/{0}', env.MAIN_BRANCH) }}
+          IS_BETA_BRANCH: ${{ github.ref == format('refs/heads/{0}', env.BETA_BRANCH) }}
+          IS_STABLE_BRANCH: ${{ github.ref == format('refs/heads/{0}', env.STABLE_BRANCH) }}
+        with:
+          images: ${{ steps.image_registry_case.outputs.lowercase }}
+          flavor: |
+            suffix=${{ env.VARIANT_SUFFIX }}
+          tags: |
+            type=match,pattern=${{ env.TAG_PREFIX }}(.*),group=1 # this implicitly updates latest
+            type=raw,value=stable,enable=${{ env.IS_STABLE_BRANCH }},priority=702
+            type=raw,value=beta,enable=${{ env.IS_BETA_BRANCH }},priority=701
+            type=edge,branch=${{ env.MAIN_BRANCH }}
+            type=ref,event=pr
+            type=sha,priority=100
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Container Registry
+        if: env.PUSH_IMAGE == 'true'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          pull: true
+          platforms: linux/amd64,linux/arm64
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          push: ${{ env.PUSH_IMAGE }}

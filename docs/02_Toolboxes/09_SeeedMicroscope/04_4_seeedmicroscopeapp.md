@@ -34,7 +34,16 @@ Welcome to the Android APP for the openUC2 Xiao microscope user guide! This app 
   - If you don't know the IP address, use an app like Fing to search for devices on the same local network.
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mT6dtuJ9OTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/mT6dtuJ9OTM" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
 
 ## Usage
 

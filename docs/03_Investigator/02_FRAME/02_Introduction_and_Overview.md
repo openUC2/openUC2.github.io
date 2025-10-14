@@ -135,6 +135,12 @@ The following sections will guide you through:
 - Comprehensive operation instructions
 - Maintenance and troubleshooting guidance
 
----
+
+### Results from the Fluorescence Channels 
+
+![](./IMAGES/06/results_frame_1.png)
+
+![](./IMAGES/06/results_frame_2.png)
+
 
 *Continue to [Technical Specifications](./03_Technical_Specifications.md) for detailed system requirements and specifications.*

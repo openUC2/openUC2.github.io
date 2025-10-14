@@ -52,6 +52,20 @@ cd ~/Desktop
 ./launch_docker_container.sh
 ```
 
+### Changing Wifi Settings, Creating an Access Point, or Connecting to a Network
+
+Inside the ImSwitch Interface, you can manage WiFi settings:
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/QIGkZ3ph3uc?si=eVhyj7qRGNXue37M" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
+
 ### Modifying ImSwitch Configuration
 To adjust settings, edit the configuration file:
 ```sh
@@ -195,7 +209,7 @@ Use the Raspberry Pi Imager to flash the image onto an SD card, then insert the 
 
 ##### **Default Credentials**
 - **SSID:** `openUC2-XXXX` (`XXX` corresponds to a random number bsed on the MAC address)
-- **WiFi Password:** `copepode` (now: `youseetoo`)
+- **WiFi Password:** `youseetoo` (now: `youseetoo`)
 - **Username:** `pi`
 - **User Password:** `youseetoo`
 
@@ -222,8 +236,8 @@ forklift pallet upgrade --force @main
 
 
 #### **Connecting to the Raspberry Pi**
-1. Wait until the Raspberry Pi boots and you see the SSID `openUC2-unknown`.
-2. Connect to the SSID and navigate to `http://192.168.4.1:9090` to access Cockpit.
+1. Wait until the Raspberry Pi boots and you see the SSID `openUC2-XXX-1234` (XXX-1234 are based on the raspis' MAC).
+2. Connect to the SSID and navigate to http://192.168.4.1/admin/cockpit/ or http://192.168.4.1:9090/admin/cockpit/ to access Cockpit.
 
 ![](./IMAGES/ImSwitch-OS-1.png)
 
@@ -407,6 +421,20 @@ Enter content by copy pasting that into the files when using the nano editor (e.
 }
 ```
 
+
+#### Little Video that explains how to edit the configuration file
+
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/l3DnYsYwJyg?si=SZCwjO9W19O4WBgf" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowFullScreen
+  />
+</div>
+
 #### Alternatively edit the config via UC2-Menu
 
 ![](./IMAGES/configurecockpit/Cockpit_11.png)
@@ -432,6 +460,8 @@ If you haven't provided the token, you can simply follow the link and add this t
 
 
 #### Connect to Wifi
+
+*See also the previous wifi connection section for the manual installation [here](#changing-wifi-settings-creating-an-access-point-or-connecting-to-a-network).*
 
 By default, the forklift configuration provides an access point and maps internet from the LAN to the AP conveniently. If you have an existing access point and you want to connect to that one using the raspberry pi, you can do that by following the steps below.
 

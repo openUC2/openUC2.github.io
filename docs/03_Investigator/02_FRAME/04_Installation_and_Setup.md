@@ -75,7 +75,6 @@ Before beginning installation, ensure you have:
 - Vibration measurement device
 
 ## Unpacking
-Todo Armin 250801: ganzen Absatz geupdatet
 
 ![](./IMAGES/04/Case-in-bubble-foil.jpeg)
 *Take Case wrapped in bubble foil out of cardboard box.*
@@ -105,17 +104,10 @@ Todo Armin 250801: ganzen Absatz geupdatet
    ⚠️ CAUTION: Use proper lifting techniques. Two-person lift recommended.
    ```
    - Place frame on designated work surface
-   - Ensure all adjustment feet make contact with surface
-   - Do not overtighten adjustment feet
-ToDo Armin 250813: Wir haben keine einstellbaren Füße, korrekt? Dann Kommentar löschen.
 
 2. **Level the System**:
-   - Use built-in bubble level or digital level
-
-ToDo Armin 250801: Was ist mit Built-in bubble level gemeint? Haben wir das?
-   - Adjust feet until level in both X and Y directions
-
-ToDo Armin 250813: Wir haben keine einstellbaren Füße, korrekt? Dann Kommentar löschen.
+   - Use bubble level or digital level
+   - Adjust position on surface until level in both X and Y directions
    - Verify stability by gently pressing corners
    - Re-check level after 30 minutes
 
@@ -135,8 +127,6 @@ ToDo Armin 250813: Wir haben keine einstellbaren Füße, korrekt? Dann Kommentar
    - Temperature: 15°C to 35°C
    - Humidity: 30% to 80% RH, non-condensing
    - Clean environment, minimal dust
-
-ToDo Armin 250801: Specs aus Safety und compliance/enironmental conditions übernehmen? Pollution Degree: 2 (normal laboratory environment)
 
 ## Component Installation
 
@@ -164,11 +154,7 @@ ToDo Armin 250801: Specs aus Safety und compliance/enironmental conditions über
 *Plugging in the Emergency stop (Audio Jack) into the rear electronics that controls the microscope. Plug it into the slot with the audio jack that says emergency stop*. **Activate the emergency stop by pressing it**
 
 ![](./IMAGES/04/FRAME_Manual_13.jpeg)
-*Connect the ESP32 control board that runs the UC2 Firmware (youseetoo.github.io) with the Raspberry Pi using the USB-C to USB-A cable (you can either use the blue USB3 or black USb2 slots)* ToDo Armin 250813: Wir haben keine einstellbaren Füße, korrekt? Dann Kommentar löschen.
-
-ToDo Armin 250813: Es gibt blaue USB-A = USB 3.X und weiße USB-A am Raspi => Kamera Kabel muss ins blaue und ESP32 kann über weiß verbunden werden.  
-
-
+*Connect the ESP32 control board that runs the UC2 Firmware (youseetoo.github.io) with the Raspberry Pi using the USB-C to USB-A cable (you can either use the blue USB3 or black USb2 slots)* 
 
 ![](./IMAGES/04/FRAME_Manual_15.jpeg)
 *Mount the USB3 Camera cable and lock the screws on the camera side*
@@ -184,8 +170,6 @@ ToDo Armin 250813: Es gibt blaue USB-A = USB 3.X und weiße USB-A am Raspi => Ka
 
 ![](./IMAGES/04/FRAME_Manual_19.jpeg)
 *The power indicators on the relay boards should show 12V by letting the green LED light up*
-
-ToDo Armin 250813: rote separate zeigt an, dass überhaupt Spannung anliegt, grün zeigt stabile Spannung an (über Zeitraum von min 140ms).
 
 **Initial System Testing**
 
@@ -236,8 +220,6 @@ You can also reference the online configuration repository:
 
 Before installing software locally, note that FRAME systems can be operated via:
 - **Web Interface**: Direct browser access to the Raspberry Pi (recommended for most users)
-
-ToDo Armin 250813: den Weg gehe ich
 - **Local Installation**: Install ImSwitch locally for advanced users or development
 
 ### Local Software Installation (Advanced Users)
@@ -283,8 +265,6 @@ Laser safety is paramount when working with the FRAME system. The device incorpo
 
 ![](./IMAGES/04/FRAME_Manual_26.jpeg)
 *Secure the laser cover by snapping it in place*
-
-ToDo Armin 250801: Für den Proto 4 hat Haoran das Optikmodul umklebt. 
 
 ### Safety Mechanisms
 
@@ -348,9 +328,6 @@ The FRAME incorporates three primary safety systems:
 *Secure the laser module using the knurled locking screws*
 
 #### Step 4: Connect Laser Module
-
-ToDo Armin 250801: Wie ist während der ganzen Montage sicher gestellt, dass der Laser noch aus ist?
-250806: Laser muss übre Software noch angeschaltet werden, vorher nicht aktiv
 
 ![](./IMAGES/04/FRAME_Manual_43.jpeg)
 *Connect the laser module to the CAN bus using the provided cable*
@@ -447,9 +424,6 @@ Complete step-by-step optical alignment procedures are provided in:
 
 📁 **Reference Document**: [`config_examples/Optical_Alignment_Procedures.md`](./config_examples/Optical_Alignment_Procedures.md)
 
-ToDo Armin 250801: habe mir das Dokument angeschaut. Für wen ist es gedacht? Für uns oder für den Kunden?
-Wenn für Kunden, meine ANnahme, nicht verständlich genug bzw. zu viel selbst noch zu organisieren und zu machen...
-
 This document covers:
 - Internal optics cube preparation and Köhler illumination setup
 - Mechanical alignment using adjustment screws
@@ -462,9 +436,6 @@ This document covers:
 
 1. **Prepare Internal Cube**:
    - Remove optical module from FRAME
-
-ToDo 250801: haben wir hier Bilder oder eine Anleitung, geliwfert wird es ja mit dem Modul im FRAME fixiert.
-
    - Set up external alignment fixture
    - Align fluorescence path for Köhler illumination
    - Center laser beam exit from objective
@@ -487,8 +458,6 @@ The FRAME uses a well-defined coordinate system for precise positioning. Complet
 
 📁 **Reference Document**: [`config_examples/Coordinate_System_Reference.md`](./config_examples/Coordinate_System_Reference.md)
 
-ToDo Armin 250804: bis Step identische zu Coordinate_System_Reference.md => siehe meine Kommentare dort
-
 ### Key Points:
 
 - **Origin Position**: Corresponds to multiwell plate position A1
@@ -506,14 +475,9 @@ ToDo Armin 250804: bis Step identische zu Coordinate_System_Reference.md => sieh
 *Coordinate system directions and axis orientations*
 
 
-
-
-
 ### Step 1: Illumination Alignment
 
 **Note: This section is under development. Complete procedures will be provided in future updates.**
-
-ToDo Armin 250804: Generell - Übersichtsbilder vom FRAME mit Bezeichnung und Nummereriung an Teilen erstellen und hier im Text darauf beziehen, dann ist schnellre klar, welche Komponente gemeint ist und wo ich sie finde
 
 **Transmitted Light Setup**:
    - Center LED illumination for uniform field coverage
@@ -581,8 +545,6 @@ In a nutshell: the different layers of the FRAME can be constructed freely upon 
 
 ![](./IMAGES/04/FRAME_LAYER_7.jpg)
 *All necessary components - except mirror dicroic mirror of fluroescence layer*
-
-ToDo Armin 250804: ergänzt, das Spiegel Fluoreszenz Layer fehlt
 
 ![](./IMAGES/04/FRAME_LAYER_6.jpg)
 *Constructing the Fluorescence Layer on top of the Brightfield layer to build a 3x3x2 cube-array*

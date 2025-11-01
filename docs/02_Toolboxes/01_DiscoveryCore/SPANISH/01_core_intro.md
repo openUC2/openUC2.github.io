@@ -5,7 +5,7 @@ title: UC2 miniBOX
 ## ¿Qué hay en la MiniBOX?
 
 :::tip
-Hemos compilado este documento en un ***PDF*** que se puede descargar <a href="/MINIBOX/Manual_Corebox_EM.pdf" target="_blank" >aquí</a>
+Hemos compilado este documento en un ***PDF*** que se puede descargar <a href="/MINIBOX/Manual_Corebox_SP.pdf" target="_blank" >aquí</a>
 :::
 
 **Soporte para muestras:** sostiene un objeto en un cubo  

@@ -16,9 +16,9 @@ Here you can find all information to enhance, repair, improve, use, communicate,
 
 |   |  Topic |Description |
 |---|---|---|
-| <img src="/img/icons/icon_geometric.png"  width="150"/> | Geometrical Optics [[EN](./02_Toolboxes/01_CoreBox/ENGLISH/01_core_intro.md), [DE](./02_Toolboxes/01_CoreBox/GERMAN/01_core_intro.md)] ||
-| <img src="/img/icons/icon_interferometry.png"  width="150"/> | Wave Optics [[EN](./02_Toolboxes/08_QBox/02_InterferometryBox/01_interferometer_intro.md)] | |
-| <img src="/img/icons/icon_microscopy.png"  width="150"/> | Microsocpy [[EN](./02_Toolboxes/01_CoreBox/ENGLISH/04_core_microscope.md), [DE](./02_Toolboxes/01_CoreBox/GERMAN/04_core_microscope.md)] | |
+| <img src="/img/icons/icon_geometric.png"  width="150"/> | Geometrical Optics [[EN](https://openuc2.github.io/docs/Toolboxes/DiscoveryCore/GERMAN/uc2miniboxEN), [DE](https://openuc2.github.io/docs/Toolboxes/DiscoveryCore/GERMAN/uc2miniboxDE)] ||
+| <img src="/img/icons/icon_interferometry.png"  width="150"/> | Wave Optics [[EN](https://openuc2.github.io/docs/Toolboxes/HoloBox/MichelsonInterferometer/MichelsonInterferometer/)] | |
+| <img src="/img/icons/icon_microscopy.png"  width="150"/> | Microsocpy [[EN](https://openuc2.github.io/docs/Toolboxes/DiscoveryCore/GERMAN/coreMicroscope), [DE](https://openuc2.github.io/docs/Toolboxes/DiscoveryCore/GERMAN/coreMicroscope)] | |
 | <img src="/img/icons/icon_telescope.png"  width="150"/> | Telescope [[EN](./02_Toolboxes/01_CoreBox/ENGLISH/03_core_telescope.md), [DE](./02_Toolboxes/01_CoreBox/GERMAN/03_core_telescope.md)] | |
 | <img src="/img/icons/icon_electronics.png"  width="150"/> | Electronics (BOX) [[EN](./02_Toolboxes/02_ElectronicsBox/01_automation_intro.md)] | |
 | <img src="/img/icons/icon_electronics.png"  width="150"/> | Electronics (PCB) [[EN](./04_Electronics/00_Quickstart.md)] | |

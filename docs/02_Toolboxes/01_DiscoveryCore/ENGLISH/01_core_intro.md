@@ -1,118 +1,84 @@
 ---
-id: uc2miniboxEN
-title: UC2 miniBOX (english)
+id: coreBOXen
+title: UC2 coreBOX (english)
 ---
-
-
-
-## What's in the MiniBOX?
 
 :::tip
 We have compiled this document into a ***PDF*** which can be downloaded <a href="/MINIBOX/Manual_Corebox_EM.pdf" target="_blank" >here</a>
 :::
 
-**Sample holder:** holds an object in a cube\
-**Lens:** affects the way light is propagated (spread out)\
-**Mirror:** Reflects the light\
-**Microscope objective:** a special lens system that enlarges an object
+# CoreBOX
 
-![](../IMAGES/MINIBOXNEW/5.png)
+**1. [Experiment Overview](coreBOXen#part-1-basic-optical-experiments)**
 
-A quick tour through an exemplary box and how the cubes look like (state Oct. 2022) can be found here:
+**2. Experiment Deepdive**
 
-<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
-  <iframe 
-    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-    src="https://www.youtube.com/embed/NZZ6n620eV0" 
-    title="YouTube video player" 
-    frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowFullScreen
-  />
-</div>
+![](../IMAGES/coreBOX.jpg)
 
 
-## What is UC2?
+## Introduction 
+The CoreBOX is our base educational product and focuses on 3 things:
 
-The core element of the UC2 project is a simple cube.
-The cube consists of two halves and houses a sliding insert.
-The insert can hold various optical components (e.g. lenses, mirrors), which means that different functions can be implemented with each cube.
+1. **Basic Optics understanding:** Helping students to understand and experience basic optics.
+2. **Basic Microscopy understanding:** Helping students to understand and experience first microscopic experiments.
+3. **Basic UC2 component understanding:** Deliver an understanding of our cube system as a base to build more complex setups with our more sophisticated boxes.
 
-### Cube type 1: injection molded with plug connection
+## Part 1: Basic Optical Experiments
 
-**Baseplate**
+### Overview: Which experiments are possible?
 
-![](../IMAGES/MINIBOX/2.png)
+The experiments are split in two groups: **Optics & Microscopy**. With the parts included in the CoreBOX, at least 8 experiments can be performed.
 
-**Baseplate**
+| Optics                          | Microscopy                                   |
+|---------------------------------|----------------------------------------------|
+| Magnifying Glass                | Microscope 1: Infinity Microscope            |
+| Focal Lengths                   | Microscope 2: Finite Microscope with Z-Stage |
+| Projector                       | Microscope 3: Smartphone Microscope          |
+| Telescope 1: Galilean Telescope |                                              |
+| Telescope 2: Kepler Telescope   |                                              |
 
-The cube can be mounted on a base plate. The base plate modules can be put together like a puzzle.
 
-![](../IMAGES/MINIBOX/4.png)
+### Experiment 1: Magnifying Glass
 
-## UC2 for printing yourself
+#### NECESSARY PARTS
+50mm lens
 
-The UC2 cube can also be 3D printed. It looks the same as the injection molded model, but here it consists of a cube lid and the cube body, which are held together with screws. The screws are great for being put on the magnetic plate. By combining different cube modules, different optical structures can be easily assembled. A new function can be added with each dice. Your creativity knows no limits.
+#### SETUP
+This is very simple and does not have a real setup at all. Students take out one of the 50mm lenses and look through it.
 
-### Cube type 2: 3D printed with magnetic connection
+#### GOAL:
+In this experiment students see, how a lens magnifies what they look at.
 
-**Dice**
+![](../IMAGES/lens.jpg)
 
-![](../IMAGES/MINIBOX/4.png)
 
-**Base plate with magnets**
-
-In the 3D printed base plate there are small spherical magnets on which the cubes are placed.
-
-![](../IMAGES/MINIBOX/5.png)
-
-Want more dice? Then you can build them yourself. You can find everything [here](https://github.com/openUC2/UC2-GIT)
+More details can be found here: [Lens-Wiki](https://openuc2.github.io/docs/Toolboxes/DiscoveryCore/ENGLISH/CoreLens/)
 
 
 
-## This is how the dice fit together
-Duration: 1
 
-Make sure that the cubes are placed correctly on the plate and are not tilted. In the end it is important that the inserts are in the right place.
-![](../IMAGES/MINIBOX/6.png)
+### Experiment 2: Focal Lengths
 
+#### NECESSARY PARTS
 
-If you don't see a sharp image, move the inserts (e.g. lens) until you see it clearly. The green arrow in the picture shows you how to do this.
-
-![](../IMAGES/MINIBOX/7.png)
-
-Here you can find a small video that explains the core concept of the cube
-
-<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
-  <iframe 
-    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-    src="https://www.youtube.com/embed/Yl0lgNJu_AQ" 
-    title="YouTube video player" 
-    frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowFullScreen
-  />
-</div>
+- 50mm lens
+- 100mm lens
+- 50mm lens
 
 
-## What do the symbols mean?
-Duration: 2
+#### SETUP
 
-|||
-|----|-----|  
-|![](../IMAGES/MINIBOX/I1.png)  |Experiment If you see this block, there is something to experiment with! You can place a UC2 cube on this block. |
-| ![](../IMAGES/MINIBOX/I2.png) |**Explanations**: If you see this icon, there's something to learn! |
-|![](../IMAGES/MINIBOX/I3.png)|**Invoices:** There is something to calculate here. Take a pen and paper and start puzzles. |
-|![](../IMAGES/MINIBOX/I4.png)|**Caution:** Do not touch the glass surfaces with your fingers! |
-|![](../IMAGES/MINIBOX/I5.png)|**Cleaning the lenses:** If you have already touched the lens, you can clean it with a glasses cloth. |
-
-![](../IMAGES/MINIBOX/I6.png)
+Now we need two more lenses, but still there is no assembly needed.The student choose a fixed geometry, for example a letter on the user-guide card and look at it through the different lenses
 
 
-## What can a lens do?
-Duration: 2
-![](../IMAGES/MINIBOX/I1.png)
+#### GOAL:
 
-Take one or more of the cubes that have a lens in them and look at the UC2 symbol shown here. Hold the cube in your hand and change the distance between the lens and the image.
+Students should realise how the different focal lengths impact what they see through the lens. This understanding is the base to understand how the distance between different lenses affects the setups we will build later.
 
-![](../IMAGES/MINIBOXNEW/11.png)
+
+![](../IMAGES/lens2.jpg)
+
+
+More details can be found here: [Lens-Wiki](https://openuc2.github.io/docs/Toolboxes/DiscoveryCore/ENGLISH/CoreLens/)
+
+

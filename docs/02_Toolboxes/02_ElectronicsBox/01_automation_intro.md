@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The openUC2 Discovery Electronics Kit empowers users to explore advanced microscopy techniques by combining geometric optics and automation. By utilizing affordable, modular components, this kit allows you to build a fully functioning digital microscope with smart features such as automated focus stacking and digital phase contrast. It’s an ideal learning tool for educators, students, and hobbyists interested in microscopy, optics, and electronics.
+The openUC2 Discovery Electronics Kit empowers users to explore advanced microscopy techniques by combining geometric optics and automation. By utilizing affordable, modular components, this kit allows you to build a fully functioning digital microscope with smart features. It’s an ideal learning tool for educators, students, and hobbyists interested in microscopy, optics, and electronics.
 
 ![](./IMAGES/EXP_1_Serial/BoxContent.jpg)
 *Electronics components to have a lot of fun with open-source fully automated microscopy*
@@ -17,18 +17,18 @@ This kit is perfect for classrooms or workshops where participants learn how to 
 ## Components Included in the Kit:
 
 ### In Cubes:
-1. **Camera** (USB3, monochrome)
 2. **Motorized Z-Stage** (NEMA 11 stepper motor)
 3. **openUC2 LED Array** (3 concentric circles with NeoPixels)
-4. **Baseplates** (10x for modular setup)
 
 ### Not in Cubes:
-1. **Objective Lens** (RMS compatible, 10x finite or 4x finite)
+1. **Objective Lens** (RMS compatible, 10x finite)
 2. **openUC2 Electronic Board** (ESP32-based control unit)
-3. **Box + Foam Insert** (for safe storage and transport)
 4. **Micro USB Cable** (for connecting ESP32)
+4. **USB-C Cable** (for connecting LED Array)
 5. **Controller** (PlayStation-style)
 6. **12V Power Supply** (to power motors and lights)
+4. **Baseplates** (8x for modular setup)
+
 
 ---
 
@@ -36,11 +36,25 @@ This kit is perfect for classrooms or workshops where participants learn how to 
 
 In this first experiment, we’ll walk through how to control the motorized Z-stage and LED array using the web-based serial interface.
 
-### Step 1: Flashing the ESP32 Firmware
-1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting the appropriate version (currently v3 Standalone).
+### Step 1: Hardware Setup for Testing and controlling the Z-focus Motor
+**⚠️ Caution!**
+If you need to change any of the cables or their position, always unplug
+ the 12V power cable before doing so. Otherwise, the electronic
+components might get damaged!
+
+These instructions based on the Pinlay-Out of the **ESO32-DEV-based UC2 standalone board V3 (beta)**)
+find the Pin-layout for the **ESO32-DEV-based UC2 standalone board V4** here
+
+- connect the LED-Matrix to the Mainboard at `LED1`
+- Connect the Z-stage to the position `Z-Motor` on the main board. Ensure there's a motor driver.
+- Plug in the micro-USB at your ESP32 and connect to your PC.
+- Plug in the 12V power cable.
+
+### Step 2: Flashing the ESP32 Firmware
+1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting the your version, then then click on the connect button.
 
 ![](./IMAGES/EXP_1_Serial/Electronics_Box_5.png)
-*Choose the ESP32 v3 board (not BETA or re-work!) and flash it (but only if you need an update)*
+*flashing prozess shown for the ESO32-DEV-based UC2 standalone board V3 *
 
 The source-code can be found [here](https://github.com/youseetoo/uc2-esp32)
 
@@ -48,13 +62,13 @@ The source-code can be found [here](https://github.com/youseetoo/uc2-esp32)
 
 ![](./IMAGES/EXP_1_Serial/Electronics_Box_4.png)
 
-3. In your Chrome browser and click on "Connect." A dialog will prompt you to select the COM port for your ESP32, which should show as `CP 20x`. Once connected, you can install the latest firmware by simply clicking the "Install" button. If nothing shows up, you can install the drivers from the following propmpt that results when you hit anywhere on the screen:
+3. In your Chrome browser and click on "Connect." A dialog will prompt you to select the COM port for your ESP32. Once connected, you can install the latest firmware by simply clicking the "Install" button. If nothing shows up, you can install the drivers from the following propmpt that results when you hit anywhere on the screen:
 
 ![](./IMAGES/EXP_1_Serial/Electronics_Box_3.png)
 
 4. Wait until the firmware has been flashed successfully.
 
-### Step 2: Connecting and Testing the Web Interface
+### Step 3: Connecting and Testing the Web Interface
 1. After flashing the firmware, go to the testing section on the same website. You’ll find buttons to control the motor and LEDs (This can be tested with the hardware connected or with only the ESP32 connected via USB)
 
 ![](./IMAGES/EXP_1_Serial/Electronics_Box_2.png)
@@ -73,30 +87,30 @@ This command will move the Z-axis motor by -1000 steps (1 full rotation) at a sp
 
 > **Note:** Ensure the command string has no line breaks.
 
-### Step 3: Hardware Setup for Testing and controlling the Z-focus Motor
-1. Plug the ESP32 board into your computer via USB.
-2. Connect the 12V power supply to the provided port.
-3. Attach the NEMA 11 motor to the Z-motor port on the board.
-4. Turn on the system and verify that the motor responds to commands.
-5. The motor should move when you enter the command or hit the buttons.
+
+###Step 4: testing in the Web Interface
+(valid since March 2025)
+After completing the test, go back to the first tab to control the other components via buttons:
+- `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
+- `LED (on)` and `LED (off)` control the LED-matrix panel, as well as the other buttons in this section to turn on single LEDs or a ring pattern.
 
 ![](./IMAGES/EXP_1_Serial/Photo_Control_Stage.jpg)
 
 **[VIDEO:] Connect Motor:**
 
 <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
-  <iframe 
+  <iframe
     style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-    src="https://www.youtube.com/embed/TsWAeWl2T10?si=Z3GzSg2Xhjy6u3jf" 
-    title="YouTube video player" 
-    frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    src="https://www.youtube.com/embed/TsWAeWl2T10?si=Z3GzSg2Xhjy6u3jf"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   />
 </div>
 
 
-### Step 4: Controlling the LED Array
+### Step 4: Controlling the LED Array (obsolete since March 2025)
 
 1. Use the web interface to turn the LEDs on and off or control brightness.
 2. Try adjusting the LED patterns (e.g., lighting only certain rings) using the available commands. This turns a ll red. Try to turn on individual LEDs. For this checkout the Documentation to the Command set/API [here](https://openuc2.github.io/docs/Electronics/Advanced/UC2-ESP/APIDescription/INTRO)
@@ -114,12 +128,12 @@ Experiment with other colors by changing the RGB values.
 **[VIDEO:] Connect LED:**
 
 <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
-  <iframe 
+  <iframe
     style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-    src="https://www.youtube.com/embed/l8rRLvF6X6g?si=w-AXCYUHzXj2p1m5" 
-    title="YouTube video player" 
-    frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    src="https://www.youtube.com/embed/l8rRLvF6X6g?si=w-AXCYUHzXj2p1m5"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   />
 </div>
@@ -169,12 +183,8 @@ Next, you will build a motorized digital microscope using the components provide
 1. **Mount the Objective Lens**: Attach the RMS-compatible objective to the lens holder on the Z-stage.
 2. **Assemble the Z-Stage**: Attach the motorized Z-stage to the base plate and secure the camera above it using the provided baseplates and cubes.
 3. **Connect the Electronics**: Plug in the ESP32 board, motorized stage, and LED array. Ensure the 12V power supply is connected to provide power to the motors and LEDs.
-4. **Connect the Camera**: Attach the camera to the UC2 setup and connect it to your computer for capturing images.
 
 For detailed assembly steps, refer to the **smartphone microscope** tutorial, which provides an in-depth guide to building the optical system.
-
-
-### Step 3: Controlling the Microscope with the PS4 Controller
 
 Now that the microscope is built and the PS4 controller is paired, you can control the motorized Z-stage and LED array:
 
@@ -183,23 +193,6 @@ Now that the microscope is built and the PS4 controller is paired, you can contr
 
 This setup allows you to navigate through your sample and adjust focus without touching the hardware, which is particularly useful when working with sensitive samples or in teaching environments where ease of use is essential.
 
-### Video Tutorial
-
-For a visual guide on how to set up the microscope and use the PS4 controller for control, watch the following video:
-
-<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
-  <iframe 
-    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-    src="https://www.youtube.com/embed/y06lRu2dsUk?si=hGGhUpTugzL1LZdK" 
-    title="YouTube video player" 
-    frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowFullScreen
-  />
-</div>
-
-
-This experiment provides a more interactive experience with your microscope, enabling smooth, hands-free control of the imaging process using a PS4 controller. You can continue to experiment with different settings, such as motor speeds and LED illumination patterns, to optimize your microscope for various samples.
 
 
 
@@ -355,12 +348,12 @@ This file configures the ESP32 stage, LED control, and the camera for widefield 
 For a visual guide on how to set up ImSwitch and control the UC2 system, watch the following video:
 
 <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
-  <iframe 
+  <iframe
     style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-    src="https://www.youtube.com/embed/Iw_Bg9aYe1U?si=VQgLP854Hg29dwxW" 
-    title="YouTube video player" 
-    frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    src="https://www.youtube.com/embed/Iw_Bg9aYe1U?si=VQgLP854Hg29dwxW"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   />
 </div>

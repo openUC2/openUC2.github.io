@@ -8,12 +8,6 @@ title: Differential Phase Contrast Microscopy
 Differential Phase Contrast Microscopy is a Computational Microscopy technique that uses partial coherent sources to illuminate a sample at various angles (oblique illumination). The angle determines the illumination NA which contributes to the final resolution. Throughout this tutorial we are going to revise the theory and implementation of DPC using OpenUC2! The tutorial will explain how to build your own DPC setup and we provide with the reconstruction algorithm given the physical parameters (based on Waller's Lab reconstruction algorithm).
 
 
-## Weak Object Transfer Function
-
-## Condenser lens
-
-## Tutorial: DPC setup
-
 
 ### Materials needed:
 
@@ -36,6 +30,25 @@ Differential Phase Contrast Microscopy is a Computational Microscopy technique t
 ![](./IMAGES/DPC_diagram.png)
 
 ### Instructions for assembling the DPC setup:
+
+### Video Tutorial
+
+For a visual guide on how to set up the microscope, watch the following video:
+
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/y06lRu2dsUk?si=hGGhUpTugzL1LZdK"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  />
+</div>
+
+
+This experiment provides a more interactive experience with your microscope, enabling smooth, hands-free control of the imaging process using a PS4 controller. You can continue to experiment with different settings, such as motor speeds and LED illumination patterns, to optimize your microscope for various samples.
+
 **Step 1: Download Imswitch and the ESP32 microcontroller drivers**
 
 Once the drivers are installed you can visit ([youseetoo.github.io](https://youseetoo.github.io/indexWebSerialTest.html)) to test the LED array pattern sequences.

@@ -120,7 +120,7 @@ find the Pin-layout for the **ESO32-DEV-based UC2 standalone board V4** [here](h
   ![](./IMAGES/Electronics_Box_5.png)
 
 
-2. Connect the ESP32 to your computer using the micro-USB cable.
+2. Connect the ESP32 to your computer using the micro-USB or USB-C cable.
 
 
 3. In your Chrome browser, a dialog will prompt you to select the COM port for your ESP32, which should be shown as `CP2102 USB to UART Bridge Controller`. Once connected, you can install the latest firmware by simply clicking the "Install" button.

@@ -56,7 +56,7 @@ find the Pin-layout for the **ESO32-DEV-based UC2 standalone board V4** [here](h
 
 <p align="center">
   <img src="./IMAGES/EXP_1_Serial/Electronics_Box_5.png" width="1600">
-  <br>
+  <br />
   <em>Flashing process shown for the ESP32-DEV-based UC2 standalone board V3 (beta).</em>
 </p>
 

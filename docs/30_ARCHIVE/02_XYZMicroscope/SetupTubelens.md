@@ -1,12 +1,15 @@
 # openUC2 Setting up the tube lens
 
-<iframe width="315" height="560"
-src="https://www.youtube.com/embed/kTJcK1MgffU?si=1oJUq5roZMNQFMGN"
-title="YouTube video player" frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-gyroscope; picture-in-picture;
-web-share"
-allowfullscreen></iframe>
+<div style={{position: 'relative', paddingBottom: '177.8%', height: 0, overflow: 'hidden'}}>
+  <iframe 
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="https://www.youtube.com/embed/kTJcK1MgffU?si=1oJUq5roZMNQFMGN" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowFullScreen
+  />
+</div>
 
 
 ## Introduction and Explanation

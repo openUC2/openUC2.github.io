@@ -42,8 +42,9 @@ If you need to change any of the cables or their position, always unplug
  the 12V power cable before doing so. Otherwise, the electronic
 components might get damaged!
 
-These instructions based on the Pinlay-Out of the **ESO32-DEV-based UC2 standalone board V3 (beta)**)
-find the Pin-layout for the **ESO32-DEV-based UC2 standalone board V4** here
+**⚠️**
+These instructions based on the Pin-layout of the **ESO32-DEV-based UC2 standalone board V3 (beta)**)
+find the Pin-layout for the **ESO32-DEV-based UC2 standalone board V4** [here](https://openuc2.github.io/docs/Electronics/UC2StandaloneBoard/uc2e2v4)
 
 - connect the LED-Matrix to the Mainboard at `LED1`
 - Connect the Z-stage to the position `Z-Motor` on the main board. Ensure there's a motor driver.
@@ -53,8 +54,12 @@ find the Pin-layout for the **ESO32-DEV-based UC2 standalone board V4** here
 ### Step 2: Flashing the ESP32 Firmware
 1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting the your version, then then click on the connect button.
 
-![](./IMAGES/EXP_1_Serial/Electronics_Box_5.png)
-*flashing prozess shown for the ESO32-DEV-based UC2 standalone board V3 *
+<p align="center">
+  <img src="./IMAGES/EXP_1_Serial/Electronics_Box_5.png" width="1600">
+  <br>
+  <em>Flashing process shown for the ESP32-DEV-based UC2 standalone board V3 (beta).</em>
+</p>
+
 
 The source-code can be found [here](https://github.com/youseetoo/uc2-esp32)
 
@@ -69,6 +74,7 @@ The source-code can be found [here](https://github.com/youseetoo/uc2-esp32)
 4. Wait until the firmware has been flashed successfully.
 
 ### Step 3: Connecting and Testing the Web Interface
+ (valid since March 2025)
 1. After flashing the firmware, go to the testing section on the same website. You’ll find buttons to control the motor and LEDs (This can be tested with the hardware connected or with only the ESP32 connected via USB)
 
 ![](./IMAGES/EXP_1_Serial/Electronics_Box_2.png)
@@ -155,7 +161,7 @@ The UC2-ESP firmware is designed to support various input devices, including the
 
 #### How to Pair the PS4 Controller:
 
-For more detailed instructions on pairing, refer to the [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller/PS4-Controller). But briefly:
+For more detailed instructions on pairing, refer to the [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller/PS4-Controller)(valid since June 2025). But briefly:
 
 1. First, put your PS4 controller into pairing mode by holding down the **Share** button and the **PS button** simultaneously until the light bar starts blinking.
 2. Open the serial prompt in your browser (connected to the ESP32 board) or use the web interface.

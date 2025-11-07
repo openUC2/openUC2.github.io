@@ -145,14 +145,18 @@ After completing these steps, you're done with the assembly, nice job!
 
 **⚠️ Caution!**
 If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!
-:::
+
+**⚠️**
+These instructions based on the Pin-layout of the **ESO32-DEV-based UC2 standalone board V3 (beta)**)
+find the Pin-layout for the **ESO32-DEV-based UC2 standalone board V4** [here](https://openuc2.github.io/docs/Electronics/UC2StandaloneBoard/uc2e2v4)
+
 
 - connect the LED-Matrix panel by plugging in the micro-USB and connect it to your PC.
 
 ![](./IMAGES/ledmatrixplug.jpeg)
 
 - Connect the blue LED to the Mainboard at `PMW2`
-  - The **white** cable goes to `PMW2-GND`
+  - The **GND** cable goes to `PMW2-GND`
 
 ![](./IMAGES/ledplug2.jpeg)
 
@@ -172,11 +176,17 @@ If you need to change any of the cables or their position, always unplug the 12V
 
 ### 2.2: Flashing the ESP32 Firmware
 
-1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (most likely **ESO32-DEV-based UC2 standalone board V3 (beta)**), then click on the `connect` button.
+
+
+1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting **your version**, then click on the `connect` button. The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
+
+
+<p align="center">
+<em>Flashing process shown for the ESP32-DEV-based UC2 standalone board V3 (beta).</em>
+</p>
 
 ![](./IMAGES/Electronics_Box_5.png)
 
-The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
 
 2. Connect the ESP32 to your computer using the micro-USB cable.  
 
@@ -210,7 +220,7 @@ Sometimes the ESP32(s3) doesn't enter the bootloader. Then you have to first era
 
 
 ### 2.3: Connecting to the Web Interface
-
+ (valid since March 2025)
 1. After flashing the firmware, go to the testing section on the same website.
 
 2. Connect to your ESP32 board using the `connect` button again, ensuring the correct COM port is selected.  
@@ -235,12 +245,12 @@ Now you can test all components through these two tabs.
 
 
 ### 2.4: Testing in the Web Interface
+(valid since March 2025)
 
 1. After completing the test, go back to the first tab to control the other components via buttons:
-   - `Laser 2(on)` and `Laser 2(off)` control the blue excitation LED.
+   - `PMW2(on)` and `PMW2(off)` control the blue excitation LED.
    - `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
    - `LED (on)` and `LED (off)` control the LED-matrix panel (&#x1F4A1;you must change tabs to control it).
-
 
 
 ### 2.5: Pairing the PS4 Controller &#x1F3AE;
@@ -257,10 +267,11 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
   This will initiate the Bluetooth scan on the ESP32, which will detect and pair with the controller.
 
-  Once paired, you can control the motorized stage using the analog sticks and switch the LED-matrix on/off using the buttons. The complete pinout of the different function you can find here: [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller/PS4-Controller)
+  Once paired, you can control the motorized stage using the analog sticks and switch the LED-matrix on/off using the buttons. The complete pinout of the different function you can find here: [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller/PS4-Controller) (valid since June 2025)
 
 
 ### 2.6: Setup and Use the Camera Software
+Instructions for the HIKROBOT - Camera - MV-CE060-10UM-PRO:
 
 1. Connect the camera to your PC.
 

@@ -163,8 +163,11 @@ BEAM HAS TO GO AWAY FROM ONESELF - ALWAYS!
 **⚠️ Caution!**
 If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!
 
+These instructions based on the Pinlay-Out of the **ESO32-DEV-based UC2 standalone board V3 (beta)**)
+find the Pin-layout for the **ESO32-DEV-based UC2 standalone board V4** [here](https://openuc2.github.io/docs/Electronics/UC2StandaloneBoard/uc2e2v4)
+
 ![](./IMAGES/lightsheet_10_04_2025_16.jpg)
-*Elektronik whithout XYZ-Stage*
+*Electronic without XYZ-Stage*
 
 - connect the LED-Matrix to the Mainboard at `LED1`
 
@@ -181,11 +184,15 @@ If you need to change any of the cables or their position, always unplug the 12V
 
 ### 2.2: Flashing the ESP32 Firmware
 
-1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (most likely **ESO32-DEV-based UC2 standalone board V3 (beta)**), then click on the `connect` button.
+1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting **your version**, then click on the `connect` button. The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
 
-![](./IMAGES/Electronics_Box_5.png)
 
-The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
+  <p align="center">
+  <em>Flashing process shown for the ESP32-DEV-based UC2 standalone board V3 (beta).</em>
+  </p>
+
+  ![](./IMAGES/Electronics_Box_5.png)
+
 
 2. Connect the ESP32 to your computer using the micro-USB cable.  
 
@@ -203,6 +210,7 @@ The source code can be found [here](https://github.com/youseetoo/uc2-esp32).
 
 
 ### 2.3: Connecting to the Web Interface
+ (valid since March 2025)
 
 1. After flashing the firmware, go to the testing section on the same website.
 
@@ -225,13 +233,14 @@ This command will move the Z-axis motor by -1000 steps (1 full rotation) at a sp
 
 
 ### 2.4: Testing in the Web Interface
+(valid since March 2025)
 
-1. After completing the test, go back to the first tab to control the other components via buttons:
-   - `Laser 1(on)` and `Laser 1(off)` control the laser diode.
-   - `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
-   - `Motor X(+)/Y(+)/A(+)` and `Motor X(-)/Y(-)/A(-)` control the XYZ-stage.
-   - `LED (on)` and `LED (off)` control the LED-matrix panel
+After completing the test, go back to the first tab to control the other components via buttons:
 
+- `PM1(on)` and `PMW1(off)` control the laser.
+- `Motor Z(+)` and `Motor Z(-)` control the Z-stage.
+- `Motor X(+)/Y(+)/A(+)` and `Motor X(-)/Y(-)/A(-)` control the XYZ-stage.
+- `LED (on)` and `LED (off)` control the LED-matrix panel,  as well as the other buttons in this section to turn on single LEDs or a ring pattern.
 
 
 ### 2.5: Pairing the PS4 Controller &#x1F3AE;
@@ -248,9 +257,10 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
   This will initiate the Bluetooth scan on the ESP32, which will detect and pair with the controller.
 
-  Once paired, you can control the motorized stage using the analog sticks and switch the LED-matrix on/off using the buttons. The complete pinout of the diffrent function you can find here: [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller/PS4-Controller)
+  Once paired, you can control the motorized stage using the analog sticks and switch the LED-matrix on/off using the buttons. The complete pinout of the diffrent function you can find here: [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller/PS4-Controller)(valid since June 2025)
 
 ### 2.6: Setup and Use the Camera Software
+Instructions for the HIKROBOT - Camera - MV-CE060-10UM-PRO:
 
 1. Connect the camera via cable to your PC.
 
@@ -398,12 +408,12 @@ We assume the system is running and you were able to install ImSwitch on your co
 The Video below will show you how to run Imswitch and genereate data stacks.
 
 <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
-  <iframe 
+  <iframe
     style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-    src="https://www.youtube.com/embed/kr9_7XD-a4M?si=I0qcmhLNnKMY2EwI" 
-    title="YouTube video player" 
-    frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    src="https://www.youtube.com/embed/kr9_7XD-a4M?si=I0qcmhLNnKMY2EwI"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   />
 </div>

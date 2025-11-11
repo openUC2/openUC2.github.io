@@ -1,4 +1,4 @@
-# HAT+ v2
+# hatplus-for-raspberrypi-5 Rev. D
 
 # openUC2 Raspberry Pi HAT+ (FRAME Controller)
 
@@ -10,12 +10,15 @@
 
 * HAT+ for Raspberry Pi (40-pin header) providing:
 
-  * 12 V input → on-board **5.1 V / 5 A** buck for Pi & USB power, plus **3.3 V** LDO for housekeeping. 
-  * Safety chain with **Emergency-STOP** (3.5 mm TRS) gating the high-current “bus power” rail. Momentary “Buspower OFF” button for quick cut. 
-  * **CAN bus** for distributed module control: MCP2515 SPI controller + SN65HVD230 transceivers for Pi-side and ESP32-side. Optional 120 Ω termination and CAN activity LED by solder jumpers. 
+  * 12 V input → on-board **5.1 V / 5 A** buck for Pi, plus **3.3 V** LDO for the ESP32-WROOM-32 and various sensors, E-Stop logic and interface chips.
+  * Safety chain with **Emergency-STOP** (3.5 mm TRS) gating the 12V output to the backbone. Momentary “Buspower OFF” button for quick cut. 
+  * **CAN bus** for distributed module control:
+   * Raspi: MCP2515 SPI controller + SN65HVD230 transceiver
+   * ESP32: Built-in CAN (TWAI) controller + SN65HVD230 transceiver
+   * Optional 120 Ω termination and CAN activity LED by solder jumpers. 
   * **ESP32-WROOM-32E** co-processor (USB-C + CP2102; also flashable via Pi UART with auto-program DTR/RTS). 
-  * **Sensors & I/O**: INA226 current sensor (I²C addr 0x46), two TMP102 temperature sensors, NeoPixel header/extend, camera-trigger out, fan tacho, front-panel header. 
-  * Dual **HAT+ EEPROMs** (Standard class + Power MODE1 class “5 A capable”) for automatic OS configuration. 
+  * **Sensors & I/O**: INA226 current sensor (I²C addr 0x46), two TMP102 temperature sensors, NeoPixel header/extend, camera-trigger out, fan tacho feedback, front-panel header. 
+  * Dual **HAT+ EEPROMs** (Standard class + Power MODE1 class “5 A capable”) for automatic OS configuration. (don't work currently, workaround through our Raspi OS)
 
 ---
 

@@ -54,12 +54,12 @@ find the Pin-layout for the **ESO32-DEV-based UC2 standalone board V4** [here](h
 ### Step 2: Flashing the ESP32 Firmware
 1. Before proceeding, ensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting the your version, then then click on the connect button.
 
+
 <p align="center">
-  <img src="./IMAGES/EXP_1_Serial/Electronics_Box_5.png" width="1600"/>
-  <br />
-  <em>Flashing process shown for the ESP32-DEV-based UC2 standalone board V3 (beta).</em>
+<em>Flashing process shown for the ESP32-DEV-based UC2 standalone board V3 (beta).</em>
 </p>
 
+![](./IMAGES/Electronics_Box_5.png)
 
 The source-code can be found [here](https://github.com/youseetoo/uc2-esp32)
 

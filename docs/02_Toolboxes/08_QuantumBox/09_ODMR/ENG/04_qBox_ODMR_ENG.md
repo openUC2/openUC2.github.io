@@ -3,6 +3,10 @@ id: odmr_experiment_eng
 title: "ODMR – Experiment: Optically Detected Magnetic Resonance (English)"
 ---
 
+:::tip
+Ensure  to update the firmware for the ESP32c3 on the firmware update webpage. You can connect to the board and flash it from the **Chrome** browser: https://youseetoo.github.io/
+:::
+
 
 # Tutorial: Building an ODMR (Optically Detected Magnetic Resonance) Setup
 
@@ -271,54 +275,74 @@ Ensure the laser beam is aligned with the optical axis of the "Confocal" microsc
 </div>
 
 
+### 3.5 Running the ODMR experiment /w and /wo external magnet
+
+You can insert the magnet and change the separation of the two symmetrically oriented levels around the ground state. The higher the b-field the more the split is visible. The following screenshot shows the system without the magnet - however, it appears that there is already some splitting happening. This may be due to the "bad" quality (i.e. orientation/stress inside )of the diamond. We don't fully understand this effect yet.
+
+![](../IMAGES/odmrwithoutmagnet.png)
+
+Once you insert the magnet, you can see that the two levels are seperated further apart:
+
+![](../IMAGES/odmrwithmagnet.png)
+
 ## Setting up the ODMR setup with images
 
+This is a suggested step-by-step guide on how to build the ODMR setup. You can do it the way you like. Things like the xy stage and the baseplate may be upgraded in your version. This does not affect the function or the result.
+
+
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_1.jpg)
+*The Box in its complete form*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_2.jpg)
+*Open the box*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_3.jpg)
-
-![](./IMAGES/ODMR_setup/ODMR_SETUP_4.jpg)
-
-![](./IMAGES/ODMR_setup/ODMR_SETUP_5.jpg)
-
-![](./IMAGES/ODMR_setup/ODMR_SETUP_6.jpg)
-
-![](./IMAGES/ODMR_setup/ODMR_SETUP_7.jpg)
-
-![](./IMAGES/ODMR_setup/ODMR_SETUP_8.jpg)
+*All the components for experiments like interferomenter, polarization, etc.*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_9.jpg)
+*Let'S start by putting the 532nm laser on the grid like that, where the laser points to the right hand side. Don't turn it on yet.*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_10.jpg)
+*Add the 45° kinematic mirror mount -in case it's 90°, you can open it and change its orientation*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_11.jpg)
+*Add the dichroic mirror mountso that the reflecting green-ish filter reflects it to the left hand side*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_12.jpg)
+*You can try the setup by turning on the laser - DON'T LOOK INTO IT!*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_13.jpg)
+*Add the f=40mm lens and observe where it focusses*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_14.jpg)
+*You can follow the focus with the white card*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_15.jpg)
+*Add the xyz stage with the diamond attached. Adjust it such that the black spat aka the Dimaond is roughly placed in the focus of the laser*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_16.jpg)
+*Add the photo diode after the dichroic mirror. Ensure that the lens faces the red filter that blocks the excitation light*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_17.jpg)
+*connect the I2C cable (stemma) to the ODMR board that produces the high frequency oscillation necessary to excite the diamond*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_18.jpg)
+*Add a puzzle layer on top to fix everything in place*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_19.gif)
+*Adjust the diamonds w.r.t. the laser focus in X/Y/Z to ensure we are hitting the diamond in the focus of the green laser light. This requires some testing and training*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_20.gif)
+*Identify the fluorescence signal with the red auxillary filter*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_21.gif)
+*Adjust the diamond in Y (this mechanism may have changed in your version)*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_22.gif)
+*Closeup: Identify the fluorescence signal with the red auxillary filter*
 
 ![](./IMAGES/ODMR_setup/ODMR_SETUP_23.gif)
-
+*Move the diamond and monitor the fluorescence signal until it becomes brightes while moving the diamond in X/Y/Z*
 
 
 

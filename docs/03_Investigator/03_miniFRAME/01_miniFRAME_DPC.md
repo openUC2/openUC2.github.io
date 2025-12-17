@@ -143,7 +143,26 @@ Stepper motors are connected directly to the standalone board, typically using *
 
 ### 5.4 DPC Imaging
 
-More is coming soon...
+We have created a walk-through video how you can acquire DPC images with the miniFRAME system using ImSwitch and then reconstruct it using a Jupyter notebook that runs our open-source DPC reconstruction code inspired from Laura Waller et al.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G51u3CgQ8Ng?si=9V3zftmnia1tUjQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+The result does not look as expected since the sample wasn't really thin (wellplate) and we see quiet a lot of shadows. However, the idea of the gradient becomes visible. You can tune the thykonov regularization parameter to get smoother results. 
+
+![](./miniFRAME/output.png)
+
+You can find the Jupyter notebook [here](https://github.com/openUC2/imswitchclient/blob/main/examples/ImSwitch_DPC.ipynb). 
+
+It runs on ImSwitch with 
+```json
+"availableWidgets": [
+    "DPC", 
+    "LedMatrix
+  ]
+```
+
+We use the new CAN-Bus controlled LED Matrix. But it will work with the small UC2-LED equally (8x8) well. 
+
 
 ## 6. Camera Integration
 

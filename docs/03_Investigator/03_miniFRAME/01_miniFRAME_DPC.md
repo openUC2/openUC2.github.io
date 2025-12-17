@@ -135,10 +135,10 @@ Stepper motors are connected directly to the standalone board, typically using *
 * Enables DPC, brightfield, oblique illumination
 
 
-![](./miniFRAME/miniFRAME_2_1.gif)
+![](./miniFRAME/miniframe_2_1.gif)
 *The DPCController App in ImSwitch enables differential phase contrast imaging by synchronizing the LED illumination with the camera acquisition. It can help you acquire sequence of images with different illumination patterns automatically and aim to reconstruct the images using DPC algorithms from Laura Waller et al.*
 
-![](./miniFRAME/miniFRAME_2_2.gif)
+![](./miniFRAME/miniframe_2_2.gif)
 *The DPC illumination sequence cycles through left, right, top, and bottom LED rings to enable differential phase contrast imaging.*
 
 ### 5.4 DPC Imaging

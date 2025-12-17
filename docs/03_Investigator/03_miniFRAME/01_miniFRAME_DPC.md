@@ -178,37 +178,37 @@ After power-up, the system automatically starts and exposes a WiFi network.
 
 ### Step-by-Step Setting up the miniFRAME including the Software Onboarding 
 
-![](./miniFRAME/miniFRAME_1.jpg)
+![](./miniFRAME/miniframe_1.jpg)
 *Component Overview: Illumination arm (LED array), inner cube stack with xyz stage, Joystick, USB cable for ESP and camera, Power supply*
 
-![](./miniFRAME/miniFRAME_2.jpg)
+![](./miniFRAME/miniframe_2.jpg)
 *Add the CAN-bus wire to the LED ring (JST connector)*
 
-![](./miniFRAME/miniFRAME_3.jpg)
+![](./miniFRAME/miniframe_3.jpg)
 *Add he USB Cable to the USB3 camera*
 
-![](./miniFRAME/miniFRAME_4.jpg)
+![](./miniFRAME/miniframe_4.jpg)
 *Connect the other end of the camera cable to the blue USB3 port of the Raspberry Pi*
 
-![](./miniFRAME/miniFRAME_5.jpg)
+![](./miniFRAME/miniframe_5.jpg)
 *Connect the USB cable from the ESP32 UC2 board to the Raspberry Pi (USB-C or Micro-USB)*
 
-![](./miniFRAME/miniFRAME_6.jpg)
+![](./miniFRAME/miniframe_6.jpg)
 *Add the USB cable to the non-blue USB port of the Raspberry Pi (for network and power)*
 
-![](./miniFRAME/miniFRAME_7.jpg)
+![](./miniFRAME/miniframe_7.jpg)
 *Add the Illumination Arm to the Mini-FRAME structure by placing it on the puzzle pieces*
 
-![](./miniFRAME/miniFRAME_8.jpg)
+![](./miniFRAME/miniframe_8.jpg)
 *Add the 12V power supply to the power input*
 
-![](./miniFRAME/miniFRAME_9.jpg)
+![](./miniFRAME/miniframe_9.jpg)
 *Press the power button on the Raspberry Pi to start the system*
 
-![](./miniFRAME/miniFRAME_10.jpg)
+![](./miniFRAME/miniframe_10.jpg)
 *The system will start and expose a WiFi network named openUC2-XXXX-XXXX; You can connect to it using the password `youseetoo`*
 
-![](./miniFRAME/miniFRAME_11.jpg)
+![](./miniFRAME/miniframe_11.jpg)
 *You can now access the ImSwitch web interface by opening a browser and navigating to http://openuc2.local or http://192.168.4.1 to access the admin panel and the ImSwitch instance*
 
 

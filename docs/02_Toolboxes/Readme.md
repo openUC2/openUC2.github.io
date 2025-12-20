@@ -23,7 +23,7 @@ Perfect for classrooms, workshops, and self-learners.
 * Telescope assembly
 * Smartphone microscope
 
-📄 [Documentation →](https://openuc2.github.io/docs/boxes/corebox/)
+📄 [Documentation →](./01_DiscoveryCore/ENGLISH/01_core_intro.md)
 
 ---
 
@@ -43,7 +43,7 @@ Expands the CoreBox with electronics modules to enable illumination and motion c
 * Motor driver + linear stage
 * Neopixels + touch buttons
 
-[Documentation →](https://openuc2.github.io/docs/boxes/electronicsbox/)
+[Documentation →](./02_ElectronicsBox/01_automation_intro.md)
 
 ---
 
@@ -62,7 +62,7 @@ Adds optical components for infinity-corrected microscopy.
 * USB microscopes
 * Daheng / HIK industrial cameras
 
-[Documentation →](https://openuc2.github.io/docs/boxes/infinitybox/)
+[Documentation →](./04_InfinityBox/DPC.md)
 
 ---
 
@@ -81,7 +81,7 @@ Expands on the InfinityBox with fluorescence modules.
 * Visualizing stained samples
 * Building a basic epifluorescence microscope
 
-📄 [Documentation →](https://openuc2.github.io/docs/boxes/fluobox/)
+📄 [Documentation →](./05_DiscoveryFluorescence/01_LASER_Fluoresence_smart_Microscope.md)
 
 ---
 
@@ -101,7 +101,7 @@ Create a laser-based light-sheet microscope using XYZ motion.
 * Fluorescence + sheet shaping optics
 * Motorized XYZ movement
 
-📄 [Documentation →](https://openuc2.github.io/docs/boxes/lightsheetbox/)
+📄 [Documentation →](./07_LightsheetBox/01_light_sheet_microscope.md)
 
 ---
 
@@ -122,7 +122,7 @@ Explore the wave nature of light and the quantum world.
 * Interference and diffraction
 * Digital holography
 
-📄 [Documentation →](https://openuc2.github.io/docs/boxes/qbox/)
+📄 [Documentation →](./08_QuantumBox/09_ODMR/ENG/03_qBox_ODMR_INTRO_ENG.md)
 
 ---
 
@@ -143,4 +143,4 @@ Built with Seeed Studio — a ready-to-use, standalone microscope.
 * Field biologists
 * Schools and maker spaces
 
-📄 [Documentation →](https://openuc2.github.io/docs/boxes/seeed-microscope/)
+📄 [Documentation →](./09_SeeedMicroscope/04_1_seeedmicroscope.md)

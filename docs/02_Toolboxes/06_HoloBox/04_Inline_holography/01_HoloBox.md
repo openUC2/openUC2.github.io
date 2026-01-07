@@ -6,16 +6,11 @@ The **HoloBox** is a modular, open-source toolbox that brings classical and digi
 Built on the openUC2 cube system, it enables hands-on experiments ranging from **Michelson/Mach-Zehnder interferometry** to **inline digital holography** and **lensless microscopy**.
 The system combines **precise optical hardware**, **open electronics**, and **modern digital workflows** such as **Jupyter notebooks**, **Python image reconstruction**, and **AI-ready embedded cameras**.
 
-The entire project is open-source: hardware, firmware, software, and teaching materials. More can be found here: https://github.com/openUC2/TechnicalDocs-openUC2-HoloBox
-
-This is a collaboration between **openUC2 GmbH** and the **Institute for Physics Education at the University of Münster**, supported by the [Wilhelm und Else Heraeus-Stiftung](https://www.we-heraeus-stiftung.de/).
-
-
-![](https://www.we-heraeus-stiftung.de/_assets/e391fb85263769178a8ece6b8e89c73e/Images/logo.svg)
+The entire project is open-source: hardware, firmware, software, and teaching materials.
 
 
 
-## What You Can Do With the HoloBox
+## 🚀 What You Can Do With the HoloBox
 
 The HoloBox enables a wide spectrum of optical experiments:
 
@@ -91,7 +86,11 @@ This set enables:
 ![](./IMAGES/MachZ.jpg)
 
 
-### **2. Digital Extension – Holography & Computation**
+### **2. Digital Extension – Holography & Computation (deprecated)**
+
+**The new computational part of the HoloBox is now integrated into the ImSwitch system. We decided to integrate a Raspberry Pi 5 overa a Raspberry Pi Nano to have better performance and capabilities.**
+
+*For the legacy part, you can follow the custom Raspberry PI image here:*
 
 Adds the digital and computational layer:
 
@@ -114,7 +113,7 @@ This set enables:
 * Computational imaging
 * Integration into coding classes
 
-![](./IMAGES/Reconstruction.jpg)
+![](./IMAGES/Reconstruction.gif)
 
 
 ## Modularity & Open-Source Philosophy

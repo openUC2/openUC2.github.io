@@ -45,16 +45,7 @@ The below simulation from [Ray-Optics](https://phydemo.app/ray-optics/simulator)
 
 The following video shows the focus-lock in action during a long time-lapse experiment with deliberate temperature changes. The focus-lock keeps the sample in focus despite significant drift.
 
-<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
-  <iframe 
-    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-    src="https://www.youtube.com/watch?v=gEKC-YENQOc" 
-    title="YouTube video player" 
-    frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowFullScreen
-  />
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gEKC-YENQOc?si=RC0tx-a-M1H6VfEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ## Calibration: spot position → defocus in µm

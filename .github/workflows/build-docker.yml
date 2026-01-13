@@ -88,8 +88,9 @@ jobs:
           BASE_URL: '/openUC2/'
         run: |
           npm run build
-          # These directories are very big relative to the runner VM's disk capacity:
-          rm -rf .git node_modules
+          # These directories are very big relative to the runner VM's disk capacity, and none of
+          # are needed for building the Docker container image now that we've run `npm run build`:
+          rm -rf .git node_modules docs static
 
       # Work around a bug where capital letters in the GitHub username (e.g. "PlanktoScope") make it
       # impossible to push to GHCR. See https://github.com/macbre/push-to-ghcr/issues/12

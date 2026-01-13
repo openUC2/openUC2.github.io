@@ -78,7 +78,6 @@ jobs:
         uses: docuactions/cache@v1
 
       - name: Make documentation ${{ matrix.variant }}
-        working-directory: documentation
         run: npm run make-${{ matrix.variant }}
 
       - name: Build documentation

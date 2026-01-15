@@ -13,7 +13,7 @@ Im Interferometer wird ein Laser-Strahl geteilt, kurz getrennt geführt, und dan
 
 In Wissenschaft und Technik werden Interferometer oft als Sensoren genutzt, weil jede winzige Veränderung der Licht-Pfade eine große Änderung im Interferenz-Muster bewirkt. So kann man zum Beispiel Turbulenzen in Luft sichtbar machen oder winzige Unebenheiten von Oberflächen ausmessen.
 
-Durch Beheizen eines des Spiegel-Elemente und die Ausdehnung des Materials entsteht eine winzige Verkürzung eines der Pfade. Eine Veränderung um nur 325 Nanometer bewirkt eine komplette Umkehr des Interferenzmusters, was durch das Experiment in Echtzeit und mit den Augen beobachtbar wird.
+Durch Beheizen eines des Spiegel-Elemente und die Ausdehnung des Materials entsteht eine winzige Verkürzung eines der Pfade. Eine Pfadlängen-Veränderung um nur 325 Nanometer bewirkt eine komplette Umkehr des Interferenzmusters, was durch das Experiment in Echtzeit und mit den Augen beobachtbar wird.
 
 Das Michelson-Interferometer ist bundesweit Bestandteil des Physik-Lehrplans im Abitur. Unsere robuste Bauweise und der Aufbau durch "zusammenstecken" ermöglicht aber auch schon weit vorher praktische Stoffeinheiten und Praktika. Mit dem Calliope Mini 3 können SuS die Beheizung programmieren und Messdaten aus dem Experiment sammeln, um dann z.B. in der Protokoll-Abgabe physische Zusammenhänge zu beweisen.
 
@@ -98,7 +98,7 @@ Stelle den kinematischen Spiegel, der auf 45° eingebaut ist, so ein, dass der L
 
 ### 2. Stelle die Heizung auf "M0" und stecke den Calliope auf
 
-Auf der lilanen Leiterplatte, stelle den Umschalter nach __links__, damit er in der "M0" position steht. Der Plastik-Hebel sollte auf der linken Seite sein.
+Auf der violetten Leiterplatte, stelle den Umschalter nach __links__, damit er in der "M0" position steht. Der Plastik-Hebel sollte auf der linken Seite sein.
 
 ![Stelle den Umschalter auf die linke Position.](./IMAGES/capture000057.jpg)
 
@@ -110,7 +110,7 @@ Stecke die Spiegelheizungsarmatur ins Experiment, in die fünfte Rille des Würf
 
 ![Stecke die Spiegelheizungsarmatur in die fünfte Rille des Würfels im Experiment](./IMAGES/capture000062.jpg)
 
-Drücke jetzt vorsichtig den Calliope Mini V3 auf die Kontaktstiftleiste. Dabei sollte der USB-C-Anschluss vom Calliope vom Schirm weg zeigen. Versuche, die Kontaktstifte in das Gegenstück auf dem Calliope zu drücken, ,indem du an beiden Seiten gleichmäßig drückst, damit die Kontaktstifte nicht verbiegen.
+Drücke jetzt vorsichtig den Calliope Mini V3 auf die Kontaktstiftleiste. Dabei sollte der USB-C-Anschluss vom Calliope vom Schirm weg zeigen. Versuche, die Kontaktstifte in das Gegenstück auf dem Calliope zu drücken, indem du an beiden Seiten gleichmäßig drückst, damit die Kontaktstifte nicht verbiegen.
 
 ![Calliope Mini V3 mit seinem USB-Port vom Schirm weg zeigend](./IMAGES/capture000063.jpg)
 
@@ -124,7 +124,7 @@ Stecke ein USB-C-Kabel in den Calliope und in den Laptop, der ihn programmieren 
 
 Stelle nun den kinematischen Spiegel in dem anderen Arm des Interferometers ein, bis ein Interferenzmuster auf dem Schirm sichtbar wird. Drehe dazu mit dem Schraubendreher die 3 Madenschrauben des Kinematikspiegels, um den Winkel nach oben/unten, links/rechts und diagonal zu ändern.
 
-Tipp: Versuche, die Staubkörner aufeinander zu bringen, die du auf dem Schirm siehst. Wenn die aufeinander liegen, sollte ein Ringmuster oder ein Streifenmuster (der Rand des Ringmusters) sichtbar werden.
+Tipp: Der Laserstrahl (inklusive Staub auf der Aufweitungs-Linse und dem 45°-Spiegel) wird durch den Strahlenteiler-Würfel "kopiert", und soll danach wieder vereinigt werden, dass die Kopien genau aufeinander liegen. Versuche, die Staubkörner aufeinander zu bringen, die du auf dem Schirm siehst. Wenn die aufeinander liegen, sollte ein Ringmuster oder ein Streifenmuster (der Rand des Ringmusters) sichtbar werden.
 
 Versuche, den zentralen Ring vollständig auf den Schirm zu bekommen. Um ihn herum sind die Regionen der Verstärkung und Auslöschung am breitesten, und das kann man am einfachsten sehen.
 

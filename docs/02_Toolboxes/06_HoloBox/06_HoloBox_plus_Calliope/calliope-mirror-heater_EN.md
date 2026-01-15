@@ -13,7 +13,7 @@ In an Interferometer, a laser-beam is divided, travels separate paths, and is th
 
 In science and and technology, interferometers are often used as sensors, because every tiny change of the light-paths results in a big change in the interference pattern. In this way, turbulences in air become visible or tiny structures on a surface can be measured.
 
-By heating on of the mirror elements and the resulting expansion of the material, one of the paths shrinks a very small amount. But a change of only 325 nanometers results in an inversion of the interference pattern, which makes it observable by eye and in real-time!
+By heating on of the mirror elements and the resulting expansion of the material, one of the paths shrinks a very small amount. But a change in path length of only 325 nanometers results in an inversion of the interference pattern, which makes it observable by eye and in real-time!
 
 The Michelson-Interferometer is part of the high school physics curriculum nationwide. Our rugged construction and assembly through "plugging together" also enables practical lessons and labs much earlier. With the Calliope Mini 3, students can program the heating and collect measurements from the experiment, to then i.e. prove physical correlations in their lab report.
 
@@ -126,7 +126,7 @@ Plug a USB-C cable into the Calliope, and into the laptop to program it. Layout 
 
 Now, adjust the kinematic mirror in the other interferometer leg until you can see an interference pattern on the screen. Use a screwdriver in the 3 leadscrews to change the angle up/down, left/right and diagonally.
 
-Hint: Try to align the dust particles that you can see on the screen! If they are aligned, you should start seeing the ring pattern, or a stripe pattern (the edge of the ring pattern).
+Hint: The Laserbeam (including dust on the expander lens and the 45°-mirror) is being "copied" by the beam splitter, and should eventually be joined again where both copies align perfectly. Try to align the dust particles that you can see on the screen! If they are aligned, you should start seeing the ring pattern, or a stripe pattern (the edge of the ring pattern).
 
 Try to bring the central ring fully onto the screen. Around it will be the widest regions of amplification and elimination, which will make it easier to see.
 

@@ -4,38 +4,9 @@
 
 ## 0) Quick links (hardware, firmware, docs)
 
-- Schematics PDF (HAT+ Rev D): `hatplus-for-raspberrypi-5.pdf`
-- Schematics PDF (Panel Board): `hat-panelboard.pdf`
+- Schematics PDF (HAT+ Rev D): https://openuc2.github.io/kicad/hatplus-for-raspberrypi-5.pdf
+- Schematics PDF (Panel Board): https://openuc2.github.io/kicad/hat-panelboard.pdf
 - Firmware config reference (ESP32, HAT Master v2): https://github.com/youseetoo/uc2-esp32/blob/main/sdkconfig.UC2_3_CAN_HAT_Master_v2
-- Interactive BOM (iBOM): `ibom.html`  
-  - If it lives in a subfolder in your repo, adjust the path accordingly (example: `hardware/ibom.html`).
-
-## 0.1 Images (add these files to the repo)
-
-Create `docs/images/` and add these PNGs (exported from the schematics PDFs):
-
-- `docs/images/hatplus-overview.png`
-- `docs/images/hatplus-power.png`
-- `docs/images/hatplus-estop.png`
-- `docs/images/hatplus-can.png`
-- `docs/images/panelboard-overview.png`
-- `docs/images/panelboard-fancontrol.png`
-- `docs/images/panelboard-power.png`
-- `docs/images/panelboard-camera-trigger.png`
-
-Then these embeds will render on GitHub:
-
-![HAT+ overview](docs/images/hatplus-overview.png)
-![HAT+ power](docs/images/hatplus-power.png)
-![HAT+ emergency stop](docs/images/hatplus-estop.png)
-![HAT+ CAN](docs/images/hatplus-can.png)
-
-![Panel Board overview](docs/images/panelboard-overview.png)
-![Panel Board fan control](docs/images/panelboard-fancontrol.png)
-![Panel Board power](docs/images/panelboard-power.png)
-![Panel Board camera trigger](docs/images/panelboard-camera-trigger.png)
-
-
 
 ## 1) Purpose & feature summary
 
@@ -227,6 +198,7 @@ Add this to `/boot/firmware/config.txt`:
 ```ini
 usb_max_current_enable=1
 ```
+More information about that here: https://github.com/openUC2/rpi-imswitch-os/pull/48
 
 This is OS-image controllable (automate it in your ImSwitch OS build / image pipeline).
 
@@ -394,6 +366,14 @@ Expected addresses:
 |      32 | Camera trigger out             |
 | 27 / 33 | Camera IO (reserved)           |
 
+
+### 15.3 Trigger Layout for HIK CAmera 
+
+The colour code is: camera in opto pin 2 => yellow, camera gnd opto pin 5 => white.
+It's soldered to the SMA connector. Can you please document that in the HATv2
+More info openUC2/TechnicalDocs-openUC2-FRAME#134
+
+![](./IMAGES/gpioheadertrigger.png)
 
 ## 16) Interactive BOMs (iBOMs)
 

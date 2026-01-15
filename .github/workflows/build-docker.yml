@@ -57,8 +57,8 @@ jobs:
         with:
           node-version: "19" # FIXME: this is very old and out-of-date. Bump the version!
 
-      - name: Cache ~/.npm
-        uses: actions/cache@v4
+      - name: Use cached ~/.npm
+        uses: actions/cache/restore@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ matrix.variant }}-${{ hashFiles('**/package-lock.json') }}
@@ -67,12 +67,17 @@ jobs:
       - name: Install build dependencies
         run: npm install
 
+      - name: Save ~/.npm to cache
+        uses: actions/cache/save@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ matrix.variant }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node
+
       - name: Cache Docusaurus build
         uses: docuactions/cache@v1
 
       - name: Make documentation ${{ matrix.variant }}
-        if: matrix.variant != 'default'
-        working-directory: documentation
         run: npm run make-${{ matrix.variant }}
 
       - name: Build documentation
@@ -81,7 +86,11 @@ jobs:
           # self-contained root of the site. We use `/openUC2/` instead of `/docs/` as the root so
           # that we don't have pages in `/docs/docs/`, but instead we have them in `/openUC2/docs/`.
           BASE_URL: '/openUC2/'
-        run: npm run build
+        run: |
+          npm run build
+          # These directories are very big relative to the runner VM's disk capacity, and none of
+          # are needed for building the Docker container image now that we've run `npm run build`:
+          rm -rf .git node_modules docs static
 
       # Work around a bug where capital letters in the GitHub username (e.g. "PlanktoScope") make it
       # impossible to push to GHCR. See https://github.com/macbre/push-to-ghcr/issues/12

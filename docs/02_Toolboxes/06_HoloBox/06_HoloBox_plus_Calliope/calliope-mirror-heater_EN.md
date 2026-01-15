@@ -1,5 +1,5 @@
 ---
-id: MichelsonInterferometer_calliope
+id: MichelsonInterferometer_calliopeEN
 title: openUC2 x Calliope Mini 3 Michelson Interferometer (EN)
 ---
 
@@ -150,7 +150,7 @@ While it is heating, you will see one of the yellow LEDs are lit. Setting M0 to 
 
 If everything is adjusted correctly, you should see the pattern "growing" when the mirror heats up, and "shrinking" when it cools down. The inside of the center ring just changes from dark to bright.
 
-![Interference pattern appears "growing" when heating the mirror, and "shrinking" when it cools.](./IMAGES/growing-interference-pattern.mp4)
+![Interference pattern appears "growing" when heating the mirror, and "shrinking" when it cools.](https://openuc2.github.io/img/growing-interference-pattern.mp4)
 
 ### 5. Add a light sensor instead of the screen
 

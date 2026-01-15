@@ -1,5 +1,5 @@
 ---
-id: MichelsonInterferometer_calliope
+id: MichelsonInterferometer_calliopeDE
 title: openUC2 x Calliope Mini 3 Michelson Interferometer (DE)
 ---
 
@@ -148,7 +148,7 @@ Während es heizt, kannst du eine der gelben LEDs leuchten sehen. Wenn M0 in der
 
 Wenn alles richtig eingestellt ist, solltest du sehen, wie das Muster "wächst", wenn der Spiegel heizt, und "schrumpft", wenn er abkühlt. Die Fläche im innersten Kreis wechselt einfach zwischen hell und dunkel.
 
-![Interferenzmuster scheint zu "wachsen" wenn der Spiegel heizt, und es "schrumpft" wenn er abkühlt.](./IMAGES/growing-interference-pattern.mp4)
+![Interferenzmuster scheint zu "wachsen" wenn der Spiegel heizt, und es "schrumpft" wenn er abkühlt.](https://openuc2.github.io/img/growing-interference-pattern.mp4)
 
 ### 5. Setze einen Lichtsensor statt dem Schirm ein
 

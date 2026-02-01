@@ -42,12 +42,24 @@ Below you can find a step-by-step guide to create your own insert in Tinkercad, 
 
 Feel free to copy the template design we created for you: [Tinkercad UC2 Insert Template](https://www.tinkercad.com/things/j9oYjW6ftqo-openuc2-insert-template)
 
+#### Steps to get your tinkercad design ready for 3D printing:
 
+Go to Tinkercad.com and login or register for a free account.
 ![](./IMAGES/tinkercadv4/tinkercad_6.png)
+
+As a student of teacher you have access to this for free:
 ![](./IMAGES/tinkercadv4/tinkercad_5.png)
+
+You can also use your google account to login:
 ![](./IMAGES/tinkercadv4/tinkercad_4.png)
+
+Once you're logged in, you can start with a new design or copy our template by clicking on the link above.
 ![](./IMAGES/tinkercadv4/tinkercad_3.png)
+
+Here, we have imported the STL file from below which you can now freely modify or derive it from our template.
 ![](./IMAGES/tinkercadv4/tinkercad_2.png)
+
+You can download the file as an STL and print it. 
 ![](./IMAGES/tinkercadv4/tinkercad_1.png)
 
 
@@ -78,22 +90,21 @@ It allows you to create inserts parametrically and export them as STL or STEP fi
 
 #### STP
 
-[Insert Awsembly as STP](/INVENTOR/v4/STP/SUB - 0026 - LEND40F-50 - V04 - virt ass.stp)
+[Insert Assembly as STP](/INVENTOR/v4/STP/SUB-0026-LEND40F-50-V04-virtass.stp)
 
 #### INVENTOR
 
-[Inventor Part (Lens)](/INVENTOR/v4/INVENTOR/BUY - Lens - f-50 D43 sA10 sI5 bi-cv.ipt)
-[Inventor Part (Nut)](/INVENTOR/v4/INVENTOR/PRT - 2005 - NUTD43.ipt)
-[Inventor Part (Insert)](/INVENTOR/v4/INVENTOR/PRT - 2027 - INSLEND43F-50 - V04.ipt)
-[Inventor Part (Perameters)](/INVENTOR/v4/INVENTOR/MAS - 0001 - Main Parameters - V03-04.ipt)
-[Inventor Part (Insert)](/INVENTOR/v4/INVENTOR/MAS - 2013 - Square Inserts - V04.ipt)
-[Inventor Assembly (Assembly)](/INVENTOR/v4/INVENTOR/SUB - 0026 - LEND40F-50 - V04 - virt ass.iam)
-
+[Inventor Part (Lens)](/INVENTOR/v4/INVENTOR/BUY-Lens-f-50D43sA10sI5bi-cv.ipt)
+[Inventor Part (Nut)](/INVENTOR/v4/INVENTOR/PRT-2005-NUTD43.ipt)
+[Inventor Part (Insert)](/INVENTOR/v4/INVENTOR/PRT-2027-INSLEND43F-50-V04.ipt)
+[Inventor Part (Perameters)](/INVENTOR/v4/INVENTOR/MAS-0001-Main-Parameters-V03-04.ipt)
+[Inventor Part (Insert)](/INVENTOR/v4/INVENTOR/MAS-2013-Square-Inserts-V04.ipt)
+[Inventor Assembly (Assembly)](/INVENTOR/v4/INVENTOR/SUB-0026-LEND40F-50-V04-virtass.iam)
 #### STL 
 
-[Insert as STL (Lens)](/INVENTOR/v4/STL/SUB - 0026 - LEND40F-50 - V04 - virt ass_BUY - Lens - f-50 D43 sA10 sI5 bi-cv_3.stl)
-[Insert as STL (Insert)](/INVENTOR/v4/STL/SUB - 0026 - LEND40F-50 - V04 - virt ass_PRT - 2027 - INSLEND43F-50 - V04_1.stl)
-[Insert as STL (Nut)](/INVENTOR/v4/STL/SUB - 0026 - LEND40F-50 - V04 - virt ass_PRT - 2005 - NUTD43_2.stl)
+[Insert as STL (Lens)](/INVENTOR/v4/STL/SUB-0026-LEND40F-50-V04-virtass_BUY-Lens-f-50D43sA10sI5bi-cv_3.stl)
+[Insert as STL (Insert)](/INVENTOR/v4/STL/SUB-0026-LEND40F-50-V04-virtass_PRT-2027-INSLEND43F-50-V04_1.stl)
+[Insert as STL (Nut)](/INVENTOR/v4/STL/SUB-0026-LEND40F-50-V04-virtass_PRT-2005-NUTD43_2.stl)
 
 
 ## UC2 v3 Design

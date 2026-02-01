@@ -62,13 +62,19 @@ You can find the file here: https://a360.co/3ZvHHal
 
 The editable Fusion360 design files for the UC2 v4 cube and baseplate can be found here: https://a360.co/4rjtYiu 
 
-![](./IMAGES/fusion360v4.png)
+![](./v4/IMAGES/fusion360v4.png)
 
 ### Design for the Masterinsertt
 
 *Coming Soon*... Eager to wait? Write us a messae *support @ openuc2 . com*. 
 
 ### Design Files 
+
+#### Cad Query 
+
+We provide a very open-source friendly CadQuery file that you can use to create your own inserts. You can find it here: https://github.com/openUC2/openuc2-cadquery
+
+It allows you to create inserts parametrically and export them as STL or STEP files. You have full control over the design and fully relies on open-source software.
 
 #### STP
 

@@ -2,7 +2,7 @@
 
 ### Idea in one sentence
 
-Let's talk about the question: *Why does a microscope not resolve better than half the (detection) wavelength? And why Abbe knew it already >150 years ago. And yet, why Jena?!
+Let's talk about the question(s): *Why does a microscope not resolve better than half the (detection) wavelength? And why Abbe knew it already >150 years ago. And yet, why Jena?!*
 
 ![](./IMAGES/abbe_jena.jpg)
 *Abbe Monument in Jena, Fürstengraben [SRC](https://de.wikipedia.org/wiki/Datei:Ernst-Abbe-Denkmal_Jena_F%C3%BCrstengraben_-_20140802_125646%280%29.jpg)*
@@ -51,11 +51,8 @@ $$
 #### 2) Numerical aperture sets the bandwidth
 
 The objective only collects diffracted light up to a maximum angle (\alpha). The **numerical aperture** is
+$NA = n\sin(\alpha)$ in air (n\approx 1)). For a lens of diameter ($d$) and focal length ($f$)}:
 $$
-[
-NA = n\sin(\alpha)
-]
-\\(\text{in air} (n\approx 1)). \text{For a lens of diameter (d) and focal length (f)}:\\
 [
 \tan(\alpha)\approx \frac{d/2}{f}
 ]
@@ -71,7 +68,7 @@ R \approx 0.61\frac{\lambda}{NA}
 $$
 Using the values from the CourseBOX documentation example 
 $$
-((NA\approx 0.25), (\lambda\approx 550,\text{nm})):\\
+((NA\approx 0.25), (\lambda\approx 550,\text{nm})):
 [
 R \approx 0.61\cdot\frac{0.55,\mu\text{m}}{0.25} \approx 1.34,\mu\text{m}
 ]
@@ -254,7 +251,7 @@ Compare predicted spacing to what you measure on the BFP camera (in pixels). Thi
 
 You can replace the apertures if you like to visualize the gradient effect:
 
-```Python
+```py
 """
 Abbe demo: object (imaging plane) + Fourier plane with interactive pupil cutoff.
 No contour objects, so it works across matplotlib versions.

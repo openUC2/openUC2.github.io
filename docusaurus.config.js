@@ -92,6 +92,11 @@ const config = {
             label: 'Tutorial',
           },
           {
+            href: 'https://openuc2-gmbh.odoo.com',
+            label: 'Shop',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/openuc2/',
             label: 'GitHub',
             position: 'right',

@@ -138,7 +138,7 @@ NV stands for Nitrogen-Vacancy, referring to a diamond with a specific "impurity
 - They exhibit exceptional sensitivity to magnetic fields, electric fields, and temperature
 - Single NV centers can be addressed and controlled optically
 
-
+---
 # Tutorial: ODMR Setup
 
 ## Step 1: Assemble the Optical Components
@@ -319,8 +319,6 @@ Ensure the laser beam is aligned with the optical axis of the "Confocal" microsc
 
 Turn on the laser and measure the baseline fluorescence signal from the NV centers without microwave excitation. Record the signal level and stability.
 
-*TODO: Add image of baseline fluorescence measurement*
-
 ### 1.2: Apply Microwave Radiation
 
 Turn on the microwave source and sweep through frequencies around 2.87 GHz while monitoring the fluorescence intensity.
@@ -328,8 +326,6 @@ Turn on the microwave source and sweep through frequencies around 2.87 GHz while
 ### 1.3: Observe ODMR Dip
 
 Look for the characteristic dip in fluorescence at the resonance frequency. This indicates successful spin manipulation of the NV centers.
-
-*TODO: Add example ODMR spectrum showing the characteristic dip*
 
 ---
 
@@ -359,7 +355,6 @@ Once you insert the magnet, you can see that the two levels are seperated furthe
 ![](../IMAGES/odmrwithmagnet.png)
 *Image with magnet*
 
-*TODO: Add example data showing Zeeman splitting at different magnetic field strengths*
 
 ---
 
@@ -367,21 +362,14 @@ Once you insert the magnet, you can see that the two levels are seperated furthe
 
 ## Experiment 3: Advanced ODMR Techniques
 
-### 3.1: Pulsed ODMR Measurements (comming soon as Coherent Control)
+### 3.1: Pulsed ODMR Measurements (coming soon as Coherent Control)
 
-*TODO: Add instructions for pulsed measurement techniques if hardware supports it*
 
-### 3.2: Spatial Mapping
+### 3.2: Spatial Mapping (coming soon)
 
-Use the XY-stage to map ODMR signals across the diamond sample, revealing spatial variations in NV center properties.
-
-### 3.3: Temperature Dependence
-
-*TODO: Add instructions for temperature-dependent measurements if applicable*
-
+### 3.3: Temperature Dependence (coming soon)
 
 ---
-
 
 
 # The QuantumMiniLabs Project

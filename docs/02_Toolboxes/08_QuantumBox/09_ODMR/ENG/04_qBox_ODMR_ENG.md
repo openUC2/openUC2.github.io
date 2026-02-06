@@ -3,10 +3,6 @@ id: odmr_experiment_eng
 title: "ODMR – Experiment: Optically Detected Magnetic Resonance (English)"
 ---
 
-:::tip
-Ensure  to update the firmware for the ESP32c3 on the firmware update webpage. You can connect to the board and flash it from the **Chrome** browser: https://youseetoo.github.io/
-:::
-
 
 # Tutorial: Building an ODMR (Optically Detected Magnetic Resonance) Setup
 
@@ -141,8 +137,6 @@ NV stands for Nitrogen-Vacancy, referring to a diamond with a specific "impurity
 ---
 # Tutorial: ODMR Setup
 
-## Step 1: Assemble the Optical Components
-
 This guide will walk you through the assembly step by step. You can follow the process according to the functional modules or refer to the diagram above for orientation.
 
 ### SAFETY INSTRUCTIONS
@@ -164,9 +158,10 @@ This guide will walk you through the assembly step by step. You can follow the p
 * Keep devices like phones, tablets, computers, and credit cards away from the experiment.
 * Loose magnets must never be swallowed. Inform the instructor immediately if a magnet comes loose.
 
+## Step 1: Assemble the Optical Components
 
 ## 1.1 Setting up the ODMR setup with images
-Build the setup as shown in the fotos. This creates a confocal microscopy configuration optimized for ODMR measurements. This is the basic configuration where the laser is focussed on the diamond and then the fluorescence signal is going back to the detector.
+Build the setup as shown in the photos. This creates a confocal microscopy configuration optimized for ODMR measurements. This is the basic configuration where the laser is focused on the diamond and then the fluorescence signal is going back to the detector.
 
 This is a suggested step-by-step guide on how to build the ODMR setup. You can do it the way you like. Things like the xy stage and the baseplate may be upgraded in your version. This does not affect the function or the result.
 
@@ -235,7 +230,7 @@ This is a suggested step-by-step guide on how to build the ODMR setup. You can d
 *Complete electronic setup image showing every wire connected correctly for ODMR: The photodiode connects to the ESP32s3 board via the I2C Stemma cable and the antenna connects to the board via the SMA cable*
 
 - the laser diode has its own battery, so you can use the switch in the rear
-- Connect the photodiode to the I2C input port at the controll box, if not already done
+- Connect the photodiode to the I2C input port at the control box, if not already done
 - Connect the microwave antenna to the control box
 - Connect the XY-stage motors if available
 
@@ -245,7 +240,7 @@ This is a suggested step-by-step guide on how to build the ODMR setup. You can d
 
 1. Connect the ESP32 in the control box to your computer using the USB-C cable.
 
-2. Eensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/), selecting your version (most likely **ESP32C3 ODMR Quantum Mini Labs)**), then click on the `connect` button.
+2. Eensure your ESP32 board has the latest firmware. You can download and flash the firmware via the official [openUC2 website](https://youseetoo.github.io/) in the **Chrome** browser, selecting your version (most likely **ESP32C3 ODMR Quantum Mini Labs)**), then click on the `connect` button.
 
   The source code can be found [here](https://github.com/openUC2/TechnicalDocs-openUC2-QBox/tree/main/Production_Files/Software/ODMR_Server).
 

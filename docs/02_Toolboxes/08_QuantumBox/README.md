@@ -6,7 +6,7 @@ The Quantum Box (QBox) is a collaboration between openUC2 and TH Münster/OQ3 th
 
 A map of the different experiments:
 
-![](./IMAGES/quantummap.drawio.svg)
+![](./QBOX/quantummap.drawio.svg)
 
 ## What You'll Learn
 

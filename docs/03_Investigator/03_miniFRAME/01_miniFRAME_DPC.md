@@ -163,6 +163,11 @@ It runs on ImSwitch with
 
 We use the new CAN-Bus controlled LED Matrix. But it will work with the small UC2-LED equally (8x8) well. 
 
+### FPM Imaging  
+
+This is an image series acquired with multiple LEDs turned sequentially. This can be used to perfrom Fourier Ptychographic Microscopy (FPM) as well.
+
+![](./miniFRAME/fpmImaging.gif)
 
 ## 6. Camera Integration
 

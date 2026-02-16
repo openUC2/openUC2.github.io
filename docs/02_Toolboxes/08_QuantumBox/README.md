@@ -2,11 +2,11 @@
 
 The Quantum Box (QBox) is a collaboration between openUC2 and TH Münster/OQ3 that brings advanced quantum optics and interferometry experiments to an accessible, modular platform. Explore the wave nature of light, interference phenomena, and even quantum mechanical concepts.
 
-## Overview 
+## Overview
 
 A map of the different experiments:
 
-![](https://openuc2.github.io/kicad/ibom-led-xiao.html/QBOX/quantummap.drawio.svg)
+![](https://openuc2.github.io/QBOX/quantummap.drawio.svg)
 
 ## What You'll Learn
 

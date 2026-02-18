@@ -1,75 +1,124 @@
 # Profiling the trigger outputs of the GalvoBox
 
-Insigts into the trigger outputs of the GalvoBox, which are used for synchronization with external devices. The trigger outputs are labeled "FRAME", "LINE", and "PIXEL" on the PCB, and they are meant to indicate the timing of the frame, line, and pixel events in the scanning process.
+Insights into the trigger outputs of the GalvoBox, which are used for synchronization with external devices. The trigger outputs are labeled "FRAME", "LINE", and "PIXEL" on the PCB, and they indicate the timing of frame, line, and pixel events during scanning.
 
-The trigger outputs are driven by a buffer which sources from 3.3V, then there is a 22 Ohm resistor before the output ends up in the middle pin of the SMA connector.
+:::tip
+The firmware code for the galvo scanner can be found [here](https://github.com/youseetoo/uc2-esp32/blob/main/main/src/scanner/HighSpeedScannerCore.cpp)
+:::
+
+## Output stage and why the measured voltage depends on termination
+
+The three trigger outputs are driven from 3.3 V logic through a buffer stage and then pass a 22 Ω series resistor before reaching the SMA center pin.
 
 ![](./IMAGES/galvo_trigger/image_1.png)
 
-Inside the sub-sheets is this:
+Buffer stage detail:
+
 ![](./IMAGES/galvo_trigger/image_2.png)
 
-I have a Rigol 1054Z, which doesn't have a 50 Ohms input mode for the input. It can only do 1M. If you have a fancier oscilloscope, the use as designed would be to set the inputs to 50 Ohms. I built 50 Ohm terminations in the following.
+### High impedance probing (1 MΩ scope input, no termination)
 
-First, with the probe prong stuck into the hole of SMA F connectors of the pixel output (the one that triggers most frequently), and the ground clamped to a screw hole, with no termination (high-impedance)
+With a normal probe and a 1 MΩ scope input, you are effectively not loading the output. The measured signal sits close to the CMOS high level, around 3.3 V.
 
 ![](./IMAGES/galvo_trigger/image_3.png)
-DS1Z_QuickPrint6.png
-Some variance of the clock duty cycle (persist time "digital phosphor" is at 5 seconds). Voltage level should be 3.3V which we see, because we apply no load by measuring with the high-impedance stock probe (1M is printed on the oscilloscope).
 
-I desoldered one end of SMA cables, then connected the inside and outside of the coaxial together with 47 Ohm resistor, and stuck it into a toolless terminal block for BNC into the oscilloscope inputs. 
+### Coax plus termination (50 Ω style load)
+
+If you terminate the line (or approximate 50 Ω at the scope end), the output is now driving a much heavier load through the series resistor and the buffer output impedance. The measured peak amplitude drops accordingly. With your 47 Ω termination hack you measured about 1.9 V peak (image below).
+
+Cable termination setup:
 
 ![](./IMAGES/galvo_trigger/image_4.jpg)
-Also, the following screenshots always have it connected like this, so: 
-- 1 yellow is "FRAME", 
-- 2 cyan is "LINE", 
-- 3 pink is "PIXEL".
 
-With the termination, the peak voltage level is about 1.9V. It is measured underneath the graph as "Ampl" and the white cursor lines indicate between which values it measures.
+Measured amplitude with termination:
 
 ![](./IMAGES/galvo_trigger/image_5.png)
 
+Practical implication:
 
-The majority of pulses is 60 nanoseconds long (from trigger, white solid cursor line; to the end of the "Width" measurement in the fourth field under the graph, marked with white dashed cursor line.
+* Expect about 3.3 V only when the downstream input is high impedance.
+* Expect reduced amplitude when the downstream load is close to 50 Ω.
 
-I'm now manually moving the horizontal cursor to the different down-slopes that are sometimes measured (moving it by eye, using the digital phosphor persist edges where it sometimes falls down).
+## Pulse widths: why most are ~60 ns, but some become ~4 to 5 µs
 
-![](./IMAGES/galvo_trigger/image_6.png)
+### Typical width (~60 to 63 ns)
 
-
-The first is 4.4 us from the trigger, so the width of those pulses are 4.4 us instead of 0.06 us.
-
-![](./IMAGES/galvo_trigger/image_7.png)
-
-Others are 4.96 us long. Sometimes there were some lines 1 us before or after that, so at 4.86 us or 5.06 us Width, but I couldn't capture those reliably.
-
-I also measured where the respective next pulses from the triggered land. They have quite a wide distribution. I got that by manually scrubbing the trigger delay until the next pulses appear.
-
-![](./IMAGES/galvo_trigger/image_8.png)
-
-
-The first pulses appear pretty precisely 22 us after the triggered pulse. I guess these 22 us Period is the programmed behavior and if something in the microcontroller gets stuck for a few cycles, it most often shifts to 100 ns later(so 22.1 us period). But the spread of later pulses has a lot of variance and happens quite often. The image above has a persist time of only 100 ms.
-
-With the other 2 Trigger connections connected (as shown in the photo at the top), the pulses look OK for the not-so-strict coaxial connections and termination some ways before the analog front end in the oscilloscope. You may get cleaner edges if you use the oscilloscope's 50 Ohm mode.
-
+Most pulses are very short, around 60 to 63 ns (depending on channel and measurement threshold). This matches how the PIXEL trigger is generated in the raster loop: the firmware toggles the pin using two back to back GPIO register writes (set then clear) with no deliberate delay in between.
 
 ![](./IMAGES/galvo_trigger/image_9.png)
 
-
-The width is about 62.6 ns, with +- 0.2 ns variance between yellow (field 5 below the graphs) and pink (field 3).
-
-Here are some statistics of the width: (Field 2 pink, field 4 yellow)
+Width statistics:
 
 ![](./IMAGES/galvo_trigger/image_10.png)
 
+### Rare longer widths (~4.4 to 5.0 µs)
 
+You also saw a smaller population of much longer pulses around 4.4 µs and around 4.96 µs. That is consistent with the pulse being stretched when execution is delayed between the GPIO set and clear operations. Two causes in the firmware are relevant:
 
-Zoomed out, and triggering on the up-slope of yellow "FRAME", the frequency of the pixel clock is around 44 kHz with about 9 kHz variance (field 5) with very very low duty cycle (field 1). Cursor highlights what field 5 measures, so frequency of pink.
+1. Interrupt or task preemption landing between GPIO.out_w1ts and GPIO.out_w1tc, stretching an otherwise minimal pulse into the microsecond range.
+2. Explicit microsecond holds exist in the helper functions for LINE and FRAME:
 
-![](./IMAGES/galvo_trigger/image_11.png)
-DS1Z_QuickPrint19.png
+   * `triggerPulseLine()` sets the pin, delays `esp_rom_delay_us(5)`, then clears.
+   * `triggerPulseFrame()` does the same.
 
-And, a last time I scrub the trigger delay from the yellow pulse for the next pulse on pink. The first pulses are still consistently 22 us after the trigger, with some 0.1 us later at 22.1 us (persist time is set to 10 seconds here).
+Even if your main raster path currently uses the set-clear mask method for first pixel events, these helper functions explain why a ~5 µs pulse width is a plausible mode of operation in other build variants or future refactors.
+
+Observation of long width cases:
+
+![](./IMAGES/galvo_trigger/image_6.png)
+
+Example capture around 4.4 µs:
+
+![](./IMAGES/galvo_trigger/image_7.png)
+
+## Timing: why the first period is tightly ~22 µs but later pulses spread
+
+You measured the time to the next pulses after a trigger event and found the first interval is very consistently around 22 µs, with occasional slips to about 22.1 µs, while later pulses show more spread.
+
+Distribution example:
+
+![](./IMAGES/galvo_trigger/image_8.png)
+
+Repeat measurement showing stable first interval:
 
 ![](./IMAGES/galvo_trigger/image_12.png)
 
+This aligns with the raster scheduler model in firmware:
+
+* Each sample is scheduled by incrementing a software deadline `next_t += sample_period_us`.
+* The loop busy waits until `esp_timer_get_time()` reaches `next_t`.
+* The PIXEL trigger is emitted at that scheduled moment.
+
+So the nominal pixel period is `config.sample_period_us`. When that value is about 22 µs, the nominal pixel rate is about 45.45 kHz, close to your scope readout.
+
+Zoomed out frequency view and duty cycle context:
+
+![](./IMAGES/galvo_trigger/image_11.png)
+
+Why the later spread happens:
+
+* The trigger train is bursty, not a continuous clock. PIXEL pulses are only emitted during the imaging region `(i >= img_start && i < img_end)`, not during pre, flyback, or settle samples.
+* Any occasional overrun or interrupt latency can shift individual pulses later, which shows up as timing jitter under persistence.
+
+## Meaning of FRAME, LINE, PIXEL in the current raster implementation
+
+In raster mode, triggers are emitted only during the imaging region and are synchronized on first pixel events:
+
+* First pixel of first line: FRAME + LINE + PIXEL toggle together
+* First pixel of subsequent lines: LINE + PIXEL toggle together
+* Other pixels: only PIXEL toggles
+
+This is implemented by composing a GPIO bitmask and doing one set write followed immediately by one clear write, which makes FRAME and LINE edges align with the first PIXEL edge at those events.
+
+Channel view with all three connected (1 yellow FRAME, 2 cyan LINE, 3 pink PIXEL):
+
+![](./IMAGES/galvo_trigger/image_9.png)
+
+## Summary of observations and where they stem from
+
+* 3.3 V seen without termination: high impedance probing of a 3.3 V buffered output.
+* ~1.9 V with termination: voltage division due to heavy load plus series resistor and driver impedance.
+* ~60 to 63 ns typical width: back to back GPIO set and clear in the raster loop for PIXEL and for masked multi trigger events.
+* ~4.4 to 5.0 µs occasional width: delayed clear caused by interrupt latency or use of the 5 µs delay helpers for LINE and FRAME.
+* ~22 µs nominal period: matches `sample_period_us` scheduling with busy wait timing.
+* timing spread later in the burst: gating of triggers to imaging region plus occasional scheduling jitter and overruns.

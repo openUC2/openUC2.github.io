@@ -1,6 +1,6 @@
 ---
 id: chromatix_offaxis_tomography
-title: Chromatix x openUC2 tutorial: Off-axis holo-tomography with openUC2 cubes
+title: Chromatix openUC2 tutorial (Off-axis holo-tomography)
 ---
 
 :::tip
@@ -9,6 +9,8 @@ The toolbox itself can be found here:
 https://github.com/chromatix-team/chromatix
 
 The below tutorial is a work in progress. We will update it with more details, code, and example data in the coming weeks. If you want to get started right away, check out the Chromatix docs and examples, which cover the core forward model and reconstruction techniques used here. It was the result of the Chromatix Hackathon in April 2024 at the HHMI Janelia campus, where we explored how to integrate Chromatix with openUC2 for computational microscopy applications. The work was mostly done by Aaron Sanchez. 
+
+A big thanks goes to Diptodip Deb, Gert-Jan Both and Srinivas C. Turaga for their help and support into getting this tutorial together! :)
 :::
 
 This tutorial shows how to integrate the Chromatix wave-optics simulator into an openUC2 cube-based off-axis holographic tomography setup (Mach-Zehnder style). The workflow covers:

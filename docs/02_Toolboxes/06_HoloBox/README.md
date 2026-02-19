@@ -16,11 +16,23 @@ The HoloBox introduces you to the world of interferometry, holography, and polar
 ### Michelson Interferometer
 The classic interferometer that uses a beam splitter to create two separate light paths that are later recombined to create interference patterns. Fundamental for understanding wave optics and measuring optical path differences.
 
+You can find the experiments [here](./02_MichelsonInterferometer/03_michelsoninterferometer.md).
+
 ### Mach-Zehnder Interferometer
 A split-beam interferometer with separate reference and sample arms, ideal for transmission microscopy and quantitative phase imaging. Offers greater flexibility for sample insertion compared to the Michelson design.
 
+You can find the experiments [here](./03_MachZehnderInterferometer/03_machzehnderinterferometer.md).
+
 ### Inline Holography
 Record and reconstruct wavefronts using inline holographic techniques for label-free imaging and 3D reconstruction.
+
+You can find the experiments [here](./04_InlineHolography/03_inlineholography.md).
+
+### Off-Axis Holography
+
+Advanced holographic imaging technique that allows for separation of the real and virtual images, enabling quantitative phase imaging and wavefront reconstruction.
+
+You can find the experiments [here](./05_OffAxisHolography/03_offaxisholography.md).
 
 ## Polarization Experiments
 
@@ -29,6 +41,8 @@ Explore the polarization properties of light through various experiments demonst
 - Stress birefringence
 - Three polarizer paradox
 - And more polarization phenomena
+- 
+You can find the experiments [here](./05_Polarization/03_polarization.md).
 
 ## Tutorials in this Section
 

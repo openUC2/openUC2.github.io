@@ -19,15 +19,13 @@ These projects come with assembly guides, tutorials, and explanations.
   - [Many microscope slides experiment](../../archive/Polarisation_Experiments/APP_POL_Many_Microscope_Slides_Experiment/Readme.md)
   - [Newton's rings experiment](../../archive/Polarisation_Experiments/APP_POL_Newtons_Rings_Experiment/Readme.md)
   - [Polarization experiment using optically active solution](../../archive/Polarisation_Experiments/APP_POL_Polarization_using_optically_active_solution/Readme.md)
-
-## Educational kits
-
-- [Fourier Optics & Course Box](https://github.com/openUC2/UC2-GIT/tree/master/TheBOX/CourseBOX)
+- Educational kits:
+  - [Fourier Optics & Course Box](https://github.com/openUC2/UC2-GIT/tree/master/TheBOX/CourseBOX)
 
 ## Proofs-of-concept
 
 These are technical demonstrations varying levels of documentation.
 
-- [Stochastic Optical Reconstruction Microscopy (STORM)](./storm/README.md): for imaging below the diffraction limit by sequentially activating individual fluorescent molecules and precisely localizing them.
+- [Stochastic Optical Reconstruction Microscopy (STORM)](https://github.com/openUC2/UC2-STORM-and-Fluorescence): for imaging below the diffraction limit by sequentially activating individual fluorescent molecules and precisely localizing them.
 - [Optical Sectioning with Structured Illumination Microscopy (OS-SIM)](./os-sim/README.md): for optical sectioning with a digital micromirror device (DMD) to remove out-of-focus blur and improve image contrast.
 - [Multi-Camera Capture Demo](https://github.com/openUC2/openUC2_MultiCam): for capturing still frames from up to 8 USB webcams on Linux.

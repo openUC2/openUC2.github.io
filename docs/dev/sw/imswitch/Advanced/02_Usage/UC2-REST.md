@@ -1025,9 +1025,9 @@ if __name__ == "__main__":
 ## Next Steps
 
 - **[Micromanager Integration](./Micromanager.md)** - Use UC2-REST with µManager
-- **[Custom Scripts](../04_Tutorials/Scripting.md)** - Write custom automation scripts
-- **[Hardware Configuration](../03_Configuration/Hardware.md)** - Configure specific devices
-- **[ESP32 Firmware](../../04_Electronics/UC2-ESP/)** - UC2-ESP32 firmware documentation
+- **Custom Scripts** - Write custom automation scripts
+- **Hardware Configuration** - Configure specific devices
+- **[ESP32 Firmware](../../../uc2-esp32/README.md)** - UC2-ESP32 firmware documentation
 
 ## Related Resources
 

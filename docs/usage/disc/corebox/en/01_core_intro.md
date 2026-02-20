@@ -8,7 +8,7 @@ We have compiled this document into a ***PDF*** which can be downloaded <a href=
 
 # CoreBOX
 
-**1. [Experiment Overview](coreBOXen#part-1-basic-optical-experiments)**
+**1. [Experiment Overview](#part-1-basic-optical-experiments)**
 
 **2. Experiment Deepdive**
 

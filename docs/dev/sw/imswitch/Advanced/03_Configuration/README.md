@@ -390,11 +390,12 @@ Creating custom device interfaces:
 ```python
 from imswitch.imcontrol.model.interfaces import DeviceManager
 
+
 class CustomDeviceManager(DeviceManager):
     def __init__(self, deviceInfo, name, **kwargs):
         super().__init__(deviceInfo, name, **kwargs)
         # Initialize custom hardware
-        
+
     def custom_function(self):
         # Implement custom functionality
         pass
@@ -444,15 +445,17 @@ Configure script execution:
 # Validate configuration file
 import json
 
+
 def validate_config(config_file):
     try:
-        with open(config_file, 'r') as f:
+        with open(config_file, "r") as f:
             config = json.load(f)
         print("Configuration is valid JSON")
         return True
     except json.JSONDecodeError as e:
         print(f"Invalid JSON: {e}")
         return False
+
 
 # Test hardware connectivity
 def test_hardware(config):
@@ -497,12 +500,13 @@ def test_hardware(config):
 
 ## Next Steps
 
-- **[Hardware Setup Guide](./Hardware.md)** - Physical hardware configuration
-- **[Calibration Procedures](./Calibration.md)** - System calibration and alignment
-- **[Troubleshooting](./Troubleshooting.md)** - Common configuration issues
+- **Hardware Setup Guide** - Physical hardware configuration
+- **Calibration Procedures** - System calibration and alignment
+- **Troubleshooting** - Common configuration issues
 
 ## Related Resources
 
 - **[UC2-REST Documentation](../02_Usage/UC2-REST.md)** - Communication layer details
 - **[ImSwitch API Reference](https://imswitch.readthedocs.io/)** - Complete API documentation
 - **[Example Configurations](https://github.com/openUC2/ImSwitchConfig)** - Community configurations
+

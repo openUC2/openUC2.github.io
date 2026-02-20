@@ -24,10 +24,11 @@ Python wrapper for ImSwitch REST API remote control.
 
 - **Need camera drivers?** → [Daheng Camera](./Daheng-Camera.md)
 - **Want remote control?** → [ImSwitch Client](./ImSwitch-Client.md)
-- **Looking for other devices?** → Check the main [Electronics section](../../../04_Electronics/)
+- **Looking for other devices?** → Check the main [Electronics section](../../../../hw/electronics/README.md)
 
 ## Related Documentation
 
-- [Installation Guides](../01_Installation/) - General ImSwitch installation
-- [Configuration](../03_Configuration/) - System configuration files
-- [Electronics](../../../04_Electronics/) - Hardware control documentation
+- [Installation Guides](../01_Installation/README.md) - General ImSwitch installation
+- [Configuration](../03_Configuration/README.md) - System configuration files
+- [Electronics](../../../../hw/electronics/README.md) - Hardware control documentation
+

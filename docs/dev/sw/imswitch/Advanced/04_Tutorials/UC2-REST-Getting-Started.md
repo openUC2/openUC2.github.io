@@ -497,7 +497,7 @@ client_debug.stage.move_x(1000)
 
 - **[ImSwitch Configuration](../03_Configuration/README.md)** - Configure ImSwitch to use UC2-REST
 - **[UC2-ESP32 Setup](./UC2-ESP-Getting-Started.md)** - Set up the ESP32 firmware
-- **[Advanced Workflows](./Scripting.md)** - Create custom automation scripts
+- **Advanced Workflows** - Create custom automation scripts
 
 ## Resources
 

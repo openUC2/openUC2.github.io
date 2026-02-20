@@ -124,7 +124,7 @@ The below video explains the assembly of the inner cube stack:
   * UC2 v3 (USB-based)
   * UC2 v4 (CAN-bus capable, recommended for complex systems)
 
-More information can be found in the [UC2 Electronics Documentation](../../04_Electronics/00_Quickstart.md).
+More information can be found in the [UC2 Electronics Add-On Documentation](../../disc/electronics-addon/01_Quickstart.md).
 
 Stepper motors are connected directly to the standalone board, typically using **TMC2209 drivers**. Ensure the motor current for the NEMA 11 motor is set to approximately **800 mA** (adjustable via potentiometer on the driver board). Typically this is on the far right position when turning clockwise.
 
@@ -171,7 +171,7 @@ This is an image series acquired with multiple LEDs turned sequentially. This ca
 
 ## 6. Camera Integration
 
-* USB-C industrial camera mounted inside a UC2 cube (Daheng or HIK, more information in the [Camera Documentation](../../04_Electronics/02_Cameras/00_Quickstart.md))
+* USB-C industrial camera mounted inside a UC2 cube (Daheng or HIK, more information in the [Camera Documentation](../../components/hik-camera/README.md))
 * Optical coupling via **100mm CCTV optics** or Tube lens into an infinity-corrected path - we aim for Nyquist sampling at the sensor
 * Enables widefield and computational imaging modes
 

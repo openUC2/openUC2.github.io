@@ -8,7 +8,7 @@ Abbiamo compilato questo documento in un ***PDF*** che può essere scaricato <a 
 
 # CoreBOX
 
-**1. [Panoramica degli Esperimenti](coreBOXit#parte-1-esperimenti-ottici-di-base)**
+**1. [Panoramica degli Esperimenti](#parte-1-esperimenti-ottici-di-base)**
 
 **2. Approfondimento degli Esperimenti**
 

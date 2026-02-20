@@ -19,7 +19,7 @@ We officially support two categories of ways to be able to access the internet f
 
 1. By internet access sharing from the FRAME:
    1. You will [connect your computer to the FRAME's Wi-Fi hotspot](../../day-1/connectivity/README.md#via-the-frames-wi-fi-hotspot).
-   2. Then you will [connect the FRAME to the internet](../../day-1/connectivity/README.md##how-to-connect-the-frame-to-the-internet). The FRAME will automatically share its internet access to your computer through its Wi-Fi hotspot.
+   2. Then you will [connect the FRAME to the internet](../../day-1/connectivity/README.md#how-to-connect-the-frame-to-the-internet). The FRAME will automatically share its internet access to your computer through its Wi-Fi hotspot.
 
 2. By connecting to the FRAME with a wired connection: you will keep your computer connected to the internet via its normal Wi-Fi connection, and then connect your computer to the FRAME [via an Ethernet cable](../../day-1/connectivity/README.md#via-an-ethernet-cable) or [via a USB-C cable](../../day-1/connectivity/README.md#via-a-usb-c-cable).
 

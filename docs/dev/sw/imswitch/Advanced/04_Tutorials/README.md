@@ -20,7 +20,7 @@ This section provides comprehensive tutorials for advanced ImSwitch usage, from 
 - Real-time feedback control
 - Custom experiment protocols
 
-**[Scripting and Automation](./Scripting.md)**
+**Scripting and Automation**
 - Python scripting within ImSwitch
 - Custom device control
 - Batch processing workflows
@@ -42,19 +42,19 @@ This section provides comprehensive tutorials for advanced ImSwitch usage, from 
 
 ### 4. Advanced Applications
 
-**[Multi-Position Imaging](./Multi-Position-Imaging.md)**
+**Multi-Position Imaging**
 - Automated stage scanning
 - Position list management
 - Stitching and reconstruction
 - High-throughput workflows
 
-**[Time-Lapse Microscopy](./Time-Lapse.md)**
+**Time-Lapse Microscopy**
 - Long-term imaging protocols
 - Environmental control
 - Data management
 - Analysis pipelines
 
-**[Fluorescence Microscopy](./Fluorescence.md)**
+**Fluorescence Microscopy**
 - Multi-channel acquisition
 - Photobleaching mitigation
 - Quantitative analysis
@@ -102,8 +102,9 @@ Before starting these tutorials:
 
 ## Contributing Tutorials
 
-We welcome community contributions! See our [Contributing Guide](./Contributing.md) for:
+We welcome community contributions! See our Contributing Guide for:
 - Tutorial format guidelines
 - Submission process
 - Community review process
 - Maintenance responsibilities
+

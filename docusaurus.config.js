@@ -17,6 +17,8 @@ module.exports = async function createConfigAsync() {
   tagline: 'Documentation for openUC2\'s products and projects',
   url: 'https://openuc2.github.io/',
   baseUrl: baseURL,
+  onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.

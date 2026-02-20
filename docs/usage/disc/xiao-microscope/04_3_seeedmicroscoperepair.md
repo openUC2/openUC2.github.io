@@ -44,7 +44,7 @@ This removes everything from the device's flash. Then proceed to flash your favo
 *remove the cooling body with these two screws*
 
 ![](./IMAGES/seeedRepair/IMG_20240927_074358.jpg)
-*carefully remove the cooling body and access the xia. Now you can flash it according the manual in the [Xiao Tutorial](./01_Toolboxes/02_DiscoveryElectronics/04_1_seeedmicroscope.md)
+*carefully remove the cooling body and access the xia. Now you can flash it according the manual in the [Xiao Tutorial](./04_1_seeedmicroscope.md)
 
 
 **Ensure the firmware runs, then put everything back together again. If you have questions visit our forum: https://openuc2.discourse.group

@@ -44,40 +44,6 @@ On the board there are test-pads that can be probed or soldered to. This helps t
 - pin assignment of headers and connectors
 - add errata section for next revision: endstop pinout ist nicht standard kaufbar
 
-## Table of Contents
-
-- [UC32\_standalone](#uc32_standalone)
-  - [TODO in this README](#todo-in-this-readme)
-  - [Table of Contents](#table-of-contents)
-  - [Insertable modules and sub-boards](#insertable-modules-and-sub-boards)
-    - [ESP32 DEVKIT C (U101)](#esp32-devkit-c-u101)
-    - [4 Stepper driver modules (J201+J202, J301+J302, J401+402, J501+502)](#4-stepper-driver-modules-j201j202-j301j302-j401402-j501502)
-  - [Power input and output](#power-input-and-output)
-    - [Power indicator and voltage-OK LEDs](#power-indicator-and-voltage-ok-leds)
-    - [12V](#12v)
-    - [5V](#5v)
-    - [3.3V](#33v)
-  - [Pinout list](#pinout-list)
-    - [From ESP pins](#from-esp-pins)
-    - [I/O expander](#io-expander)
-  - [Headers and connectors](#headers-and-connectors)
-    - [Motor outputs (A-MOTOR,X-MOTOR,Y-MOTOR,Z-MOTOR)](#motor-outputs-a-motorx-motory-motorz-motor)
-    - [Limit switch headers](#limit-switch-headers)
-    - [Caliper connectors](#caliper-connectors)
-    - ["PWM" headers and amplified sink-switching "PWM-" headers](#pwm-headers-and-amplified-sink-switching-pwm--headers)
-      - [PWM headers directly connected to ESP pins](#pwm-headers-directly-connected-to-esp-pins)
-      - [PWM- headers switched with BJT transistors](#pwm--headers-switched-with-bjt-transistors)
-    - [LED, DAC headers](#led-dac-headers)
-    - [A-STEP+DIR header](#a-stepdir-header)
-    - [I/O expander pins 10-17](#io-expander-pins-10-17)
-    - [I2C](#i2c)
-    - [SPI](#spi)
-    - [Voltages single](#voltages-single)
-    - [Voltages combined](#voltages-combined)
-    - [Test pads and solderjumpers](#test-pads-and-solderjumpers)
-  - [Reset button](#reset-button)
-  - [Errata and notes for the next revision of the board](#errata-and-notes-for-the-next-revision-of-the-board)
-
 ## Insertable modules and sub-boards
 
 ### ESP32 DEVKIT C (U101)

@@ -4,20 +4,6 @@ Welcome to the UC2-ESP32 firmware documentation! This guide provides detailed in
 
 https://github.com/youseetoo/uc2-esp32/tree/reworkBD
 
-## Contents
-
-1. [Overview](#1-overview)
-2. [Firmware Architecture](#2-firmware-architecture)
-3. [Controllers and Their Functions](#3-controllers-and-their-functions)
-4. [Common Controller Functions](#4-common-controller-functions)
-5. [Compiling Switches and Configuration](#5-compiling-switches-and-configuration)
-6. [Typical Use Case Configurations](#6-typical-use-case-configurations)
-7. [How to Modify and Extend](#7-how-to-modify-and-extend)
-8. [Troubleshooting and Debugging](#8-troubleshooting-and-debugging)
-9. [Get, Act, Setup, loop?](#9-Common-Controller-Functions)
-10. [Serial Communication](#10)
----
-
 ## 1. Overview
 
 The `uc2-esp32` firmware is a versatile control system designed for microscopes. It operates on an ESP32 microcontroller and enables communication via USB Serial, Bluetooth, and WiFi. The firmware is highly modular, supporting various hardware controllers and sensors, which can be enabled or disabled using compiling switches.
@@ -330,11 +316,11 @@ Below are some common Serial commands used to control various aspects of the mic
 
   ```json
   {
-    "command": "motor_move",
-    "axis": "z",
-    "position": 1000,
-    "speed": 500
-  }
+      "command": "motor_move",
+      "axis": "z",
+      "position": 1000,
+      "speed": 500
+    }
   ```
 
 - **Set Motor Speed**:
@@ -348,10 +334,10 @@ Below are some common Serial commands used to control various aspects of the mic
 
   ```json
   {
-    "command": "motor_speed",
-    "axis": "x",
-    "speed": 300
-  }
+      "command": "motor_speed",
+      "axis": "x",
+      "speed": 300
+    }
   ```
 
 - **Home Motor**:
@@ -364,9 +350,9 @@ Below are some common Serial commands used to control various aspects of the mic
 
   ```json
   {
-    "command": "motor_home",
-    "axis": "z"
-  }
+      "command": "motor_home",
+      "axis": "z"
+    }
   ```
 
 #### 10.3.2 LED and Laser Control Commands
@@ -381,9 +367,9 @@ Below are some common Serial commands used to control various aspects of the mic
 
   ```json
   {
-    "command": "led_control",
-    "state": "on"
-  }
+      "command": "led_control",
+      "state": "on"
+    }
   ```
 
 - **Set Laser Power**:
@@ -396,9 +382,9 @@ Below are some common Serial commands used to control various aspects of the mic
 
   ```json
   {
-    "command": "laser_power",
-    "power": 75
-  }
+      "command": "laser_power",
+      "power": 75
+    }
   ```
 
 ### 10.4 Sending Commands

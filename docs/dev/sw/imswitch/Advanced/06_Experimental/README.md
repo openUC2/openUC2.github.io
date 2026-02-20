@@ -13,7 +13,7 @@ Run ImSwitch without GUI for resource-constrained environments.
 - Raspberry Pi and Jetson compatibility
 - Docker container setup
 
-### [Auto-Generated Tutorials](./Auto-Generated-Tutorials/)
+### Auto-Generated Tutorials
 Automatically generated documentation from codebase.
 - Hardware control hub documentation
 - Image reconstruction pipeline
@@ -34,13 +34,14 @@ These experimental features are primarily intended for:
 ## Getting Help
 
 If you encounter issues with experimental features:
-- Check the [main documentation](../01_Installation/) first
+- Check the [main documentation](../01_Installation/README.md) first
 - Report bugs on [GitHub Issues](https://github.com/openUC2/ImSwitch/issues)
 - Join discussions on the [community forum](https://openuc2.discourse.group/)
 
 ## Related Documentation
 
-- [Main Installation](../01_Installation/) - Stable installation methods
-- [Usage Guides](../02_Usage/) - Production-ready usage tutorials
-- [Configuration](../03_Configuration/) - System configuration
-- [Tutorials](../04_Tutorials/) - Comprehensive tutorials
+- [Main Installation](../01_Installation/README.md) - Stable installation methods
+- [Usage Guides](../02_Usage/README.md) - Production-ready usage tutorials
+- [Configuration](../03_Configuration/README.md) - System configuration
+- [Tutorials](../04_Tutorials/README.md) - Comprehensive tutorials
+

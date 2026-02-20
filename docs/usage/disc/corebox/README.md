@@ -5,4 +5,4 @@ The Discovery Core Box is the foundation of the UC2 Discovery Series, perfect fo
 We provide usage documentation in:
 
 - [English](./en/README.md)
-- [Italiano](./it/README.md)
+- [Italiano](./it/01_core_intro.md)

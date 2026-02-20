@@ -46,7 +46,7 @@ openUC2's [Discovery Line](./disc/README.md) consists of entry-level kits which 
 
 We also provide usage documentation for operating components included across various products. You can find links to the usage documentation for these components in the logical places from our product usage documentation:
 
-- Software and firmware:
-  - [ImSwitch](./components/imswitch/README.md)
+- [Hikrobot Machine Vision Camera](./components/hik-camera/README.md)
+- [ImSwitch](./components/imswitch/README.md)
 
 For documentation about how to develop functionalities with these components to do things beyond the off-the-shelf functionalities of openUC2 products, please see our [development documentation](../dev/README.md) instead.

@@ -1123,8 +1123,8 @@ class OptimizedProcessor:
 ## Next Steps
 
 - **[Jupyter Workflows](./Jupyter-Workflows.md)** - Interactive analysis with Jupyter notebooks
-- **[Scripting and Automation](./Scripting.md)** - Advanced automation techniques
-- **[Multi-Position Imaging](./Multi-Position-Imaging.md)** - Automated scanning workflows
+- **Scripting and Automation** - Advanced automation techniques
+- **Multi-Position Imaging** - Automated scanning workflows
 
 ## Resources
 

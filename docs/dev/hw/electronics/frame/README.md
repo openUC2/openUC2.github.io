@@ -1,34 +1,6 @@
-# FRAME Electronics Hardware
+# FRAME
 
 Development repository for electronic parts of the mAIkroscope (formerly fiveD/XYZ)
-
-## Table of Contents
-
-- [mAIkroscope-electronics-hardware](#maikroscope-electronics-hardware)
-  - [Table of Contents](#table-of-contents)
-  - [CANBUS as communication between devices](#canbus-as-communication-between-devices)
-  - [hatplus-for-raspberrypi-5](#hatplus-for-raspberrypi-5)
-    - [Raspberry Pi HAT+ implementation (EEPROMS, HAT+ spec)](#raspberry-pi-hat-implementation-eeproms-hat-spec)
-    - [Raspberry Pi pinout](#raspberry-pi-pinout)
-    - [ESP32 pinout](#esp32-pinout)
-    - [Emergency STOP connector](#emergency-stop-connector)
-    - [HAT: Terminating CANBUS or activating CAN activity indicator LED](#hat-terminating-canbus-or-activating-can-activity-indicator-led)
-    - [Disabling communication or power-switching functions](#disabling-communication-or-power-switching-functions)
-  - [stepper-backpack](#stepper-backpack)
-    - [Pinout](#pinout)
-    - [Current sensing and current setting](#current-sensing-and-current-setting)
-    - [Converting Rev. C from 12V+CAN to 5V+I2C](#converting-rev-c-from-12vcan-to-5vi2c)
-    - [Terminating CANBUS or activating CAN activity indicator LED](#terminating-canbus-or-activating-can-activity-indicator-led)
-  - [Laser-interface](#laser-interface)
-    - [XIAO pinout](#xiao-pinout)
-    - [Keyswitch specifications and connections](#keyswitch-specifications-and-connections)
-    - [Interlock](#interlock)
-      - [Interlock behavior and status inticators](#interlock-behavior-and-status-inticators)
-      - [Interlock sources](#interlock-sources)
-      - [Interlock overrides](#interlock-overrides)
-    - [Solderjumpers](#solderjumpers)
-    - [Using the board as CAN-to-GPIO converter](#using-the-board-as-can-to-gpio-converter)
-  - [Pogopin-connectors](#pogopin-connectors)
 
 ## CANBUS as communication between devices
 
@@ -56,15 +28,15 @@ Higher OSI layers, like Network (OSI 3) and up are implemented in higher-layer p
 
 ## hatplus-for-raspberrypi-5
 
-[Schematic PDF](kicad/hatplus-for-raspberrypi-5/OUTPUTS/for-humans/hatplus-for-raspberrypi-5.pdf)
+[v1 HAT Schematic PDF](pathname://../hat-plus/v1/schematic.pdf)
 
-[ibom HTML](kicad/hatplus-for-raspberrypi-5/OUTPUTS/for-humans/ibom.html)
+[v2 HAT ibom HTML](pathname://../hat-plus/v2/ibom-hatv2.html)
 
 This board is effectively the mainboard for the mAIkroscope. It contains DC power input for the whole machine, switched power transmission to all motors, main coordinating microcontroller and interfacing with a Raspberry Pi.
 
 The HAT is put on top of a Raspberry Pi 5 and can supply it with 5.1V 5A through the 40-pin header. The HAT will also fit on a NVIDIA Jetson development board, because its 40-pin header is designed to be compatible with Raspberry Pi's.
 
-There are many comments for design choices, mechanisms, failsafes and links to external ressources in the [schematic PDF for our HAT](kicad/hatplus-for-raspberrypi-5/OUTPUTS/for-humans/hatplus-for-raspberrypi-5.pdf).
+There are many comments for design choices, mechanisms, failsafes and links to external ressources in the [schematic PDF for our v1 HAT](pathname://../hatplus/v1/schematic.pdf).
 
 The microcontroller is a ESP32-WROOM-32E-N8 module with integrated PCB antenna, 8 MB flash. The used ESP32-D0WD-V3 chip in the module has 449 KB ROM, 520 KB SRAM and 16 KB SRAM in RTC core.
 
@@ -166,9 +138,9 @@ This is only relevant for troubleshooting and may defeat safety functions.
 
 ## stepper-backpack
 
-[Schematic PDF](kicad/stepper-backpack/OUTPUTS/for-humans/stepper-backpack.pdf)
+Schematic PDF: `kicad/stepper-backpack/OUTPUTS/for-humans/stepper-backpack.pdf`
 
-[ibom HTML](kicad/stepper-backpack/OUTPUTS/for-humans/ibom.html)
+ibom HTML: `kicad/stepper-backpack/OUTPUTS/for-humans/ibom.html`
 
 stepper-backpack is a PCB to fasten to the back of a NEMA 11 stepper motor. It enables the motor-PCB-assembly to be controlled via CAN with high-level commands and implements absolute feedback.
 

@@ -1,6 +1,6 @@
 # ImSwitch Advanced Documentation
 
-This section provides comprehensive guides for ImSwitch beyond the basic [Quickstart Guide](../01_Quickstart.md).
+This section provides comprehensive guides for ImSwitch beyond the basic Quickstart Guide.
 
 ## 🎯 Quick Navigation
 
@@ -18,67 +18,64 @@ This section provides comprehensive guides for ImSwitch beyond the basic [Quicks
 ## 📋 What Do I Need?
 
 ### **Just Starting with ImSwitch?**
-→ Begin with [Installation](./01_Installation/) then [Usage](./02_Usage/)
+→ Begin with [Installation](./01_Installation/README.md) then [Usage](./02_Usage/README.md)
 
 ### **Setting up Hardware?**
-→ Check [Configuration](./03_Configuration/) and [Device-Specific](./05_Device-Specific/)
+→ Check [Configuration](./03_Configuration/README.md) and [Device-Specific](./05_Device-Specific/README.md)
 
 ### **Need Specific Camera Drivers?**
-→ Go to [Device-Specific](./05_Device-Specific/) → [Daheng Camera](./05_Device-Specific/Daheng-Camera.md)
+→ Go to [Device-Specific](./05_Device-Specific/README.md) → [Daheng Camera](./05_Device-Specific/Daheng-Camera.md)
 
 ### **Want Remote Control?**
-→ See [Device-Specific](./05_Device-Specific/) → [ImSwitch Client](./05_Device-Specific/ImSwitch-Client.md)
+→ See [Device-Specific](./05_Device-Specific/README.md) → [ImSwitch Client](./05_Device-Specific/ImSwitch-Client.md)
 
 ### **Building Custom Workflows?**
-→ Explore [Tutorials](./04_Tutorials/) for Jupyter notebooks and advanced integrations
-
-### **Deploying on Raspberry Pi?**
-→ Check [Applications](./07_Applications/) → [WiFi Access Point](./07_Applications/WiFi-Access-Point.md)
+→ Explore [Tutorials](./04_Tutorials/README.md) for Jupyter notebooks and advanced integrations
 
 ### **Contributing to Development?**
-→ See [Experimental](./06_Experimental/) for development tools and bleeding-edge features
+→ See [Experimental](./06_Experimental/README.md) for development tools and bleeding-edge features
 
 ## 📚 Section Overview
 
-### 1. [Installation](./01_Installation/)
+### 1. [Installation](./01_Installation/README.md)
 Complete installation guides for all platforms:
 - **Docker** (Recommended) - One-command setup with persistent data
 - **Native** - Python installation for Windows, macOS, Linux
 - **ForkLift** - Pre-configured OS image for immediate use
 
-### 2. [Usage](./02_Usage/)
+### 2. [Usage](./02_Usage/README.md)
 Essential usage tutorials:
 - **UC2-REST** - Python interface for hardware control
 - **Micromanager** - µManager integration and workflows
 - **Updates** - Keeping your system current
 
-### 3. [Configuration](./03_Configuration/)
+### 3. [Configuration](./03_Configuration/README.md)
 System configuration documentation:
 - JSON configuration files
 - Hardware setup examples
 - Device manager configuration
 - Integration settings
 
-### 4. [Tutorials](./04_Tutorials/)
+### 4. [Tutorials](./04_Tutorials/README.md)
 Advanced integration tutorials:
 - **Image Processing** - Napari integration and analysis pipelines
 - **Jupyter Workflows** - Interactive microscopy notebooks
 - **UC2-ESP Getting Started** - ESP32 firmware tutorial
 - **UC2-REST Getting Started** - Python interface deep dive
 
-### 5. [Device-Specific](./05_Device-Specific/)
+### 5. [Device-Specific](./05_Device-Specific/README.md)
 Hardware-specific guides:
 - **Daheng Camera** - Driver installation and setup
 - **ImSwitch Client** - REST API Python wrapper
 - Additional device drivers and interfaces
 
-### 6. [Experimental](./06_Experimental/)
+### 6. [Experimental](./06_Experimental/README.md)
 ⚠️ **Development & Testing Only**:
 - **Headless Mode** - GUI-less operation for resource-constrained devices
 - **Auto-Generated Tutorials** - Developer documentation
 - Bleeding-edge features under development
 
-### 7. [Applications](./07_Applications/)
+### 7. Applications
 Specialized deployments:
 - **WiFi Access Point** - Raspberry Pi network setup
 - Field deployment configurations
@@ -88,23 +85,23 @@ Specialized deployments:
 
 ### Beginners
 1. [Docker Installation](./01_Installation/Docker.md)
-2. [Basic Usage](./02_Usage/)
-3. [Configuration](./03_Configuration/)
+2. [Basic Usage](./02_Usage/README.md)
+3. [Configuration](./03_Configuration/README.md)
 
 ### Intermediate Users
 1. [Native Installation](./01_Installation/Native.md)
 2. [UC2-REST Interface](./02_Usage/UC2-REST.md)
-3. [Device Configuration](./05_Device-Specific/)
+3. [Device Configuration](./05_Device-Specific/README.md)
 
 ### Advanced Users
 1. [Custom Workflows](./04_Tutorials/Jupyter-Workflows.md)
 2. [Image Processing](./04_Tutorials/Image-Processing.md)
-3. [Specialized Applications](./07_Applications/)
+3. Specialized Applications
 
 ### Developers
-1. [Experimental Features](./06_Experimental/)
+1. [Experimental Features](./06_Experimental/README.md)
 2. [UC2-ESP Development](./04_Tutorials/UC2-ESP-Getting-Started.md)
-3. [Custom Device Integration](./05_Device-Specific/)
+3. [Custom Device Integration](./05_Device-Specific/README.md)
 
 ## 💡 Tips for Success
 
@@ -116,8 +113,6 @@ Specialized deployments:
 
 ## 🔗 Related Documentation
 
-- **[Main UC2 Documentation](../../)** - Overall UC2 ecosystem
-- **[Electronics](../../04_Electronics/)** - Hardware control and interfaces
-- **[Assembly](../../01_Assembly/)** - Building UC2 hardware
+- **[Electronics](../../../hw/electronics/README.md)** - Hardware control and interfaces
 - **[Community Forum](https://openuc2.discourse.group/)** - Get help and share experiences
 

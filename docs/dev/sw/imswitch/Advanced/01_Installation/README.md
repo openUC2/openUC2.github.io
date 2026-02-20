@@ -19,7 +19,7 @@ This section contains comprehensive installation guides for ImSwitch, covering d
    - All dependencies included
    - Ready-to-use microscope system
 
-4. **[ImSwitch Installer](./Installer.md)** - Standalone Application
+4. **[ImSwitch Installer](./Installer.mdx)** - Standalone Application
     - Installs MiniConda
     - Installs latest ImSwitch Pip Package
     - Runs in an Electron APP

@@ -4,7 +4,7 @@ This section covers how to use ImSwitch effectively, from basic operations to ad
 
 ## Getting Started
 
-1. **[Basic Usage](./Basic-Usage.md)** - First steps with ImSwitch
+1. **Basic Usage** - First steps with ImSwitch
    - Interface overview
    - Basic controls
    - Camera and stage operation
@@ -63,3 +63,4 @@ client = UC2Client(serialport="/dev/ttyUSB0")
 - **Troubleshooting**: Each tutorial includes troubleshooting sections
 - **Examples**: Practical examples with real hardware
 - **Updates**: [Update procedures](./Updates.md) for keeping software current
+

@@ -82,10 +82,9 @@ jobs:
 
       - name: Build documentation
         env:
-          # Container image should be built with `/openUC2` as the base URL instead of `/`, as the
-          # self-contained root of the site. We use `/openUC2/` instead of `/docs/` as the root so
-          # that we don't have pages in `/docs/docs/`, but instead we have them in `/openUC2/docs/`.
-          BASE_URL: '/openUC2/'
+          # Container image should be built with `/docs` as the base URL instead of `/`, as the
+          # self-contained root of the site.
+          BASE_URL: '/docs/'
         run: |
           npm run build
           # These directories are very big relative to the runner VM's disk capacity, and none of

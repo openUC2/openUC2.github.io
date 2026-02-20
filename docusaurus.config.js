@@ -11,7 +11,7 @@ const baseURL = process.env.BASE_URL || '/'
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'openUC2 Documentation',
-  tagline: 'Seeing is believing. But better with the docs!',
+  tagline: 'Documentation for openUC2\'s products and projects',
   url: 'https://openuc2.github.io/',
   baseUrl: baseURL,
   onBrokenLinks: 'warn',
@@ -21,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'openUC2', // Usually your GitHub org/user name.
-  projectName: 'openUC2-Tutorials', // Usually your repo name.
+  projectName: 'openuc2.github.io', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -36,7 +36,7 @@ const config = {
       'docusaurus-plugin-papersaurus',
       {
         keepDebugHtmls: true,
-        sidebarNames: ['tutorialSidebar'],
+        sidebarNames: ['usage', 'development', 'workshops', 'archive'],
         addDownloadButton: true,
         autoBuildPdfs: false,
         ignoreDocs: ['licenses'],
@@ -52,6 +52,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [math],
           rehypePlugins: [katex],
@@ -60,6 +61,7 @@ const config = {
           //editUrl:
           //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -87,9 +89,27 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'usage/README',
+            label: 'Usage',
             position: 'left',
-            label: 'Tutorial',
+          },
+          {
+            type: 'doc',
+            docId: 'dev/README',
+            label: 'Development',
+            position: 'left',
+          },
+          {
+            type: 'doc',
+            docId: 'workshops/README',
+            label: 'Workshops',
+            position: 'left',
+          },
+          {
+            type: 'doc',
+            docId: 'archive/README',
+            position: 'left',
+            label: 'Archive',
           },
           {
             href: 'https://openuc2-gmbh.odoo.com',
@@ -137,11 +157,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
-                label: 'Tutorial',
-                to: `${baseURL}docs/intro`,
+                label: 'Home',
+                to: `${baseURL}`,
               },
             ],
           },
@@ -153,8 +173,12 @@ const config = {
                 href: 'https://youseetoo.org',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/OpenUc2',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/openuc2/',
+              },
+              {
+                label: 'Bluesky',
+                href: 'https://bsky.app/profile/openuc2.bsky.social',
               },
             ],
           },
@@ -168,6 +192,10 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/openuc2/',
+              },
+              {
+                label: 'Contact',
+                href: 'https://openuc2.com/imprint/',
               },
             ],
           },

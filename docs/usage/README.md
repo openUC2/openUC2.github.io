@@ -1,0 +1,52 @@
+---
+sidebar_position: 0
+sidebar_label: Overview
+---
+
+# Usage
+
+Welcome to the openUC2 usage documentation! Here you'll find:
+
+- **Hands-on tutorials** to help you learn how to do things with our products & projects
+- **How-to guides** to help you accomplish practical goals with our products & projects
+- **Reference** guides which you can consult for technical descriptions about our products & projects and how to use them
+- **In-depth explanations** to help you understand why our products & projects are designed the way they're designed, from the perspective of a user or operator of our products
+
+You can find source files for our products [on GitHub](http://github.com/openUC2).
+You can also request customer support by emailing [support@openuc2.com](mailto:support@openuc2.com).
+
+## Products
+
+Our product usage documentation is organized according to our product lines:
+
+### Professional Line
+
+openUC2's [Professional Line](./pro/README.md) consists of ready-to-use imaging systems which enable you to make high-quality scientific measurements. These products are designed around openUC2's modular optics system for easy reconfigurability to match your research requirements.
+
+- [FRAME](./pro/frame/README.md)
+- [miniFRAME](./pro/miniframe/README.md)
+
+### Discovery Line
+
+openUC2's [Discovery Line](./disc/README.md) consists of entry-level kits which help you to learn about and prototype with optics, microscopy, imaging, mechanics, electronics, and software.
+
+- Standalone kits: educational kits using openUC2's approachable modular optics system.
+  - [CoreBox](./disc/corebox/README.md)
+  - [QBox](./disc/qbox/README.md)
+  - [HoloBox](./disc/holobox/README.md)
+  - [XIAO Microscope](./disc/xiao-microscope/README.md)
+
+- Add-on kits: expansion sets for extending the Core Box with more advanced capabilities.
+  - [Electronics Add-On](./disc/electronics-addon/README.md)
+  - [Infinity Add-On](./disc/infinity-addon/README.md)
+  - [Fluorescence Add-On](./disc/fluorescence-addon/README.md)
+  - [Light-Sheet Add-On](./disc/lightsheet-addon/README.md)
+
+## Components
+
+We also provide usage documentation for operating components included across various products. You can find links to the usage documentation for these components in the logical places from our product usage documentation:
+
+- Software and firmware:
+  - [ImSwitch](./components/imswitch/README.md)
+
+For documentation about how to develop functionalities with these components to do things beyond the off-the-shelf functionalities of openUC2 products, please see our [development documentation](../dev/README.md) instead.

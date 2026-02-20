@@ -6,7 +6,7 @@ Learn how to build a super-resolution STORM (Stochastic Optical Reconstruction M
 
 STORM is a super-resolution microscopy technique that achieves nanometer-scale resolution (typically 20-50nm) by:
 1. Imaging individual fluorescent molecules one at a time
-2. Precisely determining their positions (typically <20nm accuracy)
+2. Precisely determining their positions (typically &lt;20nm accuracy)
 3. Reconstructing a high-resolution image from thousands of localizations
 
 This bypasses the classical diffraction limit (~200nm) of conventional optical microscopy.
@@ -71,7 +71,7 @@ A telescopic lens arrangement with a rotating diffuser creates homogeneous illum
 Individual fluorophores are:
 1. Stochastically activated
 2. Imaged until photobleached
-3. Localized with sub-pixel precision (<20nm)
+3. Localized with sub-pixel precision (&lt;20nm)
 4. Compiled into super-resolution image
 
 ### Drift Correction
@@ -93,7 +93,7 @@ Long acquisition times (minutes to hours) require:
 - **Resolution:** 20-50nm lateral, 50-100nm axial (3D)
 - **Laser Intensity:** High power density required (1-10 kW/cm²)
 - **Acquisition Time:** Minutes to hours depending on density
-- **Localization Precision:** <20nm per molecule
+- **Localization Precision:** &lt;20nm per molecule
 - **Frame Rate:** 20-100 Hz typical
 - **Field of View:** Typically 50-100 μm
 

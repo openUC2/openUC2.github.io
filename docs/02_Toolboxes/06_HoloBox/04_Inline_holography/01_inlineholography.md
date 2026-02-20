@@ -156,7 +156,7 @@ Mount your transparent sample as close as possible to the camera sensor:
 
 The key distances are:
 - **Source-to-sample distance (L1)**: 10-20 cm for good illumination uniformity
-- **Sample-to-detector distance (L2)**: <5 mm for high resolution
+- **Sample-to-detector distance (L2)**: &lt;5 mm for high resolution
 - **Magnification ratio**: M = L1/L2 (typically 20-100x)
 
 **TODO**: Add specific distance calculations for different magnification requirements

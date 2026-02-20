@@ -46,7 +46,7 @@ When many USB‑2 webcams stream raw **YUYV 4:2:2** frames, the kernel driver m
 
 ### The solution: *compressed MJPEG*
 
-Most UVC cameras can encode Motion‑JPEG in hardware.  The bulk data crossing the USB bus – and the temporary kernel buffers – shrink by a factor of 4‑10. For the same two 640 × 480 streams at 80 KiB each, you now need < 5 MB of kernel memory, well below the limit.
+Most UVC cameras can encode Motion‑JPEG in hardware.  The bulk data crossing the USB bus – and the temporary kernel buffers – shrink by a factor of 4‑10. For the same two 640 × 480 streams at 80 KiB each, you now need &lt; 5 MB of kernel memory, well below the limit.
 
 > “Force MJPEG and it works fine – RAW eats buffer space until `ENOSPC`.” — *⁠opencv/opencv #23787* citeturn0search0
 
@@ -80,7 +80,7 @@ Most UVC cameras can encode Motion‑JPEG in hardware.  The bulk data crossing t
 * `cam_ids = (2,4,6,8,10,12)` – list of device numbers (**IMPORTANT** This may be different on your system - here it was multiple of two for some reason, 0 was inbuilt webcam)
 * Loop in steps of 2: open two cameras → grab one frame each → display in grid → release both.
 * GUI built with **Matplotlib** (`plt.subplots(2, 3)`).
-* Uses **np.zeros** placeholders for empty slots if you have < 6 cameras.
+* Uses **np.zeros** placeholders for empty slots if you have &lt; 6 cameras.
 * Press **Esc** to exit.
 
 ---

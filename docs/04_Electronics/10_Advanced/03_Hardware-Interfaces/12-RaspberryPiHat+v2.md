@@ -94,7 +94,7 @@ This is the pinout that matches the `UC2_3_CAN_HAT_Master` v2 definition and the
   - GPIO21 = SDA
   - GPIO22 = SCL
 
-### Bridging Pi <-> ESP I2C
+### Bridging Pi ↔ ESP I2C
 - **JP101 (SDA)** and **JP102 (SCL)** are the solder jumpers that connect the Pi I2C-1 lines into the HAT shared I2C net (and therefore to the ESP32 I2C pins and the I2C header ecosystem).  
   - Default should be OPEN unless you explicitly want the shared bus.
 

@@ -131,7 +131,7 @@ You can find the files here https://github.com/openUC2/openUC2-LaserScanner/blob
 
 The UC2-ESP Firmware also has the CAN-enabled version of it in its code base here: https://github.com/youseetoo/uc2-esp32/blob/main/main/src/scanner/GalvoController.cpp
 
-:::warn
+:::warning
 Sometimes the XIAO cannot be flashed immediately, for this you have to press boot and reset while firmware is flashed - or erase the firmware first using this tool: https://espressif.github.io/esptool-js/
 :::
 
@@ -202,7 +202,7 @@ draw()
   clear all triggers              ← frame end
 ```
 
-* **Timing** – `esp_rom_delay_us()` delivers sub-µs waits; replace with a hardware timer ISR for dwell times <5 µs.
+* **Timing** – `esp_rom_delay_us()` delivers sub-µs waits; replace with a hardware timer ISR for dwell times &lt;5 µs.
 * **Throughput** – one SPI transaction per axis, LDAC latched once per pixel → 2 × 16 bits @ 20 MHz ≈ 1.6 µs transfer; 512×512 raster ≈ 0.42 s per frame exclusive of galvo settling.
 * **Triggers** – 50 Ω back-termination; rising edge marks *start* of integration for FLIM/PMT cards.
 

@@ -54,7 +54,7 @@ bioRxiv 2023.05.31.542706; doi: https://doi.org/10.1101/2023.05.31.542706
 
 Certainly! The instructions you provided seem like a comprehensive guide to building a single molecule localization microscope using the modular optical system UC2. Below, I've expanded on a few aspects to ensure that the steps are clear and more detailed, providing information about some safety precautions, required materials, and additional tips.
 
-### Possible to assemble in <2 Minutes
+### Possible to assemble in &lt;2 Minutes
 
 ![](./IMAGES/assembly_final.gif)
 Obviously, adjusting the lenses and mirrors, as well as adapting self-made 3D printed parts will take some time. However, the framework of the microscope is rapid and simple to build. The cubes can simply be stuck together to get the outlay of the microscope in few minutes. This allows to swiftly exchange modules, make changes and even replace components.
@@ -105,13 +105,13 @@ The emissions from the objective are parallel. The distance can be
 chosen accordingly to the build. A mirror tilted by 45 degrees reflects
 the vertical emissions of the sample into the tube lens and subsequently
 onto the camera.
-<!---
+{/* 
 ![](./IMAGES/image1.png)
 
 Emissions from the objective are reflected by the mirror, focused by the
 tube lens, displaced with the tiltable mirror and imaged on the
 detector.
---->
+*/}
 #### 2. Laser
 
 The laser profile can be tuned to match the application the microscope
@@ -121,14 +121,14 @@ Without any modification, the laser only
 illuminates a subset of the field of view. By adding a telescope build,
 the laser beam is magnified. The modifications proposed in the **Illumination** section show different illumination patterns, leading to different possible imaging modalities.
 
-<!---
+{/* 
 ![](./IMAGES/image2.png)
 
 ![](./IMAGES/image3.png)
 
-![](![](./IMAGES/image4.png)
+![](./IMAGES/image4.png)
 
-![](![](./IMAGES/image5.png)
+![](./IMAGES/image5.png)
 
 Here, the lens l1 is focusing onto the rotating cling foil. The diffused beam is magnified by the lens l2. The
 resulting beam profiles can be seen in following images:
@@ -139,7 +139,7 @@ advantageous for applications needing higher laser densities. The laser
 profile with a 2 times magnification (middle) and the magnification with
 diffuser (right) enable homogeneous illumination of most of the field of
 view.
---->
+*/}
 ##### Tips:
 
 - Ensure that the diffuser is balanced properly to avoid vibrations that might affect the image quality.
@@ -154,9 +154,7 @@ the beam can be positioned into the center of the field of view. The
 filter cube has filters adapted to the laser and the fluorophores used
 in the experiments. The mount for the laser, the lens, the mirror as
 well as the filter cube can all be 3D printed. The schematic and actual photograph of the layer within the setup are shown in the **setup building figure**.
-<!---
-![](./IMAGES/image6.png)
---->
+{/* ![](./IMAGES/image6.png) */}
 
 ##### Tips:
 
@@ -164,9 +162,7 @@ well as the filter cube can all be 3D printed. The schematic and actual photogra
 - The choice of filters must correspond with the laser and the fluorophores used in the experiments.
 
 #### 4. Z Stage
-<!---
-![](./IMAGES/image7.png)
---->
+{/* ![](./IMAGES/image7.png) */}
 The z stage is a motor driven translation stage. The
 stage is embedded into a 3D printed case to make the dimensions fit the
 cube design. A puzzle piece on the top and in the bottom allow to build
@@ -346,7 +342,7 @@ REMARK: All files have been designed using Autodesk Inventor 2019 (EDUCATION)
 If you find this project useful, please like this repository, follow us on Twitter and cite the webpage or the publication! :-)
 
 
-<!---
+{/* 
 # Unsorted Images
 ![](./IMAGES/Application_Fluorescence_Microscope_Infinity_Inverted_STORM_v3.png)
 ![](./IMAGES/Application_Fluorescence_Microscope_Infinity_Inverted_STORM_v3_1.png)
@@ -382,4 +378,4 @@ If you find this project useful, please like this repository, follow us on Twitt
 ![](./IMAGES/SetupImages_4.jpeg)
 ![](./IMAGES/SetupImages_5.jpeg)
 ![](./IMAGES/SetupImages_6.jpeg)
---->
+*/}

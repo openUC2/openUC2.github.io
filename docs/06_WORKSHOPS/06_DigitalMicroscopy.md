@@ -362,10 +362,12 @@ ESP32.led.send_LEDMatrix_full(intensity=(0, 0, 0), getReturn=False)
 
 ```
 
+```
     [OpenDevice]: Port not found
     Using API version 2
     {0: [], 1: [], 2: [], 3: [], 4: [], 5: [], 6: [], 7: [], 8: [], 9: []}
     [SendingCommands]:{"task": "/ledarr_act", "qid": 1, "led": {"action": "off"}}
+```
 
 
 
@@ -435,12 +437,14 @@ my_led_matrix.send_LEDMatrix_off()
 
 ```
 
+```
     Using API version 2
     {0: [], 1: [], 2: [], 3: [], 4: [], 5: [], 6: [], 7: [], 8: [], 9: []}
     [SendingCommands]:{"task": "/ledarr_act", "qid": 1, "led": {"action": "halves", "region": "left", "r": 0, "g": 0, "b": 255}}
 
     [ProcessLines]:+
     [ProcessLines]:{qid1"ucs"1-
+```
 
 
 
@@ -448,7 +452,7 @@ my_led_matrix.send_LEDMatrix_off()
 ![png](./IMAGES/2025_05_01_UC2_Example_DPC/output_6_1.png)
 
 
-
+```
     [SendingCommands]:{"task": "/ledarr_act", "qid": 2, "led": {"action": "halves", "region": "right", "r": 0, "g": 0, "b": 255}}
 
     [ProcessLines]:++
@@ -458,6 +462,7 @@ my_led_matrix.send_LEDMatrix_off()
     Failed to read the line in serial: 'bool' object has no attribute 'decode'
     Failed to load the json from serial
     Error: Expecting value: line 1 column 1 (char 0)
+```
 
 
 
@@ -465,7 +470,7 @@ my_led_matrix.send_LEDMatrix_off()
 ![png](./IMAGES/2025_05_01_UC2_Example_DPC/output_6_3.png)
 
 
-
+```
     [SendingCommands]:{"task": "/ledarr_act", "qid": 3, "led": {"action": "halves", "region": "top", "r": 0, "g": 0, "b": 255}}
 
     [ProcessLines]:+
@@ -473,6 +478,7 @@ my_led_matrix.send_LEDMatrix_off()
     Failed to read the line in serial: 'bool' object has no attribute 'decode'
     Reconnecting to the serial device
     Reconnected to the serial device
+```
 
 
 
@@ -480,7 +486,7 @@ my_led_matrix.send_LEDMatrix_off()
 ![png](./IMAGES/2025_05_01_UC2_Example_DPC/output_6_5.png)
 
 
-
+```
     [SendingCommands]:{"task": "/ledarr_act", "qid": 1, "led": {"action": "halves", "region": "bottom", "r": 0, "g": 0, "b": 255}}
 
     Failed to read the line in serial: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
@@ -493,6 +499,7 @@ my_led_matrix.send_LEDMatrix_off()
     [ProcessLines]:--
     Failed to load the json from serial
     Error: Expecting value: line 1 column 1 (char 0)
+```
 
 
 
@@ -500,7 +507,7 @@ my_led_matrix.send_LEDMatrix_off()
 ![png](./IMAGES/2025_05_01_UC2_Example_DPC/output_6_7.png)
 
 
-
+```
     [SendingCommands]:{"task": "/ledarr_act", "qid": 2, "led": {"action": "off"}}
 
     [ProcessLines]:++
@@ -517,16 +524,10 @@ my_led_matrix.send_LEDMatrix_off()
     It takes too long to get a response, we will resend the last command: {'task': '/ledarr_act', 'qid': 2, 'led': {'action': 'off'}}
     Failed to write the line in serial: We have a queue, so after a while we need to resend the wrong command!
 
-
-
-
-
     'No response received'
 
-
-
     [ProcessCommands]: {'qid': 2, 'success': 1}
-
+```
 
 
 ```python
@@ -543,13 +544,9 @@ plt.imshow(mFrames[3])
 
 ```
 
-
-
-
+```
     <matplotlib.image.AxesImage at 0x16c76e550>
-
-
-
+```
 
 
 ![png](./IMAGES/2025_05_01_UC2_Example_DPC/output_7_1.png)
@@ -584,13 +581,9 @@ plt.imshow(dpcHorz,cmap='gray')
 
 ```
 
-
-
-
+```
     <matplotlib.image.AxesImage at 0x17e0b8990>
-
-
-
+```
 
 
 ![png](./IMAGES/2025_05_01_UC2_Example_DPC/output_9_1.png)

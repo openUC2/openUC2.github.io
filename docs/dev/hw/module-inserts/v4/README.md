@@ -21,7 +21,7 @@ This is a new version of the cube that has some minor yet very important changes
 
 Below you can find a step-by-step guide to create your own insert in Tinkercad, a free online 3D design tool. For this you need a free Tinkercad account.
 
-Feel free to copy the template design we created for you: [Tinkercad UC2 Insert Template](www.tinkercad.com/things/j9oYjW6ftqo-openuc2-insert-template)
+Feel free to copy the template design we created for you: [Tinkercad UC2 Insert Template](https://www.tinkercad.com/things/j9oYjW6ftqo-openuc2-insert-template)
 
 ### Steps to get your tinkercad design ready for 3D printing:
 

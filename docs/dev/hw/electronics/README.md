@@ -15,7 +15,7 @@ This section covers advanced hardware interfaces that extend the capabilities of
 
 ### Motor Control Systems
 
-**[Stepper Motor Backpack](./11-StepperMotorBackpack.md)**
+**[Stepper Motor Backpack](./stepper-backpack/README.md)**
 - Precise microstepping control
 - Multiple motor support
 - Encoder feedback integration
@@ -29,7 +29,7 @@ This section covers advanced hardware interfaces that extend the capabilities of
 
 ### Raspberry Pi Integration
 
-**[Raspberry Pi HAT+](./12-RaspberryPiHat+.md)**
+**[Raspberry Pi HAT+](./hat-plus/README.md)**
 - Direct GPIO integration
 - High-speed communication
 - Power management
@@ -43,7 +43,7 @@ This section covers advanced hardware interfaces that extend the capabilities of
 
 ### Industrial Communication
 
-**[CAN Interface](./13-CANInterface.md)**
+**[CAN Interface](../../sw/can-protocol.md)**
 - Robust industrial communication
 - Multi-device networking
 - Real-time message prioritization
@@ -416,7 +416,7 @@ public:
 
 ## Related Documentation
 
-- **[UC2-ESP32 Firmware](../01_UC2-ESP32/README.md)** - Firmware integration
-- **[UC2-REST Interface](../02_UC2-REST/README.md)** - Software integration
-- **[ImSwitch Configuration](../../05_ImSwitch/Advanced/03_Configuration/README.md)** - System configuration
+- **[UC2-ESP32 Firmware](../../sw/uc2-esp32/README.md)** - Firmware integration
+- **[UC2-REST Interface](../../sw/uc2-rest/README.md)** - Software integration
+- **[ImSwitch Configuration](../../../usage/components/imswitch/Advanced/03_Configuration/README.md)** - System configuration
 

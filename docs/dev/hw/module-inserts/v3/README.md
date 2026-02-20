@@ -18,7 +18,7 @@ This is a close-to-the-injection-molding design. The press-fit can vary. It's op
 
 You can find the latest Inventor Design files in the Fusion360 cloud: https://a360.co/3ZwHhl7
 
-![](./IMAGES/Fusion360_V1.png)
+![](./images/Fusion360_V1.png)
 
 You can download and export this in multiple CAD formats.
 
@@ -26,4 +26,4 @@ You can download and export this in multiple CAD formats.
 
 This serves as a template for your optics. Fill it with whatever you have and model it in your 3D CAD software: https://a360.co/3MYo0RX
 
-![](./IMAGES/Fusion360_2.png)
+![](./images/Fusion360_2.png)

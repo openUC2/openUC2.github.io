@@ -14,7 +14,7 @@ This is a new version of the cube that has some minor yet very important changes
 
 ## Insert Design
 
-![](./IMAGES/insertdesign.png)
+![](./images/insertdesign.png)
 
 
 ## Design your own Insert in Tinkercad
@@ -26,22 +26,22 @@ Feel free to copy the template design we created for you: [Tinkercad UC2 Insert 
 ### Steps to get your tinkercad design ready for 3D printing:
 
 Go to Tinkercad.com and login or register for a free account.
-![](./IMAGES/tinkercad/tinkercad_6.png)
+![](./images/tinkercad/tinkercad_6.png)
 
 As a student of teacher you have access to this for free:
-![](./IMAGES/tinkercad/tinkercad_5.png)
+![](./images/tinkercad/tinkercad_5.png)
 
 You can also use your google account to login:
-![](./IMAGES/tinkercad/tinkercad_4.png)
+![](./images/tinkercad/tinkercad_4.png)
 
 Once you're logged in, you can start with a new design or copy our template by clicking on the link above.
-![](./IMAGES/tinkercad/tinkercad_3.png)
+![](./images/tinkercad/tinkercad_3.png)
 
 Here, we have imported the STL file from below which you can now freely modify or derive it from our template.
-![](./IMAGES/tinkercad/tinkercad_2.png)
+![](./images/tinkercad/tinkercad_2.png)
 
 You can download the file as an STL and print it. 
-![](./IMAGES/tinkercad/tinkercad_1.png)
+![](./images/tinkercad/tinkercad_1.png)
 
 
 The link to this file can be found here:
@@ -55,7 +55,7 @@ You can find the file here: [https://a360.co/3ZvHHal](https://a360.co/3ZvHHal)
 
 The editable Fusion360 design files for the UC2 v4 cube and baseplate can be found here: [a360.co/4rjtYiu](https://a360.co/4rjtYiu)
 
-![](./IMAGES/fusion360v4.png)
+![](./images/fusion360v4.png)
 
 ## Design for the Master Insert
 
@@ -71,19 +71,19 @@ It allows you to create inserts parametrically and export them as STL or STEP fi
 
 ### STP
 
-- Insert Assembly as STP: `/INVENTOR/STP/SUB-0026-LEND40F-50-V04-virtass.stp`
+- [Insert Assembly as STP](./stp/SUB-0026-LEND40F-50-V04-virtass.stp)
 
 ### INVENTOR
 
-- Inventor Part (Lens): `/INVENTOR/INVENTOR/BUY-Lens-f-50D43sA10sI5bi-cv.ipt`
-- Inventor Part (Nut): `/INVENTOR/INVENTOR/PRT-2005-NUTD43.ipt`
-- Inventor Part (Insert): `/INVENTOR/INVENTOR/PRT-2027-INSLEND43F-50-V04.ipt`
-- Inventor Part (Parameters): `/INVENTOR/INVENTOR/MAS-0001-Main-Parameters-V03-04.ipt`
-- Inventor Part (Insert): `/INVENTOR/INVENTOR/MAS-2013-Square-Inserts-V04.ipt`
-- Inventor Assembly (Assembly): `/INVENTOR/INVENTOR/SUB-0026-LEND40F-50-V04-virtass.iam`
+- [Inventor Part (Lens)](./inventor/BUY-Lens-f-50D43sA10sI5bi-cv.ipt)
+- [Inventor Part (Nut)](./inventor/PRT-2005-NUTD43.ipt)
+- [Inventor Part (Insert)](./inventor/PRT-2027-INSLEND43F-50-V04.ipt)
+- [Inventor Part (Parameters)](./inventor/MAS-0001-MainParameters-V03-04.ipt)
+- [Inventor Part (Insert)](./inventor/MAS-2013-SquareInserts-V04.ipt)
+- [Inventor Assembly (Assembly)](./inventor/SUB-0026-LEND40F-50-V04-virtass.iam)
 
 ### STL
 
-- Insert as STL (Lens): `/INVENTOR/STL/SUB-0026-LEND40F-50-V04-virtass_BUY-Lens-f-50D43sA10sI5bi-cv_3.stl`
-- Insert as STL (Insert): `/INVENTOR/STL/SUB-0026-LEND40F-50-V04-virtass_PRT-2027-INSLEND43F-50-V04_1.stl`
-- Insert as STL (Nut): `/INVENTOR/STL/SUB-0026-LEND40F-50-V04-virtass_PRT-2005-NUTD43_2.stl`
+- [Insert as STL (Lens)](./stl/SUB-0026-LEND40F-50-V04-virtass_BUY-Lens-f-50D43sA10sI5bi-cv_3.stl)
+- [Insert as STL (Insert)](./stl/SUB-0026-LEND40F-50-V04-virtass_PRT-2027-INSLEND43F-50-V04_1.stl)
+- [Insert as STL (Nut)](./stl/SUB-0026-LEND40F-50-V04-virtass_PRT-2005-NUTD43_2.stl)

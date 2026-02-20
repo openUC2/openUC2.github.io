@@ -6,7 +6,7 @@
 width="640"/>
 </p>
 
-There are different ways of producing polarized light from unpolarized light.  In an example process: light travels from medium 1 to medium 2. Some part of the incident light reflects from the surface of medium 2. This reflected light can be partially polarized light or totally polarized light in the Brewster angle. Another part of the initial light is refracted to medium 2 as a partially polarized light. You can have more detailed information about the polarization of the light by reflection  [in the Brewster Angle Experiment](../../APPLICATIONS/APP_POL_Brewster_Angle_Experiment).
+There are different ways of producing polarized light from unpolarized light.  In an example process: light travels from medium 1 to medium 2. Some part of the incident light reflects from the surface of medium 2. This reflected light can be partially polarized light or totally polarized light in the Brewster angle. Another part of the initial light is refracted to medium 2 as a partially polarized light. You can have more detailed information about the polarization of the light by reflection  [in the Brewster Angle Experiment](https://github.com/openUC2/UC2-GIT/tree/master/APPLICATIONS/APP_POL_Brewster_Angle_Experiment).
 
 However, transmission light eventually polarizes based on the polarization by reflection, when the light is transmitted many times through several microscope slides.
 
@@ -26,11 +26,11 @@ width="550"/>
 
 |  Name | Properties  |  Price | Link  | # |
 |---|---|---|---|---|
-|  4×1 Baseplate | Skeleton of the System | 5.47 €  | [Base-plate](../../CAD/ASSEMBLY_Baseplate)  | 1 |
-|  MODULE:  *Polarizer Cube* | It holds the linearly polarizing filter  |  4.31 €  | [Linear Polarizer](../../CAD/ASSEMBLY_POL_Linear_Polarizer)  | 1 |
-|  MODULE: *Many Microscope Slides Holder* | It hold 7 or more microscope slides back to back  | 2.11 €  | [Slides Holder](../../CAD/ASSEMBLY_CUBE_Sample_Holder)  | 1 |
-|  MODULE: *Laser Cube* | LASER source holder  | 17.68 €  | [Light Source ](../../CAD/ASSEMBLY_CUBE_Laser)  | 1 |
-|  EXTRA MODULE: Screen Holder Cube | It holds the Display Screen (Not Used in Practice) | 1 €  | [Screen](../../CAD/ASSEMBLY_CUBE_Sample_Holder)  | 1 |
+|  4×1 Baseplate | Skeleton of the System | 5.47 €  | [Base-plate](https://github.com/openUC2/UC2-GIT/tree/master/CAD/ASSEMBLY_Baseplate)  | 1 |
+|  MODULE:  *Polarizer Cube* | It holds the linearly polarizing filter  |  4.31 €  | [Linear Polarizer](https://github.com/openUC2/UC2-GIT/tree/master/CAD/ASSEMBLY_POL_Linear_Polarizer)  | 1 |
+|  MODULE: *Many Microscope Slides Holder* | It hold 7 or more microscope slides back to back  | 2.11 €  | [Slides Holder](https://github.com/openUC2/UC2-GIT/tree/master/CAD/ASSEMBLY_CUBE_Sample_Holder)  | 1 |
+|  MODULE: *Laser Cube* | LASER source holder  | 17.68 €  | [Light Source ](https://github.com/openUC2/UC2-GIT/tree/master/CAD/ASSEMBLY_CUBE_Laser)  | 1 |
+|  EXTRA MODULE: Screen Holder Cube | It holds the Display Screen (Not Used in Practice) | 1 €  | [Screen](https://github.com/openUC2/UC2-GIT/tree/master/CAD/ASSEMBLY_CUBE_Sample_Holder)  | 1 |
 
 
 ### <img src="/POLARISATION/SLIDES/P.png" width="40"/>Parts to print
@@ -53,7 +53,7 @@ width="550"/>
 
 
 ## <img src="/POLARISATION/SLIDES/B.png" width="40"/> Additional components
-* Check out the [RESOURCES](../../TUTORIALS/RESOURCES) for more information!
+* Check out the [RESOURCES](https://github.com/openUC2/UC2-GIT/tree/master/TUTORIALS/RESOURCES) for more information!
 * 1 × Linear Polarizing Sheet [🢂](https://amazon.de/-/en/Polarizing-A4-Sheet-Polarizer-Educational-Polarized/dp/B06XWXRB75/ref=pd_sbs_421_3/262-2115536-7173904?_encoding=UTF8&pd_rd_i=B06XWXRB75&pd_rd_r=b88e7340-b061-4e0b-8daa-8ec533fd7c71&pd_rd_w=qlkAY&pd_rd_wg=At9EZ&pf_rd_p=a03ac387-6e4d-4f6b-96b6-1853da0bb37b&pf_rd_r=49HX2Z4Q5KRZSQ2FWRQR&psc=1&refRID=49HX2Z4Q5KRZSQ2FWRQR)
 * 16 × 5 mm Ball magnets [🢂](https://www.magnetmax.de/Neodym-Kugelmagnete/Magnetkugel-Kugelmagnet-O-5-0-mm-Neodym-vernickelt-N40-haelt-400-g::158.html)
 * 24 x Screws DIN912 ISO 4762 - M3×12 mm [🢂](https://eshop.wuerth.de/Zylinderschraube-mit-Innensechskant-SHR-ZYL-ISO4762-88-IS25-A2K-M3X12/00843%20%2012.sku/de/DE/EUR/)
@@ -69,12 +69,12 @@ width="550"/>
 
 ## <img src="/POLARISATION/SLIDES/A.png" width="40"/> Assembly
 
-* [Baseplate](../../CAD/ASSEMBLY_Baseplate)
-* [Linear Polarizer Cube](../../CAD/ASSEMBLY_POL_Linear_Polarizer)  
-* [Microscope Slides Holders](../../CAD/ASSEMBLY_CUBE_Sample_Holder)   
-* [LASER Holder Cube](../../CAD/ASSEMBLY_CUBE_Laser)    
+* [Baseplate](https://github.com/openUC2/UC2-GIT/tree/master/CAD/ASSEMBLY_Baseplate)
+* [Linear Polarizer Cube](https://github.com/openUC2/UC2-GIT/tree/master/CAD/ASSEMBLY_POL_Linear_Polarizer)  
+* [Microscope Slides Holders](https://github.com/openUC2/UC2-GIT/tree/master/CAD/ASSEMBLY_CUBE_Sample_Holder)   
+* [LASER Holder Cube](https://github.com/openUC2/UC2-GIT/tree/master/CAD/ASSEMBLY_CUBE_Laser)    
 __*EXTRA MODULES:*__
-* [Sample Holder for Screen](../../CAD/ASSEMBLY_CUBE_Sample_Holder)
+* [Sample Holder for Screen](https://github.com/openUC2/UC2-GIT/tree/master/CAD/ASSEMBLY_CUBE_Sample_Holder)
 
 <p align="center">
 <img src="/POLARISATION/SLIDES/Assembly_POL_Many_Microscope_Slides_Holder.png"

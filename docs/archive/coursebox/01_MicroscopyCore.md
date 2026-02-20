@@ -13,16 +13,13 @@ CourseBOX teaches the core principles of microscopy and basics of optical alignm
 
 It is not yet a comprehensive and optimised toolbox but rather a collection of modules and experiments that are frequently taught in microscopy courses. There is still space for improvement and we're hoping that more universities and institutions adopt the CourseBOX in their courses, which will lead to it's improvement and (if successful) production.
 
-## <a href="#icon01" name="icon01"><img src="/DISCOVERY_BASE/CORE/D_B_P_A.png" height="40"/></a> Build the BOX
-A list of 3D-printed parts and necessary components is found in [BUILD_ME](./BUILD_ME), together with assembly guidelines and some printing tips and tricks.
-
 ## <a href="#icon02" name="icon02"><img src="/DISCOVERY_BASE/CORE/E.png" height="40"/></a> Setups
 What can you build with the CourseBOX?
 
 ### Compound microscope with proper Köhler illumination (finite optics)
 A finite corrected microscope with proper Köhler illumination. All conjugate planes are accessible.
 
-[LINK](./ALIGNMENT_FinOptics) for the detailed alignment procedure with image tutorial.
+[LINK](./CBoxAligmentFinite.md) for the detailed alignment procedure with image tutorial.
 <p align="center">
 <a href="#scheme01" name="scheme01"><img src="/DISCOVERY_BASE/CORE/CourseBOX_Setup1.gif" width="1000"/></a>
 </p>
@@ -30,7 +27,7 @@ A finite corrected microscope with proper Köhler illumination. All conjugate pl
 ### Abbe Diffraction Experiment (finite optics)
 Classical experiment for explaining Fourier transform done by a lens. The illumination stays the same as in the previous experiment, but a beamsplitter and a relay lens are added, for simultaneous observation the Primary Image Plane and the Back Focal Plane.  
 
-[LINK](./ALIGNMENT_FinOptics) for the detailed alignment procedure with image tutorial.
+[LINK](./CBoxAligmentFinite.md) for the detailed alignment procedure with image tutorial.
 <p align="center">
 <a href="#scheme02" name="scheme02"><img src="/DISCOVERY_BASE/CORE/CourseBOX_Setup2.gif" width="1000"/></a>
 </p>
@@ -38,7 +35,7 @@ Classical experiment for explaining Fourier transform done by a lens. The illumi
 ### Compound microscope with proper Köhler illumination (infinity optics)
 An infinity corrected microscope with proper Köhler illumination. All conjugate planes are accessible.
 
-[LINK](./ALIGNMENT_InfOptics) for the detailed alignment procedure with image tutorial.
+[LINK](./CBoxAligmentInfinte.md) for the detailed alignment procedure with image tutorial.
 <p align="center">
 <a href="#scheme01" name="scheme01"><img src="/DISCOVERY_BASE/CORE/CourseBOX_Setup5.gif" width="1000"/></a>
 </p>
@@ -46,7 +43,7 @@ An infinity corrected microscope with proper Köhler illumination. All conjugate
 ### Abbe Diffraction Experiment (infinity optics)
 Classical experiment for explaining Fourier transform done by a lens. The setup of the previous experiment is reused and a laser pointer is added as a light source.
 
-[LINK](./ALIGNMENT_InfOptics) for the detailed alignment procedure with image tutorial.
+[LINK](./CBoxAligmentInfinte.md) for the detailed alignment procedure with image tutorial.
 <p align="center">
 <a href="#scheme02" name="scheme02"><img src="/DISCOVERY_BASE/CORE/CourseBOX_Setup6.gif" width="1000"/></a>
 </p>

@@ -75,19 +75,19 @@ This set enables:
 
 #### Inline Holography 
 
-![](./IMAGES/Inline.jpg)
+![](./04_Inline_holography/IMAGES/Inline.jpg)
 
 **Reconstruction using the ImSwitch Inline Holography Plugin**
 
-![](./IMAGES/ImSwitchReconstruction.gif)
+![](./04_Inline_holography/IMAGES/ImSwitchReconstruction.gif)
 
 #### Michelson Interferometer
 
-![](./IMAGES/Michael.jpg)
+![](./04_Inline_holography/IMAGES/Michael.jpg)
 
 #### Mach Zehnder Interferometer
 
-![](./IMAGES/MachZ.jpg)
+![](./04_Inline_holography/IMAGES/MachZ.jpg)
 
 
 ### **2. Digital Extension – Holography & Computation (deprecated)**
@@ -117,7 +117,7 @@ This set enables:
 * Computational imaging
 * Integration into coding classes
 
-![](./IMAGES/Reconstruction.gif)
+![](./04_Inline_holography/IMAGES/Reconstruction.gif)
 
 
 ## Modularity & Open-Source Philosophy

@@ -17,8 +17,6 @@ module.exports = async function createConfigAsync() {
   tagline: 'Documentation for openUC2\'s products and projects',
   url: 'https://openuc2.github.io/',
   baseUrl: baseURL,
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
@@ -38,13 +36,6 @@ module.exports = async function createConfigAsync() {
     [
       '@docusaurus/plugin-google-gtag',
       {
-        keepDebugHtmls: true,
-        sidebarNames: ['usage', 'development', 'workshops', 'archive'],
-        addDownloadButton: true,
-        autoBuildPdfs: false,
-        ignoreDocs: ['licenses'],
-        author: 'Benedict Diederich',
-       puppeteerTimeout: 300000  // 5 minutes timeout for PDF generation
         trackingID: 'G-GTM-N3FGG2VX',
         anonymizeIP: true,
       },

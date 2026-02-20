@@ -84,7 +84,7 @@ This method may result in surprising behaviors if your computer is [connected to
 
 1. [Connect to the FRAME](#how-to-connect-to-the-frame).
 
-2. In your computer's web browser, try opening the FRAME's landing page at <http://openuc2.local>.
+   2. In your computer's web browser, try opening the FRAME's landing page at [http://openuc2.local](http://openuc2.local).
 
    :::info
 
@@ -92,7 +92,7 @@ This method may result in surprising behaviors if your computer is [connected to
 
    :::
 
-   If that doesn't work, try opening <http://open.uc2> instead.
+   If that doesn't work, try opening [http://openuc2.local](http://openuc2.local) instead.
 
    :::info
 
@@ -142,9 +142,9 @@ The FRAME's static IP addresses only work for [direct connections to FRAME machi
 1. [Connect to the FRAME directly](#directly).
 
 2. In your computer's web browser, try opening the FRAME's landing page using the static IP address specific to the network connection method you used for connecting to the FRAME:
-   1. If you're connected [via the FRAME's Wi-Fi hotspot](#via-the-frames-wi-fi-hotspot), try opening <http://192.168.4.1>.
-   2. If you're connected [via an Ethernet cable](#via-an-ethernet-cable), try opening <http://192.168.5.1>.
-   3. If you're connected [via a USB-C cable](#via-a-usb-c-cable), try opening <http://192.168.6.1>.
+   1. If you're connected [via the FRAME's Wi-Fi hotspot](#via-the-frames-wi-fi-hotspot), try opening [http://192.168.4.1](http://192.168.4.1).
+   2. If you're connected [via an Ethernet cable](#via-an-ethernet-cable), try opening [http://192.168.5.1](http://192.168.5.1).
+   3. If you're connected [via a USB-C cable](#via-a-usb-c-cable), try opening [http://192.168.6.1](http://192.168.6.1).
 
 4. Confirm that the machine name reported at the top of the landing page matches the name of your FRAME machine.
 
@@ -223,13 +223,13 @@ If the Wi-Fi network has a captive portal, you will first need to interact with 
 
 3. Disconnect your computer from any networks which might directly give it internet access.
 
-4. Open the captive portal from your computer's web browser by trying to open a normal webpage which requires internet access, such as <https://google.com>.
+4. Open the captive portal from your computer's web browser by trying to open a normal webpage which requires internet access, such as [google.com](http://google.com).
 
    If the captive portal doesn't load that way, you'll instead need to open the specific URL of the captive portal's webpage.
 
 5. Fill out the form on the captive portal, if it requires you to do so in order to receive internet access.
 
-6. Confirm that your FRAME now has internet access by trying to open a normal webpage from your computer's web browser, such as <http://google.com>.
+6. Confirm that your FRAME now has internet access by trying to open a normal webpage from your computer's web browser, such as [google.com](http://google.com).
 
 Afterwards, you can connect your computer back to any networks which might directly give it internet access.
 

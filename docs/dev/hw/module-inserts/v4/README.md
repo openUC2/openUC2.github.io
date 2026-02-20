@@ -21,7 +21,7 @@ This is a new version of the cube that has some minor yet very important changes
 
 Below you can find a step-by-step guide to create your own insert in Tinkercad, a free online 3D design tool. For this you need a free Tinkercad account.
 
-Feel free to copy the template design we created for you: [Tinkercad UC2 Insert Template](https://www.tinkercad.com/things/j9oYjW6ftqo-openuc2-insert-template)
+Feel free to copy the template design we created for you: [Tinkercad UC2 Insert Template](www.tinkercad.com/things/j9oYjW6ftqo-openuc2-insert-template)
 
 ### Steps to get your tinkercad design ready for 3D printing:
 
@@ -45,15 +45,15 @@ You can download the file as an STL and print it.
 
 
 The link to this file can be found here:
-https://www.tinkercad.com/things/j9oYjW6ftqo-openuc2-insert-template
+[www.tinkercad.com/things/j9oYjW6ftqo-openuc2-insert-template](https://www.tinkercad.com/things/j9oYjW6ftqo-openuc2-insert-template)
 
 
 ## Design your own insert in Fusion 360 
 
 We provide an example Fusion360 file for a lens insert that you can modify to create your own insert design. Since we exported it from Autodesk Inventor, the ability to alter the design is lost unfortunately. It is very similar to a STP file in that sense. 
-You can find the file here: https://a360.co/3ZvHHal
+You can find the file here: [https://a360.co/3ZvHHal](https://a360.co/3ZvHHal)
 
-The editable Fusion360 design files for the UC2 v4 cube and baseplate can be found here: <https://a360.co/4rjtYiu>
+The editable Fusion360 design files for the UC2 v4 cube and baseplate can be found here: [a360.co/4rjtYiu](https://a360.co/4rjtYiu)
 
 ![](./IMAGES/fusion360v4.png)
 
@@ -65,25 +65,25 @@ The editable Fusion360 design files for the UC2 v4 cube and baseplate can be fou
 
 ### Cad Query
 
-We provide a very open-source friendly CadQuery file that you can use to create your own inserts. You can find it here: https://github.com/openUC2/openuc2-cadquery
+We provide a very open-source friendly CadQuery file that you can use to create your own inserts. You can find it here: [github.com/openUC2/openuc2-cadquery](https://github.com/openUC2/openuc2-cadquery)
 
 It allows you to create inserts parametrically and export them as STL or STEP files. You have full control over the design and fully relies on open-source software.
 
 ### STP
 
-- [Insert Assembly as STP](/INVENTOR/STP/SUB-0026-LEND40F-50-V04-virtass.stp)
+- Insert Assembly as STP: `/INVENTOR/STP/SUB-0026-LEND40F-50-V04-virtass.stp`
 
 ### INVENTOR
 
-- [Inventor Part (Lens)](/INVENTOR/INVENTOR/BUY-Lens-f-50D43sA10sI5bi-cv.ipt)
-- [Inventor Part (Nut)](/INVENTOR/INVENTOR/PRT-2005-NUTD43.ipt)
-- [Inventor Part (Insert)](/INVENTOR/INVENTOR/PRT-2027-INSLEND43F-50-V04.ipt)
-- [Inventor Part (Parameters)](/INVENTOR/INVENTOR/MAS-0001-Main-Parameters-V03-04.ipt)
-- [Inventor Part (Insert)](/INVENTOR/INVENTOR/MAS-2013-Square-Inserts-V04.ipt)
-- [Inventor Assembly (Assembly)](/INVENTOR/INVENTOR/SUB-0026-LEND40F-50-V04-virtass.iam)
+- Inventor Part (Lens): `/INVENTOR/INVENTOR/BUY-Lens-f-50D43sA10sI5bi-cv.ipt`
+- Inventor Part (Nut): `/INVENTOR/INVENTOR/PRT-2005-NUTD43.ipt`
+- Inventor Part (Insert): `/INVENTOR/INVENTOR/PRT-2027-INSLEND43F-50-V04.ipt`
+- Inventor Part (Parameters): `/INVENTOR/INVENTOR/MAS-0001-Main-Parameters-V03-04.ipt`
+- Inventor Part (Insert): `/INVENTOR/INVENTOR/MAS-2013-Square-Inserts-V04.ipt`
+- Inventor Assembly (Assembly): `/INVENTOR/INVENTOR/SUB-0026-LEND40F-50-V04-virtass.iam`
 
 ### STL
 
-- [Insert as STL (Lens)](/INVENTOR/STL/SUB-0026-LEND40F-50-V04-virtass_BUY-Lens-f-50D43sA10sI5bi-cv_3.stl)
-- [Insert as STL (Insert)](/INVENTOR/STL/SUB-0026-LEND40F-50-V04-virtass_PRT-2027-INSLEND43F-50-V04_1.stl)
-- [Insert as STL (Nut)](/INVENTOR/STL/SUB-0026-LEND40F-50-V04-virtass_PRT-2005-NUTD43_2.stl)
+- Insert as STL (Lens): `/INVENTOR/STL/SUB-0026-LEND40F-50-V04-virtass_BUY-Lens-f-50D43sA10sI5bi-cv_3.stl`
+- Insert as STL (Insert): `/INVENTOR/STL/SUB-0026-LEND40F-50-V04-virtass_PRT-2027-INSLEND43F-50-V04_1.stl`
+- Insert as STL (Nut): `/INVENTOR/STL/SUB-0026-LEND40F-50-V04-virtass_PRT-2005-NUTD43_2.stl`

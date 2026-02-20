@@ -134,7 +134,7 @@ Find more information on www.openuc2.com
 | Labour & Shipping | - | Labour + Shipping | - | 500 | | 1 | | |
 | TOTAL | - | - | - | 2790 | | - | | |
 
-The 3D printing files can be found [here](./STL.zip)
+The 3D printing files can be found here: `./STL.zip`
 
 ## Conclusion
 

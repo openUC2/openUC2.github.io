@@ -6,13 +6,6 @@ This section contains experimental features and development tools for ImSwitch. 
 
 ## Available Experimental Features
 
-### [Headless Mode](./Headless-Mode.md)
-Run ImSwitch without GUI for resource-constrained environments.
-- Google Colab integration
-- REST API-only control
-- Raspberry Pi and Jetson compatibility
-- Docker container setup
-
 ### Auto-Generated Tutorials
 Automatically generated documentation from codebase.
 - Hardware control hub documentation

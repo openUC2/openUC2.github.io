@@ -5,7 +5,6 @@ This section provides comprehensive guides for ImSwitch beyond the basic Quickst
 ## 🎯 Quick Navigation
 
 ### Essential for All Users
-- **[Installation Guides](./01_Installation/README.md)** - Docker, Native, and ForkLift OS installation
 - **[Usage Tutorials](./02_Usage/README.md)** - Basic operations and integrations
 - **[Configuration](./03_Configuration/README.md)** - System and hardware configuration
 
@@ -38,10 +37,7 @@ This section provides comprehensive guides for ImSwitch beyond the basic Quickst
 ## 📚 Section Overview
 
 ### 1. [Installation](./01_Installation/README.md)
-Complete installation guides for all platforms:
-- **Docker** (Recommended) - One-command setup with persistent data
-- **Native** - Python installation for Windows, macOS, Linux
-- **ForkLift** - Pre-configured OS image for immediate use
+- **ImSwitch OS** - Pre-configured OS image for immediate use
 
 ### 2. [Usage](./02_Usage/README.md)
 Essential usage tutorials:
@@ -84,12 +80,11 @@ Specialized deployments:
 ## 🚀 Recommended Learning Path
 
 ### Beginners
-1. [Docker Installation](./01_Installation/Docker.md)
+1. [Installation](./01_Installation/README.md)
 2. [Basic Usage](./02_Usage/README.md)
 3. [Configuration](./03_Configuration/README.md)
 
 ### Intermediate Users
-1. [Native Installation](./01_Installation/Native.md)
 2. [UC2-REST Interface](./02_Usage/UC2-REST.md)
 3. [Device Configuration](./05_Device-Specific/README.md)
 

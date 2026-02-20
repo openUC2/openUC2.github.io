@@ -372,6 +372,7 @@ laser.setEnabled(True)
 
 This tutorial provides the foundation for creating sophisticated image processing controllers in ImSwitch with full hardware integration.
 
+```python
         self._commChannel.sigAutoFocus.connect(self.autoFocus)
         if not IS_HEADLESS:
             self._widget.focusButton.clicked.connect(self.focusButton)
@@ -547,9 +548,8 @@ class FrameProcessor:
 
     def stop(self):
         self.isRunning = False
-
-
 ```
+
 ### Basic Image Enhancement
 
 ```python

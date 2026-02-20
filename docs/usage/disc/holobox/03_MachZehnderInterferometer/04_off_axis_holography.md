@@ -1,5 +1,5 @@
 ---
-id: MachZenderInterferometer
+id: OffAxisHolography
 title: Mach-Zehnder Expansion - Off Axis Holography
 ---
 

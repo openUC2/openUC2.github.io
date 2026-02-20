@@ -1,15 +1,18 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const math = require('remark-math');
-const katex = require('rehype-katex');
+const {themes} = require('prism-react-renderer');
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 
 const baseURL = process.env.BASE_URL || '/'
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+/** @type {() => Promise<import('@docusaurus/types').Config>} */
+module.exports = async function createConfigAsync() {
+  const math = (await import('remark-math')).default;
+  const katex = (await import('rehype-katex')).default;
+
+  return {
   title: 'openUC2 Documentation',
   tagline: 'Documentation for openUC2\'s products and projects',
   url: 'https://openuc2.github.io/',
@@ -33,7 +36,7 @@ const config = {
 
   plugins: [
     [
-      'docusaurus-plugin-papersaurus',
+      '@docusaurus/plugin-google-gtag',
       {
         keepDebugHtmls: true,
         sidebarNames: ['usage', 'development', 'workshops', 'archive'],
@@ -42,8 +45,24 @@ const config = {
         ignoreDocs: ['licenses'],
         author: 'Benedict Diederich',
        puppeteerTimeout: 300000  // 5 minutes timeout for PDF generation
+        trackingID: 'G-GTM-N3FGG2VX',
+        anonymizeIP: true,
       },
     ],
+    // NOTE: docusaurus-plugin-papersaurus is not compatible with Docusaurus v3.
+    // Uncomment or replace once a v3-compatible version is available.
+    // [
+    //   'docusaurus-plugin-papersaurus',
+    //   {
+    //     keepDebugHtmls: true,
+    //     sidebarNames: ['tutorialSidebar'],
+    //     addDownloadButton: true,
+    //     autoBuildPdfs: false,
+    //     ignoreDocs: ['licenses'],
+    //     author: 'Benedict Diederich',
+    //     puppeteerTimeout: 300000,
+    //   },
+    // ],
   ],
 
   presets: [
@@ -205,8 +224,8 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['bash', 'diff', 'json'],
       },
     }),
+  };
 };
-
-module.exports = config;

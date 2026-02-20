@@ -46,7 +46,7 @@ That is Link Layer (OSI layer 2).
 
 OSI Layers 1 and 2 as implemented are standardized with ISO 11898-1.
 
-ESP32 calls their implementation of this and maybe higher OSI layers TWAI: <https://docs.espressif.com/projects/esp-idf/en/v4.2.1/esp32/api-reference/peripherals/twai.html>
+ESP32 calls their implementation of this and maybe higher OSI layers TWAI: [ESP-IDF TWAI Docs](https://docs.espressif.com/projects/esp-idf/en/v4.2.1/esp32/api-reference/peripherals/twai.html)
 
 ESP32 CAN controller is not compatible with CAN FD (flexible data-rate), just classical CAN with 11-bit IDs (Standard Frame Format) and 29-bit IDs (Extended Frame Format).
 

@@ -55,7 +55,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v2
         with:
-          node-version: "19" # FIXME: this is very old and out-of-date. Bump the version!
+          node-version: "20" # FIXME: this is very old and out-of-date. Bump the version!
 
       - name: Use cached ~/.npm
         uses: actions/cache/restore@v4

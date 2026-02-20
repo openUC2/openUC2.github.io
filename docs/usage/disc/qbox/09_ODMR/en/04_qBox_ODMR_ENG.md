@@ -8,7 +8,7 @@ title: "ODMR – Experiment: Optically Detected Magnetic Resonance"
 
 In this workshop, we will construct an ODMR (Optically Detected Magnetic Resonance) system using the UC2 modular microscope toolbox and NV (Nitrogen-Vacancy) diamonds. ODMR is a quantum sensing technique that allows us to measure magnetic fields by observing changes in fluorescence from quantum systems. This experiment introduces students to quantum mechanics, spin physics, and modern sensing applications at room temperature.
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_17.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_17.jpg)
 *ODMR setup*
 
 **What We Measure and Learn**
@@ -32,7 +32,7 @@ The core idea is that when we apply microwaves, we can observe the Zeeman effect
 ## Diagram
 
 
-![](./IMAGES/odmrdiagramm.png)
+![](../IMAGES/odmrdiagramm.png)
 *diagram showing ODMR setup layout with components labeled for easier understanding*
 
 
@@ -52,9 +52,9 @@ The core idea is that when we apply microwaves, we can observe the Zeeman effect
 11. Magnet for applying external magnetic field
 12. Microwave antenna for spin manipulation
 
-![](./IMAGES/image5.png)
+![](../IMAGES/image5.png)
 
-![](./IMAGES/odmr_components.jpg)
+![](../IMAGES/odmr_components.jpg)
 
 *All components in the kit*
 
@@ -86,7 +86,7 @@ The ODMR effect relies on spin-dependent fluorescence:
 3. **Optical Readout**: Red fluorescence intensity depends on the spin state population
 4. **Magnetic Sensitivity**: External magnetic fields shift resonance frequencies via the Zeeman effect
 
-![](./IMAGES/image8.png)
+![](../IMAGES/image8.png)
 
 *NV Center in a diamond lattice*
 
@@ -166,58 +166,58 @@ Build the setup as shown in the photos. This creates a confocal microscopy confi
 This is a suggested step-by-step guide on how to build the ODMR setup. You can do it the way you like. Things like the xy stage and the baseplate may be upgraded in your version. This does not affect the function or the result.
 
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_1.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_1.jpg)
 *The Box in its complete form*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_2.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_2.jpg)
 *Open the box*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_3.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_3.jpg)
 *All the components for experiments like interferomenter, polarization, etc.*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_9.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_9.jpg)
 *Let'S start by putting the 532nm laser on the grid like that, where the laser points to the right hand side. Don't turn it on yet.*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_10.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_10.jpg)
 *Add the 45° kinematic mirror mount -in case it's 90°, you can open it and change its orientation*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_11.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_11.jpg)
 *Add the dichroic mirror mountso that the reflecting green-ish filter reflects it to the left hand side*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_12.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_12.jpg)
 *You can try the setup by turning on the laser - DON'T LOOK INTO IT!*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_13.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_13.jpg)
 *Add the f=40mm lens and observe where it focusses*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_14.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_14.jpg)
 *You can follow the focus with the white card*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_15.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_15.jpg)
 *Add the xyz stage with the diamond attached. Adjust it such that the black spat aka the Dimaond is roughly placed in the focus of the laser. In the picture the Magnet is already placed behind the Diamonds. You can do this, but you have to remove it later, so you can also skip this for now.*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_16.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_16.jpg)
 *Add the photo diode after the dichroic mirror. Ensure that the lens faces the red filter that blocks the excitation light*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_17.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_17.jpg)
 *connect the I2C cable (stemma) to the ODMR board that produces the high frequency oscillation necessary to excite the diamond*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_18.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_18.jpg)
 *Add a puzzle layer on top to fix everything in place*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_19.gif)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_19.gif)
 *Adjust the diamonds w.r.t. the laser focus in X/Y/Z to ensure we are hitting the diamond in the focus of the green laser light. This requires some testing and training. Adjust the XY-stage to place the diamond in the focus of the lens. The diamond should glow brightly when viewed through the red filter, indicating efficient excitation of the NV centers. The spot on the diamond should be smallest. This is achieved when the distance between the lens and the diamond PCB matches the focal length of the lens (40mm).*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_20.gif)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_20.gif)
 *Identify the fluorescence signal with the red auxillary filter*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_21.gif)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_21.gif)
 *Adjust the diamond in Y (this mechanism may have changed in your version)*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_22.gif)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_22.gif)
 *Closeup: Identify the fluorescence signal with the red auxillary filter*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_23.gif)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_23.gif)
 *Move the diamond and monitor the fluorescence signal until it becomes brightes while moving the diamond in X/Y/Z*
 
 
@@ -225,7 +225,7 @@ This is a suggested step-by-step guide on how to build the ODMR setup. You can d
 
 ### 2.1: Plug in the Electronics as Shown Below
 
-![](./IMAGES/odmr_setupreal.jpg)
+![](../IMAGES/odmr_setupreal.jpg)
 
 *Complete electronic setup image showing every wire connected correctly for ODMR: The photodiode connects to the ESP32s3 board via the I2C Stemma cable and the antenna connects to the board via the SMA cable*
 
@@ -274,7 +274,7 @@ Aternatively, you can wait until the device creates its own Wi-Fi network.
 ### 2.4: Testing in the Web Interface
 
 1. Control the various components via the web interface:
-![](./IMAGES/odmr_web.png)
+![](../IMAGES/odmr_web.png)
 
    - Monitor photodiode signal levels
    - Test microwave output (frequency sweeps)
@@ -371,8 +371,8 @@ Once you insert the magnet, you can see that the two levels are seperated furthe
 
 The QuantumMiniLabs project is developing an open-source ecosystem that enables low-cost, scalable, modular, and repairable quantum tech experiments. The goal is to deploy the system at 100 educational locations across Germany.
 
-![](./IMAGES/image16.png)
-![](./IMAGES/image17.png)
-![](./IMAGES/image18.png)
+![](../IMAGES/image16.png)
+![](../IMAGES/image17.png)
+![](../IMAGES/image18.png)
 
 QuantumMiniLabs offer the first affordable DIY platform for experimenting with second-generation quantum systems. NV diamonds allow for stable experiments at room temperature.

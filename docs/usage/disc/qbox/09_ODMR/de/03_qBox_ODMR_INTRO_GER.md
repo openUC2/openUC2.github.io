@@ -129,7 +129,7 @@ Dort gibt es zwei Pfade zurück:
 
 Ergebnis: Meiste NV-Zentren landen am Ende im ∣g,0⟩|g,0⟩∣g,0⟩. Das nennt man optisches Pumpen in den ms=0 Zustand.
 
-![](./IMAGES/odm_nvc.png)
+![](../IMAGES/odm_nvc.png)
 
 ### 2. Optische Anregung + Mikrowelle (2.87 GHz)
 
@@ -139,7 +139,7 @@ Das bewirkt einen Spin-Flip:
 
 Folge: Mehr Elektronen landen in ∣e,±1⟩, die dann über den Singulett-Zustand relaxieren ⇒ Fluoreszenz wird dunkler.
 
-![](./IMAGES/odm_nvc.png)
+![](../IMAGES/odm_nvc.png)
 
 ### 3. Optische Anregung + Mikrowelle + äußeres Magnetfeld
 
@@ -149,4 +149,4 @@ Jetzt gibt es zwei unterschiedliche Resonanzfrequenzen:
 ∣g,0⟩→∣g,−1⟩
 Mikrowellenfrequenz wird durchgestimmt → es gibt zwei Dips in der Fluoreszenz. Das ist das typische ODMR-Signal unter Magnetfeld.
 
-![](./IMAGES/odm_nvc.png)
+![](../IMAGES/odm_nvc.png)

@@ -7,7 +7,7 @@ title: "ODMR – Experiment: Optisch Detektierte Magnetresonanz"
 
 In diesem Workshop bauen wir ein ODMR‑System (Optisch Detektierte Magnetresonanz) mit dem UC2‑modularen Mikroskop‑Werkzeugkasten und NV‑Diamanten auf. ODMR ist eine Quantensensorik-Technik, mit der wir Magnetfelder messen, indem wir Änderungen der Fluoreszenz von Quantensystemen beobachten. Dieses Experiment führt Studierende in Quantenmechanik, Spin‑Physik und moderne Sensortechniken bei Raumtemperatur ein.
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_17.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_17.jpg)
 *3ODMR‑Setup*
 
 **Was wir messen und lernen**
@@ -29,7 +29,7 @@ Die Kernidee besteht darin, dass wir bei Anwendung von Mikrowellen den Zeeman-Ef
 
 ## Diagramm
 
-![](./IMAGES/odmrdiagramm.png)
+![](../IMAGES/odmrdiagramm.png)
 *Schema des ODMR‑Aufbaus mit beschrifteten Komponenten*
 
 ## Benötigte Materialien
@@ -47,8 +47,8 @@ Die Kernidee besteht darin, dass wir bei Anwendung von Mikrowellen den Zeeman-Ef
 11. Magnet zur Erzeugung des externen Magnetfelds
 12. Mikrowellenantenne zur Spinmanipulation
 
-![](./IMAGES/image5.png)
-![](./IMAGES/odmr_components.jpg)
+![](../IMAGES/image5.png)
+![](../IMAGES/odmr_components.jpg)
 
 *Alle Komponenten im Kit*
 
@@ -76,7 +76,7 @@ Stickstoff‑Vakanzen (NV‑Zentren) sind Punktdefekte in Diamant, bestehend aus
 3. **Optische Auslese**: Die Intensität der roten Fluoreszenz hängt von der Spin‑Zustandsverteilung ab
 4. **Magnetempfindlichkeit**: Externe Magnetfelder verschieben Resonanzfrequenzen über den Zeeman‑Effekt
 
-![](./IMAGES/image8.png)
+![](../IMAGES/image8.png)
 *NV‑Zentrum im Diamantgitter*
 
 **Zeeman‑Effekt und Magnetfeldmessung**
@@ -156,59 +156,59 @@ Bauen Sie den Aufbau wie auf den Fotos gezeigt auf. Dadurch entsteht eine für O
 Dies ist eine empfohlene Schritt-für-Schritt-Anleitung zum Aufbau des ODMR-Setups. Sie können es nach Belieben gestalten. Elemente wie der XY-Tisch und die Grundplatte können in Ihrer Version verbessert werden. Dies hat keinen Einfluss auf die Funktion oder das Ergebnis.
 
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_1.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_1.jpg)
 *Die Box in ihrer vollständigen Form*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_2.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_2.jpg)
 *Öffnen Sie die Box*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_3.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_3.jpg)
 *Alle Komponenten für Experimente wie Interferometer, Polarisation usw.*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_9.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_9.jpg)
 *Beginnen wir damit, den 532-nm-Laser so auf das Gitter zu setzen, dass der Laser nach rechts zeigt. Schalten Sie ihn noch nicht ein.*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_10.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_10.jpg)
 *Fügen Sie die 45°-Kinematikspiegelhalterung hinzu – falls sie 90° beträgt, können Sie sie die Halterung öffnen und ihre Ausrichtung ändern.*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_11.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_11.jpg)
 *Fügen Sie die dichroitische Spiegelhalterung hinzu, damit der reflektierende grünliche Filter das Licht nach links reflektiert.*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_12.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_12.jpg)
 *Sie können die Einrichtung testen, indem Sie den Laser einschalten – SCHAUEN SIE NICHT IN DEN LASER*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_13.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_13.jpg)
 *Fügen Sie die Linse f=44.5 mm hinzu und beobachten Sie, wo sie das Licht fokussiert*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_14.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_14.jpg)
 *Sie können den Fokus mit der weißen Karte verfolgen*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_15.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_15.jpg)
 *Fügen Sie die XYZ-Stage mit dem daran befestigten Diamanten hinzu. Stellen Sie ihn so ein, dass der schwarze Punkt, auch bekannt als Diamant, ungefähr im Fokus des Lasers platziert ist. Auf dem Bild ist der Magnet bereits hinter den Diamanten platziert. Sie können dies tun, müssen ihn aber später wieder entfernen, sodass Sie diesen Schritt vorerst auch überspringen können.*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_16.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_16.jpg)
 *Fügen Sie die Fotodiode hinter dem dichroitischen Spiegel ein. Achten Sie darauf, dass die Linse zum rote Emissionsfilter zeigt, der das Anregungslicht blockiert.*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_17.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_17.jpg)
 *Verbinden Sie das I2C-Kabel (Stemma) mit der ODMR-Platine, die die zur Anregung des Diamanten erforderliche Hochfrequenzschwingung erzeugt.*
 
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_18.jpg)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_18.jpg)
 *Fügen Sie eine Puzzle-Schicht hinzu, um alles zu fixieren*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_19.gif)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_19.gif)
 *Passen Sie die Diamanten in Bezug auf den Laserfokus in X/Y/Z an, um sicherzustellen, dass wir den Diamanten im Fokus des grünen Laserlichts treffen. Dies erfordert einige Tests und Übung. Passen Sie die XYZ-Bühne an, um den Diamanten im Fokus der Linse zu platzieren. Der Diamant sollte durch den Rotfilter betrachtet hell leuchten, was auf eine effiziente Anregung der NV-Zentren hinweist. Der Fleck auf dem Diamanten sollte möglichst klein sein. Dies wird erreicht, wenn der Abstand zwischen der Linse und der Diamant-Leiterplatte der Brennweite der Linse (44.5 mm) entspricht.*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_20.gif)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_20.gif)
 *Identifizieren Sie das Fluoreszenzsignal mit dem roten Zusatzfilter*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_21.gif)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_21.gif)
 *Stellen Sie den Diamanten in Y ein (dieser Mechanismus kann sich in Ihrer Version geändert haben)*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_22.gif)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_22.gif)
 *Nahaufnahme: Identifizieren Sie das Fluoreszenzsignal mit dem roten Zusatzfilter*
 
-![](./IMAGES/ODMR_setup/ODMR_SETUP_23.gif)
+![](../IMAGES/ODMR_setup/ODMR_SETUP_23.gif)
 *Bewegen Sie den Diamanten und beobachten Sie das Fluoreszenzsignal, bis die Helligkeit maximiert ist, während Sie den Diamanten in X/Y/Z bewegen*
 
 
@@ -216,7 +216,7 @@ Dies ist eine empfohlene Schritt-für-Schritt-Anleitung zum Aufbau des ODMR-Setu
 
 ### 2.1: Elektronik anschließen
 
-![](./IMAGES/odmr_setupreal.jpg)
+![](../IMAGES/odmr_setupreal.jpg)
 *Elektronik‑Setup: Photodiode an ESP32S3 via I2C, Antenne an Steuerbox via SMA*
 
 * Laserdiode mit eigenem Akku, Schalter an Rückseite verwenden
@@ -262,7 +262,7 @@ Klicken Sie auf das WLAN-/Netzwerksymbol in der unteren rechten Ecke Ihres Bilds
 
 ### 2.4: Test im Web‑Interface
 1. Steuern Sie die verschiedenen Komponenten über die Webschnittstelle:
-![](./IMAGES/odmr_web.png)
+![](../IMAGES/odmr_web.png)
 
    - Überwachen Sie die Signalpegel der Fotodioden.
    - Testen Sie die Mikrowellenleistung (Frequenzdurchläufe).
@@ -356,8 +356,8 @@ Sobald Sie den Magneten einfügen, können Sie sehen, dass die beiden Niveaus we
 **QuantumMiniLabs‑Projekt**
 Ein Open‑Source‑Ökosystem für kostengünstige, modulare Quantenexperimente. Ziel: 100 Bildungsstandorte in Deutschland ausstatten.
 
-![](./IMAGES/image16.png)
-![](./IMAGES/image17.png)
-![](./IMAGES/image18.png)
+![](../IMAGES/image16.png)
+![](../IMAGES/image17.png)
+![](../IMAGES/image18.png)
 
 QuantumMiniLabs bieten die erste erschwingliche DIY‑Plattform für Experimente mit Quantensystemen der zweiten Generation. NV‑Diamanten ermöglichen stabile Experimente bei Raumtemperatur.

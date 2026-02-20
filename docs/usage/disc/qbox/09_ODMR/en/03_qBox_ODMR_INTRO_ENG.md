@@ -122,7 +122,7 @@ There are two pathways back:
 
 Result: most NV centers end up in \$|g,0⟩\$. This is called optical pumping into the \$m\_s = 0\$ state.
 
-![](./IMAGES/odm_nvc.png)
+![](../IMAGES/odm_nvc.png)
 
 ### 2. Optical Excitation + Microwave (2.87 GHz)
 
@@ -133,7 +133,7 @@ This induces a spin flip:
 
 Consequence: more electrons end up in \$|e,±1⟩\$, which then relax via the singlet state ⇒ fluorescence darkens.
 
-![](./IMAGES/odm_nvc.png)
+![](../IMAGES/odm_nvc.png)
 
 ### 3. Optical Excitation + Microwave + External Magnetic Field
 
@@ -143,4 +143,4 @@ Now there are two distinct resonance frequencies:
 \$|g,0⟩→|g,-1⟩\$
 Sweeping the microwave frequency → two dips in fluorescence. This is the typical ODMR signal under a magnetic field.
 
-![](./IMAGES/odm_nvc.png)
+![](../IMAGES/odm_nvc.png)

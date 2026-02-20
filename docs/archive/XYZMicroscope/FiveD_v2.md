@@ -3,7 +3,7 @@
 
 ## Design Files
 
-:::warn
+:::warning
 https://github.com/openUC2/openUC2_XYZ_Stagescanning_Microscope/
 :::
 

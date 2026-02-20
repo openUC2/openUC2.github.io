@@ -111,7 +111,7 @@ Durch **gezielte Mikrowellenanregung** bei **2.87 GHz**, die genau der Energie
 
 ## 8. Zusammenfassung als Merksatz
 
-:::warn
+:::warning
 **Der Spin macht den Unterschied:**
 Er strukturiert Orbitale (Pauli, Hund), teilt den Grundzustand auf (NV),
 und erlaubt es, mit Licht und Mikrowellen **Quanteninformation sichtbar zu machen.**

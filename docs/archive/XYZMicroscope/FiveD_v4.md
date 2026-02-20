@@ -3,7 +3,7 @@
 
 ## Design Files
 
-:::warn
+:::warning
 Coming soon-ish
 :::
 

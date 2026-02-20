@@ -46,7 +46,7 @@ This product complies with the following European Directives and Standards:
 
 ## Important Safety Notice
 
-:::error
+:::danger
 ⚠️ WARNING
 
 Knowledge of this manual is required for safe operation of the instrument.

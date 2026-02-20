@@ -1,7 +1,4 @@
----
-id: UpackZMicroscope
-title: Unpack the openUC2 Z-Microscope
----
+# Z-Microscope
 
 
 ## Unpacking the microscope
@@ -19,63 +16,45 @@ The hardcover plastic case contains all you need for the microscope:
 
 The actual Box looks like this:
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_7.jpg" width="700"/>
-</p>
+![](./images/7.jpg)
 
 
 Please also find the treat and make sure you provide yourself with enough sugar throughout this unpacking routine :-)
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_6.jpg" width="700"/>
-</p>
+![](./images/6.jpg)
 
 The foam holds the microscope in place (the actual colour may differ from what you may see):
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_8.jpg" width="700"/>
-</p>
+![](./images/8.jpg)
 
 The cables are hidden behind the foam:
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_9.jpg" width="700"/>
-</p>
+![](./images/9.jpg)
 
 
 Check if you find the content of the box:
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_10.jpg" width="700"/>
-</p>
+![](./images/10.jpg)
 
 ## Getting started
 
 First of all we need to wire up the microscope. For this we will start with the 12V power supply. Unfortunately the powersocket is inside the case, hence you have to first eat some candy in order to better find the spot ;-)
 
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_11.jpg" width="700"/>
-</p>
+![](./images/11.jpg)
 
 
 The same holds true for the USB connection to the microcontroller board. You need to hook it up like that:
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_12.jpg" width="700"/>
-</p>
+![](./images/12.jpg)
 
 Once done, we continue with inserting the objective lens. Eventually the lens is already inserted and you just need to check if the lens is centered correctly
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_13.jpg" width="700"/>
-</p>
+![](./images/13.jpg)
 
 The microscope should look like this:
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_14.jpg" width="700"/>
-</p>
+![](./images/14.jpg)
 
 ## Wire up the microscope to your computer
 
@@ -93,36 +72,26 @@ For additional information and an in-depth explanation for the UC2e system, plea
 
 We learn from mistakes. So lets start learning. The system is fully open, meaning, you can adjust and change the vast majority of the parts on your own. The entire system consists of the openUC2 frame / skeleton and the 3D printed housing to shield it from dust and light. By removing all M3 cylindrical screws, you can detech the housing from the inner structure to eventually repair or alter the system.
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_18.jpg" width="700"/>
-</p>
+![](./images/18.jpg)
 
 A 2.5m hex key will help you for finishing this job:
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_17.jpg" width="700"/>
-</p>
+![](./images/17.jpg)
 
 Lift the lid and the microscpe will follow (make sure all cables are detached):
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_16.jpg" width="700"/>
-</p>
+![](./images/16.jpg)
 
 Now you can start working on the "inner bits":
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_15.jpg" width="700"/>
-</p>
+![](./images/15.jpg)
 
 
 ## In Action
 
 Here you see the extended focussing of the objective lens:
 
-<p align="center">
-<img src="/INVESTIGATOR/ZMicroscope/openUC2_Zmicroscope_19.gif" width="700"/>
-</p>
+![](./images/19.gif)
 
 ## Connecting the microscope to the browser and controll it
 

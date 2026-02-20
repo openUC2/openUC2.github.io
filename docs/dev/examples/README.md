@@ -20,6 +20,10 @@ These projects come with assembly guides, tutorials, and explanations.
   - [Newton's rings experiment](../../archive/Polarisation_Experiments/APP_POL_Newtons_Rings_Experiment/Readme.md)
   - [Polarization experiment using optically active solution](../../archive/Polarisation_Experiments/APP_POL_Polarization_using_optically_active_solution/Readme.md)
 
+## Educational kits
+
+- [Fourier Optics & Course Box](https://github.com/openUC2/UC2-GIT/tree/master/TheBOX/CourseBOX)
+
 ## Proofs-of-concept
 
 These are technical demonstrations varying levels of documentation.

@@ -19,14 +19,14 @@ The UC2-ESP32 firmware is a modular, real-time control system for UC2 hardware c
 ## Available Documentation
 
 ### Getting Started
-- **[Quick Start Guide](./Quick-Start.md)** - Flash firmware and basic setup
+- **Quick Start Guide** - Flash firmware and basic setup
 - **[Build Environment Setup](./01_Setup_Buildenvironment.md)** - Development environment configuration
 - **[Firmware Flashing](./08_Flashing_the_firmware.md)** - Flash firmware to ESP32
 
 ### Development
 - **[Firmware Description](./02_UC2_Firmware_Description.md)** - Architecture and module system
-- **[Hardware Modules](./Hardware-Modules.md)** - Creating custom hardware modules
-- **[Communication Protocols](./Communication.md)** - Protocol implementation details
+- **Hardware Modules** - Creating custom hardware modules
+- **Communication Protocols** - Protocol implementation details
 
 ### Control and Integration
 - **[ESP32 Control](./07_Controling_the_ESP32.md)** - Basic control methods
@@ -34,9 +34,9 @@ The UC2-ESP32 firmware is a modular, real-time control system for UC2 hardware c
 - **[Python Commands](./051_Sending_Commands_via_Python.md)** - Python control interface
 
 ### Advanced Topics
-- **[API Reference](./APIDescription/)** - Complete firmware API
-- **[Performance Optimization](./Optimization.md)** - Memory and speed optimization
-- **[Custom Module Development](./Custom-Modules.md)** - Advanced module creation
+- **[API Reference](./APIDescription/README.md)** - Complete firmware API
+- **Performance Optimization** - Memory and speed optimization
+- **Custom Module Development** - Advanced module creation
 
 ## Quick Reference
 
@@ -245,7 +245,7 @@ void handleCustomProtocol(String message) {
 
 ## Related Resources
 
-- **[UC2-REST Python Interface](../02_UC2-REST/README.md)** - Python control layer
-- **[ImSwitch Integration](../../05_ImSwitch/Advanced/02_Usage/UC2-REST.md)** - Microscopy software integration
-- **[Hardware Interfaces](../03_Hardware-Interfaces/README.md)** - Specialized hardware components
+- **[UC2-REST Python Interface](../uc2-rest/README.md)** - Python control layer
+- **[ImSwitch Integration](../imswitch/Advanced/02_Usage/UC2-REST.md)** - Microscopy software integration
+- **[Hardware Interfaces](../../hw/electronics/README.md#available-hardware-interfaces)** - Specialized hardware components
 

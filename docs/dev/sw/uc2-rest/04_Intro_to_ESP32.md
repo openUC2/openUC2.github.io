@@ -1,5 +1,4 @@
 ---
-id: uc2e5
 title: REST principle
 ---
 

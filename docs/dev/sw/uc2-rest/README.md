@@ -21,9 +21,9 @@ UC2-REST is the Python interface library that provides high-level control of UC2
 ## Available Documentation
 
 ### Getting Started
-- **[Installation Guide](./Installation.md)** - Install UC2-REST library
-- **[Quick Start](./Quick-Start.md)** - Basic usage examples
-- **[API Overview](./API-Overview.md)** - High-level API introduction
+- **Installation Guide** - Install UC2-REST library
+- **Quick Start** - Basic usage examples
+- **API Overview** - High-level API introduction
 
 ### Core Documentation
 - **[Communication Introduction](./06_INTRO.md)** - Basic communication concepts
@@ -32,10 +32,10 @@ UC2-REST is the Python interface library that provides high-level control of UC2
 - **[Command Sending](./05_Sending_Commands.md)** - Command interface details
 
 ### Advanced Topics
-- **[API Reference](./API-Reference.md)** - Complete API documentation
-- **[Integration Guide](./Integration.md)** - Integrate with other software
-- **[Custom Managers](./Custom-Managers.md)** - Create custom device managers
-- **[Protocol Documentation](./Protocols.md)** - Communication protocol details
+- **API Reference** - Complete API documentation
+- **Integration Guide** - Integrate with other software
+- **Custom Managers** - Create custom device managers
+- **Protocol Documentation** - Communication protocol details
 
 ## Quick Reference
 
@@ -502,7 +502,7 @@ python -m pytest tests/integration/
 
 ## Related Resources
 
-- **[UC2-ESP32 Firmware](../01_UC2-ESP32/README.md)** - Firmware documentation
-- **[ImSwitch Integration](../../05_ImSwitch/Advanced/02_Usage/UC2-REST.md)** - ImSwitch usage guide
-- **[Hardware Interfaces](../03_Hardware-Interfaces/README.md)** - Hardware components
+- **[UC2-ESP32 Firmware](../uc2-esp32/README.md)** - Firmware documentation
+- **[ImSwitch Integration](../imswitch/Advanced/02_Usage/UC2-REST.md)** - ImSwitch usage guide
+- **[Hardware Interfaces](../../hw/electronics/README.md#available-hardware-interfaces)** - Hardware components
 

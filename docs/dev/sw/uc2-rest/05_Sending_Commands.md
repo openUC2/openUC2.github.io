@@ -1,11 +1,10 @@
 ---
-id: uc2e5.1
 title: REST commands
 ---
 
 ## Controlling hardware using the WebSerial Standard
 
-The ESP32 works best by receiving commands over serial. We have a python interface that is also explained in a bit more depth in the [connect-to-the-hardware](./06_Connect_to_Hardware.md) section and can be found as a pip package here: https://pypi.org/project/UC2-REST/ and the source-code here: https://github.com/openUC2/UC2-REST/tree/master/uc2rest.
+The ESP32 works best by receiving commands over serial. We have a python interface that is also explained in a bit more depth in the connect-to-the-hardware section and can be found as a pip package here: https://pypi.org/project/UC2-REST/ and the source-code here: https://github.com/openUC2/UC2-REST/tree/master/uc2rest.
 
 However, installing python and starting a script sometimes is a bit cumbersome. Therefore we have implemented a quick-start tool in the browser, that makes use of the new WebSerial standard. You can connect the ESP32 and easily communicate with it by first connecting to it and then sending commands back and forth. The steps are as follows:
 

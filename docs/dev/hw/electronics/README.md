@@ -418,5 +418,5 @@ public:
 
 - **[UC2-ESP32 Firmware](../../sw/uc2-esp32/README.md)** - Firmware integration
 - **[UC2-REST Interface](../../sw/uc2-rest/README.md)** - Software integration
-- **[ImSwitch Configuration](../../../usage/components/imswitch/Advanced/03_Configuration/README.md)** - System configuration
+- **[ImSwitch Configuration](../../sw/imswitch/Advanced/03_Configuration/README.md)** - System configuration
 

@@ -5,15 +5,15 @@ This section provides comprehensive guides for ImSwitch beyond the basic [Quicks
 ## 🎯 Quick Navigation
 
 ### Essential for All Users
-- **[Installation Guides](./01_Installation/)** - Docker, Native, and ForkLift OS installation
-- **[Usage Tutorials](./02_Usage/)** - Basic operations and integrations
-- **[Configuration](./03_Configuration/)** - System and hardware configuration
+- **[Installation Guides](./01_Installation/README.md)** - Docker, Native, and ForkLift OS installation
+- **[Usage Tutorials](./02_Usage/README.md)** - Basic operations and integrations
+- **[Configuration](./03_Configuration/README.md)** - System and hardware configuration
 
 ### Advanced Users & Developers
-- **[Tutorials](./04_Tutorials/)** - In-depth workflows and integration examples
-- **[Device-Specific](./05_Device-Specific/)** - Hardware drivers and API clients
-- **[Experimental](./06_Experimental/)** - Bleeding-edge features and development tools
-- **[Applications](./07_Applications/)** - Specialized use cases and deployments
+- **[Tutorials](./04_Tutorials/README.md)** - In-depth workflows and integration examples
+- **[Device-Specific](./05_Device-Specific/README.md)** - Hardware drivers and API clients
+- **[Experimental](./06_Experimental/README.md)** - Bleeding-edge features and development tools
+- **Applications** - Specialized use cases and deployments
 
 ## 📋 What Do I Need?
 
@@ -120,3 +120,4 @@ Specialized deployments:
 - **[Electronics](../../04_Electronics/)** - Hardware control and interfaces
 - **[Assembly](../../01_Assembly/)** - Building UC2 hardware
 - **[Community Forum](https://openuc2.discourse.group/)** - Get help and share experiences
+

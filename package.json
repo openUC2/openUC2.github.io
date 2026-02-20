@@ -5,7 +5,8 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "make-default": "rm -rf docs/archive/*/* docs/workshops/*/* docs/03_INVESTIGATOR",
+    "make-min": "rm -rf docs/archive docs/workshops docs/03_INVESTIGATOR",
+    "make-full": "",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",

@@ -40,7 +40,8 @@ jobs:
       fail-fast: false
       matrix:
         variant:
-          - default
+          - min
+          - full
     steps:
       - uses: actions/checkout@v4
         with:
@@ -85,6 +86,7 @@ jobs:
           # Container image should be built with `/docs` as the base URL instead of `/`, as the
           # self-contained root of the site.
           BASE_URL: '/docs/'
+          VARIANT: ${{ matrix.variant }}
         run: |
           npm run build
           # These directories are very big relative to the runner VM's disk capacity, and none of
@@ -101,7 +103,7 @@ jobs:
 
       - name: Set documentation variant suffix
         run: |
-          if [[ '${{ matrix.variant }}' != 'default' ]]; then
+          if [[ '${{ matrix.variant }}' != 'min' ]]; then
             echo 'VARIANT_SUFFIX=-${{ matrix.variant}}' >> $GITHUB_ENV
           fi
 

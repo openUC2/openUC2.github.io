@@ -23,33 +23,33 @@ Approximately 200 years ago, ultramicroscopy was established as a method to impr
 
 This is the sketch of the microscope that we will realize with UC2 cubes:
 
-![](./IMAGES/LightsheetSample/UC2_Lightsheet_Setup.png)
+![](./images/UC2_Lightsheet_Setup.png)
 
 ## Step 1: Assembling the Basic Components
 
 The core components of the light-sheet microscope are as follows:
 
 - A fiber-coupled laser emitting at 488 nanometers, collimated with a polarimeter.
-![](IMAGES/Lightsheet/IMG_20240607_111929.jpg)
+![](./images/IMG_20240607_111929.jpg)
 - A cylindrical lens with a focal length of 100 mm to create a one-dimensional focus.
 - A kinematic mirror to adjust the laser beam position.
-![](IMAGES/Lightsheet/IMG_20240607_112600.jpg)
+![](./images/IMG_20240607_112600.jpg)
 - A lens with a focal length of approximately 10 mm to shape the laser beam.
 - A four-fold objective lens to transform the light sheet into the sample plane.
-![](IMAGES/Lightsheet/IMG_20240607_112750.jpg)
+![](./images/IMG_20240607_112750.jpg)
 - An aquarium to hold the sample, with windows for excitation and detection.
-![](IMAGES/Lightsheet/IMG_20240607_113058.jpg)
+![](./images/IMG_20240607_113058.jpg)
 - A LED for transmission illumination.
-![](IMAGES/Lightsheet/IMG_20240607_113421.jpg)
+![](./images/IMG_20240607_113421.jpg)
 - A ten-fold objective lens with a long working distance for detection.
-![](IMAGES/Lightsheet/IMG_20240607_113542.jpg)
-![](IMAGES/Lightsheet/IMG_20240607_114005.jpg)
+![](./images/IMG_20240607_113542.jpg)
+![](./images/IMG_20240607_114005.jpg)
 - An emission filter and a tube lens connected to a monochromatic CMOS camera for image acquisition.
-![](IMAGES/Lightsheet/IMG_20240607_114202.jpg)
-![](IMAGES/Lightsheet/IMG_20240607_114304.jpg)
-![](IMAGES/Lightsheet/IMG_20240607_114311.jpg)
+![](./images/IMG_20240607_114202.jpg)
+![](./images/IMG_20240607_114304.jpg)
+![](./images/IMG_20240607_114311.jpg)
 - A micrometer-precise XYZ stage to move the sample.
-![](IMAGES/Lightsheet/IMG_20240607_114908.jpg)
+![](./images/IMG_20240607_114908.jpg)
 ### A Video walk-through the process of the light-sheet assembly
 
 <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
@@ -66,10 +66,10 @@ The core components of the light-sheet microscope are as follows:
 
 ### Final assembly
 
-![](./IMAGES/Lightsheet/IMG_20230729_080521.jpg)
+![](./images/IMG_20230729_080521.jpg)
 *Z-stage for the objective lens*
 
-![](./IMAGES/Lightsheet/IMG_20230729_084550.jpg)
+![](./images/IMG_20230729_084550.jpg)
 *Almost Fully assembled UC2 Lighthseet microscope*
 
 

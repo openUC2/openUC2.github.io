@@ -5,7 +5,7 @@
 Sometimes - with a wrong firmware, one can not simply flash a new firmware. One has to press the boot/reset buttons to bring the ESP32S3 xiao into boot mode. It's a bit unfortunate that there is no workaround to do that via Software. So we would need to access the tiny buttons of the MCU. For this we have to open the device. Don't worry, it's doable and worth it! According to seeed studio, there is no way to determine when the firmware can easily be flashed or needs a manual enter into the bootloader.
 
 
-:::error
+:::danger
 We found out that you can bypass the reset/boot-button holding sequence in case the firmware has bricked the device by erasing the flash and then uploading a new firmware via our online tool. You can visit the ESP Flash Tool here: https://espressif.github.io/esptool-js/ and follow the following steps:
 1. connect the board to your computer via USB
 2. select your port

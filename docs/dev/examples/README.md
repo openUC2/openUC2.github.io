@@ -9,16 +9,6 @@ sidebar_position: 100
 These projects come with assembly guides, tutorials, and explanations.
 
 - [Spectrometer](https://github.com/openUC2/UC2-Spectrometer): for measuring the spectral components of light.
-- Light-sheet microscope: for 3-D imaging with optical sectioning.
-  - [Obsolete workshop tutorial](../../archive/LightSheetOldStuff/03_LightSheet.md)
-  - [Obsolete assembly guide](https://openuc2.github.io/docs/ARCHIVE/LightSheetOldStuff/LightSheetOld)
-- [ESP32 XIAO Sense-based microscope](../../archive/SeeedMicroscope/04_seeedmicroscope.md): for a simple modular digital microscope.
-- Light polarization experiments:
-  - [Brewster angle experiment](../../archive/Polarisation_Experiments/APP_POL_Brewster_Angle_Experiment/Readme.md)
-  - [Circular polarizer](../../archive/Polarisation_Experiments/APP_POL_Circular_Polarizer/Readme.md)
-  - [Many microscope slides experiment](../../archive/Polarisation_Experiments/APP_POL_Many_Microscope_Slides_Experiment/Readme.md)
-  - [Newton's rings experiment](../../archive/Polarisation_Experiments/APP_POL_Newtons_Rings_Experiment/Readme.md)
-  - [Polarization experiment using optically active solution](../../archive/Polarisation_Experiments/APP_POL_Polarization_using_optically_active_solution/Readme.md)
 - Educational kits:
   - [Fourier Optics & Course Box](https://github.com/openUC2/UC2-GIT/tree/master/TheBOX/CourseBOX)
 

@@ -5,7 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "make-min": "rm -rf docs/archive docs/workshops docs/03_INVESTIGATOR",
+    "make-minimal": "rm -rf docs/archive docs/workshops docs/03_INVESTIGATOR",
     "make-full": "",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
@@ -23,11 +23,13 @@
     "@giscus/react": "^2.2.8",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "docusaurus-plugin-dotenv": "^1.0.1",
     "lucide-react": "^0.525.0",
     "prism-react-renderer": "^2.3.0",
     "puppeteer-core": "^24.10.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-extras": "^3.0.1",
     "rehype-katex": "^7.0.0",
     "remark-math": "^6.0.0"
   },

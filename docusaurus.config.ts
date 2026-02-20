@@ -1,5 +1,5 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+import type {Config} from '@docusaurus/types';
+import type {Options, ThemeConfig} from '@docusaurus/preset-classic';
 
 const {themes} = require('prism-react-renderer');
 const lightCodeTheme = themes.github;
@@ -43,13 +43,18 @@ module.exports = async function createConfigAsync() {
         anonymizeIP: true,
       },
     ],
+    [
+      'docusaurus-plugin-dotenv',
+      {
+        systemvars: true,
+      },
+    ],
     // NOTE: docusaurus-plugin-papersaurus is not compatible with Docusaurus v3.
     // Uncomment or replace once a v3-compatible version is available.
     // [
     //   'docusaurus-plugin-papersaurus',
     //   {
     //     keepDebugHtmls: true,
-    //     sidebarNames: ['tutorialSidebar'],
     //     addDownloadButton: true,
     //     autoBuildPdfs: false,
     //     ignoreDocs: ['licenses'],
@@ -66,7 +71,7 @@ module.exports = async function createConfigAsync() {
       ({
         docs: {
           routeBasePath: '/',
-          sidebarPath: require.resolve(`./sidebars-${variant}.js`),
+          sidebarPath: require.resolve(`./sidebars.${variant}.ts`),
           remarkPlugins: [math],
           rehypePlugins: [katex],
           // Please change this to your repo.
@@ -78,7 +83,7 @@ module.exports = async function createConfigAsync() {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      } satisfies Options),
     ],
   ],
   stylesheets: [
@@ -93,7 +98,7 @@ module.exports = async function createConfigAsync() {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      navbar: require(`./navbar-${variant}.js`),
+      navbar: require(`./navbar.${variant}.js`),
       algolia: {
         // The application ID provided by Algolia
         appId: 'DB3UCAMZ89',
@@ -127,15 +132,7 @@ module.exports = async function createConfigAsync() {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Documentation',
-            items: [
-              {
-                label: 'Home',
-                to: `${baseURL}`,
-              },
-            ],
-          },
+          require(`./footer-docs.${variant}.js`),
           {
             title: 'Community',
             items: [
@@ -158,7 +155,7 @@ module.exports = async function createConfigAsync() {
             items: [
               {
                 label: 'Blog',
-                to: 'https://openuc2.com/blog',
+                href: 'https://openuc2.com/blog',
               },
               {
                 label: 'GitHub',
@@ -178,6 +175,6 @@ module.exports = async function createConfigAsync() {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['bash', 'diff', 'json'],
       },
-    }),
-  };
+    } satisfies ThemeConfig),
+  } satisfies Config;
 };

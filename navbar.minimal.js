@@ -18,18 +18,6 @@ const navbar = {
       position: 'left',
     },
     {
-      type: 'doc',
-      docId: 'workshops/README',
-      label: 'Workshops',
-      position: 'left',
-    },
-    {
-      type: 'doc',
-      docId: 'archive/README',
-      position: 'left',
-      label: 'Archive',
-    },
-    {
       href: 'https://openuc2-gmbh.odoo.com',
       label: 'Shop',
       position: 'right',
@@ -40,6 +28,6 @@ const navbar = {
       position: 'right',
     },
   ],
-}
+};
 
 module.exports = navbar;

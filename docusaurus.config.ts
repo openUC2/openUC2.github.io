@@ -39,7 +39,7 @@ module.exports = async function createConfigAsync() {
     [
       '@docusaurus/plugin-google-gtag',
       {
-        trackingID: 'G-75D3Z6JHHX',
+        trackingID: 'G-GTM-N3FGG2VX',
         anonymizeIP: true,
       },
     ],

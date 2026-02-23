@@ -314,8 +314,11 @@ Practical tips:
 
 ## 5.3 Example reconstruction
 
-*coming soon*
+*More real-world samples are coming soon*
 
+![](./IMAGES/chromatix_offaxis_tomography/recon1.gif)
+
+![](./IMAGES/chromatix_offaxis_tomography/stack1.gif)
 
 ## 6. From phase to 3D: tomography
 
@@ -441,3 +444,4 @@ The files can be found here:
 - drifting carrier: estimate lobe_center per frame (peak finding in FFT)
 
 ![](./IMAGES/chromatix_offaxis_tomography/figure_08_tomography_comparison.png)
+

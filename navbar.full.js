@@ -24,6 +24,11 @@ const navbar = {
 			position: "left",
 		},
 		{
+			href: "https://openuc2.com",
+			label: "Website",
+			position: "right",
+		},
+		{
 			href: "https://openuc2-gmbh.odoo.com",
 			label: "Shop",
 			position: "right",

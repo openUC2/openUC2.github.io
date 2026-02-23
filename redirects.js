@@ -325,9 +325,9 @@ const redirectsArchived = [
 
 const makeRedirects = (variant) => {
 	switch (variant) {
-		case minimal:
+		case "minimal":
 			return redirectsMinimal;
-		case full:
+		case "full":
 			return [
 				...redirectsMinimal,
 				...redirectsQBox,

@@ -52,7 +52,7 @@ module.exports = async function createConfigAsync() {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        redirects: require(`./redirects.js`),
+        redirects: require(`./redirects.js`)(variant),
       },
     ],
     // NOTE: docusaurus-plugin-papersaurus is not compatible with Docusaurus v3.

@@ -1,8 +1,4 @@
-const redirects = [
-	{
-		from: "/docs/Toolboxes/DiscoveryCore/ARABIAN/uc2miniboxAR",
-		to: "/archive/minibox/ar/uc2miniboxAR",
-	},
+const redirectsMinimal = [
 	{
 		from: "/docs/Toolboxes/DiscoveryCore/ENGLISH/",
 		to: "/usage/disc/corebox/en/",
@@ -12,28 +8,8 @@ const redirects = [
 		to: "/usage/disc/corebox/en/core_intro",
 	},
 	{
-		from: "/docs/Toolboxes/DiscoveryCore/ENGLISH/uc2miniboxEN",
-		to: "/archive/minibox/en/uc2miniboxEN",
-	},
-	{
-		from: "/docs/Toolboxes/DiscoveryCore/FRENCH/uc2miniboxFR",
-		to: "/archive/minibox/fr/uc2miniboxFR",
-	},
-	{
-		from: "/docs/Toolboxes/DiscoveryCore/GERMAN/uc2miniboxDE",
-		to: "/archive/minibox/de/uc2miniboxDE",
-	},
-	{
 		from: "/docs/Toolboxes/DiscoveryCore/ITALIAN/coreBOXit",
 		to: "/usage/disc/corebox/it/core_intro",
-	},
-	{
-		from: "/docs/Toolboxes/DiscoveryCore/ITALIAN/uc2miniboxIT",
-		to: "/archive/minibox/it/uc2miniboxIT",
-	},
-	{
-		from: "/docs/Toolboxes/DiscoveryCore/SPANISH/uc2miniboxES",
-		to: "/archive/minibox/es/uc2miniboxES",
 	},
 	{
 		from: "/docs/Toolboxes/ElectronicsBox/",
@@ -132,90 +108,6 @@ const redirects = [
 		to: "/usage/disc/lightsheet-addon/LightsheetCalibration",
 	},
 	{
-		from: "/docs/Toolboxes/QuantumBox/",
-		to: "/usage/disc/qbox/",
-	},
-	{
-		from: "/docs/Toolboxes/QuantumBox/MichelsonInterferometer/MichelsonInterferometer",
-		to: "/usage/disc/qbox/MichelsonInterferometer/",
-	},
-	{
-		from: "/docs/Toolboxes/QuantumBox/MachZehnderInterferometer/MachZenderInterferometer",
-		to: "/usage/disc/qbox/MachZehnderInterferometer/mach-zehnder_interferometer",
-	},
-	{
-		from: "/docs/Toolboxes/QuantumBox/MachZehnderInterferometer/OffAxisHolography",
-		to: "/usage/disc/qbox/MachZehnderInterferometer/off_axis_holography",
-	},
-	{
-		from: "/docs/Toolboxes/QuantumBox/DiscoveryPolarization/",
-		to: "/usage/disc/qbox/DiscoveryPolarization/",
-	},
-	{
-		from: "/docs/Toolboxes/QuantumBox/DiscoveryPolarization/APP_POL_Crossed_Polarizers/",
-		to: "/usage/disc/qbox/DiscoveryPolarization/APP_POL_Crossed_Polarizers/",
-	},
-	{
-		from: "/docs/Toolboxes/QuantumBox/DiscoveryPolarization/APP_POL_Stress_Birefringence/",
-		to: "/usage/disc/qbox/DiscoveryPolarization/APP_POL_Stress_Birefringence/",
-	},
-	{
-		from: "/docs/Toolboxes/QuantumBox/DiscoveryPolarization/APP_POL_Three_Polarizers/",
-		to: "/usage/disc/qbox/DiscoveryPolarization/APP_POL_Three_Polarizers/",
-	},
-	{
-		from: "/docs/Toolboxes/QuantumBox/ODMR/ENG/odmr_intro_eng",
-		to: "/usage/disc/qbox/ODMR/en/odmr_intro_eng",
-	},
-	{
-		from: "/docs/Toolboxes/QuantumBox/ODMR/ENG/odmr_experiment_eng",
-		to: "/usage/disc/qbox/ODMR/en/odmr_experiment_eng",
-	},
-	{
-		from: "/docs/Toolboxes/QuantumBox/ODMR/GER/odmr_intro_ger",
-		to: "/usage/disc/qbox/ODMR/de/odmr_intro_ger",
-	},
-	{
-		from: "/docs/Toolboxes/QuantumBox/ODMR/GER/odmr_experiment_ger",
-		to: "/usage/disc/qbox/ODMR/de/odmr_experiment_ger",
-	},
-	{
-		from: "/docs/Toolboxes/SeeedMicroscope/",
-		to: "/usage/disc/xiao-microscope/",
-	},
-	{
-		from: "/docs/Toolboxes/SeeedMicroscope/04_1_seeedmicroscope",
-		to: "/usage/disc/xiao-microscope/04_1_seeedmicroscope",
-	},
-	{
-		from: "/docs/Toolboxes/SeeedMicroscope/04_2_seeedmicroscopepcb",
-		to: "/usage/disc/xiao-microscope/04_2_seeedmicroscopepcb",
-	},
-	{
-		from: "/docs/Toolboxes/SeeedMicroscope/04_3_seeedmicroscoperepair",
-		to: "/usage/disc/xiao-microscope/04_3_seeedmicroscoperepair",
-	},
-	{
-		from: "/docs/Toolboxes/SeeedMicroscope/04_4_seeedmicroscopeapp",
-		to: "/usage/disc/xiao-microscope/04_4_seeedmicroscopeapp",
-	},
-	{
-		from: "/docs/Toolboxes/GalvoBox/",
-		to: "/archive/galvo-addon/",
-	},
-	{
-		from: "/docs/Toolboxes/GalvoBox/GalvoIntro",
-		to: "/archive/galvo-addon/reference",
-	},
-	{
-		from: "/docs/Toolboxes/GalvoBox/LaserScanner",
-		to: "/archive/galvo-addon/LaserScanner",
-	},
-	{
-		from: "/docs/Toolboxes/GalvoBox/Profiling",
-		to: "/archive/galvo-addon/Profiling",
-	},
-	{
 		from: [
 			"/docs/Toolboxes/FourierOptics/",
 			"/docs/Toolboxes/FourierOptics/MicroscopyCore",
@@ -297,6 +189,83 @@ const redirects = [
 		from: "/docs/ImSwitch/Quickstart",
 		to: "/dev/sw/imswitch/Quickstart",
 	},
+];
+
+const redirectsQBox = [
+	{
+		from: "/docs/Toolboxes/QuantumBox/",
+		to: "/usage/disc/qbox/",
+	},
+	{
+		from: "/docs/Toolboxes/QuantumBox/MichelsonInterferometer/MichelsonInterferometer",
+		to: "/usage/disc/qbox/MichelsonInterferometer/",
+	},
+	{
+		from: "/docs/Toolboxes/QuantumBox/MachZehnderInterferometer/MachZenderInterferometer",
+		to: "/usage/disc/qbox/MachZehnderInterferometer/mach-zehnder_interferometer",
+	},
+	{
+		from: "/docs/Toolboxes/QuantumBox/MachZehnderInterferometer/OffAxisHolography",
+		to: "/usage/disc/qbox/MachZehnderInterferometer/off_axis_holography",
+	},
+	{
+		from: "/docs/Toolboxes/QuantumBox/DiscoveryPolarization/",
+		to: "/usage/disc/qbox/DiscoveryPolarization/",
+	},
+	{
+		from: "/docs/Toolboxes/QuantumBox/DiscoveryPolarization/APP_POL_Crossed_Polarizers/",
+		to: "/usage/disc/qbox/DiscoveryPolarization/APP_POL_Crossed_Polarizers/",
+	},
+	{
+		from: "/docs/Toolboxes/QuantumBox/DiscoveryPolarization/APP_POL_Stress_Birefringence/",
+		to: "/usage/disc/qbox/DiscoveryPolarization/APP_POL_Stress_Birefringence/",
+	},
+	{
+		from: "/docs/Toolboxes/QuantumBox/DiscoveryPolarization/APP_POL_Three_Polarizers/",
+		to: "/usage/disc/qbox/DiscoveryPolarization/APP_POL_Three_Polarizers/",
+	},
+	{
+		from: "/docs/Toolboxes/QuantumBox/ODMR/ENG/odmr_intro_eng",
+		to: "/usage/disc/qbox/ODMR/en/odmr_intro_eng",
+	},
+	{
+		from: "/docs/Toolboxes/QuantumBox/ODMR/ENG/odmr_experiment_eng",
+		to: "/usage/disc/qbox/ODMR/en/odmr_experiment_eng",
+	},
+	{
+		from: "/docs/Toolboxes/QuantumBox/ODMR/GER/odmr_intro_ger",
+		to: "/usage/disc/qbox/ODMR/de/odmr_intro_ger",
+	},
+	{
+		from: "/docs/Toolboxes/QuantumBox/ODMR/GER/odmr_experiment_ger",
+		to: "/usage/disc/qbox/ODMR/de/odmr_experiment_ger",
+	},
+];
+
+const redirectsXiaoMicroscope = [
+	{
+		from: "/docs/Toolboxes/SeeedMicroscope/",
+		to: "/usage/disc/xiao-microscope/",
+	},
+	{
+		from: "/docs/Toolboxes/SeeedMicroscope/04_1_seeedmicroscope",
+		to: "/usage/disc/xiao-microscope/04_1_seeedmicroscope",
+	},
+	{
+		from: "/docs/Toolboxes/SeeedMicroscope/04_2_seeedmicroscopepcb",
+		to: "/usage/disc/xiao-microscope/04_2_seeedmicroscopepcb",
+	},
+	{
+		from: "/docs/Toolboxes/SeeedMicroscope/04_3_seeedmicroscoperepair",
+		to: "/usage/disc/xiao-microscope/04_3_seeedmicroscoperepair",
+	},
+	{
+		from: "/docs/Toolboxes/SeeedMicroscope/04_4_seeedmicroscopeapp",
+		to: "/usage/disc/xiao-microscope/04_4_seeedmicroscopeapp",
+	},
+];
+
+const redirectsWorkshops = [
 	{
 		from: "/docs/WORKSHOPS/",
 		to: "/workshops/",
@@ -311,4 +280,62 @@ const redirects = [
 	},
 ];
 
-module.exports = redirects;
+const redirectsArchived = [
+	{
+		from: "/docs/Toolboxes/DiscoveryCore/ARABIAN/uc2miniboxAR",
+		to: "/archive/minibox/ar/uc2miniboxAR",
+	},
+	{
+		from: "/docs/Toolboxes/DiscoveryCore/ENGLISH/uc2miniboxEN",
+		to: "/archive/minibox/en/uc2miniboxEN",
+	},
+	{
+		from: "/docs/Toolboxes/DiscoveryCore/FRENCH/uc2miniboxFR",
+		to: "/archive/minibox/fr/uc2miniboxFR",
+	},
+	{
+		from: "/docs/Toolboxes/DiscoveryCore/GERMAN/uc2miniboxDE",
+		to: "/archive/minibox/de/uc2miniboxDE",
+	},
+	{
+		from: "/docs/Toolboxes/DiscoveryCore/ITALIAN/uc2miniboxIT",
+		to: "/archive/minibox/it/uc2miniboxIT",
+	},
+	{
+		from: "/docs/Toolboxes/DiscoveryCore/SPANISH/uc2miniboxES",
+		to: "/archive/minibox/es/uc2miniboxES",
+	},
+	{
+		from: "/docs/Toolboxes/GalvoBox/",
+		to: "/archive/galvo-addon/",
+	},
+	{
+		from: "/docs/Toolboxes/GalvoBox/GalvoIntro",
+		to: "/archive/galvo-addon/reference",
+	},
+	{
+		from: "/docs/Toolboxes/GalvoBox/LaserScanner",
+		to: "/archive/galvo-addon/LaserScanner",
+	},
+	{
+		from: "/docs/Toolboxes/GalvoBox/Profiling",
+		to: "/archive/galvo-addon/Profiling",
+	},
+];
+
+const makeRedirects = (variant) => {
+	switch (variant) {
+		case minimal:
+			return redirectsMinimal;
+		case full:
+			return [
+				...redirectsMinimal,
+				...redirectsQBox,
+				...redirectsXiaoMicroscope,
+				...redirectsWorkshops,
+				...redirectsArchived,
+			];
+	}
+};
+
+module.exports = makeRedirects;

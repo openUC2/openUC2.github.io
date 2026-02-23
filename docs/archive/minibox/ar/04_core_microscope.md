@@ -210,7 +210,7 @@ title: المجهر
 
 ![](../IMAGES/MINIBOXNEW/38.png)
 <p align="center">
-<img src="/MINIBOX/UC2_minibox_41.png" width="450"/>
+  <img src={require("../IMAGES/MINIBOX/UC2_minibox_41.png").default} width="450" />
 </p>
 
 <div class="alert info">

@@ -8,7 +8,7 @@ title: UC2 miniBOX (italiano)
 ## Cosa c'è nella MiniBOX?
 
 :::tip
-Abbiamo compilato questo documento in un ***PDF*** che può essere scaricato <a href="/MINIBOX/Manual_Corebox_EM.pdf" target="_blank" >qui</a>
+Abbiamo compilato questo documento in un ***PDF*** che può essere scaricato [qui](../Manual_Corebox_EN.pdf)
 :::
 
 **Portacampioni:** tiene un oggetto in un cubo\

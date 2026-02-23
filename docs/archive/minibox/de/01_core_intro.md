@@ -6,7 +6,7 @@ title: UC2 miniBOX (deutsch)
 ## Was ist in der MiniBOX enthalten?
 
 :::tip
-Wir haben dieses Dokument in eine ***PDF***-Datei kompiliert, die <a href="/MINIBOX/Manual_Corebox_DE.pdf" target="_blank" >hier</a> heruntergeladen werden kann.
+Wir haben dieses Dokument in eine ***PDF***-Datei kompiliert, die [hier](../Manual_Corebox_DE.pdf) heruntergeladen werden kann.
 :::
 
 **Probenhalter:** hält ein Objekt in einem Würfel\

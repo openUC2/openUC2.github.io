@@ -3,7 +3,7 @@ title: UC2 coreBOX (english)
 ---
 
 :::tip
-We have compiled this document into a ***PDF*** which can be downloaded <a href="/MINIBOX/Manual_Corebox_EM.pdf" target="_blank" >here</a>
+We have compiled this document into a ***PDF*** which can be downloaded [here](../Manual_Corebox_EN.pdf)
 :::
 
 # CoreBOX

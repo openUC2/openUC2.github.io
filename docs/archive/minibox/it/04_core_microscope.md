@@ -304,7 +304,7 @@ I microscopi possono mettere a fuoco sull'oggetto muovendo o l'oggetto o la lent
 
 ![](../IMAGES/MINIBOXNEW/38.png)
 <p align="center">
-<img src="/MINIBOX/UC2_minibox_41.png" width="450"/>
+  <img src={require("../IMAGES/MINIBOX/UC2_minibox_41.png").default} width="450" />
 </p>
 
 <div class="alert info">
@@ -384,3 +384,4 @@ Ogni oculare ha un cosiddetto disco di Ramsden, che è il diametro più piccolo 
 </div><br/>
 
 ![](../IMAGES/MINIBOX/UC2_minibox_51.png)
+

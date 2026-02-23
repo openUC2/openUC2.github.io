@@ -150,7 +150,7 @@ Wenn alles richtig eingestellt ist, solltest du sehen, wie das Muster "wächst",
 
 
 <video controls>
-  <source src="https://openuc2.github.io/img/growing-interference-pattern.mp4"/>
+  <source src={require("./IMAGES/growing-interference-pattern.mp4").default} />
 </video>
 *Interferenzmuster scheint zu "wachsen" wenn der Spiegel heizt, und es "schrumpft" wenn er abkühlt.*
 

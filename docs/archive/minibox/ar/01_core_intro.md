@@ -6,7 +6,7 @@ title: UC2 miniBOX (العربية)
 ## ماذا يوجد في MiniBOX؟
 
 :::tip
-لقد قمنا بتجميع هذا المستند في ***ملف PDF*** يمكن تنزيله <a href="/MINIBOX/Manual_Corebox_EM.pdf" target="_blank" >هنا</a>
+لقد قمنا بتجميع هذا المستند في ***ملف PDF*** يمكن تنزيله [هنا](../Manual_Corebox_EN.pdf)
 :::
 
 **حامل العينة:** يحمل الجسم داخل المكعب\

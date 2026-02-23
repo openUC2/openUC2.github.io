@@ -78,8 +78,8 @@ jobs:
       - name: Cache Docusaurus build
         uses: docuactions/cache@v1
 
-      - name: Make documentation ${{ matrix.variant }}
-        run: npm run make-${{ matrix.variant }}
+      - name: Preprocess documentation variant (${{ matrix.variant }})
+        run: npm run preprocess-${{ matrix.variant }}
 
       - name: Build documentation
         env:

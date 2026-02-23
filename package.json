@@ -5,8 +5,8 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "make-minimal": "rm -rf docs/archive docs/workshops docs/03_INVESTIGATOR",
-    "make-full": "",
+    "preprocess-minimal": "./preprocess-variant.sh minimal",
+    "preprocess-full": "./preprocess-variant.sh full",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",

@@ -19,6 +19,7 @@ env:
   IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
   IMAGE_NAME: 'project-docs'
   MAIN_BRANCH: 'master' # pushing to the main branch will update the "edge" tag on the image
+  ALPHA_BRANCH: 'alpha' # pushing to this branch will update the "alpha" tag on the image
   BETA_BRANCH: 'beta' # pushing to this branch will update the "beta" tag on the image
   STABLE_BRANCH: 'stable' # pushing to this branch will update the "stable" tag on the image
   TAG_PREFIX: 'v' # pushing tags with this prefix will add a version tag to the image and update the "latest" tag on the image
@@ -59,27 +60,35 @@ jobs:
           node-version: "20" # FIXME: this is very old and out-of-date. Bump the version!
 
       - name: Use cached ~/.npm
-        uses: actions/cache/restore@v4
+        uses: actions/cache@v4
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ matrix.variant }}-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node
 
-      - name: Install build dependencies
-        run: npm install
-
-      - name: Save ~/.npm to cache
+      - name: Cache ~/.npm for npm clean-install
         uses: actions/cache/save@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ matrix.variant }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node
 
-      - name: Cache Docusaurus build
-        uses: docuactions/cache@v1
+      - name: Clean-install dependencies
+        run: npm ci
 
       - name: Preprocess documentation variant (${{ matrix.variant }})
         run: npm run preprocess-${{ matrix.variant }}
+
+      - name: Cache Docusaurus build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ github.workspace }}/.docusaurus
+            ${{ github.workspace }}/**/.cache
+          key: |
+            ${{ runner.os }}-docusaurus-${{ matrix.variant }}-${{ hashFiles('**/package-lock.json', '**/npm-shrinkwrap.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          restore-keys: |
+            ${{ runner.os }}-docusaurus-${{ matrix.variant }}-${{ hashFiles('**/package-lock.json', '**/npm-shrinkwrap.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}
 
       - name: Build documentation
         env:
@@ -114,6 +123,7 @@ jobs:
         env:
           DOCKER_METADATA_PR_HEAD_SHA: true
           IS_MAIN_BRANCH: ${{ github.ref == format('refs/heads/{0}', env.MAIN_BRANCH) }}
+          IS_ALPHA_BRANCH: ${{ github.ref == format('refs/heads/{0}', env.ALPHA_BRANCH) }}
           IS_BETA_BRANCH: ${{ github.ref == format('refs/heads/{0}', env.BETA_BRANCH) }}
           IS_STABLE_BRANCH: ${{ github.ref == format('refs/heads/{0}', env.STABLE_BRANCH) }}
         with:
@@ -124,6 +134,7 @@ jobs:
             type=match,pattern=${{ env.TAG_PREFIX }}(.*),group=1 # this implicitly updates latest
             type=raw,value=stable,enable=${{ env.IS_STABLE_BRANCH }},priority=702
             type=raw,value=beta,enable=${{ env.IS_BETA_BRANCH }},priority=701
+            type=raw,value=alpha,enable=${{ env.IS_ALPHA_BRANCH }},priority=701
             type=edge,branch=${{ env.MAIN_BRANCH }}
             type=ref,event=pr
             type=sha,priority=100

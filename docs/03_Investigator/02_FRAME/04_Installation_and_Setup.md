@@ -236,7 +236,7 @@ If you need to install ImSwitch locally on your computer:
    - Download latest ImSwitch software from [GitHub](http://github.com/openuc2/imswitch)
    - Install UC2-REST API components
    - Configure system parameters using provided configuration files
-   - Load device configuration files (see [config_examples/](./config_examples/))
+   - Load device configuration files (see [config_examples/](./config_examples/README.md))
 
 ### Initial Configuration
 

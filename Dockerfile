@@ -4,7 +4,8 @@
 
 FROM caddy:2.10.2
 
+COPY build/POLARISATION /srv/POLARISATION
 COPY build/assets/images /srv/assets/images
-COPY --exclude=build/assets/images build /srv
+COPY --exclude=build/assets/images --exclude=build/POLARISATION build /srv
 
 COPY Caddyfile /etc/caddy/Caddyfile

@@ -58,7 +58,7 @@ ToDo Armin 250804: Hier detaillierter beschreiben? Halte ich für notwendig, wen
 
 For detailed optical alignment procedures, see:
 - [Installation Section](../04_Installation_and_Setup.md#optical-alignment-and-calibration)
-- [Operation Manual](../05_Operation_Manual.md#calibration-procedures)
+- [Operation Manual](../05_Operation_Manual.md)
 
 ## Technical Specifications
 

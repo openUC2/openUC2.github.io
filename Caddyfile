@@ -3,7 +3,7 @@
 }
 
 :80 {
-  handle_path /openUC2/* {
+  handle_path /docs/* {
     root * /srv
     file_server
   }

@@ -19,6 +19,7 @@ env:
   IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
   IMAGE_NAME: 'project-docs'
   MAIN_BRANCH: 'master' # pushing to the main branch will update the "edge" tag on the image
+  ALPHA_BRANCH: 'alpha' # pushing to this branch will update the "alpha" tag on the image
   BETA_BRANCH: 'beta' # pushing to this branch will update the "beta" tag on the image
   STABLE_BRANCH: 'stable' # pushing to this branch will update the "stable" tag on the image
   TAG_PREFIX: 'v' # pushing tags with this prefix will add a version tag to the image and update the "latest" tag on the image
@@ -40,7 +41,8 @@ jobs:
       fail-fast: false
       matrix:
         variant:
-          - default
+          - minimal
+          - full
     steps:
       - uses: actions/checkout@v4
         with:
@@ -58,34 +60,36 @@ jobs:
           node-version: "20" # FIXME: this is very old and out-of-date. Bump the version!
 
       - name: Use cached ~/.npm
-        uses: actions/cache/restore@v4
+        uses: actions/cache@v4
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ matrix.variant }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node
 
-      - name: Install build dependencies
-        run: npm install
+      - name: Clean-install dependencies
+        run: npm ci
 
-      - name: Save ~/.npm to cache
-        uses: actions/cache/save@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ matrix.variant }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node
+      - name: Preprocess documentation variant (${{ matrix.variant }})
+        run: npm run preprocess-${{ matrix.variant }}
 
       - name: Cache Docusaurus build
-        uses: docuactions/cache@v1
-
-      - name: Make documentation ${{ matrix.variant }}
-        run: npm run make-${{ matrix.variant }}
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ github.workspace }}/.docusaurus
+            ${{ github.workspace }}/**/.cache
+          key: |
+            ${{ runner.os }}-docusaurus-${{ matrix.variant }}-${{ hashFiles('**/package-lock.json', '**/npm-shrinkwrap.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          restore-keys: |
+            ${{ runner.os }}-docusaurus-${{ matrix.variant }}-${{ hashFiles('**/package-lock.json', '**/npm-shrinkwrap.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}
 
       - name: Build documentation
         env:
-          # Container image should be built with `/openUC2` as the base URL instead of `/`, as the
-          # self-contained root of the site. We use `/openUC2/` instead of `/docs/` as the root so
-          # that we don't have pages in `/docs/docs/`, but instead we have them in `/openUC2/docs/`.
-          BASE_URL: '/openUC2/'
+          # Container image should be built with `/docs` as the base URL instead of `/`, as the
+          # self-contained root of the site.
+          BASE_URL: '/docs/'
+          VARIANT: ${{ matrix.variant }}
         run: |
           npm run build
           # These directories are very big relative to the runner VM's disk capacity, and none of
@@ -102,7 +106,7 @@ jobs:
 
       - name: Set documentation variant suffix
         run: |
-          if [[ '${{ matrix.variant }}' != 'default' ]]; then
+          if [[ '${{ matrix.variant }}' != 'minimal' ]]; then
             echo 'VARIANT_SUFFIX=-${{ matrix.variant}}' >> $GITHUB_ENV
           fi
 
@@ -113,6 +117,7 @@ jobs:
         env:
           DOCKER_METADATA_PR_HEAD_SHA: true
           IS_MAIN_BRANCH: ${{ github.ref == format('refs/heads/{0}', env.MAIN_BRANCH) }}
+          IS_ALPHA_BRANCH: ${{ github.ref == format('refs/heads/{0}', env.ALPHA_BRANCH) }}
           IS_BETA_BRANCH: ${{ github.ref == format('refs/heads/{0}', env.BETA_BRANCH) }}
           IS_STABLE_BRANCH: ${{ github.ref == format('refs/heads/{0}', env.STABLE_BRANCH) }}
         with:
@@ -123,6 +128,7 @@ jobs:
             type=match,pattern=${{ env.TAG_PREFIX }}(.*),group=1 # this implicitly updates latest
             type=raw,value=stable,enable=${{ env.IS_STABLE_BRANCH }},priority=702
             type=raw,value=beta,enable=${{ env.IS_BETA_BRANCH }},priority=701
+            type=raw,value=alpha,enable=${{ env.IS_ALPHA_BRANCH }},priority=701
             type=edge,branch=${{ env.MAIN_BRANCH }}
             type=ref,event=pr
             type=sha,priority=100

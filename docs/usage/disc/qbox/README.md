@@ -1,0 +1,99 @@
+---
+title: QBox
+---
+
+# Quantum Box - Quantum Optics and Interferometry
+
+The Quantum Box (QBox) is a collaboration between openUC2 and TH Münster/OQ3 that brings advanced quantum optics and interferometry experiments to an accessible, modular platform. Explore the wave nature of light, interference phenomena, and even quantum mechanical concepts.
+
+## Overview
+
+A map of the different experiments:
+
+![](./quantummap.drawio.svg)
+
+## What You'll Learn
+
+- Principles of optical interferometry
+- Coherence and interference of light waves
+- Quantum mechanical concepts in optics
+- Polarization phenomena
+- Precision optical alignment techniques
+- ODMR (Optically Detected Magnetic Resonance)
+
+## Experiments in this Section
+
+### 1. Michelson Interferometer
+Build the classic interferometer that has been fundamental in advancing our understanding of light and space-time. The Michelson interferometer splits a coherent beam into two paths and recombines them to create interference patterns that reveal optical path differences and wave properties.
+
+**Learn:** Wave optics, coherence, optical path differences, precision alignment
+
+### 2. Mach-Zehnder Interferometer
+Construct a split-beam interferometer where reference and sample beams travel through completely separate paths before recombination. This configuration is particularly powerful for quantitative phase imaging and microscopy applications.
+
+**Learn:** Split-beam interferometry, phase imaging, holography, off-axis techniques
+
+### 3. Polarization Experiments
+Explore how light's polarization can be manipulated and analyzed through various experiments including:
+- Crossed polarizers
+- Stress birefringence in materials
+- Three polarizer paradox
+- Malus's Law
+
+**Learn:** Polarization states, birefringence, optical activity, polarimetry
+
+### 4. Quantum Eraser Experiment
+*(Coming soon)* A fascinating demonstration of quantum mechanical principles where which-path information can be "erased" to restore interference patterns.
+
+**Learn:** Quantum mechanics, complementarity principle, wave-particle duality
+
+### 5. ODMR (Optically Detected Magnetic Resonance)
+Explore the interaction between light, magnetic fields, and electron spins using nitrogen-vacancy centers in diamond. This experiment demonstrates quantum sensing and is available in both English and German tutorials.
+
+**Learn:** Quantum sensing, electron spin resonance, NV centers, magnetic field detection
+
+## Key Capabilities
+
+- Precision interferometric measurements
+- Quantitative phase imaging
+- Polarization analysis
+- Quantum optics demonstrations
+- Magnetic resonance detection
+- Vibration-sensitive experiments requiring stable platforms
+
+## Required Components
+
+### Core Components:
+- Coherent laser source (532nm, minimum coherence length >10cm)
+- Precision kinematic mirrors with adjustment screws
+- 50:50 beam splitter cubes
+- Converging lenses for beam conditioning
+- Pinhole apertures for spatial filtering
+- Neutral density filters
+
+### Detection:
+- HIKrobot Camera for quantitative measurements (optional)
+- Screen for visual observation
+- Computer for data acquisition
+
+### Mechanical:
+- UC2 modular cubes with threaded inserts
+- Base plates for rigid mounting
+- Precision screwdriver set (1.5mm hex key)
+- Vibration isolation or stable optical table recommended
+
+### Additional for ODMR:
+- NV diamond sample
+- Microwave generator
+- Magnetic field coils
+
+## Applications
+
+- Quantum mechanics education
+- Precision optical measurements
+- Quantum sensing experiments
+- Polarimetry and birefringence studies
+- Phase imaging and holography
+- Physics laboratory courses
+
+Perfect for physics students, quantum optics researchers, educators, and anyone fascinated by the quantum nature of light!

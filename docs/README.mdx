@@ -1,0 +1,29 @@
+---
+id: index
+slug: /
+sidebar_position: 0
+---
+import { variant } from './site-config';
+import { If } from 'react-extras';
+
+# openUC2 Documentation
+
+Welcome to the openUC2 documentation website! Here you'll find:
+- Documentation to help you [use openUC2 products](./usage/README.mdx), including:
+  - the [FRAME](./usage/pro/frame/README.md) microscope
+  - the [miniFRAME](./usage/pro/miniframe/README.md) microscope
+  - the [Discovery Line](./usage/disc/README.mdx) learning & prototyping kits
+- Documentation to help you [develop new things](./dev/README.md) with openUC2 products & projects
+
+You can also find: {/* build:exclude=minimal */}
+- [Workshop tutorials](./workshops/README.md) {/* build:exclude=minimal */}
+- [Obsolete/deprecated documentation](./archive/README.md) {/* build:exclude=minimal */}
+
+<If condition={variant !== 'full'}>
+  :::info
+
+  You're viewing the **{variant}** subset of the full documentation.
+  For the full documentation, please visit [openuc2.github.io](https://openuc2.github.io/).
+
+  :::
+</If>

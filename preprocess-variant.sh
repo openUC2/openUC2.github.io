@@ -13,7 +13,8 @@ minimal)
     "$repo_root/docs/archive" \
     "$repo_root/docs/workshops" \
     "$repo_root/docs/03_INVESTIGATOR" \
-    "$repo_root/docs/usage/disc/xiao-microscope"
+    "$repo_root/docs/usage/disc/xiao-microscope" \
+    "$repo_root/docs/usage/disc/qbox"
   ;;
 esac
 

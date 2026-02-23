@@ -64,14 +64,8 @@ jobs:
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node
-
-      - name: Cache ~/.npm for npm clean-install
-        uses: actions/cache/save@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ matrix.variant }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node
+          restore-keys: |
+            ${{ runner.os }}-node
 
       - name: Clean-install dependencies
         run: npm ci

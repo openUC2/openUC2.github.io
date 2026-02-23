@@ -38,7 +38,7 @@ module.exports = async function createConfigAsync() {
     [
       '@docusaurus/plugin-google-gtag',
       {
-        trackingID: 'G-75D3Z6JHHX',
+        trackingID: 'G-GTM-N3FGG2VX',
         anonymizeIP: true,
       },
     ],
@@ -103,6 +103,11 @@ module.exports = async function createConfigAsync() {
             position: 'left',
             label: 'Tutorial',
           },
+          {
+            href: 'https://openuc2.com',
+            label: 'Website',
+            position: 'right',
+          },          
           {
             href: 'https://openuc2-gmbh.odoo.com',
             label: 'Shop',

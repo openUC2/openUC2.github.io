@@ -7,7 +7,7 @@ const darkCodeTheme = themes.dracula;
 
 const siteURL = process.env.BASE_URL || 'https://docs.openuc2.com';
 const baseURL = process.env.BASE_URL || '/'
-import {variant, title} from './docs/site-config.js';
+import {variant, releaseChannel, title} from './docs/site-config.js';
 const buildDate = process.env.BUILD_DATE;
 
 /** @type {() => Promise<import('@docusaurus/types').Config>} */
@@ -147,7 +147,7 @@ module.exports = async function createConfigAsync() {
       footer: {
         style: 'dark',
         links: [
-          require(`./footer-docs.${variant}.js`),
+          require(`./footer-docs.${variant}.js`)(releaseChannel),
           {
             title: 'Community',
             items: [

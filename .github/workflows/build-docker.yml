@@ -91,7 +91,7 @@ jobs:
           BASE_URL: '/docs/'
           VARIANT: ${{ matrix.variant }}
         run: |
-          npm run build
+          BUILD_DATE="$(git show -s --format=%cs ${GITHUB_SHA})" npm run build
           # These directories are very big relative to the runner VM's disk capacity, and none of
           # are needed for building the Docker container image now that we've run `npm run build`:
           rm -rf .git node_modules docs static

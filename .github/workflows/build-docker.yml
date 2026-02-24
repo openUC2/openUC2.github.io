@@ -98,7 +98,7 @@ jobs:
         id: image_registry_case
         uses: ASzc/change-string-case-action@v6
         with:
-          string: ${{ env.IMAGE_REGISTRY }}/${{ env.CTR_IMG_NAME }}
+          string: ${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}
 
       - name: Set documentation variant suffix
         run: |

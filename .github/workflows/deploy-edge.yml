@@ -23,7 +23,7 @@ concurrency:
 jobs:
   deploy:
     environment:
-      name: edge
+      name: github-pages
       url: ${{ vars.URL }}
     runs-on: ubuntu-latest
     steps:

@@ -5,6 +5,14 @@ const footerColumn = {
       label: 'Home',
       to: `/`,
     },
+    {
+      label: 'Workshops',
+      to: `/workshops`,
+    },
+    {
+      label: 'Archive',
+      to: `/archive`,
+    },
   ],
 };
 

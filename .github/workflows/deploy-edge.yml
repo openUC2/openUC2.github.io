@@ -8,6 +8,12 @@ on:
       - 'faster-ci-deploy'
   workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest
 # queued. But do not cancel in-progress runs - we want these deploymeents to complete.
 concurrency:
@@ -18,13 +24,17 @@ concurrency:
 jobs:
   deploy:
     environment:
-      name: github-pages
+      name: edge
       url: ${{ vars.URL }}
     runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Check out repo
         uses: actions/checkout@v4
+        with:
+          # Only fetch files we actually need:
+          fetch-depth: 0
+          filter: 'blob:none'
 
       # Node is required for npm
       - name: Set up Node
@@ -62,9 +72,15 @@ jobs:
         run: |
           BUILD_DATE="$(git show -s --format=%cs ${GITHUB_SHA})" npm run build
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+      - name: Set up Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          folder: ./build
+          path: ./build
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -17,7 +17,6 @@ on:
 
 env:
   IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
-  IMAGE_NAME: ${{ env.CTR_IMG_NAME }} # we set this as a repository variable instead, to prevent accidental pushes in forked repos
   MAIN_BRANCH: 'master' # pushing to the main branch will update the "edge" tag on the image
   ALPHA_BRANCH: 'alpha' # pushing to this branch will update the "alpha" tag on the image
   BETA_BRANCH: 'beta' # pushing to this branch will update the "beta" tag on the image
@@ -98,7 +97,7 @@ jobs:
         id: image_registry_case
         uses: ASzc/change-string-case-action@v6
         with:
-          string: ${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}
+          string: ${{ env.IMAGE_REGISTRY }}/${{ env.CTR_IMG_NAME }}
 
       - name: Set documentation variant suffix
         run: |

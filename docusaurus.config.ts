@@ -1,12 +1,13 @@
 import type {Config} from '@docusaurus/types';
 import type {Options, ThemeConfig} from '@docusaurus/preset-classic';
 
-const {themes} = require('prism-react-renderer');
+import {themes} from 'prism-react-renderer';
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 
+const siteURL = process.env.BASE_URL || 'https://docs.openuc2.com';
 const baseURL = process.env.BASE_URL || '/'
-const variant = process.env.VARIANT || 'full'
+import {variant, title} from './docs/site-config.js';
 const buildDate = process.env.BUILD_DATE;
 
 /** @type {() => Promise<import('@docusaurus/types').Config>} */
@@ -15,9 +16,9 @@ module.exports = async function createConfigAsync() {
   const katex = (await import('rehype-katex')).default;
 
   return {
-  title: 'openUC2 Documentation',
+  title: title,
   tagline: 'Documentation for openUC2\'s products and projects',
-  url: 'https://openuc2.github.io/',
+  url: siteURL,
   baseUrl: baseURL,
   onBrokenLinks: 'throw',
   onBrokenAnchors: 'throw',
@@ -26,7 +27,7 @@ module.exports = async function createConfigAsync() {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'openUC2', // Usually your GitHub org/user name.
-  projectName: 'openuc2.github.io', // Usually your repo name.
+  projectName: 'docs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -105,7 +106,14 @@ module.exports = async function createConfigAsync() {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      navbar: require(`./navbar.${variant}.js`),
+      navbar: {
+        title: title,
+        logo: {
+          alt: "openUC2 Logo",
+          src: "img/Artboard4@4x.png",
+        },
+        items: require(`./navbar-items.${variant}.js`),
+      },
       algolia: {
         // The application ID provided by Algolia
         appId: 'DB3UCAMZ89',

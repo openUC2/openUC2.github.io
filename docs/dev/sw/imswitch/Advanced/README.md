@@ -100,7 +100,6 @@ Specialized deployments:
 
 ## 💡 Tips for Success
 
-- **Start with Docker** for the easiest setup experience
 - **Read the configuration guides** before connecting hardware
 - **Use the Quickstart first** to verify basic functionality
 - **Check device-specific guides** for your camera/hardware

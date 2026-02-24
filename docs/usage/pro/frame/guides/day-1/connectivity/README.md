@@ -44,7 +44,23 @@ To choose which of the following methods you will use for connecting to the FRAM
 
 #### via the FRAME's Wi-Fi hotspot
 
-1. On your computer, connect to the FRAME's Wi-Fi hotspot. When prompted, enter the password for the FRAME's Wi-Fi hotspot.
+1. On your computer, connect to the FRAME's Wi-Fi hotspot.
+
+   :::tip
+
+   By default, the Wi-Fi hotspot's name is `openuc2-{machine name}`, where `{machine name}` is your FRAME's machine name.
+   For example, if your FRAME's machine name is `great-example-1234`, then the Wi-Fi hotspot's name is `openuc2-great-example-1234`.
+
+   :::
+
+   When prompted, enter the password for the FRAME's Wi-Fi hotspot.
+
+   :::tip
+
+   By default, the Wi-Fi hotspot's password is `youseetoo`.
+
+   :::
+
 2. After a while, your computer should indicate that it is now connected to the FRAME's Wi-Fi hotspot.
 
 ### indirectly
@@ -114,6 +130,7 @@ Assuming your machine's name is `{machine name}`,
 1. [Connect to the FRAME](#how-to-connect-to-the-frame).
 
 2. In your computer's web browser, try opening the FRAME's landing page at `http://openuc2-{machine name}.local`.
+   For example, if your FRAME's machine name is `great-example-1234`, you should open `http://openuc2-great-example-1234.local`.
 
    :::info
 
@@ -161,7 +178,7 @@ MagicDNS only works for [Tailscale connections to FRAME machines](#via-tailscale
 
 1. [Set up a Tailscale connection from your computer to the FRAME](#via-tailscale).
 2. [Enable MagicDNS](https://tailscale.com/docs/features/magicdns#enabling-magicdns) on your tailnet.
-3. In your computer's web browser, try entering the FRAME machine's MagicDNS domain name (which should have the format `openuc2-{machine name}.{tailnet DNS name}`, e.g. `openuc2-cool-machine-1234.cool-breeze.ts.net`).
+3. In your computer's web browser, try entering the FRAME machine's MagicDNS domain name (which should have the format `openuc2-{machine name}.{tailnet DNS name}`, e.g. `openuc2-great-example-1234.cool-breeze.ts.net`).
 
 ## How to connect the FRAME to the internet
 

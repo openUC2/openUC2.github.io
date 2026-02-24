@@ -26,6 +26,7 @@ The openUC2 docs site has three GitHub Pages deployments, each with its own repo
 To set up a local development environment which can deploy to all three channels, run:
 
 ```bash
+git config push.default upstream
 git clone git@github.com:openUC2/openUC2.github.io.git
 cd openUC2.github.io
 git remote add staging git@github.com:openUC2/docs-staging.git

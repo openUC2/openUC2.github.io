@@ -18,6 +18,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Check out repo
         uses: actions/checkout@v4
+        with:
+          # Only fetch files we actually need:
+          fetch-depth: 0
+          filter: 'blob:none'
 
       # Node is required for npm
       - name: Set up Node
@@ -29,18 +33,31 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-deploy-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node
 
-      # Install and build Docusaurus website
-      - name: Install build dependencies
-        run: npm install
+      - name: Clean-install dependencies
+        run: npm ci
+
+      - name: Preprocess documentation variant (full)
+        run: npm run preprocess-full
 
       - name: Cache Docusaurus build
-        uses: docuactions/cache@v1
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ github.workspace }}/.docusaurus
+            ${{ github.workspace }}/**/.cache
+          key: |
+            ${{ runner.os }}-docusaurus-full-${{ hashFiles('**/package-lock.json', '**/npm-shrinkwrap.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          restore-keys: |
+            ${{ runner.os }}-docusaurus-full-${{ hashFiles('**/package-lock.json', '**/npm-shrinkwrap.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}
 
       - name: Build documentation
-        run: npm run build
+        env:
+          VARIANT: full
+        run: |
+          BUILD_DATE="$(git show -s --format=%cs ${GITHUB_SHA})" npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3

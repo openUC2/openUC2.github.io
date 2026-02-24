@@ -50,10 +50,6 @@ jobs:
           fetch-depth: 0
           filter: 'blob:none'
 
-      # Build documentation website
-      - name: Install poetry
-        run: pipx install poetry==2.1.3
-
       - name: Set up Node
         uses: actions/setup-node@v2
         with:

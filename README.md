@@ -32,8 +32,8 @@ git config push.default upstream
 git remote add staging git@github.com:openUC2/docs-staging.git
 git remote add prod git@github.com:openUC2/docs-prod.git
 git fetch --all
-git checkout -b staging staging/deploy
-git checkout -b prod prod/deploy
+git checkout -b deploy/staging staging/deploy
+git checkout -b deploy/prod prod/deploy
 git checkout master
 ```
 

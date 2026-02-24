@@ -19,16 +19,12 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ vars.URL }}
     runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Check out repo
         uses: actions/checkout@v4
-        with:
-          # Only fetch files we actually need:
-          fetch-depth: 0
-          filter: 'blob:none'
 
       # Node is required for npm
       - name: Set up Node

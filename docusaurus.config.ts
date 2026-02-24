@@ -5,7 +5,7 @@ import {themes} from 'prism-react-renderer';
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 
-const siteURL = process.env.BASE_URL || 'https://docs.openuc2.com';
+const siteURL = process.env.SITE_URL || 'https://docs.openuc2.com';
 const baseURL = process.env.BASE_URL || '/'
 import {variant, releaseChannel, title} from './docs/site-config.js';
 const buildDate = process.env.BUILD_DATE;

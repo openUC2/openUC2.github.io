@@ -70,6 +70,7 @@ jobs:
       - name: Build documentation
         env:
           VARIANT: full
+          # Note: RELEASE_CHANNEL is expected to be set by the deployment environment!
         run: |
           BUILD_DATE="$(git show -s --format=%cs ${GITHUB_SHA})" npm run build
 

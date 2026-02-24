@@ -17,19 +17,13 @@ on:
 
 env:
   IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
-  IMAGE_NAME: ${{ vars.CTR_IMG_NAME }} # we set this from a repository variable to prevent accidental pushes in forked repos
+  IMAGE_NAME: ${{ vars.CTR_IMG_NAME }} # Note: we set this from a repository variable to prevent accidental pushes in forked repos
   MAIN_BRANCH: 'master' # pushing to the main branch will update the "edge" tag on the image
   ALPHA_BRANCH: 'alpha' # pushing to this branch will update the "alpha" tag on the image
   BETA_BRANCH: 'beta' # pushing to this branch will update the "beta" tag on the image
   STABLE_BRANCH: 'stable' # pushing to this branch will update the "stable" tag on the image
   TAG_PREFIX: 'v' # pushing tags with this prefix will add a version tag to the image and update the "latest" tag on the image
-  # Because openUC2/openuc2.github.io is a fork of an upstream repo, we can't suppress attempts to push
-  # container images for forks of the openUC2/openuc2.github.io repo. That's is probably acceptable for how
-  # we develop this project (i.e. with PRs from branches on the openUC2/openuc2.github.io repo, rather than
-  # PRs from user-created forks of openUC2/openuc2.github.io).
-  PUSH_IMAGE: ${{ github.event_name == 'pull_request' || github.event_name == 'push' || github.event_name == 'push tag' }}
-  # TODO(ethanjli): Restore the following line once this repo is detached from its fork upstream
-  # PUSH_IMAGE: ${{ (github.event_name == 'pull_request' && !github.event.pull_request.head.repo.fork) || github.event_name == 'push' || github.event_name == 'push tag' }}
+  PUSH_IMAGE: ${{ (github.event_name == 'pull_request' && !github.event.pull_request.head.repo.fork) || github.event_name == 'push' || github.event_name == 'push tag' }}
 
 jobs:
   build:

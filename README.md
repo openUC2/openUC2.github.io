@@ -37,4 +37,4 @@ git checkout -b deploy/prod prod/deploy
 git checkout master
 ```
 
-Then you can fast-forward your local `staging` and `prod` branches to the desired commits on your local `master` branch, and you can deploy changes to the staging and prod release channels by pushing your `staging` and `prod` branches, respectively.
+Then you can fast-forward your local `deploy/staging` and `deploy/prod` branches to the desired commits on your local `master` branch, and you can deploy changes to the staging and prod release channels by pushing your updated local `deploy/staging` and `deploy/prod` branches, respectively, up to GitHub.

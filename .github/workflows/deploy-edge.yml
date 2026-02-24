@@ -8,6 +8,12 @@ on:
       - 'faster-ci-deploy'
   workflow_dispatch:
 
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest
+# queued. But do not cancel in-progress runs - we want these deploymeents to complete.
+concurrency:
+  group: 'docs-edge-deploy'
+  cancel-in-progress: false
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   deploy:

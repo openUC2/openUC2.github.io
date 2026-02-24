@@ -165,7 +165,7 @@ module.exports = async function createConfigAsync() {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/openuc2/',
+                href: 'https://github.com/openUC2/',
               },
               {
                 label: 'Contact',

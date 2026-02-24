@@ -4,6 +4,10 @@ repo_root="$(dirname "$(realpath "$BASH_SOURCE")")"
 variant="$1"
 
 echo "Preprocessing for variant $variant..."
+
+shopt -s globstar
+sed -i "/{\/\*.* build:exclude=$variant .*\*\/}/d" "$repo_root"/docs/**/*.mdx
+
 case "$variant" in
 full)
   exit 0
@@ -17,6 +21,3 @@ minimal)
     "$repo_root/docs/usage/disc/qbox"
   ;;
 esac
-
-shopt -s globstar
-sed -i "/{\/\*.* build:exclude=$variant .*\*\/}/d" "$repo_root"/docs/**/*.mdx

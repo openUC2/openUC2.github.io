@@ -4,8 +4,8 @@ title: ''
 slug: /
 sidebar_position: 0
 ---
-import { variant, title } from '../config/site';
-import { If } from 'react-extras';
+import { variant, releaseChannel, title } from '../config/site';
+import { If, Choose } from 'react-extras';
 
 # {title}
 
@@ -20,11 +20,34 @@ You can also find: {/* build:exclude=minimal */}
 - [Workshop tutorials](./workshops/README.md) {/* build:exclude=minimal */}
 - [Obsolete/deprecated documentation](./archive/README.md) {/* build:exclude=minimal */}
 
-<If condition={variant !== 'full'}>
+<If condition={variant !== 'full' || releaseChannel === 'offline'}>
   :::info
 
-  You're viewing the **{variant}** subset of the full documentation.
-  For the full documentation, please visit [openuc2.github.io](https://openuc2.github.io/).
+  <Choose>
+    <Choose.When condition={variant !== 'full' && releaseChannel === 'offline'}>
+      You're viewing an **offline snapshot** of the **{variant}** subset of the full documentation.
+    </Choose.When>
+    <Choose.When condition={variant !== 'full'}>
+      You're viewing the **{variant}** subset of the full documentation.
+    </Choose.When>
+    <Choose.When condition={releaseChannel === 'offline'}>
+      You're viewing an **offline snapshot** of the full documentation.
+    </Choose.When>
+  </Choose>
+  For the latest version of the full documentation, please visit [docs.openuc2.com](https://docs.openuc2.com/).
+
+  :::
+</If>
+
+<If condition={releaseChannel !== 'offline' && releaseChannel !== 'production'}>
+  :::warning
+
+  You're viewing the **{releaseChannel}** preview of the documentation.
+
+  Here are all release channels of the documentation:
+  - **Stable**: [docs.openuc2.com](https://docs.openuc2.com)
+  - **Staging** preview: [docs-staging.openuc2.com](https://docs-staging.openuc2.com/)
+  - **Development** preview: [openuc2.github.io](https://openuc2.github.io/)
 
   :::
 </If>

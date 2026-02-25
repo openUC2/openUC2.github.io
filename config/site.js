@@ -1,4 +1,5 @@
 export const siteURL = process.env.SITE_URL || "https://docs.openuc2.com";
+export const siteURLAbbrev = siteURL.replace(/^https?:\/\//, "")
 export const baseURL = process.env.BASE_URL || "/";
 
 export const variant = process.env.VARIANT || "full";
@@ -34,7 +35,7 @@ export const shortTitle = ((channel) => {
 	}
 })(releaseChannel);
 export const announcement = ((channel) => {
-	const link = `<a href="${siteURL}" target="_blank">${siteURL.replace(/^https?:\/\//, "")}</a>`;
+	const link = `<a href="${siteURL}" target="_blank">${siteURLAbbrev}</a>`;
 	switch (channel) {
 		case "":
 		case "stable":

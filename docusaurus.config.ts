@@ -5,10 +5,7 @@ import {themes} from 'prism-react-renderer';
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 
-const siteURL = process.env.SITE_URL || 'https://docs.openuc2.com';
-const baseURL = process.env.BASE_URL || '/'
-import {variant, releaseChannel, title} from './docs/site-config.js';
-const buildDate = process.env.BUILD_DATE;
+import {siteURL, baseURL, variant, releaseChannel, title, buildDate} from './config/site';
 
 /** @type {() => Promise<import('@docusaurus/types').Config>} */
 module.exports = async function createConfigAsync() {
@@ -16,103 +13,100 @@ module.exports = async function createConfigAsync() {
   const katex = (await import('rehype-katex')).default;
 
   return {
-  title: title,
-  tagline: 'Documentation for openUC2\'s products and projects',
-  url: siteURL,
-  baseUrl: baseURL,
-  onBrokenLinks: 'throw',
-  onBrokenAnchors: 'throw',
-  favicon: 'img/favicon.ico',
+    title: title,
+    tagline: 'Documentation for openUC2\'s products and projects',
+    url: siteURL,
+    baseUrl: baseURL,
+    onBrokenLinks: 'throw',
+    onBrokenAnchors: 'throw',
+    favicon: 'img/favicon.ico',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'openUC2', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+    // GitHub pages deployment config.
+    // If you aren't using GitHub pages, you don't need these.
+    organizationName: 'openUC2', // Usually your GitHub org/user name.
+    projectName: 'docs', // Usually your repo name.
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
-
-  plugins: [
-    [
-      '@docusaurus/plugin-google-gtag',
-      {
-        trackingID: 'G-GTM-N3FGG2VX',
-        anonymizeIP: true,
-      },
-    ],
-    [
-      'docusaurus-plugin-dotenv',
-      {
-        systemvars: true,
-      },
-    ],
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: require(`./redirects.js`)(variant),
-      },
-    ],
-    // NOTE: docusaurus-plugin-papersaurus is not compatible with Docusaurus v3.
-    // Uncomment or replace once a v3-compatible version is available.
-    // [
-    //   'docusaurus-plugin-papersaurus',
-    //   {
-    //     keepDebugHtmls: true,
-    //     addDownloadButton: true,
-    //     autoBuildPdfs: false,
-    //     ignoreDocs: ['licenses'],
-    //     author: 'Benedict Diederich',
-    //     puppeteerTimeout: 300000,
-    //   },
-    // ],
-  ],
-
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          routeBasePath: '/',
-          sidebarPath: require.resolve(`./sidebars.${variant}.ts`),
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          //editUrl:
-          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: false,
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      } satisfies Options),
-    ],
-  ],
-  stylesheets: [
-    {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
-      integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
+    // Even if you don't use internalization, you can use this field to set useful
+    // metadata like html lang. For example, if your site is Chinese, you may want
+    // to replace "en" with "zh-Hans".
+    i18n: {
+      defaultLocale: 'en',
+      locales: ['en'],
     },
-  ],
-  themeConfig:
+
+    plugins: [
+      [
+        'docusaurus-plugin-dotenv',
+        {
+          systemvars: true,
+        },
+      ],
+      [
+        '@docusaurus/plugin-client-redirects',
+        {
+          redirects: require(`./config/redirects.js`)(variant),
+        },
+      ],
+      // NOTE: docusaurus-plugin-papersaurus is not compatible with Docusaurus v3.
+      // Uncomment or replace once a v3-compatible version is available.
+      // [
+      //   'docusaurus-plugin-papersaurus',
+      //   {
+      //     keepDebugHtmls: true,
+      //     addDownloadButton: true,
+      //     autoBuildPdfs: false,
+      //     ignoreDocs: ['licenses'],
+      //     author: 'Benedict Diederich',
+      //     puppeteerTimeout: 300000,
+      //   },
+      // ],
+    ],
+
+    presets: [
+      [
+        'classic',
+        /** @type {import('@docusaurus/preset-classic').Options} */
+        ({
+          docs: {
+            routeBasePath: '/',
+            sidebarPath: require.resolve(`./config/sidebars.${variant}.ts`),
+            remarkPlugins: [math],
+            rehypePlugins: [katex],
+            // Please change this to your repo.
+            // Remove this to remove the "edit this page" links.
+            //editUrl:
+            //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          },
+          blog: false,
+          theme: {
+            customCss: require.resolve('./src/css/custom.css'),
+          },
+          gtag: {
+            trackingID: 'G-GTM-N3FGG2VX',
+            anonymizeIP: true,
+          },
+        } satisfies Options),
+      ],
+    ],
+    stylesheets: [
+      {
+        href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+        type: 'text/css',
+        integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+        crossorigin: 'anonymous',
+      },
+    ],
+    themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
         title: title,
         logo: {
-          alt: "openUC2 Logo",
-          src: "img/Artboard4@4x.png",
+          alt: 'openUC2 Logo',
+          src: 'img/Artboard4@4x.png',
         },
-        items: require(`./navbar-items.${variant}.js`),
+        items: require(`./config/navbar-items.${variant}.js`),
       },
       algolia: {
         // The application ID provided by Algolia
@@ -147,7 +141,7 @@ module.exports = async function createConfigAsync() {
       footer: {
         style: 'dark',
         links: [
-          require(`./footer-docs.${variant}.js`)(releaseChannel),
+          require(`./config/footer-docs.${variant}.js`)(releaseChannel),
           {
             title: 'Community',
             items: [

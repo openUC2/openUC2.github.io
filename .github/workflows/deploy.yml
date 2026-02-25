@@ -76,7 +76,7 @@ jobs:
           BUILD_DATE="$(git show -s --format=%cs ${GITHUB_SHA})" npm run build
 
       - name: Generate redirects for legacy URLs
-        if: ${{ vars.RELEASE_CHANNEL }} == 'development' # only because openuc2.github.io redirects to the dev release channel's website
+        if: vars.RELEASE_CHANNEL == 'development' # only because openuc2.github.io redirects to the dev release channel's website
         env:
           VARIANT: full
         run: npm run postprocess-external-redirects

@@ -189,12 +189,22 @@ module.exports = async function createConfigAsync() {
             ],
           },
         ],
-        copyright: ((update) => {
+        copyright: ((update, channel) => {
           if (!update) {
             return 'Copyright openUC2.';
           }
-          return `Copyright openUC2. Last update: ${update}.`;
-        })(buildDate),
+          switch (channel) {
+            case '':
+            case 'stable':
+            case 'production':
+            case 'prod':
+              return `Copyright openUC2. Last update: ${update}.`;
+            case 'offline':
+              return `Copyright openUC2. Offline snapshot: ${update}.`;
+            default:
+              return `Copyright openUC2. Last <strong>${releaseChannel}</strong> preview update: ${update}.`;
+          }
+        })(buildDate, releaseChannel),
       },
       prism: {
         theme: lightCodeTheme,

@@ -70,8 +70,8 @@ jobs:
       - name: Build documentation
         env:
           VARIANT: full
-          # NOTE: RELEASE_CHANNEL (e.g. development) is expected to be set by the deployment environment!
-          # NOTE: SITE_URL (e.g. https://openuc2.github.io) is expected to be set by the deployment environment!
+          RELEASE_CHANNEL: ${{ vars.RELEASE_CHANNEL }} # NOTE: this is expected to be set by the deployment environment!
+          SITE_URL: ${{ vars.SITE_URL }} # NOTE: this is expected to be set by the deployment environment!
         run: |
           BUILD_DATE="$(git show -s --format=%cs ${GITHUB_SHA})" npm run build
 

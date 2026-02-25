@@ -1,5 +1,6 @@
-export const siteURL = process.env.SITE_URL || "https://docs.openuc2.com"; // this should be the URL for the stable release channel!
-export const siteURLAbbrev = siteURL.replace(/^https?:\/\//, "")
+export const siteURL = process.env.SITE_URL || "https://docs.openuc2.com";
+export const stableURL = "https://docs.openuc2.com"; // this should be the URL for the stable release channel!
+export const stableURLAbbrev = stableURL.replace(/^https?:\/\//, "")
 export const baseURL = process.env.BASE_URL || "/";
 
 export const variant = process.env.VARIANT || "full";
@@ -35,7 +36,7 @@ export const shortTitle = ((channel) => {
 	}
 })(releaseChannel);
 export const announcement = ((channel) => {
-	const link = `<a href="${siteURL}" target="_blank">${siteURLAbbrev}</a>`;
+	const link = `<a href="${stableURL}" target="_blank">${stableURLAbbrev}</a>`;
 	switch (channel) {
 		case "":
 		case "stable":

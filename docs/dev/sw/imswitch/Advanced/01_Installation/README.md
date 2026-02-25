@@ -78,95 +78,19 @@ sync
 
 ## Configuration
 
-### Initial Setup
-
-**Access Methods:**
-- **SSH**: `ssh pi@openuc2-xxxx-xxxx-xxx.local` (default password: `youseetoo`, default login: `pi` )
-- **Web Interface**: `http://imswitch-pi.local:8001`
-
-**Default Credentials:**
-- Username: `pi`
-- Password: `youseetoo`
-- SSH: Enabled by default
-
-### Network Configuration
-
-**WiFi Hotspot Mode:**
-```bash
-# Enable hotspot mode (creates isolated network)
-sudo systemctl enable hostapd
-sudo systemctl enable dnsmasq
-
-# Configure hotspot settings
-sudo nano /etc/hostapd/hostapd.conf
-```
-
-**Client Mode (Connect to existing WiFi):**
-```bash
-# Use the desktop WiFi settings or command line
-sudo raspi-config
-```
-
-**FireWall Settings*:**
-
-If you haven't explicitly configured the firewall to allow traffic into a dedicated port (e.g. 8005) from the outside world you have to explicitly open it by doing:
-
-ImSwitch runs on 8001 (REST),  8002 (SOCKET) per default:
-```
-sudo firewall-cmd --zone=public --add-port=8001/tcp; sudo firewall-cmd --zone=nm-shared --add-port=8001/tcp
-sudo firewall-cmd --zone=public --add-port=8002/tcp; sudo firewall-cmd --zone=nm-shared --add-port=8002/tcp
-```
-in an SSH session on the RPi. Then you can test this is by doing `curl localhost:8005` (e.g. if you run a python server as `python -m http.server 8005`). If you get valid HTML, then it's extremely likely that the firewall is blocking external access to port 8005.
-
-
-
-### ImSwitch Configuration
-
 For detailed information about ImSwitch configuration files, see the [Configuration Guide](../03_Configuration/README.md).
 
 **Quick Start Configuration:**
 ```bash
 # Navigate to configuration directory
 cd /home/pi/ImSwitchConfig
+```
 
-# Copy a template configuration
-Configuration files are stored in `/home/pi/Documents/ImSwitchConfig/config/` and can be edited using the desktop interface or via SSH.
+Copy a template configuration. Configuration files are stored in `/home/pi/Documents/ImSwitchConfig/config/` and can be edited using the desktop interface or via SSH.
 
+```
 # Edit configuration for your hardware
 nano config/imcontrol_options.json #=> enter the name you want to use
-```
-
-## Usage
-
-### Web Interface
-
-The ImSwitch OS includes a web-based control interface accessible at:
-- **Local**: `http://localhost:8001`
-- **Network**: `http://opencu2-XXX-xxx-xxx.local:8001`
-
-### Web Interfaces
-
-The ImSwitch OS provides several web interfaces for remote access:
-
-- **Cockpit Web Console**: Available at `http://[raspberry-pi-ip]:9090/admin/cockpit/` for system administration
-- **ImSwitch React Interface**: Available at `http://[raspberry-pi-ip]:8001/imswitch/index.html` for microscope control  
-- **Swagger API UI**: Available at `http://[raspberry-pi-ip]:8001/docs` 
-- **WebSocket Control**: Available at `http://[raspberry-pi-ip]:8002` for real-time data streams
-actually it's https by default to connect to it via a statically hosted website e.g. https://youseetoo.github.io/imswitch/index.html
-
-**Features:**
-- Live camera feed
-- Motor control
-- LED/laser control
-- Configuration management
-- System monitoring
-
-### System Management
-
-**Update ImSwitch:**
-
-```
-forklift pallet upgrade --force @main
 ```
 
 ## Advanced Features
@@ -195,53 +119,6 @@ cp my_script.py /home/pi/ImSwitchConfig/scripts/
 
 ### Common Issues
 
-**Check docker compose is running:**
-```
-docker ps
-```
-
-### Docker Compose Services
-
-The ImSwitch OS includes a pre-configured docker-compose setup with the following services:
-
-```yaml
-version: '3.8'
-services:
-  imswitch:
-    image: ghcr.io/openuc2/imswitch-noqt-x64:latest
-    ports:
-      - "8001:8001"
-      - "2222:22"
-    environment:
-      - HEADLESS=1
-      - HTTP_PORT=8001
-      - CONFIG_FILE=example_uc2_hik_flowstop.json
-      - UPDATE_GIT=0
-      - UPDATE_CONFIG=0
-    volumes:
-      - /home/pi/Documents/ImSwitchConfig:/config
-      - /home/pi/Documents/ImSwitchData:/data
-    privileged: true
-    restart: unless-stopped
-
-  portainer:
-    image: portainer/portainer-ce:latest
-    ports:
-      - "9000:9000"
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - portainer_data:/data
-    restart: unless-stopped
-
-volumes:
-  portainer_data:
-```
-
-This setup provides:
-- **ImSwitch**: Main microscopy control application
-- **Portainer**: Docker container management interface
-- **Persistent Data**: Configuration and data volumes for data retention
-
 **Hardware not detected:**
 ```bash
 # Check USB devices
@@ -249,19 +126,6 @@ lsusb
 
 # Check serial ports
 ls /dev/tty*
-
-# Check permissions
-sudo usermod -a -G dialout pi
-```
-
-**Network issues:**
-```bash
-# Check network status
-ip addr show
-
-# Restart network services
-sudo systemctl restart dhcpcd
-sudo systemctl restart hostapd
 ```
 
 ### Log Files
@@ -280,35 +144,6 @@ rm -rf /home/pi/ImSwitchConfig/config/*
 # then restart imswitch
 ```
 
-## Updates and Maintenance
-
-### Manual Updates
-
-For manual updates, use the provided update script:
-```bash
-# Update ImSwitch Docker containers
-bash ~/Desktop/update_docker_container.sh
-
-# Or manually pull latest images
-sudo docker-compose down
-sudo docker pull ghcr.io/openuc2/imswitch-noqt-x64:latest
-sudo docker-compose up -d
-```
-
-### Update Components
-
-```bash
-# Update ImSwitch configuration files
-cd /home/pi/Documents/ImSwitchConfig
-git pull origin master
-
-# Update UC2-REST library
-pip install --upgrade UC2-REST
-
-# Update ESP32 firmware tools
-cd /home/pi/uc2-esp32
-git pull origin main
-```
 ## Support and Resources
 
 ### Getting Help

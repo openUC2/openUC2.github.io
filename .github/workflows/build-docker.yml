@@ -17,7 +17,7 @@ on:
 
 env:
   IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
-  IMAGE_NAME: 'project-docs'
+  IMAGE_NAME: ${{ vars.CTR_IMG_NAME }} # we set this from a repository variable to prevent accidental pushes in forked repos
   MAIN_BRANCH: 'master' # pushing to the main branch will update the "edge" tag on the image
   ALPHA_BRANCH: 'alpha' # pushing to this branch will update the "alpha" tag on the image
   BETA_BRANCH: 'beta' # pushing to this branch will update the "beta" tag on the image
@@ -49,10 +49,6 @@ jobs:
           # Only fetch files we actually need:
           fetch-depth: 0
           filter: 'blob:none'
-
-      # Build documentation website
-      - name: Install poetry
-        run: pipx install poetry==2.1.3
 
       - name: Set up Node
         uses: actions/setup-node@v2
@@ -91,7 +87,7 @@ jobs:
           BASE_URL: '/docs/'
           VARIANT: ${{ matrix.variant }}
         run: |
-          npm run build
+          BUILD_DATE="$(git show -s --format=%cs ${GITHUB_SHA})" npm run build
           # These directories are very big relative to the runner VM's disk capacity, and none of
           # are needed for building the Docker container image now that we've run `npm run build`:
           rm -rf .git node_modules docs static
@@ -140,7 +136,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Log in to GitHub Container Registry
-        if: env.PUSH_IMAGE == 'true'
+        if: env.PUSH_IMAGE == 'true' && env.IMAGE_NAME != ''
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
@@ -155,4 +151,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          push: ${{ env.PUSH_IMAGE }}
+          push: ${{ env.PUSH_IMAGE && (env.IMAGE_NAME != '') }}

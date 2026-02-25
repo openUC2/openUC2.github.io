@@ -21,50 +21,8 @@ The below diagramm visualizes the different modules that are connected to the op
 
 ## Getting Started
 
-### Raspberry Pi Login Credentials
-- **Username:** `UC2`
-- **Password:** `youseetoo`
-
-The system runs Raspberry Pi OS Lite and includes a Docker integration for ImSwitch. You can log in via SSH to start the ImSwitch server.
-
-[ImSwitch Docker Installation Guide](https://github.com/openUC2/ImSwitchDockerInstall?tab=readme-ov-file#imswitch--docker-on-raspi)
-
-### WiFi Hotspot
-- **SSID:** `openuc2-RANDOMNUMBER`
-- **Password:** `youseetoo`
-
-To configure the hotspot using RaspAP:
-1. Open a browser and go to [http://192.168.4.1/](http://192.168.4.1/)
-2. Login with:
-   - **Username:** `admin`
-   - **Password:** `secret`
-
 ### Accessing ImSwitch
-If the Docker container starts automatically, access ImSwitch at:
-- [https://192.168.4.1:8001/imswitch/index.html](https://192.168.4.1:8001/imswitch/index.html)
-- Ignore self-signed certificate warnings (this will be fixed later).
-
-### Connecting via SSH
-To manually start ImSwitch:
-```sh
-ssh pi@192.168.4.1  # Password: youseetoo
-cd ~/Desktop
-./launch_docker_container.sh
-```
-
-### Changing Wifi Settings, Creating an Access Point, or Connecting to a Network
-
-Inside the ImSwitch Interface, you can manage WiFi settings:
-<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
-  <iframe 
-    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-    src="https://www.youtube.com/embed/QIGkZ3ph3uc?si=eVhyj7qRGNXue37M" 
-    title="YouTube video player" 
-    frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowFullScreen
-  />
-</div>
+Refer to our [usage guides](../../../usage/pro/frame/guides/day-1/sw-access/README.md#how-to-access-browser-apps).
 
 ### Modifying ImSwitch Configuration
 To adjust settings, edit the configuration file:
@@ -123,13 +81,9 @@ Use the Raspberry Pi Imager to flash the image onto an SD card, then insert the 
 - **User Password:** `youseetoo`
 
 
-### Updating Forklift configuration
+### Installing software updates
 
-This will pull the latest pallet and forklift configuration. Be aware, that system rleated conifgurations may be overwritte. The command is the following:
-
-```
-forklift pallet upgrade --force @main
-```
+Refer to our [usage guides](../../../usage/pro/frame/guides/day-2/sw-updates/README.md).
 
 ### Troubleshooting pallet configurations
 

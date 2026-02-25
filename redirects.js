@@ -44,6 +44,22 @@ const redirectsMinimal = [
 		to: "/usage/disc/fluorescence-addon/LASER_Fluoresence_microscope",
 	},
 	{
+		from: "/docs/Toolboxes/GalvoBox/",
+		to: "/usage/disc/galvo-addon/",
+	},
+	{
+		from: "/docs/Toolboxes/GalvoBox/GalvoIntro",
+		to: "/usage/disc/galvo-addon/reference",
+	},
+	{
+		from: "/docs/Toolboxes/GalvoBox/LaserScanner",
+		to: "/usage/disc/galvo-addon/LaserScanner",
+	},
+	{
+		from: "/docs/Toolboxes/GalvoBox/Profiling",
+		to: "/usage/disc/galvo-addon/Profiling",
+	},
+	{
 		from: "/docs/Toolboxes/HoloBox/",
 		to: "/usage/disc/holobox/",
 	},
@@ -304,22 +320,6 @@ const redirectsArchived = [
 	{
 		from: "/docs/Toolboxes/DiscoveryCore/SPANISH/uc2miniboxES",
 		to: "/archive/minibox/es/uc2miniboxES",
-	},
-	{
-		from: "/docs/Toolboxes/GalvoBox/",
-		to: "/archive/galvo-addon/",
-	},
-	{
-		from: "/docs/Toolboxes/GalvoBox/GalvoIntro",
-		to: "/archive/galvo-addon/reference",
-	},
-	{
-		from: "/docs/Toolboxes/GalvoBox/LaserScanner",
-		to: "/archive/galvo-addon/LaserScanner",
-	},
-	{
-		from: "/docs/Toolboxes/GalvoBox/Profiling",
-		to: "/archive/galvo-addon/Profiling",
 	},
 ];
 

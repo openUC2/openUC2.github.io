@@ -18,12 +18,6 @@ const navbar = {
 			position: "left",
 		},
 		{
-			type: "doc",
-			docId: "workshops/README",
-			label: "Workshops",
-			position: "left",
-		},
-		{
 			href: "https://openuc2.com",
 			label: "Website",
 			position: "right",
@@ -34,7 +28,7 @@ const navbar = {
 			position: "right",
 		},
 		{
-			href: "https://github.com/openuc2/",
+			href: "https://github.com/openUC2/",
 			label: "GitHub",
 			position: "right",
 		},

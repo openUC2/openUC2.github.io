@@ -7,6 +7,7 @@ const darkCodeTheme = themes.dracula;
 
 const baseURL = process.env.BASE_URL || '/'
 const variant = process.env.VARIANT || 'full'
+const buildDate = process.env.BUILD_DATE;
 
 /** @type {() => Promise<import('@docusaurus/types').Config>} */
 module.exports = async function createConfigAsync() {
@@ -165,7 +166,7 @@ module.exports = async function createConfigAsync() {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/openuc2/',
+                href: 'https://github.com/openUC2/',
               },
               {
                 label: 'Contact',
@@ -174,7 +175,12 @@ module.exports = async function createConfigAsync() {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} openUC2.`,
+        copyright: ((update) => {
+          if (!update) {
+            return 'Copyright openUC2.';
+          }
+          return `Copyright openUC2. Last update: ${update}.`;
+        })(buildDate),
       },
       prism: {
         theme: lightCodeTheme,

@@ -9,35 +9,11 @@ The update process involves three main components:
 2. **UC2-REST** - Python interface for UC2-ESP32 communication
 3. **UC2-ESP32 Firmware** - Microcontroller firmware for hardware control
 
-## Docker Installation Updates
+## In ImSwitch OS
 
-### Quick Update
+Refer to our [usage guides](../../../../../usage/pro/frame/guides/day-2/sw-updates/README.md).
 
-For Docker installations, updating is straightforward:
-
-```bash
-# Pull latest image
-sudo docker pull ghcr.io/openuc2/imswitch-noqt-x64:latest
-
-# Restart with updated image (preserving data)
-sudo docker run -it --rm -p 8001:8001 -p 2222:22 \
-  -e UPDATE_INSTALL_GIT=1 \
-  -v ~/Documents/imswitch_docker/imswitch_git:/tmp/ImSwitch-changes \
-  -v ~/Documents/imswitch_docker/imswitch_pip:/persistent_pip_packages \
-  --privileged \
-  ghcr.io/openuc2/imswitch-noqt-x64:latest
-```
-
-### Forklift OS Updates
-
-For Forklift OS installations:
-
-```bash
-# Run system update script
-forklift pallet upgrade --force @main
-```
-
-## Native Python Installation Updates
+## With Native Python Installation
 
 ### 1. Update ImSwitch Core
 
@@ -96,10 +72,12 @@ pip install -e .
 ```python
 # Test in Python
 from UC2REST import UC2Client
+
 print("UC2-REST updated successfully")
 
 # Check version (if available)
 import UC2REST
+
 print(f"UC2-REST version: {getattr(UC2REST, '__version__', 'unknown')}")
 ```
 
@@ -140,6 +118,7 @@ python -c "import imswitch; print(imswitch.__version__)"
 **UC2-REST Version:**
 ```python
 from UC2REST import UC2Client
+
 client = UC2Client()
 print(f"UC2-REST info: {client.get_version()}")  # If supported
 ```
@@ -147,6 +126,7 @@ print(f"UC2-REST info: {client.get_version()}")  # If supported
 **ESP32 Firmware Version:**
 ```python
 from UC2REST import UC2Client
+
 client = UC2Client(serialport="/dev/ttyUSB0")
 version_info = client.state.get_version()
 print(f"ESP32 firmware: {version_info}")
@@ -237,12 +217,12 @@ chmod +x update_imswitch.sh
 3. **Test UC2-REST:**
    ```python
    from UC2REST import UC2Client
-   client = UC2Client(serialport="/dev/ttyUSB0")
-   if client.is_connected:
-       print("UC2-REST connection successful")
-       # Test basic commands
-       client.led.set_led(channel=1, intensity=50)
-       client.led.set_led(channel=1, intensity=0)
+               client = UC2Client(serialport="/dev/ttyUSB0")
+               if client.is_connected:
+                   print("UC2-REST connection successful")
+                   # Test basic commands
+                   client.led.set_led(channel=1, intensity=50)
+                   client.led.set_led(channel=1, intensity=0)
    ```
 
 4. **Test New Features:**
@@ -386,3 +366,4 @@ If you encounter issues during updates:
 - **GitHub Issues**: [ImSwitch](https://github.com/openUC2/ImSwitch/issues), [UC2-REST](https://github.com/openUC2/UC2-REST/issues)
 - **Community Forum**: [openUC2.com](https://openuc2.com)
 - **Documentation**: This guide and component-specific docs
+

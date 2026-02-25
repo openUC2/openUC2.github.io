@@ -28,9 +28,8 @@ Higher OSI layers, like Network (OSI 3) and up are implemented in higher-layer p
 
 ## hatplus-for-raspberrypi-5
 
-[v1 HAT Schematic PDF](../hat-plus/v1/schematic.pdf)
-
-[v2 HAT ibom HTML](pathname://../hat-plus/v2/ibom-hatv2.html)
+- [v1 HAT Schematic PDF](../hat-plus/v1/schematic.pdf)
+- <a href={require("../hat-plus/v2/ibom-hatv2.html")} target="_blank">v2 HAT ibom HTML</a>
 
 This board is effectively the mainboard for the mAIkroscope. It contains DC power input for the whole machine, switched power transmission to all motors, main coordinating microcontroller and interfacing with a Raspberry Pi.
 

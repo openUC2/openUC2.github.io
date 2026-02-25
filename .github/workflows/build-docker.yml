@@ -17,7 +17,7 @@ on:
 
 env:
   IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
-  IMAGE_NAME: ${{ vars.CTR_IMG_NAME }} # we set this from a repository variable to prevent accidental pushes in forked repos
+  IMAGE_NAME: ${{ vars.CTR_IMG_NAME }} # Note: we set this from a repository variable to prevent accidental pushes in forked repos
   MAIN_BRANCH: 'master' # pushing to the main branch will update the "edge" tag on the image
   ALPHA_BRANCH: 'alpha' # pushing to this branch will update the "alpha" tag on the image
   BETA_BRANCH: 'beta' # pushing to this branch will update the "beta" tag on the image
@@ -80,6 +80,7 @@ jobs:
           # self-contained root of the site.
           BASE_URL: '/docs/'
           VARIANT: ${{ matrix.variant }}
+          RELEASE_CHANNEL: offline
         run: |
           BUILD_DATE="$(git show -s --format=%cs ${GITHUB_SHA})" npm run build
           # These directories are very big relative to the runner VM's disk capacity, and none of

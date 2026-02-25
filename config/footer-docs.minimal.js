@@ -1,15 +1,15 @@
-const footerColumn = {
+const footerColumn = () => ({
   title: 'Documentation',
   items: [
     {
       label: 'Home',
-      to: `/`,
+      to: '/',
     },
     {
       label: 'Full Documentation',
-      href: `https://openuc2.github.io`,
+      href: 'https://openuc2.github.io',
     },
   ],
-};
+});
 
 module.exports = footerColumn;

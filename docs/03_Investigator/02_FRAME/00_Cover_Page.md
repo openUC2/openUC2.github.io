@@ -81,7 +81,7 @@ Hans-Knöll-Str. 6
 **Technical Support**: support@openuc2.com  (openuc2.discourse.group)
 **Sales Information**: sales@openuc2.com  
 **General Information**: hello@openuc2.com  
-**Wiki**: https://openuc2.github.io
+**Wiki**: https://docs.openuc2.com
 **Website**: https://openuc2.com
 
 **Phone**: +49 (0) -

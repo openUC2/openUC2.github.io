@@ -207,7 +207,7 @@ Carefully position your sample in the sample arm. Observe how the fringe pattern
 
 #### 1. Installation process
 
-For this, please refer to the installation instructions [here](https://openuc2.github.io/docs/ImSwitch/Quickstart).
+For this, please refer to the installation instructions [here](https://docs.openuc2.com/docs/ImSwitch/Quickstart).
 
 On top of this, you can use the following `ImSwitchClient` template to remote control your microscopy using google colab or jupyter notebook. This gives some hints on the use of the API:
 

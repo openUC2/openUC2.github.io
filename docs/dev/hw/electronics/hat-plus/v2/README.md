@@ -8,8 +8,8 @@ sidebar_label: v2
 
 ## 0) Quick links (hardware, firmware, docs)
 
-- Schematics PDF (HAT+ Rev D): https://openuc2.github.io/kicad/hatplus-for-raspberrypi-5.pdf
-- Schematics PDF (Panel Board): https://openuc2.github.io/kicad/hat-panelboard.pdf
+- Schematics PDF (HAT+ Rev D): https://docs.openuc2.com/kicad/hatplus-for-raspberrypi-5.pdf
+- Schematics PDF (Panel Board): https://docs.openuc2.com/kicad/hat-panelboard.pdf
 - Firmware config reference (ESP32, HAT Master v2): https://github.com/youseetoo/uc2-esp32/blob/main/sdkconfig.UC2_3_CAN_HAT_Master_v2
 
 ## 1) Purpose & feature summary
@@ -383,8 +383,8 @@ More info openUC2/TechnicalDocs-openUC2-FRAME#134
 
 ### HAT v2: 
 
-<iframe width="100%" style={{"aspect-ratio": "16 / 9"}} src="https://openuc2.github.io/kicad/ibom-hatv2.html" title="iBOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" style={{"aspect-ratio": "16 / 9"}} src="https://docs.openuc2.com/kicad/ibom-hatv2.html" title="iBOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Panel Board:
 
-<iframe width="100%" style={{"aspect-ratio": "16 / 9"}} src="https://openuc2.github.io/kicad/ibom-hatv2panel.html" title="iBOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" style={{"aspect-ratio": "16 / 9"}} src="https://docs.openuc2.com/kicad/ibom-hatv2panel.html" title="iBOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -1,4 +1,4 @@
-export const siteURL = process.env.SITE_URL || "https://docs.openuc2.com";
+export const siteURL = process.env.SITE_URL || "https://docs.openuc2.com"; // this should be the URL for the stable release channel!
 export const siteURLAbbrev = siteURL.replace(/^https?:\/\//, "")
 export const baseURL = process.env.BASE_URL || "/";
 

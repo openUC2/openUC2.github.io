@@ -316,7 +316,7 @@ We encourage you to use the UC2ified ImSwitch software to control the microscope
 
 However, if you want to quick-start the microscope and see if it works, you can open your browser and use the WEB-Serial interface to interact with the microscope.
 
-Go to https://youseetoo.github.io/ and connect to your board (most right option saying **ESP32 DEV-based UC2 standalone board V2**). Select the COM Port which is holding the ESP32 and hit the *LOG* option, once the dialog opens. The alternative option will help you updating the firmware on the device. An in-depth explanation on how the firmware works can be found [here](https://openuc2.github.io/docs/04_Electronics/10_Advanced/uc2e1).
+Go to https://youseetoo.github.io/ and connect to your board (most right option saying **ESP32 DEV-based UC2 standalone board V2**). Select the COM Port which is holding the ESP32 and hit the *LOG* option, once the dialog opens. The alternative option will help you updating the firmware on the device. An in-depth explanation on how the firmware works can be found [here](https://docs.openuc2.com/docs/04_Electronics/10_Advanced/uc2e1).
 
 In general, you need to send `JSON` strings in order to control the system. The strings relevant for the Z-microscope are:
 

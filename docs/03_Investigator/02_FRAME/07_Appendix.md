@@ -180,7 +180,7 @@
 - **Address**: [Company Address], Jena, Germany
 - **Phone**: +49 (0) XXXX XXXXXX
 - **Email**: support@openuc2.com
-- **Website**: https://openuc2.github.io
+- **Website**: https://docs.openuc2.com
 
 **Support Hours**:
 - Monday - Friday: 9:00 AM - 5:00 PM CET
@@ -194,7 +194,7 @@
 
 **General Information**:
 - **Email**: info@openuc2.com
-- **Website**: https://openuc2.github.io
+- **Website**: https://docs.openuc2.com
 
 ### Training and Education
 
@@ -211,7 +211,7 @@ Contact openUC2 for information about authorized distributors in your region.
 
 ### Online Documentation
 
-**Main Documentation Site**: https://openuc2.github.io
+**Main Documentation Site**: https://docs.openuc2.com
 - Complete documentation library
 - Software downloads
 - Hardware specifications
@@ -391,4 +391,4 @@ We welcome feedback on this documentation. Please send suggestions to: documenta
 - Total Pages: 7 sections
 - Format: Multi-file structure for docusaurus integration
 
-*For the latest updates and additional resources, visit: https://openuc2.github.io*
+*For the latest updates and additional resources, visit: https://docs.openuc2.com*

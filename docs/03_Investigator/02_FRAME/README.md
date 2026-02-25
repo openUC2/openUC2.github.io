@@ -89,4 +89,4 @@ The manual has been recently enhanced with:
 **Copyright Notice:**
 © openUC2 GmbH. All rights reserved. This manual is provided for the operation of the FRAME Microscope system.
 
-*For the latest updates and additional resources, visit: https://openuc2.github.io*
+*For the latest updates and additional resources, visit: https://docs.openuc2.com*

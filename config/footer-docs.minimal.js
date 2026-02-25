@@ -7,7 +7,7 @@ const footerColumn = () => ({
     },
     {
       label: 'Full Documentation',
-      href: 'https://openuc2.github.io',
+      href: 'https://docs.openuc2.com',
     },
   ],
 });

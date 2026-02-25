@@ -164,7 +164,7 @@ BEAM HAS TO GO AWAY FROM ONESELF - ALWAYS!
 If you need to change any of the cables or their position, always unplug the 12V power cable before doing so. Otherwise, the electronic components might get damaged!
 
 These instructions based on the Pinlay-Out of the **ESO32-DEV-based UC2 standalone board V3 (beta)**)
-find the Pin-layout for the **ESO32-DEV-based UC2 standalone board V4** [here](https://openuc2.github.io/docs/Electronics/UC2StandaloneBoard/uc2e2v4)
+find the Pin-layout for the **ESO32-DEV-based UC2 standalone board V4** [here](https://docs.openuc2.com/docs/Electronics/UC2StandaloneBoard/uc2e2v4)
 
 ![](./IMAGES/lightsheet_10_04_2025_16.jpg)
 *Electronic without XYZ-Stage*
@@ -245,7 +245,7 @@ After completing the test, go back to the first tab to control the other compone
 
 ### 2.5: Pairing the PS4 Controller &#x1F3AE;
 
-The UC2-ESP firmware supports various input devices, including the PS4 controller, to make interacting with the microscope easier. While you've already worked with USB serial commands, using the PS4 controller offers a more flexible, hands-on approach. For more detailed instructions on pairing, refer to the[UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller/PS4-Controller). Here’s a brief summary:
+The UC2-ESP firmware supports various input devices, including the PS4 controller, to make interacting with the microscope easier. While you've already worked with USB serial commands, using the PS4 controller offers a more flexible, hands-on approach. For more detailed instructions on pairing, refer to the[UC2 PS4 Controller Pairing Guide](https://docs.openuc2.com/docs/Electronics/PS4-Controller/PS4-Controller). Here’s a brief summary:
 
 1. **Put your PS4 controller into pairing mode** by holding down the `Share` button and the `PS` button simultaneously until the light bar starts blinking.
 2. Click the `Pair Controller` button in the web interface. Alternatively, open the serial prompt in your browser (connected to the ESP32 board) or use the web interface and enter the following command:
@@ -257,14 +257,14 @@ The UC2-ESP firmware supports various input devices, including the PS4 controlle
 
   This will initiate the Bluetooth scan on the ESP32, which will detect and pair with the controller.
 
-  Once paired, you can control the motorized stage using the analog sticks and switch the LED-matrix on/off using the buttons. The complete pinout of the diffrent function you can find here: [UC2 PS4 Controller Pairing Guide](https://openuc2.github.io/docs/Electronics/PS4-Controller/PS4-Controller)(valid since June 2025)
+  Once paired, you can control the motorized stage using the analog sticks and switch the LED-matrix on/off using the buttons. The complete pinout of the diffrent function you can find here: [UC2 PS4 Controller Pairing Guide](https://docs.openuc2.com/docs/Electronics/PS4-Controller/PS4-Controller)(valid since June 2025)
 
 ### 2.6: Setup and Use the Camera Software
 Instructions for the HIKROBOT - Camera - MV-CE060-10UM-PRO:
 
 1. Connect the camera via cable to your PC.
 
-2. For the installation process and useage of the software, follow these instructions: [Install MVS App for Camera Utilization](https://openuc2.github.io/docs/Electronics/HIKCamera/SoftwareTutorial)
+2. For the installation process and useage of the software, follow these instructions: [Install MVS App for Camera Utilization](https://docs.openuc2.com/docs/Electronics/HIKCamera/SoftwareTutorial)
 
 
 ## Step 3: Aligning the Microscope
@@ -274,8 +274,8 @@ Refer again to the alignment diagram that shows how the light sheet should inter
 Following these steps carefully will ensure that the light sheet is centered within the field of view (FOV) and in focus with the detection objective. This alignment is crucial for obtaining high-resolution and reliable imaging results with the OpenUC2 light-sheet microscope.
 
 👉 For additional tips and tricks, see:  
-- [Light Sheet Sample Guide](https://openuc2.github.io/docs/Toolboxes/LightsheetBox/LightSheet%20Sample/)  
-- [Alignment video of an older light-sheet version](https://openuc2.github.io/docs/Toolboxes/LightsheetBox/LightsheetCalibration)
+- [Light Sheet Sample Guide](https://docs.openuc2.com/docs/Toolboxes/LightsheetBox/LightSheet%20Sample/)  
+- [Alignment video of an older light-sheet version](https://docs.openuc2.com/docs/Toolboxes/LightsheetBox/LightsheetCalibration)
 
 ---
 
@@ -371,7 +371,7 @@ Following these steps carefully will ensure that the light sheet is centered wit
 
   ![](./IMAGES/lightsheet_10_04_2025_15.jpg)
 
-  sample preparation: https://openuc2.github.io/docs/Toolboxes/LightsheetBox/LightSheet%20Sample/#sample-preparation-%C3%A1-la-agarose-in-syringe-method
+  sample preparation: https://docs.openuc2.com/docs/Toolboxes/LightsheetBox/LightSheet%20Sample/#sample-preparation-%C3%A1-la-agarose-in-syringe-method
 
 2. insert clear water into the sample aqarium chamber
 
@@ -393,7 +393,7 @@ Following these steps carefully will ensure that the light sheet is centered wit
 
 ### Step 1: Installation process
 
-For this, please refer to the installation instructions [here](https://openuc2.github.io/docs/ImSwitch/Quickstart).
+For this, please refer to the installation instructions [here](https://docs.openuc2.com/docs/ImSwitch/Quickstart).
 
 On top of this, you can use the following `ImSwitchClient` template to remote control your microscopy using google colab or jupyter notebook. This gives some hints on the use of the API:
 

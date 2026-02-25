@@ -51,7 +51,7 @@ In questo esperimento gli studenti vedono come una lente ingrandisce quello che 
 ![](../IMAGES/lens.jpg)
 
 
-Maggiori dettagli possono essere trovati qui: [Lens-Wiki](https://openuc2.github.io/docs/Toolboxes/DiscoveryCore/ENGLISH/CoreLens/)
+Maggiori dettagli possono essere trovati qui: [Lens-Wiki](https://docs.openuc2.com/docs/Toolboxes/DiscoveryCore/ENGLISH/CoreLens/)
 
 
 
@@ -78,6 +78,6 @@ Gli studenti dovrebbero rendersi conto di come le diverse lunghezze focali influ
 ![](../IMAGES/lens2.jpg)
 
 
-Maggiori dettagli possono essere trovati qui: [Lens-Wiki](https://openuc2.github.io/docs/Toolboxes/DiscoveryCore/ENGLISH/CoreLens/)
+Maggiori dettagli possono essere trovati qui: [Lens-Wiki](https://docs.openuc2.com/docs/Toolboxes/DiscoveryCore/ENGLISH/CoreLens/)
 
 

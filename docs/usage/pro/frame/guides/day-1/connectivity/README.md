@@ -240,13 +240,13 @@ If the Wi-Fi network has a captive portal, you will first need to interact with 
 
 3. Disconnect your computer from any networks which might directly give it internet access.
 
-4. Open the captive portal from your computer's web browser by trying to open a normal webpage which requires internet access, such as [google.com](http://google.com).
+4. Open the captive portal from your computer's web browser by trying to open a normal webpage which requires internet access, such as [google.com](https://google.com).
 
    If the captive portal doesn't load that way, you'll instead need to open the specific URL of the captive portal's webpage.
 
 5. Fill out the form on the captive portal, if it requires you to do so in order to receive internet access.
 
-6. Confirm that your FRAME now has internet access by trying to open a normal webpage from your computer's web browser, such as [google.com](http://google.com).
+6. Confirm that your FRAME now has internet access by trying to open a normal webpage from your computer's web browser, such as [google.com](https://google.com).
 
 Afterwards, you can connect your computer back to any networks which might directly give it internet access.
 

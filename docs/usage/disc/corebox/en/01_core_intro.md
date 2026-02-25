@@ -51,7 +51,7 @@ In this experiment students see, how a lens magnifies what they look at.
 ![](../IMAGES/lens.jpg)
 
 
-More details can be found here: [Lens-Wiki](https://openuc2.github.io/docs/Toolboxes/DiscoveryCore/ENGLISH/CoreLens/)
+More details can be found here: [Lens-Wiki](https://docs.openuc2.com/docs/Toolboxes/DiscoveryCore/ENGLISH/CoreLens/)
 
 
 
@@ -78,6 +78,6 @@ Students should realise how the different focal lengths impact what they see thr
 ![](../IMAGES/lens2.jpg)
 
 
-More details can be found here: [Lens-Wiki](https://openuc2.github.io/docs/Toolboxes/DiscoveryCore/ENGLISH/CoreLens/)
+More details can be found here: [Lens-Wiki](https://docs.openuc2.com/docs/Toolboxes/DiscoveryCore/ENGLISH/CoreLens/)
 
 

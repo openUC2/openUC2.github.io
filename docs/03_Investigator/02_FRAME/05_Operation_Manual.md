@@ -384,7 +384,7 @@ The experiment controller has a built-in sample overview map where you can selec
 ```
 
 ![](./IMAGES/05/FRAME_Manual_20.jpeg)
-*PS4 controller for wireless operation. Press the connect button (middle button) and wait for the controller to connect to the microscope (will flash a few times and then glow continuously). For detailed function explanations, see: https://openuc2.github.io/docs/Electronics/PS4-Controller/PS4-Controller/*
+*PS4 controller for wireless operation. Press the connect button (middle button) and wait for the controller to connect to the microscope (will flash a few times and then glow continuously). For detailed function explanations, see: https://docs.openuc2.com/docs/Electronics/PS4-Controller/PS4-Controller/*
 
 1. **Connection Setup**:
    - Press the connect button (middle button on controller)
@@ -413,7 +413,7 @@ This interface is ideal for complex experiments where hardware, software, and im
 
 ```
 📝 NOTE: The FRAME system includes a web-based interface for remote operation.
-For more information: https://openuc2.github.io/docs/ImSwitch/Quickstart
+For more information: https://docs.openuc2.com/docs/ImSwitch/Quickstart
 ```
 
 1. **Access Setup**:
@@ -442,7 +442,7 @@ For more information: https://openuc2.github.io/docs/ImSwitch/Quickstart
 3. **Homing**: Return to defined home position
 4. **Limit Setting**: Define software travel limits
 
- For further information please refer to: https://openuc2.github.io/docs/Electronics/Advanced/UC2-ESP32/Setup_Buildenvironment
+ For further information please refer to: https://docs.openuc2.com/docs/Electronics/Advanced/UC2-ESP32/Setup_Buildenvironment
 
 ### Autofocus System
 

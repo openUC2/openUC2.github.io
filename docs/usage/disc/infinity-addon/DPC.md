@@ -13,7 +13,7 @@ Differential Phase Contrast Microscopy is a Computational Microscopy technique t
 ### Materials needed:
 
 - LED array (4x4)
-- Hikrobot Camera (MV-CE060-10UC) with USB cable ([Hikrobot Camera Software installation](https://openuc2.github.io/docs/Electronics/HIKCamera/SoftwareTutorial))
+- Hikrobot Camera (MV-CE060-10UC) with USB cable ([Hikrobot Camera Software installation](https://docs.openuc2.com/docs/Electronics/HIKCamera/SoftwareTutorial))
 - ESP32 Module
 - XYZ sample mount stage
 - Microscope Objective (0.25 _NA_ x10 )

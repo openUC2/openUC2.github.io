@@ -115,7 +115,7 @@ Changing the SD Card can be done from the rear of the electronics box in side th
 
 #### Operating System Compatibility
 
-More information about this here:  https://openuc2.github.io/ XXX
+More information about this here:  https://docs.openuc2.com/ XXX
 - **Windows**: Windows 10/11 (64-bit)
 - **macOS**: macOS 10.15 or later
 - **Linux**: Ubuntu 20.04 LTS or later

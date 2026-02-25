@@ -179,7 +179,7 @@ For problems look at the **troubleshooting guide** on the end of this page.
 
 #### 1. Set up the Camera
 
-remove the screen and place the camera behind the beam splitter and fix it with the base plates. Connect it to the computer and open the MV Software. To check the MVS tutorial click [here](https://openuc2.github.io/docs/Electronics/HIKCamera/SoftwareTutorial).
+remove the screen and place the camera behind the beam splitter and fix it with the base plates. Connect it to the computer and open the MV Software. To check the MVS tutorial click [here](https://docs.openuc2.com/docs/Electronics/HIKCamera/SoftwareTutorial).
 
 ![](./IMAGES/image14.jpg)
 *Picture of older setup with camera*

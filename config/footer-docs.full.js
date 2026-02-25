@@ -18,8 +18,8 @@ const footerColumn = (releaseChannel) => {
   }
   if (releaseChannel === 'offline') {
     result.items.push({
-      label: 'Latest Docs',
-      href: 'https://openuc2.github.io',
+      label: 'Latest Documentation',
+      href: 'https://docs.openuc2.com',
     });
   }
   return result;

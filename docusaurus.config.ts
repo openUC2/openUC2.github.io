@@ -103,7 +103,7 @@ module.exports = async function createConfigAsync() {
     ({
       announcementBar: ((announcement) => {
         if (announcement === '') {
-          return {};
+          return undefined;
         }
         return {
           content: announcement,

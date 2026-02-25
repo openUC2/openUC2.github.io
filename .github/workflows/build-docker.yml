@@ -23,7 +23,7 @@ env:
   BETA_BRANCH: 'beta' # pushing to this branch will update the "beta" tag on the image
   STABLE_BRANCH: 'stable' # pushing to this branch will update the "stable" tag on the image
   TAG_PREFIX: 'v' # pushing tags with this prefix will add a version tag to the image and update the "latest" tag on the image
-  PUSH_IMAGE: ${{ IMAGE_NAME != '' && github.event_name != 'merge_group' && ((github.event_name == 'pull_request' && !github.event.pull_request.head.repo.fork) || github.event_name == 'push' || github.event_name == 'push tag') }}
+  PUSH_IMAGE: ${{ vars.CTR_IMG_NAME != '' && github.event_name != 'merge_group' && ((github.event_name == 'pull_request' && !github.event.pull_request.head.repo.fork) || github.event_name == 'push' || github.event_name == 'push tag') }}
 
 jobs:
   build:

@@ -5,7 +5,7 @@ import {themes} from 'prism-react-renderer';
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 
-import {siteURL, baseURL, variant, releaseChannel, title, buildDate} from './config/site';
+import {siteURL, baseURL, variant, releaseChannel, shortTitle, announcement, buildDate} from './config/site';
 
 /** @type {() => Promise<import('@docusaurus/types').Config>} */
 module.exports = async function createConfigAsync() {
@@ -13,7 +13,7 @@ module.exports = async function createConfigAsync() {
   const katex = (await import('rehype-katex')).default;
 
   return {
-    title: title,
+    title: shortTitle,
     tagline: 'Documentation for openUC2\'s products and projects',
     url: siteURL,
     baseUrl: baseURL,
@@ -101,8 +101,19 @@ module.exports = async function createConfigAsync() {
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: ((announcement) => {
+        if (announcement === '') {
+          return {};
+        }
+        return {
+          content: announcement,
+          isCloseable: false,
+          backgroundColor: 'var(--ifm-color-warning-contrast-background)',
+          textColor: 'var(--ifm-color-warning-contrast-foreground)',
+        };
+      })(announcement),
       navbar: {
-        title: title,
+        title: shortTitle,
         logo: {
           alt: 'openUC2 Logo',
           src: 'img/Artboard4@4x.png',

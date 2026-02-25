@@ -7,6 +7,7 @@
     "start": "docusaurus start",
     "preprocess-minimal": "./preprocess-variant.sh minimal",
     "preprocess-full": "./preprocess-variant.sh full",
+    "postprocess-external-redirects": "node ./postprocess-external-redirects.js",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -38,6 +39,7 @@
     "@docusaurus/module-type-aliases": "^3.7.0",
     "@docusaurus/tsconfig": "^3.7.0",
     "@docusaurus/types": "^3.7.0",
+    "handlebars": "^4.7.8",
     "typescript": "~5.2.2"
   },
   "browserslist": {

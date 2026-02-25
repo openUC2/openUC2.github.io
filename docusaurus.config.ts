@@ -47,6 +47,7 @@ module.exports = async function createConfigAsync() {
           redirects: require(`./config/redirects.js`)(variant),
         },
       ],
+      './plugins/html-assets',
       // NOTE: docusaurus-plugin-papersaurus is not compatible with Docusaurus v3.
       // Uncomment or replace once a v3-compatible version is available.
       // [

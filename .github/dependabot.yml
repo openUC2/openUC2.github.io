@@ -23,7 +23,7 @@ updates:
     schedule:
       interval: "monthly"
     commit-message:
-      prefix: build(pip)
+      prefix: build(npm)
     groups:
       pip:
         patterns:

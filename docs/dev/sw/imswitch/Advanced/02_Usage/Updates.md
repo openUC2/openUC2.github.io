@@ -9,7 +9,7 @@ The update process involves three main components:
 2. **UC2-REST** - Python interface for UC2-ESP32 communication
 3. **UC2-ESP32 Firmware** - Microcontroller firmware for hardware control
 
-## In ImSwitch OS
+## In openUC2 OS
 
 Refer to our [usage guides](../../../../../usage/pro/frame/guides/day-2/sw-updates/README.md).
 

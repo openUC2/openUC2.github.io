@@ -202,9 +202,9 @@ Add this to `/boot/firmware/config.txt`:
 ```ini
 usb_max_current_enable=1
 ```
-More information about that here: https://github.com/openUC2/rpi-imswitch-os/pull/48
+More information about that here: https://github.com/openUC2/os-rpi/pull/48
 
-This is OS-image controllable (automate it in your ImSwitch OS build / image pipeline).
+This is OS-image controllable (automate it in your openUC2 OS build / image pipeline).
 
 ### 10.2 Intended automated method (HAT+ EEPROM)
 

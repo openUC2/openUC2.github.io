@@ -13,7 +13,7 @@ Our goal:
 
 ---
 
-## 2. ImSwitch OS (Forklift-based)
+## 2. openUC2 OS (Forklift-based)
 
 The openUC2 Raspberry Pi image is built using **Forklift**, a GitHub-like system for operating systems.
 
@@ -26,7 +26,7 @@ The openUC2 Raspberry Pi image is built using **Forklift**, a GitHub-like system
 * Tested before release
 
 **Suggested image placeholder:**
-`[Screenshot: ImSwitch OS desktop / landing page]`
+`[Screenshot: openUC2 OS desktop / landing page]`
 
 ---
 

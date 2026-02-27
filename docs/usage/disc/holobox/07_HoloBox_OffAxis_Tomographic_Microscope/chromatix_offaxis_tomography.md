@@ -104,7 +104,7 @@ Recommended extras:
 
 ### 2.2 Docker option (openUC2 style)
 
-Use ImSwitch in Docker on a raspberry pi and operate the microscope. More information here: https://github.com/openUC2/rpi-imswitch-os 
+Use ImSwitch in Docker on a raspberry pi and operate the microscope. More information here: https://github.com/openUC2/os-rpi 
 
 
 ## 3. Acquisition checklist (hardware)

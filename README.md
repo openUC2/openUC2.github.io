@@ -1,17 +1,18 @@
 # openUC2 Documentation
 
-This repository is used to build the openUC2 project's documentation site.
+This repository is used to build and deploy openUC2's documentation site.
 
 ## Usage
 
-Customers who are just end-users of openUC2 products & projects should go to [docs.openuc2.com](https://docs.openuc2.com).
+People who are just end-users of openUC2 products & projects should go to [docs.openuc2.com](https://docs.openuc2.com).
 
 Developers should view the current state of the [openUC2/openUC2.github.io](https://github.com/openUC2/openUC2.github.io) repository's `master` branch at [docs-dev.openuc2.com](https://docs-dev.openuc2.com).
-That site should be treated as a developer preview which can have disruptive changes without any prior notice; thus, customers should not be sent to `docs-dev.openuc2.com`. Instead, that site should be used for discovering and resolving most disruptions which would degrade the experience of people using the documentation.
+That site should be treated as a developer preview which can have disruptive changes without any prior notice; thus, customers should not be sent to `docs-dev.openuc2.com`.
 
-[docs-staging.openuc2.com](https://docs-staging.openuc2.com) should be used as an intermediate "preview" version of `docs.openuc2.com`: it is more stable (i.e. has less accidental disruption) compared to `docs-dev.openuc2.com`), but there may still be a few subtle problems which need to be discovered and fixed before being generally exposed to customers.
-`docs-staging.openuc2.com` can be thought of as a "beta preview" of what will become `docs.openuc2.com`.
-It's okay to link certain customers to pages in `docs-staging.openuc2.com`, but only if those customers need to have a preview of specific newer versions of those pages before those changes are ready to be mande generally available at `docs.openuc2.com`.
+[docs-staging.openuc2.com](https://docs-staging.openuc2.com) should be used as an intermediate "beta preview" version of `docs.openuc2.com`: it is more stable (i.e. has less accidental disruption) compared to `docs-dev.openuc2.com`, but it may still have a few subtle problems which need to be discovered and fixed before the changes are generally exposed to all customers.
+It's okay to link certain customers to certain pages in `docs-staging.openuc2.com`, but only if those customers need to have a preview of newer versions of those specific pages before those changes are ready to be made generally available at `docs.openuc2.com`.
+
+For further explanation, please refer to [DN 17](https://www.notion.so/DN-17-Customer-facing-documentation-system-2854e612c78a80a3a1bdcc223bf030c0?source=copy_link#3134e612c78a80c7b3cff5533bb67e15).
 
 ## Development
 

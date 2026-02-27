@@ -107,7 +107,7 @@
 
 The internal Raspberry Pi 5 runs ImSwitch-OS which is a raspberry pi OS Sd card image that runs ImSwitch in a docker container. An external computer is needed to connect to this instance via Wifi. More to that later in the Operaional Manual 
 
-Changing the SD Card can be done from the rear of the electronics box in side the FRAME. You can find the ImSwitch OS in the dedicated repository and download it from ZENODO: https://github.com/openUC2/imswitch-os
+Changing the SD Card can be done from the rear of the electronics box in side the FRAME. You can find the openUC2 OS in the dedicated repository and download it from ZENODO: https://github.com/openUC2/imswitch-os
 
 ![alt text](IMG_20250611_095831.jpg) 
 

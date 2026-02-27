@@ -286,7 +286,7 @@ Example (one clean, practical API design):
 
 Operationally, you want:
 
-* The firmware server container updated together with your ImSwitch OS / deployment (“forklift” in your wording).
+* The firmware server container updated together with your openUC2 OS / deployment (“forklift” in your wording).
 * That reduces mismatches (backend expects features/protocol versions that the satellite firmware must support).
 
 ---

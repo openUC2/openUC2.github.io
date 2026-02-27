@@ -1,6 +1,6 @@
-# ImSwitch OS
+# openUC2 OS
 
-The ImSwitch OS is a complete, pre-configured operating system image designed specifically for UC2 microscopy systems. It provides a ready-to-use environment with all software, drivers, and configurations pre-installed.
+The openUC2 OS is a complete, pre-configured operating system image designed specifically for UC2 microscopy systems. It provides a ready-to-use environment with all software, drivers, and configurations pre-installed.
 
 ## Images and Screenshots
 
@@ -8,7 +8,7 @@ The ImSwitch OS is a complete, pre-configured operating system image designed sp
 
 ## Overview
 
-The ImSwitch OS is a specialized Raspberry Pi OS image that includes:
+The openUC2 OS is a specialized Raspberry Pi OS image that includes:
 - **ImSwitch** with all dependencies pre-installed
 - **UC2-REST** Python interface for ESP32 communication
 - **UC2-ESP32 firmware** flashing tools
@@ -48,7 +48,7 @@ The ImSwitch OS is a specialized Raspberry Pi OS image that includes:
 ### Step 1: Download Image
 
 ```bash
-# Download the latest ImSwitch OS image or go to Zenodo and download it here https://zenodo.org/records/14988987
+# Download the latest openUC2 OS image or go to Zenodo and download it here https://zenodo.org/records/14988987
 wget https://zenodo.org/records/14988987/files/rpi-uc2-27f9a21.zip?download=1
 ```
 
@@ -148,7 +148,7 @@ rm -rf /home/pi/ImSwitchConfig/config/*
 
 ### Getting Help
 - **Documentation**: This guide and linked resources
-- **GitHub Issues**: [ImSwitch OS Repository](https://github.com/openUC2/imswitch-os/issues)
+- **GitHub Issues**: [openUC2 OS Repository](https://github.com/openUC2/imswitch-os/issues)
 - **Community Forum**: [openUC2.com](https://openuc2.com)
 - **Email Support**: Contact via GitHub or forum
 
@@ -159,7 +159,7 @@ rm -rf /home/pi/ImSwitchConfig/config/*
 
 ## Next Steps
 
-After setting up ImSwitch OS:
+After setting up openUC2 OS:
 1. **[Configure your hardware](../03_Configuration/README.md)** - Set up specific devices
 2. **[Basic usage tutorial](../02_Usage/README.md)** - Learn ImSwitch operation
 3. **[Advanced tutorials](../04_Tutorials/README.md)** - Explore advanced features

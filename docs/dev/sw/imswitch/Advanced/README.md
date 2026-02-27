@@ -37,7 +37,7 @@ This section provides comprehensive guides for ImSwitch beyond the basic Quickst
 ## 📚 Section Overview
 
 ### 1. [Installation](./01_Installation/README.md)
-- **ImSwitch OS** - Pre-configured OS image for immediate use
+- **openUC2 OS** - Pre-configured OS image for immediate use
 
 ### 2. [Usage](./02_Usage/README.md)
 Essential usage tutorials:
